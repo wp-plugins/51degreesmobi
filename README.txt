@@ -1,7 +1,7 @@
 === 51Degrees.mobi Device Detection ===
 Contributors: 51Degrees
 Donate link: http://51Degrees.mobi
-Tags: mobile, device detection, plugin
+Tags: mobile, device detection, plugin, android, device, iPad, iphone, redirect, phone, browser, redirect
 Requires at least: ???
 Tested up to: 3.3.2
 Stable tag: "trunk"
