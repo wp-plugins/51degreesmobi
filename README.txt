@@ -29,12 +29,8 @@ existing websites to quickly support the growing number of mobile browsing devic
 1. Install Wordpress using default settings.
 
 If you have set up FTP access:
-* Go to Wordpress admin, mouse over plugins, click "Add new", then click "Upload" at the 
-
-top of the screen.
-* Click "choose file", find the zip file, and click "install now", then follow the on-
-
-screen instructions.
+* Go to Wordpress admin, mouse over plugins, click "Add new", then click "Upload" at the top of the screen.
+* Click "choose file", find the zip file, and click "install now", then follow the on-screen instructions.
 
 If you have not set up FTP access, or if there are problems with the above:
 * Unzip the solution to /wp-content/plugins/
