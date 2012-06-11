@@ -1,4 +1,4 @@
-=== 51Degrees.mobi Device Detection ===
+=== 51Degrees.mobi Device Detection (BETA) ===
 Contributors: 51Degrees
 Donate link: http://51Degrees.mobi
 Tags: mobile, device detection, plugin, android, device, iPad, iphone, redirect, phone, browser, redirect
@@ -69,11 +69,11 @@ The FAQ section will be updated as relevant questions are asked of us.
 
 
 == Changelog ==
-= 0.5 Beta =
+= 0.5 =
 * Initial Release 
 
 == Upgrade Notice ==
-= 0.5 Beta =
+= 0.5 =
 *Current release. Upgrade to this to start receiving device detection data
 
 
