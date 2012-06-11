@@ -69,11 +69,11 @@ The FAQ section will be updated as relevant questions are asked of us.
 
 
 == Changelog ==
-= 0.5 =
-* Initial Release
+= 0.5 Beta =
+* Initial Release 
 
 == Upgrade Notice ==
-= 0.5 =
+= 0.5 Beta =
 *Current release. Upgrade to this to start receiving device detection data
 
 
