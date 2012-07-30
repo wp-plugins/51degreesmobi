@@ -64,16 +64,16 @@ If you have not set up FTP access, or if there are problems with the above:
 
 The FAQ section will be updated as relevant questions are asked of us.
 
-== Screenshots ==
+== Screenshots ==There is 
 1.
 
 
 == Changelog ==
-= 0.5 BETA =
+= 0.51 BETA =
 * Initial Release 
 
 == Upgrade Notice ==
-= 0.5 BETA=
+= 0.51 BETA=
 *Current release. Upgrade to this to start receiving device detection data
 
 
