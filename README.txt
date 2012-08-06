@@ -2,7 +2,6 @@
 Contributors: 51Degrees
 Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
-
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.1.10.3
