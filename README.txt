@@ -2,13 +2,14 @@
 Contributors: 51Degrees
 Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
+
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.1.10.3
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
-Access to device detection data and services provided by 51Degrees.mobi.
+Device detection and optimisation from 51Degrees.mobi.
 
 
 == Description ==
@@ -25,7 +26,7 @@ The plugin contains a small database capable of determining the requesting devic
 
 **Optimisation**
 
-A simple user interface enables non-technical users to define rules to alter the web sites response for different device types. Themes can be altered, or the request redirected to another web site. For example; rules can be defined to treat small screen mobile devices, smartphones and tablets differently. Adverts could be optimised for the smaller screens, or content limited to the essential parts of a page.
+A simple user interface enables non-technical users to define rules to alter the web sites response for different device types. Themes can be altered, or the request redirected to another web site. For example; rules can be defined to treat small screen mobile devices, smartphones and tablets differently from each other. Adverts could be optimised for the smaller screens, or content limited to the essential parts of a page.
 
 The plugin is provided for free to all Wordpress users under the Mozilla Public Licence 2. Paid for versions are available that offer more properties and features.
 
@@ -51,7 +52,7 @@ If you have not set up FTP access, or if there are problems with the above:
 * Create rules to handle different types of mobile device. See user guide for details [51Degrees.mobi](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
 
 
-=Theme Developers=
+**Theme Developers**
 
 1. After selecting settings:
 * Go to your theme's folder (By default: 'twentyeleven')
