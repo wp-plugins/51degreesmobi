@@ -41,11 +41,9 @@ If you have set up FTP access:
 
 *  Click "choose file", find the zip file, and click "install now", then follow the on-screen instructions.
 
-If you have not set up FTP access, or if there are problems with the above:
+If you have not set up FTP access, or if there are problems with the above unzip the plugin to /wp-content/plugins/
 
-*  Unzip the solution to /wp-content/plugins/
-
-2. After completing either of the above, to change settings:
+1. After completing either of the above, to change settings:
 
 *  Open the Wordpress admin dashboard.
 
