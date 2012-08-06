@@ -36,30 +36,40 @@ The plugin is provided for free to all Wordpress users under the Mozilla Public 
 1. Install Wordpress using default settings.
 
 If you have set up FTP access:
+
 * Go to Wordpress admin, mouse over plugins, click "Add new", then click "Upload" at the top of the screen.
+
 * Click "choose file", find the zip file, and click "install now", then follow the on-screen instructions.
 
 If you have not set up FTP access, or if there are problems with the above:
+
 * Unzip the solution to /wp-content/plugins/
 
 2. After completing either of the above, to change settings:
+
 * Open the Wordpress admin dashboard.
+
 * Select Plugins > Installed Plugins
+
 * Underneath 51Degrees.mobi Device Detection, select 'Activate'
 
 * Select Settings > 51Degrees.mobi
+
 * Create rules to handle different types of mobile device. See user guide for details [51Degrees.mobi](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
 
 
 **Theme Developers**
 
 1. After selecting settings:
+
 * Go to your theme's folder (By default: 'twentyeleven')
+
 * Open the index.php file and within a php tag add:
 
 `echo $_51D['IsMobile'];` 
 
 * You should see the value "TRUE" or "FALSE".
+
 * Use the $_51D variable as expected.
 
 
