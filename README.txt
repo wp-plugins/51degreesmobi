@@ -1,15 +1,14 @@
 === 51Degrees.mobi Device Detection (BETA) ===
-Contributors: 51Degrees.mobi
+Contributors: 51Degrees
 Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
-
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.1.10.3
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
-Access to device detection data and services provided by the 51Degrees.mobi.
+Access to device detection data and services provided by 51Degrees.mobi.
 
 
 == Description ==
@@ -17,6 +16,7 @@ Access to device detection data and services provided by the 51Degrees.mobi.
 The 51Degrees.mobi Device Detection plugin provides the following functionality.
 
 **Detection** - works out the type of device accessing the web site and provides information about the hardware, operating system and browser. Includes information about screen size, browser features and many more.
+
 **Optimisation** - enables the theme used to be altered depending on the detected properties.
 
 **Detection**
@@ -51,7 +51,7 @@ If you have not set up FTP access, or if there are problems with the above:
 * Create rules to handle different types of mobile device. See user guide for details [51Degrees.mobi](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
 
 
-**Theme Developers**
+=Theme Developers=
 
 1. After selecting settings:
 * Go to your theme's folder (By default: 'twentyeleven')
@@ -61,12 +61,6 @@ If you have not set up FTP access, or if there are problems with the above:
 
 * You should see the value "TRUE" or "FALSE".
 * Use the $_51D variable as expected.
-
-2. To update Premium:
-
-* Place your update license in the Wordpress root directory.
-* Go into the Dashboard and go to Settings > 51Degrees.mobi
-* Click "Update".
 
 
 == Frequently Asked Questions ==
@@ -78,12 +72,12 @@ The FAQ section will be updated as relevant questions are asked of us.
 = None currently =
 
 == Changelog ==
+= 2.1.10.3 BETA =
+* Includes nearly complete theme switcher and redirection administration user interface. 
+
 = 0.51 BETA =
 * Initial Release 
 
 == Upgrade Notice ==
-= 0.51 BETA=
+= 2.1.10.3 BETA =
 *Current release. Upgrade to this to start receiving device detection data.
-
-
-
