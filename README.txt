@@ -21,7 +21,7 @@ The 51Degrees.mobi Device Detection plugin provides the following functionality.
 
 **Detection**
 
-The plugin contains a small database capable of determining the requesting device's properties extremely quickly using the finger prints (technically called useragents) sent by web browsers. No cloud services or external components are required. Once the plugin is installed the detected device properties are available to theme developers.
+The plugin contains a small database capable of determining the requesting device's properties extremely quickly using the finger prints (technically called useragents) sent by web browsers. No cloud services, php extensions or external components are required. Once the plugin is installed the detected device properties are available to theme developers.
 
 **Optimisation**
 
