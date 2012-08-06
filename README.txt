@@ -15,9 +15,9 @@ Device detection and optimisation from 51Degrees.mobi.
 
 The 51Degrees.mobi Device Detection plugin provides the following functionality.
 
-**Detection** - works out the type of device accessing the web site and provides information about the hardware, operating system and browser. Includes information about screen size, browser features and many more.
+**Detection**  - works out the type of device accessing the web site and provides information about the hardware, operating system and browser. Includes information about screen size, browser features and many more.
 
-**Optimisation** - enables the theme used to be altered depending on the detected properties.
+**Optimisation**  - enables the theme used to be altered depending on the detected properties.
 
 **Detection**
 
@@ -37,40 +37,40 @@ The plugin is provided for free to all Wordpress users under the Mozilla Public 
 
 If you have set up FTP access:
 
-* Go to Wordpress admin, mouse over plugins, click "Add new", then click "Upload" at the top of the screen.
+*  Go to Wordpress admin, mouse over plugins, click "Add new", then click "Upload" at the top of the screen.
 
-* Click "choose file", find the zip file, and click "install now", then follow the on-screen instructions.
+*  Click "choose file", find the zip file, and click "install now", then follow the on-screen instructions.
 
 If you have not set up FTP access, or if there are problems with the above:
 
-* Unzip the solution to /wp-content/plugins/
+*  Unzip the solution to /wp-content/plugins/
 
 2. After completing either of the above, to change settings:
 
-* Open the Wordpress admin dashboard.
+*  Open the Wordpress admin dashboard.
 
-* Select Plugins > Installed Plugins
+*  Select Plugins > Installed Plugins
 
-* Underneath 51Degrees.mobi Device Detection, select 'Activate'
+*  Underneath 51Degrees.mobi Device Detection, select 'Activate'
 
-* Select Settings > 51Degrees.mobi
+*  Select Settings > 51Degrees.mobi
 
-* Create rules to handle different types of mobile device. See user guide for details [51Degrees.mobi](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
+*  Create rules to handle different types of mobile device. [See user guide for details](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
 
 
 **Theme Developers**
 
 1. After selecting settings:
 
-* Go to your theme's folder (By default: 'twentyeleven')
+*  Go to your theme's folder (By default: 'twentyeleven')
 
-* Open the index.php file and within a php tag add:
+*  Open the index.php file and within a php tag add:
 
 `echo $_51D['IsMobile'];` 
 
-* You should see the value "TRUE" or "FALSE".
+*  You should see the value "TRUE" or "FALSE".
 
-* Use the $_51D variable as expected.
+*  Use the $_51D variable as expected.
 
 
 == Frequently Asked Questions ==
@@ -83,10 +83,10 @@ The FAQ section will be updated as relevant questions are asked of us.
 
 == Changelog ==
 = 2.1.10.3 BETA =
-* Includes nearly complete theme switcher and redirection administration user interface. 
+*  Includes nearly complete theme switcher and redirection administration user interface. 
 
 = 0.51 BETA =
-* Initial Release 
+*  Initial Release 
 
 == Upgrade Notice ==
 = 2.1.10.3 BETA =
