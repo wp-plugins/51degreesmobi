@@ -1,14 +1,4 @@
 <?php
-/**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
- */
 /*
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
@@ -777,7 +767,7 @@ function _51d_admin_menu_preprocess() {
 						) . '</p>'
 
 		) );
-
+		
 		$screen->add_help_tab( array(
 			'id'	=> 'property_help_action',
 			'title'	=> __('Action'),
@@ -797,7 +787,7 @@ function _51d_admin_menu_preprocess() {
 						'all requests from devices matching the rule.'
 						) . '</p>'
 		) );
-
+	
 	}
 }
 
