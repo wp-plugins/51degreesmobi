@@ -70,6 +70,86 @@ function _H71($useragent) {
     1 => fiftyone_degrees_preg_match_all('#(?<=AppleWebKit/)[\\d\\.]+#', $useragent),
     2 => fiftyone_degrees_preg_match_all('#(?<=Version/)[\\d\\.]+#', $useragent),
     3 => fiftyone_degrees_preg_match_all('#(?<=Safari/)[\\d\\.]+#', $useragent));
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-de; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; de-de; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-gb; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; en-gb; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; es-es; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; es-es; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; es-es; GT-S5830 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; es-es; GT-S5830 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-gb; GT-S5830 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; en-gb; GT-S5830 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-ie; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; en-ie; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; it-it; GT-S5830 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; it-it; GT-S5830 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; fr-fr; GT-N7000 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; fr-fr; GT-N7000 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-de; GT-S5830 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; de-de; GT-S5830 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; it-it; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; it-it; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-de; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -132,6 +212,46 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; en-us; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; cs-cz; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; cs-cz; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; pl-pl; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; pl-pl; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; pt-pt; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; pt-pt; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-at; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; de-at; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; sl-si; GT-I9100 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,5629,15760,18092, 'Mozilla/5.0 (Linux; U; sl-si; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.1.2; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
@@ -254,12 +374,84 @@ function _H71($useragent) {
     $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; fr-FR) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-de; GT-I9001 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; de-de; GT-I9001 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux mips; en'), 1 => array(0 => '531.2'), 2 => NULL, 3 => array(0 => '531.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Safari/531.2+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; de-DE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; de-DE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; es-ES'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; es-ES) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; en-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-CA) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; fr-FR'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; fr-FR) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; webOS/2.2.4; U; en-IE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-IE) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'IMDb iOS; Intel Mac OS X 10_6_8'), 1 => array(0 => '534.50'), 2 => array(0 => '5.1'), 3 => array(0 => '534.50')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17296,17415,18092, 'Mozilla/5.0 (IMDb iOS; Intel Mac OS X 10_6_8) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'PUMA Phone M1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; 240x320'), 1 => array(0 => '420'), 2 => NULL, 3 => array(0 => '420')), $ls);
@@ -268,6 +460,22 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,17017,17470,18092, 'Mozilla/5.0 (PUMA Phone M1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; 240x320) AppleWebKit/420+ (KHTML, like Gecko) Safari/420+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'WebTubeHD; U; Intel Mac OS X 10_5_5; en-us'), 1 => array(0 => '525.18'), 2 => array(0 => '3.1.2'), 3 => array(0 => '525.20.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17295,17318,18092, 'Mozilla/5.0 (WebTubeHD; U; Intel Mac OS X 10_5_5; en-us) AppleWebKit/525.18 (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-gb; GT-S5570 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15649,5629,15760,18092, 'Mozilla/5.0 (Linux; U; en-gb; GT-S5570 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -286,12 +494,68 @@ function _H71($useragent) {
     $dl[] = array(11854,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413', 1 => '413'), 2 => NULL, 3 => array(0 => '413', 1 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11854,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 2 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413', 1 => '413', 2 => '413'), 2 => NULL, 3 => array(0 => '413', 1 => '413', 2 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11854,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE71/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; es-es; GT-P1000 Build/GINGERBREAD'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13452,5629,15760,18092, 'Mozilla/5.0 (Linux; U; es-es; GT-P1000 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE63/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE63/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14358,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE63/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE63/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Intel X86; en-us'), 1 => array(0 => '533.16'), 2 => array(0 => '5.0'), 3 => array(0 => '533.16')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (Linux; U; Intel X86; en-us) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'DirectFB; Linux; ko-KR'), 1 => array(0 => '534.26'), 2 => array(0 => '5.0'), 3 => array(0 => '534.26')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (DirectFB; Linux; ko-KR) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Grid OS 1.0; en-us'), 1 => array(0 => '533.1'), 2 => array(0 => '5.0'), 3 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (Linux; U; Grid OS 1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Version/5.0 Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux; en-us'), 1 => array(0 => '533.16'), 2 => array(0 => '5.0'), 3 => array(0 => '533.16')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (Linux; U; Linux; en-us) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.0; U; en-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
@@ -534,6 +798,134 @@ function _H71($useragent) {
     $dl[] = array(16044,18110,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.4; U; en-HK) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.76 Safari/534.6 TouchPad/1.0');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-GB'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-GB) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; de-DE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; es-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; es-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-IE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-IE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-SG'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-SG) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; fr-FR'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; fr-FR) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-AU'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-AU) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; es-ES'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; es-ES) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; es-MX'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; es-MX) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-NZ'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-NZ) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-MX'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-MX) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; it-IT'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; it-IT) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-HK'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-HK) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAN95/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAN95/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -542,28 +934,44 @@ function _H71($useragent) {
     $dl[] = array(12004,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAN95/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAN95/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Intel X86; en-us'), 1 => array(0 => '533.16'), 2 => array(0 => '5.0'), 3 => array(0 => '533.16')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAN95 8GB/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAN95 8GB/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (Linux; U; Intel X86; en-us) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16');
+    $dl[] = array(12004,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAN95 8GB/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAN95 8GB/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) App');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'DirectFB; Linux; ko-KR'), 1 => array(0 => '534.26'), 2 => array(0 => '5.0'), 3 => array(0 => '534.26')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.0; en-US'), 1 => array(0 => '535.1'), 2 => array(0 => '7.2.0.0'), 3 => array(0 => '535.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (DirectFB; Linux; ko-KR) AppleWebKit/534.26+ (KHTML, like Gecko) Version/5.0 Safari/534.26+');
+    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.0; en-US) AppleWebKit/535.1+ (KHTML, like Gecko) Version/7.2.0.0 Safari/535.1+');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Grid OS 1.0; en-us'), 1 => array(0 => '533.1'), 2 => array(0 => '5.0'), 3 => array(0 => '533.1')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.0; en-US'), 1 => array(0 => '535.8'), 2 => array(0 => '7.2.0.0'), 3 => array(0 => '535.8')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17317,18092, 'Mozilla/5.0 (Linux; U; Grid OS 1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Version/5.0 Safari/533.1');
+    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.0; en-US) AppleWebKit/535.8+ (KHTML, like Gecko) Version/7.2.0.0 Safari/535.8+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.1; en-US'), 1 => array(0 => '535.8'), 2 => array(0 => '7.2.0.1'), 3 => array(0 => '535.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.1; en-US) AppleWebKit/535.8+ (KHTML, like Gecko) Version/7.2.0.1 Safari/535.8+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.1.0; en-US'), 1 => array(0 => '536.2'), 2 => array(0 => '7.2.1.0'), 3 => array(0 => '536.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.1.0; en-US) AppleWebKit/536.2+ (KHTML, like Gecko) Version/7.2.1.0 Safari/536.2+');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1', 1 => 'SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -572,22 +980,6 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(11905,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIA6120c/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWe');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2EA; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12142,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2EA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2AA; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12142,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2AA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'webOS/1.3.1; U; en-US'), 1 => array(0 => '525.27.1'), 2 => array(0 => '1.0'), 3 => array(0 => '525.27.1')), $ls);
@@ -718,12 +1110,36 @@ function _H71($useragent) {
     $dl[] = array(16941,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.5; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'webOS/1.4.5.1; U; en-US'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.4.3; U; en-US'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16941,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.5.1; U; en-US)AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1');
+    $dl[] = array(16941,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.3; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.2.9.1; U; en-US'), 1 => array(0 => '525.27.1'), 2 => array(0 => '1.0'), 3 => array(0 => '525.27.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16941,18187,18175,18092, 'Mozilla/5.0 (webOS/1.2.9.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2EA; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2EA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2AA; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU5i/R2AA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'webOS/1.0; U; en-US'), 1 => array(0 => '525.27.1'), 2 => array(0 => '1.0'), 3 => array(0 => '525.27.1')), $ls);
@@ -958,28 +1374,12 @@ function _H71($useragent) {
     $dl[] = array(15841,17352,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 1.0.0; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/7.2.0.0 Safari/534.8+');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.0; en-US'), 1 => array(0 => '535.1'), 2 => array(0 => '7.2.0.0'), 3 => array(0 => '535.1')), $ls);
+  $ns = E71($segments, array(0 => NULL, 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.0; en-US) AppleWebKit/535.1+ (KHTML, like Gecko) Version/7.2.0.0 Safari/535.1+');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.0; en-US'), 1 => array(0 => '535.8'), 2 => array(0 => '7.2.0.0'), 3 => array(0 => '535.8')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.0; en-US) AppleWebKit/535.8+ (KHTML, like Gecko) Version/7.2.0.0 Safari/535.8+');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'PlayBook; U; RIM Tablet OS 2.0.1; en-US'), 1 => array(0 => '535.8'), 2 => array(0 => '7.2.0.1'), 3 => array(0 => '535.8')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15841,17358,17360,18092, 'Mozilla/5.0 (PlayBook; U; RIM Tablet OS 2.0.1; en-US) AppleWebKit/535.8+ (KHTML, like Gecko) Version/7.2.0.1 Safari/535.8+,gzip(gfe) (via translate.google.com)');
+    $dl[] = array(15991,5629,15760,18092, 'Mozilla en-us; GT-S6102 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.1; U; en-us'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -1004,62 +1404,6 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,5890,17470,18092, 'Mozilla/5.0 (SymbianOS/9.1; U; id) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-GB'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-GB) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; de-DE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; de-DE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; fr-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; es-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; es-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-IE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-IE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.5; U; en-SG'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16044,18187,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.5; U; en-SG) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-US'), 1 => array(0 => '528.5'), 2 => array(0 => '4.0'), 3 => array(0 => '528.5')), $ls);
@@ -1092,6 +1436,22 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(16151,18110,17470,18092, 'Mozilla/5.0 (Linux; U; zh-CN.utf8) AppleWebKit/528.5+ (KHTML, like Gecko, Safari/528.5+) Version/4.0 Kindle/3.0 (screen 600x800; rotate)');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; de-DE'), 1 => array(0 => '528.5'), 2 => array(0 => '4.0'), 3 => array(0 => '528.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16151,18110,17470,18092, 'Mozilla/5.0 (Linux; U; de-DE) AppleWebKit/528.5+ (KHTML, like Gecko, Safari/528.5+) Version/4.0 Kindle/3.0 (screen 600x800; rotate)');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; es-ES'), 1 => array(0 => '528.5'), 2 => array(0 => '4.0'), 3 => array(0 => '528.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16151,18110,17470,18092, 'Mozilla/5.0 (Linux; U; es-ES) AppleWebKit/528.5+ (KHTML, like Gecko, Safari/528.5+) Version/4.0 Kindle/3.0 (screen 600x800; rotate)');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Vodafone-W1/V02c_19Jan2011_ZA; U; Linux; en-ZA'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
@@ -1326,6 +1686,78 @@ function _H71($useragent) {
     $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; de-de; MZ601 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Intel Mac OSX 10_6_3; 3.2; en-us; MZ601 Build/HTJ85B'), 1 => array(0 => '534.13'), 2 => array(0 => '4.0'), 3 => array(0 => '534.13')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; en-us; MZ601 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; en-us; Velocitymicro/T408'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; en-us; Velocitymicro/T408) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0Safari/530.17');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux 2.6;  it; TOSHIBA_AC_AND_AZ'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Linux 2.6;  it; TOSHIBA_AC_AND_AZ) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0 Safari/530.17');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux mips; en-US'), 1 => array(0 => '531.2'), 2 => array(0 => '4.0'), 3 => array(0 => '531.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Linux mips; en-US) AppleWebKit/531.2+ (KHTML, like Gecko) Version/4.0 Safari/531.2+');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Bigdroid_2.0; zh-cn; AM7-A1/FRF85B; 1024*600'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Bigdroid_2.0; zh-cn; AM7-A1/FRF85B; 1024*600) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 ThunderSoft_BigDroid/2.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Bigdroid_2.0; zh-cn; I600/FRF85B; 1024*600'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Bigdroid_2.0; zh-cn; I600/FRF85B; 1024*600) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 ThunderSoft_BigDroid/2.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Intel Mac OSX 10_6_3; 3.2; en-gb; MZ601 Build/HTJ85B'), 1 => array(0 => '534.13'), 2 => array(0 => '4.0'), 3 => array(0 => '534.13')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; en-gb; MZ601 Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux 2.6;  en-us; TOSHIBA_AC_AND_AZ'), 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17316,18092, 'Mozilla/5.0 (Linux; U; Linux 2.6;  en-us; TOSHIBA_AC_AND_AZ) AppleWebKit/530.17(KHTML, like Gecko) Version/4.0 Safari/530.17');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Aspen Simulator; U; Aspen 1_2 like Mac OS X; en_us'), 1 => array(0 => '525.7'), 2 => array(0 => '3.1'), 3 => array(0 => '5525.7')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,18120,17470,18092, 'Mozilla/5.0 (Aspen Simulator; U; Aspen 1_2 like Mac OS X; en_us) AppleWebKit/525.7 (KHTML, like Gecko) Version/3.1 Mobile/5A147p Safari/5525.7');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'en-us'), 1 => array(0 => '525.13'), 2 => array(0 => '3.1'), 3 => array(0 => '525.13')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1340,14 +1772,6 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(12399,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU8i/R2CA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => NULL, 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15991,5629,15760,18092, 'Mozilla en-us; GT-S6102 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; E71-1/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -1710,6 +2134,14 @@ function _H71($useragent) {
     $dl[] = array(15364,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux mips; en'), 1 => array(0 => '531.2'), 2 => array(0 => '4.1.4'), 3 => array(0 => '531.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17335,18092, 'Mozilla/5.0 (Linux; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Version/4.1.4 Safari/531.2+');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVIDEIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1764,6 +2196,14 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(13443,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'Hooligan; U; CPU OS 4_2_1 like Mac OS X; en-us'), 1 => array(0 => '533.17.9'), 2 => array(0 => '5.0.2'), 3 => array(0 => '6533.18.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,18120,17317,18092, 'Mozilla/5.0 (Hooligan; U; CPU OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHHa; Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -2390,14 +2830,6 @@ function _H71($useragent) {
     $dl[] = array(11843,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux mips; en'), 1 => array(0 => '531.2'), 2 => array(0 => '4.1.4'), 3 => array(0 => '531.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,18110,17335,18092, 'Mozilla/5.0 (Linux; U; Linux mips; en) AppleWebKit/531.2+ (KHTML, like Gecko) Version/4.1.4 Safari/531.2+');
-    $ls = $ns;
-  }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; Intel Mac OSX 10_6_3; 3.2; en-us; Xoom Build/HTJ85B'), 1 => array(0 => '534.13'), 2 => array(0 => '4.0'), 3 => array(0 => '534.13')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2678,12 +3110,196 @@ function _H71($useragent) {
     $dl[] = array(15869,18110,17470,18092, 'Mozilla/5.0 (Linux; U; Intel Mac OSX 10_6_3; 3.2; nl-nl; Xoom Build/HTJ85B) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Aspen Simulator; U; Aspen 1_2 like Mac OS X; en_us'), 1 => array(0 => '525.7'), 2 => array(0 => '3.1'), 3 => array(0 => '5525.7')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.1; U; de-DE'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17595,18120,17470,18092, 'Mozilla/5.0 (Aspen Simulator; U; Aspen 1_2 like Mac OS X; en_us) AppleWebKit/525.7 (KHTML, like Gecko) Version/3.1 Mobile/5A147p Safari/5525.7');
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.0; U; en-GB'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.3; U; en-US'), 1 => array(0 => '525.27.1'), 2 => array(0 => '1.0'), 3 => array(0 => '525.27.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Desktop/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.4.5; U; en-IE'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.0; U; fr-FR'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.0; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.4.5; U; zh-CN'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.5; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.0; U; de-DE'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.0; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.1; U; en-GB'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.1; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.0.1; U; en-GB'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.0.1; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.0; U; es-ES'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.0; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.2; U; es-US'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.2; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.2; U; zh-CN'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.2; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'webOS/1.3; U; en-US'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Desktop/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.0; U; es-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.0; U; es-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/233.70 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.4; U; es-ES'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.4; U; es-ES) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.76 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.2; U; en-HK'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.2; U; en-HK) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.40.1 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.4; U; zh-CN'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.4; U; zh-CN) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.76 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.0; U; fr-FR'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.0; U; fr-FR) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/233.70 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.0; U; fr-CA'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.0; U; fr-CA) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/233.70 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.2; U; es-ES'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.2; U; es-ES) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.40.1 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.2; U; es-MX'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.2; U; es-MX) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.40.1 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.6; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.6; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/234.83 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.2; U; en-US'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.2; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) wOSSystem/234.40.1 Safari/534.6 TouchPad/1.0');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'hp-tablet; Linux; hpwOS/3.0.0; U; en-IE'), 1 => array(0 => '534.6'), 2 => NULL, 3 => array(0 => '534.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16044,17017,18175,18092, 'Mozilla/5.0 (hp-tablet; Linux; hpwOS/3.0.0; U; en-IE) AppleWebKit/534.6 (KHTML, like Gecko) wOSBrowser/233.70 Safari/534.6 TouchPad/1.0');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 1.0/SamsungSGHi560/I560DTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -3110,14 +3726,6 @@ function _H71($useragent) {
     $dl[] = array(17163,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Hooligan; U; CPU OS 4_2_1 like Mac OS X; en-us'), 1 => array(0 => '533.17.9'), 2 => array(0 => '5.0.2'), 3 => array(0 => '6533.18.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17595,18120,17317,18092, 'Mozilla/5.0 (Hooligan; U; CPU OS 4_2_1 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8C148 Safari/6533.18.5');
-    $ls = $ns;
-  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3198,36 +3806,20 @@ function _H71($useragent) {
     $dl[] = array(12347,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.1; U; de-DE'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'Linux; en-us'), 1 => array(0 => '528.5'), 2 => array(0 => '3.1.2'), 3 => array(0 => '525.20.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0');
+    $dl[] = array(15364,18110,17318,18092, 'Mozilla/5.0 (Linux; en-us) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'webOS/2.1.0; U; en-GB'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux 1.6; es-es; AirLife100'), 1 => array(0 => '528.5'), 2 => array(0 => '3.1.2'), 3 => array(0 => '525.20.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'webOS/1.3; U; en-US'), 1 => array(0 => '525.27.1'), 2 => array(0 => '1.0'), 3 => array(0 => '525.27.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Desktop/1.0');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'webOS/1.4.5; U; en-IE'), 1 => array(0 => '532.2'), 2 => array(0 => '1.0'), 3 => array(0 => '532.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,18187,18175,18092, 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1');
+    $dl[] = array(15364,18110,17318,18092, 'Mozilla/5.0 (Linux; U; Linux 1.6; es-es; AirLife100) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; arm; en, Nuvifone'), 1 => array(0 => '523.13'), 2 => array(0 => '3.0'), 3 => array(0 => '419.3')), $ls);
@@ -3246,20 +3838,36 @@ function _H71($useragent) {
     $dl[] = array(15364,18110,17315,18092, 'Mozilla/5.0 (Linux; U; arm; en, Nuvi) AppleWebKit/523.13 (KHTML, like Gecko) Version/3.0 Mobile Safari/419.3 Qt Qtopia Iris/1.1.2');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; en-us'), 1 => array(0 => '528.5'), 2 => array(0 => '3.1.2'), 3 => array(0 => '525.20.1')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'Symbian/3; U; N8-00; en-GB'), 1 => array(0 => '534.3'), 2 => NULL, 3 => array(0 => '534.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17318,18092, 'Mozilla/5.0 (Linux; en-us) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1');
+    $dl[] = array(15364,5055,3804,18092, 'Mozilla/5.0 (Symbian/3; U; N8-00; en-GB) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.3 Mobile Safari/534.3');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux 1.6; es-es; AirLife100'), 1 => array(0 => '528.5'), 2 => array(0 => '3.1.2'), 3 => array(0 => '525.20.1')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/V20A; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17318,18092, 'Mozilla/5.0 (Linux; U; Linux 1.6; es-es; AirLife100) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Safari/525.20.1');
+    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/V20A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/v04K; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v04K; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK7 Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -3334,38 +3942,6 @@ function _H71($useragent) {
     $dl[] = array(13740,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'Symbian/3; U; N8-00; en-GB'), 1 => array(0 => '534.3'), 2 => NULL, 3 => array(0 => '534.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5055,3804,18092, 'Mozilla/5.0 (Symbian/3; U; N8-00; en-GB) AppleWebKit/534.3 (KHTML, like Gecko) Qt/4.7.3 Mobile Safari/534.3');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/V20A; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/V20A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/v04K; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v04K; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13333,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3398,6 +3974,22 @@ function _H71($useragent) {
     $dl[] = array(15364,18118,17207,18092, 'Mozilla/5.0 (Linux; U; Ubuntu; en-us) AppleWebKit/525.13 (KHTML, like Gecko) Version/2.2 Firefox/525.13	Safari 2.2');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12409,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12409,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3422,20 +4014,12 @@ function _H71($useragent) {
     $dl[] = array(13920,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  $ns = E71($segments, array(0 => array(0 => 'Linux; U; Linux; en-us; Nexus One Build/FRF91'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12409,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12409,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(16036,18110,17470,18092, 'Mozilla/5.0 (Linux; U; Linux; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Symbian63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -3460,6 +4044,14 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(15109,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT615/v10C; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13906,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD9 Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
@@ -3502,20 +4094,20 @@ function _H71($useragent) {
     $dl[] = array(15670,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LG KS10/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1'), 1 => array(0 => '525'), 2 => array(0 => '3.0'), 3 => array(0 => '525')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13906,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
-    $ls = $ns;
-  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i455/UMHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13024,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i455/UMHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'PlayBook'), 1 => array(0 => '536.2'), 2 => array(0 => '10.0.0.1337'), 3 => array(0 => '536.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,18339,18340,18092, 'Mozilla/5.0 (PlayBook) AppleWebKit/536.2+ (KHTML, like Gecko) Version/10.0.0.1337 Safari/536.2+');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; Andrkid 2.2.2; en-za; MB525 Build/JEM_3.4.3-36-1.7'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);
@@ -3532,14 +4124,6 @@ function _H71($useragent) {
       unset($dl);
     }
     $dl[] = array(14993,17017,17316,18092, 'Mozilla/5.0 (LinunyEricssonLT15i Build/3.0.A.2.181) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
-  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14453,5890,4222,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => NULL, 1 => array(0 => '530.17'), 2 => array(0 => '4.0'), 3 => array(0 => '530.17')), $ls);
@@ -3574,12 +4158,36 @@ function _H71($useragent) {
     $dl[] = array(15133,17485,17470,18092, 'Mozilla/5.0 (Linux; U;Androi d 2.3.2; ja-jp; SonyEricssonSO-01C Build/3.0.D.2.79)AppleWebKit/533.1 (KHTML, li ke Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14453,5890,4222,18092, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NOKIAE51/1.0; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'itouch; U; CPU like Mac OS X; en'), 1 => array(0 => '420'), 2 => array(0 => '3.0'), 3 => array(0 => '419.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,18120,17153,18092, 'Mozilla/5.0 (itouch; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1A538a Safari/419.3');
+    $ls = $ns;
+  }
   $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.1; U; Series60/3.1 AppleWebKit/413 (KHTML, like Gecko'), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11833,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.1; U; Series60/3.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413 Digia @Web/2.1 SonyEricssonP1i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E71($segments, array(0 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 LG-KT770/v08Y; Profile/MIDP-2.1 Configuration/CLDC-1.1 '), 1 => array(0 => '413'), 2 => NULL, 3 => array(0 => '413')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16399,5890,3439,18092, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 LG-KT770/v08Y; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E71($segments, array(0 => array(0 => 'Linux; U; Andro id 2.3.2; ja-jp; SO-01C Build/3.0.D.2.79'), 1 => array(0 => '533.1'), 2 => array(0 => '4.0'), 3 => array(0 => '533.1')), $ls);

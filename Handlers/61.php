@@ -86,20 +86,68 @@ function _H61($useragent) {
     $dl[] = array(15364,18110,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Linux i686; en) Opera 10.51');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; X11; Linux x86_64; pl) Opera 11.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.62'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; X11; Linux x86_64; de) Opera 10.62');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686; ja) Opera 10.10');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.62'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7133,18331,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; en) Opera 11.62');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => NULL, 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,17470,18092, 'Mozilla/5.0 (; U; ; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.5');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,17470,18092, 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.61'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7133,3403,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; en) Opera 11.61');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '9.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.00');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '10.63'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; en) Opera 10.63');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -134,12 +182,28 @@ function _H61($useragent) {
     $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; en) Opera 11.01');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '10.53'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Edition Turbo; YB/3.5.1; ru) Opera 10.00');
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; ko) Opera 10.53');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; pl) Opera 11.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.63'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; ru) Opera 10.63');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '11.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -147,23 +211,279 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; ru) Opera 11.11');
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; en) Opera 11.11');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => NULL, 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.64'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,17470,18092, 'Mozilla/5.0 (; U; ; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.5');
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 11.64');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.51'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,17470,18092, 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera');
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 11.51');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 10.10');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; ru) Opera 10.60');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.11'), 1 => array(0 => 'compatible', 1 => 'ru,ru-RU'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; ru) Opera 11.11 (ru,ru-RU;q=0.9,en;q=0.8)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 10.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '12.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 12.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; en) Opera 11.10');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.62'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,18331,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 11.62');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.61'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,3403,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 11.61');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.01');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.01');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.02');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.0', 1 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.0	Opera 8.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17213,18092, 'Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.02');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.54 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.01 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.50  [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 7.60');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.11  [ru]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.60'), 1 => array(0 => 'compatible', 1 => 'IBM EVV/3.0/EAK01AG9/LE)'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.60  [en] (IBM EVV/3.0/EAK01AG9/LE)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.02 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.53'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.53  [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.20'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.20 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.10 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.51'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.51 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows XP) Opera 7.0 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/5.0 (Windows NT 5.1; U) Opera 7.54 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.03 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.04'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.04 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.23'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.23 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '11.52'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -230,108 +550,60 @@ function _H61($useragent) {
     $dl[] = array(15364,7133,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; de) Opera 11.01');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '11.61'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,7133,3403,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; de) Opera 11.61');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; en) Opera 11.50');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.54 [en]');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; fr) Opera 11.00');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.64'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.01 [en]');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; en) Opera 11.64');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '10.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.50  [en]');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.1; ru) Opera 10.10');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.51'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.51  [ru]');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; en) Opera 11.10');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '11.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 7.60');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; en) Opera 11.11');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '12.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.11  [ru]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.23'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.23  [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.60'), 1 => array(0 => 'compatible', 1 => 'IBM EVV/3.0/EAK01AG9/LE)'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.60  [en] (IBM EVV/3.0/EAK01AG9/LE)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.02 [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.03  [ru]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.53'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.53  [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.20'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.20 [de]');
+    $dl[] = array(15364,7133,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; en) Opera 12.00');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.21'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -350,100 +622,28 @@ function _H61($useragent) {
     $dl[] = array(15364,5690,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.24');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '9.27'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; en) Opera 9.27');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.26'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.26');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '9.64'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,5690,18337,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; YB/3.5.1; ru) Opera 9.64');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.00');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 8.01');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.01');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/5.0 (Windows NT 5.1; U; en) Opera 8.00');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.0');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.02');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.0', 1 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 8.0	Opera 8.0');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '11.61'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,3403,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; en) Opera 11.61');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '11.62'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,7133,18331,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; de) Opera 11.62');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17285,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0; ja) Opera 10.00');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17285,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; en) Opera 11.00');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
@@ -462,20 +662,20 @@ function _H61($useragent) {
     $dl[] = array(15364,5690,17215,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 9.52');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,4811,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.0');
+    $dl[] = array(15364,5690,17215,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; en) Opera 9.50');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '11.62'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.51'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,18331,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; de) Opera 11.62');
+    $dl[] = array(15364,5690,17215,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; ru) Opera 9.51');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '11.61'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -484,6 +684,150 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,17285,3403,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; en) Opera 11.61');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,4811,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; en) Opera 9.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.51'), 1 => array(0 => 'Linux i686'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17260,18092, 'Mozilla/5.0 (Linux i686; U; en; rv:1.9.1.6) Gecko/X Firefox/3.5.6 Opera 10.51');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0; ja) Opera 10.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,17470,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; en) Opera 11.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '12.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,17470,18092, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0; en) Opera 12.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.26'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0; en) Opera 9.26');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.0) Opera 7.02 Bork-edition [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.01'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/5.0 (Windows NT 5.0; U) Opera 7.01 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/5.0 (Windows NT 5.0; U) Opera 7.11 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.23'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) Opera 7.23 [ca]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.21'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/5.0 (Windows NT 5.0; U) Opera 7.21 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) Opera 7.11 [fr]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.0) Opera 7.01 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.10'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/3.0 (Windows NT 5.0; U) Opera 7.10 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.0) Opera 7.03 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) Opera 7.50 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.27'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686; en) Opera 9.27');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.22'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686; en) Opera 9.22');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -510,36 +854,12 @@ function _H61($useragent) {
     $dl[] = array(15364,17017,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 2000) Opera 6.03 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '7.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,7127,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.0) Opera 7.02 Bork-edition [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.01'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,7127,4810,18092, 'Mozilla/5.0 (Windows NT 5.0; U) Opera 7.01 [en]');
-    $ls = $ns;
-  }
   $ns = E61($segments, array(0 => array(0 => '9.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,18110,18337,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux x86_64; en) Opera 9.60');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17285,17215,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0; en) Opera 9.5');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -566,12 +886,12 @@ function _H61($useragent) {
     $dl[] = array(15364,17188,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 4.0) Opera 7.0 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.27'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.23'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,18405,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686; en) Opera 9.27');
+    $dl[] = array(15364,17188,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 4.0) Opera 7.23 [de]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -582,28 +902,12 @@ function _H61($useragent) {
     $dl[] = array(15364,5448,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows ME) Opera 7.11  [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.70', 1 => '9.70'), 1 => array(0 => 'Windows NT 5.1', 1 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,18407,18092, 'CS-HTTPRequest_Opera/9.70 (Windows NT 5.1; U; en) TMO-US_LEO, Opera/9.70 (Windows NT 5.1; U; en) TMO-US_LEO');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'Windows NT 5.2'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,18407,18092, 'Opera 9.7 (Windows NT 5.2; U; en)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows XP) Opera 6.0  [en]');
+    $dl[] = array(15364,17285,17215,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.0; en) Opera 9.5');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'Windows XP'), 2 => NULL, 3 => NULL), $ls);
@@ -630,52 +934,44 @@ function _H61($useragent) {
     $dl[] = array(15364,5690,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows XP) Opera 6.06 [fr]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.06'), 1 => array(0 => 'Windows XP'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,7127,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; en) Opera 8.01');
+    $dl[] = array(15364,5690,17466,18092, 'Mozilla/5.0 (Windows XP; U) Opera 6.06 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.04'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,7127,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; en) Opera 8.0');
+    $dl[] = array(15364,5690,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows XP) Opera 6.04 [de]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'Windows 98'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,6704,4812,18092, 'Mozilla/4.0 (Windows 98; US) Opera 10.00 [en]');
+    $dl[] = array(15364,5690,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows XP) Opera 6.01  [ru]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.12'), 1 => array(0 => 'Windows 98'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.76 (Windows 98; U) Opera 5.12 [en]');
+    $dl[] = array(15364,5690,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows XP) Opera 6.0 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.70'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 5.02 [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.64'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,7127,18337,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; de) Opera 9.64');
+    $dl[] = array(15364,18110,18407,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux i686 ; en) Opera 9.70');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '7.21'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -694,6 +990,62 @@ function _H61($useragent) {
     $dl[] = array(15364,6704,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows 98) Opera 7.02 [en]');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '7.20'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) Opera 7.20 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) Opera 7.54');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows 98) Opera 7.03 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98) Opera 7.50 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; en) Opera 8.01');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; en) Opera 8.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; de) Opera 8.02');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -702,60 +1054,52 @@ function _H61($useragent) {
     $dl[] = array(15364,18110,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; ; Linux i686) Opera 7.50 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.11'), 1 => array(0 => 'Linux 2.4.21-0.13mdk i686'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,5448,3772,18092, 'Smartphone  Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65');
+    $dl[] = array(15364,18110,4810,18092, 'Mozilla/5.0 (Linux 2.4.21-0.13mdk i686; U) Opera 7.11 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.19'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.19 [jp]');
+    $dl[] = array(15364,18110,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux i686) Opera 7.54 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'X11'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.11 [en]');
+    $dl[] = array(15364,18110,4810,18092, 'Mozilla/5.0 (X11; Linux i686; U) Opera 7.54 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Mac_PowerPC) Opera 5.0  [en]');
+    $dl[] = array(15364,17188,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT 4.0) Opera 6.01 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.12'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.04'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.12 [de]');
+    $dl[] = array(15364,17188,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT 4.0) Opera 6.04 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.05'), 1 => array(0 => 'Windows NT 4.0'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5690,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.65 [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.60 [en]');
+    $dl[] = array(15364,17188,17466,18092, 'Mozilla/5.0 (Windows NT 4.0; U) Opera 6.05 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -763,71 +1107,31 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.7-2 i686) Opera 6.0  [en]');
+    $dl[] = array(15364,17188,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT 4.0) Opera 6.0 [de]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '6.03'), 1 => array(0 => 'Linux 2.4.18-18.7.x i686'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,17466,18092, 'Mozilla/5.0 (Linux 2.4.18-18.7.x i686; U) Opera 6.03 [en]');
+    $dl[] = array(15364,17188,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT 4.0) Opera 6.02 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.4'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.70', 1 => '9.70'), 1 => array(0 => 'Windows NT 5.1', 1 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,7133,18404,18092, 'Opera 9.4 (Windows NT 6.1; U; en)');
+    $dl[] = array(15364,5690,18407,18092, 'CS-HTTPRequest_Opera/9.70 (Windows NT 5.1; U; en) TMO-US_LEO, Opera/9.70 (Windows NT 5.1; U; en) TMO-US_LEO');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.4', 1 => '9.4'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'Windows NT 5.2'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,7133,18404,18092, 'Opera 9.4 (Windows NT 6.1; U; en)	Opera 9.4');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17595,18120,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Mac_PowerPC Mac OS X; en) Opera 8.02');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15526,5690,4626,18092, 'HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.4'), 1 => array(0 => 'Windows NT 5.3'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17350,18404,18092, 'Opera 9.4 (Windows NT 5.3; U; en)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11838,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola MOTOROKR E6; 2647) MOT-MOTOROKR E6/R533_G_11.12.10P Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [vi]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.5'), 3 => array(0 => '10.10')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17017,4393,18092, 'ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10');
+    $dl[] = array(15364,5690,18407,18092, 'Opera 9.7 (Windows NT 5.2; U; en)');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '7.2'), 1 => array(0 => 'WILLCOM'), 2 => NULL, 3 => NULL), $ls);
@@ -846,20 +1150,76 @@ function _H61($useragent) {
     $dl[] = array(15364,17017,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows ME) Opera 7.11 [en]');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '7.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows ME) Opera 7.03 [de]');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '7.54'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows ME) Opera 7.54 [en]');
+    $dl[] = array(15364,17017,4810,18092, 'Mozilla/4.0 (compatible; MSIE 5.23; Mac_PowerPC) Opera 7.54  [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.53'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,6704,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 6.01  [en]');
+    $dl[] = array(15364,17017,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows ME) Opera 7.53 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.12'), 1 => array(0 => 'Windows 98'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.76 (Windows 98; U) Opera 5.12 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 5.02 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.12'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 5.12 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 5.11  [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'Windows 98'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,4812,18092, 'Mozilla/4.0 (Windows 98; US) Opera 10.00 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '6.12'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,18397,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.20-4GB i686) Opera 6.12 [de]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -867,31 +1227,175 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18110,18397,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.20-13.7 i686) Opera 6.11 [de]');
+    $dl[] = array(15364,18110,18397,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.4 i686) Opera 6.11 [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12191,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5) garmin-asus-Nuvifone-M10/1.0 Opera9.5');
+    $dl[] = array(15364,6704,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; de) Opera 8.02');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.4'), 3 => array(0 => '10.00')), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17017,4812,18092, 'TecomM500 1.0 20110421 1.0  Opera/9.80 (MTK; Nucleus; U; zh-TW) Presto/2.4.18 Version/10.00');
+    $dl[] = array(15364,18110,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.7-2 i686) Opera 6.0  [en]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'SunOS 5.8 sun4u'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.03'), 1 => array(0 => 'Linux 2.4.18-18.7.x i686'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,18146,4809,18092, 'Mozilla/5.0 (SunOS 5.8 sun4u; U) Opera 5.0 [en]');
+    $dl[] = array(15364,18110,17466,18092, 'Mozilla/5.0 (Linux 2.4.18-18.7.x i686; U) Opera 6.03 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '6.03'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.20-4GB i686) Opera 6.03 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.64'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7127,18337,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; de) Opera 9.64');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.19'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.19 [jp]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.11 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.12'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows ME) Opera 5.12 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4809,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Mac_PowerPC) Opera 5.0 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '6.01'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,6704,17466,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows 98) Opera 6.01 [de]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5448,3772,18092, 'Smartphone  Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.65 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1) Opera 8.60 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.5'), 3 => array(0 => '10.10')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4393,18092, 'ASTRO36_TD/v3 MAUI/10A1032MP_ASTRO_W1052 Release/31.12.2010 Browser/Opera Profile/MIDP-2.0 Configuration/CLDC-1.1 Sync/SyncClient1.1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,18120,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Mac_PowerPC Mac OS X; en) Opera 8.02');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.02'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; ; Linux armv5tejl; U) Opera 8.02 [en_US] Maemo browser 0.4.34 N770/SU-18');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15526,5690,4626,18092, 'HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.4'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7133,18404,18092, 'Opera 9.4 (Windows NT 6.1; U; en)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.4', 1 => '9.4'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7133,18404,18092, 'Opera 9.4 (Windows NT 6.1; U; en)	Opera 9.4');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11838,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola MOTOROKR E6; 2647) MOT-MOTOROKR E6/R533_G_11.12.10P Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [vi]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.4'), 1 => array(0 => 'Windows NT 5.3'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17350,18404,18092, 'Opera 9.4 (Windows NT 5.3; U; en)');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -902,12 +1406,44 @@ function _H61($useragent) {
     $dl[] = array(15364,5448,3772,18092, 'htc-cleo/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240) Opera 8.65 [en]');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.4'), 3 => array(0 => '10.00')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,4812,18092, 'TecomM500 1.0 20110421 1.0  Opera/9.80 (MTK; Nucleus; U; zh-TW) Presto/2.4.18 Version/10.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12191,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5) garmin-asus-Nuvifone-M10/1.0 Opera9.5');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'SunOS 5.8 sun4u'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18146,4809,18092, 'Mozilla/5.0 (SunOS 5.8 sun4u; U) Opera 5.0 [en]');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '9.70'), 1 => array(0 => 'Windows NT  5.1'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,5222,18407,18092, 'XV6875.1 Opera/9.70 (Windows NT  5.1; U; en)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.5'), 3 => array(0 => '10.10')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,18272,18092, 'Browser/Opera  Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.4'), 3 => array(0 => '10.00')), $ls);
@@ -918,12 +1454,12 @@ function _H61($useragent) {
     $dl[] = array(12715,17017,4812,18092, 'Spice M6800  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.11'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12039,16000,3772,18092, 'MOTORIZR-Z8/46.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 381) Opera 8.65 [en]');
+    $dl[] = array(15364,17017,18397,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; UNIX) Opera 6.11 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.80'), 1 => array(0 => 'MTK'), 2 => array(0 => '2.4'), 3 => array(0 => '10.00')), $ls);
@@ -932,6 +1468,14 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(16696,17017,4812,18092, 'Spice M6900  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12039,16000,3772,18092, 'MOTORIZR-Z8/46.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 381) Opera 8.65 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.50'), 1 => array(0 => 'Linux'), 2 => NULL, 3 => NULL), $ls);
@@ -963,6 +1507,14 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
+    $dl[] = array(13296,5690,17470,18092, 'Swisscom/1.0/X1i/ Opera/9.50 (Windows NT 5.1; U; de)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
     $dl[] = array(14180,5690,17470,18092, 'Touch_HD_T8285 Opera/9.50 (Windows NT 5.1; U; en)');
     $ls = $ns;
   }
@@ -982,12 +1534,12 @@ function _H61($useragent) {
     $dl[] = array(13617,5690,17215,18092, 'Opera/9.50 (Windows NT 5.1; MDA_Vario_V/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1; U; de)');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13296,5690,17470,18092, 'Swisscom/1.0/X1i/ Opera/9.50 (Windows NT 5.1; U; de)');
+    $dl[] = array(12945,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 780) MOT-A780/R52_G_0D.37.A2P Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.00'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -995,15 +1547,7 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12945,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 781) MOT-A780/R532L4_G_11.40.0FR Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [es-la]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12945,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 780) MOT-A780/R52_G_0D.37.A2P Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]');
+    $dl[] = array(12945,17486,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 781) MOT-A780/R532_G_11.00.46P Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '7.50'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1020,22 +1564,6 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,7133,4810,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.1) Opera 7.54  [en]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13315,5690,17470,18092, 'Xda_Guide Opera/9.50 (Windows NT 5.1; U; de)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13839,16000,3772,18092, 'MOTO-Z10/50.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 335) Opera 8.65 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '7.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1059,15 +1587,15 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17511,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3G) Opera 8.60 [ja]');
+    $dl[] = array(17570,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3J) Opera 8.60 [ja]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17570,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3J) Opera 8.60 [ja]');
+    $dl[] = array(13315,5690,17470,18092, 'Xda_Guide Opera/9.50 (Windows NT 5.1; U; en)');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1076,6 +1604,38 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,16000,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Series 60/4.0812.4.2.1; 9730) Opera 8.65 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17511,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3G) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13839,16000,3772,18092, 'MOTO-Z10/50.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 335) Opera 8.65 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,7133,17213,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 6.1; en) Opera 8.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17505,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3C) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1091,15 +1651,23 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17877,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-HI3D) Opera 8.60 [ja]');
+    $dl[] = array(17565,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3K) Opera 8.60 [ja]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12242,5690,17470,18092, 'garmin-asus-Nuvifone-M20/1.0 Opera/9.50 (Windows NT 5.1; U; en)');
+    $dl[] = array(17702,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-TS3N) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17569,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SH3E) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
@@ -1110,20 +1678,20 @@ function _H61($useragent) {
     $dl[] = array(16193,5690,17470,18092, 'Xda_Serra/480x640 Opera/9.50 (Windows NT 5.1; U; en)');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12242,5690,17470,18092, 'garmin-asus-Nuvifone-M20/1.0 Opera/9.50 (Windows NT 5.1; U; en)');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '4.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,17017,18398,18092, 'Mozilla/4.0 (compatible; Opera 4.0)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17633,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SH36) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
@@ -1134,20 +1702,20 @@ function _H61($useragent) {
     $dl[] = array(16205,5690,17470,18092, 'Xda_Ignito/480x640 Opera/9.50 (Windows NT 5.1; U; en)');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '6.20'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,16000,17470,18092, 'Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.20 [en]');
+    $dl[] = array(17877,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-HI3D) Opera 8.60 [ja]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17765,5222,4626,18092, 'dopodT8588/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(17633,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SH36) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.50'), 1 => array(0 => 'Linux'), 2 => NULL, 3 => NULL), $ls);
@@ -1158,28 +1726,12 @@ function _H61($useragent) {
     $dl[] = array(11878,17486,17470,18092, 'Opera/8.50 (Linux; Motorola MOTOROKR Z6; 3443; U) MOT-MOTOROKR Z6/R60_G_80.33.4FR Profile/MIDP-2.0 Configuration/CLDC-1.1 [en-gb]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '6.20'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17503,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA39) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'ZTE/ZTE-G R352/TELCEL-P160A8B01-EnEs-MX01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14160,17017,4732,18092, 'Mozilla/4.0(ZTE/ZTE-G R352/TELCEL-P160A8B01-EnEs-MX01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'ZTE/ZTE-G R352/P160A8B01-FrEsPtHiArZh-01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14160,17017,4732,18092, 'Mozilla/4.0(ZTE/ZTE-G R352/P160A8B01-FrEsPtHiArZh-01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
+    $dl[] = array(15364,16000,17470,18092, 'Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.20 [en]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '480', 1 => '8.65'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
@@ -1196,6 +1748,54 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(14778,16000,17470,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola M1000;817c) Opera 7.50 [en]./M1000./1.0');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17765,5222,4626,18092, 'dopodT8588/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17631,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SH33) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17501,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA38) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17525,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-HI3B) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'ZTE/ZTE-G R352/TELCEL-P160A8B01-EnEs-MX01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14160,17017,4732,18092, 'Mozilla/4.0(ZTE/ZTE-G R352/TELCEL-P160A8B01-EnEs-MX01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'ZTE/ZTE-G R352/P160A8B01-FrEsPtHiArZh-01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14160,17017,4732,18092, 'Mozilla/4.0(ZTE/ZTE-G R352/P160A8B01-FrEsPtHiArZh-01/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => array(0 => 'dopod-S900c/1.04.730.2'), 2 => NULL, 3 => NULL), $ls);
@@ -1227,22 +1827,6 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17501,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA38) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17631,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SH33) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
     $dl[] = array(17883,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3D) Opera 8.60 [ja]');
     $ls = $ns;
   }
@@ -1251,47 +1835,7 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17525,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-HI3B) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17166,5448,3772,18092, 'ASUS1210/V4.2.4 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; ASUS1210) Opera 8.65');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17528,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-KC3B) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17583,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SA3C) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5222,4626,18092, 'dopodT3333/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12286,5690,17470,18092, 'ASUS-P835/1.0 Opera/9.50 (Windows NT 5.1; U; en)');
+    $dl[] = array(17503,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA39) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => NULL, 2 => NULL, 3 => NULL), $ls);
@@ -1307,7 +1851,39 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17504,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3A) Opera 8.60 [ja]');
+    $dl[] = array(17583,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SA3C) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12286,5690,17470,18092, 'ASUS-P835/1.0 Opera/9.50 (Windows NT 5.1; U; en)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.65'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17166,5448,3772,18092, 'ASUS1210/V4.2.4 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; ASUS1210) Opera 8.65');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17914,5049,17470,18092, 'dopodT5388/1.0 WindowsMobile/6.1 CEOS/5.2 release/1.6 Opera/9.5 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17528,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-KC3B) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1323,23 +1899,15 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17862,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-TS3E) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
     $dl[] = array(17527,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-HI3C) Opera 8.60 [ja]');
     $ls = $ns;
   }
-  $ns = E61($segments, array(0 => array(0 => '9.5'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E61($segments, array(0 => array(0 => '9.7'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17914,5049,17470,18092, 'dopodT5388/1.0 WindowsMobile/6.1 CEOS/5.2 release/1.6 Opera/9.5 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(15364,5222,4626,18092, 'dopodT3333/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 Opera/9.7 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '6.0'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1348,6 +1916,22 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,16000,17466,18092, 'Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.0 [en]./MOT-A920./P325');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '6.10'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,16000,18397,18092, 'Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Series 60;424) Opera 6.10 [en]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17504,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-CA3A) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1363,23 +1947,7 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17647,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-ST34) Opera 8.60 [ja]');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/Vodafone546/VDF-P160A61B01-FrEsPtArZh-GH03/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17002,17017,4732,18092, 'Mozilla/4.0(Vodafone/1.0/Vodafone546/VDF-P160A61B01-FrEsPtArZh-GH03/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
-    $ls = $ns;
-  }
-  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14770,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-TS3H) Opera 8.60 [ja]');
+    $dl[] = array(17862,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-TS3E) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1388,6 +1956,22 @@ function _H61($useragent) {
       unset($dl);
     }
     $dl[] = array(17589,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3E) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17647,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-ST34) Opera 8.60 [ja]');
+    $ls = $ns;
+  }
+  $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17641,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3B) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);
@@ -1414,6 +1998,14 @@ function _H61($useragent) {
     $dl[] = array(17555,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-MA33) Opera 8.60 [ja]');
     $ls = $ns;
   }
+  $ns = E61($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/Vodafone546/VDF-P160A61B01-FrEsPtArZh-GH03/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)'), 2 => NULL, 3 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17002,17017,4732,18092, 'Mozilla/4.0(Vodafone/1.0/Vodafone546/VDF-P160A61B01-FrEsPtArZh-GH03/Operamini4.2/MIDP-2.0 Configuration/CLDC-1.1)');
+    $ls = $ns;
+  }
   $ns = E61($segments, array(0 => array(0 => '9.50'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1435,7 +2027,7 @@ function _H61($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17641,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3B) Opera 8.60 [ja]');
+    $dl[] = array(14770,17017,3772,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; KDDI-TS3H) Opera 8.60 [ja]');
     $ls = $ns;
   }
   $ns = E61($segments, array(0 => array(0 => '8.60'), 1 => array(0 => 'compatible'), 2 => NULL, 3 => NULL), $ls);

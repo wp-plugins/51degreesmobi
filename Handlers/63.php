@@ -97,12 +97,20 @@ function _H63($useragent) {
     $dl[] = array(18088,17017,4732,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/4.2.13337/504; U; ru) Presto/2.2.0');
     $ls = $ns;
   }
+  $ns = E63($segments, array(0 => array(0 => '4.2'), 1 => array(0 => 'Z331'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,4732,18092, 'Z331; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.22250; U; en-US) Opera 9.50');
+    $ls = $ns;
+  }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '4.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,4732,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.2.24756/26.1532; U; en)');
+    $dl[] = array(18088,17017,4732,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.2.21071/27.1659; U; en)');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (VRE'), 2 => array(0 => '4.2')), $ls);
@@ -110,7 +118,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,4732,18092, 'Opera/9.80 (VRE; Opera Mini/4.2.75/27.1573; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,4732,18092, 'Opera/9.80 (VRE; Opera Mini/4.2/28.1857; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.2')), $ls);
@@ -118,7 +126,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,4732,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.20464/27.1597; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,4732,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.2.22537/28.1914; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'aaaOpera/9.50 (J2ME/MIDP'), 2 => array(0 => '4.1')), $ls);
@@ -150,15 +158,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,4307,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.1.15082/27.1573; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (MTK'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17371,18092, 'Opera/9.80 (MTK; Opera Mini/5.1.3086/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $dl[] = array(18088,17017,4307,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.1.15082/28.1857; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/10.61 (J2ME/MIDP'), 2 => array(0 => '5.1')), $ls);
@@ -174,7 +174,15 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17371,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/5.1.2146/26.1532; U; en)');
+    $dl[] = array(18088,17017,17371,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/5.1.2146/27.1659; U; en)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (MTK'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17371,18092, 'Opera/9.80 (MTK; Opera Mini/5.1.3119/28.1857; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.1')), $ls);
@@ -182,7 +190,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17371,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.1.24009/27.1597; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,17371,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.1.24009/28.1914; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '4.4')), $ls);
@@ -193,12 +201,20 @@ function _H63($useragent) {
     $dl[] = array(18088,17017,17369,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/4.4.14881/960; U; en) Presto/2.2.0');
     $ls = $ns;
   }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '4.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17369,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.4.28962/27.1659; U; en)');
+    $ls = $ns;
+  }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.4')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17369,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29476/27.1597; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,17369,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.4.29476/28.1914; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.5')), $ls);
@@ -206,7 +222,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18095,18109,17373,18092, 'Opera/9.80 (Series 60; Opera Mini/6.5.27354/27.1573; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18095,18109,17373,18092, 'Opera/9.80 (Series 60; Opera Mini/6.5.27309/27.1741; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '6.5')), $ls);
@@ -214,7 +230,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17373,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/6.5.28416/26.1532; U; en)');
+    $dl[] = array(18088,17017,17373,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/6.5.28416/27.1659; U; en)');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '6.5')), $ls);
@@ -222,7 +238,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17373,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6.5.26955/27.1597; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,17373,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6.5.26955/27.1741; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Bada'), 2 => array(0 => '6.5')), $ls);
@@ -230,7 +246,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17373,18092, 'Opera/9.80 (Bada; Opera Mini/6.5.11/27.1597; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,17373,18092, 'Opera/9.80 (Bada; Opera Mini/6.5/27.1993; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.1')), $ls);
@@ -238,7 +254,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18095,18109,17780,18092, 'Opera/9.80 (Series 60; Opera Mini/6.1.26266/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $dl[] = array(18095,18109,17780,18092, 'Opera/9.80 (Series 60; Opera Mini/6.1.25570/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => NULL), $ls);
@@ -289,22 +305,6 @@ function _H63($useragent) {
     $dl[] = array(18088,17017,4860,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6.24093/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '5.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17372,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/5.21463/25.925; U; en)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17372,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.22371/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -337,6 +337,14 @@ function _H63($useragent) {
     $dl[] = array(18088,17017,17780,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6.1.25378/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '6.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17780,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/6.1.27786/26.1208; U; en)');
+    $ls = $ns;
+  }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '6/2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -345,20 +353,20 @@ function _H63($useragent) {
     $dl[] = array(18088,17017,17780,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '6.1')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17780,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/6.1.27786/26.1467; U; en)');
+    $dl[] = array(18088,17017,17372,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.22371/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.2')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '5.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18095,18109,4860,18092, 'Opera/9.80 (Series 60; Opera Mini/6.24455/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $dl[] = array(18088,17017,17372,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/5.21463/27.1659; U; en)');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Windows Mobile'), 2 => array(0 => '5.1')), $ls);
@@ -367,222 +375,6 @@ function _H63($useragent) {
       unset($dl);
     }
     $dl[] = array(18182,5448,17371,18092, 'Opera/9.80 (Windows Mobile; Opera Mini/5.1.21594/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '3.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17368,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.10423/1724; en; U; ssr)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18095,18109,17371,18092, 'Opera/9.80 (Series 60; Opera Mini/5.1.22783/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '7.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18255,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/7.28870/27.1407; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '7.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18255,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/7.29530/26.1532; U; en)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '7.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18095,18109,18255,18092, 'Opera/9.80 (Series 60; Opera Mini/7.28965/27.1366; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '2.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18123,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/2.0.4509/1724; en; U; ssr)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18122,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini; en; U; ssr)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18122,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini; U; en)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18122,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18057,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.191/26.1521; U; en) Presto/2.8.119 400X240 LG VN271');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '6.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,5567,17780,18092, 'Opera/9.80 (BREW; Opera Mini/6.143/27.1597; U; id) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18159,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.3521/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18332,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/2.1; http:/19.864; U; en) Presto/2.5.25');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18332,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/2.1141/26.1208; U; en)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (MTK'), 2 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18332,18092, 'Opera/9.80 (MTK; Opera Mini/2.1198/27.1573; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.189/26.1319; U; en) Presto/2.8.119 400X240 LG VN271');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5/2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,5567,17370,18092, 'Opera/9.80 (BREW; Opera Mini/5/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.8')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,15774,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.8462/27.1530; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.9')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18396,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.9800/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1'), 2 => array(0 => '4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18410,18092, 'lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1; Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10269/hifi/tmobile/uk; en; U)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18410,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/4.0.10013/724; U; en) Presto/2.2.0');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18410,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.0.13574/20.2485; U; en) Presto/2.5.25');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18410,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10822/546; en; U; ssr)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '3.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17367,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/3.0.6306/1724; en; U; ssr)');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16488,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.182/26.1319; U; en) Presto/2.8.119 240X400 Pantech CDM8992');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '9.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18274,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/9.5.Turbo Silver/416; U; en) Presto/2.2.0');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,18274,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.5/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '5.0')), $ls);
@@ -614,31 +406,55 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17370,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.0.17443/24.746; U; en) Presto/2.5.25 Version/10.54');
+    $dl[] = array(18088,17017,17370,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.0.22371/28.1857; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '2.9')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,18402,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/2.99/26.1532; U; en)');
+    $dl[] = array(18095,18109,4860,18092, 'Opera/9.80 (Series 60; Opera Mini/6.24455/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.8')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '3.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,18399,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80/27.1324; U; en) Presto/2.8.119 Version/11.10');
+    $dl[] = array(18088,17017,17368,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.10423/1724; en; U; ssr)');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.8')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1'), 2 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,18400,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $dl[] = array(18088,17017,18410,18092, 'lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1; Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10269/hifi/tmobile/uk; en; U)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18410,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/4.0.10013/724; U; en) Presto/2.2.0');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18410,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10822/546; en; U; ssr)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18410,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.0.10031/28.1914; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '1.0')), $ls);
@@ -679,14 +495,6 @@ function _H63($useragent) {
       unset($dl);
     }
     $dl[] = array(18088,17017,17470,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/4.5.13337/504; U; en) Presto/2.2.0');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18088,17017,17470,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.30876 Mod For Indosat By Harrz-Networks/1122; U; en) Presto/2.2.0');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '4.6')), $ls);
@@ -734,7 +542,311 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,17470,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.3095/1662; en; U; ssr)');
+    $dl[] = array(18088,17017,17470,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.5005/1662; en; U; ssr)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17470,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.5.29721/27.1667; U; zh) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4/2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17470,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4/27.1813; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17470,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/6.0.24093/28.1857; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18057,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.191/27.1591; U; en) Presto/2.8.119 400X240 LG VN271');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18109,17371,18092, 'Opera/9.80 (Series 60; Opera Mini/5.1.22783/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '7.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18255,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/7.29530/26.1532; U; en)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '7.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18255,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/7.29915/27.1940; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '7.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18109,18255,18092, 'Opera/9.80 (Series 60; Opera Mini/7.29974/27.1940; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18122,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini; en; U; ssr)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18122,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini; U; en)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18122,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18123,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/2.0.4509/1724; en; U; ssr)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.7')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18109,17470,18092, 'Opera/9.80 (Series 60; Opera Mini/6.7.29868/27.1667; U; zh) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18109,17470,18092, 'Opera/9.80 (Series 60; Opera Mini/6.0.24455/28.1914; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18332,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/2.1; http:/19.864; U; en) Presto/2.5.25');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18332,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/2.1141/27.1659; U; en)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (MTK'), 2 => array(0 => '2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18332,18092, 'Opera/9.80 (MTK; Opera Mini/2.1198/27.1993; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '6.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17780,18092, 'Opera/9.80 (BREW; Opera Mini/6.143/27.1940; U; id) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16488,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.182/27.1591; U; en) Presto/2.8.119 240X400 Pantech CDM8992');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.189/26.1319; U; en) Presto/2.8.119 400X240 LG VN271');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18159,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.3521/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5/2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17370,18092, 'Opera/9.80 (BREW; Opera Mini/5/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17370,18092, 'Opera/9.80 (BREW; Opera Mini/5.0/28.1914; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '6.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17470,18092, 'Opera/9.80 (BREW; Opera Mini/6.81/27.1591; U; en) Presto/2.8.119 240X320 Casio C781');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,5567,17470,18092, 'Opera/9.80 (BREW; Opera Mini/6.0.0/27.2020; U; id) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,15774,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.8462/27.1741; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '4.9')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18396,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/4.9751/27.1662; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/8.01 (J2ME/MIDP'), 2 => array(0 => '3.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,17367,18092, 'Opera/8.01 (J2ME/MIDP; Opera Mini/3.0.6306/1724; en; U; ssr)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/iPhone'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12280,17779,17370,18092, 'Opera/9.80 (J2ME/iPhone;Opera Mini/5.0.X/886; U; ja)Presto/2.4.15');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16519,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.180/27.1591; U; en) Presto/2.8.119 320X240 Pantech TXT8045');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.50 (J2ME/MIDP'), 2 => array(0 => '2.9')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18402,18092, 'Opera/9.50 (J2ME/MIDP; Opera Mini/2.99/27.1659; U; en)');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '9.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18274,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/9.5.Turbo Silver/416; U; en) Presto/2.2.0');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18274,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.5/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14663,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.10/27.1591; U; en) Presto/2.8.119 320X240 LG VX9200');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.185/27.1591; U; en) Presto/2.8.119 320X240 ZTE F-450');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17370,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/5.0 (Windows; U; Windows NT 5.1; en) AppleWebKit/886; U; en) Presto/2.4.15');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18399,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80/27.1324; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18400,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '4.2')), $ls);
@@ -742,7 +854,15 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,5567,4732,18092, 'Opera/9.80 (BREW; Opera Mini/4.2.99/26.1305; U; id) Presto/2.8.119 Version/10.54');
+    $dl[] = array(18088,5567,4732,18092, 'Opera/9.80 (BREW; Opera Mini/4.2.99/27.1324; U; id) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '6.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18109,18395,18092, 'Opera/9.80 (Series 60; Opera Mini/6.6.29184/27.1486; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
@@ -750,15 +870,15 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16519,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.182/26.1319; U; en) Presto/2.8.119 320X240 Pantech TXT8045');
+    $dl[] = array(13856,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.173/26.1521; U; en) Presto/2.8.119 400X240 LG VN270');
     $ls = $ns;
   }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/MIDP'), 2 => array(0 => '9.8')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14663,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.10/26.1434; U; en) Presto/2.8.119 320X240 LG VX9200');
+    $dl[] = array(15364,18094,18400,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.4')), $ls);
@@ -782,23 +902,7 @@ function _H63($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13856,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.1.173/26.1434; U; en) Presto/2.8.119 400X240 LG VN270');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (BREW'), 2 => array(0 => '5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
     $dl[] = array(12092,5567,17371,18092, 'Opera/9.80 (BREW; Opera Mini/5.16/26.1434; U; en) Presto/2.8.119 800X480 LG VX11000');
-    $ls = $ns;
-  }
-  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (J2ME/iPhone'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12280,17779,17370,18092, 'Opera/9.80 (J2ME/iPhone;Opera Mini/5.0.X/886; U; ja)Presto/2.4.15');
     $ls = $ns;
   }
   $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.80 (Series 60'), 2 => array(0 => '9.5')), $ls);
@@ -807,6 +911,22 @@ function _H63($useragent) {
       unset($dl);
     }
     $dl[] = array(18095,18109,18274,18092, 'Opera/9.80 (Series 60; Opera Mini/9.5.27310/26.1305; U; en) Presto/2.8.119 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '9.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18408,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/9.2.Turbo/554; U; en) Presto/2.2.0');
+    $ls = $ns;
+  }
+  $ns = E63($segments, array(0 => NULL, 1 => array(0 => 'Opera/9.60 (J2ME/MIDP'), 2 => array(0 => '9.9')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17017,18409,18092, 'Opera/9.60 (J2ME/MIDP; Opera Mini/9.9.Turbo/960; U; en) Presto/2.2.0');
     $ls = $ns;
   }
   return $dl;

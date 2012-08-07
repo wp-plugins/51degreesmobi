@@ -396,6 +396,62 @@ function _H0($useragent) {
     $dl[] = array(13952,7472,3534,18092, 'Alcatel-OT-806/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710D'), 1 => array(0 => 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710A'), 1 => array(0 => 'Alcatel-OT-710A/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710A/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710A'), 1 => array(0 => 'Alcatel-OT-710A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710', 1 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-710D'), 1 => array(0 => 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-255D'), 1 => array(0 => 'Alcatel-OT-255D/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -492,62 +548,6 @@ function _H0($useragent) {
     $dl[] = array(13391,7472,3534,18092, 'Alcatel-OT-880/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710D'), 1 => array(0 => 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710A'), 1 => array(0 => 'Alcatel-OT-710A/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710A/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710A'), 1 => array(0 => 'Alcatel-OT-710A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710', 1 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710'), 1 => array(0 => 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-710D'), 1 => array(0 => 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,3807,18092, 'Alcatel-OT-710D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
   $ns = E0($segments, array(0 => array(0 => 'OT-305'), 1 => array(0 => 'Alcatel-OT-305/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -612,54 +612,6 @@ function _H0($useragent) {
     $dl[] = array(14537,7472,3534,18092, 'Alcatel-OT-799/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708A'), 1 => array(0 => 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708A'), 1 => array(0 => 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C AppEngine-Google; (+http://code.google.com/appengine; appid: 360hours)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C AppEngine-Google; (+http://code.google.com/appengine; appid: 360hours)');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708', 1 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_803A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -716,6 +668,54 @@ function _H0($useragent) {
     $dl[] = array(12903,17017,3534,18092, 'ALCATEL_one_touch_900M/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708A'), 1 => array(0 => 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708A'), 1 => array(0 => 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C AppEngine-Google; (+http://code.google.com/appengine; appid: 360hours)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C AppEngine-Google; (+http://code.google.com/appengine; appid: 360hours)');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708', 1 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-708/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-708'), 1 => array(0 => 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13661,7472,3807,18092, 'Alcatel-OT-708/1.0 model-orange Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-807A'), 1 => array(0 => 'Alcatel-OT-807A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -756,6 +756,22 @@ function _H0($useragent) {
     $dl[] = array(12548,7472,3534,18092, 'Alcatel-OT-807D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OH5'), 1 => array(0 => 'Alcatel-OH5/1.0 UP.Browser/6.1.0.7.7 (GUI) MMP/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17014,7472,4901,18092, 'Alcatel-OH5/1.0 UP.Browser/6.1.0.7.7 (GUI) MMP/1.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_888A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16385,17017,3534,18092, 'ALCATEL_one_touch_888A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-806A'), 1 => array(0 => 'Alcatel-OT-806A/1.0 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -780,12 +796,20 @@ function _H0($useragent) {
     $dl[] = array(13952,7472,3807,18092, 'Alcatel-OT-806A/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OH5'), 1 => array(0 => 'Alcatel-OH5/1.0 UP.Browser/6.1.0.7.7 (GUI) MMP/1.0')), $ls);
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_506/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17014,7472,4901,18092, 'Alcatel-OH5/1.0 UP.Browser/6.1.0.7.7 (GUI) MMP/1.0');
+    $dl[] = array(15482,17017,3807,18092, 'ALCATEL_one_touch_506/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_506A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15482,17017,3807,18092, 'ALCATEL_one_touch_506A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_306X/1.0 ObigoInternetBrowser/Q03C')), $ls);
@@ -802,6 +826,30 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(12808,17017,3807,18092, 'ALCATEL_one_touch_306X/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15130,17017,3534,18092, 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15130,17017,3534,18092, 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_813A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15130,17017,3534,18092, 'ALCATEL_one_touch_813A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_665/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
@@ -836,6 +884,46 @@ function _H0($useragent) {
     $dl[] = array(12857,17017,3807,18092, 'ALCATEL_one_touch_665/010_02 1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OT-660'), 1 => array(0 => 'Alcatel-OT-660/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12241,7472,3807,18092, 'Alcatel-OT-660/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-660A'), 1 => array(0 => 'Alcatel-OT-660A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12241,7472,3807,18092, 'Alcatel-OT-660A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 model-Bouygues ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 model-Bouygues ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 version 010 03 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 version 010 03 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-303A'), 1 => array(0 => 'Alcatel-OT-303A/1.0 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -868,52 +956,20 @@ function _H0($useragent) {
     $dl[] = array(13899,7472,3807,18092, 'Alcatel-OT-303A/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-710a')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15130,17017,3534,18092, 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
+    $dl[] = array(14151,7472,17470,18092, 'alcatel-ot-710a');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0')), $ls);
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-807a')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15130,17017,3534,18092, 'ALCATEL_one_touch_813D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 model-Bouygues ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 model-Bouygues ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 version 010 03 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 version 010 03 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-505'), 1 => array(0 => 'Alcatel-OT-505/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14333,7472,3807,18092, 'Alcatel-OT-505/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_506/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15482,17017,3807,18092, 'ALCATEL_one_touch_506/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $dl[] = array(12548,7472,17470,18092, 'alcatel-ot-807a');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'OT-363A'), 1 => array(0 => 'Alcatel-OT-363A/1.0 ObigoInternetBrowser/Q03C')), $ls);
@@ -1028,22 +1084,6 @@ function _H0($useragent) {
     $dl[] = array(15364,7472,3807,18092, 'Alcatel-OT-380/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-660'), 1 => array(0 => 'Alcatel-OT-660/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12241,7472,3807,18092, 'Alcatel-OT-660/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-660A'), 1 => array(0 => 'Alcatel-OT-660A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12241,7472,3807,18092, 'Alcatel-OT-660A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
   $ns = E0($segments, array(0 => array(0 => 'OT-S319'), 1 => array(0 => 'Alcatel-OT-S319/1.0 model-orange ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1066,6 +1106,30 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(12288,7472,3807,18092, 'Alcatel-OT-S319A/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C701A'), 1 => array(0 => 'Alcatel-OT-C701A/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701A/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C701A'), 1 => array(0 => 'Alcatel-OT-C701A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C701'), 1 => array(0 => 'Alcatel-OT-C701/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'BE3'), 1 => array(0 => 'Alcatel-BE3/1.0 UP/4')), $ls);
@@ -1252,6 +1316,22 @@ function _H0($useragent) {
     $dl[] = array(15364,7472,17470,18092, 'Alcatel-TH4/1.0 ObigoInternetBrowser/2.0');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OT-600'), 1 => array(0 => 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15270,7472,3807,18092, 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-600'), 1 => array(0 => 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15270,7472,3807,18092, 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-363'), 1 => array(0 => 'Alcatel-OT-363/010_02 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1284,54 +1364,6 @@ function _H0($useragent) {
     $dl[] = array(13629,7472,3807,18092, 'Alcatel-OT-363/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-807a')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12548,7472,17470,18092, 'alcatel-ot-807a');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C701A'), 1 => array(0 => 'Alcatel-OT-C701A/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701A/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C701A'), 1 => array(0 => 'Alcatel-OT-C701A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C701'), 1 => array(0 => 'Alcatel-OT-C701/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15741,7472,3807,18092, 'Alcatel-OT-C701/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-600'), 1 => array(0 => 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15270,7472,3807,18092, 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-600'), 1 => array(0 => 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15270,7472,3807,18092, 'Alcatel-OT-600/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
   $ns = E0($segments, array(0 => array(0 => 'OT-300'), 1 => array(0 => 'Alcatel-OT-300/1.0 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1346,14 +1378,6 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(13130,17017,3807,18092, 'Alcatel_one_touch_214/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-710a')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14151,7472,17470,18092, 'alcatel-ot-710a');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-606a')), $ls);
@@ -1372,6 +1396,14 @@ function _H0($useragent) {
     $dl[] = array(14455,7472,17470,18092, 'alcatel-ot-606a Novarra-Vision/8.0');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_385J/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16396,17017,3807,18092, 'ALCATEL_one_touch_385J/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_602D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1386,6 +1418,22 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(13059,17017,3807,18092, 'ALCATEL_one_touch_602D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-706'), 1 => array(0 => 'Alcatel-OT-706/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12688,7472,3807,18092, 'Alcatel-OT-706/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-706A'), 1 => array(0 => 'Alcatel-OT-706A/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12688,7472,3807,18092, 'Alcatel-OT-706A/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'OT-S320', 1 => 'OT-S320'), 1 => array(0 => 'Alcatel-OT-S320/1.0 ObigoInternetBrowser/Q03C, Alcatel-OT-S320/1.0 ObigoInternetBrowser/Q03C')), $ls);
@@ -1420,20 +1468,28 @@ function _H0($useragent) {
     $dl[] = array(14688,7472,3807,18092, 'Alcatel-OT-S320A/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-706'), 1 => array(0 => 'Alcatel-OT-706/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'OT-S621'), 1 => array(0 => 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12688,7472,3807,18092, 'Alcatel-OT-706/1.0 ObigoInternetBrowser/Q03C');
+    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-706A'), 1 => array(0 => 'Alcatel-OT-706A/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'OT-S621', 1 => 'OT-S621'), 1 => array(0 => 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12688,7472,3807,18092, 'Alcatel-OT-706A/1.0 ObigoInternetBrowser/Q03C');
+    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-S621A'), 1 => array(0 => 'Alcatel-OT-S621A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'BH4R'), 1 => array(0 => 'Alcatel-BH4R/1.0 UP.Browser/6.2.ALCATEL MMP/1.0')), $ls);
@@ -1474,30 +1530,6 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(14683,7472,3807,18092, 'Alcatel-OT-508A/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-S621'), 1 => array(0 => 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-S621', 1 => 'OT-S621'), 1 => array(0 => 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-OT-S621/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-S621A'), 1 => array(0 => 'Alcatel-OT-S621A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15503,7472,3807,18092, 'Alcatel-OT-S621A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'OT-C652a'), 1 => array(0 => 'Alcatel-OT-C652a/1.0 UP.Browser/7.1.0.i.1.106 (GUI) MMP/2.0')), $ls);
@@ -1556,6 +1588,78 @@ function _H0($useragent) {
     $dl[] = array(15266,7472,3625,18092, 'Alcatel-TH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_517D/1.0 Profile/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15572,17017,3807,18092, 'ALCATEL_one_touch_517D/1.0 Profile/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-565A'), 1 => array(0 => 'Alcatel-OT-565A/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15078,7472,3807,18092, 'Alcatel-OT-565A/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_506D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15424,17017,3807,18092, 'ALCATEL_one_touch_506D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C552'), 1 => array(0 => 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C552'), 1 => array(0 => 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C552a'), 1 => array(0 => 'Alcatel-OT-C552a/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552a/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-V670A'), 1 => array(0 => 'Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13075,7472,3807,18092, 'Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-V670'), 1 => array(0 => 'Alcatel-OT-V670/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13075,7472,3807,18092, 'Alcatel-OT-V670/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'Crystal'), 1 => array(0 => 'Alcatel-Crystal/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12823,7472,3807,18092, 'Alcatel-Crystal/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-S853'), 1 => array(0 => 'Alcatel-OT-S853/1.0 UP.Browser/7.1 (GUI) MMP/2.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1578,70 +1682,6 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,7472,3625,18092, 'Alcatel-CTH3/1.0 UP.Browser/6.2.ALCATEL MMP/1.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'MissSixty', 1 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_506D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15424,17017,3807,18092, 'ALCATEL_one_touch_506D/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'ALCATEL_one_touch_517D/1.0 Profile/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15572,17017,3807,18092, 'ALCATEL_one_touch_517D/1.0 Profile/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-I650'), 1 => array(0 => 'Alcatel-OT-I650/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14126,7472,3807,18092, 'Alcatel-OT-I650/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-315M'), 1 => array(0 => 'Alcatel-OT-315M/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14494,7472,3807,18092, 'Alcatel-OT-315M/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-565A'), 1 => array(0 => 'Alcatel-OT-565A/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15078,7472,3807,18092, 'Alcatel-OT-565A/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'OT-v770'), 1 => array(0 => 'Alcatel-OT-v770/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
@@ -1676,52 +1716,36 @@ function _H0($useragent) {
     $dl[] = array(15515,7472,4948,18092, 'Alcatel-BG3-color/1.0 UP.Browser/5.0.3.3.11');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C552'), 1 => array(0 => 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0');
+    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C552'), 1 => array(0 => 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552/1.0 UP.Browser/7.1 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0');
+    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C Novarra-Vision/8.0');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C552a'), 1 => array(0 => 'Alcatel-OT-C552a/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'MissSixty', 1 => 'MissSixty'), 1 => array(0 => 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15637,7472,4893,18092, 'Alcatel-OT-C552a/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0');
+    $dl[] = array(12631,7472,3807,18092, 'Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C, Alcatel-MissSixty/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'Crystal'), 1 => array(0 => 'Alcatel-Crystal/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'OT-I650'), 1 => array(0 => 'Alcatel-OT-I650/1.0 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12823,7472,3807,18092, 'Alcatel-Crystal/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-V670A'), 1 => array(0 => 'Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13075,7472,3807,18092, 'Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-V670'), 1 => array(0 => 'Alcatel-OT-V670/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13075,7472,3807,18092, 'Alcatel-OT-V670/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $dl[] = array(14126,7472,3807,18092, 'Alcatel-OT-I650/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'MISS-SIXTY-MSX-10'), 1 => array(0 => 'Alcatel-MISS-SIXTY-MSX-10/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A')), $ls);
@@ -1730,6 +1754,14 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(12631,7472,3534,18092, 'Alcatel-MISS-SIXTY-MSX-10/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-315M'), 1 => array(0 => 'Alcatel-OT-315M/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14494,7472,3807,18092, 'Alcatel-OT-315M/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'BF4'), 1 => array(0 => 'Alcatel-BF4/2.0 UP.Browser/5.0.1.10.1')), $ls);
@@ -1756,6 +1788,14 @@ function _H0($useragent) {
     $dl[] = array(15364,7472,4948,18092, 'Alcatel-BF5/1.0 UP.Browser/5.0.3.1');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C707'), 1 => array(0 => 'Alcatel-OT-C707/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15445,7472,3807,18092, 'Alcatel-OT-C707/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-800A'), 1 => array(0 => 'Alcatel-OT-800A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1778,6 +1818,14 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(15664,7472,3807,18092, 'Alcatel-OT-C550/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C630'), 1 => array(0 => 'Alcatel-OT-C630/1.0 ObigoInternetBrowser/Q03C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17344,7472,3807,18092, 'Alcatel-OT-C630/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'Mandarina-Duck'), 1 => array(0 => 'Alcatel-Mandarina-Duck/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
@@ -1860,12 +1908,20 @@ function _H0($useragent) {
     $dl[] = array(13084,7472,3807,18092, 'Alcatel-Mandarina-Duck-MOON/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C707'), 1 => array(0 => 'Alcatel-OT-C707/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
+  $ns = E0($segments, array(0 => array(0 => 'OT-S218'), 1 => array(0 => 'Alcatel-OT-S218/1.0 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15445,7472,3807,18092, 'Alcatel-OT-C707/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
+    $dl[] = array(12556,7472,3807,18092, 'Alcatel-OT-S218/1.0 ObigoInternetBrowser/Q03C');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'OT-C552a'), 1 => array(0 => 'Alcatel-OT-C552a')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15637,7472,17470,18092, 'Alcatel-OT-C552a');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'OT-280'), 1 => array(0 => 'Alcatel-OT-280/1.0 model-orange ObigoInternetBrowser/Q03C')), $ls);
@@ -1884,36 +1940,12 @@ function _H0($useragent) {
     $dl[] = array(15519,7472,3807,18092, 'Alcatel-OT-280/1.0 ObigoInternetBrowser/Q03C');
     $ls = $ns;
   }
-  $ns = E0($segments, array(0 => array(0 => 'OT-S218'), 1 => array(0 => 'Alcatel-OT-S218/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12556,7472,3807,18092, 'Alcatel-OT-S218/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
   $ns = E0($segments, array(0 => array(0 => 'ELLE-N3'), 1 => array(0 => 'Alcatel-ELLE-N3/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12591,7472,3807,18092, 'Alcatel-ELLE-N3/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C630'), 1 => array(0 => 'Alcatel-OT-C630/1.0 ObigoInternetBrowser/Q03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17344,7472,3807,18092, 'Alcatel-OT-C630/1.0 ObigoInternetBrowser/Q03C');
-    $ls = $ns;
-  }
-  $ns = E0($segments, array(0 => array(0 => 'OT-C552a'), 1 => array(0 => 'Alcatel-OT-C552a')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15637,7472,17470,18092, 'Alcatel-OT-C552a');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => NULL, 1 => array(0 => 'alcatel-ot-710a/UC Browser7.0.0.41/69/4249 Novarra-Vision/8.0')), $ls);
@@ -1956,6 +1988,14 @@ function _H0($useragent) {
     $dl[] = array(12420,7472,17470,18092, 'alcatel-ot-808  Novarra-Vision/8.0');
     $ls = $ns;
   }
+  $ns = E0($segments, array(0 => array(0 => 'BH4'), 1 => array(0 => 'Alcatel-BH4/1.0 UP.Browser/6.1.0.6.1 (GUI) MMP/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17018,7472,4901,18092, 'Alcatel-BH4/1.0 UP.Browser/6.1.0.6.1 (GUI) MMP/1.0');
+    $ls = $ns;
+  }
   $ns = E0($segments, array(0 => array(0 => 'OT-C550'), 1 => array(0 => 'Alcatel-OT-C550')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1994,6 +2034,14 @@ function _H0($useragent) {
       unset($dl);
     }
     $dl[] = array(17014,7472,17470,18092, 'Alcatel-OH5');
+    $ls = $ns;
+  }
+  $ns = E0($segments, array(0 => array(0 => 'TH3'), 1 => array(0 => 'Alcatel-TH3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15266,7472,17470,18092, 'Alcatel-TH3');
     $ls = $ns;
   }
   $ns = E0($segments, array(0 => array(0 => 'Mandarina-Duck'), 1 => array(0 => 'Alcatel-Mandarina-Duck/1.0')), $ls);

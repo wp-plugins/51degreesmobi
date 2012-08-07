@@ -10,20 +10,15 @@
  * by the Mozilla Public License, v. 2.0.
  */
 /**
- * Reduces multiple matches to a single device.
- *
- * @param string &$useragent
- *   Target useragent
- * @param array &$results
- *   Multiple devices found by handlers
+ * Todo.
  */
-function fiftyone_degrees_finalMatcher(&$useragent, &$results) {
+function fiftyone_degrees_finalMatcher(&$user_agent, &$results) {
   $results = fiftyone_degrees_sort_results($results);
   $highest_position = 0;
   $subset = array();
   foreach ($results as $result) {
     $resultua = $result[4];
-    $pos = strspn($useragent ^ $resultua, "\0");
+    $pos = strspn($user_agent ^ $resultua, "\0");
     if ($pos > $highest_position) {
       $highest_position = $pos;
       unset($subset);
@@ -37,25 +32,18 @@ function fiftyone_degrees_finalMatcher(&$useragent, &$results) {
     return $subset[0];
   }
   if (count($subset) > 1) {
-    return fiftyone_degrees_match_tails($useragent, $highest_position, $subset);
+    return fiftyone_degrees_match_tails($user_agent, $highest_position, $subset);
   }
   return NULL;
 }
 
 /**
- * Reduces multiple matches to a single device by comparing the end of the useragent.
- *
- * @param string &$useragent
- *   Target useragent
- * @param int &$pos
- *   The position within the string to stop checking
- * @param array &$results
- *   Multiple devices found by handlers
+ * Todo.
  */
-function fiftyone_degrees_match_tails(&$useragent, &$pos, &$results) {
+function fiftyone_degrees_match_tails(&$useragent, &$pos, &$devices) {
   $longest_subset = 0;
   $tails = array();
-  foreach ($results as $tail) {
+  foreach ($devices as $tail) {
     $tail = substr($tail[4], $pos, (strlen($tail[4]) - $pos));
     $tails[] = $tail;
     if (strlen($tail) > $longest_subset) {
@@ -81,7 +69,7 @@ function fiftyone_degrees_match_tails(&$useragent, &$pos, &$results) {
     }
   }
   $to_return = NULL;
-  foreach ($results as $dev) {
+  foreach ($devices as $dev) {
     if (!isset($to_return)) {
       if (fiftyone_degrees_ends_with($dev[4], $closest_tail)) {
         $to_return = $dev;
@@ -91,16 +79,11 @@ function fiftyone_degrees_match_tails(&$useragent, &$pos, &$results) {
   if (!is_null($to_return)) {
     return $to_return;
   }
-  return $results[0];
+  return $devices[0];
 }
 
 /**
- * Checks string ends with a defined value.
- *
- * @param string $full_string
- *   The string
- * @param $find
- *   The bit to be matched
+ * Todo.
  */
 function fiftyone_degrees_ends_with($full_string, $find) {
   $length = strlen($find);
@@ -109,10 +92,7 @@ function fiftyone_degrees_ends_with($full_string, $find) {
 }
 
 /**
- * Orders results based on profile ID.
- *
- * @para array $results
- *   Multiple devices found by handlers
+ * Todo.
  */
 function fiftyone_degrees_sort_results($results) {
   $to_sort = array();

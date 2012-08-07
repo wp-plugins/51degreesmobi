@@ -44,15 +44,6 @@ function E29($target, $test, $ls) {
 function _H29($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Bing/1.3.0 CFNetwork/485.10.2 Darwin/10.3.1';
-  $ns = E29($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(18254,17017,18245,18092, $ua);
-  }
   $ua = 'Bing/2.1 CFNetwork/459 Darwin/10.0.0d3';
   $ns = E29($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -125,24 +116,6 @@ function _H29($useragent) {
     }
     $dl[] = array(18254,17017,18245,18092, $ua);
   }
-  $ua = 'Bing/2.0.2 CFNetwork/485.10.2 Darwin/10.3.1';
-  $ns = E29($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(18254,17017,18245,18092, $ua);
-  }
-  $ua = 'Bing/2.1 CFNetwork/485.13.8 Darwin/11.0.0';
-  $ns = E29($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(18254,17017,18245,18092, $ua);
-  }
   $ua = 'Bing/2.2 CFNetwork/485.10.2 Darwin/10.3.1';
   $ns = E29($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -171,6 +144,33 @@ function _H29($useragent) {
     $dl[] = array(18254,17017,18245,18092, $ua);
   }
   $ua = 'BingSearch/1.0.0 CFNetwork/485.13.9 Darwin/11.0.0';
+  $ns = E29($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(18254,17017,18245,18092, $ua);
+  }
+  $ua = 'Bing/2.1 CFNetwork/485.12.7 Darwin/10.4.0';
+  $ns = E29($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(18254,17017,18245,18092, $ua);
+  }
+  $ua = 'Bing/2.1 CFNetwork/485.10.2 Darwin/10.3.1';
+  $ns = E29($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(18254,17017,18245,18092, $ua);
+  }
+  $ua = 'Bing/2.2 CFNetwork/548.0.4 Darwin/11.0.0';
   $ns = E29($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {

@@ -276,6 +276,102 @@ function _H84($useragent) {
     $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/FT05/MIDP2.0/CLDC1.1/Screen-240X320');
     $ls = $ns;
   }
+  $ns = E84($segments, array(0 => array(0 => 'B858'), 1 => array(0 => 'TIANYU-KTOUCH/B858/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/B858/Screen-240X320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'V320'), 1 => array(0 => 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'B922'), 1 => array(0 => 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'C350'), 1 => array(0 => 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'B2012'), 1 => array(0 => 'TIANYU-KTOUCH/B2012/Screen-128X128')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/B2012/Screen-128X128');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'B2016'), 1 => array(0 => 'TIANYU-KTOUCH/B2016/Screen-128X128')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/B2016/Screen-128X128');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'D172'), 1 => array(0 => 'TIANYU-KTOUCH/D172/Screen-128x160')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/D172/Screen-128x160');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'A660'), 1 => array(0 => 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'H711'), 1 => array(0 => 'TIANYU-KTOUCH/H711/Screen-176X220')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/H711/Screen-176X220');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'A168'), 1 => array(0 => 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17895,17896,18092, 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430');
+    $ls = $ns;
+  }
   $ns = E84($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930/Screen-240X320')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -332,14 +428,6 @@ function _H84($useragent) {
     $dl[] = array(17884,17895,17896,18092, 'TIANYU-KTOUCH/X260/Screen-176X220');
     $ls = $ns;
   }
-  $ns = E84($segments, array(0 => array(0 => 'H688'), 1 => array(0 => 'TIANYU-KTOUCH/H688/Screen-176X220')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17892,17895,17896,18092, 'TIANYU-KTOUCH/H688/Screen-176X220');
-    $ls = $ns;
-  }
   $ns = E84($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -388,12 +476,12 @@ function _H84($useragent) {
     $dl[] = array(17888,17895,17896,18092, 'TIANYU-KTOUCH/H999/MIDP2.0/CLDC1.1/Screen-320X240');
     $ls = $ns;
   }
-  $ns = E84($segments, array(0 => array(0 => 'B832'), 1 => array(0 => 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ns = E84($segments, array(0 => array(0 => 'H688'), 1 => array(0 => 'TIANYU-KTOUCH/H688/Screen-176X220')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17897,17895,17896,18092, 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320');
+    $dl[] = array(17892,17895,17896,18092, 'TIANYU-KTOUCH/H688/Screen-176X220');
     $ls = $ns;
   }
   $ns = E84($segments, array(0 => array(0 => 'H677'), 1 => array(0 => 'TIANYU-KTOUCH/H677/Screen-176X220')), $ls);
@@ -426,6 +514,14 @@ function _H84($useragent) {
       unset($dl);
     }
     $dl[] = array(17889,17895,17896,18092, 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'B832'), 1 => array(0 => 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17897,17895,17896,18092, 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320');
     $ls = $ns;
   }
   $ns = E84($segments, array(0 => array(0 => 'V388'), 1 => array(0 => 'TIANYU-KTOUCH/V388/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
@@ -492,14 +588,6 @@ function _H84($useragent) {
     $dl[] = array(17894,17895,17896,18092, 'TIANYU-KTOUCH/D6600/Screen-240X432');
     $ls = $ns;
   }
-  $ns = E84($segments, array(0 => array(0 => 'L65'), 1 => array(0 => 'TIANYU-KTOUCH/L65/Screen-240X320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17887,17895,17896,18092, 'TIANYU-KTOUCH/L65/Screen-240X320');
-    $ls = $ns;
-  }
   $ns = E84($segments, array(0 => array(0 => 'A665'), 1 => array(0 => 'TIANYU-KTOUCH/A665/MIDP2.0/CLDC1.1/Screen-240X320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -514,6 +602,14 @@ function _H84($useragent) {
       unset($dl);
     }
     $dl[] = array(17902,17895,17896,18092, 'TIANYU-KTOUCH/A665');
+    $ls = $ns;
+  }
+  $ns = E84($segments, array(0 => array(0 => 'L65'), 1 => array(0 => 'TIANYU-KTOUCH/L65/Screen-240X320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17887,17895,17896,18092, 'TIANYU-KTOUCH/L65/Screen-240X320');
     $ls = $ns;
   }
   return $dl;

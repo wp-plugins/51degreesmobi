@@ -44,15 +44,6 @@ function E25($target, $test, $ls) {
 function _H25($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) /BenQ-E72';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15364,6742,4643,18092, $ua);
-  }
   $ua = 'BenQ P50 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -70,6 +61,15 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15364,5448,4578,18092, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) /BenQ-E72';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15364,6742,4643,18092, $ua);
   }
   $ua = 'BenQ-M580A/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.9.e.1.105 (GUI)';
   $ns = E25($useragent, $ua, $ls);
@@ -260,51 +260,6 @@ function _H25($useragent) {
     }
     $dl[] = array(17992,17017,3402,18092, $ua);
   }
-  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.3.c.3 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12022,17017,3402,18092, $ua);
-  }
-  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.1.149 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12022,17017,3402,18092, $ua);
-  }
-  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.3.c.2 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12022,17017,3402,18092, $ua);
-  }
-  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.2.134 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12022,17017,3402,18092, $ua);
-  }
-  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.1.119 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12022,17017,3402,18092, $ua);
-  }
   $ua = 'BenQ-E81/49 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.1.378 (GUI) MMP/2.0 Push/PO';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -385,6 +340,51 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12190,17017,3487,18092, $ua);
+  }
+  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.3.c.3 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12022,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.1.149 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12022,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.3.c.2 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12022,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.2.134 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12022,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-S80/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.1.119 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12022,17017,3402,18092, $ua);
   }
   $ua = 'BenQ-M7/14 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.5.189 (GUI), Browser/UP.Browser/7.2.7.5.189 (GUI), Browser/UP.Browser/7.2.7.5.189 (GUI) MMP/2.0 Push/PO';
   $ns = E25($useragent, $ua, $ls);
@@ -512,24 +512,6 @@ function _H25($useragent) {
     }
     $dl[] = array(14275,17017,3402,18092, $ua);
   }
-  $ua = 'BenQ-C30/1.0/WAP2.0/MIDP2.0/CLDC1.1';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15466,17017,17470,18092, $ua);
-  }
-  $ua = 'BenQ-C30';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15466,17017,17470,18092, $ua);
-  }
   $ua = 'BenQ-EF71/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.7.c.1.105 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -547,6 +529,24 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13182,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-C30/1.0/WAP2.0/MIDP2.0/CLDC1.1';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15466,17017,17470,18092, $ua);
+  }
+  $ua = 'BenQ-C30';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15466,17017,17470,18092, $ua);
   }
   $ua = 'BenQ-T51/1.0/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.4.c.1.105 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
@@ -575,14 +575,14 @@ function _H25($useragent) {
     }
     $dl[] = array(14943,17017,3402,18092, $ua);
   }
-  $ua = 'BenQ-C36/1.0/WAP2.0/MIDP2.0/CLDC1.1';
+  $ua = 'BenQ-SIEMENS - E52/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14941,17017,17470,18092, $ua);
+    $dl[] = array(14935,17017,3402,18092, $ua);
   }
   $ua = 'BenQ-EF61/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
@@ -592,6 +592,15 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13262,17017,3402,18092, $ua);
+  }
+  $ua = 'BenQ-C36/1.0/WAP2.0/MIDP2.0/CLDC1.1';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14941,17017,17470,18092, $ua);
   }
   $ua = 'BenQ-S81/1.00/WAP2.0/MIDP2.0/CLDC1.1 UP.Browser/6.3.0.3.c.4 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
@@ -611,15 +620,6 @@ function _H25($useragent) {
     }
     $dl[] = array(12902,17017,3402,18092, $ua);
   }
-  $ua = 'BenQ-SIEMENS - E52/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14935,17017,3402,18092, $ua);
-  }
   $ua = 'BenQ-T60/1.0/WAP2.0/MIDP2.0/CLDC1.1';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -637,15 +637,6 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13534,17017,3601,18092, $ua);
-  }
-  $ua = 'BenQ-E55/1.0 ACS-NF/3.3 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12011,17017,3601,18092, $ua);
   }
   $ua = 'BenQ-SIEMENS - C31/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0';
   $ns = E25($useragent, $ua, $ls);
@@ -674,6 +665,15 @@ function _H25($useragent) {
     }
     $dl[] = array(12339,17017,4203,18092, $ua);
   }
+  $ua = 'BenQ-E55/1.0 ACS-NF/3.3 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12011,17017,3601,18092, $ua);
+  }
   $ua = 'BenQ-SF71/14 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.1.421 (GUI), Browser/UP.Browser/7.2.6.1.421 (GUI) MMP/2.0 Push/PO';
   $ns = E25($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -691,15 +691,6 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12353,17017,3487,18092, $ua);
-  }
-  $ua = 'BenQ-E81/19 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.10 (GUI) MMP/2.0';
-  $ns = E25($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12190,17017,4893,18092, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) /BenQ-T80';
   $ns = E25($useragent, $ua, $ls);
@@ -736,6 +727,15 @@ function _H25($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13901,17017,17470,18092, $ua);
+  }
+  $ua = 'BenQ-E81/19 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.10 (GUI) MMP/2.0';
+  $ns = E25($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12190,17017,4893,18092, $ua);
   }
   $ua = 'BenQ-E61';
   $ns = E25($useragent, $ua, $ls);

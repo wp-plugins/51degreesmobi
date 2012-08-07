@@ -34,16 +34,7 @@
  */
 
 /**
- * Deteermines if the handler can be used with the useragent.
- *
- * @param array $positive
- *   Array of regular expressions which must match.
- * @param array $negative
- *   Array of regular expressions which must not match.
- * @param string $useragent
- *   The useragent to compare the regular expressions against.
- * @param array $segments
- *   The handler segments, one of which must match.
+ * Todo.
  */
 function fiftyone_degrees_CheckHandler($positive, $negative, $useragent, $segments) {
   return ($positive == NULL || fiftyone_degrees_IsMatchPatterns($positive, $useragent)) &&
@@ -562,7 +553,7 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     NULL,
     $useragent,
     array('#(?<=\\()iPhone|iPad|iPod#',
-      '#(?<=OS )[\\d_]+#',
+      '#(?<=OS )[\\d(_|\\.)\\d]+#',
       '#(?<=Version/)[\\d\\.]+#',
       '#(?<=AppleWebKit/)[\\d\\.]+#',
       '#(?<=Mobile/)[\\d\\w]+#',

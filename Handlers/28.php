@@ -224,15 +224,6 @@ function _H28($useragent) {
     }
     $dl[] = array(17408,17017,17470,18092, $ua);
   }
-  $ua = 'BIRD V788/1.00 Nucleus RTOS/V1.11.19 MTK6227/06A Release/12.28.2006 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E28($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17270,17017,17470,18092, $ua);
-  }
   $ua = 'BIRD.F501/1.00 Nucleus RTOS/V1.11.19 MTK6227/05C_V24 Release/11.21.2006 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E28($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -241,6 +232,15 @@ function _H28($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17126,17017,17470,18092, $ua);
+  }
+  $ua = 'BIRD V788/1.00 Nucleus RTOS/V1.11.19 MTK6227/06A Release/12.28.2006 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E28($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17270,17017,17470,18092, $ua);
   }
   $ua = 'BIRD.A120';
   $ns = E28($useragent, $ua, $ls);
@@ -277,15 +277,6 @@ function _H28($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17401,17017,17470,18092, $ua);
-  }
-  $ua = 'BIRD V750/1.00 Nucleus RTOS/V1.11.19 MTK6227/06A Release/12.28.2006 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E28($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17364,17017,17470,18092, $ua);
   }
   $ua = 'BIRD.S580/3.03/WAP1.2.1';
   $ns = E28($useragent, $ua, $ls);
@@ -331,6 +322,15 @@ function _H28($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17409,17017,4901,18092, $ua);
+  }
+  $ua = 'BIRD V750/1.00 Nucleus RTOS/V1.11.19 MTK6227/06A Release/12.28.2006 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E28($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17364,17017,17470,18092, $ua);
   }
   return $dl;
 }

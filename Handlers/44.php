@@ -233,6 +233,33 @@ function _H44($useragent) {
     }
     $dl[] = array(15089,5214,3487,18092, $ua);
   }
+  $ua = 'KWC-S2300/ABR1004 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15089,5214,3487,18092, $ua);
+  }
+  $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13616,17017,3487,18092, $ua);
+  }
+  $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0 Novarra-Vision/8.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13616,17017,3487,18092, $ua);
+  }
   $ua = 'KWC-S1300/ UP.Browser/7.2.6.1.839 (GUI) MMP/2.0';
   $ns = E44($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -359,24 +386,6 @@ function _H44($useragent) {
     }
     $dl[] = array(11731,17017,3487,18092, $ua);
   }
-  $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0';
-  $ns = E44($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13616,17017,3487,18092, $ua);
-  }
-  $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E44($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13616,17017,3487,18092, $ua);
-  }
   $ua = 'KWC-Rio/ACI1005 UP.Browser/7.2.7.2.563 (GUI) MMP/2.0';
   $ns = E44($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -414,6 +423,15 @@ function _H44($useragent) {
     $dl[] = array(15675,5214,3487,18092, $ua);
   }
   $ua = 'KWC-Rio/ABY1009 UP.Browser/7.2.7.2.562 (GUI) MMP/2.0 Novarra-Vision/8.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15675,5214,3487,18092, $ua);
+  }
+  $ua = 'KWC-Rio/ACK10006 UP.Browser/7.2.7.2.563 (GUI) MMP/2.0';
   $ns = E44($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -755,6 +773,33 @@ function _H44($useragent) {
     }
     $dl[] = array(12510,17017,3625,18092, $ua);
   }
+  $ua = 'KWC-laylo/AAR10044 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14226,17017,3487,18092, $ua);
+  }
+  $ua = 'KWC-M1400/AAZ10043 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14226,17017,3487,18092, $ua);
+  }
+  $ua = 'KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
+  $ns = E44($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14226,17017,3487,18092, $ua);
+  }
   $ua = 'KWC-E2000/1013 UP.Browser/7.2.6.1.567 (GUI) MMP/2.0';
   $ns = E44($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -817,33 +862,6 @@ function _H44($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12383,17017,3487,18092, $ua);
-  }
-  $ua = 'KWC-laylo/AAR10044 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E44($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14226,17017,3487,18092, $ua);
-  }
-  $ua = 'KWC-M1400/AAZ10043 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0';
-  $ns = E44($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14226,17017,3487,18092, $ua);
-  }
-  $ua = 'KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E44($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14226,17017,3487,18092, $ua);
   }
   $ua = 'KWC-K127/1204 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0 Novarra-Vision/8.0';
   $ns = E44($useragent, $ua, $ls);

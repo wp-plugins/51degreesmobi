@@ -296,6 +296,69 @@ function _H73($useragent) {
     }
     $dl[] = array(12509,17017,3487,18092, $ua);
   }
+  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.386 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.363 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.393 (GUI) Novarra-Vision/8.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.405 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.379 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.393 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12266,17017,3487,18092, $ua);
+  }
   $ua = 'SAGEM-VF526/1.0/E1N_HF MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.410 (GUI)';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -349,6 +412,33 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13757,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my411C/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.386 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13624,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my411C-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13624,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my411Cv/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.363 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13624,17017,3487,18092, $ua);
   }
   $ua = 'Sagem-my411X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.337 (GUI)';
   $ns = E73($useragent, $ua, $ls);
@@ -503,60 +593,6 @@ function _H73($useragent) {
     }
     $dl[] = array(14172,17017,4893,18092, $ua);
   }
-  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.386 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
-  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.363 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
-  $ua = 'SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.393 (GUI) Novarra-Vision/8.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
-  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.405 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
-  $ua = 'SAGEM-my511X-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.379 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
-  $ua = 'Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12266,17017,3487,18092, $ua);
-  }
   $ua = 'SAGEM-my501X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.160 (GUI)';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -584,24 +620,6 @@ function _H73($useragent) {
     }
     $dl[] = array(16646,17017,3625,18092, $ua);
   }
-  $ua = 'SAGEM-my411C/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.386 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13624,17017,3487,18092, $ua);
-  }
-  $ua = 'SAGEM-my411C-orange/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13624,17017,3487,18092, $ua);
-  }
   $ua = 'SAGEM-my411V/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.317 (GUI)';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -619,6 +637,51 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13955,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-myV-55/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.3.100 (GUI) MMP/1.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15653,17017,3625,18092, $ua);
+  }
+  $ua = 'SAGEM-myV-55/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.1 (GUI) MMP/1.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15653,17017,3625,18092, $ua);
+  }
+  $ua = 'SAGEM-my750X/1.0 Profile/MIDP-2.0, Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13477,17017,17470,18092, $ua);
+  }
+  $ua = 'SAGEM-my750X-Orange/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13477,17017,17470,18092, $ua);
+  }
+  $ua = 'SAGEM-my750X/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13477,17017,17470,18092, $ua);
   }
   $ua = 'SAGEM-myX-7/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.5.d.6 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
@@ -674,24 +737,6 @@ function _H73($useragent) {
     }
     $dl[] = array(16701,17017,3625,18092, $ua);
   }
-  $ua = 'SAGEM-myV-55/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.3.100 (GUI) MMP/1.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15653,17017,3625,18092, $ua);
-  }
-  $ua = 'SAGEM-myV-55/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.1 (GUI) MMP/1.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15653,17017,3625,18092, $ua);
-  }
   $ua = 'SAGEM-my400V/2.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.153 (GUI)';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -718,69 +763,6 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13797,17017,4893,18092, $ua);
-  }
-  $ua = 'SAGEM-my750X/1.0 Profile/MIDP-2.0, Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13477,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-my750X-Orange/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13477,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-my750X/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13477,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-myV-56/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.102 (GUI) MMP/2.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16700,17017,3625,18092, $ua);
-  }
-  $ua = 'SAGEM-myW-7/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13924,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-myW-7';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13924,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-myW-7/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13924,17017,17470,18092, $ua);
   }
   $ua = 'SAGEM-myX-5e';
   $ns = E73($useragent, $ua, $ls);
@@ -818,6 +800,15 @@ function _H73($useragent) {
     }
     $dl[] = array(14139,17017,17470,18092, $ua);
   }
+  $ua = 'SAGEM-myV-56/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.102 (GUI) MMP/2.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16700,17017,3625,18092, $ua);
+  }
   $ua = 'SAGEM-myX-4/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.5.100 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -836,50 +827,32 @@ function _H73($useragent) {
     }
     $dl[] = array(16738,17017,3625,18092, $ua);
   }
-  $ua = 'SAGEM-SG345i';
+  $ua = 'SAGEM-myW-7/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(16813,17017,17470,18092, $ua);
+    $dl[] = array(13924,17017,17470,18092, $ua);
   }
-  $ua = 'SAGEM-my721X/1.0/EAN_ED MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.265 (GUI)';
+  $ua = 'SAGEM-myW-7';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14171,17017,3487,18092, $ua);
+    $dl[] = array(13924,17017,17470,18092, $ua);
   }
-  $ua = 'SAGEM-my721X/1.0/EAN_ET MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.352 (GUI)';
+  $ua = 'SAGEM-myW-7/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14171,17017,3487,18092, $ua);
-  }
-  $ua = 'SAGEM-myX-6/1.0 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12585,17017,4901,18092, $ua);
-  }
-  $ua = 'SAGEM-myX-6/1.0 UP.Browser/6.1.0.6.1 (GUI) MMP/1.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12585,17017,4901,18092, $ua);
+    $dl[] = array(13924,17017,17470,18092, $ua);
   }
   $ua = 'Sagem-my401C/Orange1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.174 (GUI)';
   $ns = E73($useragent, $ua, $ls);
@@ -899,6 +872,42 @@ function _H73($useragent) {
     }
     $dl[] = array(16548,17017,3487,18092, $ua);
   }
+  $ua = 'SAGEM-my301X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13152,17017,3625,18092, $ua);
+  }
+  $ua = 'SAGEM-SG345i';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16813,17017,17470,18092, $ua);
+  }
+  $ua = 'SAGEM-myZ-5/1.0 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15415,17017,3625,18092, $ua);
+  }
+  $ua = 'SAGEM-myZ-5/1.0 UP.Browser/6.2.3.3.g.2.100 (GUI) MMP/2.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15415,17017,3625,18092, $ua);
+  }
   $ua = 'SAGEM-my421Z-orange/1.0/EON_TF MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.1.420 (GUI)';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -908,14 +917,23 @@ function _H73($useragent) {
     }
     $dl[] = array(12361,17017,3487,18092, $ua);
   }
-  $ua = 'SAGEM-my301X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
+  $ua = 'SAGEM-myX-6/1.0 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(13152,17017,3625,18092, $ua);
+    $dl[] = array(12585,17017,4901,18092, $ua);
+  }
+  $ua = 'SAGEM-myX-6/1.0 UP.Browser/6.1.0.6.1 (GUI) MMP/1.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12585,17017,4901,18092, $ua);
   }
   $ua = 'SAGEM-my200x';
   $ns = E73($useragent, $ua, $ls);
@@ -953,24 +971,6 @@ function _H73($useragent) {
     }
     $dl[] = array(14575,17017,17470,18092, $ua);
   }
-  $ua = 'SAGEM-myZ-5/1.0 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15415,17017,3625,18092, $ua);
-  }
-  $ua = 'SAGEM-myZ-5/1.0 UP.Browser/6.2.3.3.g.2.100 (GUI) MMP/2.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15415,17017,3625,18092, $ua);
-  }
   $ua = 'SAGEM-my302X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -988,15 +988,6 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12953,17017,4893,18092, $ua);
-  }
-  $ua = 'SAGEM-myX-8/1.0 UP.Browser/6.2.3.3.g.1 (GUI) MMP/2.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13091,17017,3625,18092, $ua);
   }
   $ua = 'SAGEM-my300X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.g.2.106 (GUI) MMP/2.0';
   $ns = E73($useragent, $ua, $ls);
@@ -1043,15 +1034,6 @@ function _H73($useragent) {
     }
     $dl[] = array(16720,17017,4948,18092, $ua);
   }
-  $ua = 'SAGEM-myX-2/1.0 UP.Browser/5.0.5.5 (GUI)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15549,17017,4948,18092, $ua);
-  }
   $ua = 'SAGEM-my901C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1069,6 +1051,24 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12969,17017,17470,18092, $ua);
+  }
+  $ua = 'SAGEM-my721X/1.0/EAN_ED MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.265 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14171,17017,3487,18092, $ua);
+  }
+  $ua = 'SAGEM-my721X/1.0/EAN_ET MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.352 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14171,17017,3487,18092, $ua);
   }
   $ua = 'Sagem-my300C/1.0 UP.Browser/6.2.3.3.g.2.108 (GUI) MMP/2.0';
   $ns = E73($useragent, $ua, $ls);
@@ -1114,24 +1114,6 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13486,17017,17470,18092, $ua);
-  }
-  $ua = 'SAGEM-myS-7/1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16699,5448,4578,18092, $ua);
-  }
-  $ua = 'SAGEM-myX-5-2T/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.4.102 (GUI) MMP/1.0';
-  $ns = E73($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14139,17017,3625,18092, $ua);
   }
   $ua = 'SAGEM-myX-5m/1.0 UP.Browser/6.1.0.5.107 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
@@ -1204,6 +1186,24 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13624,17017,17470,18092, $ua);
+  }
+  $ua = 'SAGEM-myX-2/1.0 UP.Browser/5.0.5.5 (GUI)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15549,17017,4948,18092, $ua);
+  }
+  $ua = 'SAGEM-myX-8/1.0 UP.Browser/6.2.3.3.g.1 (GUI) MMP/2.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13091,17017,3625,18092, $ua);
   }
   $ua = 'SAGEM-myX-5/2.0 UP.Browser/5.0.3.3.1.c.1 (GUI)';
   $ns = E73($useragent, $ua, $ls);
@@ -1304,6 +1304,15 @@ function _H73($useragent) {
     }
     $dl[] = array(16699,17017,17470,18092, $ua);
   }
+  $ua = 'SAGEM-myS-7/1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16699,5448,4578,18092, $ua);
+  }
   $ua = 'SAGEM-myX-2G/1.0 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1321,6 +1330,15 @@ function _H73($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15549,17017,4901,18092, $ua);
+  }
+  $ua = 'SAGEM-myX-5-2T/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.d.4.102 (GUI) MMP/1.0';
+  $ns = E73($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14139,17017,3625,18092, $ua);
   }
   $ua = 'SAGEM-myX-6/1.0 UP.Browser/6.2.2';
   $ns = E73($useragent, $ua, $ls);

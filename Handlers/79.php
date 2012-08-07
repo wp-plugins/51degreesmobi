@@ -422,24 +422,6 @@ function _H79($useragent) {
     }
     $dl[] = array(17113,17017,3625,18092, $ua);
   }
-  $ua = 'SHARP-TQ-GX25/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.106 (GUI) MMP/2.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13311,17017,3625,18092, $ua);
-  }
-  $ua = 'SHARP-TQ-GX25/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.109 (GUI) MMP/2.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13311,17017,3625,18092, $ua);
-  }
   $ua = 'SHARP-TQ-GX10/0.0 UP.Browser/6.1.0.1.148 (GUI) MMP/1.0';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -494,6 +476,24 @@ function _H79($useragent) {
     }
     $dl[] = array(15018,17017,3625,18092, $ua);
   }
+  $ua = 'SHARP-TQ-GX25/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.106 (GUI) MMP/2.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13311,17017,3625,18092, $ua);
+  }
+  $ua = 'SHARP-TQ-GX25/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.109 (GUI) MMP/2.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13311,17017,3625,18092, $ua);
+  }
   $ua = 'SHARP-TQ-GX15/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.d.1.110 (GUI) MMP/2.0';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -512,14 +512,14 @@ function _H79($useragent) {
     }
     $dl[] = array(17116,17017,3625,18092, $ua);
   }
-  $ua = 'SHARP/1.1/SH9020C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SHARP/1.0/SH9010C/SHC001 Mozilla/4.08 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(13970,17017,3976,18092, $ua);
+    $dl[] = array(14147,17017,3976,18092, $ua);
   }
   $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0  Novarra-Vision/8.0';
   $ns = E79($useragent, $ua, $ls);
@@ -584,14 +584,14 @@ function _H79($useragent) {
     }
     $dl[] = array(16993,17017,4901,18092, $ua);
   }
-  $ua = 'SHARP/1.0/SH9010C/SHC001 Mozilla/4.08 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SHARP/1.1/SH9020C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14147,17017,3976,18092, $ua);
+    $dl[] = array(13970,17017,3976,18092, $ua);
   }
   $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
   $ns = E79($useragent, $ua, $ls);
@@ -610,15 +610,6 @@ function _H79($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13575,17017,4222,18092, $ua);
-  }
-  $ua = 'SHARP-TQ-GX29/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.h.1.100 (GUI) MMP/2.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16972,17017,3625,18092, $ua);
   }
   $ua = 'SHARP SH6017D / Obigo Browser Q03C';
   $ns = E79($useragent, $ua, $ls);
@@ -664,6 +655,15 @@ function _H79($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12341,17017,4222,18092, $ua);
+  }
+  $ua = 'SHARP-TQ-GX29/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.h.1.100 (GUI) MMP/2.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16972,17017,3625,18092, $ua);
   }
   $ua = 'SHARP-TQ-V802SH';
   $ns = E79($useragent, $ua, $ls);
@@ -746,15 +746,6 @@ function _H79($useragent) {
     }
     $dl[] = array(17082,17017,3625,18092, $ua);
   }
-  $ua = 'SHARP-TQ-GZ200S';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17082,17017,17470,18092, $ua);
-  }
   $ua = 'SHARP SH7110C / Obigo Browser 2.0';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -763,6 +754,15 @@ function _H79($useragent) {
       $ls = $ns;
     }
     $dl[] = array(14155,17017,17470,18092, $ua);
+  }
+  $ua = 'SHARP-TQ-GZ200S';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17082,17017,17470,18092, $ua);
   }
   $ua = 'SHARP-TQ-GX-T300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.f.1.103 (GUI) MMP/2.0';
   $ns = E79($useragent, $ua, $ls);

@@ -60,6 +60,14 @@ function _H64($useragent) {
   $segments = array(
     0 => fiftyone_degrees_preg_match_all('#(?<=Version/)\\d+\\.\\d+#', $useragent),
     1 => fiftyone_degrees_preg_match_all('#(?<=\\()[^;]+#', $useragent));
+  $ns = E64($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'Linux armv7l')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,18070,18092, 'Opera/9.80 (Linux armv7l; Maemo; Opera Mobi/14; U; en-GB) Presto/2.9.201 Version/11.50');
+    $ls = $ns;
+  }
   $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'S60')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -92,14 +100,6 @@ function _H64($useragent) {
     $dl[] = array(18088,5448,4626,18092, 'Opera/9.7 (WindowsMobile; PPC; Opera Mobi/35267; U; en; Presto/2.1.1)');
     $ls = $ns;
   }
-  $ns = E64($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'Linux armv7l')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,18110,17269,18092, 'Opera/9.80 (Linux armv7l; Maemo; Opera Mobi/9; U; en-GB) Presto/2.7.81 Version/11.00');
-    $ls = $ns;
-  }
   $ns = E64($segments, array(0 => array(0 => '12.00'), 1 => array(0 => 'S60')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -108,12 +108,28 @@ function _H64($useragent) {
     $dl[] = array(18095,18094,18256,18092, 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-X; U; en-US) Presto/2.10.254 Version/12.00');
     $ls = $ns;
   }
+  $ns = E64($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'S60')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18095,18094,18070,18092, 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-X; U; en-US) Presto/2.9.201 Version/11.50');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'Linux armv7l')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18110,17269,18092, 'Opera/9.80 (Linux armv7l; Maemo; Opera Mobi/9; U; en-GB) Presto/2.7.81 Version/11.00');
+    $ls = $ns;
+  }
   $ns = E64($segments, array(0 => array(0 => '11.00'), 1 => array(0 => 'S60')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18095,18094,17269,18092, 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-X; U; es-ES) Presto/2.7.81 Version/11.00');
+    $dl[] = array(18095,18094,17269,18092, 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-X; U; pt) Presto/2.7.81 Version/11.00');
     $ls = $ns;
   }
   $ns = E64($segments, array(0 => array(0 => '11.10'), 1 => array(0 => 'S60')), $ls);
@@ -156,12 +172,12 @@ function _H64($useragent) {
     $dl[] = array(15364,17017,4536,18092, 'Opera/9.80 (MTK; Nucleus; Opera Mobi/2167; U; en-US) Presto/2.4.18 Version/10.00');
     $ls = $ns;
   }
-  $ns = E64($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'S60')), $ls);
+  $ns = E64($segments, array(0 => array(0 => '11.50'), 1 => array(0 => 'Windows NT 5.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18095,18094,18070,18092, 'Opera/9.80 (S60; SymbOS; Opera Mobi/SYB-X; U; fa) Presto/2.9.201 Version/11.50');
+    $dl[] = array(15364,5690,18070,18092, 'Opera/9.80 (Windows NT 5.1; Opera Mobi/23731; U; en) Presto/2.9.201 Version/11.50');
     $ls = $ns;
   }
   $ns = E64($segments, array(0 => NULL, 1 => array(0 => 'Microsoft Windows')), $ls);
@@ -170,6 +186,70 @@ function _H64($useragent) {
       unset($dl);
     }
     $dl[] = array(13296,17017,3430,18092, 'SEX1i/R3AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15431; U; NL)  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-TS3S')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17577,5567,4536,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-TS3S; BREW; Opera Mobi; U; ja) Presto/2.4.15 Version/10.00');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.1'), 1 => array(0 => 'Windows NT 6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,18373,18092, 'Opera/9.80 (Windows NT 6.0; Opera Mobi/7457; U; en) Presto/2.5.28 Version/10.1');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'Windows NT 6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17285,4536,18092, 'Opera/9.80 (Windows NT 6.0; Opera Mobi/49; U; en) Presto/2.4.18 Version/10.00');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.10'), 1 => array(0 => 'MTK')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17017,18373,18092, 'Browser/Opera Spice M6868n Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-SN3S')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17579,5567,4536,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-SN3S; BREW; Opera Mobi; U; ja) Presto/2.4.15 Version/10.00');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.54'), 1 => array(0 => 'J2ME/MIDP', 1 => 'S60')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,18094,18400,18092, 'Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => NULL, 1 => array(0 => 'KDDI-CA3F')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17509,5567,3430,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-CA3F; BREW; Opera Mobi; U; ja) Presto/2.2.1');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-SH3K')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17639,5567,4536,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-SH3K; BREW; Opera Mobi; U; ja) Presto/2.4.15 Version/10.00');
     $ls = $ns;
   }
   $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-SH3G')), $ls);
@@ -188,14 +268,6 @@ function _H64($useragent) {
     $dl[] = array(14787,5567,3430,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-TS3R; BREW; Opera Mobi; U; ja) Presto/2.2.1');
     $ls = $ns;
   }
-  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-SN3Q')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17582,5567,4536,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-SN3Q; BREW; Opera Mobi; U; ja) Presto/2.4.15 Version/10.00');
-    $ls = $ns;
-  }
   $ns = E64($segments, array(0 => NULL, 1 => array(0 => 'KDDI-SH3D')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -210,6 +282,14 @@ function _H64($useragent) {
       unset($dl);
     }
     $dl[] = array(11826,17017,3430,18092, '(Opera) Vodafone/1.0/HPiPAQDataMessenger/1.00.00 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15142; U; en)');
+    $ls = $ns;
+  }
+  $ns = E64($segments, array(0 => array(0 => '10.00'), 1 => array(0 => 'KDDI-SN3Q')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17582,5567,4536,18092, 'Mozilla/5.0 Opera/9.5 (KDDI-SN3Q; BREW; Opera Mobi; U; ja) Presto/2.4.15 Version/10.00');
     $ls = $ns;
   }
   $ns = E64($segments, array(0 => NULL, 1 => array(0 => 'Microsoft Windows')), $ls);

@@ -80,6 +80,15 @@ function _H42($useragent) {
     }
     $dl[] = array(16331,5477,4861,18092, $ua);
   }
+  $ua = 'HuaweiU8650/C00B828SP03 CORE/6.506.4.1 OpenCORE/2.02 (Linux;Android 2.3.3)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12935,5629,15760,18092, $ua);
+  }
   $ua = 'Huawei-Vodafone 845/U8120V100R001IRLC02B220SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -97,15 +106,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13384,5477,4861,18092, $ua);
-  }
-  $ua = 'HuaweiU8650/C00B828SP03 CORE/6.506.4.1 OpenCORE/2.02 (Linux;Android 2.3.3)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12935,5629,15760,18092, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Mozilla/5.0 (HW-HUAWEI_C8300/C8300V100R001C00B102;U;Windows Mobile/6.5;320*480;CTC/2.0) IE/6.0';
   $ns = E42($useragent, $ua, $ls);
@@ -134,15 +134,6 @@ function _H42($useragent) {
     }
     $dl[] = array(12493,5477,4861,18092, $ua);
   }
-  $ua = 'HUAWEI-M750/001.00 ACS-NetFront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14329,17017,4924,18092, $ua);
-  }
   $ua = 'HUAWEI-M635/001.00 WAP/OBIGO/Q05A';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -151,6 +142,42 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15255,17017,17470,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiM615/B100 Browser/Obigo_Browser/Q05A HUAWEI-M615';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16314,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP04 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16383,5477,4861,18092, $ua);
+  }
+  $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16383,5477,4861,18092, $ua);
+  }
+  $ua = 'HUAWEI-M750/001.00 ACS-NetFront/3.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14329,17017,4924,18092, $ua);
   }
   $ua = 'HuaweiU7519/B001 Browser/ACCESSNetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -196,33 +223,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(14563,17017,4223,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiM615/B100 Browser/Obigo_Browser/Q05A HUAWEI-M615';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16314,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP04 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16383,5477,4861,18092, $ua);
-  }
-  $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16383,5477,4861,18092, $ua);
   }
   $ua = 'HUAWEI-M228/001.00 ACCESS-NetFront/3.2(Mobile) Mozilla/5.0';
   $ns = E42($useragent, $ua, $ls);
@@ -422,6 +422,24 @@ function _H42($useragent) {
     }
     $dl[] = array(15658,17017,3807,18092, $ua);
   }
+  $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c, Huawei/1.0/G6600/Browser/obigo-browser/q03c';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14470,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14470,17017,3807,18092, $ua);
+  }
   $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -449,23 +467,14 @@ function _H42($useragent) {
     }
     $dl[] = array(15754,17017,3807,18092, $ua);
   }
-  $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c, Huawei/1.0/G6600/Browser/obigo-browser/q03c';
+  $ua = 'Mozilla/5.0 (HW-HUAWEI_U6150;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;320*240) Opera/9.70 (KHTML, like Gecko) Version/7.0 Mobile Opera/7.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14470,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14470,17017,3807,18092, $ua);
+    $dl[] = array(12962,17017,4626,18092, $ua);
   }
   $ua = 'Huawei/1.0/Huawei U1250/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -511,6 +520,42 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13756,17017,4223,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12462,17017,17470,18092, $ua);
+  }
+  $ua = 'HUAWEI/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12462,17017,17470,18092, $ua);
+  }
+  $ua = 'HUAWEI/1.0/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12462,17017,17470,18092, $ua);
+  }
+  $ua = 'HUAWEI/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12462,17017,17470,18092, $ua);
   }
   $ua = 'Huawei/1.0/U120/B130 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/Q04A SyncML/HW-SyncML/1.0 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -584,51 +629,6 @@ function _H42($useragent) {
     }
     $dl[] = array(14271,17017,4203,18092, $ua);
   }
-  $ua = 'Huawei/1.0/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12462,17017,17470,18092, $ua);
-  }
-  $ua = 'HUAWEI/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12462,17017,17470,18092, $ua);
-  }
-  $ua = 'HUAWEI/1.0/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12462,17017,17470,18092, $ua);
-  }
-  $ua = 'HUAWEI/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12462,17017,17470,18092, $ua);
-  }
-  $ua = 'Mozilla/5.0 (HW-HUAWEI_U6150;U;REX/1.0;BREW/5.0.4.1;Profile/MIDP-2.0 Configuration/CLDC-1.1;320*240) Opera/9.70 (KHTML, like Gecko) Version/7.0 Mobile Opera/7.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12962,17017,4626,18092, $ua);
-  }
   $ua = 'Huawei/1.0/G6603/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -656,6 +656,15 @@ function _H42($useragent) {
     }
     $dl[] = array(12962,17017,3534,18092, $ua);
   }
+  $ua = 'Huawei/1.0/0Huawei U1280/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13695,17017,3534,18092, $ua);
+  }
   $ua = 'Huawei/1.0/HUAWEI_G7210/Obigo Browser/Q05A Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -673,15 +682,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13021,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0Huawei U1280/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13695,17017,3534,18092, $ua);
   }
   $ua = 'Huawei U9120/179 Browser/NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -710,15 +710,6 @@ function _H42($useragent) {
     }
     $dl[] = array(14197,17017,4223,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0Huawei U3205/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13803,17017,3534,18092, $ua);
-  }
   $ua = 'Huawei/1.0/HUAWEI_G6608/Obigo Browser/Q03C Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -727,6 +718,51 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15346,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15743,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15743,17017,3807,18092, $ua);
+  }
+  $ua = 'HuaweiU3200/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14666,17017,4223,18092, $ua);
+  }
+  $ua = 'HuaweiU3200s/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14666,17017,4223,18092, $ua);
+  }
+  $ua = 'Huawei-V8401/V8401V100R001C219B256 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(18005,5477,4861,18092, $ua);
   }
   $ua = 'HuaweiU9130/B041 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -764,23 +800,23 @@ function _H42($useragent) {
     }
     $dl[] = array(16408,17017,4223,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ua = 'Huawei/1.0/0Huawei U3205/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(15743,17017,3807,18092, $ua);
+    $dl[] = array(13803,17017,3534,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
+  $ua = 'Huawei/1.0/0Huawei U1251/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(15743,17017,3807,18092, $ua);
+    $dl[] = array(14488,17017,3534,18092, $ua);
   }
   $ua = 'Huawei/1.0/0HUAWEI U7510/B302 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -799,87 +835,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(13756,17017,3534,18092, $ua);
-  }
-  $ua = 'HuaweiU3200/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14666,17017,4223,18092, $ua);
-  }
-  $ua = 'HuaweiU3200s/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14666,17017,4223,18092, $ua);
-  }
-  $ua = 'Huawei-V8401/V8401V100R001C219B256 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(18005,5477,4861,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0Huawei U1251/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14488,17017,3534,18092, $ua);
-  }
-  $ua = 'HUAWEI-M328/001.00 ACS-NetFront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13592,17017,4924,18092, $ua);
-  }
-  $ua = 'HuaweiG7206/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12828,17017,18246,18092, $ua);
-  }
-  $ua = 'HuaweiG7206/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12828,17017,18246,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13039,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13039,17017,3807,18092, $ua);
   }
   $ua = 'Huawei/1.0/0HUAWEI U1300/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -908,23 +863,32 @@ function _H42($useragent) {
     }
     $dl[] = array(14885,17017,3534,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HuaweiETS3160/B626 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration Novarra-Vision/8.0';
+  $ua = 'HUAWEI-M328/001.00 ACS-NetFront/3.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14573,17017,3534,18092, $ua);
+    $dl[] = array(13592,17017,4924,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HuaweiETS3160/B626 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration';
+  $ua = 'HuaweiG7206/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14573,17017,3534,18092, $ua);
+    $dl[] = array(12828,17017,18246,18092, $ua);
+  }
+  $ua = 'HuaweiG7206/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12828,17017,18246,18092, $ua);
   }
   $ua = 'Huawei/1.0/HuaweiU3300/1.0/0/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -953,6 +917,42 @@ function _H42($useragent) {
     }
     $dl[] = array(14323,17017,3534,18092, $ua);
   }
+  $ua = 'Huawei/1.0/0HuaweiETS3160/B626 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14573,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiETS3160/B626 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14573,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13039,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13039,17017,3807,18092, $ua);
+  }
   $ua = 'HuaweiU7520/B000 Browser/NetFront/4.1 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -971,51 +971,6 @@ function _H42($useragent) {
     }
     $dl[] = array(17907,17017,3807,18092, $ua);
   }
-  $ua = 'HUAWEI-M318/001.00 ACS-NetFront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13992,17017,4924,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG6610/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12640,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG6610V/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12640,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiU3315/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17668,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/G6150/Browser/obigo-browser/q03c';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16365,17017,3807,18092, $ua);
-  }
   $ua = 'Huawei/1.0/HUAWEI_G6005/Obigo Browser/Q03C Browser/Q03C MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1025,6 +980,15 @@ function _H42($useragent) {
     }
     $dl[] = array(12732,17017,3807,18092, $ua);
   }
+  $ua = 'HUAWEI-M318/001.00 ACS-NetFront/3.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13992,17017,4924,18092, $ua);
+  }
   $ua = 'Huawei/1.0/0Huawei U1270/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1033,6 +997,15 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(14436,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiU3315/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17668,17017,3534,18092, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiU1315/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -1052,6 +1025,42 @@ function _H42($useragent) {
     }
     $dl[] = array(13480,17017,3534,18092, $ua);
   }
+  $ua = 'Huawei/1.0/G6150/Browser/obigo-browser/q03c';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16365,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG6610/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12640,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG6610V/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12640,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15486,5208,17470,18092, $ua);
+  }
   $ua = 'Huawei/1.0/G5730/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1060,42 +1069,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15617,17017,3807,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/T520/B000 Browser/obigo-browser/q04a';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12612,17017,17470,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiU5700/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17665,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HUAWEI U5700/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17665,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/U1000/B000 Browser/Obigo-Browser';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16451,17017,17470,18092, $ua);
   }
   $ua = 'Huawei/1.0/U121/B000 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/Q04A SyncML/HW-SyncML/1.0 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -1124,32 +1097,59 @@ function _H42($useragent) {
     }
     $dl[] = array(12282,17017,4203,18092, $ua);
   }
-  $ua = 'Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Huawei/1.0/0HuaweiU5700/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(15486,5208,17470,18092, $ua);
+    $dl[] = array(17665,17017,3534,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HUAWEI U1310/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ua = 'Huawei/1.0/0HUAWEI U5700/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(15657,17017,3534,18092, $ua);
+    $dl[] = array(17665,17017,3534,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HuaweiU1310/B123 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ua = 'HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(15657,17017,3534,18092, $ua);
+    $dl[] = array(14271,17017,17470,18092, $ua);
+  }
+  $ua = 'U120, HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14271,17017,17470,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/G7007/Browser/obigo-browser/q03c';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17910,17017,3807,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/U1000/B000 Browser/Obigo-Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16451,17017,17470,18092, $ua);
   }
   $ua = 'HuaweiU7517/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -1159,24 +1159,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17666,17017,4223,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HUAWEI U9100/B113 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17667,17017,3534,18092, $ua);
-  }
-  $ua = 'HUAWEI-C6100/001.00 ACS-Netfront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15401,17017,4924,18092, $ua);
   }
   $ua = 'Huawei/1.0/0HUAWEI U7310/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -1205,6 +1187,33 @@ function _H42($useragent) {
     }
     $dl[] = array(14063,17017,3534,18092, $ua);
   }
+  $ua = 'Huawei/1.0/T520/B000 Browser/obigo-browser/q04a';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12612,17017,17470,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HUAWEI U9100/B113 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17667,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiU5900/B000 Browser/Obigo-Browser/Q05A HUAWEI-U5900 HuaweiJava/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16351,17017,3534,18092, $ua);
+  }
   $ua = 'Huawei/1.0/HUAWEI_G6680/Obigo Browser/Q03C Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1214,41 +1223,14 @@ function _H42($useragent) {
     }
     $dl[] = array(17685,17017,3807,18092, $ua);
   }
-  $ua = 'Huawei/1.0/0HUWEI U7300/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ua = 'HUAWEI-C6100/001.00 ACS-Netfront/3.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14419,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HUAWEI U7300/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14419,17017,3534,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/G7007/Browser/obigo-browser/q03c';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17910,17017,3807,18092, $ua);
-  }
-  $ua = 'HuaweiU1270/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14436,17017,4223,18092, $ua);
+    $dl[] = array(15401,17017,4924,18092, $ua);
   }
   $ua = 'Mozilla/5.0 (HUAWEI/S6510V100R001C1X;U;REX/1.0;Opera Mini/4.2;BREW/3.1.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;320*240;CTC/2.0) NetFront/3.5';
   $ns = E42($useragent, $ua, $ls);
@@ -1259,23 +1241,41 @@ function _H42($useragent) {
     }
     $dl[] = array(12846,6190,4732,18092, $ua);
   }
-  $ua = 'HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0';
+  $ua = 'Huawei/1.0/0HUAWEI U1310/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14271,17017,17470,18092, $ua);
+    $dl[] = array(15657,17017,3534,18092, $ua);
   }
-  $ua = 'U120, HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0';
+  $ua = 'Huawei/1.0/0HuaweiU1310/B123 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(14271,17017,17470,18092, $ua);
+    $dl[] = array(15657,17017,3534,18092, $ua);
+  }
+  $ua = 'HuaweiU1270/B000 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14436,17017,4223,18092, $ua);
+  }
+  $ua = 'HUAWEI-G6626/1.0 MOCOR_09A/ThreadX 4.0 Release/05.26.2011 Browser/Dorado WAP-Browser 1.0  Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17908,17017,17470,18092, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiU7200/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
   $ns = E42($useragent, $ua, $ls);
@@ -1295,6 +1295,33 @@ function _H42($useragent) {
     }
     $dl[] = array(14192,17017,3534,18092, $ua);
   }
+  $ua = 'Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12606,17017,4203,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HUWEI U7300/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14419,17017,3534,18092, $ua);
+  }
+  $ua = 'Huawei/1.0/0HUAWEI U7300/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14419,17017,3534,18092, $ua);
+  }
   $ua = 'Huawei/1.0/T566/B000 Browser/obigo-browser/q04a';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1313,15 +1340,6 @@ function _H42($useragent) {
     }
     $dl[] = array(15590,17017,3534,18092, $ua);
   }
-  $ua = 'Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12606,17017,4203,18092, $ua);
-  }
   $ua = 'Huawei-U626/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -1330,15 +1348,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15364,6351,17470,18092, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiU5900/B000 Browser/Obigo-Browser/Q05A HUAWEI-U5900 HuaweiJava/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16351,17017,3534,18092, $ua);
   }
   $ua = 'Huawei/1.0/Huawei U550/B000 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/Q04A SyncML/HW-SyncML/1.0 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -1357,15 +1366,6 @@ function _H42($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12640,17017,17470,18092, $ua);
-  }
-  $ua = 'HUAWEI-G6626/1.0 MOCOR_09A/ThreadX 4.0 Release/05.26.2011 Browser/Dorado WAP-Browser 1.0  Profile/MIDP-2.0 Config/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17908,17017,17470,18092, $ua);
   }
   $ua = 'Huawei-U528/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);

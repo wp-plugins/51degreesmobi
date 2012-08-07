@@ -3,11 +3,12 @@ BlobBuilder|0|False
 Canvas|0|True
 CssBackground|0|True
 CssBorderImage|0|False
-CssCanvas|0|True
+CssCanvas|0|False
 CssColor|0|True
 CssColumn|0|False
 CssFlexbox|0|False
 CssFont|0|False
+CssImages|0|False
 CssMediaQueries|0|False
 CssMinMax|0|True
 CssOverflow|0|False
@@ -18,7 +19,7 @@ CssTransitions|0|True
 CssUI|0|True
 DataSet|0|False
 DataUrl|0|True
-DeviceOrientation|0|False
+DeviceOrientation|0|True
 FileReader|0|False
 FileSaver|0|False
 FileWriter|0|False

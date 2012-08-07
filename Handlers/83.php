@@ -271,7 +271,7 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12132,17485,4223,18092, 'SonyEricssonJ10/R7BA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(12132,17485,4223,18092, 'SonyEricssonJ10/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J10i2'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -351,7 +351,23 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12502,17485,4223,18092, 'SonyEricssonW20i/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(12502,17485,4223,18092, 'SonyEricssonW20i/R7DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,3976,18092, 'SonyEricssonJ105i/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J105a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,3976,18092, 'SonyEricssonJ105a/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'P1i'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -378,28 +394,52 @@ function _H83($useragent) {
     $dl[] = array(13344,17485,3499,18092, 'SonyEricssonW100i/ R1BD009 TelecaBrowser/ Q07C1-1 Profile/MIDP- 2.0 Configuration/ CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,3976,18092, 'SonyEricssonJ105i/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J105a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,3976,18092, 'SonyEricssonJ105a/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13337,17485,4223,18092, 'SonyEricssonJ108i/R7EA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12399,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU8i/R2CA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12399,5129,3690,18092, 'SonyEricssonU8i/R2EA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J20a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20a/R7AB Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J20'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20i/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'P990i'), 1 => NULL, 2 => array(0 => '8.54', 1 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -434,22 +474,6 @@ function _H83($useragent) {
     $dl[] = array(11754,16000,3772,18092, 'SonyEricssonP990i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 306) Opera 8.60 [en]');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12399,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonU8i/R2CA; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12399,5129,3690,18092, 'SonyEricssonU8i/R2EA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K750i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -482,28 +506,28 @@ function _H83($useragent) {
     $dl[] = array(13186,17485,3601,18092, 'SonyEricssonW850iv/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J20a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W580c_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20a/R7AB Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0');
+    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580c_CMCC/R8BE SEMC-SW/R8BE Release/01.15.2008 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J20'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W580i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W580c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14743,17485,4223,18092, 'SonyEricssonJ20i/R7CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580c/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -562,30 +586,6 @@ function _H83($useragent) {
     $dl[] = array(13179,17485,3601,18092, 'SonyEricssonW350i/R11CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W580c_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580c_CMCC/R8BE SEMC-SW/R8BE Release/01.15.2008 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W580i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W580c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11941,17485,3601,18092, 'SonyEricssonW580c/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K530i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -624,30 +624,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(13183,17485,3601,18092, 'SonyEricssonK810c/R1KC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S312', 1 => 'S312', 2 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S312', 1 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K700g'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -706,6 +682,38 @@ function _H83($useragent) {
     $dl[] = array(12490,17485,3680,18092, 'SonyEricssonK700/R1A SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'S312', 1 => 'S312', 2 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S312', 1 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11939,17485,3487,18092, 'SonyEricssonS312/R1FB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'WT13i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15302,17485,3499,18092, 'SonyEricssonWT13i/R3AD017 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K550i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -730,6 +738,22 @@ function _H83($useragent) {
     $dl[] = array(12423,17485,3976,18092, 'Mozilla/4.0 SonyEricssonW715v/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'J108a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15921,17485,4223,18092, 'SonyEricssonJ108a/R7EA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z610i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11877,17485,3601,18092, 'SonyEricssonZ610i/R1GB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K790a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -746,12 +770,12 @@ function _H83($useragent) {
     $dl[] = array(14546,17485,3601,18092, 'SonyEricssonK790i/R8BF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z610i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W150i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11877,17485,3601,18092, 'SonyEricssonZ610i/R1GB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14060,17485,3499,18092, 'SonyEricssonW150i/R2BA006 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W995a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -762,12 +786,20 @@ function _H83($useragent) {
     $dl[] = array(11761,17485,3976,18092, 'SonyEricssonW995a/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J108a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W595v'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15921,17485,4223,18092, 'SonyEricssonJ108a/R7EA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(13294,17485,3976,18092, 'Mozilla/4.0 SonyEricssonW595v/R3EE Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C905v'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12312,17485,3976,18092, 'Mozilla/4.0 SonyEricssonC905v/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K700i', 1 => 'K700i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3', 1 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -818,28 +850,20 @@ function _H83($useragent) {
     $dl[] = array(11947,17485,3680,18092, 'SonyEricssonK700i/R2A SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W150i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W518a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14060,17485,3499,18092, 'SonyEricssonW150i/R2BA006 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14565,17485,3976,18092, 'SonyEricssonW518a/R1EB009 Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.2');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W595v'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'TM506'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13294,17485,3976,18092, 'Mozilla/4.0 SonyEricssonW595v/R3EE Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'C905v'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12312,17485,3976,18092, 'Mozilla/4.0 SonyEricssonC905v/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
+    $dl[] = array(14008,17485,3976,18092, 'SonyEricssonTM506/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U100i'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -850,6 +874,22 @@ function _H83($useragent) {
     $dl[] = array(11815,17485,4223,18092, 'SonyEricssonU100i/R7BA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'CK15i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15875,17485,3499,18092, 'SonyEricssonCK15i/R3AC020 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U8a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13944,5129,3690,18092, 'SonyEricssonU8a/R2EA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'C902v'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -858,12 +898,44 @@ function _H83($useragent) {
     $dl[] = array(13371,17485,3976,18092, 'Mozilla/4.0 SonyEricssonC902v/R3EE Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'TM506'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'CK13i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14008,17485,3976,18092, 'SonyEricssonTM506/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2');
+    $dl[] = array(12832,17485,3499,18092, 'SonyEricssonCK13i/R5AA032 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11836,16000,3772,18092, 'SonyEricssonW960i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 768) Opera 8.65 [en]');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'TM717'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13317,17485,3976,18092, 'SonyEricssonTM717/R1FC Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'G705u'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11713,17485,3976,18092, 'SonyEricssonG705u/R1BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 model-orange JavaPlatform/JP-8.4.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'G705'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11713,17485,3976,18092, 'SonyEricssonG705/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T303', 1 => 'T303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1', 1 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -890,12 +962,20 @@ function _H83($useragent) {
     $dl[] = array(12079,17485,4203,18092, 'SonyEricssonT303/R2CC001 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11836,16000,3772,18092, 'SonyEricssonW960i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 768) Opera 8.65 [en]');
+    $dl[] = array(12513,17485,4223,18092, 'SonyEricssonW20/R7DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K510i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13298,17485,3601,18092, 'SonyEricssonK510i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'G700'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -904,38 +984,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(11869,16000,3772,18092, 'SonyEricssonG700/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 958) Opera 8.65 [en]');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W518a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14565,17485,3976,18092, 'SonyEricssonW518a/R1EB009 Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.2');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'G705u'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11713,17485,3976,18092, 'SonyEricssonG705u/R1BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 model-orange JavaPlatform/JP-8.4.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'G705'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11713,17485,3976,18092, 'SonyEricssonG705/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12513,17485,4223,18092, 'SonyEricssonW20/R7DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W300c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -954,22 +1002,6 @@ function _H83($useragent) {
     $dl[] = array(11710,17485,3601,18092, 'SonyEricssonW300i/R9A Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K510i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13298,17485,3601,18092, 'SonyEricssonK510i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'TM717'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13317,17485,3976,18092, 'SonyEricssonTM717/R1FC Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'C905a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -978,12 +1010,44 @@ function _H83($useragent) {
     $dl[] = array(11750,17485,3976,18092, 'SonyEricssonC905a/R1BB Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U8a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'F100i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13944,5129,3690,18092, 'SonyEricssonU8a/R2EA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(12340,17485,3976,18092, 'SonyEricssonF100i/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/15431;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13296,17485,3430,18092, 'O2/1.0/SonyEricssonX1i/R3AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15431; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/2141;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13296,17485,3430,18092, 'O2/1.0/SonyEricssonX1i/R1AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/2141; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13296,17485,3430,18092, 'Opera/9.5 (Microsoft Windows; PPC; Opera Mobi; U) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/2532;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13296,17485,3430,18092, 'SonyEricssonX1i/Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/2532; U; AT) R2AA  Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W550c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1034,6 +1098,22 @@ function _H83($useragent) {
     $dl[] = array(11919,16000,3772,18092, 'SonyEricssonM600i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 276) Opera 8.60 [en]');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'W508a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12168,17485,3976,18092, 'SonyEricssonW508a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S500i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11924,17485,3601,18092, 'SonyEricssonS500i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W902'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1050,60 +1130,20 @@ function _H83($useragent) {
     $dl[] = array(14317,17485,3976,18092, 'Mozilla/4.0 SonyEricssonW902v/R3EE Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'F100i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K310iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12340,17485,3976,18092, 'SonyEricssonF100i/R1HA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.5');
+    $dl[] = array(12441,17485,3601,18092, 'SonyEricssonK310iv/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/15431;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K310i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13296,17485,3430,18092, 'O2/1.0/SonyEricssonX1i/R3AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15431; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/2141;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13296,17485,3430,18092, 'O2/1.0/SonyEricssonX1i/R1AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/2141; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13296,17485,3430,18092, 'Opera/9.5 (Microsoft Windows; PPC; Opera Mobi; U) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => array(0 => 'Mobi/2532;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13296,17485,3430,18092, 'SonyEricssonX1i/Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/2532; U; AT) R2AA  Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W508a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12168,17485,3976,18092, 'SonyEricssonW508a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W380i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11847,17485,3601,18092, 'SonyEricssonW380i/R11CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12441,17485,3601,18092, 'SonyEricssonK310i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W950i'), 1 => NULL, 2 => array(0 => '7.0', 1 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1138,36 +1178,28 @@ function _H83($useragent) {
     $dl[] = array(11784,16000,3772,18092, 'Opera 8.54 SonyEricssonW950i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [en]');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'WT13i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W380i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15302,17485,3499,18092, 'SonyEricssonWT13i/R3AD017 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11847,17485,3601,18092, 'SonyEricssonW380i/R11CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'CK15i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z530c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15875,17485,3499,18092, 'SonyEricssonCK15i/R3AC020 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11911,17485,3601,18092, 'SonyEricssonZ530c/R6AC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K310iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z530i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12441,17485,3601,18092, 'SonyEricssonK310iv/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K310i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12441,17485,3601,18092, 'SonyEricssonK310i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11911,17485,3601,18092, 'SonyEricssonZ530i/R6DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z310iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1192,38 +1224,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(13373,17485,3601,18092, 'SonyEricssonZ310i/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S500i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11924,17485,3601,18092, 'SonyEricssonS500i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z530c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11911,17485,3601,18092, 'SonyEricssonZ530c/R6AC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z530i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11911,17485,3601,18092, 'SonyEricssonZ530i/R6DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W900i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12016,17485,3601,18092, 'SonyEricssonW900i/R5BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'S302', 1 => 'S302', 2 => 'S302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1258,6 +1258,14 @@ function _H83($useragent) {
     $dl[] = array(12042,17485,3487,18092, 'SonyEricssonS302/R1AC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'W900i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12016,17485,3601,18092, 'SonyEricssonW900i/R5BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K320c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1287,7 +1295,23 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11708,17485,3601,18092, 'SonyEricssonK618i/R1JG Release/Feb-15-2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11708,17485,3601,18092, 'SonyEricssonK618i/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Longyan'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3499,18092, 'SonyEricssonLongyan/R3AD004 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'CK15a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3499,18092, 'SonyEricssonCK15a/R3AC020 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W350c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1346,20 +1370,28 @@ function _H83($useragent) {
     $dl[] = array(16182,17485,3600,18092, 'SonyEricssonK600c/R1K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13550,17485,3601,18092, 'SonyEricssonV630iv/R1JC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'M1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13488,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5.3.5; Windows Phone 6.5; SonyEricssonM1i/R1AA; Profile/MIDP-2.1; Configuration/CLDC-1.1)');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,17485,17347,18092, 'SonyEricssonU5/UC Browser8.0.4.121/50/352/UCWEB');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13550,17485,3601,18092, 'SonyEricssonV630iv/R1JC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z550i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1370,52 +1402,12 @@ function _H83($useragent) {
     $dl[] = array(11998,17485,3601,18092, 'SonyEricssonZ550i/R6CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3Profile/MIDP-2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2BA SEMC-Browser/4.0.3Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'Z710i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11858,17485,3601,18092, 'SonyEricssonZ710i/R1EF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T280i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12035,17485,4203,18092, 'SonyEricssonT280i/R1CB002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'V640iv'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14553,17485,3976,18092, 'Mozilla/4.0 SonyEricssonV640iv/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'P910a'), 1 => NULL, 2 => NULL, 3 => array(0 => 'Symbian/3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1442,12 +1434,132 @@ function _H83($useragent) {
     $dl[] = array(12550,5055,3804,18092, 'SonyEricssonP910i/R5B SEMC-Browser/Symbian/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'V640iv'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14553,17485,3976,18092, 'Mozilla/4.0 SonyEricssonV640iv/R1EA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T715'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonT715/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssont715/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonT700/R3DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssont700/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W910i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonW910i/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw910i/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'G502'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonG502/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssong502/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonU10i/R7BA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonu10i/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3Profile/MIDP-2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2BA SEMC-Browser/4.0.3Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14234,17485,3680,18092, 'SonyEricssonK300i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T280i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12035,17485,4203,18092, 'SonyEricssonT280i/R1CB002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'V600i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12924,17485,3600,18092, 'SonyEricssonV600i/R2K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W880iv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12511,17485,3601,18092, 'SonyEricssonW880iv/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14042,5049,17183,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W100a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14588,17485,3499,18092, 'SonyEricssonW100a/R1CA009 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13337,17485,17347,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i/UC Browser8.0.3.107/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S700i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14165,17485,3680,18092, 'SonyEricssonS700i/R3K SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'S700i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1466,36 +1578,12 @@ function _H83($useragent) {
     $dl[] = array(14165,17485,3680,18092, 'SonyEricssonS700i/R3B SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'S700i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T707a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14165,17485,3680,18092, 'SonyEricssonS700i/R3M SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K850iv'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13372,17485,3976,18092, 'Mozilla/4.0 SonyEricssonK850iv/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'CK13i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12832,17485,3499,18092, 'SonyEricssonCK13i/R5AA014A TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,5049,17183,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(11975,17485,3976,18092, 'SonyEricssonT707a/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K330', 1 => 'K330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1', 1 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1530,28 +1618,12 @@ function _H83($useragent) {
     $dl[] = array(11971,17485,4203,18092, 'SonyEricssonK330/R1DA002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W100a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K850iv'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14588,17485,3499,18092, 'SonyEricssonW100a/R1CA009 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'V600i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12924,17485,3600,18092, 'SonyEricssonV600i/R2K Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Generic A1'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13457,17485,3601,18092, 'SonyEricssonGeneric A1/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13372,17485,3976,18092, 'Mozilla/4.0 SonyEricssonK850iv/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'X1a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -1578,12 +1650,116 @@ function _H83($useragent) {
     $dl[] = array(16045,6742,4643,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SonyEricssonX1a/R2AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'Generic A1'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13457,17485,3601,18092, 'SonyEricssonGeneric A1/R8BF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z520c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520c/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z520i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520i/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z520a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520a/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W710c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11762,17485,3601,18092, 'SonyEricssonW710c/R1EE Release/Sep-03-2006 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W710i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11762,17485,3601,18092, 'SonyEricssonW710i/R1EE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14042,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SonyEricssonX2/R3AA; Profile/MIDP-2.1; Configuration/CLDC-1.1; Windows Phone 6.5.3.5)');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'k500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonk500i/R2E SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2050,14 +2226,6 @@ function _H83($useragent) {
     $dl[] = array(15364,17485,17470,18092, 'SonyEricssonTM506');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K608i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12130,17485,3600,18092, 'SonyEricssonK608i/R2BA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'W380c_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2082,196 +2250,12 @@ function _H83($useragent) {
     $dl[] = array(12124,17485,3601,18092, 'SonyEricssonW380a/R11CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T707a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K608i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11975,17485,3976,18092, 'SonyEricssonT707a/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z520c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520c/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z520i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520i/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z520a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12255,17485,3600,18092, 'SonyEricssonZ520a/R3J Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W710c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11762,17485,3601,18092, 'SonyEricssonW710c/R1EE Release/Sep-03-2006 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W710i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11762,17485,3601,18092, 'SonyEricssonW710i/R1EE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Longyan'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3499,18092, 'SonyEricssonLongyan/R3AD004 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'CK15a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3499,18092, 'SonyEricssonCK15a/R3AC020 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'k500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonk500i/R2E SEMC-Browser/4.0 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500c/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,3680,18092, 'SonyEricssonK500i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z800i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800i/R1AB Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z800'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1Profile/MIDP-2.0Configuration/CLDC-1.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800/R1YBrowser/SEMC-Browser/4.1Profile/MIDP-2.0Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z800c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800c/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z800'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800/R1Y Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'C903a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12205,17485,3976,18092, 'SonyEricssonC903a/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z780i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12149,17485,3976,18092, 'SonyEricssonZ780i/R3BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K810i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K810'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K810c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810c');
+    $dl[] = array(12130,17485,3600,18092, 'SonyEricssonK608i/R2BA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'M1a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2298,44 +2282,52 @@ function _H83($useragent) {
     $dl[] = array(12381,17485,3976,18092, 'Mozilla/4.0 SonyEricssonW595sv/R3EE Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T250i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z800i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14174,17485,3866,18092, 'SonyEricssonT250i/R5DC003 TelecaBrowser/1.1.14.20');
+    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800i/R1X Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z800'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1Profile/MIDP-2.0Configuration/CLDC-1.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12142,17485,17347,18092, 'SonyEricssonU5/UC Browser8.0.4.121/50/352/UCWEB');
+    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800/R1YBrowser/SEMC-Browser/4.1Profile/MIDP-2.0Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z800c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14463,17485,17470,18092, 'SonyEricssonT610/R201 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800c/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K700'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z800'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12490,17485,3601,18092, 'SonyEricssonK700/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15468,17485,3990,18092, 'SonyEricssonZ800/R1Y Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K700v'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z780i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12490,17485,3601,18092, 'SonyEricssonK700v/R8BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12149,17485,3976,18092, 'SonyEricssonZ780i/R3BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C903a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12205,17485,3976,18092, 'SonyEricssonC903a/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'V630i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2346,84 +2338,52 @@ function _H83($useragent) {
     $dl[] = array(14512,17485,3601,18092, 'SonyEricssonV630i/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T250i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12026,17485,17470,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510');
+    $dl[] = array(14174,17485,3866,18092, 'SonyEricssonT250i/R5DC003 TelecaBrowser/1.1.14.20');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'C510a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12026,17485,17470,18092, 'SonyEricssonC510a/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(14463,17485,17470,18092, 'SonyEricssonT610/R201 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K750c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K810i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13587,17485,3600,18092, 'SonyEricssonK750c/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W150a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K810'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12601,17485,3499,18092, 'SonyEricssonW150a/R2AD032 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J300c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K810c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300c/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13183,17485,17470,18092, 'SonyEricssonK810c');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300i/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J300a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300a/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W830i_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13542,17485,3601,18092, 'SonyEricssonW830i_CMCC/R1KG SEMC-SW/R1KG Release/04.18.2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W830i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13542,17485,3601,18092, 'SonyEricssonW830i/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z555i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13844,17485,3601,18092, 'SonyEricssonZ555i/R10CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13337,17485,17470,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J105a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2450,20 +2410,60 @@ function _H83($useragent) {
     $dl[] = array(13308,17485,17470,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K700'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13337,17485,17470,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i');
+    $dl[] = array(12490,17485,3601,18092, 'SonyEricssonK700/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K700v'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13337,17485,17338,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i/UC Browser7.9.0.102/69/352');
+    $dl[] = array(12490,17485,3601,18092, 'SonyEricssonK700v/R8BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W150a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12601,17485,3499,18092, 'SonyEricssonW150a/R2AD032 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12026,17485,17470,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C510a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12026,17485,17470,18092, 'SonyEricssonC510a/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K750c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13587,17485,3600,18092, 'SonyEricssonK750c/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z555i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13844,17485,3601,18092, 'SonyEricssonZ555i/R10CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U10a'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2482,6 +2482,78 @@ function _H83($useragent) {
     $dl[] = array(11953,17485,3976,18092, 'SonyEricssonU10i/R7BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,17485,17470,18092, 'SonyEricssonU5');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J300c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300c/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J300i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300i/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J300a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12239,17485,3680,18092, 'SonyEricssonJ300a/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12132,17485,17338,18092, 'SonyEricssonJ10i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj10i/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J10i2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12132,17485,17338,18092, 'SonyEricssonJ10i2/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj10i2/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W830i_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13542,17485,3601,18092, 'SonyEricssonW830i_CMCC/R1KG SEMC-SW/R1KG Release/04.18.2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W830i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13542,17485,3601,18092, 'SonyEricssonW830i/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13337,17485,17338,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W350iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2498,12 +2570,28 @@ function _H83($useragent) {
     $dl[] = array(13179,17485,17470,18092, 'SonyEricssonW350i');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,17338,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj105i/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K550i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11948,17485,17470,18092, 'SonyEricssonK550i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K530i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13206,17485,17470,18092, 'SonyEricssonK530i/R8BB Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z320i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2546,20 +2634,44 @@ function _H83($useragent) {
     $dl[] = array(14332,17485,3601,18092, 'SonyEricssonW600i/R7CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K530i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U10ofile'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13206,17485,17470,18092, 'SonyEricssonK530i/R8BB Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU10ofile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'P1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11833,17485,17470,18092, 'SonyEricssonP1i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU10i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'G502'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,4777,18092, 'SonyEricssonG502/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssong502/UC Browser7.7.1.88/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W595'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,4777,18092, 'SonyEricssonW595/R3EG Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonw595/UC Browser7.7.1.88/70/444');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W810iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2602,20 +2714,12 @@ function _H83($useragent) {
     $dl[] = array(11700,17485,17470,18092, 'SonyEricssonW810a');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'P1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12142,17485,17470,18092, 'SonyEricssonU5');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X1a'), 1 => NULL, 2 => array(0 => 'Mobi;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16045,17485,3430,18092, 'Opera/9.5 (Microsoft Windows; PPC; Opera Mobi; U) SonyEricssonX1a/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11833,17485,17470,18092, 'SonyEricssonP1i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2626,20 +2730,12 @@ function _H83($useragent) {
     $dl[] = array(12513,17485,17470,18092, 'SonyEricssonW20/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'P990i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11754,17485,17470,18092, 'SonyEricssonP990i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U10ofile'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU10ofile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
+    $dl[] = array(12142,17485,17338,18092, 'SonyEricssonU5/UC Browser7.9.0.102/50/352/UCWEB');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2647,135 +2743,7 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14764,17485,17470,18092, 'SonyEricssonU10i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S500i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11924,17485,17470,18092, 'SonyEricssonS500i/R8BE Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K790c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13828,17485,3601,18092, 'SonyEricssonK790c/R1JC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K790'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13828,17485,3601,18092, 'SonyEricssonK790/R2B Release/Feb-07-2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z550c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13768,17485,3601,18092, 'SonyEricssonZ550c/R6BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z550a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13768,17485,3601,18092, 'SonyEricssonZ550a/R6GA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,6742,4808,18092, 'SonyEricssonX2/R1AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,6742,17183,18092, 'SonyEricssonX2/R3AA Vodafone/1.0 Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,6742,17183,18092, 'SonyEricssonX2i/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'P800', 1 => 'P800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14451,17485,17470,18092, 'SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0 SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'P800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14451,17485,17470,18092, 'SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K508c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508c/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K508i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K508i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K508c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12142,17485,17338,18092, 'SonyEricssonU5/UC Browser7.9.0.102/50/354/UCWEB');
+    $dl[] = array(14764,17485,17347,18092, 'SonyEricssonU1/UC Browser8.0.4.121/50/352/UCWEB');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K750i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2786,36 +2754,20 @@ function _H83($useragent) {
     $dl[] = array(13216,17485,17470,18092, 'SonyEricssonK750i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'G502'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X1a'), 1 => NULL, 2 => array(0 => 'Mobi;'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17485,4777,18092, 'SonyEricssonG502/R1FA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssong502/UC Browser7.7.1.88/69/444');
+    $dl[] = array(16045,17485,3430,18092, 'Opera/9.5 (Microsoft Windows; PPC; Opera Mobi; U) SonyEricssonX1a/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W595'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'P990i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17485,4777,18092, 'SonyEricssonW595/R3EG Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonw595/UC Browser7.7.1.88/70/444');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T68'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16256,17485,17470,18092, 'SonyEricssonT68/R201A Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,17338,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj105i/UC Browser7.9.0.102/69/352');
+    $dl[] = array(11754,17485,17470,18092, 'SonyEricssonP990i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'P900'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2866,28 +2818,164 @@ function _H83($useragent) {
     $dl[] = array(13693,17485,3680,18092, 'SonyEricssonF500i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T68'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1K SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(16256,17485,17470,18092, 'SonyEricssonT68/R201A Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'S500i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1H SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11924,17485,17470,18092, 'SonyEricssonS500i/R8BE Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K790c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1G SEMC-Browser/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13828,17485,3601,18092, 'SonyEricssonK790c/R8BF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K790'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13828,17485,3601,18092, 'SonyEricssonK790/R2B Release/Feb-07-2007 Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K508c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508c/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K508i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508i/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K508i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508i/R2AE SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K508c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14291,17485,3680,18092, 'SonyEricssonK508c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,17347,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser8.0.3.107/70/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14042,6742,4808,18092, 'SonyEricssonX2/R1AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14743,17485,17470,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  Mozilla/5.0 (Java; U; en-us; sonyericssonj20i) UCBrowser8.3.0.154/69/352/UCWEB Mobile');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T630'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14515,17485,17470,18092, 'SonyEricssonT630/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14042,6742,17183,18092, 'SonyEricssonX2/R3AA Vodafone/1.0 Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X2i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14042,6742,17183,18092, 'SonyEricssonX2i/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'P800', 1 => 'P800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14451,17485,17470,18092, 'SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0 SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'P800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14451,17485,17470,18092, 'SonyEricssonP800/R101 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'M1a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14115,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SonyEricssonM1a/R1BA; Windows Phone 6.5; Profile/MIDP-2.1; Configuration/CLDC-1.1; Windows Phone 6.5.3.5)');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K510a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14364,17485,3601,18092, 'SonyEricssonK510a/R4CH Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K510c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14364,17485,3601,18092, 'SonyEricssonK510c/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W20a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15739,17485,4223,18092, 'SonyEricssonW20a/R7DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J230c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '4.08'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2914,52 +3002,20 @@ function _H83($useragent) {
     $dl[] = array(13719,17485,4203,18092, 'SonyEricssonJ230i/R5N TelecaBrowser/4.08');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T630'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z550c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14515,17485,17470,18092, 'SonyEricssonT630/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(13768,17485,3601,18092, 'SonyEricssonZ550c/R6BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W850iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z550a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850iv/R1KG SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W850i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850i/R1KG Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W850'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K510a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14364,17485,3601,18092, 'SonyEricssonK510a/R4CH Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K510c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14364,17485,3601,18092, 'SonyEricssonK510c/R4CH Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13768,17485,3601,18092, 'SonyEricssonZ550a/R6GA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2967,7 +3023,31 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14764,17485,17347,18092, 'SonyEricssonU1/UC Browser8.0.4.121/50/351/UCWEB');
+    $dl[] = array(14764,17485,4777,18092, 'SonyEricssonU1/UC Browser7.7.1.88/50/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1K SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1H SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14415,17485,3680,18092, 'SonyEricssonZ1010/R1G SEMC-Browser/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W395c', 1 => 'W395c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -2994,12 +3074,36 @@ function _H83($useragent) {
     $dl[] = array(13647,17485,3487,18092, 'SonyEricssonW395c/R1DA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonW395c/R1DA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1, SonyEricssonW395c/R1DA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W850i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14764,17485,4777,18092, 'SonyEricssonU1/UC Browser7.7.1.88/50/444');
+    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850i/R1GB SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W850iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850iv/R1KG SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W850'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13186,17485,17470,18092, 'SonyEricssonW850');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12026,17485,17347,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonc510/UC Browser8.0.3.107/69/444');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3026,12 +3130,12 @@ function _H83($useragent) {
     $dl[] = array(15364,17485,17338,18092, 'SonyEricssonC901/R1GA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonc901/UC Browser7.9.0.102/69/352');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'M1a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14115,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SonyEricssonM1a/R1BA; Windows Phone 6.5; Profile/MIDP-2.1; Configuration/CLDC-1.1; Windows Phone 6.5.3.5)');
+    $dl[] = array(13308,17485,18326,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (Java; U; en-in; sonyericssonj105i) UCBrowser8.2.1.144/70/405/UCWEB Mobile');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3040,22 +3144,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(11953,17485,17470,18092, 'SonyEricssonU10i/R7BA Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W20a'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15739,17485,4223,18092, 'SonyEricssonW20a/R7DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12399,17485,17470,18092, 'SonyEricssonU8i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'V800'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3106,20 +3194,20 @@ function _H83($useragent) {
     $dl[] = array(11733,17485,3990,18092, 'Vodafone/SonyEricssonV800/R1A001/SNXXXXXXXXXXXXXXX Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U_1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U8i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5129,3690,18092, 'SonyEricssonU_1/R1CA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(12399,17485,17470,18092, 'SonyEricssonU8i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'P100v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5129,3690,18092, 'SonyEricssonP100v/01; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(15289,17485,17470,18092, 'SonyEricssonZ600/R301 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3146,12 +3234,20 @@ function _H83($useragent) {
     $dl[] = array(13296,5448,4779,18092, 'SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W150i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15289,17485,17470,18092, 'SonyEricssonZ600/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(14060,17485,17470,18092, 'SonyEricssonW150i/R2BA006 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,17485,4777,18092, 'SonyEricssonU5/UC Browser7.7.1.88/50/444');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3160,6 +3256,30 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(12142,17485,4779,18092, 'SonyEricssonU5/UC Browser7.8.0.95/50/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U_1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5129,3690,18092, 'SonyEricssonU_1/R1CA; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'P100v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5129,3690,18092, 'SonyEricssonP100v/01; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K800c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14341,17485,3601,18092, 'SonyEricssonK800c/R8BF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W830c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3178,46 +3298,6 @@ function _H83($useragent) {
     $dl[] = array(13892,17485,3601,18092, 'SonyEricssonW830a/R1KG Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z250a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16100,17485,17470,18092, 'SonyEricssonZ250a/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z250i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16100,17485,17470,18092, 'SonyEricssonZ250i/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12142,17485,4777,18092, 'SonyEricssonU5/UC Browser7.7.1.88/50/444');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14743,17485,17470,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W205a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13711,17485,17470,18092, 'SonyEricssonW205a/R1BA004 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3234,12 +3314,20 @@ function _H83($useragent) {
     $dl[] = array(13296,6742,4808,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SonyEricssonX1i/R2AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K300c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z250a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14336,17485,3680,18092, 'SonyEricssonK300c/R2BD SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(16100,17485,17470,18092, 'SonyEricssonZ250a/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z250i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16100,17485,17470,18092, 'SonyEricssonZ250i/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'D750i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3258,20 +3346,20 @@ function _H83($useragent) {
     $dl[] = array(13206,17485,4759,18092, 'SonyEricssonK530i/R6BC Profile/MIDP-2.0 Configuration/CLDC-1.1, sonyericssonk530i/UC Browser7.6.1.82/70/352');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K800c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W205a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14341,17485,3601,18092, 'SonyEricssonK800c/R8BF Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13711,17485,17470,18092, 'SonyEricssonW205a/R1BA004 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K300c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13337,17485,4777,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i/UC Browser7.7.1.88/69/444');
+    $dl[] = array(14336,17485,3680,18092, 'SonyEricssonK300c/R2BD SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'S500c_CMCC'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3290,20 +3378,20 @@ function _H83($useragent) {
     $dl[] = array(12315,17485,3601,18092, 'SonyEricssonS500c/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J10i2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12132,17485,17338,18092, 'SonyEricssonJ10i2/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj10i2/UC Browser7.9.0.102/70/352');
+    $dl[] = array(14743,17485,17347,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj20i/UC Browser8.0.3.107/69/444');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J10i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12132,17485,17338,18092, 'SonyEricssonJ10i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj10i/UC Browser7.9.0.102/69/352');
+    $dl[] = array(12513,17485,17347,18092, 'SonyEricssonW20/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20/UC Browser8.0.3.107/69/352');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W302c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3322,6 +3410,70 @@ function _H83($useragent) {
     $dl[] = array(13300,17485,3487,18092, 'SonyEricssonW302c/R1DA Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1, SonyEricssonW302c/R1DA Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13337,17485,4777,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj108i/UC Browser7.7.1.88/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U5)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12142,5129,18326,18092, 'Mozilla/5.0 (S60V5; U; en-us; SonyEricssonU5)/UC Browser8.2.0.132/50/352/UCWEB Mobile');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W700c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13547,17485,3600,18092, 'SonyEricssonW700c/R1DB Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Super W580i Vip and Pro'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonSuper W580i Vip and Pro/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Generic A1v'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonGeneric A1v/R1JE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'My W810i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonMy W810i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'MODEL'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonMODEL/R1JC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'thich phang phap'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonthich phang phap/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3330,20 +3482,28 @@ function _H83($useragent) {
     $dl[] = array(14764,17485,4779,18092, 'SonyEricssonU1/UC Browser7.8.0.95/50/351');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W700c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U100i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13547,17485,3600,18092, 'SonyEricssonW700c/R1CA Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11815,17485,17470,18092, 'SonyEricssonU100i/R7BA Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W150i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14060,17485,17470,18092, 'SonyEricssonW150i/R2BA006 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12502,17485,17338,18092, 'SonyEricssonW20i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20i/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14743,17485,17338,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj20i/UC Browser7.9.0.102/69/352');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z558c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3370,100 +3530,28 @@ function _H83($useragent) {
     $dl[] = array(15551,17485,3601,18092, 'SonyEricssonZ558i/R4FA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K790i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K310c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14546,17485,17470,18092, 'SonyEricssonK790i');
+    $dl[] = array(14288,17485,3601,18092, 'SonyEricssonK310c/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K790a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K310cv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14546,17485,17470,18092, 'SonyEricssonK790a/R1CB');
+    $dl[] = array(14288,17485,3601,18092, 'SonyEricssonK310cv/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T715'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T303a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonT715/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssont715/UC Browser8.0.3.107/69/444');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,17347,18092, 'SonyEricssonT700/R3DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssont700/UC Browser8.0.3.107/69/444');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Super W580i Vip and Pro'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonSuper W580i Vip and Pro/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Generic A1v'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonGeneric A1v/R1JE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'MODEL'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonMODEL/R1GB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'My W810i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonMy W810i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'thich phang phap'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3601,18092, 'SonyEricssonthich phang phap/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11939,17485,17470,18092, 'SonyEricssonS312/R1FB Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'M1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13488,5448,4779,18092, 'SonyEricssonM1i/R1BA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11836,17485,17470,18092, 'SonyEricssonW960i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12421,17485,4203,18092, 'SonyEricssonT303a/R2DD002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W908c'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3472,14 +3560,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(11969,17485,3976,18092, 'SonyEricssonW908c/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U100i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11815,17485,17470,18092, 'SonyEricssonU100i/R7BA Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K310i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3498,84 +3578,44 @@ function _H83($useragent) {
     $dl[] = array(12441,17485,17470,18092, 'SonyEricssonK310iv');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T303a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12421,17485,4203,18092, 'SonyEricssonT303a/R2DD002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14042,5448,4779,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W810i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11700,17485,3600,18092, 'SonyEricssonW810i/R1BC Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12502,17485,17347,18092, 'SonyEricssonW20i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20i/UC Browser8.0.3.107/69/444');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14743,17485,17338,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj20i/UC Browser7.9.0.102/69/352');
+    $dl[] = array(11836,17485,17470,18092, 'SonyEricssonW960i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K310a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13962,17485,3601,18092, 'SonyEricssonK310a/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13296,17485,17470,18092, 'Opera/9.50 (Windows NT 5.1; SonyEricssonX1i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U)');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'M1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13308,17485,4779,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.8.0.95/70/351');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K310c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14288,17485,3601,18092, 'SonyEricssonK310c/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K310cv'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14288,17485,3601,18092, 'SonyEricssonK310cv/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S302c', 1 => 'S302c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14096,17485,3487,18092, 'SonyEricssonS302c/R1BC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1, SonyEricssonS302c/R1BC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'S302c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14096,17485,3487,18092, 'SonyEricssonS302c/R1BC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W902'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14317,17485,17470,18092, 'SonyEricssonW902/R3DA SEMC/NewsReader/1.0');
+    $dl[] = array(13488,5448,4779,18092, 'SonyEricssonM1i/R1BA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'M608c'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3602,6 +3642,70 @@ function _H83($useragent) {
     $dl[] = array(13620,16000,3772,18092, 'SonyEricssonM608c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 306) Opera 8.60 [en]');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'K790i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14546,17485,17470,18092, 'SonyEricssonK790i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K790a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14546,17485,17470,18092, 'SonyEricssonK790a/R1CB');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12513,17485,17338,18092, 'SonyEricssonW20/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20/UC Browser7.9.0.102/69/352');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W810i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11700,17485,3600,18092, 'SonyEricssonW810i/R1BC Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11939,17485,17470,18092, 'SonyEricssonS312/R1FB Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13296,5448,4777,18092, 'SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K310a'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13962,17485,3601,18092, 'SonyEricssonK310a/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W902'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14317,17485,17470,18092, 'SonyEricssonW902/R3DA SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'Z300a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '4.08'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3616,14 +3720,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(14053,17485,4203,18092, 'SonyEricssonZ300i/R3M/TelecaBrowser/4.08');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12026,17485,17347,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser8.0.3.107/70/352');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'S710a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3647,31 +3743,15 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13308,17485,4759,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.6.1.82/70/351');
+    $dl[] = array(13308,17485,4779,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.8.0.95/70/351');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'J10i2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12142,17485,4759,18092, 'SonyEricssonU5/UC Browser7.6.1.82/50/352');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,5448,4779,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'U5)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12142,5129,18326,18092, 'Mozilla/5.0 (S60V5; U; en-us; SonyEricssonU5)/UC Browser8.2.0.132/50/352/UCWEB Mobile');
+    $dl[] = array(12132,17485,17347,18092, 'SonyEricssonJ10i2/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj10i2/UC Browser8.0.3.107/69/444');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W950i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3690,28 +3770,36 @@ function _H83($useragent) {
     $dl[] = array(11784,17485,17470,18092, 'SonyEricssonW950c');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'S302c', 1 => 'S302c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14096,17485,3487,18092, 'SonyEricssonS302c/R1BC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1, SonyEricssonS302c/R1BC Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'S302c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14096,17485,3487,18092, 'SonyEricssonS302c/R1BB Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T290i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15318,17485,17470,18092, 'SonyEricssonT290i/R101');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12502,17485,17470,18092, 'SonyEricssonW20i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z500a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14504,17485,3680,18092, 'SonyEricssonZ500a/R1A SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z500a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14504,17485,3680,18092, 'SonyEricssonZ500a/R4A SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'G705'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3730,12 +3818,84 @@ function _H83($useragent) {
     $dl[] = array(12423,17485,17470,18092, 'Mozilla/4.0 SonyEricssonW715v/R1GA SEMC/NewsReader/1.0');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'K510i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13298,17485,17470,18092, 'SonyEricssonK510i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z500a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14504,17485,3680,18092, 'SonyEricssonZ500a/R1A SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z500a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14504,17485,3680,18092, 'SonyEricssonZ500a/R4A SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,4759,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.6.1.82/70/351');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W380i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11847,17485,17470,18092, 'SonyEricssonW380i/R9BB SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W888c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15055,17485,3601,18092, 'SonyEricssonW888c/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W300i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11710,17485,17470,18092, 'SonyEricssonW300i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W300c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11710,17485,17470,18092, 'SonyEricssonW300c');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C902v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13371,17485,17470,18092, 'Mozilla/4.0 SonyEricssonC902v/R3EE SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W595v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13294,17485,17470,18092, 'Mozilla/4.0 SonyEricssonW595v/R3EH SEMC/NewsReader/1.0');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T618'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3746,20 +3906,20 @@ function _H83($useragent) {
     $dl[] = array(17445,17485,17470,18092, 'SonyEricssonT618/R401 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13337,17485,17347,18092, 'SonyEricssonJ108i/R7EA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj108i/UC Browser8.0.3.107/70/444');
+    $dl[] = array(12142,17485,4759,18092, 'SonyEricssonU5/UC Browser7.6.1.82/50/352');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T280a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13296,17485,17470,18092, 'Opera/9.50 (Windows NT 5.1; SonyEricssonX1i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U)');
+    $dl[] = array(15364,17485,4203,18092, 'SonyEricssonT280a/R1DA002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z550i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3767,23 +3927,39 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11998,17485,17470,18092, 'SonyEricssonZ550i');
+    $dl[] = array(11998,17485,17470,18092, 'SonyEricssonZ550i/R6BA Java/SEMC-Java/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12026,17485,17338,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.9.0.102/70/352');
+    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z530i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12502,17485,17338,18092, 'SonyEricssonW20i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20i/UC Browser7.9.0.102/69/352');
+    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z530c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530c');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J220i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '4.08'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14134,17485,4203,18092, 'SonyEricssonJ220i/R5N TelecaBrowser/4.08');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K700c'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.ccept-LanguaMIDP-2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3818,76 +3994,12 @@ function _H83($useragent) {
     $dl[] = array(12490,17485,17470,18092, 'SonyEricssonK700/R1A Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W888c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15055,17485,3601,18092, 'SonyEricssonW888c/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T280a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q04C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,4203,18092, 'SonyEricssonT280a/R1DA002 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W300i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11710,17485,17470,18092, 'SonyEricssonW300i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W300c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11710,17485,17470,18092, 'SonyEricssonW300c');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'C902v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13371,17485,17470,18092, 'Mozilla/4.0 SonyEricssonC902v/R3EE SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K510i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13298,17485,17470,18092, 'SonyEricssonK510i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W595v'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13294,17485,17470,18092, 'Mozilla/4.0 SonyEricssonW595v/R3EH SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K220i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13576,17485,3866,18092, 'SonyEricssonK220i/R1AA008 TelecaBrowser/1.1.14.20');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T290i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15318,17485,17470,18092, 'SonyEricssonT290i/R101');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K300a'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3903,71 +4015,7 @@ function _H83($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12026,17485,4759,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.6.1.82/70/351');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16182,17485,17470,18092, 'SonyEricssonK600i/R2BA');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16182,17485,17470,18092, 'SonyEricssonK600/1.0 (05.02) Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T616'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12782,17485,17470,18092, 'SonyEricssonT616/R201 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z530i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z530c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11911,17485,17470,18092, 'SonyEricssonZ530c');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14042,5448,4777,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12513,17485,17347,18092, 'SonyEricssonW20/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonw20/UC Browser8.0.3.107/70/444');
+    $dl[] = array(12026,17485,17338,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.9.0.102/70/352');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U100i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -3978,20 +4026,36 @@ function _H83($useragent) {
     $dl[] = array(11815,17485,3976,18092, 'SonyEricssonU100i/R1BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'G700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W150'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11869,17485,17470,18092, 'SonyEricssonG700/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12768,17485,3499,18092, 'SonyEricssonW150/R2AD034 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K608i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T616'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12130,17485,17470,18092, 'SonyEricssonK608i');
+    $dl[] = array(12782,17485,17470,18092, 'SonyEricssonT616/R201 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'M1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13488,6742,17183,18092, 'SonyEricssonM1i/R1AB Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C905c'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13295,17485,3976,18092, 'SonyEricssonC905c/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4026,6 +4090,14 @@ function _H83($useragent) {
     $dl[] = array(12604,17485,3680,18092, 'SonyEricssonS700c/R3B SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'Z610i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11877,17485,17470,18092, 'SonyEricssonZ610i/R1JG SEMC/NewsReader/1.0');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K818c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4034,36 +4106,12 @@ function _H83($useragent) {
     $dl[] = array(14154,17485,3601,18092, 'SonyEricssonK818c/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z310iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310iv/R1JC SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z310a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310a');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z310i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310i/R1JC Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J220i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '4.08'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14134,17485,4203,18092, 'SonyEricssonJ220i/R5N TelecaBrowser/4.08');
+    $dl[] = array(14415,17485,17470,18092, '3GSonyEricssonZ1010');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => ' P900; 305) Opera 6.30 [en]'), 1 => NULL, 2 => array(0 => '6.30'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4138,12 +4186,36 @@ function _H83($useragent) {
     $dl[] = array(15436,16000,17470,18092, 'Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; SonyEricsson P900; 316) Opera 6.31 [sv]');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13308,17485,4777,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.7.1.88/70/351');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'X2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14042,5448,4777,18092, 'SonyEricssonX2/R3AA Browser/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12502,17485,4777,18092, 'SonyEricssonW20i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonw20i/UC Browser7.7.1.88/69/444');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'G700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11869,17485,17470,18092, 'SonyEricssonG700/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W958c'), 1 => NULL, 2 => array(0 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4170,44 +4242,60 @@ function _H83($useragent) {
     $dl[] = array(13459,16000,3772,18092, 'SonyEricssonW958c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 306) Opera 8.60 [en]');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13550,17485,17470,18092, 'SonyEricssonV630iv/R1CE SEMC/NewsReader/1.0');
+    $dl[] = array(16182,17485,17470,18092, 'SonyEricssonK600i/R2BA019 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => array(0 => '3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13550,17485,17470,18092, 'SonyEricssonV630iv/R1CE Browser/NetFront/3');
+    $dl[] = array(16182,17485,17470,18092, 'SonyEricssonK600/1.0 (05.02) Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'C905c'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z310iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13295,17485,3976,18092, 'SonyEricssonC905c/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1');
+    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310iv/R1JC SEMC/NewsReader/1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W150'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => 'Q07C1-1'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z310a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12768,17485,3499,18092, 'SonyEricssonW150/R2AD034 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310a');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z610i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'Z310i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11877,17485,17470,18092, 'SonyEricssonZ610i/R1JG SEMC/NewsReader/1.0');
+    $dl[] = array(13373,17485,17470,18092, 'SonyEricssonZ310i/R1JC Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'P100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13906,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K320i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13820,17485,17470,18092, 'SonyEricssonK320i/R4GC Java/SEMC-Java/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J210i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '4.08'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4226,6 +4314,14 @@ function _H83($useragent) {
     $dl[] = array(12132,17485,3976,18092, 'SonyEricssonJ10i2/R7BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.2');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12026,17485,4777,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.7.1.88/70/351');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4242,14 +4338,6 @@ function _H83($useragent) {
     $dl[] = array(16206,17485,17470,18092, 'SonyEricssonT310/R201');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,4777,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.7.1.88/70/351');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'J108i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4258,20 +4346,36 @@ function _H83($useragent) {
     $dl[] = array(13337,17485,4779,18092, 'SonyEricssonJ108i/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj108i/UC Browser7.8.0.95/70/351');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K858c'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13931,17485,3976,18092, 'SonyEricssonK858c/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(13550,17485,17470,18092, 'SonyEricssonV630iv/R1CE SEMC/NewsReader/1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T628'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'V630iv'), 1 => array(0 => '3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15576,17485,17470,18092, 'SonyEricssonT628/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(13550,17485,17470,18092, 'SonyEricssonV630iv/R1CE Browser/NetFront/3');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'C123'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15340,17485,3976,18092, 'SonyEricssonC123/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K608i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12130,17485,17470,18092, 'SonyEricssonK608i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Sony Ericsson Super995'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4354,28 +4458,12 @@ function _H83($useragent) {
     $dl[] = array(11715,17485,17470,18092, 'SonyEricssonW550/1.0 (05.02) Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K320i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13820,17485,17470,18092, 'SonyEricssonK320i');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'C510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12026,17485,4777,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.7.1.88/70/351');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'Z1010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14415,17485,17470,18092, 'SonyEricssonZ1010/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0');
+    $dl[] = array(12026,17485,4759,18092, 'SonyEricssonC510/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonc510/UC Browser7.6.1.82/70/351');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W20'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4386,14 +4474,6 @@ function _H83($useragent) {
     $dl[] = array(12513,17485,4779,18092, 'SonyEricssonW20/R7DA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonw20/UC Browser7.8.0.95/70/351');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W900i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12016,17485,17470,18092, 'SonyEricssonW900i/R5BC Java/SEMC-Java/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K700'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4402,20 +4482,12 @@ function _H83($useragent) {
     $dl[] = array(12490,17485,3976,18092, 'SonyEricssonK700/R3EG Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.3');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'M1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T628'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13488,6742,17183,18092, 'SonyEricssonM1i/R1AB Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'C123'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15340,17485,3976,18092, 'SonyEricssonC123/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1');
+    $dl[] = array(15576,17485,17470,18092, 'SonyEricssonT628/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K618i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4424,14 +4496,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(11708,17485,17470,18092, 'SonyEricssonK618i/R1KG SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K700i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11947,17485,17470,18092, 'SonyEricssonK700i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4458,20 +4522,20 @@ function _H83($useragent) {
     $dl[] = array(13344,17485,17470,18092, 'SonyEricssonW100i/R1CA009 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J200i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W900i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15114,17485,17470,18092, 'SonyEricssonJ200i');
+    $dl[] = array(12016,17485,17470,18092, 'SonyEricssonW900i/R1L Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K200i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K858c'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14306,17485,3866,18092, 'SonyEricssonK200i/R1AB003 TelecaBrowser/1.1.14.20');
+    $dl[] = array(13931,17485,3976,18092, 'SonyEricssonK858c/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K550im'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4514,12 +4578,20 @@ function _H83($useragent) {
     $dl[] = array(12490,17485,3600,18092, 'SonyEricssonK700/R2T Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'P100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '5.0'), 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'K700i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13906,5129,3690,18092, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 SonyEricssonP100/01; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(11947,17485,17470,18092, 'SonyEricssonK700i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'Z555i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13844,17485,17470,18092, 'SonyEricssonZ555i/R10CA SEMC/NewsReader/1.0');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4570,6 +4642,14 @@ function _H83($useragent) {
     $dl[] = array(16148,17485,17470,18092, 'SonyEricssonJ100a');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'K200i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14306,17485,3866,18092, 'SonyEricssonK200i/R1AB003 TelecaBrowser/1.1.14.20');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'A270i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4586,28 +4666,12 @@ function _H83($useragent) {
     $dl[] = array(13080,17485,3976,18092, 'SonyEricssonA270/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'Z555i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W600c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13844,17485,17470,18092, 'SonyEricssonZ555i/R10CA SEMC/NewsReader/1.0');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,4715,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.4.0.65/70/351');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16240,17485,17470,18092, 'SonyEricssonT200/R101');
+    $dl[] = array(13137,17485,3601,18092, 'SonyEricssonW600c/R7B Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4618,12 +4682,20 @@ function _H83($useragent) {
     $dl[] = array(16191,17485,17470,18092, 'SonyEricssonZ200/R101');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'M600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T818'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11919,17485,17470,18092, 'RSSFeeds/R1A SonyEricssonM600i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15071,17485,3976,18092, 'SonyEricssonT818/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J200i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15114,17485,17470,18092, 'SonyEricssonJ200i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K750c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4658,20 +4730,20 @@ function _H83($useragent) {
     $dl[] = array(12941,17485,17470,18092, 'SonyEricssonP908/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W595s'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'A100i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12381,17485,17470,18092, 'SonyEricssonW595s/R3EG SEMC/NewsReader/1.0');
+    $dl[] = array(13106,17485,3601,18092, 'SonyEricssonA100i/R4AB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'X5'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X2a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14150,17485,4223,18092, 'SonyEricssonX5/R1DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0');
+    $dl[] = array(14166,6742,17183,18092, 'SonyEricssonX2a/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'Z500i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4706,28 +4778,20 @@ function _H83($useragent) {
     $dl[] = array(11762,17485,17470,18092, 'SonyEricssonW710c');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14764,17485,4715,18092, 'SonyEricssonU1/UC Browser7.4.0.65/50/401');
+    $dl[] = array(13308,17485,4715,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1 sonyericssonj105i/UC Browser7.4.0.65/70/351');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'T200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14234,17485,17470,18092, 'SonyEricssonK300i');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'D750i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13689,17485,17470,18092, 'SonyEricssonD750i');
+    $dl[] = array(16240,17485,17470,18092, 'SonyEricssonT200/R101');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T237'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4746,6 +4810,14 @@ function _H83($useragent) {
     $dl[] = array(13542,17485,17470,18092, 'SonyEricssonW830i');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'M600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11919,17485,17470,18092, 'RSSFeeds/R1A SonyEricssonM600i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'M610i'), 1 => NULL, 2 => array(0 => '7.0', 1 => '8.65'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4760,22 +4832,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(13470,16000,3772,18092, 'SonyEricssonM610i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [sv]');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13296,6742,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T818'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15071,17485,3976,18092, 'SonyEricssonT818/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T258c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4810,20 +4866,20 @@ function _H83($useragent) {
     $dl[] = array(11754,16000,17470,18092, 'SonyEricssonP990i/R100 Mozilla/4.78 (Symbian OS; U) Opera 598 [en]');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'A100i'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'W595s'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13106,17485,3601,18092, 'SonyEricssonA100i/R4AB Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12381,17485,17470,18092, 'SonyEricssonW595s/R3EG SEMC/NewsReader/1.0');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'X2a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X5'), 1 => array(0 => '3.5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14166,6742,17183,18092, 'SonyEricssonX2a/R3AA Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(14150,17485,4223,18092, 'SonyEricssonX5/R1DA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J210i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4842,12 +4898,28 @@ function _H83($useragent) {
     $dl[] = array(14440,17485,17470,18092, 'SonyEricssonJ210');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'T250a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12708,17485,3866,18092, 'SonyEricssonT250a/R5CA005 TelecaBrowser/1.1.14.20');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13296,5049,4643,18092, 'SonyEricssonX1i/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) R2AA  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'U1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14764,17485,4715,18092, 'SonyEricssonU1/UC Browser7.4.0.65/50/401');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'U5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4914,12 +4986,36 @@ function _H83($useragent) {
     $dl[] = array(13719,17485,17470,18092, 'SonyEricssonJ230c');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'K300i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14234,17485,17470,18092, 'SonyEricssonK300i');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K300c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14336,17485,17470,18092, 'SonyEricssonK300c');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'D750i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13689,17485,17470,18092, 'SonyEricssonD750i');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'T306'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17444,17485,17470,18092, 'SonyEricssonT306');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'V600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4946,12 +5042,12 @@ function _H83($useragent) {
     $dl[] = array(17426,16000,3772,18092, 'SonyEricssonP700i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [en]');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'V640i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  $ns = E83($segments, array(0 => array(0 => 'X1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14894,17485,3976,18092, 'SonyEricssonV640i/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(13296,6742,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T658c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -4994,14 +5090,6 @@ function _H83($useragent) {
     $dl[] = array(13055,17485,3680,18092, 'SonyEricssonK506c/R2AA SEMC-Browser/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W600c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13137,17485,3601,18092, 'SonyEricssonW600c/R7B Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K770c'), 1 => array(0 => '3.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5040,14 +5128,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(14553,17485,17470,18092, 'Mozilla/4.0 SonyEricssonV640iv/R1FA Browser/NetFront Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T250a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12708,17485,3866,18092, 'SonyEricssonT250a/R5CA005 TelecaBrowser/1.1.14.20');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'P200'), 1 => NULL, 2 => array(0 => '9.5'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5114,14 +5194,6 @@ function _H83($useragent) {
     $dl[] = array(14053,17485,17470,18092, 'SonyEricssonZ300i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'T306'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17444,17485,17470,18092, 'SonyEricssonT306');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'T687i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5170,20 +5242,20 @@ function _H83($useragent) {
     $dl[] = array(12149,17485,17470,18092, 'SonyEricssonZ780i');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'V640i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14894,17485,3976,18092, 'SonyEricssonV640i/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W950i'), 1 => NULL, 2 => array(0 => '598'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11784,16000,17470,18092, 'SonyEricssonW950i/R100 Mozilla/4.78 (Symbian OS; U) Opera 598 [en]');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J210c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15032,17485,17470,18092, 'SonyEricssonJ210c/R101');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'S302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5216,14 +5288,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(11761,17485,17470,18092, 'SonyEricssonW995a/R1EA');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11836,17485,4715,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2;.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)/UC Browser7.4.0.65/70/401 SonyEricssonW960i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K123i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5274,14 +5338,6 @@ function _H83($useragent) {
     $dl[] = array(13823,17485,3976,18092, 'SonyEricssonA250a/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'W508a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12168,17485,17470,18092, 'SonyEricssonW508a/R1GA Browser/NetFront Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K850iv'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5304,14 +5360,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(12717,17485,3601,18092, 'SonyEricssonA101/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'A100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,17485,3487,18092, 'SonyEricssonA100/R1CA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5394,22 +5442,6 @@ function _H83($useragent) {
     $dl[] = array(12239,17485,17470,18092, 'SonyEricssonJ300i');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'K300a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14113,17485,17470,18092, 'SonyEricssonK300a');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15537,17485,17470,18092, 'SonyEricssonK500i');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'K510c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5458,6 +5490,14 @@ function _H83($useragent) {
     $dl[] = array(16251,17485,17470,18092, 'SonyEricssonZ700');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'T123i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17439,17485,3976,18092, 'SonyEricssonT123i/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'T630'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '7.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5498,6 +5538,22 @@ function _H83($useragent) {
     $dl[] = array(16236,17485,17470,18092, 'SonyEricssonT600');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'W888'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15055,17485,17470,18092, 'SonyEricssonW888');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W888c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15055,17485,17470,18092, 'SonyEricssonW888c/R8BA024');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'W958c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5522,28 +5578,20 @@ function _H83($useragent) {
     $dl[] = array(15133,17485,17470,18092, 'Mozilla/5.0 (Linux; U;Androi d 2.3.2; ja-jp; SonyEricssonSO-01C Build/3.0.D.2.79)AppleWebKit/533.1 (KHTML, li ke Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
-  $ns = E83($segments, array(0 => array(0 => 'J20i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14743,17485,17347,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj20i/UC Browser8.0.3.107/69/352');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'J105i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13308,17485,17347,18092, 'SonyEricssonJ105i/R1HA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj105i/UC Browser8.0.3.107/69/444');
-    $ls = $ns;
-  }
   $ns = E83($segments, array(0 => array(0 => 'P1i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11833,17485,4715,18092, 'Mozilla/4.0 (compatible; MSIE 4.0; ) Opera/UCWEB7.4.0.57/70/352  SonyEricssonP1i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'J210c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15032,17485,17470,18092, 'SonyEricssonJ210c/R101');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K205a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => array(0 => '1.1.14.20'), 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5562,6 +5610,22 @@ function _H83($useragent) {
     $dl[] = array(13620,17485,17470,18092, 'SonyEricssonM608c/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'W960i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11836,17485,4715,18092, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2;.NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2)/UC Browser7.4.0.65/70/401 SonyEricssonW960i/R100 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'W508a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12168,17485,17470,18092, 'SonyEricssonW508a/R1GA Browser/NetFront Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'MODEL'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5576,6 +5640,14 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(15551,17485,17470,18092, 'SonyEricssonZ558i/R4FA Java/SEMC-Java/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'A100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17485,3487,18092, 'SonyEricssonA100/R1CA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'J10i2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5594,6 +5666,14 @@ function _H83($useragent) {
     $dl[] = array(14743,17485,4779,18092, 'SonyEricssonJ20i/R7CA Profile/MIDP-2.1 Configuration/CLDC-1.1  sonyericssonj20i/UC Browser7.8.0.95/69/351');
     $ls = $ns;
   }
+  $ns = E83($segments, array(0 => array(0 => 'K300a'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14113,17485,17470,18092, 'SonyEricssonK300a');
+    $ls = $ns;
+  }
   $ns = E83($segments, array(0 => array(0 => 'K310i'), 1 => NULL, 2 => NULL, 3 => array(0 => '4.0.3'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -5608,6 +5688,14 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(14288,17485,17470,18092, 'SonyEricssonK310c');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K500i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15537,17485,17470,18092, 'SonyEricssonK500i');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'K506c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5688,14 +5776,6 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(15569,17485,17470,18092, 'SonyEricssonZ710c');
-    $ls = $ns;
-  }
-  $ns = E83($segments, array(0 => array(0 => 'T123i'), 1 => array(0 => '3.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17439,17485,3976,18092, 'SonyEricssonT123i/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'T226'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
@@ -5912,6 +5992,14 @@ function _H83($useragent) {
       unset($dl);
     }
     $dl[] = array(17449,17485,3600,18092, 'SonyEricssonW750i/R1BD Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E83($segments, array(0 => array(0 => 'K700i'), 1 => NULL, 2 => array(0 => 'Mini'), 3 => array(0 => '4.0.1'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17485,3680,18092, 'Opera Mini 4/SonyEricssonK700i/R2L SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E83($segments, array(0 => array(0 => 'W150'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL), $ls);

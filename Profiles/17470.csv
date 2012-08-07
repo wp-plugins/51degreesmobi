@@ -10,7 +10,7 @@ CssFlexbox|0|False
 CssFont|0|False
 CssImages|0|False
 CssMediaQueries|0|False
-CssMinMax|0|False
+CssMinMax|0|True
 CssOverflow|0|False
 CssPosition|0|False
 CssText|0|True
@@ -41,7 +41,7 @@ Selector|0|True
 Svg|0|False
 TouchEvents|0|False
 Track|0|False
-Video|0|False
+Video|0|True
 Viewport|0|True
 WebWorkers|0|False
 Xhr2|0|False

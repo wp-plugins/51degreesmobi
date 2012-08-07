@@ -125,14 +125,6 @@ function _H10($useragent) {
     12 => fiftyone_degrees_preg_match_all('#(?<=Chrome/)\\d+#', $useragent),
     13 => fiftyone_degrees_preg_match_all('#(?<=AppleWebKit/)[\\d\\.\\+]+#', $useragent),
     14 => fiftyone_degrees_preg_match_all('#(?<=Mobile Safari/)[\\d\\.]+#', $useragent));
-  $ns = E10($segments, array(0 => array(0 => ' HTC_DesireHD_A9191 '), 1 => array(0 => ' HTC_DesireHD_A9191 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14225,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; HTC_DesireHD_A9191 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
   $ns = E10($segments, array(0 => array(0 => ' en-us '), 1 => NULL, 2 => array(0 => ' 2.3-update1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '530.17'), 14 => array(0 => '530.17')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -147,14 +139,6 @@ function _H10($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; MID_Serials Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
-  $ns = E10($segments, array(0 => array(0 => ' ELONEX765ET '), 1 => array(0 => ' ELONEX765ET Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; ELONEX765ET Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' v78 '), 1 => array(0 => ' v78 Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
@@ -194,7 +178,7 @@ function _H10($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; es-es; MID7024 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; sv-se; MID7024 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' MID7024 '), 1 => NULL, 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL), $ls);
@@ -285,6 +269,110 @@ function _H10($useragent) {
     $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-in; iBall Slide i7011 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
+  $ns = E10($segments, array(0 => array(0 => ' Micromax A75 '), 1 => array(0 => ' Micromax A75 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Micromax A75 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' MID '), 1 => array(0 => ' MID Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; MID Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' ELONEX765ET '), 1 => array(0 => ' ELONEX765ET Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-gb; ELONEX765ET Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' SWT_GT-7220 '), 1 => array(0 => ' SWT_GT-7220 Build/GINGERBREAD'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; pt-br; SWT_GT-7220 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' ZTE-U V856 '), 1 => array(0 => ' ZTE-U V856 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3;es_MX; ZTE-U V856 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' ELONEX1012ET '), 1 => array(0 => ' ELONEX1012ET Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-gb; ELONEX1012ET Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => NULL, 1 => array(0 => ' ViewSonic-ViewPad7e build/ERE27'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3;en-us; ViewSonic-ViewPad7e build/ERE27) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' ViewPad 10e '), 1 => array(0 => ' ViewPad 10e Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-gb; ViewPad 10e Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' generic_vortex '), 1 => array(0 => ' generic_vortex Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; generic_vortex Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' Micromax A78 '), 1 => array(0 => ' Micromax A78 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Micromax A78 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' QMobile A5 '), 1 => array(0 => ' QMobile A5 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; QMobile A5 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' Micromax A52 '), 1 => array(0 => ' Micromax A52 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Micromax A52 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' HTC_DesireHD_A9191 '), 1 => array(0 => ' HTC_DesireHD_A9191 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14225,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; HTC_DesireHD_A9191 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
   $ns = E10($segments, array(0 => array(0 => ' HTC_Marvel '), 1 => array(0 => ' HTC_Marvel Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -317,20 +405,12 @@ function _H10($useragent) {
     $dl[] = array(14969,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; HTC/DesireS/1.07.163.1 Build/GRH78C) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
-  $ns = E10($segments, array(0 => array(0 => ' Nexus S '), 1 => array(0 => ' Nexus S Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  $ns = E10($segments, array(0 => array(0 => ' Sprint APA9292KT '), 1 => array(0 => ' Sprint APA9292KT Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14574,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Nexus S Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
-  $ns = E10($segments, array(0 => array(0 => ' Nexus S '), 1 => array(0 => ' Nexus S Build/GRH41B'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14574,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Nexus S Build/GRH41B) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $dl[] = array(13644,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Sprint APA9292KT Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' Nexus One '), 1 => array(0 => ' Nexus One Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
@@ -357,12 +437,28 @@ function _H10($useragent) {
     $dl[] = array(16036,5629,15760,18092, 'Mozilla/5.0 (Macintosh; Android 2.3; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
-  $ns = E10($segments, array(0 => array(0 => ' Sprint APA9292KT '), 1 => array(0 => ' Sprint APA9292KT Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  $ns = E10($segments, array(0 => array(0 => ' MB860 '), 1 => array(0 => ' MB860 Build/Blur_Version.4.1.26.MB860.ATT.en.US Flex/P012'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13644,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; zh-tw; Sprint APA9292KT Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $dl[] = array(17283,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; MB860 Build/Blur_Version.4.1.26.MB860.ATT.en.US Flex/P012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' Nexus S '), 1 => array(0 => ' Nexus S Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14574,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Nexus S Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' Nexus S '), 1 => array(0 => ' Nexus S Build/GRH41B'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14574,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; Nexus S Build/GRH41B) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' HTC/Sensation/1.17.162.1 '), 1 => array(0 => ' HTC/Sensation/1.17.162.1 Build/GRI40'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
@@ -373,20 +469,12 @@ function _H10($useragent) {
     $dl[] = array(15438,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; xx-xx; HTC/Sensation/1.17.162.1 Build/GRI40) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
-  $ns = E10($segments, array(0 => array(0 => ' MB860 '), 1 => array(0 => ' MB860 Build/Blur_Version.4.1.26.MB860.ATT.en.US Flex/P012'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  $ns = E10($segments, array(0 => array(0 => ' SPH-D700 '), 1 => array(0 => ' SPH-D700 Build/GINGERBREAD'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17283,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; MB860 Build/Blur_Version.4.1.26.MB860.ATT.en.US Flex/P012) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
-  $ns = E10($segments, array(0 => array(0 => ' myTouch4G/1.0 '), 1 => array(0 => ' myTouch4G/1.0 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13526,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; myTouch4G/1.0 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $dl[] = array(14872,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; SPH-D700 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' HTC Vision '), 1 => array(0 => ' HTC Vision Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
@@ -397,6 +485,14 @@ function _H10($useragent) {
     $dl[] = array(15759,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; HTC Vision Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
+  $ns = E10($segments, array(0 => array(0 => ' myTouch4G/1.0 '), 1 => array(0 => ' myTouch4G/1.0 Build/FRF91'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13526,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; myTouch4G/1.0 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
+    $ls = $ns;
+  }
   $ns = E10($segments, array(0 => array(0 => ' SGH-T959 '), 1 => array(0 => ' SGH-T959 Build/FROYO'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -405,20 +501,20 @@ function _H10($useragent) {
     $dl[] = array(12482,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; SGH-T959 Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
-  $ns = E10($segments, array(0 => array(0 => ' SPH-D700 '), 1 => array(0 => ' SPH-D700 Build/GINGERBREAD'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14872,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; SPH-D700 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
-    $ls = $ns;
-  }
   $ns = E10($segments, array(0 => array(0 => ' SO-01C '), 1 => array(0 => ' SO-01C Build/GINGERBREAD'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '530.17'), 14 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15133,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; ja_jp; SO-01C Build/GINGERBREAD) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 NetFrontLifeBrowser/2.2 Mobile (Dragonfruit)');
+    $ls = $ns;
+  }
+  $ns = E10($segments, array(0 => array(0 => ' sdk '), 1 => array(0 => ' sdk Build/GRH55'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18061,5629,15760,18092, 'Mozilla/5.0 (Linux; U; Android 2.3; en-us; sdk Build/GRH55) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1');
     $ls = $ns;
   }
   $ns = E10($segments, array(0 => array(0 => ' MID8024 '), 1 => array(0 => ' MID8024 Build/GINGERBREAD'), 2 => array(0 => ' 2.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => '4.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => '533.1'), 14 => array(0 => '533.1')), $ls);

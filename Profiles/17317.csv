@@ -41,7 +41,7 @@ Selector|0|True
 Svg|0|False
 TouchEvents|0|False
 Track|0|False
-Video|0|True
+Video|0|False
 Viewport|0|True
 WebWorkers|0|False
 Xhr2|0|False

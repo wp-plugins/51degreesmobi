@@ -107,15 +107,6 @@ function _H66($useragent) {
     }
     $dl[] = array(12567,17017,17470,18092, $ua);
   }
-  $ua = 'Panasonic-X400/R01 Profile/MIDP-1.0 Configuration/CLDC-1.0';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12567,17017,17470,18092, $ua);
-  }
   $ua = 'Panasonic-X400P/RP1 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -170,6 +161,15 @@ function _H66($useragent) {
     }
     $dl[] = array(12567,17017,17470,18092, $ua);
   }
+  $ua = 'Panasonic-X70';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12567,17017,17470,18092, $ua);
+  }
   $ua = 'Panasonic-MX6/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -178,6 +178,42 @@ function _H66($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12567,17017,17470,18092, $ua);
+  }
+  $ua = 'Panasonic-VS3/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14078,17017,17470,18092, $ua);
+  }
+  $ua = 'Panasonic-VS3/VA47 Browser/Obigo-Browser/3.0 MMS/Obigo-MMS/2.0 Java/Jblend/1.0 Sync/Panasonic/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14078,17017,17470,18092, $ua);
+  }
+  $ua = 'Panasonic-VS3/(2005.05.11)SW1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14078,17017,17470,18092, $ua);
+  }
+  $ua = 'Panasonic-VS3/#Vodafone/1.0/Panasonic-VS3';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14078,17017,17470,18092, $ua);
   }
   $ua = 'Panasonic-G60/1.0 UP.Browser/6.1.0.6 MMP/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -224,42 +260,6 @@ function _H66($useragent) {
     }
     $dl[] = array(12567,17017,4901,18092, $ua);
   }
-  $ua = 'Panasonic-VS3/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14078,17017,17470,18092, $ua);
-  }
-  $ua = 'Panasonic-VS3/VA47 Browser/Obigo-Browser/3.0 MMS/Obigo-MMS/2.0 Java/Jblend/1.0 Sync/Panasonic/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14078,17017,17470,18092, $ua);
-  }
-  $ua = 'Panasonic-VS3/(2005.05.11)SW1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14078,17017,17470,18092, $ua);
-  }
-  $ua = 'Panasonic-VS3/#Vodafone/1.0/Panasonic-VS3';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14078,17017,17470,18092, $ua);
-  }
   $ua = 'Panasonic-VS6/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -277,15 +277,6 @@ function _H66($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15506,17017,17470,18092, $ua);
-  }
-  $ua = 'Panasonic-G50/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI) MMP/1.0';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15595,17017,4901,18092, $ua);
   }
   $ua = 'Panasonic-X800/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -305,6 +296,24 @@ function _H66($useragent) {
     }
     $dl[] = array(12567,5776,3756,18092, $ua);
   }
+  $ua = 'Panasonic-VS2/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12576,17017,17470,18092, $ua);
+  }
+  $ua = 'Panasonic-VS2';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12576,17017,17470,18092, $ua);
+  }
   $ua = 'Panasonic-VS7/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -323,23 +332,14 @@ function _H66($useragent) {
     }
     $dl[] = array(15499,17017,17470,18092, $ua);
   }
-  $ua = 'Panasonic-VS2/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Panasonic-G50/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(12576,17017,17470,18092, $ua);
-  }
-  $ua = 'Panasonic-VS2';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12576,17017,17470,18092, $ua);
+    $dl[] = array(15595,17017,4901,18092, $ua);
   }
   $ua = 'Panasonic-SC3/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);

@@ -55,6 +55,14 @@ function _H91($useragent) {
   // Calculate the segments for the useragent.
   $segments = array(
     0 => fiftyone_degrees_preg_match_all('#(?<=http://)\\w+#', $useragent));
+  $ns = E91($segments, array(0 => array(0 => 'fuknus')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.2.1; http://fuknus.chrisdamitio.com');
+    $ls = $ns;
+  }
   $ns = E91($segments, array(0 => array(0 => 'h2savecom')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -125,14 +133,6 @@ function _H91($useragent) {
       unset($dl);
     }
     $dl[] = array(18254,7480,18245,18156, 'WordPress/MU; http://howtolights.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E91($segments, array(0 => array(0 => 'blog')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.1.1; http://blog.solihost.com/en');
     $ls = $ns;
   }
   $ns = E91($segments, array(0 => array(0 => '063oliver')), $ls);
@@ -599,14 +599,6 @@ function _H91($useragent) {
     $dl[] = array(18254,7480,18245,18156, 'WordPress/MU; http://boydpolitics.wordpress.com');
     $ls = $ns;
   }
-  $ns = E91($segments, array(0 => array(0 => 'www')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.0.1; http://www.firstrain.com/industry');
-    $ls = $ns;
-  }
   $ns = E91($segments, array(0 => array(0 => 'okobojiville')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -797,14 +789,6 @@ function _H91($useragent) {
       unset($dl);
     }
     $dl[] = array(18254,7480,18245,18156, 'WordPress/3.3.1; http://tubeshaker.com');
-    $ls = $ns;
-  }
-  $ns = E91($segments, array(0 => array(0 => 'fuknus')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.3.1; http://fuknus.chrisdamitio.com');
     $ls = $ns;
   }
   $ns = E91($segments, array(0 => array(0 => 'aceflyer')), $ls);
@@ -1125,6 +1109,62 @@ function _H91($useragent) {
       unset($dl);
     }
     $dl[] = array(18254,7480,18245,18156, 'WordPress/3.1.4; http://articledolphin.info');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'www')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.0.1; http://www.insurancewebs.info');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'ismysiteindexed')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.0.4; http://ismysiteindexed.com');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'xindxr')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.2; http://xindxr.info');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'blog')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/2.8.2; http://blog.adcause.com');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'prestononlinenews')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.0.3; http://prestononlinenews.co.uk');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'celebritynews')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.3.1; http://celebritynews.fansite.biz');
+    $ls = $ns;
+  }
+  $ns = E91($segments, array(0 => array(0 => 'flyingcuttlefish')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18254,7480,18245,18156, 'WordPress/3.5-alpha; http://flyingcuttlefish.wordpress.com');
     $ls = $ns;
   }
   $ns = E91($segments, array(0 => array(0 => 'bestandroidapps')), $ls);

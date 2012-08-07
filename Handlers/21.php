@@ -206,15 +206,6 @@ function _H21($useragent) {
     }
     $dl[] = array(17595,17297,18215,18092, $ua);
   }
-  $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; en_au)';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17595,17297,18215,18092, $ua);
-  }
   $ua = 'AppleCoreMedia/1.0.0.11A511a (Macintosh; U; Intel Mac OS X 10_7; en_us)';
   $ns = E21($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -269,7 +260,61 @@ function _H21($useragent) {
     }
     $dl[] = array(17595,17297,18215,18092, $ua);
   }
-  $ua = 'AppleCoreMedia/1.0.0.11A2063 (Macintosh; U; Intel Mac OS X 10_7; en_us)';
+  $ua = 'AppleCoreMedia/1.0.0.11D50d (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11E53 (Macintosh; U; Intel Mac OS X 10_7_4; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11C2002 (Macintosh; U; Intel Mac OS X 10_7_2; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11B2118 (Macintosh; U; Intel Mac OS X 10_7_1; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; fr_fr)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11D2001 (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17595,17297,18215,18092, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; es_es)';
   $ns = E21($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {

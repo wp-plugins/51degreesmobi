@@ -9,7 +9,7 @@ CssColumn|0|False
 CssFlexbox|0|False
 CssFont|0|False
 CssImages|0|False
-CssMediaQueries|0|False
+CssMediaQueries|0|True
 CssMinMax|0|True
 CssOverflow|0|False
 CssPosition|0|False

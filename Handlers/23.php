@@ -80,24 +80,6 @@ function _H23($useragent) {
     }
     $dl[] = array(17678,17017,3625,18092, $ua);
   }
-  $ua = 'AUDIOVOX-CDM8912SP/T115SP0T13 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
-  $ns = E23($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17680,17017,3625,18092, $ua);
-  }
-  $ua = 'AUDIOVOX-CDM8912SP/T115SP0T22 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
-  $ns = E23($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17680,17017,3625,18092, $ua);
-  }
   $ua = 'AUDIOVOX-9155GPX';
   $ns = E23($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -152,14 +134,23 @@ function _H23($useragent) {
     }
     $dl[] = array(17682,17017,3625,18092, $ua);
   }
-  $ua = 'AUDIOVOX-CDM8945';
+  $ua = 'AUDIOVOX-CDM8912SP/T115SP0T13 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(17676,17017,17470,18092, $ua);
+    $dl[] = array(17680,17017,3625,18092, $ua);
+  }
+  $ua = 'AUDIOVOX-CDM8912SP/T115SP0T22 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
+  $ns = E23($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17680,17017,3625,18092, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600';
   $ns = E23($useragent, $ua, $ls);
@@ -197,14 +188,14 @@ function _H23($useragent) {
     }
     $dl[] = array(17677,17017,3625,18092, $ua);
   }
-  $ua = 'AUDIOVOX-CDM9155SP';
+  $ua = 'AUDIOVOX-CDM8945';
   $ns = E23($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(17674,17017,17470,18092, $ua);
+    $dl[] = array(17676,17017,17470,18092, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT/T120SP0T17 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
@@ -259,6 +250,15 @@ function _H23($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17683,17017,3625,18092, $ua);
+  }
+  $ua = 'AUDIOVOX-CDM9155SP';
+  $ns = E23($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17674,17017,17470,18092, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT';
   $ns = E23($useragent, $ua, $ls);

@@ -215,15 +215,6 @@ function _H85($useragent) {
     }
     $dl[] = array(12281,17017,17470,18092, $ua);
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Toshiba G910_G920';
-  $ns = E85($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16988,6742,4643,18092, $ua);
-  }
   $ua = 'Vodafone/ToshibaTS921';
   $ns = E85($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -260,6 +251,15 @@ function _H85($useragent) {
     }
     $dl[] = array(13684,6742,4643,18092, $ua);
   }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Toshiba G910_G920';
+  $ns = E85($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16988,6742,4643,18092, $ua);
+  }
   $ua = 'Toshiba-TS10/1.0 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
   $ns = E85($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -268,15 +268,6 @@ function _H85($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12873,17017,3625,18092, $ua);
-  }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 01)';
-  $ns = E85($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(13684,17017,17191,18092, $ua);
   }
   $ua = 'Toshiba TS608_TS30/v1.0 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
   $ns = E85($useragent, $ua, $ls);
@@ -304,6 +295,15 @@ function _H85($useragent) {
       $ls = $ns;
     }
     $dl[] = array(12276,17017,17470,18092, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 01)';
+  $ns = E85($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(13684,17017,17191,18092, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65 [en] Toshiba G910_G920';
   $ns = E85($useragent, $ua, $ls);

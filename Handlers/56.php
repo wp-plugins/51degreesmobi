@@ -125,6 +125,15 @@ function _H56($useragent) {
     }
     $dl[] = array(14374,17017,4924,18092, $ua);
   }
+  $ua = 'NEC-N840/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.108 (GUI) MMP/2.0';
+  $ns = E56($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14996,17017,3625,18092, $ua);
+  }
   $ua = 'NEC-e540/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.110 (GUI) MMP/2.0';
   $ns = E56($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -169,15 +178,6 @@ function _H56($useragent) {
       $ls = $ns;
     }
     $dl[] = array(14066,17017,3625,18092, $ua);
-  }
-  $ua = 'NEC-N840/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.108 (GUI) MMP/2.0';
-  $ns = E56($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14996,17017,3625,18092, $ua);
   }
   $ua = 'NEC-e373';
   $ns = E56($useragent, $ua, $ls);

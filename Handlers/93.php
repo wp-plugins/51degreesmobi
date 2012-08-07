@@ -70,7 +70,7 @@ function _H93($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18254,7480,18245,18091, 'Mozilla/5.0 (X11; U; Linux i686; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 23655 $');
+    $dl[] = array(18254,7480,18245,18091, 'Mozilla/5.0 (X11; U; Linux x86_64; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 23655 $');
     $ls = $ns;
   }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL), $ls);
@@ -78,7 +78,7 @@ function _H93($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17595,18120,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit (KHTML, like Gecko)');
+    $dl[] = array(17595,18120,18108,18092, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko)');
     $ls = $ns;
   }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11')), $ls);
@@ -87,22 +87,6 @@ function _H93($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,18110,17470,18092, 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1');
-    $ls = $ns;
-  }
-  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net');
-    $ls = $ns;
-  }
-  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.52.7 (KHTML, like Gecko)');
     $ls = $ns;
   }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_3')), $ls);
@@ -209,6 +193,54 @@ function _H93($useragent) {
     $dl[] = array(17595,17296,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/531.22.7 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en) AppleWebKit/531.22.7 (KHTML, like Gecko) "wKiosk for Mac"');
     $ls = $ns;
   }
+  $ns = E93($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8', 1 => 'Mac OS X 10_6_8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17296,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en) AppleWebKit/533.21.1 (KHTML, like Gecko) "wKiosk for Mac"');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17470,18092, 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.52.7 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17297,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7; en-us) AppleWebKit/534.20.8 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17297,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7_3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17595,17297,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3; AppleWebKit/534.55.3 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -289,20 +321,12 @@ function _H93($useragent) {
     $dl[] = array(17595,17295,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko)');
     $ls = $ns;
   }
-  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7')), $ls);
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17595,17297,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7; en-us) AppleWebKit/534.20.8 (KHTML, like Gecko)');
-    $ls = $ns;
-  }
-  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17595,17297,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko)');
+    $dl[] = array(17595,17295,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_3; en-us) AppleWebKit/525.18 (KHTML, like Gecko)');
     $ls = $ns;
   }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
@@ -326,7 +350,7 @@ function _H93($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17595,17294,18108,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/533.19.4 (KHTML, like Gecko)');
+    $dl[] = array(17595,17294,18108,18092, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; nl-nl) AppleWebKit/533.19.4 (KHTML, like Gecko)');
     $ls = $ns;
   }
   $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL), $ls);
@@ -342,7 +366,15 @@ function _H93($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17595,18207,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8) AppleWebKit/536.2.3 (KHTML, like Gecko)');
+    $dl[] = array(17595,18207,18108,18092, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8) AppleWebKit/536.25 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
+  $ns = E93($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12280,17295,17470,18092, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_2; en-gb) AppleWebKit/526+ (KHTML, like Gecko) Version/3.1 iPhone');
     $ls = $ns;
   }
   return $dl;

@@ -197,42 +197,6 @@ function _H69($useragent) {
     }
     $dl[] = array(17230,17017,17470,18092, $ua);
   }
-  $ua = 'portalmmm/2.0 Z320i';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17284,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 Z320i(c100;TB)';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17284,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 Z320i(c30;TD)';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17284,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 Z320i(c10;TJ)';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(17284,17017,17470,18092, $ua);
-  }
   $ua = 'portalmmm/2.0 S410i';
   $ns = E69($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -278,6 +242,42 @@ function _H69($useragent) {
     }
     $dl[] = array(17325,17017,17470,18092, $ua);
   }
+  $ua = 'portalmmm/2.0 Z320i';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17284,17017,17470,18092, $ua);
+  }
+  $ua = 'portalmmm/2.0 Z320i(c100;TB)';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17284,17017,17470,18092, $ua);
+  }
+  $ua = 'portalmmm/2.0 Z320i(c30;TD)';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17284,17017,17470,18092, $ua);
+  }
+  $ua = 'portalmmm/2.0 Z320i(c10;TJ)';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(17284,17017,17470,18092, $ua);
+  }
   $ua = 'portalmmm/2.0 S401i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -286,15 +286,6 @@ function _H69($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17244,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 SG345i(c10;TB)';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16813,17017,17470,18092, $ua);
   }
   $ua = 'portalmmm/2.0 S342i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -323,6 +314,15 @@ function _H69($useragent) {
     }
     $dl[] = array(17328,17017,17470,18092, $ua);
   }
+  $ua = 'portalmmm/2.0 SG345i(c10;TB)';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16813,17017,17470,18092, $ua);
+  }
   $ua = 'portalmmm/2.0 S501i';
   $ns = E69($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -340,24 +340,6 @@ function _H69($useragent) {
       $ls = $ns;
     }
     $dl[] = array(17268,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 SG342i';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16784,17017,17470,18092, $ua);
-  }
-  $ua = 'portalmmm/2.0 SG342i(c10;TB)';
-  $ns = E69($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16784,17017,17470,18092, $ua);
   }
   $ua = 'portalmmm/2.0 my401Ci';
   $ns = E69($useragent, $ua, $ls);
@@ -403,6 +385,24 @@ function _H69($useragent) {
       $ls = $ns;
     }
     $dl[] = array(16751,17017,17470,18092, $ua);
+  }
+  $ua = 'portalmmm/2.0 SG342i';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16784,17017,17470,18092, $ua);
+  }
+  $ua = 'portalmmm/2.0 SG342i(c10;TB)';
+  $ns = E69($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16784,17017,17470,18092, $ua);
   }
   $ua = 'portalmmm/2.0 S720i';
   $ns = E69($useragent, $ua, $ls);

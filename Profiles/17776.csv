@@ -19,7 +19,7 @@ CssTransitions|0|True
 CssUI|0|True
 DataSet|0|False
 DataUrl|0|True
-DeviceOrientation|0|False
+DeviceOrientation|0|True
 FileReader|0|False
 FileSaver|0|False
 FileWriter|0|False
@@ -39,7 +39,7 @@ Progress|0|True
 Prompts|0|True
 Selector|0|True
 Svg|0|False
-TouchEvents|0|False
+TouchEvents|0|True
 Track|0|False
 Video|0|True
 Viewport|0|True

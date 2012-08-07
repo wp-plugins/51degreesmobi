@@ -64,7 +64,7 @@ If you have not set up FTP access, or if there are problems with the above unzip
 
 *  Open the index.php file and within a php tag add:
 
-`echo $_51D['IsMobile'];` 
+`echo $_51D['IsMobile'];`
 
 *  You should see the value "TRUE" or "FALSE".
 
@@ -81,11 +81,14 @@ The FAQ section will be updated as relevant questions are asked of us.
 
 == Changelog ==
 = 2.1.10.3 BETA =
-*  Includes nearly complete theme switcher and redirection administration user interface. 
+*  Includes nearly complete theme switcher and redirection administration user interface.
 
 = 0.51 BETA =
-*  Initial Release 
+*  Initial Release
 
 == Upgrade Notice ==
 = 2.1.10.3 BETA =
-*Current release. Upgrade to this to start receiving device detection data.
+*  Current release. Upgrade to this to start receiving device detection data.
+
+== Known issues ==
+*  Update button has not been fully tested with different licence key combinations.

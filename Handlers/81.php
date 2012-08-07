@@ -99,12 +99,20 @@ function _H81($useragent) {
     $dl[] = array(18088,17295,18325,18092, 'Mozilla/5.0(Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
     $ls = $ns;
   }
+  $ns = E81($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.18'), 3 => array(0 => '528.17'), 4 => array(0 => '4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18088,17295,18325,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.18 (KHTML, like Gecko) Version/4.0 Safari/528.17 Skyfire/2.0');
+    $ls = $ns;
+  }
   $ns = E81($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18088,17017,18325,18092, 'Mozilla/5.0 (Macintosh; U; Intel MacOS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
+    $dl[] = array(18088,17017,18325,18092, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
     $ls = $ns;
   }
   return $dl;

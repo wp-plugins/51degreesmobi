@@ -62,15 +62,6 @@ function _H68($useragent) {
     }
     $dl[] = array(14434,17017,17470,18092, $ua);
   }
-  $ua = 'PhilipsX501/1.0 MTK6235/08B Release/09.09.2009 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(14472,17017,17470,18092, $ua);
-  }
   $ua = 'Philips X116';
   $ns = E68($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -79,6 +70,15 @@ function _H68($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15040,17017,17470,18092, $ua);
+  }
+  $ua = 'PhilipsX501/1.0 MTK6235/08B Release/09.09.2009 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(14472,17017,17470,18092, $ua);
   }
   $ua = 'PhilipsX503/MTK 6235.09A 09.32/WAP-2.0/MIDP-2.0/CLDC-1.1';
   $ns = E68($useragent, $ua, $ls);
@@ -206,15 +206,6 @@ function _H68($useragent) {
     }
     $dl[] = array(12633,17017,17470,18092, $ua);
   }
-  $ua = 'Philips292 / Obigo Browser 2.0';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(15493,7336,17470,18092, $ua);
-  }
   $ua = 'PhilipsX810/1.0 MTK6229/08A Release/11.11.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E68($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -233,6 +224,15 @@ function _H68($useragent) {
     }
     $dl[] = array(16870,17017,17470,18092, $ua);
   }
+  $ua = 'Philips E210/Obigo Browser wap2.0';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16787,17017,17470,18092, $ua);
+  }
   $ua = 'PhilipsX520/1.0 NXP5210/DV9 Release/9.01.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E68($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -242,6 +242,24 @@ function _H68($useragent) {
     }
     $dl[] = array(11960,17017,17470,18092, $ua);
   }
+  $ua = 'Philips292 / Obigo Browser 2.0';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(15493,7336,17470,18092, $ua);
+  }
+  $ua = 'PhilipsX518/1.0 MTK6253/09B Release/15.08.2010 Browser/Obigo2.0 Profile/MIDP-2.1/Configuration/CLDC-1.1';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(12895,17017,17470,18092, $ua);
+  }
   $ua = 'PHILIPS-FISIO 330/3.14 UP.Browser/5.0.3.5 (GUI)';
   $ns = E68($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -250,24 +268,6 @@ function _H68($useragent) {
       $ls = $ns;
     }
     $dl[] = array(16732,17017,4948,18092, $ua);
-  }
-  $ua = 'Philips-568 UP.Browser/6.1.0.7.4 (GUI) MMP/1.0';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16809,17017,4901,18092, $ua);
-  }
-  $ua = 'PHILIPS568/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16809,17017,4901,18092, $ua);
   }
   $ua = 'PhilipsE102/1.0';
   $ns = E68($useragent, $ua, $ls);
@@ -295,15 +295,6 @@ function _H68($useragent) {
       $ls = $ns;
     }
     $dl[] = array(15155,17017,3625,18092, $ua);
-  }
-  $ua = 'PhilipsX518/1.0 MTK6253/09B Release/15.08.2010 Browser/Obigo2.0 Profile/MIDP-2.1/Configuration/CLDC-1.1';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(12895,17017,17470,18092, $ua);
   }
   $ua = 'PHILIPS 162';
   $ns = E68($useragent, $ua, $ls);
@@ -349,6 +340,24 @@ function _H68($useragent) {
       $ls = $ns;
     }
     $dl[] = array(16743,17017,17470,18092, $ua);
+  }
+  $ua = 'Philips-568 UP.Browser/6.1.0.7.4 (GUI) MMP/1.0';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16809,17017,4901,18092, $ua);
+  }
+  $ua = 'PHILIPS568/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0';
+  $ns = E68($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(16809,17017,4901,18092, $ua);
   }
   $ua = 'PHILIPS755';
   $ns = E68($useragent, $ua, $ls);
@@ -421,15 +430,6 @@ function _H68($useragent) {
       $ls = $ns;
     }
     $dl[] = array(16863,17017,17470,18092, $ua);
-  }
-  $ua = 'Philips E210/Obigo Browser wap2.0';
-  $ns = E68($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(16787,17017,17470,18092, $ua);
   }
   $ua = 'PHILIPS-Fisio 121';
   $ns = E68($useragent, $ua, $ls);

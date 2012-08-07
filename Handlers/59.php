@@ -106,12 +106,52 @@ function _H59($useragent) {
     $dl[] = array(16074,5768,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia3110c/04.91; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/null');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15228,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8.2');
+    $dl[] = array(15228,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15228,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/07.48a; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15803,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia200/11.56; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15803,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia200/10.58; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18267,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18267,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/11.57; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -122,164 +162,92 @@ function _H59($useragent) {
     $dl[] = array(15228,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $dl[] = array(12989,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia303/13.47; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13035,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8.2');
+    $dl[] = array(12989,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia303/14.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14540,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $dl[] = array(13035,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(13035,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/07.48a; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-02.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15228,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $dl[] = array(13035,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-02.1/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13035,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.8');
+    $dl[] = array(14635,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14669,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $dl[] = array(14635,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/07.20; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/04.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(15228,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8.2');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13107,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.8');
+    $dl[] = array(14482,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/06.05; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14862,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $dl[] = array(18221,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia302/14.53; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2700c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14862,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia2700c/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14708,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14708,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5130/07.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14635,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/04.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17475,5768,17436,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.00; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14862,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14708,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5130/07.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14708,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/06.94; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14540,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14540,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-01.1/07.22; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(18221,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia302/14.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
@@ -298,6 +266,22 @@ function _H59($useragent) {
     $dl[] = array(14708,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.4.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -306,12 +290,444 @@ function _H59($useragent) {
     $dl[] = array(14540,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14862,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(12989,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia303/13.44; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15803,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia200/10.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8.2');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-02.1/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.1.21.8.2');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-02.1/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '201'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15785,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia201/11.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '201'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15785,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia201/11.56; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15228,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-02.1/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13107,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/07.29; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13107,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/07.29; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15837,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15786,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15786,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.69; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13107,5043,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18267,17017,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.91; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia2700c/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15228,5043,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18221,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia302/14.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15241,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia300/07.03; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.9');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '202'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18219,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia202/20.28; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '201'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15785,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia201/11.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12989,5843,17438,18092, 'Mozilla/5.0 (Series40; Nokia303/14.38; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX3-02.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15837,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15241,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia300/07.03; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/07.15; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX3-02.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/04.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5130/07.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14711,5204,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/04.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-01.1/07.22; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17475,5768,17470,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.21; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '202'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18219,5843,17438,18092, 'Mozilla/5.0 (Series40; Nokia202/20.28; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15803,5843,17438,18092, 'Mozilla/5.0 (Series40; Nokia200/10.58; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
@@ -322,44 +738,36 @@ function _H59($useragent) {
     $dl[] = array(13107,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8.4');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18267,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $dl[] = array(17475,5768,17436,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.00; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18267,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $dl[] = array(14482,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14669,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/04.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(14482,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/07.15; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14540,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX2-01.1/07.22; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14540,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $dl[] = array(15786,17017,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -378,6 +786,102 @@ function _H59($useragent) {
     $dl[] = array(14708,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia5130/07.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => '5130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5130/07.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/06.94; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,18273,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX2-01.1/07.22; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14540,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15803,5843,17470,18092, 'Mozilla/5.0 (Series40; Nokia200/10.58; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15786,17017,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17475,5768,17437,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.21; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12473,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12108,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7230/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.1');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '7230-1c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12108,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7230-1c/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.1');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => '6300'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -394,44 +898,12 @@ function _H59($useragent) {
     $dl[] = array(17475,5768,17431,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.21; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15228,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15228,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15228,5043,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14669,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14540,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(14711,5204,17431,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -458,6 +930,14 @@ function _H59($useragent) {
     $dl[] = array(12473,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1b/07.70; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14635,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -474,6 +954,14 @@ function _H59($useragent) {
     $dl[] = array(14848,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/08.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15228,5043,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -482,52 +970,36 @@ function _H59($useragent) {
     $dl[] = array(14669,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/04.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17475,5768,17437,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.21; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(14711,5204,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.68.14');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15837,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $dl[] = array(14669,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '302'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18221,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia302/14.26; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $dl[] = array(14482,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02.1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13035,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-02.1/so7.22; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13035,5043,17438,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/07.29; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14862,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $dl[] = array(14482,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/07.15; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -538,60 +1010,28 @@ function _H59($useragent) {
     $dl[] = array(14714,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14711,5204,17431,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.2');
+    $dl[] = array(12056,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12473,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
+    $dl[] = array(12108,5843,17470,18092, 'Mozilla/5.0 (Series40; Nokia7230/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1b'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12473,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1b/07.70; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.13');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1b', 1 => '2730c-1b'), 1 => array(0 => ' Nokia2730c-1b/07.70'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12473,5204,17431,18092, 'Nokia2730c-1b/2.0 (07.70) Profile/MIDP-2.1 Configuration/CLDC-1.1 S40OviBrowser/1.0.0.9.13 Profile/MIDP-2.1 Configuration/CLDC-1.1 Series40 Nokia2730c-1b/07.70');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12108,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7230/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.1');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7230-1c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12108,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7230-1c/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17.1');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15803,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia200/10.61; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
+    $dl[] = array(12139,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -610,6 +1050,38 @@ function _H59($useragent) {
     $dl[] = array(12139,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/04.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX3-02.5/06.73; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.1.21.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/07.16; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.1.21.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12989,5843,17470,18092, 'Mozilla/5.0 (Series40; Nokia303/13.44; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -618,60 +1090,100 @@ function _H59($useragent) {
     $dl[] = array(14708,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1b'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14714,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(12473,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1b/07.70; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.7.3');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1b', 1 => '2730c-1b'), 1 => array(0 => ' Nokia2730c-1b/07.70'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15228,5043,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-03/06.51; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(12473,5204,17431,18092, 'Nokia2730c-1b/2.0 (07.70) Profile/MIDP-2.1 Configuration/CLDC-1.1 S40OviBrowser/1.0.0.9.13 Profile/MIDP-2.1 Configuration/CLDC-1.1 Series40 Nokia2730c-1b/07.70');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14711,5204,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $dl[] = array(12473,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/07.70; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14669,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.25; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(13035,5043,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
+    $dl[] = array(14482,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15786,17017,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $dl[] = array(14482,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/06.73; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.1.21.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12125,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia6500s-1/06.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(18267,17017,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14711,5204,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.20; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.1.21.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX3-02.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,18273,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -690,12 +1202,12 @@ function _H59($useragent) {
     $dl[] = array(14682,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia6303iclassic/09.83; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11625,5768,17431,18092, 'Mozilla/5.0 (Series40; Nokia5300/05.51; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(14540,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -704,6 +1216,118 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(12473,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14708,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14848,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/08.54; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.17; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15241,5843,17438,18092, 'Mozilla/5.0 (Series40; Nokia300/06.97; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11625,5768,17436,18092, 'Mozilla/5.0 (Series40; Nokia5300/05.51; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12125,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia6500s-1/06.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12139,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11625,5768,17431,18092, 'Mozilla/5.0 (Series40; Nokia5300/05.51; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14711,5204,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/10.50; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14714,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11787,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14862,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12056,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12125,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia6500s-1/10.00; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
@@ -719,103 +1343,7 @@ function _H59($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12139,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5130c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14708,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia5130c-2/07.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14711,5204,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/10.50; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17475,5768,17470,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.00; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12473,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11625,5768,17436,18092, 'Mozilla/5.0 (Series40; Nokia5300/05.51; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14714,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14862,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2700c-2/07.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12139,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15803,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia200/11.56; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12056,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14848,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/03.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14714,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(12139,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6500c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -826,12 +1354,12 @@ function _H59($useragent) {
     $dl[] = array(11643,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia6500c/03.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/03.35; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
+    $dl[] = array(14714,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5610d-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -842,20 +1370,20 @@ function _H59($useragent) {
     $dl[] = array(11808,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5610d-1/10.00; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14848,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/03.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14711,5204,17436,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/10.50; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12056,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -874,22 +1402,6 @@ function _H59($useragent) {
     $dl[] = array(12125,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia6500s-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12989,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia303/13.44; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12989,5843,18273,18092, 'Mozilla/5.0 (Series40; Nokia303/14.38; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
-    $ls = $ns;
-  }
   $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -898,28 +1410,12 @@ function _H59($useragent) {
     $dl[] = array(14557,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia6303classic/09.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14669,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/08.17; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12139,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5310XpressMusic/09; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12473,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $dl[] = array(14862,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '3600slide'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -938,28 +1434,20 @@ function _H59($useragent) {
     $dl[] = array(12287,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia6700c-1/13.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2700c-2'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => 'X2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14862,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/09.95; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(15837,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14540,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/08.63; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5610d-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11808,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5610d-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(12056,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -978,36 +1466,12 @@ function _H59($useragent) {
     $dl[] = array(12108,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia7230-1c/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14482,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14482,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12139,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia5310XpressMusic/10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14714,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $dl[] = array(11625,5768,17437,18092, 'Mozilla/5.0 (Series40; Nokia5300/05.00; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1018,28 +1482,28 @@ function _H59($useragent) {
     $dl[] = array(14482,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11625,5768,17437,18092, 'Mozilla/5.0 (Series40; Nokia5300/07.20; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(12473,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5310XpressMusic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12125,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia6500s-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $dl[] = array(12139,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5310XpressMusic/09; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5610d-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11787,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(11808,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5610d-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -1048,6 +1512,14 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(14482,5843,17437,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11787,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1066,60 +1538,12 @@ function _H59($useragent) {
     $dl[] = array(15158,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia2710c-2/09.67; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11787,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
   $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(11625,5768,17470,18092, 'Mozilla/5.0 (Series40; Nokia5300/07.20; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14482,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/06.75; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12108,5843,17470,18092, 'Mozilla/5.0 (Series40; Nokia7230/06.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14848,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/08.54; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6500c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11643,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia6500c/03.21; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6303iclassic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14682,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6303iclassic/09.83; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5330-1d'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1130,28 +1554,12 @@ function _H59($useragent) {
     $dl[] = array(13914,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia5330-1d/06.88; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14635,5843,17470,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/03.35; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11787,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13035,5043,17470,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
+    $dl[] = array(11787,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia3120classic/07.16; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -1162,12 +1570,20 @@ function _H59($useragent) {
     $dl[] = array(12056,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12473,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(12473,5204,18273,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6303iclassic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14682,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6303iclassic/07.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -1178,14 +1594,6 @@ function _H59($useragent) {
     $dl[] = array(14848,5843,17435,18092, 'Mozilla/5.0 (Series40; NokiaX3-00/08.54; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '5220XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11841,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5220XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
   $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1194,36 +1602,28 @@ function _H59($useragent) {
     $dl[] = array(14711,5204,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/10.50; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '2730c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14482,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(12473,5204,17435,18092, 'Mozilla/5.0 (Series40; Nokia2730c-1/10.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '7310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5220XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16503,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia7310/08.20; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(11841,5204,17436,18092, 'Mozilla/5.0 (Series40; Nokia5220XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6303iclassic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6500c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14682,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia6303iclassic/09.83; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13035,5043,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $dl[] = array(11643,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia6500c/06.61; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
@@ -1234,6 +1634,30 @@ function _H59($useragent) {
     $dl[] = array(17475,5768,3780,18092, 'Mozilla/5.0 (Series40; Nokia6300/07.30; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => '6303iclassic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14682,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia6303iclassic/10.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13035,5043,17437,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14482,5843,17431,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => '301'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1242,44 +1666,12 @@ function _H59($useragent) {
     $dl[] = array(12759,5843,17436,18092, 'Mozilla/5.0 (Series40; Nokia301/pk104_11w23; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.10');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '7310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12108,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia7230/06.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7230-1c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12108,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia7230-1c/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14669,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-00/04.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.11');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '5220XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11841,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5220XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12125,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6500s-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $dl[] = array(16503,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia7310/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1306,12 +1698,28 @@ function _H59($useragent) {
     $dl[] = array(11808,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia5610d-1/10.00; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-06'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '5220XpressMusic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13107,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-06/06.52; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
+    $dl[] = array(11841,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia5220XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12108,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia7230/06.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '7230-1c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12108,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia7230-1c/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -1322,20 +1730,12 @@ function _H59($useragent) {
     $dl[] = array(14557,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia6303classic/09.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6500s-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12287,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6700c-1/07.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14557,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6303classic/09.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
+    $dl[] = array(12125,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6500s-1/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.4.0')), $ls);
@@ -1346,36 +1746,12 @@ function _H59($useragent) {
     $dl[] = array(16503,5204,17437,18092, 'Mozilla/5.0 (Series40; Nokia7310/09.40; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14848,5843,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; NokiaX3-00/04.11; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14714,5843,18273,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/07.16; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.2.62.10');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14557,5768,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6303classic/09.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12287,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia6700c-1/10.50; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
+    $dl[] = array(12287,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6700c-1/07.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
@@ -1386,12 +1762,12 @@ function _H59($useragent) {
     $dl[] = array(12108,5843,17433,18092, 'Mozilla/5.0 (Series40; Nokia7230/10.81; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6280'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11868,5768,17431,18092, 'Mozilla/5.0 (Series40; Nokia6280/06.43; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $dl[] = array(14557,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia6303classic/08.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '3600slide'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
@@ -1400,6 +1776,14 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(11769,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia3600slide/04.86; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12287,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia6700c-1/07.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6600i-1c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1418,12 +1802,28 @@ function _H59($useragent) {
     $dl[] = array(13914,5843,17437,18092, 'Mozilla/5.0 (Series40; Nokia5330-1d/06.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.4.0.34.8');
     $ls = $ns;
   }
+  $ns = E59($segments, array(0 => array(0 => '6280'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11868,5768,17431,18092, 'Mozilla/5.0 (Series40; Nokia6280/06.10; Profile/MIDP-2.0 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
   $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12056,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X3-00'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14848,5843,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; NokiaX3-00/04.11; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7020'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1450,12 +1850,12 @@ function _H59($useragent) {
     $dl[] = array(12414,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7020/08.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6303classic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12287,5768,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6700c-1/07.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $dl[] = array(14557,5768,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6303classic/09.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C1-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1466,20 +1866,20 @@ function _H59($useragent) {
     $dl[] = array(14826,5843,17436,18092, 'Mozilla/5.0 (Series40; NokiaC1-01/03.35; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14711,5204,17433,18092, 'Mozilla/5.0 (Series40; NokiaC2-01/11.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
   $ns = E59($segments, array(0 => array(0 => '5330-1d'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13914,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia5330-1d/06.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '6700c-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12287,5768,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6700c-1/07.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -1528,54 +1928,6 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(13057,5043,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-03/pkCEX11w05mcl; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14482,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-01.5/win6.65SSC; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C3-01'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14482,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaC3-01/05.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6600s'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11801,5776,17431,18092, 'Mozilla/5.0 (Series40; Nokia6600s/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '6500c'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11643,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6500c/04.84; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '2690'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12059,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2690/10.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11787,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -1634,12 +1986,28 @@ function _H59($useragent) {
     $dl[] = array(14862,5204,3780,18092, 'Mozilla/5.0 (Series40; Nokia2700c-2/07.15; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '2690'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6500c'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12059,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2690/10.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $dl[] = array(11643,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia6500c/04.84; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2690'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12059,5204,17431,18092, 'Mozilla/5.0 (Series40; Nokia2690/09.70; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '3120classic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11787,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia3120classic/09.41; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1656,14 +2024,6 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(13057,5043,17436,18092, 'Mozilla/5.0 (Series40; NokiaC3-03/pkCEX11w05mcl; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.3.23.12');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X3-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14714,5843,17433,18092, 'Mozilla/5.0 (Series40; NokiaX3-02/05.32; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.1.21.8');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => 'C2-03'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
@@ -1690,12 +2050,20 @@ function _H59($useragent) {
     $dl[] = array(14635,5843,3780,18092, 'Mozilla/5.0 (Series40; NokiaC3-00/04.45; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '7510Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '6600s'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14909,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7510Supernova/06.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
+    $dl[] = array(11801,5776,17431,18092, 'Mozilla/5.0 (Series40; Nokia6600s/05.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '2690'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12059,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia2690/10.10; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '6303iclassic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
@@ -1720,14 +2088,6 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(11828,5776,17431,18092, 'Mozilla/5.0 (Series40; Nokia6600i-1c/36.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.11.8');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14669,5843,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; NokiaX2-00/04.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
@@ -1778,14 +2138,6 @@ function _H59($useragent) {
     $dl[] = array(14540,5843,4030,18092, 'Mozilla/5.0 (Series40; NokiaX2-01/07.11; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/null');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => '5610d-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11808,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5610d-1/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
   $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1834,12 +2186,28 @@ function _H59($useragent) {
     $dl[] = array(13914,5843,17435,18092, 'Mozilla/5.0 (Series40; Nokia5330-1d/06.85; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.2.26.6');
     $ls = $ns;
   }
-  $ns = E59($segments, array(0 => array(0 => 'C2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '2.0.1')), $ls);
+  $ns = E59($segments, array(0 => array(0 => '7510Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13035,5043,18273,18092, 'Mozilla/5.0 (Series40; NokiaC2-02/06.96; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/2.0.1.62.6');
+    $dl[] = array(14909,5843,17431,18092, 'Mozilla/5.0 (Series40; Nokia7510Supernova/06.65; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/1.0.0.9.17');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => 'X2-00'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14669,5843,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; NokiaX2-00/04.80; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
+    $ls = $ns;
+  }
+  $ns = E59($segments, array(0 => array(0 => '5610d-1'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11808,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5610d-1/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
     $ls = $ns;
   }
   $ns = E59($segments, array(0 => array(0 => '5220XpressMusic'), 1 => array(0 => '/3.0FP1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '0.8.3')), $ls);
@@ -1848,38 +2216,6 @@ function _H59($useragent) {
       unset($dl);
     }
     $dl[] = array(11841,5204,4617,18092, 'Mozilla/5.0 (Series40/3.0FP1; Nokia5220XpressMusic/07; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/0.8.3');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-02'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18267,17017,17435,18092, 'Mozilla/5.0 (Series40; NokiaX2-02/10.90; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => '7210Supernova'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12056,5204,17470,18092, 'Mozilla/5.0 (Series40; Nokia7210Supernova/07.2; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.8.0.50.5');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'C2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.0.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15786,17017,17435,18092, 'Mozilla/5.0 (Series40; NokiaC2-05/08.30; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.0.2.26.11');
-    $ls = $ns;
-  }
-  $ns = E59($segments, array(0 => array(0 => 'X2-05'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '1.5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15837,5843,17438,18092, 'Mozilla/5.0 (Series40; NokiaX2-05/08.60; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/X S40OviBrowser/1.5.0.34.15');
     $ls = $ns;
   }
   return $dl;

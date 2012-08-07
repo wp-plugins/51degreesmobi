@@ -119,6 +119,22 @@ function _H75($useragent) {
     $dl[] = array(14864,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXJEE; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14985,5520,3797,18092, 'SAMSUNG-GT-S8530/1.0 SHP/VPP/R5 Dolfin/2.2 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14985,5520,3797,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530/S8530XXJKA; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S5230'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -157,22 +173,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(12137,17484,3502,18092, 'SAMSUNG-GT-S5620/1.0 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14985,5520,3797,18092, 'SAMSUNG-GT-S8530/1.0 SHP/VPP/R5 Dolfin/2.2 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14985,5520,3797,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530/S8530XXJKA; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3303', 1 => 'C3303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -236,7 +236,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15518,17484,4248,18092, 'SAMSUNG-GT-S5230G/S523GBKJG1 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15518,17484,4248,18092, 'SAMSUNG-GT-S5230G/S523GBKJA1 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5230'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -260,7 +260,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15198,17484,4248,18092, 'SAMSUNG-GT-S3650/S3650XXII4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15198,17484,4248,18092, 'SAMSUNG-GT-S3650/S3650XXIJ3 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3650W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -269,6 +269,22 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(15198,17484,4248,18092, 'SAMSUNG-GT-S3650W/S3650WXEJA2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7230E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12849,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7230E/S723EDTKB1; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5253'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13677,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5253/S5253DDKJ2; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C5212i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -287,28 +303,28 @@ function _H75($useragent) {
     $dl[] = array(11742,17484,3976,18092, 'SAMSUNG-GT-C5212/C5212XAHK4 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7230E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12849,5267,3834,18092, 'SAMSUNG-GT-S7230E/S723EBWJJ4 Bada/1.0 AppleWebKit/533.1 Dolfin/2.0 Mobile NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5253'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13677,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5253/S5253DDKC1; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S3653'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12080,17484,4248,18092, 'SAMSUNG-GT-S3653/S365MDDJJ2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5250'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14353,5267,3834,18092, 'SAMSUNG-GT-S5250/S5250BWJI5 Bada/1.0 AppleWebKit/533.1 Dolfin/2.0 Mobile NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5250'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14353,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5250/1.0; U; bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B3410R'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -348,7 +364,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14218,17484,4223,18092, 'SAMSUNG-GT-C3300K-ORANGE/C3300KBVJG3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1,SAMSUNG-GT-C3300K-ORANGE/C3300KBVJG3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14218,17484,4223,18092, 'SAMSUNG-GT-C3300K/C3300KXXJF9 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1,SAMSUNG-GT-C3300K/C3300KXXJF9 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3300K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -423,20 +439,28 @@ function _H75($useragent) {
     $dl[] = array(14218,17484,4223,18092, 'Vodafone/1.0/SAMSUNG-GT-C3300K/PIJI1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5250'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3222', 1 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14353,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5250/S5250XXJI9; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
+    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5250'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3222W'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14353,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5250/1.0; U; bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
+    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222W/C3222WJPKD4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -487,28 +511,12 @@ function _H75($useragent) {
     $dl[] = array(12457,17484,3625,18092, 'Vodafone/1.0/SAMSUNG-GT-E2550/XXJL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3222', 1 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3222W'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222W/C3222WJPKD4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14912,17484,4223,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14864,5520,3797,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXJL2; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5233A'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -519,6 +527,22 @@ function _H75($useragent) {
     $dl[] = array(16003,17484,3636,18092, 'SAMSUNG-GT-S5233A/1.0 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S5260'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14404,17484,3834,18092, 'SAMSUNG-GT-S5260/S5260XXKA6 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5260P'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14404,17484,3834,18092, 'SAMSUNG-GT-S5260P-ORANGE/S5260PBVKE2 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S5600'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -527,12 +551,20 @@ function _H75($useragent) {
     $dl[] = array(12051,17484,3636,18092, 'SAMSUNG-GT-S5600/S5600MNII3 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B5310'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3850'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15197,17484,3502,18092, 'SAMSUNG-GT-B5310/1.0 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15655,17484,3834,18092, 'SAMSUNG-GT-S3850/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7722'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14980,17484,3502,18092, 'SAMSUNG-GT-B7722/DDJH6 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B5310U'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -559,12 +591,12 @@ function _H75($useragent) {
     $dl[] = array(15197,17484,3502,18092, 'SAMSUNG-GT-B5310L/1.0 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '2.2'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B5310'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14864,5520,3797,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXJL2; U; Bada/1.2; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.2 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
+    $dl[] = array(15197,17484,3502,18092, 'SAMSUNG-GT-B5310/B5310DDIK5 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -575,36 +607,12 @@ function _H75($useragent) {
     $dl[] = array(13392,17484,4223,18092, 'SAMSUNG-GT-C3510/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7722'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14980,17484,3502,18092, 'SAMSUNG-GT-B7722/DDJH6 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5260'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14404,17484,3834,18092, 'SAMSUNG-GT-S5260/S5260XXKA6 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5260P'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14404,17484,3834,18092, 'SAMSUNG-GT-S5260P-ORANGE/S5260PBVKE2 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3850'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15655,17484,3834,18092, 'SAMSUNG-GT-S3850/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $dl[] = array(16366,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8600/S8600DDKK4; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3370C'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -639,6 +647,14 @@ function _H75($useragent) {
     $dl[] = array(14972,17484,3502,18092, 'SAMSUNG-GT-S3370/S3370NEJD1 SHP/VPP/R5 Dolfin/1.5 Qtv/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C3050C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11795,17484,3625,18092, 'SAMSUNG-GT-C3050C/1.0 Release/1.19.2009 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S5560'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -647,12 +663,52 @@ function _H75($useragent) {
     $dl[] = array(11996,17484,4086,18092, 'SAMSUNG-GT-S5560/1.0 SHP/VPP/R5 Dolfin/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3050C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11795,17484,3625,18092, 'SAMSUNG-GT-C3050C/1.0 Release/1.19.2009 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(14864,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXLA1; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5380K'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380K/S5380KDDKK6; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5380D'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/1.0; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5380'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380-BOUYGUES/S5380AGKK5; U; Bada/2.0; fr-fr) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5380B'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380B/1.0; U; Bada/2.0; pt-br) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5330'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14029,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330/1.0; U; Bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2152', 1 => 'E2152'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -679,14 +735,6 @@ function _H75($useragent) {
     $dl[] = array(13540,17484,4223,18092, 'SAMSUNG-GT-E2152/E2152DDJH1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14709,17484,4223,18092, 'SAMSUNG-GT-M8800/M8800ADIF2 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'B5722'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -695,36 +743,28 @@ function _H75($useragent) {
     $dl[] = array(14971,17484,4223,18092, 'SAMSUNG-GT-B5722/B5722DDJA1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2120L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5750E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15487,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5750E-Orange/S5750EAFKE1; U; Bada/1.0; fr-fr) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2120B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120B/E2120BDDIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(14709,17484,4223,18092, 'SAMSUNG-GT-M8800/M8800ADIF2 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2120i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5233S'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120i/E2120iDDJE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2120'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(11945,17484,3636,18092, 'SAMSUNG-GT-S5233S/S5233SDDJJ1 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2121'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -759,12 +799,36 @@ function _H75($useragent) {
     $dl[] = array(12580,17484,3625,18092, 'SAMSUNG-GT-E2121L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5233S'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2120L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11945,17484,3636,18092, 'SAMSUNG-GT-S5233S/S5233SDDJJ1 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120L/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2120B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120B/E2120BDDIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2120i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120i/E2120iDDJG2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2120'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13226,17484,3625,18092, 'SAMSUNG-GT-E2120/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5230W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -775,20 +839,20 @@ function _H75($useragent) {
     $dl[] = array(12165,17484,4248,18092, 'SAMSUNG-GT-S5230W/S523WXIJK1 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3212i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2222', 1 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1', 1 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11903,17484,4223,18092, 'SAMSUNG-GT-C3212i/C3212IDDJF2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(16518,17484,4392,18092, 'SAMSUNG-GT-E2222/E2222DDKE5 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1,SAMSUNG-GT-E2222/E2222DDKE5 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3212'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11903,17484,4223,18092, 'SAMSUNG-GT-C3212/C3212DDIL1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(16518,17484,4392,18092, 'SAMSUNG-GT-E2222/E2222JVKJ3 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000T Opera 9.5 (Windows CE; Opera Mobi; U; en) DVJG1'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
@@ -797,14 +861,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(15210,5049,3430,18092, 'SAMSUNG-GT-i8000T Opera 9.5 (Windows CE; Opera Mobi; U; en) DVJG1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'i8000Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15210,5049,3430,18092, 'SAMSUNG-GT-i8000Orange/NXXJE3 (Windows CE; Opera Mobi; U; en) Opera 9.5');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
@@ -839,12 +895,28 @@ function _H75($useragent) {
     $dl[] = array(15210,5049,3430,18092, 'SAMSUNG-GT-i8000/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'i8000Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12301,17484,4223,18092, 'SAMSUNG-GT-S3100/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15210,5049,3430,18092, 'SAMSUNG-GT-i8000Orange/BVIJ1 (Windows CE; Opera Mobi; U; en) Opera 9.5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3212i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11903,17484,4223,18092, 'SAMSUNG-GT-C3212i/C3212IDDJF2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3212'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11903,17484,4223,18092, 'SAMSUNG-GT-C3212/C3212DDIL1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5333'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -853,14 +925,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14182,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5333/S5333DDJI5; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13770,17484,4223,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3350', 1 => 'S3350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -877,14 +941,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14297,17484,4223,18092, 'SAMSUNG-GT-S3350/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6712'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15547,17484,3834,18092, 'SAMSUNG-GT-C6712/C6712DDKG1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2652'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -911,28 +967,44 @@ function _H75($useragent) {
     $dl[] = array(14673,17484,4223,18092, 'SAMSUNG-GT-E2652W/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5330'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C6712'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14029,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5330/1.0; U; Bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
+    $dl[] = array(15547,17484,3834,18092, 'SAMSUNG-GT-C6712/C6712DDKG1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5750E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15487,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5750E-Orange/S5750EAFKE1; U; Bada/1.0; fr-fr) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $dl[] = array(14985,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530/S8530XXLA1; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'I8320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.6'), 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S7233E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14643,17484,18336,18092, 'SAMSUNG-GT-I8320-Vodafone/I8320BUJC1 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(14831,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7233E/1.0; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12301,17484,4223,18092, 'SAMSUNG-GT-S3100/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13770,17484,4223,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B2710'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -951,6 +1023,30 @@ function _H75($useragent) {
     $dl[] = array(13784,17484,3834,18092, 'SAMSUNG-GT-B2710D/B2710DDDJJ2 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'B3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11814,17484,4223,18092, 'SAMSUNG-GT-B3210/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11814,17484,4223,18092, 'SAMSUNG-GT-B3210/1.0 Release/10.19.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU3Nzk3MDM2ODc0MDcx');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I8320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.6'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14643,17484,18336,18092, 'SAMSUNG-GT-I8320-Vodafone/I8320BUJC1 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S3600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -959,12 +1055,12 @@ function _H75($useragent) {
     $dl[] = array(12077,17484,4223,18092, 'SAMSUNG-GT-S3600i/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'i8000Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3653W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15210,5049,4808,18092, 'SAMSUNG-GT-i8000Orange/NXXJB3 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(12351,17484,4248,18092, 'SAMSUNG-GT-S3653W/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000V'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1031,6 +1127,14 @@ function _H75($useragent) {
     $dl[] = array(15210,5049,4808,18092, 'SAMSUNG-GT-i8000/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-GT-i8000/1.0');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'i8000Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15210,5049,4808,18092, 'SAMSUNG-GT-i8000Orange/BVJB3 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1045,38 +1149,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(15210,5049,4808,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-GT-i8000V/NXXJE2');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11814,17484,4223,18092, 'SAMSUNG-GT-B3210/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11814,17484,4223,18092, 'SAMSUNG-GT-B3210/1.0 Release/10.19.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU3Nzk3MDM2ODc0MDcx');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16518,17484,4392,18092, 'SAMSUNG-GT-E2222/E2222DDKE5 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2222', 1 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1', 1 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16518,17484,4392,18092, 'SAMSUNG-GT-E2222/E2222DDKE5 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1,SAMSUNG-GT-E2222/E2222DDKE5 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5603'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1095,20 +1167,52 @@ function _H75($useragent) {
     $dl[] = array(13734,17484,3636,18092, 'SAMSUNG-GT-S5603T/1.0 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7233E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14831,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7233E/1.0; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $dl[] = array(15492,17484,4392,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7070'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3322', 1 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1', 1 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12369,17484,4248,18092, 'SAMSUNG-GT-S7070/S7070ADJD1 SHP/VPP/R5 Jasmine/1.0 Nextreaming/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15492,17484,4392,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210/E3210DDKB6 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E3210L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210L/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E3210B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210B/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5753E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14851,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5753E/S5753EDDJK6; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C5010E'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1151,12 +1255,12 @@ function _H75($useragent) {
     $dl[] = array(12643,17484,4223,18092, 'SAMSUNG-GT-C5010/C5010DDJF3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3653W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S7070'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12351,17484,4248,18092, 'SAMSUNG-GT-S3653W/S3653WJPJC4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(12369,17484,4248,18092, 'SAMSUNG-GT-S7070/S7070ADJD1 SHP/VPP/R5 Jasmine/1.0 Nextreaming/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S8003'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1173,14 +1277,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14633,17484,18336,18092, 'SAMSUNG-GT-I6410-Vodafone/I6410BUJC1 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5753E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14851,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5753E/S5753EDDJK6; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I8510C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1204,7 +1300,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14916,17484,3625,18092, 'SAMSUNG-GT-C3303i/C3303iDDKB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(14916,17484,3625,18092, 'SAMSUNG-GT-C3303i/C3303iDDKF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3303K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -1212,23 +1308,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14916,17484,3625,18092, 'SAMSUNG-GT-C3303K/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M5650'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12273,17484,4248,18092, 'SAMSUNG-GT-M5650/M5650XIJA1 SHP/VPP/R5 Jasmine/1.0 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M5650U'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12273,17484,4248,18092, 'SAMSUNG-GT-M5650U/1.0 SHP/VPP/R5 Jasmine/1.0 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(14916,17484,3625,18092, 'samsung gt-c3303k, SAMSUNG-GT-C3303K/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5233W'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1239,6 +1319,38 @@ function _H75($useragent) {
     $dl[] = array(13602,17484,3636,18092, 'SAMSUNG-GT-S5233W/1.0 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C3200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14348,17484,4223,18092, 'SAMSUNG-GT-C3200/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15988,17484,17394,18092, 'SAMSUNG-GT-C3312/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M5650U'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12273,17484,4248,18092, 'SAMSUNG-GT-M5650U/1.0 SHP/VPP/R5 Jasmine/1.0 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M5650'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12273,17484,4248,18092, 'SAMSUNG-GT-M5650/M5650DDIL1 SHP/VPP/R5 Jasmine/1.0 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S5350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1247,12 +1359,44 @@ function _H75($useragent) {
     $dl[] = array(12260,17484,4223,18092, 'SAMSUNG-GT-S5350/S5350DDJF1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3200'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3770K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14348,17484,4223,18092, 'SAMSUNG-GT-C3200/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(12835,17484,4392,18092, 'SAMSUNG-GT-S3770K/S3770KDDKH4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3770'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12835,17484,4392,18092, 'SAMSUNG-GT-S3770/S3770AHKG3 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3770L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12835,17484,4392,18092, 'SAMSUNG-GT-S3770L/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13683,17484,3976,18092, 'SAMSUNG-GT-B3310/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5263'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14010,17484,3834,18092, 'SAMSUNG-GT-S5263/S5263DDKE1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3303K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1279,54 +1423,6 @@ function _H75($useragent) {
     $dl[] = array(14916,17484,17606,18092, 'SAMSUNG-GT-C3303i/C3303iDDKF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15492,17484,4392,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3322', 1 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1', 1 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15492,17484,4392,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3322/C3322DDKE4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14864,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/S8500XXLA1; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5263'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14010,17484,3834,18092, 'SAMSUNG-GT-S5263/S5263DDKE1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13683,17484,3976,18092, 'SAMSUNG-GT-B3310/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12457,17605,3625,18092, 'SAMSUNG-GT-E2550/1.0 RTK-E/1.0 DF/1.0 Release/23.04.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU1MTcwMDQxNzI5MTg5 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1335,92 +1431,20 @@ function _H75($useragent) {
     $dl[] = array(12679,17484,3976,18092, 'SAMSUNG-GT-S3310/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12051,17484,4223,18092, 'SAMSUNG-GT-S5600/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(12457,17605,3625,18092, 'SAMSUNG-GT-E2550/1.0 RTK-E/1.0 DF/1.0 Release/23.04.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzUzMDkzMDQ2NTEwMjE4 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2220'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210/E3210DDKB6 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E3210L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210L/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E3210B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14970,17484,4392,18092, 'SAMSUNG-GT-E3210B/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12159,17484,4223,18092, 'SAMSUNG-GT-C5510/C5510JBIG1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5510H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12159,17484,4223,18092, 'SAMSUNG-GT-C5510H/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU0NzUyMDMwMTY5NTU5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13646,17484,3625,18092, 'SAMSUNG-GT-C3010/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13646,17484,3625,18092, 'SAMSUNG-GT-C3010/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3500C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14124,17484,3976,18092, 'SAMSUNG-GT-S3500C/1.0 Release/10.23.2008 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU5OTc5MDIwNDk4NTA5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14732,5049,4808,18092, 'SAMSUNG-GT-B7330/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3353'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14100,17484,4223,18092, 'SAMSUNG-GT-S3353/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13153,17484,4392,18092, 'SAMSUNG-GT-E2220/E2220XXKH4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2232'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -1439,12 +1463,132 @@ function _H75($useragent) {
     $dl[] = array(15736,17484,3625,18092, 'SAMSUNG-GT-E2232/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C3010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13646,17484,3625,18092, 'SAMSUNG-GT-C3010/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3010'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13646,17484,3625,18092, 'SAMSUNG-GT-C3010/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12051,17484,4223,18092, 'SAMSUNG-GT-S5600/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3353'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14100,17484,4223,18092, 'SAMSUNG-GT-S3353/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3500C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14124,17484,3976,18092, 'SAMSUNG-GT-S3500C/1.0 Release/10.23.2008 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzUyNzk5MDMyMzM4NzQy');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14732,5049,4808,18092, 'SAMSUNG-GT-B7330/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C5510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12159,17484,4223,18092, 'SAMSUNG-GT-C5510/C5510JBIG1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C5510H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12159,17484,4223,18092, 'SAMSUNG-GT-C5510H/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU0NzUyMDMwMTY5NTU5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14912,17484,17606,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2370'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14256,17484,3625,18092, 'SAMSUNG-GT-E2370/E1055GJVKB3 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'M3710'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13861,17484,4248,18092, 'SAMSUNG-GT-M3710/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C6712'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15547,17017,3834,18092, 'SAMSUNG-GT-C6712/C6712DDKK3 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3530', 1 => 'C3530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16601,17484,4223,18092, 'SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16601,17484,4223,18092, 'SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5610K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16455,17484,4392,18092, 'SAMSUNG-GT-S5610K/S5610KDDKK2 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16455,17484,4392,18092, 'SAMSUNG-GT-S5610/S5610XXKH9 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M8910'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1455,36 +1599,100 @@ function _H75($useragent) {
     $dl[] = array(12023,17484,4248,18092, 'SAMSUNG-GT-M8910/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B3410W'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12303,17484,3502,18092, 'SAMSUNG-GT-B3410W/1.0 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3312'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15988,17484,17394,18092, 'SAMSUNG-GT-C3312/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S5550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12412,17484,4223,18092, 'SAMSUNG-GT-S5550/JCJB3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(12412,17484,4223,18092, 'SAMSUNG-GT-S5550/JBJB1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2370'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14256,17484,3625,18092, 'SAMSUNG-GT-E2370/E1055GJVKB3 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15605,17484,3625,18092, 'SAMSUNG-GT-E2230/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5270K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15238,17484,4392,18092, 'SAMSUNG-GT-S5270K/S5270KDDKH3 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5270L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15238,17484,4392,18092, 'SAMSUNG-GT-S5270L/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'i8000T Opera 9.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15210,17484,3430,18092, 'SAMSUNG-GT-i8000T Opera 9.5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15210,17484,3430,18092, 'SAMSUNG-GT-i8000/1.0 Opera 9.5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5233A'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16003,17484,4248,18092, 'SAMSUNG-GT-S5233A/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5511T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12728,17484,4223,18092, 'SAMSUNG-GT-S5511T/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 S5511AJKD4');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7250D'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16373,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7250D/S7250DXXKK1; U; Bada/2.0; it-it) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7250'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16373,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7250-BOUYGUES/S7250AGLA3; U; Bada/2.0; fr-fr) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7300Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15425,5448,3430,18092, 'SAMSUNG-GT-B7300Orange/BVIJ1 (Windows CE; Opera Mobi; U; en) Opera 9.5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15425,5448,3430,18092, 'SAMSUNG-GT-B7300/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7330R'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1524,7 +1732,7 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14732,6742,4808,18092, 'SAMSUNG-GT-B7330Orange/BVJE2 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(14732,6742,4808,18092, 'SAMSUNG-GT-B7330Orange/BVIK2 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7330', 1 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1535,28 +1743,52 @@ function _H75($useragent) {
     $dl[] = array(14732,6742,4808,18092, 'SAMSUNG-GT-B7330/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-GT-B7330/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3530', 1 => 'C3530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5', 1 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2152i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16601,17484,4223,18092, 'SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1, SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13540,17484,3625,18092, 'SAMSUNG-GT-E2152i/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2152'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16601,17484,4223,18092, 'SAMSUNG-GT-C3530/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13540,17484,3625,18092, 'SAMSUNG-GT-E2152/E2152DDJH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3332'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14912,17484,17606,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $dl[] = array(15364,17484,17394,18092, 'SAMSUNG-GT-C3332/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5220'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17484,17394,18092, 'SAMSUNG-GT-S5220/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17484,17394,18092, 'SAMSUNG-GT-C3310/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2252'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17484,17394,18092, 'SAMSUNG-GT-E2252/E2252DDLD5 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -1565,30 +1797,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(13439,17484,3625,18092, 'SAMSUNG-GT-E2130/E2130DDIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7300Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15425,5448,3430,18092, 'SAMSUNG-GT-B7300Orange/BVIJ1 (Windows CE; Opera Mobi; U; en) Opera 9.5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15425,5448,3430,18092, 'SAMSUNG-GT-B7300/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2230'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15605,17484,3625,18092, 'SAMSUNG-GT-E2230/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1607,70 +1815,6 @@ function _H75($useragent) {
     $dl[] = array(13560,17484,4223,18092, 'SAMSUNG-GT-S5510T/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 S5510AJJG1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5380K'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380K/S5380KDDKK6; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5380D'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16384,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5380D/1.0; U; Bada/2.0; ms-my) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'i8000T Opera 9.5'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15210,17484,3430,18092, 'SAMSUNG-GT-i8000T Opera 9.5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15210,17484,3430,18092, 'SAMSUNG-GT-i8000/1.0 Opera 9.5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16366,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8600/S8600DDKK4; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3770K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12835,17484,4392,18092, 'SAMSUNG-GT-S3770K/S3770KDDKH4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3770'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12835,17484,4392,18092, 'SAMSUNG-GT-S3770/S3770AHKG3 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5233A'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16003,17484,4248,18092, 'SAMSUNG-GT-S5233A/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S5233T'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1679,20 +1823,12 @@ function _H75($useragent) {
     $dl[] = array(12100,17484,3636,18092, 'SAMSUNG-GT-S5233T/1.0 SHP/VPP/R5 Jasmine/0.8 NexPlayer/2.12 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2152i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3770K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13540,17484,3625,18092, 'SAMSUNG-GT-E2152i/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2152'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13540,17484,3625,18092, 'SAMSUNG-GT-E2152/E2152DDJH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(12835,17484,17606,18092, 'SAMSUNG-GT-S3770K/S3770KDDKK2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C5130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1719,36 +1855,12 @@ function _H75($useragent) {
     $dl[] = array(13854,17484,4223,18092, 'SAMSUNG-GT-C5130U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5511T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12728,17484,4223,18092, 'SAMSUNG-GT-S5511T/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 S5511AJKD4');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S7550B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13832,17484,4223,18092, 'SAMSUNG-GT-S7550B/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S7550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13832,17484,4223,18092, 'SAMSUNG-GT-S7550/S7550XXJD2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8500T'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13882,17484,3834,18092, 'SAMSUNG-GT-S8500T/1.0 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 S8500DVJF3');
+    $dl[] = array(18323,17484,17394,18092, 'SAMSUNG-GT-S5222/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S8500R'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1759,20 +1871,36 @@ function _H75($useragent) {
     $dl[] = array(13553,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500R/S8500RUXJF3; U; Bada/1.0; en-ca) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12259,17484,4223,18092, 'SAMSUNG-GT-S3550/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(16260,17484,17394,18092, 'SAMSUNG-GT-C3330/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5560i'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11996,17484,3834,18092, 'SAMSUNG-GT-S5560i/S5560IXXKA5 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $dl[] = array(14912,17484,3625,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3410W'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12303,17484,3502,18092, 'SAMSUNG-GT-B3410W/B3410WXXJG2 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S8500T'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13882,17484,3834,18092, 'SAMSUNG-GT-S8500T/1.0 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 S8500DVJF3');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B3313'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1781,46 +1909,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14405,17484,3976,18092, 'SAMSUNG-GT-B3313/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3500'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15187,17484,4223,18092, 'SAMSUNG-GT-C3500/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3630'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15689,17484,3976,18092, 'SAMSUNG-GT-C3630/1.0 SHP/VPP/R5 NetFront/3.4 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13412,17484,3976,18092, 'SAMSUNG-GT-S7330/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5270K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15238,17484,4392,18092, 'SAMSUNG-GT-S5270K/S5270KDDKH3 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5270L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15238,17484,4392,18092, 'SAMSUNG-GT-S5270L/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
@@ -1839,20 +1927,52 @@ function _H75($useragent) {
     $dl[] = array(13398,17484,3430,18092, 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIH1 Browser/Opera/9.5 Profile/MIDP-2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14709,17484,3636,18092, 'SAMSUNG-GT-M8800/M880BXXJA2 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(13398,17484,3430,18092, 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK3 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5560i'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16260,17484,17394,18092, 'SAMSUNG-GT-C3330/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11996,17484,3834,18092, 'SAMSUNG-GT-S5560i/S5560IXXKA5 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7550B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13832,17484,4223,18092, 'SAMSUNG-GT-S7550B/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13832,17484,4223,18092, 'SAMSUNG-GT-S7550/S7550XXJD2 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3500'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15187,17484,4223,18092, 'SAMSUNG-GT-C3500/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13412,17484,3976,18092, 'SAMSUNG-GT-S7330/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1863,28 +1983,20 @@ function _H75($useragent) {
     $dl[] = array(13398,6742,4808,18092, 'SAMSUNG-GT-B7610/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7320L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320L/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)');
+    $dl[] = array(13398,6742,4808,18092, 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK3 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7320', 1 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3550'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)');
+    $dl[] = array(12259,17484,4223,18092, 'SAMSUNG-GT-S3550/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7350Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1919,12 +2031,44 @@ function _H75($useragent) {
     $dl[] = array(13498,6742,17183,18092, 'Vodafone/1.0/SAMSUNG-GT-B7350/BUJG5 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2220'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3630'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13153,17484,4392,18092, 'SAMSUNG-GT-E2220/E2220XXKH4 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15689,17484,3976,18092, 'SAMSUNG-GT-C3630/1.0 SHP/VPP/R5 NetFront/3.4 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7320L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320L/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7320', 1 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16948,6742,4643,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3752'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15685,17484,4392,18092, 'SAMSUNG-GT-C3752/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B3410R'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1943,20 +2087,20 @@ function _H75($useragent) {
     $dl[] = array(13451,17484,17606,18092, 'SAMSUNG-GT-B3410/B3410DDJC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5260'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14912,17484,3625,18092, 'SAMSUNG-GT-C3222/C3222DDJL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(14404,17017,3834,18092, 'SAMSUNG-GT-S5260/S5260MLKJ2 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5260P'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14985,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8530/S8530XPKJ1; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Mobile WVGA SMM-MMS/1.2.0 OPN-B Dolfin/3.0');
+    $dl[] = array(14404,17017,3834,18092, 'SAMSUNG-GT-S5260P-ORANGE/S5260PBVKG1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B6520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1967,20 +2111,12 @@ function _H75($useragent) {
     $dl[] = array(13894,5049,17183,18092, 'SAMSUNG-GT-B6520/1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3752'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15685,17484,4392,18092, 'SAMSUNG-GT-C3752/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5212i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11742,17484,17606,18092, 'SAMSUNG-GT-C5212i/C5212iDDKD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $dl[] = array(14709,17484,3636,18092, 'SAMSUNG-GT-M8800/M880BXXJA2 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -1991,12 +2127,36 @@ function _H75($useragent) {
     $dl[] = array(16948,5049,4808,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C3011'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12899,17484,3625,18092, 'SAMSUNG-GT-C3011/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S8500T'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13882,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500T/1.0; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3850'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15655,17017,3834,18092, 'SAMSUNG-GT-S3850/S3850JPKK2 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15425,5049,4808,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2530'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2013,6 +2173,14 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(16616,17484,3625,18092, 'SAMSUNG-GT-E2530/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C5212i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11742,17484,17606,18092, 'SAMSUNG-GT-C5212i/C5212iDDKD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7320L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2039,20 +2207,36 @@ function _H75($useragent) {
     $dl[] = array(16948,6742,4808,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15425,5049,4808,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(16518,17484,17606,18092, 'SAMSUNG-GT-E2222/E2222DDKE5 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3011'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12899,17484,3625,18092, 'SAMSUNG-GT-C3011/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15492,17484,17606,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12995,17484,17394,18092, 'SAMSUNG-GT-E2600/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2600_ORANGE'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12995,17484,17394,18092, 'SAMSUNG-GT-E2600_ORANGE/E2600BVKL5 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5233T'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2063,12 +2247,52 @@ function _H75($useragent) {
     $dl[] = array(12100,17484,4248,18092, 'SAMSUNG-GT-S5233T/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8500L'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(18323,17484,17394,18092, 'SAMSUNG-GT-S5222/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13036,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500L/1.0; U; Bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,17484,4392,18092, 'SAMSUNG-GT-C3520/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5230C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15518,17484,4223,18092, 'SAMSUNG-GT-S5230C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5780D'), 1 => array(0 => '1.1'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15584,7020,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780D/1.0; U; Bada/1.1; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5780'), 1 => array(0 => '1.1'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15584,7020,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780-ORANGE/S5780BVKJ1; U; Bada/1.1; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5610K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16455,17484,17606,18092, 'SAMSUNG-GT-S5610K/S5610KDDKK2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2095,38 +2319,6 @@ function _H75($useragent) {
     $dl[] = array(15210,5049,17183,18092, 'SAMSUNG-GT-i8000Orange/NXXJI1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) SAMSUNG-GT-i8000Orange/NXXJI1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2222'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16518,17484,17606,18092, 'SAMSUNG-GT-E2222/E2222DDKE5 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8500L'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13036,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500L/1.0; U; Bada/1.0; es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3510T'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13867,17484,4248,18092, 'SAMSUNG-GT-C3510T/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5610K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(16455,17484,4392,18092, 'SAMSUNG-GT-S5610K/S5610KDDKI6 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S8000L'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2141,46 +2333,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14584,17484,4248,18092, 'SAMSUNG-GT-S8000B/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3110'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17607,17484,3976,18092, 'SAMSUNG-GT-S3110/S3110XAHJ1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'I6220'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13605,17484,4248,18092, 'SAMSUNG-GT-I6220/1.0 SHP/VPP/R5 Jasmine/1.0 NexPlayer/2.12 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14709,17484,3976,18092, 'SAMSUNG-GT-M8800/1.0 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13392,17484,17606,18092, 'SAMSUNG-GT-C3510/C3510DDJD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5628'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17609,17484,3502,18092, 'SAMSUNG-GT-S5628/ SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7350Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.80'), 8 => NULL), $ls);
@@ -2199,6 +2351,14 @@ function _H75($useragent) {
     $dl[] = array(13498,5448,4536,18092, 'SAMSUNG-GT-B7350/1.0 Opera/9.80 (Windows Mobile; Windows CE; Opera Mobi/ORS-75XXX; U) Presto/2,4,13 Version/10.00');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C3510T'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13867,17484,4248,18092, 'SAMSUNG-GT-C3510T/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S8000C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2215,20 +2375,28 @@ function _H75($useragent) {
     $dl[] = array(14584,17484,4223,18092, 'SAMSUNG-GT-S8000H/1.0 SHP/R5 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5230C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M8800'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15518,17484,4223,18092, 'SAMSUNG-GT-S5230C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(14709,17484,3976,18092, 'SAMSUNG-GT-M8800/1.0 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3110'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13451,17484,3625,18092, 'SAMSUNG-GT-B3410/B3410DDIK1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(17607,17484,3976,18092, 'SAMSUNG-GT-S3110/S3110XAHJ1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I6220'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13605,17484,4248,18092, 'SAMSUNG-GT-I6220/1.0 SHP/VPP/R5 Jasmine/1.0 NexPlayer/2.12 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E2330B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -2247,14 +2415,6 @@ function _H75($useragent) {
     $dl[] = array(12883,17484,3625,18092, 'SAMSUNG-GT-E2330B/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3770K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12835,17484,17606,18092, 'SAMSUNG-GT-S3770K/S3770KDDKH4 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'C3560'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2263,20 +2423,44 @@ function _H75($useragent) {
     $dl[] = array(15684,17484,4392,18092, 'SAMSUNG-GT-C3560/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7250D'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '3.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16373,17342,17454,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7250D/S7250DDDKK1; U; Bada/2.0; en-us) AppleWebKit/534.20 (KHTML, like Gecko) Dolfin/3.0 Mobile HVGA SMM-MMS/1.2.0 OPN-B');
+    $dl[] = array(13392,17484,17606,18092, 'SAMSUNG-GT-C3510/C3510DDJD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E1390'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M2510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14142,17484,3625,18092, 'SAMSUNG-GT-E1390/E1390DDIG3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15588,6476,3976,18092, 'SAMSUNG-GT-M2510/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5628'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17609,17484,3502,18092, 'SAMSUNG-GT-S5628/ SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13451,17484,3625,18092, 'SAMSUNG-GT-B3410/B3410DDIK1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16948,5448,4737,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.2.2.51');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S8500C'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2292,31 +2476,15 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14864,17484,3834,18092, 'SAMSUNG-GT-S8500/S8500XXJF2 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(14864,17484,3834,18092, 'SAMSUNG-GT-S8500/S8500XXJA4 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7722'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16948,5448,4737,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M2510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15588,6476,3976,18092, 'SAMSUNG-GT-M2510/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15492,17484,17606,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $dl[] = array(14980,17017,3502,18092, 'SAMSUNG-GT-B7722/JPKI1 SHP/VPP/R5 Dolfin/1.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M2520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2327,28 +2495,60 @@ function _H75($useragent) {
     $dl[] = array(15651,17484,3976,18092, 'SAMSUNG-GT-M2520/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3300K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14218,17605,4223,18092, 'SAMSUNG-GT-C3300K/1.0 RTK-E/1.0 DF/1.0 Release/22.04.2010 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15425,5448,4779,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S3600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12077,17484,3625,18092, 'SAMSUNG-GT-S3600i/S3600iJPIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E1390'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14142,17484,3625,18092, 'SAMSUNG-GT-E1390/E1390DDIG3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5263'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14010,17017,3834,18092, 'SAMSUNG-GT-S5263/S5263DDKJ1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13348,17484,3430,18092, 'SAMSUNG-GT-B7620/1.0 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I9100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15575,17484,17606,18092, 'SAMSUNG-GT-I9100/100.20303');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12917,17484,3625,18092, 'SAMSUNG-GT-E2330/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12967,17484,17394,18092, 'SAMSUNG-GT-C3350/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2367,12 +2567,36 @@ function _H75($useragent) {
     $dl[] = array(13348,6742,4808,18092, 'SAMSUNG-GT-B7620U/1.0 Software/WM6.5 Release/10.20.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2230M'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12917,17484,3625,18092, 'SAMSUNG-GT-E2330/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15605,6476,3625,18092, 'SAMSUNG-GT-E2230M/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2230M'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15605,6476,3625,18092, 'SAMSUNG-GT-E2230M/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B6520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13894,6742,17183,18092, 'SAMSUNG-GT-B6520/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M2310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15274,17484,3625,18092, 'SAMSUNG-GT-M2310/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S7230B'), 1 => array(0 => '1.0'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2391,28 +2615,12 @@ function _H75($useragent) {
     $dl[] = array(14918,5267,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7230/1.0; U; Bada/1.0; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3778V'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13348,17484,3430,18092, 'SAMSUNG-GT-B7620/1.0 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2230M'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15605,6476,3625,18092, 'SAMSUNG-GT-E2230M/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2230M'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15605,6476,3625,18092, 'SAMSUNG-GT-E2230M/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15364,17605,4392,18092, 'SAMSUNG-GT-S3778V/1.0 RTK-E/1.0 DF3G/1.0 Release/04.04.2011 Browser/NetFront4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I6712'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2423,20 +2631,12 @@ function _H75($useragent) {
     $dl[] = array(12817,17484,3834,18092, 'SAMSUNG-GT-I6712/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'M2310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15274,17484,3625,18092, 'SAMSUNG-GT-M2310/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M8800H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13594,17484,4223,18092, 'SAMSUNG-GT-M8800H/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(15425,5448,4779,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5150'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2447,28 +2647,12 @@ function _H75($useragent) {
     $dl[] = array(12367,17484,4223,18092, 'SAMSUNG-GT-S5150/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B6520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3300K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13894,6742,17183,18092, 'SAMSUNG-GT-B6520/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5510U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14219,17484,4223,18092, 'SAMSUNG-GT-C5510U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU1ODk3MDMyMDU2OTM5');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2600'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12995,17484,17394,18092, 'SAMSUNG-GT-E2600/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14218,17605,4223,18092, 'SAMSUNG-GT-C3300K/1.0 RTK-E/1.0 DF/1.0 Release/22.04.2010 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S6700T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2487,12 +2671,28 @@ function _H75($useragent) {
     $dl[] = array(15136,17484,4223,18092, 'SAMSUNG-GT-S6700/S6700DOIH4 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.2'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M8800H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12967,17484,17394,18092, 'SAMSUNG-GT-C3350/1.0 NetFront/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13594,17484,4223,18092, 'SAMSUNG-GT-M8800H/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I9008L_TD'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14887,17979,3508,18092, 'SAMSUNG-GT-I9008L_TD/1.0 Android/2.2.1 Release/12.15.2010 Browser/AppleWebKit533.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I6230'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12454,17484,4248,18092, 'SAMSUNG-GT-I6230/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2503,12 +2703,28 @@ function _H75($useragent) {
     $dl[] = array(15210,5049,4779,18092, 'SAMSUNG-GT-i8000/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5503'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M2513'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15176,17484,4223,18092, 'SAMSUNG-GT-S5503/ SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(13716,17484,3976,18092, 'SAMSUNG-GT-M2513/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12077,17484,17606,18092, 'SAMSUNG-GT-S3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C5180'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14362,17484,3834,18092, 'SAMSUNG-GT-C5180/C5180ZWJL3 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E1130'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -2524,15 +2740,63 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13877,17484,3625,18092, 'SAMSUNG-GT-E1130B/E1130BXXIJ6 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(13877,17484,3625,18092, 'SAMSUNG-GT-E1130B/E1130BXXJD1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'I6230'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5503'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12454,17484,4248,18092, 'SAMSUNG-GT-I6230/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15176,17484,4223,18092, 'SAMSUNG-GT-S5503/ SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M8910H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13482,17484,4223,18092, 'SAMSUNG-GT-M8910H/1.0 SHP/VPP/R5 Mozilla/5.0 (rv:1.3) NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C5510U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14219,17484,4223,18092, 'SAMSUNG-GT-C5510U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU1ODk3MDMyMDU2OTM5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2652W'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14673,17605,4223,18092, 'SAMSUNG-GT-E2652W/E2652WZHKF2 RTK-E/1.0 MMP/1.0 Release/Jun 27 2011 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3750'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13029,17484,4392,18092, 'SAMSUNG-GT-C3750/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5520'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14039,17484,3834,18092, 'SAMSUNG-GT-S5520/S5520ZHJL2 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5530'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14280,17484,3834,18092, 'SAMSUNG-GT-S5530/S5530XXJG8 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5500H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2551,52 +2815,12 @@ function _H75($useragent) {
     $dl[] = array(14005,17484,4223,18092, 'SAMSUNG-GT-S5500/ SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S3930C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12077,17484,17606,18092, 'SAMSUNG-GT-S3600i/S3600iDDIL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5520'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14039,17484,3834,18092, 'SAMSUNG-GT-S5520/S5520ZHJL2 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5180'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14362,17484,3834,18092, 'SAMSUNG-GT-C5180/C5180ZWJL3 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M8910H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13482,17484,4223,18092, 'SAMSUNG-GT-M8910H/1.0 SHP/VPP/R5 Mozilla/5.0 (rv:1.3) NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5530'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14280,17484,3834,18092, 'SAMSUNG-GT-S5530/S5530XXJG8 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2652W'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14673,17605,4223,18092, 'SAMSUNG-GT-E2652W/E2652WZHKF2 RTK-E/1.0 MMP/1.0 Release/Jun 27 2011 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14293,17605,3976,18092, 'SAMSUNG-GT-S3930C_CMCC/1.0 RTK-E/1.0 SHP/VPP/R5 Release/17.08.2008 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I6220'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2607,6 +2831,22 @@ function _H75($useragent) {
     $dl[] = array(13605,17484,3636,18092, 'SAMSUNG-GT-I6220/1.0 SHP/VPP/R5 Jasmine/0.8 NexPlayer/2.12 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S5270K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15238,17484,17606,18092, 'SAMSUNG-GT-S5270K/S5270KDDKH3 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5260'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14404,17017,4223,18092, 'SAMSUNG-GT-S5260/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B NetFront/3.5');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'E3213K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2615,124 +2855,12 @@ function _H75($useragent) {
     $dl[] = array(16537,17484,4392,18092, 'SAMSUNG-GT-E3213K/E3213KJPKD1 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5600L'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15640,17484,3636,18092, 'SAMSUNG-GT-S5600L/1.0 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3750'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13029,17484,4392,18092, 'SAMSUNG-GT-C3750/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M2513'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13716,17484,3976,18092, 'SAMSUNG-GT-M2513/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13392,17484,3625,18092, 'samsung gt-c3510, SAMSUNG-GT-C3510/C3510DDJD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6112c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13770,17484,3625,18092, 'SAMSUNG-GT-C6112c/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13770,17484,3625,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S7070C'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14484,17484,4248,18092, 'SAMSUNG-GT-S7070C/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13770,17484,17606,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3110C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15288,17484,3625,18092, 'SAMSUNG-GT-C3110C/1.0 Release/9.05.2008 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3110C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15288,17484,3625,18092, 'SAMSUNG-GT-C3110C/1.0 Release/9.05.2008 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3930C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14293,17605,3976,18092, 'SAMSUNG-GT-S3930C_CMCC/1.0 RTK-E/1.0 SHP/VPP/R5 Release/17.08.2008 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5780D'), 1 => array(0 => '1.1'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15584,7020,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780D/1.0; U; Bada/1.1; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5780'), 1 => array(0 => '1.1'), 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15584,7020,3834,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S5780/S5780JPKF1; U; Bada/1.1; en-us) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2120'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13226,17605,3625,18092, 'SAMSUNG-GT-E2120/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0OTI3MDM0OTEwNDAy UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2120C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13226,17605,3625,18092, 'SAMSUNG-GT-E2120C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7300C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2759,30 +2887,6 @@ function _H75($useragent) {
     $dl[] = array(15425,6742,4808,18092, 'SAMSUNG-GT-B7300Orange/BVIJ1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13451,17605,4223,18092, 'SAMSUNG-GT-B3410/1.0 RTK-E/1.0 DF/1.0 Release/22.12.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13451,17605,4223,18092, 'SAMSUNG-GT-B3410/1.0 RTK-E/1.0 DF/1.0 Release/22.12.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3653'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12080,17484,17606,18092, 'SAMSUNG-GT-S3653/S365MDDIJ1');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'E2120'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2799,52 +2903,60 @@ function _H75($useragent) {
     $dl[] = array(13226,17484,17606,18092, 'SAMSUNG-GT-E2120L/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'M7600B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3110C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14240,17484,4223,18092, 'SAMSUNG-GT-M7600B/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15288,17484,3625,18092, 'SAMSUNG-GT-C3110C/1.0 Release/9.05.2008 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5560C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3110C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11996,17484,4223,18092, 'SAMSUNG-GT-S5560C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(15288,17484,3625,18092, 'SAMSUNG-GT-C3110C/1.0 Release/9.05.2008 Browser/Openwave6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3510'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14732,5448,4737,18092, 'SAMSUNG-GT-B7330/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.2.2.51');
+    $dl[] = array(13392,17484,3625,18092, 'SAMSUNG-GT-C3510/C3510JBIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S5630C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5600L'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14389,17605,4223,18092, 'SAMSUNG-GT-S5630C_CMCC/1.0 RTK-E/1.0 SHP/VPP/R5 Release/17.08.2008 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(15640,17484,3636,18092, 'SAMSUNG-GT-S5600L/1.0 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13451,17484,3976,18092, 'SAMSUNG-GT-B3410/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(13770,17484,17606,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3630C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C6112c'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15689,17605,3976,18092, 'SAMSUNG-GT-C3630C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/11.17.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
+    $dl[] = array(13770,17484,3625,18092, 'SAMSUNG-GT-C6112c/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C6112'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13770,17484,3625,18092, 'SAMSUNG-GT-C6112/C6112DDJB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3518'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2863,36 +2975,20 @@ function _H75($useragent) {
     $dl[] = array(14045,17605,4223,18092, 'SAMSUNG-GT-C3518/1.0 RTK-E/1.0 DF/1.0 Release/22.12.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'I8320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B5722'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14643,17484,17606,18092, 'WidgetManager; SAMSUNG-GT-I8320-Vodafone;AppleWebKit/528.5+(X11;U;Linux;en;i8320BUJC1)');
+    $dl[] = array(14971,17484,3625,18092, 'SAMSUNG-GT-B5722/B5722JPJJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B5722C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3630C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14971,17605,3976,18092, 'SAMSUNG-GT-B5722C/1.0 RTK-E/1.0 DF/1.0 Release/10.14.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15425,5448,4777,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12137,17484,17606,18092, 'SAMSUNG-GT-S5620/S5620DDJE1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(15689,17605,3976,18092, 'SAMSUNG-GT-C3630C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/11.17.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C6620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2903,20 +2999,52 @@ function _H75($useragent) {
     $dl[] = array(12763,6742,4643,18092, 'SAMSUNG-GT-C6620/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S6700C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'M7600B'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13888,17484,3976,18092, 'SAMSUNG-GT-S6700C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(14240,17484,4223,18092, 'SAMSUNG-GT-M7600B/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C6112C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15083,17605,4223,18092, 'SAMSUNG-GT-C6112C/1.0 RTK-E/1.0 DF/1.0 Release/08.18.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(15425,5448,4777,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I8350'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16463,17484,17470,18092, 'SAMSUNG-GT-I8350/UCWEB2.2.0.157/47/32079');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14732,5448,4737,18092, 'SAMSUNG-GT-B7330/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.2.2.51');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5560i'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11996,17017,3834,18092, 'SAMSUNG-GT-S5560i-BOUYGUES/S5560IAGKD1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3653'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12080,17484,17606,18092, 'SAMSUNG-GT-S3653/S365MDDIJ1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3600i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2927,12 +3055,68 @@ function _H75($useragent) {
     $dl[] = array(12077,17605,4223,18092, 'SAMSUNG-GT-S3600i/1.0 RTK-E/1.0 DF/1.0 Release/01.09.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3310C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12203,17484,3976,18092, 'SAMSUNG-GT-S3310C/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(13451,17605,4223,18092, 'SAMSUNG-GT-B3410/1.0 RTK-E/1.0 DF/1.0 Release/22.12.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13451,17605,4223,18092, 'SAMSUNG-GT-B3410/1.0 RTK-E/1.0 DF/1.0 Release/22.12.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5560C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11996,17484,4223,18092, 'SAMSUNG-GT-S5560C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M7600L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14507,17484,4223,18092, 'SAMSUNG-GT-M7600L/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15210,5049,4777,18092, 'SAMSUNG-GT-i8000/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5620'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12137,17484,17606,18092, 'SAMSUNG-GT-S5620/S5620DDJE1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C6112C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15083,17605,4223,18092, 'SAMSUNG-GT-C6112C/1.0 RTK-E/1.0 DF/1.0 Release/08.18.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B5722C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14971,17605,3976,18092, 'SAMSUNG-GT-B5722C/1.0 RTK-E/1.0 DF/1.0 Release/10.14.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2940,7 +3124,31 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13398,6742,17183,18092, 'SAMSUNG-GT-B7610/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $dl[] = array(13398,17017,4779,18092, 'SAMSUNG-GT-B7610/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2120'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13226,17605,3625,18092, 'SAMSUNG-GT-E2120/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzU0OTI3MDM0OTEwNDAy UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2120C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13226,17605,3625,18092, 'SAMSUNG-GT-E2120C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I8320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14643,17484,17606,18092, 'WidgetManager; SAMSUNG-GT-I8320-Vodafone;AppleWebKit/528.5+(X11;U;Linux;en;i8320BUJC1)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I8000U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
@@ -2951,12 +3159,84 @@ function _H75($useragent) {
     $dl[] = array(11906,5448,3430,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 Opera 9.5 (Windows CE; PPC; Opera Mobi; U; zh-cn)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3730C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S6700C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12877,17605,3976,18092, 'SAMSUNG-GT-C3730C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/8.17.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
+    $dl[] = array(13888,17484,3976,18092, 'SAMSUNG-GT-S6700C/1.0 SHP/R5 Release/02.01.2009 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5630C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14389,17605,4223,18092, 'SAMSUNG-GT-S5630C_CMCC/1.0 RTK-E/1.0 SHP/VPP/R5 Release/17.08.2008 Browser/NetFront3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B3410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13451,17484,3976,18092, 'SAMSUNG-GT-B3410/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14970,17605,4392,18092, 'SAMSUNG-GT-E3210/1.0 RTK-E/1.0 DF/1.0 Release/12.14.2010 Browser/NetFront4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3310C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12203,17484,3976,18092, 'SAMSUNG-GT-S3310C/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C6712'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15547,17484,17606,18092, 'SAMSUNG-GT-C6712/C6712ZCKE2');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15492,17484,3625,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3650H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15198,17484,4223,18092, 'SAMSUNG-GT-S3650H/1.0 SHP/VPP/R5 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15210,5049,4715,18092, 'SAMSUNG-GT-i8000/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7350Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13498,5049,17183,18092, 'SAMSUNG-GT-B7350Orange/BVJJ1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'C3312)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -2975,92 +3255,20 @@ function _H75($useragent) {
     $dl[] = array(15988,17484,17606,18092, 'SAMSUNG-GT-C3312');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(16948,6742,17183,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $dl[] = array(13398,6742,17183,18092, 'SAMSUNG-GT-B7610/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3650H'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3730C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15198,17484,4223,18092, 'SAMSUNG-GT-S3650H/1.0 SHP/VPP/R5 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14970,17605,4392,18092, 'SAMSUNG-GT-E3210/1.0 RTK-E/1.0 DF/1.0 Release/12.14.2010 Browser/NetFront4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B5722'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14971,17484,17606,18092, 'SAMSUNG-GT-B5722/B5722DDKA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5200C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14051,17605,4223,18092, 'SAMSUNG-GT-S5200C/1.0 RTK-E/1.0 DF/1.0 Release/02.01.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'M7600L'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14507,17484,4223,18092, 'SAMSUNG-GT-M7600L/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'i8000'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15210,5049,4715,18092, 'SAMSUNG-GT-i8000/1.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'I8000U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11906,17017,4578,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B5722'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14971,17484,3625,18092, 'SAMSUNG-GT-B5722/B5722JPJJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3212'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(11903,17484,17606,18092, 'SAMSUNG-GT-C3212/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C6712'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15547,17484,17606,18092, 'SAMSUNG-GT-C6712/C6712ZCKE2');
+    $dl[] = array(12877,17605,3976,18092, 'SAMSUNG-GT-C3730C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/8.17.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I6320C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3071,36 +3279,12 @@ function _H75($useragent) {
     $dl[] = array(13994,17605,3976,18092, 'SAMSUNG-GT-I6320C_CMCC/1.0 RTK-E/1.0 SHP/VPP/R5 Release/17.08.2008 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3322'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'I8000U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15492,17484,3625,18092, 'SAMSUNG-GT-C3322/C3322DDKE4 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E1080C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14156,17605,3625,18092, 'SAMSUNG-GT-E1080C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101/*MzU3NzA2MDMzNzY5NTcy UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E1080C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14156,17605,3625,18092, 'SAMSUNG-GT-E1080C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101/*MzU2NTU5MDQxMjMzNzYz UP.Browser');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B5702C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13531,17605,3976,18092, 'SAMSUNG-GT-B5702C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/01.14.2009 Browser/NetFront3.4  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(11906,6742,4808,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3600C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3111,20 +3295,12 @@ function _H75($useragent) {
     $dl[] = array(11782,17605,3976,18092, 'SAMSUNG-GT-S3600C/1.0 RTK-E/1.0 DF/1.0 Release/07.01.2008 Browser/NetFront3.4  Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'M8800C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S5200C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14665,17484,4223,18092, 'SAMSUNG-GT-M8800C/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S3100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12301,17484,3625,18092, 'SAMSUNG-GT-S3100/S3100JCII1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(14051,17605,4223,18092, 'SAMSUNG-GT-S5200C/1.0 RTK-E/1.0 DF/1.0 Release/02.01.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I8000U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3132,7 +3308,39 @@ function _H75($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(11906,6742,4808,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(11906,17017,4578,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B7320'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16948,6742,17183,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3212'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11903,17484,17606,18092, 'SAMSUNG-GT-C3212/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3100'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12301,17484,3625,18092, 'SAMSUNG-GT-S3100/S3100JBIH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'B5702C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13531,17605,3976,18092, 'SAMSUNG-GT-B5702C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/01.14.2009 Browser/NetFront3.4  Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3143,12 +3351,36 @@ function _H75($useragent) {
     $dl[] = array(15273,17484,4223,18092, 'SAMSUNG-GT-M3310/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'B5722'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14971,17484,17606,18092, 'SAMSUNG-GT-B5722/B5722DDKA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Untrusted/1.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S3601C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(12166,17605,4223,18092, 'SAMSUNG-GT-S3601C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/01.09.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E1080C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14156,17605,3625,18092, 'SAMSUNG-GT-E1080C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101/*MzU2NTU5MDQxMjMzNzYz UP.Browser');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E1080C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14156,17605,3625,18092, 'SAMSUNG-GT-E1080C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101/*MzU1MDUyMDQ5NzU5MDU1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S7230E'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3175,44 +3407,12 @@ function _H75($useragent) {
     $dl[] = array(14010,17484,17606,18092, 'SAMSUNG-GT-S5263/S5263DDKE1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'I6330C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7732'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14200,17605,4223,18092, 'SAMSUNG-GT-I6330C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/5.25.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5750E'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15487,17484,3834,18092, 'SAMSUNG-GT-S5750E/1.0 SHP/VPP/R5 Dolfin/2.0 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2558'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14210,17605,3625,18092, 'SAMSUNG-GT-E2558/1.0 RTK-E/1.0 DF/1.0 Release/23.04.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzUxNzY3MDQwODgxMjUx UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3300K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14218,17484,3625,18092, 'SAMSUNG-GT-C3300K/C3300KXXJG7 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C3060'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15173,17484,3625,18092, 'SAMSUNG-GT-C3060/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(14429,17484,3502,18092, 'SAMSUNG-GT-B7732/1.0 SHP/VPP/R5 Dolfin/1.5 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M8910B'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3231,12 +3431,28 @@ function _H75($useragent) {
     $dl[] = array(11903,17484,3625,18092, 'SAMSUNG-GT-C3212/C3212DDIL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7732'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.5'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14429,17484,3502,18092, 'SAMSUNG-GT-B7732/1.0 SHP/VPP/R5 Dolfin/1.5 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(14970,17484,3625,18092, 'SAMSUNG-GT-E3210/E3210DDKB6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M8800C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14665,17484,4223,18092, 'SAMSUNG-GT-M8800C/1.0 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5750E'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15487,17484,3834,18092, 'SAMSUNG-GT-S5750E/1.0 SHP/VPP/R5 Dolfin/2.0 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'i8000V; Windows Phone 6.5)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3247,12 +3463,36 @@ function _H75($useragent) {
     $dl[] = array(15210,5222,17183,18092, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SAMSUNG-GT-i8000V; Windows Phone 6.5)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E3210'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E2558'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14970,17484,3625,18092, 'SAMSUNG-GT-E3210/E3210DDKB6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $dl[] = array(14210,17605,3625,18092, 'SAMSUNG-GT-E2558/1.0 RTK-E/1.0 DF/1.0 Release/23.04.2009 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1/*MzUxNzY3MDQwODgxMjUx UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3060'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15173,17484,3625,18092, 'SAMSUNG-GT-C3060/1.0 Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'I6330C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14200,17605,4223,18092, 'SAMSUNG-GT-I6330C_CMCC/1.0 RTK-E/1.0 SHP/VPP-R5 Release/5.25.2009 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5253'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13677,17484,17606,18092, 'SAMSUNG-GT-S5253/S5253DDKC1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S8530'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3279,14 +3519,6 @@ function _H75($useragent) {
     $dl[] = array(15197,17484,17606,18092, 'SAMSUNG-GT-B5310');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C5530_TD'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14556,17605,3502,18092, 'SAMSUNG-GT-C5530_TD/1.0 RTK-E/1.0 SHP/VPP-R5 Release/03.18.2010 Browser/Dolfin1.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 Nextreaming SMM-MMS/1.2.0');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'S7233E'), 1 => array(0 => '1.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3295,12 +3527,28 @@ function _H75($useragent) {
     $dl[] = array(14831,5267,17606,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7233E/1.0; U; Bada/1.0; vi-vn) AppleWebKit/533.1 (KHTML');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7350Orange'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C3300K'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13498,5049,17183,18092, 'SAMSUNG-GT-B7350Orange/BVJJ1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $dl[] = array(14218,17484,3625,18092, 'SAMSUNG-GT-C3300K/C3300KXXJH4 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7120U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17610,17484,4223,18092, 'SAMSUNG-GT-S7120U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S7520U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13846,17484,4223,18092, 'SAMSUNG-GT-S7520U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'E1220_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -3309,6 +3557,14 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(12570,17605,3625,18092, 'SAMSUNG-GT-E1220_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2010 Browser/OpenWave6.2.3.3.c.1.101/*MzU5NzQ0MDMwMTMzNDkw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S3710'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13115,17605,3976,18092, 'SAMSUNG-GT-S3710/1.0 RTK-E/1.0 SHP/VPP/R5 Release/07.09.2010 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B3310i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3327,20 +3583,12 @@ function _H75($useragent) {
     $dl[] = array(14130,5890,3439,18092, 'SAMSUNG-GT-I8510H/1.0 SymbianOS/9.3 Series60/3.2 Release/5.30.2008 Browser/OSS3.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7120U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'I6410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17610,17484,4223,18092, 'SAMSUNG-GT-S7120U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5253'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13677,17484,17606,18092, 'SAMSUNG-GT-S5253/S5253DDKC1');
+    $dl[] = array(14633,17484,17606,18092, 'WidgetManager; SAMSUNG-GT-I6410-Vodafone;AppleWebKit/528.5+(X11;U;Linux;en;i6410BUJC1)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B6520'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3351,60 +3599,44 @@ function _H75($useragent) {
     $dl[] = array(13894,17484,17606,18092, 'SAMSUNG-GT-B6520/1.0 Mozilla/4.0 Release/8.11.2010 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E1110C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7300C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(17050,17605,3625,18092, 'SAMSUNG-GT-E1110C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/17.08.2007 Browser/OpenWave6.2.3.3.c.1.101/*MzU0NTYxMDM2MzcwMjMw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $dl[] = array(15425,17484,3430,18092, 'SAMSUNG-GT-B7300C_CMCC/1.0 Opera 9.5');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S7520U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S7070C'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13846,17484,4223,18092, 'SAMSUNG-GT-S7520U/1.0 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(14484,17484,4086,18092, 'SAMSUNG-GT-S7070C/1.0 SHP/VPP/R5 Dolfin/1.0 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3710'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13115,17605,3976,18092, 'SAMSUNG-GT-S3710/1.0 RTK-E/1.0 SHP/VPP/R5 Release/07.09.2010 Browser/NetFront3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
+    $dl[] = array(14732,17484,17606,18092, 'SAMSUNG-GT-B7330/1.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'I6410'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7702_TD'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14633,17484,17606,18092, 'WidgetManager; SAMSUNG-GT-I6410-Vodafone;AppleWebKit/528.5+(X11;U;Linux;en;i6410BUJC1)');
+    $dl[] = array(12541,17605,4223,18092, 'SAMSUNG-GT-B7702_TD/1.0 RTK-E/1.0 SHP/VPP-R5 Release/03.18.2010 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'E2330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'C5530_TD'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12917,17605,3625,18092, 'SAMSUNG-GT-E2330/1.0 RTK-E/1.0 MMP/1.0 Release/12.16.2010 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S6888'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15678,17484,3834,18092, 'SAMSUNG-GT-S6888/1.0 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '1.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14864,5267,17606,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/1.0; U; Bada/1.0; vi-vn) AppleWebKit/533.1 (KHTML');
+    $dl[] = array(14556,17605,3502,18092, 'SAMSUNG-GT-C5530_TD/1.0 RTK-E/1.0 SHP/VPP-R5 Release/03.18.2010 Browser/Dolfin1.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 Nextreaming SMM-MMS/1.2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3653W'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3423,20 +3655,20 @@ function _H75($useragent) {
     $dl[] = array(15655,17484,17606,18092, 'SAMSUNG-GT-S3850/S3850DDKD1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S3653'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12080,17484,3636,18092, 'SAMSUNG-GT-S3653/S3653JVIH2 SHP/VPP/R5 Jasmine/0.8 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15425,6742,17183,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7300C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'E1110C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15425,17484,3430,18092, 'SAMSUNG-GT-B7300C_CMCC/1.0 Opera 9.5');
+    $dl[] = array(17050,17605,3625,18092, 'SAMSUNG-GT-E1110C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/17.08.2007 Browser/OpenWave6.2.3.3.c.1.101/*MzU0NTYxMDM2MzcwMjMw UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I8180C_CMCC'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3463,12 +3695,12 @@ function _H75($useragent) {
     $dl[] = array(16948,17484,17606,18092, 'SAMSUNG-GT-B7320/1.0 MIDP/2.1 CLDC/1.1 Mozilla/4.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7702_TD'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'I8510T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12541,17605,4223,18092, 'SAMSUNG-GT-B7702_TD/1.0 RTK-E/1.0 SHP/VPP-R5 Release/03.18.2010 Browser/NetFront3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1 SMM-MMS/1.2.0');
+    $dl[] = array(14129,5890,3439,18092, 'SAMSUNG-GT-I8510T/1.0 SymbianOS/9.3 Series60/3.2 Release/5.30.2008 Browser/OSS3.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S5260'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3479,20 +3711,20 @@ function _H75($useragent) {
     $dl[] = array(14404,17484,4223,18092, 'SAMSUNG-GT-S5260/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B NetFront/3.5 Novarra-Vision/8.0');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'E2330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12917,17605,3625,18092, 'SAMSUNG-GT-E2330/1.0 RTK-E/1.0 MMP/1.0 Release/12.16.2010 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S3501C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,17484,3976,18092, 'SAMSUNG-GT-S3501C/1.0 Release/09.10.2009 Browser/NetFront3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13398,6742,3430,18092, 'SAMSUNG-GT-B7610/1.0 Opera 9.5 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B5210U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3503,6 +3735,22 @@ function _H75($useragent) {
     $dl[] = array(15561,5890,3439,18092, 'SAMSUNG-GT-B5210U/1.0 SymbianOS/9.3 Series60/3.2 Release/6.25.2008 Browser/OSS3.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S6888'), 1 => NULL, 2 => NULL, 3 => array(0 => '2.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15678,17484,3834,18092, 'SAMSUNG-GT-S6888/1.0 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => array(0 => '1.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14864,5267,17606,18092, 'Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500/1.0; U; Bada/1.0; vi-vn) AppleWebKit/533.1 (KHTML');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'I8000U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3511,44 +3759,12 @@ function _H75($useragent) {
     $dl[] = array(11906,17484,17606,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(15425,6742,17183,18092, 'SAMSUNG-GT-B7300/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'I8330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.8'), 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(13118,17484,17470,18092, 'SAMSUNG-GT-I8330-Vodafone/I8330BUJG5 Opera/9.8 (SLP; Linux/SLP/R1; U; en) Presto/2.4.21 Version/10.00 SMM-MMS/1.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S7070C'), 1 => NULL, 2 => NULL, 3 => array(0 => '1.0'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14484,17484,4086,18092, 'SAMSUNG-GT-S7070C/1.0 SHP/VPP/R5 Dolfin/1.0 SMM-MMS/1.2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14732,17484,17606,18092, 'SAMSUNG-GT-B7330/1.0');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'I8510T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14129,5890,3439,18092, 'SAMSUNG-GT-I8510T/1.0 SymbianOS/9.3 Series60/3.2 Release/5.30.2008 Browser/OSS3.1 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3310i'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.7'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3575,6 +3791,14 @@ function _H75($useragent) {
     $dl[] = array(11906,6742,4643,18092, 'SAMSUNG-GT-I8000U/1.0 Software/WM6.5 Release/01.24.2009 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'B7610'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(13398,6742,3430,18092, 'SAMSUNG-GT-B7610/1.0 Opera 9.5 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'S8500'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3591,12 +3815,12 @@ function _H75($useragent) {
     $dl[] = array(15596,17484,3976,18092, 'SAMSUNG-GT-S3830U/ZNID3 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'S8000T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(12160,17484,4223,18092, 'SAMSUNG-GT-S8000T/1.0 SHP/R5 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $dl[] = array(15425,17350,3430,18092, 'Opera 9.5(Windows NT;  U; en) SAMSUNG-GT-B7300/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M8910U'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3607,6 +3831,14 @@ function _H75($useragent) {
     $dl[] = array(12023,17484,4223,18092, 'SAMSUNG-GT-M8910U/1.0 SHP/VPP/R5 Release/26.08.2009 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S3653'), 1 => NULL, 2 => array(0 => '0.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12080,17484,3636,18092, 'SAMSUNG-GT-S3653/S3653JVIH2 SHP/VPP/R5 Jasmine/0.8 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'M7500C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.4'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3615,20 +3847,20 @@ function _H75($useragent) {
     $dl[] = array(13919,17484,3976,18092, 'SAMSUNG-GT-M7500C/M7500ZCIB1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2MzU5MDIwNDAxNDM2');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'C5010E'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12643,17484,3625,18092, 'SAMSUNG-GT-C5010E/C5010EXXJH4 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'M2710C'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14266,17605,4223,18092, 'SAMSUNG-GT-M2710C/1.0 RTK-E/1.0 DF/1.0 Release/07.01.2008 Browser/NetFront3.4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'E2370'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14256,17484,17606,18092, 'SAMSUNG-GT-E2370/E2370XXJF5');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'B7330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3663,14 +3895,6 @@ function _H75($useragent) {
     $dl[] = array(15094,17605,3625,18092, 'SAMSUNG-GT-E1150C_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/14.01.2009 Browser/OpenWave6.2.3.3.c.1.101/*MzU4MjA4MDM4NTcyMjU4 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'C3303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14916,17484,4742,18092, 'samsung gt-c3303/UC Browser7.5.1.77/69/351,SAMSUNG-GT-C3303/C3303DDJFB Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
-    $ls = $ns;
-  }
   $ns = E75($segments, array(0 => array(0 => 'C3330'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3679,12 +3903,12 @@ function _H75($useragent) {
     $dl[] = array(16260,17484,4392,18092, 'SAMSUNG-GT-C3330/1.0 NetFront/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E75($segments, array(0 => array(0 => 'B7300'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.5'), 8 => NULL), $ls);
+  $ns = E75($segments, array(0 => array(0 => 'S8000T'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '3.5'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(15425,17350,3430,18092, 'Opera 9.5(Windows NT;  U; en) SAMSUNG-GT-B7300/1.0');
+    $dl[] = array(12160,17484,4223,18092, 'SAMSUNG-GT-S8000T/1.0 SHP/R5 NetFront/3.5 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'I6420'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => '9.8'), 8 => NULL), $ls);
@@ -3701,14 +3925,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(14916,17484,4780,18092, 'SAMSUNG-GT-C3303K/1.0 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1, MAUI_WAP_Browser');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5030W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(17608,17484,4248,18092, 'SAMSUNG-GT-S5030W/S523WXXJF4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'S3650'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3733,14 +3949,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(12051,17484,17606,18092, 'SAMSUNG-GT-S5600-Vodafone/S5600BUIF3 /352700030553076 Java/VF-Java/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'C5010E'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(12643,17484,3625,18092, 'SAMSUNG-GT-C5010E/C5010EXXJH4 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'U700'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => '4.1'), 6 => NULL, 7 => NULL, 8 => NULL), $ls);
@@ -3783,12 +3991,52 @@ function _H75($useragent) {
     $dl[] = array(14218,17484,17606,18092, 'SAMSUNG-GT-C3300K/1.0');
     $ls = $ns;
   }
+  $ns = E75($segments, array(0 => array(0 => 'S5222)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(18323,17484,17606,18092, 'MQQBrowser/Mini2.5 (SAMSUNG-GT-S5222)');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'E2370'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14256,17484,17606,18092, 'SAMSUNG-GT-E2370/E2370XXJF5');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'C3303'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(14916,17484,4742,18092, 'samsung gt-c3303/UC Browser7.5.1.77/69/351,SAMSUNG-GT-C3303/C3303DDJFB Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.102 (GUI) MMP/2.0 Untrusted/1.0');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'S5030W'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(17608,17484,4248,18092, 'SAMSUNG-GT-S5030W/S523WXXJF4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E75($segments, array(0 => array(0 => 'E1390'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(14142,17484,17606,18092, 'SAMSUNG-GT-E1390/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E75($segments, array(0 => array(0 => 'M8920'), 1 => NULL, 2 => array(0 => '1.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(16894,17484,4248,18092, 'SAMSUNG-GT-M8920/M8920XXIG2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E75($segments, array(0 => array(0 => 'M3310'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => '6.2'), 7 => NULL, 8 => NULL), $ls);
@@ -3829,14 +4077,6 @@ function _H75($useragent) {
       unset($dl);
     }
     $dl[] = array(15364,17484,3834,18092, 'SAMSUNG-GT-S5210/1.0 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B');
-    $ls = $ns;
-  }
-  $ns = E75($segments, array(0 => array(0 => 'S5222)'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(18323,17484,17606,18092, 'MQQBrowser/Mini2.5 (SAMSUNG-GT-S5222)');
     $ls = $ns;
   }
   return $dl;

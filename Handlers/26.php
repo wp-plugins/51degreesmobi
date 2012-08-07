@@ -79,12 +79,28 @@ function _H26($useragent) {
     $dl[] = array(15364,5690,17317,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.702) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
+  $ns = E26($segments, array(0 => array(0 => '2.802')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17317,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.802) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $ls = $ns;
+  }
   $ns = E26($segments, array(0 => array(0 => '1.600')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(15364,5690,17316,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
+    $ls = $ns;
+  }
+  $ns = E26($segments, array(0 => array(0 => '2.340')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15364,5690,17316,18092, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
     $ls = $ns;
   }
   return $dl;
