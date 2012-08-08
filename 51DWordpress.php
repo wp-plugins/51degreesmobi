@@ -1,4 +1,14 @@
 <?php
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0.
+ *
+ * If a copy of the MPL was not distributed with this file, You can obtain one
+ * at http://mozilla.org/MPL/2.0/.
+ *
+ * This Source Code Form is "Incompatible With Secondary Licenses", as defined
+ * by the Mozilla Public License, v. 2.0.
+ */
 /*
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
@@ -9,12 +19,15 @@
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-include_once('51Degrees.mobi.php');
-include_once('51Degrees.mobi.metadata.php');
+$dir = dirname(__FILE__);
+	if(file_exists($dir.'/51Degrees.mobi.php'))
+		include_once($dir.'/51Degrees.mobi.php');
+	
+	if(file_exists($dir.'/51Degrees.mobi.metadata.php'))
+		include_once($dir.'/51Degrees.mobi.metadata.php');
 
-if (get_option('51d_enable_udp')) {
-	include_once('51Degrees.mobi.usage.php');
-}
+if (get_option('51d_enable_udp') && file_exists($dir.'/51Degrees.mobi.usage.php'))
+		include_once($dir.'/51Degrees.mobi.usage.php');
 
 function _51d_print_javascript() {
 	?>
@@ -109,22 +122,10 @@ function _51d_print_javascript() {
 <?php
 }
 
-function _51d_set_options() {
-	add_option('51d_enable_udp', false);
-}
-
-function _51d_unset_options() {
-	delete_option('51d_enable_udp');
-	delete_option('51DFilterStore');
-}
-
-register_activation_hook(__FILE__,'_51d_set_options');
-register_deactivation_hook(__FILE__,'_51d_unset_options');
-
 function _51d_submit_settings()
 {
 	update_option('51d_enable_udp', isset($_POST['51d_enable_udp']));
-	header('location:'. $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);die("blah");
+	header('location:'. $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 }
 
 function _51d_submit_filter()
@@ -166,7 +167,7 @@ function _51d_submit_filter()
 		foreach($filters as $key => $filter)
 		{
 			if($key == $_POST['_51D_SubmitFilter'])
-				$newFilters[$_POST['_51D_FilterName']] = $filter;
+				$newFilters[$_POST['_51D_FilterName']] = $updatedFilter;
 			else
 				$newFilters[$key] = $filter;
 		}
@@ -174,15 +175,20 @@ function _51d_submit_filter()
 	}
 	else
 		$filters[$_POST['_51D_FilterName']] = $updatedFilter;
+		
 	update_option('51DFilterStore', $filters);
 	header('Location: '.add_query_arg( 'filter', $_POST['_51D_FilterName'] ));
 }
 
 function _51d_loadFilters($currentTheme, $tag) {
-	$theme = _51d_checkFilters();
-	if(empty($theme))
-		return $currentTheme;
-	return $theme[$tag];
+	if(!is_admin())
+	{
+		$theme = _51d_checkFilters();
+		if(empty($theme))
+			return $currentTheme;
+		return $theme[$tag];
+	}
+	return $currentTheme;
 }
 
 function _51d_checkFilters() {
@@ -217,7 +223,7 @@ function _51d_checkFilters() {
 						if($filter['action'] == 'theme')
 						{
 							//change theme
-							$theme = get_theme($filter['theme']['Title']);
+							$theme = @get_theme($filter['theme']['Title']);
 
 							if(!empty($theme))
 							{
@@ -315,12 +321,12 @@ function _51d_print_basic_properties($filter) { ?>
 <div id="_51DDeviceConditions" style="border:1px solid; background-color:#ffffff; padding: 3px;">
   <?php
 	global $_51d_meta_data;
-
+	
 	if (isset($filter['conditions']))
 		$conditions = $filter['conditions'];
 	else
 		$conditions = array();
-
+		
 	// add a key and value here to add a property to the default field.
 	$properties = array(
     "Mobile" => "IsMobile",
@@ -387,7 +393,7 @@ function _51d_print_license_section()
 		$license = file_get_contents($lic_filename);
 	?>
         License key: <input style="width:70%" name="_51d_license_text" type="text"
-	value=""<?php if(isset($license)) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.'" />
+	value="<?php if(isset($license)) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.'" />
         <br />
         <button name="_51d_submit_license" class="button-primary" type="submit">Save</button>
       </form>
@@ -529,7 +535,7 @@ function _51d_print_filter_tab($index, $filters) {
         </table>
         <button name="_51D_SubmitFilter" class="button-primary" type="submit" value="<?php echo $key; ?>">Submit
         </button>
-        <a href=""
+        <a href="
           <?php echo add_query_arg('DeleteFilter', $key); ?>" onclick="return confirm('Are you sure you want to delete this filter?')">Delete
         </a>
         <?php
@@ -555,6 +561,7 @@ function _51d_print_filters() {
 	echo '<div id="_51DFilterTabs">';
 
 	$filters = get_option('51DFilterStore');
+	
 	if ($filters == false || count($filters) == 0)
 		echo 'There are no filters. <a href="'.add_query_arg('_51D_NewFilter', 'true').'">Create one.</a>';
 	else {
@@ -609,7 +616,6 @@ function _51d_print_filters() {
 }
 
 function _51d_print_settings() {
-global $wp_version;
 	if(get_option('enable_51DUDP'))
 		$udp_enabled = 'checked="checked"';
 	?>
@@ -624,8 +630,7 @@ global $wp_version;
               Share usage data with 51Degrees.mobi. <a href="http://51degrees.mobi/Support/FAQs/UsageData.aspx">Learn More</a>
             </p>
             <p>
-              <button name="_51D_SubmitGlobalSettings" class="button-primary" type="submit" value=""
-                <?php echo $key; ?>">Submit
+              <button name="_51D_SubmitGlobalSettings" class="button-primary" type="submit">Submit
               </button>
             </p>
           </form>
@@ -645,7 +650,7 @@ function _51d_admin_menu_preprocess() {
 		require('51DUpdate.php');
 		exit;
 	}
-
+	
 	//A new filter is to be created
 	if(isset($_GET['_51D_NewFilter']))
 	{
@@ -767,7 +772,7 @@ function _51d_admin_menu_preprocess() {
 						) . '</p>'
 
 		) );
-		
+
 		$screen->add_help_tab( array(
 			'id'	=> 'property_help_action',
 			'title'	=> __('Action'),
@@ -787,8 +792,27 @@ function _51d_admin_menu_preprocess() {
 						'all requests from devices matching the rule.'
 						) . '</p>'
 		) );
-	
+
 	}
+}
+
+function _51d_set_options() {
+	try
+	{
+		$dir = dirname(__FILE__);
+		WP_Filesystem();
+		unzip_file($dir.'/51DegreesData.zip', $dir);
+	}
+	catch(Exception $ex)
+	{}
+	
+	add_option('51d_enable_udp', false);
+
+}
+
+function _51d_unset_options() {
+	delete_option('51d_enable_udp');
+	delete_option('51DFilterStore');
 }
 
 function _51d_loadTemplateFilters($current) {
@@ -799,8 +823,11 @@ function _51d_loadStylesheetFilters($current) {
 	return _51d_loadFilters($current, 'Stylesheet');
 }
 
-
 add_action('admin_menu', '_51d_add_admin_menu');
 add_filter('template', '_51d_loadTemplateFilters');
 add_filter('stylesheet', '_51d_loadStylesheetFilters');
+
+register_activation_hook(__FILE__,'_51d_set_options');
+register_deactivation_hook(__FILE__,'_51d_unset_options');
+
 ?>
