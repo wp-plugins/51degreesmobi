@@ -874,7 +874,7 @@ function _51d_unzip_data() {
 
 function _51d_set_options() {
 	try {
-		_51d_unzip_data();
+		//_51d_unzip_data();
 	}
 	catch(Exception $ex)
 	{}
@@ -892,12 +892,12 @@ function _51d_admin_init() {
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
         // check if a premium key is available
 		_51d_unzip_data();
-        $licence = get_option("_51_license_text");
+        $license = get_option("_51d_license_text");
 
         if($license != false) {
 			file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $license);
             global $_51d_suppress_update_output;
-            $_51d_suppress_update_output = false;
+            $_51d_suppress_update_output = true;
 
             include_once("51Degrees/51DUpdate.php");
 
