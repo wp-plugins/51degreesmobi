@@ -160,7 +160,7 @@ if (get_option('51d_enable_udp') && file_exists($dir.'/51Degrees/51Degrees.mobi.
 */
 function _51d_print_javascript() {
 	?>
-<script type="text/javascript" src="<?php echo plugins_url()."/51Degrees/51Degrees/51DUpdate.js"; ?>" ></script>
+<script type="text/javascript" src="<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.js"; ?>" ></script>
 <script type="text/javascript" >
 	// toggles if the advanced section is visible
 	function toggleAdvanced() {
@@ -194,7 +194,7 @@ function _51d_print_javascript() {
 
 
 	function getDataUpdate() {
-		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degrees/51Degrees/51DUpdate.php"; ?>";
+		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.php"; ?>";
         fiftyone_degrees_start_updates();
 		_request.onload = updatePendingFinish;
 		
@@ -405,7 +405,7 @@ function _51d_print_basic_properties($filter) {
 	<div id="_51DDeviceConditions" style="border:1px solid; background-color:#ffffff; padding: 3px;">
 	<?php
 		global $_51d_meta_data;
-
+var_dump($_51d_meta_data);
 		if (isset($filter['conditions']))
 			$conditions = $filter['conditions'];
 		else
@@ -891,11 +891,11 @@ function _51d_admin_init() {
     $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
         // check if a premium key is available
+		_51d_unzip_data();
         $licence = get_option("_51_license_text");
 
-        file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $_POST["_51d_license_text"]);
-
         if($license != false) {
+			file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $license);
             global $_51d_suppress_update_output;
             $_51d_suppress_update_output = false;
 
@@ -904,7 +904,6 @@ function _51d_admin_init() {
             if(fiftyone_degrees_StartUpdate()) // update happened successfully
                 return;
         }
-        _51d_unzip_data();
     }
 }
 
