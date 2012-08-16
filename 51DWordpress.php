@@ -405,7 +405,7 @@ function _51d_print_basic_properties($filter) {
 	<div id="_51DDeviceConditions" style="border:1px solid; background-color:#ffffff; padding: 3px;">
 	<?php
 		global $_51d_meta_data;
-var_dump($_51d_meta_data);
+
 		if (isset($filter['conditions']))
 			$conditions = $filter['conditions'];
 		else
