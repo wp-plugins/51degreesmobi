@@ -488,7 +488,7 @@ global $_51d_meta_data;
 			
 	?>
         License key: <input id="_51d_license_text" style="width:70%" type="text"
-			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.')" />
+			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" />
         <br />
 		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Update</button>
 		<p>
