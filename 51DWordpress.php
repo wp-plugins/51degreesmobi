@@ -136,13 +136,13 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.2
+	Version: 2.1.11.3
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.2');
+define('DATA_VERSION', '2.1.11.3');
 
 $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
@@ -192,16 +192,30 @@ function _51d_print_javascript() {
 			console.log('no values object with that name.');
 	}
 
+	function updateKey() {
+		var key = (document.getElementById('_51d_license_text').value);
+		var url = "<?php echo add_query_arg('51D_LicenseKey', 'KEY_HERE'); ?>";
 
+		var keyPost = new XMLHttpRequest();
+		keyPost.onreadystatechange = function () {
+			if(keyPost.readyState == 4 && keyPost.status == 200) {
+				getDataUpdate();
+			}
+		}
+		keyPost.open('GET', url.replace("KEY_HERE", key, true));
+		keyPost.send();
+	}
+	
 	function getDataUpdate() {
-		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.php"; ?>";
-        fiftyone_degrees_start_updates();
-		_request.onload = updatePendingFinish;
-		
 		document.getElementById("51d_message_update").style.display = "inline";
 		document.getElementById("51d_admin_panel").style.display = "none";
 		
 		scrollTo(0, 0);
+		
+		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.php"; ?>";
+		fiftyone_degrees_start_updates();
+		_request.onload = updatePendingFinish;
+		
 	}
 	
 	function updatePendingFinish() {
@@ -212,6 +226,7 @@ function _51d_print_javascript() {
 		document.getElementById("51d_update_finished").style.display = "none";
 		document.getElementById("51d_message_update").style.display = "none";
 		document.getElementById("51d_admin_panel").style.display = "inline";
+		window.location.reload();
 	}
 
 	function checkRedirectText() {
@@ -466,24 +481,18 @@ function _51d_print_license_section() {
 global $_51d_meta_data;
 	?>
     <div id="licensing" style="margin-left: 12px">
-		<form id="_51d_licensing" style="display:inline" method="post">
-			<h3>Device Data Licence Key</h3>
-			<br />
+		<h3>Device Data Licence Key</h3>
+		<br />
 	<?php
-		$lic_filename = dirname(__file__)."\\51Degrees\\license.lic";
-
-		if(file_exists($lic_filename))
-			$license = file_get_contents($lic_filename);
+		$license = get_option('_51d_license_text');
 			
 	?>
-        License key: <input style="width:70%" name="_51d_license_text" type="text"
-			value="<?php if(isset($license)) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.'" />
+        License key: <input id="_51d_license_text" style="width:70%" type="text"
+			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.')" />
         <br />
-			<button name="_51d_submit_license" class="button-primary" type="submit">Save</button>
-		</form>
-		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="getDataUpdate()">Update</button>
+		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Update</button>
 		<p>
-        Data type: <i><?php echo $_51d_meta_data["DatasetType"]; ?></i> Published: <i><?php echo $_51d_meta_data["ExportDate"]; ?></i>
+        Data type: <i><?php echo $_51d_meta_data["DatasetName"]; ?></i> Published: <i><?php echo $_51d_meta_data["Date"]; ?></i>
         </p>
     </div>
     <?php
@@ -492,6 +501,7 @@ global $_51d_meta_data;
 function _51d_print_update_messages() {
 	?>
 	<div id="51d_message_update" style="display:none;">
+		<div style="height:40px;" ></div>
 		51Degrees.mobi Device Data now updating. Please do not leave this page.
 		<p>
 			<div id="update_message"></div>
@@ -721,7 +731,7 @@ function _51d_print_settings() {
 }
 
 function _51d_add_admin_menu() {
-	$options_page = add_options_page('51Degrees.mobi','51Degrees.mobi','manage_options', __FILE__,'_51d_print_admin_panel');
+	$options_page = add_menu_page('51Degrees.mobi','51Degrees.mobi','manage_options', __FILE__,'_51d_print_admin_panel');
 
 	add_action('load-'.$options_page, '_51d_admin_menu_preprocess');
 }
@@ -737,9 +747,10 @@ function _51d_admin_menu_preprocess() {
 		exit;
 	}
 
-	if(isset($_POST["_51d_submit_license"]) && isset($_POST["_51d_license_text"])) {
-		update_option('_51d_license_text', $_POST["_51d_license_text"]);
-		file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $_POST["_51d_license_text"]);
+	if(isset($_GET["51D_LicenseKey"])) {
+		update_option('_51d_license_text', $_GET["51D_LicenseKey"]);
+		file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $_GET["51D_LicenseKey"]);
+		exit;
 	}
 	
 	if(isset($_POST['_51D_SubmitFilter'])) {
@@ -873,12 +884,6 @@ function _51d_unzip_data() {
 }
 
 function _51d_set_options() {
-	try {
-		//_51d_unzip_data();
-	}
-	catch(Exception $ex)
-	{}
-
 	add_option('51d_enable_udp', false);
 }
 
