@@ -1,15 +1,5 @@
 <?php
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
- */
-/**
  * These Premium Data Licence Terms, together with our General Terms and
  * Conditions, apply to your (and your End Users?) use of Premium Data. In the
  * event of any inconsistency between these Premium Data Licence Terms and our
@@ -215,27 +205,24 @@ function _51d_print_javascript() {
 		keyPost.open('GET', url.replace("KEY_HERE", key, true));
 		keyPost.send();
 	}
-
+	
 	function getDataUpdate() {
 		document.getElementById("51d_message_update").style.display = "inline";
 		document.getElementById("51d_admin_panel").style.display = "none";
-
+		
 		scrollTo(0, 0);
-
+		
 		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.php"; ?>";
 		fiftyone_degrees_start_updates();
 		_request.onload = updatePendingFinish;
-
+		
 	}
-
+	
 	function updatePendingFinish() {
 		document.getElementById("51d_update_finished").style.display = "inline";
 	}
-
+	
 	function updateFinished() {
-		document.getElementById("51d_update_finished").style.display = "none";
-		document.getElementById("51d_message_update").style.display = "none";
-		document.getElementById("51d_admin_panel").style.display = "inline";
 		window.location.reload();
 	}
 
@@ -252,7 +239,6 @@ function _51d_print_javascript() {
 function _51d_submit_settings()
 {
 	update_option('51d_enable_udp', isset($_POST['51d_enable_udp']));
-	header('location:'. $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 }
 
 function _51d_submit_filter() {
@@ -364,7 +350,7 @@ function _51d_print_admin_panel() {
 	_51d_print_javascript();
 
 	?>
-
+	
 	<div id="51d_admin_panel" class="wrap">
 		<h2>51Degrees.mobi Device Detection</h2>
 		<form id="_51DFilterMenu" class="update-nav-menu" method="post">
@@ -495,7 +481,7 @@ global $_51d_meta_data;
 		<br />
 	<?php
 		$license = get_option('_51d_license_text');
-
+			
 	?>
         License key: <input id="_51d_license_text" style="width:70%" type="text"
 			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.')" />
@@ -511,14 +497,15 @@ global $_51d_meta_data;
 function _51d_print_update_messages() {
 	?>
 	<div id="51d_message_update" style="display:none;">
-		51Degrees.mobi Device Data now updating. Please do not leave this page.
+        <div style="height: 40px;"></div>
+		51Degrees.mobi Device Data now updating. This may take a few minutes. Please leave this page open.
 		<p>
 			<div id="update_message"></div>
 		</p>
 		<div id="51d_update_finished" style="display:none;" >
 			Updating has finished. Press to go back to the admin page. <br />
 			<button type="button" class="button-primary" onclick="updateFinished()">Back</button>
-		</div>
+		</div>			
 	</div>
 	<?php
 }
@@ -577,6 +564,8 @@ function _51d_print_filter_tab($index, $filters) {
 										if(isset($_51d_meta_data)) {
 											$toggle = false;
 											foreach($_51d_meta_data as $dataKey => $data) {
+                                                if($dataKey == 'DatasetName' || $dataKey == 'Date')
+													continue;
 												if($toggle)
 													echo '<tr style="background-color:#dddddd;">';
 												else
@@ -728,7 +717,7 @@ function _51d_print_settings() {
 			<form id="_51DGlobalSettingsMenu" method="post">
 
 				<p>
-					<input type="checkbox" name="51d_enable_udp" <?php echo $udp_enabled; ?> />
+					<input type="checkbox" name="51d_enable_udp" <?php if(get_option('51d_enable_udp')) echo 'checked="checked"'; ?> />
 					Share usage data with 51Degrees.mobi. <a href="http://51degrees.mobi/Support/FAQs/UsageData.aspx">Learn More</a>
 				</p>
 				<p>
@@ -761,7 +750,7 @@ function _51d_admin_menu_preprocess() {
 		file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $_GET["51D_LicenseKey"]);
 		exit;
 	}
-
+	
 	if(isset($_POST['_51D_SubmitFilter'])) {
 		_51D_Submit_Filter();
 		exit;
@@ -769,7 +758,6 @@ function _51d_admin_menu_preprocess() {
 
 	if(isset($_POST['_51D_SubmitGlobalSettings'])) {
 		_51d_submit_settings();
-		exit;
 	}
 
 	if(isset($_GET['ShiftFilter']) && isset($_GET['filter'])) {
@@ -909,16 +897,16 @@ function _51d_admin_init() {
 		_51d_unzip_data();
         $license = get_option("_51d_license_text");
 
-        if($license != false) {
-			file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $license);
-            global $_51d_suppress_update_output;
-            $_51d_suppress_update_output = true;
+        // if($license != false) {
+			// file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $license);
+            // global $_51d_suppress_update_output;
+            // $_51d_suppress_update_output = true;
 
-            include_once("51Degrees/51DUpdate.php");
+            // include_once("51Degrees/51DUpdate.php");
 
-            if(fiftyone_degrees_StartUpdate()) // update happened successfully
-                return;
-        }
+            // if(fiftyone_degrees_StartUpdate()) // update happened successfully
+                // return;
+        // }
     }
 }
 
