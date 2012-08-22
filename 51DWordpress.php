@@ -136,13 +136,13 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.4
+	Version: 2.1.11.6
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.4');
+define('DATA_VERSION', '2.1.11.6');
 
 $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
@@ -160,7 +160,7 @@ if (get_option('51d_enable_udp') && file_exists($dir.'/51Degrees/51Degrees.mobi.
 */
 function _51d_print_javascript() {
 	?>
-<script type="text/javascript" src="<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.js"; ?>" ></script>
+<script type="text/javascript" src="<?php echo plugins_url()."/51degreesmobi/51Degrees/51DUpdate.js"; ?>" ></script>
 <script type="text/javascript" >
 	// toggles if the advanced section is visible
 	function toggleAdvanced() {
@@ -212,7 +212,7 @@ function _51d_print_javascript() {
 		
 		scrollTo(0, 0);
 		
-		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51Degreesmobi/51Degrees/51DUpdate.php"; ?>";
+		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51degreesmobi/51Degrees/51DUpdate.php"; ?>";
 		fiftyone_degrees_start_updates();
 		_request.onload = updatePendingFinish;
 		
