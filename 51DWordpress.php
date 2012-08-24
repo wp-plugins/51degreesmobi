@@ -926,4 +926,15 @@ function _51d_loadTemplateFilters($current) {
 }
 
 function _51d_loadStylesheetFilters($current) {
-	return _51d_
+	return _51d_loadFilters($current, 'Stylesheet');
+}
+
+add_action('admin_init', '_51d_admin_init');
+add_action('admin_menu', '_51d_add_admin_menu');
+add_filter('template', '_51d_loadTemplateFilters');
+add_filter('stylesheet', '_51d_loadStylesheetFilters');
+
+register_activation_hook(__FILE__,'_51d_set_options');
+register_deactivation_hook(__FILE__,'_51d_unset_options');
+
+?>
