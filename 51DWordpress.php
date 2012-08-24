@@ -142,7 +142,7 @@
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.6');
+define('DATA_VERSION', '2.1.11.7');
 
 $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
@@ -649,7 +649,8 @@ function _51d_print_filters() {
 	$filters = get_option('51DFilterStore');
 
 	if ($filters == false || count($filters) == 0)
-		echo 'There are no switcher rules. <a href="'.add_query_arg('_51D_NewFilter', 'true').'">Create one.</a>';
+		echo 'You can setup a switcher rule to control if a particular device uses a theme or webpage that will better suite its form.
+		Click <a href="'.add_query_arg('_51D_NewFilter', 'true').'">here</a> to create one.';
 	else {
 		$keys = array_keys($filters);
 		$GLOBALS['keys'] = &$keys;
@@ -882,6 +883,16 @@ function _51d_unzip_data() {
 }
 
 function _51d_set_options() {
+	// install themes
+	$dir = dirname(__FILE__);
+	$theme_directory = "$dir/themes/";
+	WP_Filesystem();
+	$themes = glob($theme_directory . "*.zip");
+	
+	foreach($themes as $theme) {
+		$targetdir = get_theme_root().'/';
+		unzip_file($theme, $targetdir);
+	}	
 	add_option('51d_enable_udp', false);
 }
 
@@ -915,15 +926,4 @@ function _51d_loadTemplateFilters($current) {
 }
 
 function _51d_loadStylesheetFilters($current) {
-	return _51d_loadFilters($current, 'Stylesheet');
-}
-
-add_action('admin_init', '_51d_admin_init');
-add_action('admin_menu', '_51d_add_admin_menu');
-add_filter('template', '_51d_loadTemplateFilters');
-add_filter('stylesheet', '_51d_loadStylesheetFilters');
-
-register_activation_hook(__FILE__,'_51d_set_options');
-register_deactivation_hook(__FILE__,'_51d_unset_options');
-
-?>
+	return _51d_
