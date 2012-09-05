@@ -136,7 +136,7 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.7
+	Version: 2.1.11.9
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
@@ -218,8 +218,21 @@ function _51d_print_javascript() {
 		
 	}
 	
+	function getUpdateKey() {
+		return document.getElementById('_51d_license_text').value;
+	}
+	
 	function updatePendingFinish() {
 		document.getElementById("51d_update_finished").style.display = "inline";
+		if(_request.responseText === undefined) {
+				var message = "The update procedure could not be launched, probably because the server does not support flushing.\n";
+				message += "The update can be downloaded manually from ";
+				message += "<a href=\"https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys="+getUpdateKey()+"&Type=WordPress&Download=True>51Degrees.mobi</a>.";
+			}
+		else
+			var message = "Updating has finished. Press to go back to the admin page."
+			
+		document.getElementById("51d_update_status").innerHTML = message;
 	}
 	
 	function updateFinished() {
@@ -298,6 +311,11 @@ function _51d_loadFilters($currentTheme, $tag) {
 }
 
 function _51d_checkFilters() {
+	// check if user has requested not to be switched
+	if(isset($_SESSION['NO_SWITCH']) && $_SESSION['NO_SWITCH'] == true)
+		return;
+	
+	// check if the browser has been detected already
 	if(isset($_SESSION['_51d_themeName']))
 		return $_SESSION['_51d_themeName'];
 
@@ -347,25 +365,40 @@ function _51d_checkFilters() {
 }
 
 function _51d_print_admin_panel() {
-	_51d_print_javascript();
+	if(file_exists(dirname(__FILE__).'/51Degrees/51Degrees.mobi.php'))
+	{
+		_51d_print_javascript();
 
-	?>
-	
-	<div id="51d_admin_panel" class="wrap">
-		<h2>51Degrees.mobi Device Detection</h2>
-		<form id="_51DFilterMenu" class="update-nav-menu" method="post">
-			<?php
-				_51d_print_filters();
-				echo '</form>';
-				echo '<br/>';
-				_51d_print_settings();
-				echo '<br />';
-				_51d_print_license_section();
-			?>
-		</form>
-	</div>
-	<?php
-	_51d_print_update_messages();
+		?>
+		
+		<div id="51d_admin_panel" class="wrap">
+			<h2>51Degrees.mobi Device Detection</h2>
+			<form id="_51DFilterMenu" class="update-nav-menu" method="post">
+				<?php
+					_51d_print_filters();
+					echo '</form>';
+					echo '<br/>';
+					_51d_print_settings();
+					echo '<br />';
+					_51d_print_license_section();
+				?>
+			</form>
+		</div>
+		<?php
+		_51d_print_update_messages();
+	}
+	else
+	{
+		?>
+		<div id="51d_admin_panel" class="wrap">
+			<h2>51Degrees.mobi Device Detection</h2>
+			<p>51Degrees.mobi Device Detection cannot run as the plugin is unable to write files. This is necessary to create the data files needed for
+				detection and to install mobile friendly themes. Please enable file writing, or unzip the 51Degrees data file at 
+				'<?php echo dirname(__FILE__).'/51Degrees.zip' ?>' to '<?php echo dirname(__FILE__); ?>' manually.
+			</p>
+			</div>
+		<?php
+	}
 }
 
 /**
@@ -484,7 +517,7 @@ global $_51d_meta_data;
 			
 	?>
         License key: <input id="_51d_license_text" style="width:70%" type="text"
-			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" onclick="return confirm('This will overwrite any previously saved key.')" />
+			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" />
         <br />
 		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Update</button>
 		<p>
@@ -503,7 +536,7 @@ function _51d_print_update_messages() {
 			<div id="update_message"></div>
 		</p>
 		<div id="51d_update_finished" style="display:none;" >
-			Updating has finished. Press to go back to the admin page. <br />
+			<div id="51d_update_status"></div> <br />
 			<button type="button" class="button-primary" onclick="updateFinished()">Back</button>
 		</div>			
 	</div>
