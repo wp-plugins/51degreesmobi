@@ -313,7 +313,7 @@ function _51d_loadFilters($currentTheme, $tag) {
 function _51d_checkFilters() {
 	// check if user has requested not to be switched
 	if(isset($_SESSION['NO_SWITCH']) && $_SESSION['NO_SWITCH'] == true)
-		return;
+		return false;
 	
 	// check if the browser has been detected already
 	if(isset($_SESSION['_51d_themeName']))
