@@ -224,10 +224,10 @@ function _51d_print_javascript() {
 	
 	function updatePendingFinish() {
 		document.getElementById("51d_update_finished").style.display = "inline";
-		if(_request.responseText === undefined) {
+		if(_request.responseText === undefined || _request.responseText.length == 0) {
 				var message = "The update procedure could not be launched, probably because the server does not support flushing.\n";
 				message += "The update can be downloaded manually from ";
-				message += "<a href=\"https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys="+getUpdateKey()+"&Type=WordPress&Download=True>51Degrees.mobi</a>.";
+				message += "<a href=\"https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys="+getUpdateKey()+"&Type=WordPress&Download=True\">51Degrees.mobi</a>.";
 			}
 		else
 			var message = "Updating has finished. Press to go back to the admin page."
