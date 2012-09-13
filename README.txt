@@ -2,36 +2,39 @@
 Contributors: 51Degrees.mobi
 Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
-Requires at least: 3.0
+Requires at least: 2.7
 Tested up to: 3.4.1
 Stable tag: 2.1.11.9
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
-Device detection and optimisation from 51Degrees.mobi.
+The 51Degrees.mobi mobile device detection plugin is an easy to implement toolkit to mobilize your site. It comes complete with a mobile switcher, themes and administration tool.
 
 
 == Description ==
 
-The 51Degrees.mobi Device Detection plugin provides the following functionality.
+The 51Degrees.mobi mobile device detection plugin is a complete pack to help mobilize your website and blog.
 
-**Detection**  - works out the type of device accessing the web site and provides information about the hardware, operating system and browser. Includes information about screen size, browser features and many more.
+It includes a mobile device detector and switcher to select themes based on the type of device visiting your website, a selection of mobile themes and a administration tool to allow easy, quick implementation.   
 
-**Optimisation**  - enables the theme used to be altered depending on the detected properties.
+Features include:
 
-**Detection**
+*  **Mobile detection and switcher** which automatically detects and switches between desktop / mobile theme, or the request can be redirected to another URL
 
-The plugin contains a small database capable of determining the requesting device's properties extremely quickly using the finger prints (technically called useragents) sent by web browsers. No cloud services, php extensions or external components are required. Once the plugin is installed the detected device properties are available to theme developers.
+*  **Easy to use administration tool** to set-up and define redirection rules. The plugin can be downloaded and working within minutes. Rules can be defined to treat small [screen mobile devices](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsSmallScreen), [smartphones](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsSmartPhone) and [tablets](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsTablet) differently.
 
-**Optimisation**
+*  **Selection of preinstalled mobile themes** designed by Wave Mobile  
 
-A simple user interface enables non-technical users to define rules to alter the web sites response for different device types. Themes can be altered, or the request redirected to another web site. For example; rules can be defined to treat small screen mobile devices, smartphones and tablets differently from each other. Adverts could be optimised for the smaller screens, or content limited to the essential parts of a page.
+*  **Detects over 11000 mobile device** combinations and updated regularly.  No cloud services, PHP extensions or external components are required. Once installed the detected device properties are also available to theme developers.
 
-The plugin is provided for free to all Wordpress users under the Mozilla Public Licence 2. Paid for versions are available that offer more properties and features.
+*  **Developed and supported by 51Degrees.mobi** a leader in mobile device detection tools and used by over 220,000 servers and 500,000,000 devices per month. Additional detection capabilities including Tablet, Smartphone, Small Screen / Feature phones and additional themes are available from the 51Degrees.mobi web site.
 
+The plugin is provided for free to all WordPress users under the Mozilla Public Licence 2.  
+For more information please visit our [website](http://51Degrees.mobi/purchase/wordpress.aspx).
 
 
 == Installation ==
+
 
 The plugin can be installed via the normal Wordpress method. However, if this is not available you can also these other methods:
 
@@ -83,7 +86,12 @@ The FAQ section will be updated as relevant questions are asked of us.
 
 == Screenshots ==
 
-== Screenshots comming soon ==
+1. Overview of basic properties available being used over multiple rule tabs.
+2. How advanced properties are chosen.
+3. Selecting different themes for a device.
+4. The automatic update with a licence key feature.
+
+Screenshots comming soon
 
 == Changelog ==
 = 2.1.11.9 BETA =
