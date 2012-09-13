@@ -1,10 +1,10 @@
 === 51Degrees.mobi Device Detection (BETA) ===
-Contributors: 51Degrees
+Contributors: 51Degrees.mobi
 Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 3.0
 Tested up to: 3.4.1
-Stable tag: 2.1.10.3
+Stable tag: 2.1.11.9
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -33,7 +33,7 @@ The plugin is provided for free to all Wordpress users under the Mozilla Public 
 
 == Installation ==
 
-1. Install Wordpress using default settings.
+The plugin can be installed via the normal Wordpress method. However, if this is not available you can also these other methods:
 
 If you have set up FTP access:
 
@@ -43,7 +43,7 @@ If you have set up FTP access:
 
 If you have not set up FTP access, or if there are problems with the above unzip the plugin to /wp-content/plugins/
 
-1. After completing either of the above, to change settings:
+After installation, the plugin has several options you may wish to change:
 
 *  Open the Wordpress admin dashboard.
 
@@ -64,11 +64,16 @@ If you have not set up FTP access, or if there are problems with the above unzip
 
 *  Open the index.php file and within a php tag add:
 
-`echo $_51D['IsMobile'];`
+` global $_51d;
+ echo $_51d['IsMobile'];`
 
-*  You should see the value "TRUE" or "FALSE".
+*  You should see the value as a string, "True" or "False".
 
-*  Use the $_51D variable as expected.
+*  You can use var_dump($_51d) to see all the properties available, or check our [property guide] (https://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx "Property dictionary").
+
+*  You can use the session variable to prevent theme switching, useful for providing a 'view desktop button'.
+
+` $_SESSION['NO_SWITCH'] = true;	// The user will no longer be switched. `
 
 
 == Frequently Asked Questions ==
@@ -77,9 +82,15 @@ If you have not set up FTP access, or if there are problems with the above unzip
 The FAQ section will be updated as relevant questions are asked of us.
 
 == Screenshots ==
-= None currently =
+
+== Screenshots comming soon ==
 
 == Changelog ==
+= 2.1.11.9 BETA =
+* Plugin now includes 3 new themes.
+
+* More reliable update process that handles failures gracefully with readable errors messages.
+
 = 2.1.10.3 BETA =
 *  Includes nearly complete theme switcher and redirection administration user interface.
 
@@ -91,4 +102,4 @@ The FAQ section will be updated as relevant questions are asked of us.
 *  Current release. Upgrade to this to start receiving device detection data.
 
 == Known issues ==
-*  Update button has not been fully tested with different licence key combinations.
+*  Update button may not work on some server configurations.

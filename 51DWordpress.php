@@ -173,8 +173,8 @@ function _51d_print_javascript() {
 		}
 		else
 		{
-		adv_prop.style.display = 'block';
-		adv_toggle.innerHTML = '-';
+			adv_prop.style.display = 'block';
+			adv_toggle.innerHTML = '-';
 		}
 	}
 
@@ -509,17 +509,25 @@ function _51d_print_basic_properties($filter) {
 function _51d_print_license_section() {
 global $_51d_meta_data;
 	?>
-    <div id="licensing" style="margin-left: 12px">
-		<h3>Device Data Licence Key</h3>
-		<br />
+    <div id=u"licensing" style="margin-left: 12px">
+		<h3>Upgrade Device Data <span style="font-weight:normal;">(BETA)</span></h3>
+		<p>If you have <a href="http://51degrees.mobi/Purchase/Wordpress.aspx" target="_blank" >purchased</a> a licence key for device data paste it into the text box below and select Update. This process requires your PHP environment to support file updates and outbound web connectivity.
+		</p>
 	<?php
 		$license = get_option('_51d_license_text');
 			
 	?>
-        License key: <input id="_51d_license_text" style="width:70%" type="text"
-			value="<?php if($license) echo $license; else echo "Enter a license key here."; ?>" />
+        Licence key: <input id="_51d_license_text" style="width:70%" type="text"
+			value="<?php if($license) echo $license; else echo "Enter a licence key here."; ?>" />
         <br />
-		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Update</button>
+		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Automatically Update</button>
+		<?php if($license)
+			echo "<a href='https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys=$license&Type=PHP&Download=True'>Download Upgraded Plugin</a>";
+		?>
+		<p>You can also copy the licence key into the 
+		<a href="https://51degrees.mobi/Products/Downloads/Premium.aspx" target="_blank">51Degrees.mobi Downloads page</a>
+		and download an upgraded plugin preloaded with current device data. You must delete the currently installed version of this plugin before
+		uploading the upgraded one. <a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx" target="_blank">Learn More</a></p>
 		<p>
         Data type: <i><?php echo $_51d_meta_data["DatasetName"]; ?></i> Published: <i><?php echo $_51d_meta_data["Date"]; ?></i>
         </p>
@@ -860,11 +868,13 @@ function _51d_admin_menu_preprocess() {
 			'id'	=> 'property_help_rules',
 			'title'	=> __('Rules'),
 			'content'	=> '<p>' . __(
-						'At the top of the settings page are the rules tabs. Select Create Rule to add the first rule. Clicking ' .
-						'on the name will enable you to enter ' .
-						'a custom name. By clicking on the + symbol, you are able to add a new tab with an additional rule. ' .
-						'Rules are evaluated in order from left to right with the first one that matches the requesting device ' .
-						'being used to control the response.'
+						'At the top of the settings page are the rules tabs. Select Create Rule to add the first rule. Select ' .
+						'the tab name to change it to something more meaningful to you.'
+						) . '</p>' . '<p>' . __(
+						'Select the + symbol to add additional rules.' 
+						) . '</p>' . '<p>' . __(
+						'Rules are evaluated in order from left to right. The first one which matches the requesting device ' .
+						'is used to control the response.'
 						) . '</p>'
 		) );
 
@@ -877,7 +887,7 @@ function _51d_admin_menu_preprocess() {
 						'the rule to the device type. For example; to apply a rule to Tablet devices only you would select the ' .
 						'Tablet tick box and none of the others.'
 						) . '</p>' . '<p>' . __(
-						'Within the Advanced Properties section it is possible to further customise the rule using more ' .
+						'Within the Advanced Properties section it is possible to customise the rule using more ' .
 						'properties. For example; if you would like your rule to apply to devices with a screen resolution ' .
 						'of 800x480 pixels then you would select the IsMobile, ScreenPixelsHeight and ScreenPixelsHeight ' .
 						'tickboxes and set their Value boxes to True, 800 and 480 respectively.'
@@ -889,9 +899,8 @@ function _51d_admin_menu_preprocess() {
 			'id'	=> 'property_help_action',
 			'title'	=> __('Action'),
 			'content'	=> '<p>' . __(
-						'The basic and advanced properties section associates the rule to requesting device types. The action ' .
-						'section is where you can control how the site responds to requests from matching devices. Two possible ' .
-						'actions are available:'
+						'The action controls how the site responds to requests from matching devices.' .
+						'Two possible actions are available:'
 						) .	'</p>' . '<ol>' . '<li>' .  __(
 						'Change the theme to one more suited to the requesting devices capabilities. For example; on a small ' .
 						'screen devices removes less important content, or displays mobile optimised adverts.'
@@ -904,6 +913,13 @@ function _51d_admin_menu_preprocess() {
 						'all requests from devices matching the rule.'
 						) . '</p>'
 		) );
+		
+		$screen->set_help_sidebar(
+			__('<strong>For more information:</strong> 
+			<p><a href="http://51degrees.mobi/Products/DeviceData.aspx" target="_blank">Overview</a></p>
+			<p><a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx" target="_blank">Documentation</a></p>
+			<p><a href="http://51degrees.mobi/Purchase/Wordpress.aspx" target="_blank">Upgrade Device Data</a></p>')
+		);
 
 	}
 }
@@ -919,13 +935,15 @@ function _51d_set_options() {
 	// install themes
 	$dir = dirname(__FILE__);
 	$theme_directory = "$dir/themes/";
-	WP_Filesystem();
-	$themes = glob($theme_directory . "*.zip");
-	
-	foreach($themes as $theme) {
-		$targetdir = get_theme_root().'/';
-		unzip_file($theme, $targetdir);
-	}	
+	if(WP_Filesystem())
+	{
+		$themes = glob($theme_directory . "*.zip");
+		
+		foreach($themes as $theme) {
+			$targetdir = get_theme_root().'/';
+			unzip_file($theme, $targetdir);
+		}
+	}
 	add_option('51d_enable_udp', false);
 }
 
@@ -940,17 +958,6 @@ function _51d_admin_init() {
         // check if a premium key is available
 		_51d_unzip_data();
         $license = get_option("_51d_license_text");
-
-        // if($license != false) {
-			// file_put_contents(dirname(__FILE__)."/51Degrees/license.lic", $license);
-            // global $_51d_suppress_update_output;
-            // $_51d_suppress_update_output = true;
-
-            // include_once("51Degrees/51DUpdate.php");
-
-            // if(fiftyone_degrees_StartUpdate()) // update happened successfully
-                // return;
-        // }
     }
 }
 
