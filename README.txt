@@ -8,7 +8,7 @@ Stable tag: 2.1.11.9
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
-The 51Degrees.mobi mobile device detection plugin is an easy to implement toolkit to mobilize your site. It comes complete with a mobile switcher, themes and administration tool.
+The 51Degrees.mobi mobile device detection plugin mobilizes your site. It’s easy to install, includes mobile switcher, themes and administration tool.
 
 
 == Description ==
