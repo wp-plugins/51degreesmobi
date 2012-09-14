@@ -136,13 +136,13 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.9
+	Version: 2.1.11.10
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.7');
+define('DATA_VERSION', '2.1.11.10');
 
 $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
@@ -645,13 +645,18 @@ function _51d_print_filter_tab($index, $filters) {
 					<td>
 						<select id="theme_list" name="_51D_Theme" style="width:40%" onclick="checkRedirectText()">
 							<?php
-								$themes = @get_themes();
+								// sort themes alphabetically
+								$themes = array();
+								foreach(@get_themes() as $theme) {
+									$themes[$theme['Name']] = $theme['Name'];
+								}
+								ksort($themes);
 								foreach($themes as $theme) {
 									echo '<option';
 									if(isset($filter['theme']['Name']) && $filter['theme']['Name'] == $theme['Name'])
 										echo ' selected="selected"';
-									echo ' value="'.$theme['Name'].'">';
-									echo $theme['Name'];
+									echo ' value="'.$theme.'">';
+									echo $theme;
 									echo '</option>';
 								}
 
