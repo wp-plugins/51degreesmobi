@@ -136,13 +136,13 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.10
+	Version: 2.1.11.11
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.10');
+define('DATA_VERSION', '2.1.11.11');
 
 $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
@@ -297,71 +297,6 @@ function _51d_submit_filter() {
 
 	update_option('51DFilterStore', $filters);
 	header('Location: '.add_query_arg( 'filter', $_POST['_51D_FilterName'] ));
-}
-
-function _51d_loadFilters($currentTheme, $tag) {
-// only load themes on non admin pages
-	if(!is_admin()) {
-		$theme = _51d_checkFilters();
-		if(empty($theme))
-			return $currentTheme;
-		return $theme[$tag];
-	}
-	return $currentTheme;
-}
-
-function _51d_checkFilters() {
-	// check if user has requested not to be switched
-	if(isset($_SESSION['NO_SWITCH']) && $_SESSION['NO_SWITCH'] == true)
-		return false;
-	
-	// check if the browser has been detected already
-	if(isset($_SESSION['_51d_themeName']))
-		return $_SESSION['_51d_themeName'];
-
-	if(!isset($GLOBALS['_51d_themeName'])) {
-		// get 51d data from global scope
-		global $_51d;
-		//checking device filters
-		$filters = get_option('51DFilterStore');
-		if($filters != false) {
-			foreach($filters as $filter) {
-				if(isset($filter['conditions'])) {
-					$validConditions = true;
-					// check all conditions
-					foreach($filter['conditions'] as $key => $condition) {
-						if($condition == 'True' && $_51d[$key] != $condition) {
-							$validConditions = false;
-							break;
-						}
-					}
-					if($validConditions == true && isset($filter['action'])) {
-						if($filter['action'] == 'theme') {
-							//change theme
-							$theme = @get_theme($filter['theme']['Title']);
-
-							if(!empty($theme)) {
-								$GLOBALS['_51d_themeName'] = $theme;
-								$_SESSION['_51d_theme_name'] = $theme;
-								return $theme;
-							}
-						}
-						else if($filter['action'] == 'redirect' && isset($filter['url'])) {
-							header('Location: '.$filter['url']);
-							exit;
-						}
-						break;
-					}
-				}
-			}
-		} // no filters, stored, carry on
-
-		$GLOBALS['_51d_themeName'] = false;
-		$_SESSION['_51d_theme_name'] = false;
-		return false;
-	}
-	else
-		return $GLOBALS['_51d_themeName'];
 }
 
 function _51d_print_admin_panel() {
@@ -648,9 +583,9 @@ function _51d_print_filter_tab($index, $filters) {
 								// sort themes alphabetically
 								$themes = array();
 								foreach(@get_themes() as $theme) {
-									$themes[$theme['Name']] = $theme['Name'];
+									$themes[] = $theme;
 								}
-								ksort($themes);
+								asort($themes);
 								foreach($themes as $theme) {
 									echo '<option';
 									if(isset($filter['theme']['Name']) && $filter['theme']['Name'] == $theme['Name'])
@@ -972,6 +907,75 @@ function _51d_loadTemplateFilters($current) {
 
 function _51d_loadStylesheetFilters($current) {
 	return _51d_loadFilters($current, 'Stylesheet');
+}
+
+function _51d_loadFilters($currentTheme, $tag) {
+// only load themes on non admin pages
+	if(!is_admin()) {
+		//echo $currentTheme;
+		//echo "Checking $tag";
+		$theme = _51d_checkFilters();
+		if(empty($theme))
+			return $currentTheme;
+		return $theme[$tag];
+	}
+	return $currentTheme;
+}
+
+function _51d_checkFilters() {
+	// confirm that session is enabled for every request
+	session_start();
+	// check if user has requested not to be switched
+	if(isset($_SESSION['NO_SWITCH']) && $_SESSION['NO_SWITCH'] == true)
+		return false;
+	
+	// check if the browser has been detected already
+	if(isset($_SESSION['_51d_themeName']))
+		return $_SESSION['_51d_themeName'];
+
+	if(!isset($GLOBALS['_51d_themeName'])) {
+		// get 51d data from global scope
+		global $_51d;
+		//checking device filters
+		$filters = get_option('51DFilterStore');
+		if($filters != false) {
+			foreach($filters as $filter) {
+				if(isset($filter['conditions'])) {
+					$validConditions = true;
+					// check all conditions
+					foreach($filter['conditions'] as $key => $condition) {
+						if($condition == 'True' && $_51d[$key] != $condition) {
+							$validConditions = false;
+							break;
+						}
+					}
+					if($validConditions == true && isset($filter['action'])) {
+						if($filter['action'] == 'theme') {
+							//change theme
+							$theme = @get_theme($filter['theme']['Title']);
+
+							if(!empty($theme)) {
+								$GLOBALS['_51d_themeName'] = $theme;
+								$_SESSION['_51d_theme_name'] = $theme;
+								return $theme;
+							}
+						}
+						else if($filter['action'] == 'redirect' && isset($filter['url'])) {
+							header('Location: '.$filter['url']);
+							exit;
+						}
+						break;
+					}
+				}
+			}
+		} // no filters, stored, carry on
+
+		$GLOBALS['_51d_themeName'] = false;
+		$_SESSION['_51d_theme_name'] = false;
+		return false;
+	}
+	else
+		return $GLOBALS['_51d_themeName'];
 }
 
 add_action('admin_init', '_51d_admin_init');

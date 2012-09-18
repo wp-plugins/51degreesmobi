@@ -4,7 +4,7 @@ Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
 Tested up to: 3.4.1
-Stable tag: 2.1.11.10
+Stable tag: 2.1.11.11
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -89,10 +89,17 @@ The FAQ section will be updated as relevant questions are asked of us.
 2. How advanced properties are chosen.
 3. Selecting different themes for a device.
 4. The automatic update with a licence key feature.
+5. The included Small Screen theme.
+6. The included Smart Phone theme.
+7. The included Tablet theme.
 
 Screenshots comming soon
 
 == Changelog ==
+= 2.1.11.11 =
+* Plugin no longer in beta.
+* Fixed bug where the theme switcher wasn't being properly disabled by setting $_SESSION['NO_SWITCH'] to true.
+
 = 2.1.11.10 BETA =
 * Themes in the plugin admin menu now appear alphabetically.
 
