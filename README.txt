@@ -14,7 +14,7 @@ The 51Degrees.mobi mobile device detection plugin mobilizes your site. Easy setu
 
 The 51Degrees.mobi mobile device detection plugin is a complete pack to help mobilize your website and blog.
 
-It includes a mobile device detector and switcher to select themes based on the type of device visiting your website, a selection of mobile themes and a administration tool to allow easy, quick implementation.   
+It includes a mobile device detector and switcher to select themes based on the type of device visiting your website, a selection of mobile themes and an administration tool to allow easy, quick implementation.   
 
 Features include:
 
@@ -26,7 +26,7 @@ Features include:
 
 *  **Detects over 11000 mobile device** combinations and updated regularly.  No cloud services, PHP extensions or external components are required. Once installed the detected device properties are also available to theme developers.
 
-*  **Developed and supported by 51Degrees.mobi** a leader in mobile device detection tools and used by over 220,000 servers and 500,000,000 devices per month. Additional detection capabilities including Tablet, Smartphone, Small Screen / Feature phones and additional themes are available from the 51Degrees.mobi web site.
+*  **Developed and supported by 51Degrees.mobi** a leader in mobile device detection tools and used by over 220,000 servers and 500,000,000 devices per month. Additional detection capabilities including Tablet, Smartphone, Small Screen / Feature phones and additional themes are available from the 51Degrees.mobi website.
 
 The plugin is provided for free to all WordPress users under the Mozilla Public Licence 2.  
 For more information please visit our [website](http://51Degrees.mobi/purchase/wordpress.aspx).
@@ -109,7 +109,7 @@ Screenshots comming soon
 * More reliable update process that handles failures gracefully with readable errors messages.
 
 = 2.1.10.3 BETA =
-*  Includes nearly complete theme switcher and redirection administration user interface.
+*  Includes complete theme switcher and redirection administration user interface.
 
 = 0.51 BETA =
 *  Initial Release

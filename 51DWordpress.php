@@ -865,7 +865,7 @@ function _51d_admin_menu_preprocess() {
 }
 
 function _51d_unzip_data() {
-    set_time_limit(120);
+    set_time_limit(0);
 	$dir = dirname(__FILE__);
 	WP_Filesystem();
 	unzip_file($dir.'/51Degrees.mobi.php.zip', $dir);
