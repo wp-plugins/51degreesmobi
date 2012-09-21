@@ -865,7 +865,7 @@ function _51d_admin_menu_preprocess() {
 }
 
 function _51d_unzip_data() {
-    set_time_limit(120);
+    set_time_limit(0);
 	$dir = dirname(__FILE__);
 	WP_Filesystem();
 	unzip_file($dir.'/51Degrees.mobi.php.zip', $dir);
@@ -893,6 +893,7 @@ function _51d_unset_options() {
 }
 
 function _51d_admin_init() {
+	
     $dir = dirname(__FILE__);
 	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
         // check if a premium key is available
