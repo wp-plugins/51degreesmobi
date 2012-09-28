@@ -4,7 +4,7 @@ Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
 Tested up to: 3.4.1
-Stable tag: 2.1.11.11
+Stable tag: 2.1.12.1
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -96,6 +96,9 @@ The FAQ section will be updated as relevant questions are asked of us.
 Screenshots comming soon
 
 == Changelog ==
+= 2.1.12.1 =
+* The detector now uses a new data format that simplifies activation and should fix installation errors that occurs with some shared hosting.
+
 = 2.1.11.11 =
 * Plugin no longer in beta.
 * Fixed bug where the theme switcher wasn't being properly disabled by setting $_SESSION['NO_SWITCH'] to true.

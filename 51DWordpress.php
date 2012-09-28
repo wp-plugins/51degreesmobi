@@ -136,23 +136,20 @@
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
 	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.11.11
+	Version: 2.1.12.1
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-define('DATA_VERSION', '2.1.11.11');
 
 $dir = dirname(__FILE__);
-	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php'))
-		include_once($dir.'/51Degrees/51Degrees.mobi.php');
+@include_once($dir.'/51Degrees/51Degrees.mobi.php');
 
-	if(file_exists($dir.'/51Degrees/51Degrees.mobi.metadata.php'))
-		include_once($dir.'/51Degrees/51Degrees.mobi.metadata.php');
+@include_once($dir.'/51Degrees/51Degrees.mobi.metadata.php');
 
-if (get_option('51d_enable_udp') && file_exists($dir.'/51Degrees/51Degrees.mobi.usage.php'))
-		include_once($dir.'/51Degrees/51Degrees.mobi.usage.php');
+if (get_option('51d_enable_udp'))
+	@include_once($dir.'/51Degrees/51Degrees.mobi.usage.php');
 
 
 /**
@@ -865,10 +862,10 @@ function _51d_admin_menu_preprocess() {
 }
 
 function _51d_unzip_data() {
-    set_time_limit(0);
-	$dir = dirname(__FILE__);
-	WP_Filesystem();
-	unzip_file($dir.'/51Degrees.mobi.php.zip', $dir);
+    // set_time_limit(0);
+	// $dir = dirname(__FILE__);
+	// WP_Filesystem();
+	// unzip_file($dir.'/51Degrees.mobi.php.zip', $dir);
 }
 
 function _51d_set_options() {
@@ -890,15 +887,16 @@ function _51d_set_options() {
 function _51d_unset_options() {
 	delete_option('51d_enable_udp');
 	delete_option('51DFilterStore');
+	delete_option('_51d_license_text');
 }
 
 function _51d_admin_init() {
-    $dir = dirname(__FILE__);
-	if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
-        // check if a premium key is available
-		_51d_unzip_data();
-        $license = get_option("_51d_license_text");
-    }
+    // $dir = dirname(__FILE__);
+	// if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
+        // // check if a premium key is available
+		// _51d_unzip_data();
+        // $license = get_option("_51d_license_text");
+    // }
 }
 
 function _51d_loadTemplateFilters($current) {
@@ -978,7 +976,7 @@ function _51d_checkFilters() {
 		return $GLOBALS['_51d_themeName'];
 }
 
-add_action('admin_init', '_51d_admin_init');
+// add_action('admin_init', '_51d_admin_init');
 add_action('admin_menu', '_51d_add_admin_menu');
 add_filter('template', '_51d_loadTemplateFilters');
 add_filter('stylesheet', '_51d_loadStylesheetFilters');
