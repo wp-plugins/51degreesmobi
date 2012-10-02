@@ -1127,6 +1127,46 @@ function _H89($useragent) {
     $dl[] = array(36555,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)');
     $ls = $ns;
   }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
+    $ls = $ns;
+  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' PPC', 6 => ' MDA_Compact_V/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -1247,52 +1287,12 @@ function _H89($useragent) {
     $dl[] = array(60418,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' Mozilla/5.0 (HW-HUAWEI_C8300/C8300V100R001C00B102', 6 => 'U', 7 => 'Windows Mobile/6.5', 8 => '320*480', 9 => 'CTC/2.0', 10 => ' IE/6.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,6649,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Mozilla/5.0 (HW-HUAWEI_C8300/C8300V100R001C00B102;U;Windows Mobile/6.5;320*480;CTC/2.0) IE/6.0');
+    $dl[] = array(36555,7586,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Mozilla/5.0 (HW-HUAWEI_C8300/C8300V100R001C00B102;U;Windows Mobile/6.5;320*480;CTC/2.0) IE/6.0');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107')), $ls);
@@ -1317,6 +1317,102 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(56380,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6975', 7 => ' Window Mobile 6.5 Professional')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6975; Window Mobile 6.5 Professional;');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' RhodiumW')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) RhodiumW');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6875', 7 => ' Window Mobile 6.1 Professional')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6875; Window Mobile 6.1 Professional;');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint S511')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint S511');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint-SPH-i350')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint-SPH-i350');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint PPC6850SP')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint PPC6850SP');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' T-01A_6.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-01A_6.5');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint:PPC6800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint:PPC6800');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' T-01A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-01A');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' PPC', 6 => ' 480x640', 7 => ' DX900/2.0 Profile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x640; DX900/2.0 Profile');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6875.1', 7 => ' Window Mobile 6.5 Professional')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6875.1; Window Mobile 6.5 Professional;');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' i-mate JAMin PPC', 4 => ' 240x320', 5 => ' PPC', 6 => ' 240x320')), $ls);
@@ -1589,102 +1685,6 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(21187,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Sprint; SCH-i830; PPC; 240x320)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6975', 7 => ' Window Mobile 6.5 Professional')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6975; Window Mobile 6.5 Professional;');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' RhodiumW')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) RhodiumW');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6875', 7 => ' Window Mobile 6.1 Professional')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6875; Window Mobile 6.1 Professional;');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint S511')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint S511');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint-SPH-i350')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint-SPH-i350');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint PPC6850SP')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint PPC6850SP');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' T-01A_6.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-01A_6.5');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint:PPC6800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint:PPC6800');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' T-01A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) T-01A');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' PPC', 6 => ' 480x640', 7 => ' DX900/2.0 Profile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x640; DX900/2.0 Profile');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 480x800', 6 => ' XV6875.1', 7 => ' Window Mobile 6.5 Professional')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 480x800; XV6875.1; Window Mobile 6.5 Professional;');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' T-Mobile_Atlas')), $ls);
@@ -2175,6 +2175,22 @@ function _H89($useragent) {
     $dl[] = array(68416,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179');
     $ls = $ns;
   }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i220')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(135582,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i220');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i220a')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(135582,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i220a');
+    $ls = $ns;
+  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2191,20 +2207,36 @@ function _H89($useragent) {
     $dl[] = array(92151,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i220')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135582,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i220');
+    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.3)');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i220a')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135582,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i220a');
+    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.1)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.5)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(66398,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' PPC', 4 => ' Opera 8.65 [en]')), $ls);
@@ -2295,38 +2327,6 @@ function _H89($useragent) {
     $dl[] = array(36555,15130,43642,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; 320x320; XV6900; Window Mobile 6.1 Professional;) Opera 8.65 [en]');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.3)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.1)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Microsoft ZuneHD 4.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(145964,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12; Microsoft ZuneHD 4.5)');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Sprint T7380')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2412,7 +2412,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(267319,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)  480x800 LGE VS750');
+    $dl[] = array(267319,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)  480x800 LGE VS750');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' 480x800 LGE VS750')), $ls);
@@ -2420,7 +2420,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(267319,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800 LGE VS750');
+    $dl[] = array(267319,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800 LGE VS750');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Palm-Treo850e BM BMC')), $ls);
@@ -2564,7 +2564,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122334,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) HD_mini_T5555/320x480');
+    $dl[] = array(122334,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) HD_mini_T5555/320x480');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' SAMSUNG-SGH-i900/1.0')), $ls);
@@ -2764,7 +2764,15 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131295,6649,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175.1; Windows Mobile 6.5 Standard;');
+    $dl[] = array(131295,7586,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175.1; Windows Mobile 6.5 Standard;');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 320x240', 6 => ' VZW', 7 => ' UTStar-XV6175', 8 => ' Window Mobile 6.1 Standard')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(131295,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175; Window Mobile 6.1 Standard;');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' AnyDATA ASP-210C')), $ls);
@@ -2799,20 +2807,12 @@ function _H89($useragent) {
     $dl[] = array(36555,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x320; XV6900; Window Mobile 6.0 Professional;');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' 320x240', 6 => ' VZW', 7 => ' UTStar-XV6175', 8 => ' Window Mobile 6.1 Standard')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131295,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) 320x240; VZW; UTStar-XV6175; Window Mobile 6.1 Standard;');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => 'SPV M3100', 7 => ' OpVer 14.211.2.732')), $ls);
@@ -2820,7 +2820,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.2.732');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.2.732');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => 'SPV M3100', 7 => ' OpVer 14.211.1.611')), $ls);
@@ -2828,7 +2828,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.611');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.611');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => 'SPV M3100', 7 => ' OpVer 14.211.1.612')), $ls);
@@ -2836,7 +2836,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.612');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.612');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SPV C200 /SW3.0 MSIE/6.0')), $ls);
@@ -2844,7 +2844,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SPV C200 /SW3.0 MSIE/6.0');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SPV C200 /SW3.0 MSIE/6.0');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' Smartphone', 5 => ' 320x240', 6 => ' Mail/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -2852,7 +2852,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Smartphone; 320x240; Mail/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Smartphone; 320x240; Mail/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' G500')), $ls);
@@ -2860,7 +2860,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) G500');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) G500');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' TyTN')), $ls);
@@ -2868,7 +2868,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) TyTN');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) TyTN');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SPV E610 /SW2.1.1 MSIE/6.0')), $ls);
@@ -2876,7 +2876,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SPV E610 /SW2.1.1 MSIE/6.0');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SPV E610 /SW2.1.1 MSIE/6.0');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' DCM06')), $ls);
@@ -2884,7 +2884,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DCM06');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DCM06');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' Sprint:PPC6800')), $ls);
@@ -2892,7 +2892,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:PPC6800');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:PPC6800');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' Sprint:MP 6900SP')), $ls);
@@ -2900,7 +2900,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:MP 6900SP');
+    $dl[] = array(36555,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:MP 6900SP');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' Samsung-SCHI910 PPC 240x400')), $ls);
@@ -2927,6 +2927,22 @@ function _H89($useragent) {
     $dl[] = array(19957,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Samsung-SCHI910 BMC PPC 240x400');
     $ls = $ns;
   }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' T-Mobile Dash')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92943,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => 'MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' T-Mobile Dash')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92943,5707,14193,6, 'Mozilla/4.0 (compatible;MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash');
+    $ls = $ns;
+  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Mozilla/5.0 Vodafone/1.0/LG-GM750/V10f Browser/IE8.12 MMS/LGMMSv')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2949,22 +2965,6 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(19957,15130,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x400) Opera VZW:SCH-i910');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' T-Mobile Dash')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92943,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => 'MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' T-Mobile Dash')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92943,5707,14193,6, 'Mozilla/4.0 (compatible;MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' /Swisscom/1615')), $ls);
@@ -3036,7 +3036,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(198678,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.1 Standard');
+    $dl[] = array(198672,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.1 Standard');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' SonyEricssonX1a/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -3060,7 +3060,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(362939,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint MP6950SP');
+    $dl[] = array(363011,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint MP6950SP');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' Toshiba/TG01/02/ PPC', 6 => ' 480x800')), $ls);
@@ -3111,12 +3111,12 @@ function _H89($useragent) {
     $dl[] = array(148557,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SAMSUNG-SGH-i600/1.0')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9m', 7 => ' Windows Mobile 6.0 Standard')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122262,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600/1.0');
+    $dl[] = array(44649,198744,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x240; VZW; Motorola-Q9m; Windows Mobile 6.0 Standard');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' VZW:SCH-i910 PPC 240x400')), $ls);
@@ -3125,6 +3125,30 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(19957,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) VZW:SCH-i910 PPC 240x400');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SAMSUNG-SGH-i600/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(122262,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600/1.0');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' Motorola_ES405B_19103')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197089,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_ES405B_19103');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' Motorola_ES405B_312')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197089,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_ES405B_312');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' SAMSUNG-SGH-i600/WM534')), $ls);
@@ -3143,20 +3167,28 @@ function _H89($useragent) {
     $dl[] = array(122262,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i600V/1.0');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9m', 7 => ' Windows Mobile 6.0 Standard')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44649,198672,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x240; VZW; Motorola-Q9m; Windows Mobile 6.0 Standard');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x240', 5 => ' HPiPAQhw6900/1.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(301155,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HPiPAQhw6900/1.0)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i225')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(265375,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i225');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' VZW:SCH-i770 PPC 320x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429406,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) VZW:SCH-i770 PPC 320x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' SAMSUNG-SGH-i780/1.0')), $ls);
@@ -3173,38 +3205,6 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(104584,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) SAMSUNG-SGH-i780/1.0');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SAMSUNG-SCH-i225')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(265375,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) SAMSUNG-SCH-i225');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' VZW:SCH-i770 PPC 320x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(429334,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) VZW:SCH-i770 PPC 320x320');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' Motorola_ES405B_19103')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(197089,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_ES405B_19103');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' Motorola_ES405B_312')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(197089,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Motorola_ES405B_312');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' Opera 8.0 [en]')), $ls);
@@ -3359,6 +3359,14 @@ function _H89($useragent) {
     $dl[] = array(125123,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/LG-KS20/V10b Browser/IEMobile/7.6 MMS/LG-MMS-WINCE-V1.0/1.2 Java/LGVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' VZW:SCH-i760 PPC 240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(422890,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) VZW:SCH-i760 PPC 240x320');
+    $ls = $ns;
+  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.8.0.95')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3373,14 +3381,6 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(21187,15130,19022,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; SHARP/WS020SH; PPC; 480x800) Opera Mobi; Opera 9.5 [ja]');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' VZW:SCH-i760 PPC 240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(422818,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) VZW:SCH-i760 PPC 240x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB7.0.2.37/31/800')), $ls);
@@ -3405,6 +3405,70 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(21187,15130,11322,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)/UCWEB7.0.0.41/30/351');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' HPiPAQ610/1.0 (PPC', 5 => ' 240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HPiPAQ610/1.0 (PPC; 240x320)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' HPiPAQ610/1.0 (PPC', 5 => ' 240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HPiPAQ610/1.0 (PPC; 240x320)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' HPiPAQ610/1.0 Mozilla/4.0 (compatible', 5 => ' MSIE 6.0', 6 => ' Windows CE', 7 => ' PPC', 8 => ' 240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HPiPAQ610/1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' LG-GW550 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(348359,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) LG-GW550 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' MDA Vario/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA Vario/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' PPC', 5 => ' MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' PPC', 5 => ' 240x320', 6 => ' MDA Vario/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; MDA Vario/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' MOT-Q9/02.00.01R')), $ls);
@@ -3487,68 +3551,12 @@ function _H89($useragent) {
     $dl[] = array(44649,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) MOT-Q9/01.09.34I');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' MDA Vario/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 7.01', 2 => ' Windows CE', 3 => ' 760x412', 4 => ' Samsung')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA Vario/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' PPC', 5 => ' MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' PPC', 5 => ' 240x320', 6 => ' MDA Vario/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; MDA Vario/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112722,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA Vario/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' HPiPAQ610/1.0 (PPC', 5 => ' 240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HPiPAQ610/1.0 (PPC; 240x320)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' HPiPAQ610/1.0 (PPC', 5 => ' 240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HPiPAQ610/1.0 (PPC; 240x320)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' HPiPAQ610/1.0 Mozilla/4.0 (compatible', 5 => ' MSIE 6.0', 6 => ' Windows CE', 7 => ' PPC', 8 => ' 240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205965,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HPiPAQ610/1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' LG-GW550 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(348359,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) LG-GW550 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1');
+    $dl[] = array(21187,15130,15136,6, 'Mozilla/6.0 (compatible; MSIE 7.01; Windows CE; 760x412; Samsung)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' MDA Vario/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -3647,14 +3655,6 @@ function _H89($useragent) {
     $dl[] = array(218899,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/Vodafone1231/IE Mobile/MIDP-2.0 Configuration/CLDC-1.1  320 x 240');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 7.01', 2 => ' Windows CE', 3 => ' 760x412', 4 => ' Samsung')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,15130,15136,6, 'Mozilla/6.0 (compatible; MSIE 7.01; Windows CE; 760x412; Samsung)');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' Vodafone/1.0/HPiPAQDataMessenger/1.00.00 Browser/VF-Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3668,7 +3668,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(429334,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) VZW:SCH-i770 PPC 320x320');
+    $dl[] = array(429406,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) VZW:SCH-i770 PPC 320x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SAMSUNG-SGH-i600V/1.0')), $ls);
@@ -3676,7 +3676,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122262,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600V/1.0');
+    $dl[] = array(122262,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600V/1.0');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' SAMSUNG-SGH-i600/WM534')), $ls);
@@ -3684,7 +3684,23 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122262,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600/WM534');
+    $dl[] = array(122262,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i600/WM534');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' 480x800', 6 => ' XV6975', 7 => ' Window Mobile 6.5 Professional')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800; XV6975; Window Mobile 6.5 Professional;');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' acer_E101')), $ls);
@@ -3693,6 +3709,22 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(152733,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_E101');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9c', 7 => ' Windows Mobile 6.0 Standard')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(198672,198744,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.0 Standard');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9c', 7 => ' Windows Mobile 6.0 Standard')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(198672,198744,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.0 Standard');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x240', 5 => ' HP iPAQ hw6500/1.0')), $ls);
@@ -3711,20 +3743,12 @@ function _H89($useragent) {
     $dl[] = array(157279,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HP iPAQ hw6500)');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9c', 7 => ' Windows Mobile 6.0 Standard')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB7.0.0.41/31/352')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(198678,198672,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.0 Standard');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' 320x240', 5 => ' VZW', 6 => ' Motorola-Q9c', 7 => ' Windows Mobile 6.0 Standard')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(198678,198672,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-Q9c; Windows Mobile 6.0 Standard');
+    $dl[] = array(36555,15130,11322,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.0.0.41/31/352');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' Smartphone', 5 => ' 176x220', 6 => ' HPiPAQ510/1.0')), $ls);
@@ -3735,36 +3759,12 @@ function _H89($useragent) {
     $dl[] = array(172024,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Smartphone; 176x220; HPiPAQ510/1.0');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' 480x800', 6 => ' XV6975', 7 => ' Window Mobile 6.5 Professional')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800; XV6975; Window Mobile 6.5 Professional;');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.9', 4 => ' VZW:SCH-i760 PPC 240x320')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(422818,5707,15136,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) VZW:SCH-i760 PPC 240x320');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB7.0.0.41/31/352')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,15130,11322,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.0.0.41/31/352');
+    $dl[] = array(422890,5707,15136,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) VZW:SCH-i760 PPC 240x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.7.1.88')), $ls);
@@ -3780,7 +3780,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(429046,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Treo700wx');
+    $dl[] = array(429118,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Treo700wx');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => '  PPC', 5 => ' 240x320', 6 => ' Toshiba  G810/RL1_081018_092ES2_61')), $ls);
@@ -3831,44 +3831,12 @@ function _H89($useragent) {
     $dl[] = array(124330,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_080825_083ES2_61');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(179024,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.6.1.82')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,15130,28997,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' garmin-asus-Nuvifone-M10/2.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(156343,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) garmin-asus-Nuvifone-M10/2.0');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' garmin-asus-Nuvifone-M10/1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156343,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) garmin-asus-Nuvifone-M10/1.0');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(36555,15130,9450,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65');
+    $dl[] = array(156343,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) garmin-asus-Nuvifone-M10/2.0');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' MDA_compact_IV/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -3879,12 +3847,44 @@ function _H89($useragent) {
     $dl[] = array(165974,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; MDA_compact_IV/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' garmin-asus-Nuvifone-M10/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(156343,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) garmin-asus-Nuvifone-M10/1.0');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 3.02', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(179024,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,15130,9450,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UC Browser7.6.1.82')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(36555,15130,28997,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82');
+    $ls = $ns;
+  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda II', 4 => 'PPC', 5 => '240x320')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404598,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda II;PPC;240x320)');
+    $dl[] = array(404670,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda II;PPC;240x320)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda 2mini', 4 => ' PPC', 5 => ' 240x320')), $ls);
@@ -3892,7 +3892,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404598,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2mini; PPC; 240x320)');
+    $dl[] = array(404670,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2mini; PPC; 240x320)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda 2s', 4 => 'PPC', 5 => '240x320', 6 => ' PPC', 7 => ' 240x320')), $ls);
@@ -3900,7 +3900,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404598,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)');
+    $dl[] = array(404670,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda 2i', 4 => ' PPC', 5 => ' 240x320')), $ls);
@@ -3908,7 +3908,23 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404598,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2i; PPC; 240x320)');
+    $dl[] = array(404670,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2i; PPC; 240x320)');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' ASUS-GalaxyII/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(163879,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS-GalaxyII/1.0');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' Xda_Guide/240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112794,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Xda_Guide/240x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' i-mate 8502/ 240x320')), $ls);
@@ -3935,20 +3951,12 @@ function _H89($useragent) {
     $dl[] = array(222073,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) i-mate 8502; 240x320');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' ASUS-GalaxyII/1.0')), $ls);
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' ASUS-GalaxyMini/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(163879,5707,14193,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) ASUS-GalaxyII/1.0');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' Xda_Guide/240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112794,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Xda_Guide/240x320');
+    $dl[] = array(230787,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) ASUS-GalaxyMini/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' 320x320', 5 => ' VZW', 6 => ' UTStar-SMT5800', 7 => ' Window Mobile 6.1 Standard')), $ls);
@@ -3975,30 +3983,6 @@ function _H89($useragent) {
     $dl[] = array(141450,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_E100 / 2.004.00_IT_vodafone');
     $ls = $ns;
   }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' ASUS-GalaxyMini/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(230787,5707,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) ASUS-GalaxyMini/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB8.1.0.104/31/800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,15130,498663,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/31/800');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB8.1.0.104/40/999')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,15130,498663,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/40/999');
-    $ls = $ns;
-  }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' Smartphone', 5 => ' 176x220', 6 => ' HPiPAQ510/1.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4013,6 +3997,30 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(265951,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_F900');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB8.1.0.104/31/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,15130,498735,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/31/800');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB8.1.0.104/40/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,15130,498735,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/40/999');
+    $ls = $ns;
+  }
+  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' LG-C570 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218539,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) LG-C570 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' i-mate K-JAM PPC', 4 => ' 240x320', 5 => ' i-mate JAMin PPC', 6 => ' 240x320', 7 => ' PPC', 8 => ' 240x320')), $ls);
@@ -4044,7 +4052,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(214159,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) acer_P300');
+    $dl[] = array(214159,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) acer_P300');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' Xda Orbit', 4 => ' 240x320')), $ls);
@@ -4053,14 +4061,6 @@ function _H89($useragent) {
       unset($dl);
     }
     $dl[] = array(89847,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Orbit; 240x320)');
-    $ls = $ns;
-  }
-  $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' LG-C570 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(218539,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) LG-C570 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' Smartphone', 4 => ' 240x320', 5 => ' MOT-Q-UMTS/APVER', 6 => ' Opera 8.65 [en]')), $ls);
@@ -4212,7 +4212,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; SPV M650; OpVer 21.138.9.693');
+    $dl[] = array(36555,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; SPV M650; OpVer 21.138.9.693');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => 'SPV M3100', 7 => ' OpVer 14.211.1.613')), $ls);
@@ -4220,7 +4220,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613');
+    $dl[] = array(36555,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => ' SPV M650', 7 => ' OpVer 21.184.2.732')), $ls);
@@ -4228,7 +4228,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; SPV M650; OpVer 21.184.2.732');
+    $dl[] = array(36555,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; SPV M650; OpVer 21.184.2.732');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => ' CHT 9100/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -4236,7 +4236,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; CHT 9100/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(36555,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; CHT 9100/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => '/UCWEB8.2.0.116/31/999')), $ls);
@@ -4244,7 +4244,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,15130,531503,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.2.0.116/31/999');
+    $dl[] = array(21187,15130,531647,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.2.0.116/31/999');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' O2 Xda Atom')), $ls);
@@ -4332,7 +4332,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) T-Mobile_LEO');
+    $dl[] = array(21187,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) T-Mobile_LEO');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' ASUS-P552w/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -4340,7 +4340,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) ASUS-P552w/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(21187,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) ASUS-P552w/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.5', 5 => ' KDDI-TS01')), $ls);
@@ -4348,7 +4348,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) KDDI-TS01');
+    $dl[] = array(21187,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) KDDI-TS01');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' Xda Mini S', 4 => ' 240x320')), $ls);
@@ -4356,7 +4356,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(372512,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Mini S; 240x320)');
+    $dl[] = array(372584,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Mini S; 240x320)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' ASUSP550/1.0')), $ls);
@@ -4420,7 +4420,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 480x640; MDA Pro/1.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(21187,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 480x640; MDA Pro/1.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' PPC', 5 => ' 240x320', 6 => ' MDA Compact/2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -4428,7 +4428,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; MDA Compact/2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(21187,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; MDA Compact/2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' acer_M900')), $ls);
@@ -4516,7 +4516,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(430977,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_X960');
+    $dl[] = array(431049,5707,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_X960');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' SC-01B')), $ls);
@@ -4532,7 +4532,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) /Swisscom/v1510');
+    $dl[] = array(21187,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) /Swisscom/v1510');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' /Swisscom/v1605')), $ls);
@@ -4540,7 +4540,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) /Swisscom/v1605');
+    $dl[] = array(21187,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) /Swisscom/v1605');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' PPC', 5 => ' MDA compact/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -4580,7 +4580,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(306131,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD810');
+    $dl[] = array(306131,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD810');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' i-mate 6150/ 480x640')), $ls);
@@ -4588,7 +4588,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(365242,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) i-mate 6150/ 480x640');
+    $dl[] = array(365314,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) i-mate 6150/ 480x640');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' 240x320', 5 => ' QtekA9100', 6 => ' PPC', 7 => ' 240x320')), $ls);
@@ -4636,7 +4636,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(217603,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i601/WM534');
+    $dl[] = array(217603,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) SAMSUNG-SGH-i601/WM534');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda Atom Exec', 4 => ' PPC', 5 => ' 240x320')), $ls);
@@ -4652,7 +4652,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(229203,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) O2 Xda Atom Life');
+    $dl[] = array(229203,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) O2 Xda Atom Life');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' MDA Compact/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -4716,7 +4716,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(424351,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE;O2 Xda Flame; PPC; 480x640 )');
+    $dl[] = array(424423,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE;O2 Xda Flame; PPC; 480x640 )');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' O2 Xda Zinc', 4 => ' PPC', 5 => ' 240x320')), $ls);
@@ -4900,7 +4900,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(362939,50443,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) MP6950SP');
+    $dl[] = array(363011,50443,5713,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) MP6950SP');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' O2 Xda Atom Exec')), $ls);
@@ -4988,7 +4988,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(424064,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda Argon; 240x320');
+    $dl[] = array(424136,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda Argon; 240x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' 320x240', 5 => ' VZW', 6 => ' UTStar-XV6175.1', 7 => ' Windows Mobile 6.5 Standard')), $ls);
@@ -4996,7 +4996,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131295,6649,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; UTStar-XV6175.1; Windows Mobile 6.5 Standard;');
+    $dl[] = array(131295,7586,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; UTStar-XV6175.1; Windows Mobile 6.5 Standard;');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' O2 Xda Zinc')), $ls);
@@ -5060,7 +5060,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(361787,15130,15136,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; Neonode N2; 176x220)');
+    $dl[] = array(360851,15130,15136,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; Neonode N2; 176x220)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' DopodU1000', 5 => ' Opera 8.65 [en]')), $ls);
@@ -5084,7 +5084,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(240820,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD818c');
+    $dl[] = array(240820,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD818c');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' PPC', 5 => ' 240x320', 6 => ' GSmart-MS802')), $ls);
@@ -5108,7 +5108,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(112722,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; MDA Vario/1.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(112722,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; MDA Vario/1.3 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.11', 4 => ' ASUS-P526/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -5132,7 +5132,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(176283,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodU1000');
+    $dl[] = array(176283,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodU1000');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' Toshiba G910_G920')), $ls);
@@ -5156,7 +5156,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(163231,5707,6655,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(163231,5707,6649,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) SonyEricssonX1i/R3AA Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' O2 Xda Atom')), $ls);
@@ -5172,7 +5172,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(265303,6649,5713,6, 'Mozilla/5.0 (dopod-T5399/1.21.706.12;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*640;CTC/2.0) MSIE/6.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
+    $dl[] = array(265303,7586,5713,6, 'Mozilla/5.0 (dopod-T5399/1.21.706.12;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*640;CTC/2.0) MSIE/6.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' DopodM700')), $ls);
@@ -5180,7 +5180,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(313552,5707,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodM700');
+    $dl[] = array(313552,5707,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodM700');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' Xda Graphite/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -5204,7 +5204,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(424711,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-A4500; Windows Mobile 6.1 Standard');
+    $dl[] = array(424783,50443,13257,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 320x240; VZW; Motorola-A4500; Windows Mobile 6.1 Standard');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 8.12', 4 => ' MSIEMobile 6.0', 5 => ' O2 Xda Atom')), $ls);
@@ -5292,7 +5292,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(214087,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; Ameo/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(214087,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; Ameo/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.7', 4 => ' Dopod838Pro')), $ls);
@@ -5308,7 +5308,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404526,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HPiPAQhw6915/1.0)');
+    $dl[] = array(404598,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HPiPAQhw6915/1.0)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 7.6', 4 => ' LG-KS20-Orange')), $ls);
@@ -5332,7 +5332,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(423465,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda cosmo; 320x240)');
+    $dl[] = array(423537,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda cosmo; 320x240)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.8', 4 => ' Xda_trion', 5 => ' 240x320')), $ls);
@@ -5340,7 +5340,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(314416,198672,79972,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda_trion; 240x320');
+    $dl[] = array(314416,198744,80044,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda_trion; 240x320');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 4.01', 2 => ' Windows CE', 3 => ' PPC', 4 => ' MDA III/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -5348,7 +5348,7 @@ function _H89($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(423992,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA III/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
+    $dl[] = array(424064,15130,80981,6, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA III/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
     $ls = $ns;
   }
   $ns = E89($segments, array(0 => array(0 => 'compatible', 1 => ' MSIE 6.0', 2 => ' Windows CE', 3 => ' IEMobile 6.12', 4 => ' SAMSUNG-SGH-i601/WM534')), $ls);

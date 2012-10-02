@@ -65,7 +65,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RealPlayer%20Downloader/1569 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac11%2C2)');
+    $dl[] = array(21187,21180,15136,6, 'RealPlayer%20Downloader/1569 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac11%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Diigo%20Browser'), 1 => NULL), $ls);
@@ -73,7 +73,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Diigo%20Browser/2.6 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Diigo%20Browser/2.6 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iSwifter'), 1 => NULL), $ls);
@@ -81,7 +81,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iSwifter/56 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iSwifter/56 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader949 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -89,7 +89,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac7%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac7%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Web'), 1 => NULL), $ls);
@@ -97,7 +97,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Web/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Web/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'DiigoBrowser'), 1 => NULL), $ls);
@@ -105,7 +105,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'DiigoBrowser/2.8 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'DiigoBrowser/2.8 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'AtomicLite'), 1 => NULL), $ls);
@@ -113,7 +113,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'AtomicLite/5.6.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'AtomicLite/5.6.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'InstapaperPro'), 1 => NULL), $ls);
@@ -121,7 +121,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'InstapaperPro/4.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'InstapaperPro/4.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro'), 1 => array(0 => 'iMac')), $ls);
@@ -129,7 +129,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro/3950 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac10%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro/3950 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac10%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FirstRain'), 1 => NULL), $ls);
@@ -137,7 +137,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FirstRain/1.0.0 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FirstRain/1.0.0 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Feeds'), 1 => NULL), $ls);
@@ -145,7 +145,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Feeds/2.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Feeds/2.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'WOW%20WPs'), 1 => NULL), $ls);
@@ -153,7 +153,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'WOW%20WPs/9.26.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'WOW%20WPs/9.26.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'TEE2'), 1 => NULL), $ls);
@@ -161,7 +161,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'TEE2/2.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'TEE2/2.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3731 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -169,7 +169,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro3731 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro3731 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ABCNews'), 1 => NULL), $ls);
@@ -177,7 +177,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ABCNews/1.4 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ABCNews/1.4 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro2657 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -185,7 +185,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro2657 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro2657 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'locationd (unknown version) CFNetwork'), 1 => NULL), $ls);
@@ -193,7 +193,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'locationd (unknown version) CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'locationd (unknown version) CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SexyNFunWPs'), 1 => NULL), $ls);
@@ -201,7 +201,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SexyNFunWPs/8.50.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SexyNFunWPs/8.50.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Mail'), 1 => array(0 => 'iMac')), $ls);
@@ -209,7 +209,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Mail/1084 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac10%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Mail/1084 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac10%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3987 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -217,7 +217,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro3987 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro3987 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ISCDaytona'), 1 => NULL), $ls);
@@ -225,7 +225,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ISCDaytona/1.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ISCDaytona/1.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '$%7BPRODUCT_NAME%7D'), 1 => NULL), $ls);
@@ -233,7 +233,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '$%7BPRODUCT_NAME%7D/1 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, '$%7BPRODUCT_NAME%7D/1 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dolphin%20HD'), 1 => NULL), $ls);
@@ -241,7 +241,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dolphin%20HD/3.5 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Dolphin%20HD/3.5 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Streamified'), 1 => NULL), $ls);
@@ -249,7 +249,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Streamified/1.0.0 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Streamified/1.0.0 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Job%20Hopper'), 1 => NULL), $ls);
@@ -257,7 +257,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Job%20Hopper/1.1 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Job%20Hopper/1.1 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Mail'), 1 => NULL), $ls);
@@ -265,7 +265,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Mail/53 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Mail/53 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FeeddlerRSS'), 1 => NULL), $ls);
@@ -273,7 +273,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FeeddlerRSS/1.11 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FeeddlerRSS/1.11 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Readability'), 1 => NULL), $ls);
@@ -281,7 +281,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Readability/1.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Readability/1.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'LinkedIn'), 1 => NULL), $ls);
@@ -289,7 +289,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'LinkedIn/4.3.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'LinkedIn/4.3.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dolphin'), 1 => NULL), $ls);
@@ -297,7 +297,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dolphin/4.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Dolphin/4.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'QihooBrowser'), 1 => NULL), $ls);
@@ -305,7 +305,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'QihooBrowser/2.5.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'QihooBrowser/2.5.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NaverCafe'), 1 => NULL), $ls);
@@ -313,7 +313,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NaverCafe/1.1.9 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NaverCafe/1.1.9 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'browser'), 1 => NULL), $ls);
@@ -321,7 +321,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'browser/30086 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'browser/30086 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dolphin%20Play'), 1 => NULL), $ls);
@@ -329,7 +329,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dolphin%20Play/1.1 CFNetwork/485.12.7 Darwin/10.4.0');
+    $dl[] = array(21187,21180,15136,6, 'Dolphin%20Play/1.1 CFNetwork/485.12.7 Darwin/10.4.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'mhmc_dolphins'), 1 => NULL), $ls);
@@ -337,7 +337,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'mhmc_dolphins/294 CFNetwork/485.10.2 Darwin/10.3.1');
+    $dl[] = array(21187,21180,15136,6, 'mhmc_dolphins/294 CFNetwork/485.10.2 Darwin/10.3.1');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Cute%20Dolphin%20Pictures'), 1 => NULL), $ls);
@@ -345,7 +345,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Cute%20Dolphin%20Pictures/1.0 CFNetwork/485.12.7 Darwin/10.4.0');
+    $dl[] = array(21187,21180,15136,6, 'Cute%20Dolphin%20Pictures/1.0 CFNetwork/485.12.7 Darwin/10.4.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'HolidayWorld'), 1 => NULL), $ls);
@@ -353,15 +353,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'HolidayWorld/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'GQMagazine'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'GQMagazine/1.0 CFNetwork/485.12.7 Darwin/10.4.0');
+    $dl[] = array(21187,21180,15136,6, 'HolidayWorld/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Terra'), 1 => NULL), $ls);
@@ -369,7 +361,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Terra/1.3.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Terra/1.3.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'AtomicBrowser'), 1 => NULL), $ls);
@@ -377,7 +369,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'AtomicBrowser/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'AtomicBrowser/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ColumbusZoo'), 1 => NULL), $ls);
@@ -385,7 +377,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ColumbusZoo/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ColumbusZoo/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Houston%20Zoo'), 1 => NULL), $ls);
@@ -393,7 +385,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Houston%20Zoo/1.4.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Houston%20Zoo/1.4.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CincinnatiZoo_2011'), 1 => NULL), $ls);
@@ -401,7 +393,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CincinnatiZoo_2011/1.3.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CincinnatiZoo_2011/1.3.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'DallasZoo'), 1 => NULL), $ls);
@@ -409,7 +401,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'DallasZoo/1.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'DallasZoo/1.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Schlitterbahn'), 1 => NULL), $ls);
@@ -417,7 +409,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Schlitterbahn/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Schlitterbahn/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MobileRSSFree'), 1 => NULL), $ls);
@@ -425,7 +417,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MobileRSSFree/3.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MobileRSSFree/3.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ZBar'), 1 => NULL), $ls);
@@ -433,7 +425,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ZBar/2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ZBar/2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'GQMagazine'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'GQMagazine/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ZooMiami'), 1 => NULL), $ls);
@@ -441,7 +441,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ZooMiami/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ZooMiami/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'EpicWallPaper2011'), 1 => NULL), $ls);
@@ -449,7 +449,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'EpicWallPaper2011/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'EpicWallPaper2011/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Download'), 1 => NULL), $ls);
@@ -457,7 +457,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Download/1.9 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Download/1.9 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'LondonZoo'), 1 => NULL), $ls);
@@ -465,7 +465,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'LondonZoo/1.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'LondonZoo/1.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1116 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -473,7 +473,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SecretImagesApp'), 1 => NULL), $ls);
@@ -481,7 +481,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SecretImagesApp/1.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SecretImagesApp/1.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MSN%20UK'), 1 => NULL), $ls);
@@ -489,7 +489,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MSN%20UK/1.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MSN%20UK/1.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MobileRSS'), 1 => NULL), $ls);
@@ -497,7 +497,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MobileRSS/3.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MobileRSS/3.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '360%20Browser'), 1 => NULL), $ls);
@@ -505,7 +505,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '360%20Browser/3.1.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, '360%20Browser/3.1.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'PicSearch'), 1 => NULL), $ls);
@@ -513,7 +513,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'PicSearch/3.6 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'PicSearch/3.6 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MyNews'), 1 => NULL), $ls);
@@ -521,7 +521,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MyNews/1.4 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MyNews/1.4 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Animations'), 1 => NULL), $ls);
@@ -529,7 +529,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Animations/9.30.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Animations/9.30.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SexyShelves'), 1 => NULL), $ls);
@@ -537,7 +537,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SexyShelves/9.02.1 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SexyShelves/9.02.1 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'OfflinePagesPro'), 1 => NULL), $ls);
@@ -545,7 +545,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'OfflinePagesPro/1.4.1 CFNetwork/485.12.7 Darwin/10.4.0');
+    $dl[] = array(21187,21180,15136,6, 'OfflinePagesPro/1.4.1 CFNetwork/485.12.7 Darwin/10.4.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MobileFilter'), 1 => NULL), $ls);
@@ -553,7 +553,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MobileFilter/3.01 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MobileFilter/3.01 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Web%20Feeds'), 1 => NULL), $ls);
@@ -561,7 +561,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Web%20Feeds/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Web%20Feeds/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SpringBoard'), 1 => NULL), $ls);
@@ -569,7 +569,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SpringBoard/50 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SpringBoard/50 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Twitter'), 1 => NULL), $ls);
@@ -577,15 +577,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Twitter/4.2 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherPro'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcherPro/2.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Twitter/4.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FWSSR'), 1 => NULL), $ls);
@@ -593,15 +585,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FWSSR/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherFree'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcherFree/1.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FWSSR/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'TweetSpeaker'), 1 => NULL), $ls);
@@ -609,7 +593,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'TweetSpeaker/1.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'TweetSpeaker/1.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FastBrowser'), 1 => NULL), $ls);
@@ -617,7 +601,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FastBrowser/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FastBrowser/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Celeb%20Wallpapers'), 1 => NULL), $ls);
@@ -625,7 +609,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Celeb%20Wallpapers/9.13.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Celeb%20Wallpapers/9.13.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'vBrowse%202.0'), 1 => NULL), $ls);
@@ -633,15 +617,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'vBrowse%202.0/2.03 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ChromeSync%20Lite'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'ChromeSync%20Lite/1.2 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'vBrowse%202.0/2.03 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Settings'), 1 => NULL), $ls);
@@ -649,7 +625,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Settings/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Settings/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ChromeSync'), 1 => NULL), $ls);
@@ -657,7 +633,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ChromeSync/1.2 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ChromeSync/1.2 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '360%20Lite'), 1 => NULL), $ls);
@@ -665,7 +641,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '360%20Lite/3.0.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, '360%20Lite/3.0.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Y_Messenger'), 1 => NULL), $ls);
@@ -673,7 +649,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Y_Messenger/5001 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Y_Messenger/5001 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MemphisZoo'), 1 => NULL), $ls);
@@ -681,7 +657,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MemphisZoo/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MemphisZoo/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'playable'), 1 => NULL), $ls);
@@ -689,7 +665,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'playable/2.01 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'playable/2.01 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'ChromeSync%20Lite'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'ChromeSync%20Lite/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageMobile'), 1 => NULL), $ls);
@@ -697,15 +681,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageMobile/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'LastPass%20Tab'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'LastPass%20Tab/1.90.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageMobile/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'iMac')), $ls);
@@ -713,7 +689,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'WebProcess/6534.52.7 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac11%2C2)');
+    $dl[] = array(21187,21180,15136,6, 'WebProcess/6534.52.7 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (iMac11%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ysearch2'), 1 => NULL), $ls);
@@ -721,7 +697,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ysearch2/3.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ysearch2/3.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Holidays'), 1 => NULL), $ls);
@@ -729,15 +705,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Holidays/9.13.1 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherS'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcherS/3.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Holidays/9.13.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '123people'), 1 => NULL), $ls);
@@ -745,7 +713,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '123people/3.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, '123people/3.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3950 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -753,7 +721,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro3950 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro3950 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac9%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iScanner'), 1 => NULL), $ls);
@@ -761,7 +729,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iScanner/3.2.7 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iScanner/3.2.7 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'DL-Picture'), 1 => NULL), $ls);
@@ -769,7 +737,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'DL-Picture/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'DL-Picture/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageSearcher'), 1 => NULL), $ls);
@@ -777,7 +745,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcher/3.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcher/3.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'PicMonkeyApp'), 1 => NULL), $ls);
@@ -785,7 +753,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'PicMonkeyApp/1.0.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'PicMonkeyApp/1.0.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'kikin'), 1 => NULL), $ls);
@@ -793,7 +761,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'kikin/1.9.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'kikin/1.9.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Love%20Messenger'), 1 => NULL), $ls);
@@ -801,7 +769,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Love%20Messenger/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Love%20Messenger/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RSSRadio'), 1 => NULL), $ls);
@@ -809,7 +777,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RSSRadio/1.35 CFNetwork/485.2 Darwin/10.3.1');
+    $dl[] = array(21187,21180,15136,6, 'RSSRadio/1.35 CFNetwork/485.2 Darwin/10.3.1');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageSearcherProS'), 1 => NULL), $ls);
@@ -817,7 +785,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcherProS/2.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcherProS/2.1.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader884 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -825,7 +793,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Codes%20Reader'), 1 => NULL), $ls);
@@ -833,7 +801,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Codes%20Reader/2.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Codes%20Reader/2.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Cooliris'), 1 => NULL), $ls);
@@ -841,7 +809,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Cooliris/1.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Cooliris/1.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Pulse%20News'), 1 => NULL), $ls);
@@ -849,7 +817,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Pulse%20News/2.8.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Pulse%20News/2.8.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Y!%20Search'), 1 => NULL), $ls);
@@ -857,7 +825,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Y!%20Search/2.0.3 CFNetwork/459 Darwin/10.0.0d3');
+    $dl[] = array(21187,21180,15136,6, 'Y!%20Search/2.0.3 CFNetwork/459 Darwin/10.0.0d3');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iPick'), 1 => NULL), $ls);
@@ -865,7 +833,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iPick/1.7.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iPick/1.7.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dot%20Lock'), 1 => NULL), $ls);
@@ -873,7 +841,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dot%20Lock/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Dot%20Lock/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Extras4iMovie'), 1 => NULL), $ls);
@@ -881,7 +849,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Extras4iMovie/9.29.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Extras4iMovie/9.29.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Download%20Free'), 1 => NULL), $ls);
@@ -889,7 +857,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Download%20Free/1.9.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Download%20Free/1.9.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Fera'), 1 => NULL), $ls);
@@ -897,7 +865,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Fera/5.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Fera/5.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MusicDownloader'), 1 => NULL), $ls);
@@ -905,7 +873,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MusicDownloader/2.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MusicDownloader/2.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageDownload'), 1 => NULL), $ls);
@@ -913,7 +881,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageDownload/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageDownload/1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dual%20Browser'), 1 => NULL), $ls);
@@ -921,7 +889,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dual%20Browser/1.4.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Dual%20Browser/1.4.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Funny%20Pics'), 1 => NULL), $ls);
@@ -929,7 +897,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Funny%20Pics/2.92 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Funny%20Pics/2.92 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'TheFeed'), 1 => NULL), $ls);
@@ -937,7 +905,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'TheFeed/1.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'TheFeed/1.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'GmailPush'), 1 => NULL), $ls);
@@ -945,7 +913,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'GmailPush/2.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'GmailPush/2.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Perfect%20Browser'), 1 => NULL), $ls);
@@ -953,7 +921,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Perfect%20Browser/7.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Perfect%20Browser/7.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ForumRunner'), 1 => NULL), $ls);
@@ -961,7 +929,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ForumRunner/41 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ForumRunner/41 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iDownloaderLite'), 1 => NULL), $ls);
@@ -969,7 +937,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iDownloaderLite/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iDownloaderLite/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iDownloaderPro'), 1 => NULL), $ls);
@@ -977,7 +945,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iDownloaderPro/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iDownloaderPro/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageDownloader'), 1 => NULL), $ls);
@@ -985,7 +953,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageDownloader/1.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageDownloader/1.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iBuilder'), 1 => NULL), $ls);
@@ -993,7 +961,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iBuilder/1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iBuilder/1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacPro')), $ls);
@@ -1001,7 +969,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '1PasswordThumbs/1 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacPro3%2C1)');
+    $dl[] = array(21187,21180,15136,6, '1PasswordThumbs/1 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacPro3%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImagePro'), 1 => NULL), $ls);
@@ -1009,7 +977,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImagePro/2.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImagePro/2.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Deja'), 1 => NULL), $ls);
@@ -1017,7 +985,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Deja/1.3 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Deja/1.3 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Downloader%20copy'), 1 => NULL), $ls);
@@ -1025,7 +993,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Downloader%20copy/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Downloader%20copy/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Love%20Pictures'), 1 => NULL), $ls);
@@ -1033,7 +1001,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Love%20Pictures/3.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Love%20Pictures/3.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageSearch'), 1 => NULL), $ls);
@@ -1041,7 +1009,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearch/1.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearch/1.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iCandyWP1'), 1 => NULL), $ls);
@@ -1049,7 +1017,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iCandyWP1/9.15.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iCandyWP1/9.15.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'BarCodeScan'), 1 => NULL), $ls);
@@ -1057,7 +1025,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'BarCodeScan/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'BarCodeScan/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Epic%20Fail'), 1 => NULL), $ls);
@@ -1065,7 +1033,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Epic%20Fail/2.7.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Epic%20Fail/2.7.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Searchx'), 1 => NULL), $ls);
@@ -1073,7 +1041,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Searchx/1.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Searchx/1.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'PimpYourPic'), 1 => NULL), $ls);
@@ -1081,7 +1049,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'PimpYourPic/9.14.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'PimpYourPic/9.14.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'iMac')), $ls);
@@ -1089,7 +1057,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, '1PasswordThumbs/1 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (iMac12%2C2)');
+    $dl[] = array(21187,21180,15136,6, '1PasswordThumbs/1 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (iMac12%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Instapaper'), 1 => NULL), $ls);
@@ -1097,7 +1065,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Instapaper/4.2.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Instapaper/4.2.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'HiddenImageSearch'), 1 => NULL), $ls);
@@ -1105,7 +1073,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'HiddenImageSearch/1.0.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'HiddenImageSearch/1.0.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Pinterest'), 1 => NULL), $ls);
@@ -1113,7 +1081,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Pinterest/1.6.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Pinterest/1.6.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NSF'), 1 => NULL), $ls);
@@ -1121,7 +1089,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NSF/64 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NSF/64 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FeeddlerPro'), 1 => NULL), $ls);
@@ -1129,7 +1097,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FeeddlerPro/1.12.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FeeddlerPro/1.12.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherFree'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcherFree/1.0.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'LondonZooV2'), 1 => NULL), $ls);
@@ -1137,15 +1113,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'LondonZooV2/46 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'LondonZooV2/46 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
-  $ns = E97($segments, array(0 => array(0 => 'Newsify'), 1 => NULL), $ls);
+  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherPro'), 1 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Newsify/51 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcherPro/2.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Images'), 1 => NULL), $ls);
@@ -1153,7 +1129,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Images/1.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Images/1.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Mercury3'), 1 => NULL), $ls);
@@ -1161,7 +1137,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Mercury3/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Mercury3/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RODEOHOUSTON'), 1 => NULL), $ls);
@@ -1169,7 +1145,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RODEOHOUSTON/312 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'RODEOHOUSTON/312 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ISCWatkinsGlen'), 1 => NULL), $ls);
@@ -1177,7 +1153,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ISCWatkinsGlen/58 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ISCWatkinsGlen/58 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageSearcherFreeS'), 1 => NULL), $ls);
@@ -1185,7 +1161,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearcherFreeS/1.0.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcherFreeS/1.0.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'ImageSearcherS'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'ImageSearcherS/3.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MSN'), 1 => NULL), $ls);
@@ -1193,7 +1177,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MSN/1.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MSN/1.1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Keeper'), 1 => NULL), $ls);
@@ -1201,7 +1185,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Keeper/5.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Keeper/5.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RodeoAustinV2'), 1 => NULL), $ls);
@@ -1209,7 +1193,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RodeoAustinV2/156 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'RodeoAustinV2/156 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Mercury3Free'), 1 => NULL), $ls);
@@ -1217,7 +1201,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Mercury3Free/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Mercury3Free/6.0.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ISC_Chicagoland_Route66'), 1 => NULL), $ls);
@@ -1225,7 +1209,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ISC_Chicagoland_Route66/75 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ISC_Chicagoland_Route66/75 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CTSummer'), 1 => NULL), $ls);
@@ -1233,7 +1217,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CTSummer/53 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CTSummer/53 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MyPad_Premium'), 1 => NULL), $ls);
@@ -1241,7 +1225,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MyPad_Premium/2.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MyPad_Premium/2.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MyPad'), 1 => NULL), $ls);
@@ -1249,7 +1233,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MyPad/2.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MyPad/2.6.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Kentucky'), 1 => NULL), $ls);
@@ -1257,7 +1241,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Kentucky/95 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Kentucky/95 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NewJersey'), 1 => NULL), $ls);
@@ -1265,7 +1249,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NewJersey/345 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NewJersey/345 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NorthCarolina'), 1 => NULL), $ls);
@@ -1273,7 +1257,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NorthCarolina/65 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NorthCarolina/65 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Louisiana'), 1 => NULL), $ls);
@@ -1281,7 +1265,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Louisiana/521 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Louisiana/521 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RhodeIsland'), 1 => NULL), $ls);
@@ -1289,7 +1273,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RhodeIsland/33 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'RhodeIsland/33 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'HoustonZoo'), 1 => NULL), $ls);
@@ -1297,7 +1281,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'HoustonZoo/20 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'HoustonZoo/20 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Qrafter'), 1 => NULL), $ls);
@@ -1305,7 +1289,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Qrafter/5.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Qrafter/5.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Missouri'), 1 => NULL), $ls);
@@ -1313,7 +1297,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Missouri/70 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Missouri/70 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Delaware'), 1 => NULL), $ls);
@@ -1321,7 +1305,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Delaware/153 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Delaware/153 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Kansas'), 1 => NULL), $ls);
@@ -1329,7 +1313,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Kansas/85 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Kansas/85 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Pennsylvania'), 1 => NULL), $ls);
@@ -1337,7 +1321,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Pennsylvania/1064 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Pennsylvania/1064 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Virginia'), 1 => NULL), $ls);
@@ -1345,7 +1329,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Virginia/148 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Virginia/148 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SouthDakota'), 1 => NULL), $ls);
@@ -1353,7 +1337,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SouthDakota/215 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SouthDakota/215 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ATPE_V2'), 1 => NULL), $ls);
@@ -1361,7 +1345,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ATPE_V2/723 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ATPE_V2/723 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Georgia'), 1 => NULL), $ls);
@@ -1369,7 +1353,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Georgia/342 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Georgia/342 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'DKG'), 1 => NULL), $ls);
@@ -1377,7 +1361,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'DKG/62 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'DKG/62 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Smithsonian'), 1 => NULL), $ls);
@@ -1385,7 +1369,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Smithsonian/168 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Smithsonian/168 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Nebraska'), 1 => NULL), $ls);
@@ -1393,7 +1377,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Nebraska/37 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Nebraska/37 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Wyoming'), 1 => NULL), $ls);
@@ -1401,7 +1385,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Wyoming/67 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Wyoming/67 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFKingsIsland'), 1 => NULL), $ls);
@@ -1409,7 +1393,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFKingsIsland/55 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFKingsIsland/55 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFKingsDominion'), 1 => NULL), $ls);
@@ -1417,7 +1401,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFKingsDominion/44 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFKingsDominion/44 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFKnottsBerryFarm'), 1 => NULL), $ls);
@@ -1425,7 +1409,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFKnottsBerryFarm/61 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFKnottsBerryFarm/61 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFCanadaWonderland'), 1 => NULL), $ls);
@@ -1433,7 +1417,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFCanadaWonderland/48 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFCanadaWonderland/48 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFDorneyPark'), 1 => NULL), $ls);
@@ -1441,7 +1425,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFDorneyPark/42 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFDorneyPark/42 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFMichigansAdventure'), 1 => NULL), $ls);
@@ -1449,7 +1433,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFMichigansAdventure/49 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFMichigansAdventure/49 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFValleyFair'), 1 => NULL), $ls);
@@ -1457,7 +1441,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFValleyFair/60 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFValleyFair/60 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFCedarPoint'), 1 => NULL), $ls);
@@ -1465,7 +1449,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFCedarPoint/77 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFCedarPoint/77 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFWorldsOfFun'), 1 => NULL), $ls);
@@ -1473,7 +1457,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFWorldsOfFun/56 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFWorldsOfFun/56 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFCaliforniasGreatAmerica'), 1 => NULL), $ls);
@@ -1481,7 +1465,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFCaliforniasGreatAmerica/53 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFCaliforniasGreatAmerica/53 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ISCDaytonaV2'), 1 => NULL), $ls);
@@ -1489,7 +1473,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ISCDaytonaV2/157 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ISCDaytonaV2/157 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CFCarowinds'), 1 => NULL), $ls);
@@ -1497,7 +1481,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CFCarowinds/70 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CFCarowinds/70 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'WPZoo'), 1 => NULL), $ls);
@@ -1505,7 +1489,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'WPZoo/254 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'WPZoo/254 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'HFEStoneMountain'), 1 => NULL), $ls);
@@ -1513,7 +1497,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'HFEStoneMountain/77 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'HFEStoneMountain/77 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Newsify'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'Newsify/58 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FreeRSSReader'), 1 => NULL), $ls);
@@ -1521,7 +1513,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FreeRSSReader/1.9.5 CFNetwork/485.12.7 Darwin/10.4.0');
+    $dl[] = array(21187,21180,15136,6, 'FreeRSSReader/1.9.5 CFNetwork/485.12.7 Darwin/10.4.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
@@ -1529,7 +1521,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Reeder/1.4.1 CFNetwork/485.13.8 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Reeder/1.4.1 CFNetwork/485.13.8 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'VanillaSurf'), 1 => NULL), $ls);
@@ -1537,7 +1529,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'VanillaSurf/2.1 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'VanillaSurf/2.1 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro4195 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -1545,7 +1537,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro4195 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro4195 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageSearchApp'), 1 => NULL), $ls);
@@ -1553,7 +1545,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageSearchApp/1.0.3 CFNetwork/548.0.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageSearchApp/1.0.3 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'RedLaser'), 1 => NULL), $ls);
@@ -1561,7 +1553,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'RedLaser/3.3.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'RedLaser/3.3.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NetNewsWire'), 1 => NULL), $ls);
@@ -1569,7 +1561,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NetNewsWire/1.0.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NetNewsWire/1.0.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reader'), 1 => NULL), $ls);
@@ -1577,7 +1569,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Reader/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Reader/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iSocialize2'), 1 => NULL), $ls);
@@ -1585,7 +1577,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iSocialize2/31 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iSocialize2/31 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'NewsMe'), 1 => NULL), $ls);
@@ -1593,7 +1585,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'NewsMe/1.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'NewsMe/1.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Qriket%20Game'), 1 => NULL), $ls);
@@ -1601,7 +1593,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Qriket%20Game/3.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Qriket%20Game/3.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'xFeed'), 1 => NULL), $ls);
@@ -1609,7 +1601,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'xFeed/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'xFeed/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Qrafter%20Pro'), 1 => NULL), $ls);
@@ -1617,7 +1609,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Qrafter%20Pro/5.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Qrafter%20Pro/5.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro4413 CFNetwork'), 1 => array(0 => 'iMac')), $ls);
@@ -1625,7 +1617,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Spector%20Pro4413 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
+    $dl[] = array(21187,21180,15136,6, 'Spector%20Pro4413 CFNetwork/438.16 Darwin/9.8.0 (i386) (iMac8%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ClassifiedAds'), 1 => NULL), $ls);
@@ -1633,7 +1625,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ClassifiedAds/1.7.7 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ClassifiedAds/1.7.7 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'VideoDownloaderLite'), 1 => NULL), $ls);
@@ -1641,7 +1633,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'VideoDownloaderLite/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'VideoDownloaderLite/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Symbaloo'), 1 => NULL), $ls);
@@ -1649,7 +1641,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Symbaloo/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Symbaloo/1.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'LexPrint'), 1 => NULL), $ls);
@@ -1657,7 +1649,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'LexPrint/3.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'LexPrint/3.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FeraFree'), 1 => NULL), $ls);
@@ -1665,7 +1657,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'FeraFree/5.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'FeraFree/5.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Dict%20Thai%20%E2%98%85'), 1 => NULL), $ls);
@@ -1673,7 +1665,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Dict%20Thai%20%E2%98%85/4.7.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Dict%20Thai%20%E2%98%85/4.7.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'SSC%20Forums'), 1 => NULL), $ls);
@@ -1681,7 +1673,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'SSC%20Forums/42 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'SSC%20Forums/42 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Tweetlogix'), 1 => NULL), $ls);
@@ -1689,7 +1681,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Tweetlogix/1.9.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Tweetlogix/1.9.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'VideoDownloader'), 1 => NULL), $ls);
@@ -1697,7 +1689,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'VideoDownloader/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'VideoDownloader/2.0.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'flashcardspro'), 1 => NULL), $ls);
@@ -1705,7 +1697,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'flashcardspro/1.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'flashcardspro/1.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'iCarousel'), 1 => NULL), $ls);
@@ -1713,7 +1705,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'iCarousel/1.0.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'iCarousel/1.0.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MyMedia'), 1 => NULL), $ls);
@@ -1721,7 +1713,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MyMedia/2.41 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MyMedia/2.41 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'LastPass%20Tab'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,15136,6, 'LastPass%20Tab/2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'JDate'), 1 => NULL), $ls);
@@ -1729,7 +1729,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'JDate/101 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'JDate/101 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'CidcRadio'), 1 => NULL), $ls);
@@ -1737,7 +1737,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'CidcRadio/2.0.2032 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'CidcRadio/2.0.2032 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Corus'), 1 => NULL), $ls);
@@ -1745,7 +1745,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Corus/3.0.3832 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Corus/3.0.3832 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MusicDownloaderLite'), 1 => NULL), $ls);
@@ -1753,7 +1753,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'MusicDownloaderLite/2.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'MusicDownloaderLite/2.0.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Browser'), 1 => NULL), $ls);
@@ -1761,7 +1761,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Browser/1.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Browser/1.2.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ApolloVideoDownloaderFree'), 1 => NULL), $ls);
@@ -1769,7 +1769,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ApolloVideoDownloaderFree/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ApolloVideoDownloaderFree/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Pic%20Collage'), 1 => NULL), $ls);
@@ -1777,7 +1777,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Pic%20Collage/2.17.21 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Pic%20Collage/2.17.21 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'ImageHunter'), 1 => NULL), $ls);
@@ -1785,7 +1785,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'ImageHunter/2.2.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'ImageHunter/2.2.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Cool%20Retina%20Wallpapers'), 1 => NULL), $ls);
@@ -1793,7 +1793,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Cool%20Retina%20Wallpapers/1.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Cool%20Retina%20Wallpapers/1.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'WEB%20to%20PDF'), 1 => NULL), $ls);
@@ -1801,7 +1801,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'WEB%20to%20PDF/2.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'WEB%20to%20PDF/2.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Evanov-CidcRadio'), 1 => NULL), $ls);
@@ -1809,7 +1809,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,15136,6, 'Evanov-CidcRadio/2.0.5369 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,15136,6, 'Evanov-CidcRadio/2.0.5369 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Bing'), 1 => NULL), $ls);
@@ -1817,7 +1817,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Bing/2.2 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Bing/2.2 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Voice%20Actions'), 1 => NULL), $ls);
@@ -1825,7 +1825,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Voice%20Actions/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Voice%20Actions/1.6 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'StumbleUpon'), 1 => NULL), $ls);
@@ -1833,7 +1833,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'StumbleUpon/2.60 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'StumbleUpon/2.60 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Hot%20Wallpapers'), 1 => NULL), $ls);
@@ -1841,7 +1841,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Hot%20Wallpapers/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Hot%20Wallpapers/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Maven'), 1 => NULL), $ls);
@@ -1849,7 +1849,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Maven/1.9 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Maven/1.9 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Bing%20for%20iPad'), 1 => NULL), $ls);
@@ -1857,7 +1857,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Bing%20for%20iPad/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Bing%20for%20iPad/1.1.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Million%20HD%20WPs'), 1 => NULL), $ls);
@@ -1865,7 +1865,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Million%20HD%20WPs/8.80.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Million%20HD%20WPs/8.80.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Apolloplus'), 1 => NULL), $ls);
@@ -1873,7 +1873,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Apolloplus/2.5.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Apolloplus/2.5.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Clipish'), 1 => NULL), $ls);
@@ -1881,7 +1881,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Clipish/9.22.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Clipish/9.22.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => '2%20Million%20WPs'), 1 => NULL), $ls);
@@ -1889,7 +1889,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, '2%20Million%20WPs/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, '2%20Million%20WPs/9.16.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'BingSearch'), 1 => NULL), $ls);
@@ -1897,7 +1897,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'BingSearch/1.0.0 CFNetwork/485.13.9 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'BingSearch/1.0.0 CFNetwork/485.13.9 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Google'), 1 => NULL), $ls);
@@ -1905,7 +1905,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,179816,6, 'Google/1.0.3.9299 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,179816,6, 'Google/1.0.3.9299 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Flipboard'), 1 => NULL), $ls);
@@ -1913,279 +1913,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,450512,6, 'Flipboard/1.8.4 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Safari'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Safari/7534.48.3 CFNetwork/520.0.13 Darwin/11.1.0 (x86_64) (MacBookPro6%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader/1116 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook6%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Reeder/1000.09.00 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C5)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader949 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1116 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1569 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1569 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro5%2C5)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3950 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Spector%20Pro3950 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'CoverScout%203'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'CoverScout%203/3.4.3 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader/1444 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, '1PasswordThumbs/1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook2%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Spector%20Pro/3950 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook6%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader/1569 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookAir3%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'NewsFire'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'NewsFire/84 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C3)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Mail'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Mail/1084 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, '1PasswordThumbs/1 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, '1PasswordThumbs/1 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookPro8%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1569 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1569 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader884 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader949 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook3%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'WebProcess/7534.55.3 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'WebProcess/6534.52.7 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook7%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1116 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro5%2C5)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'MobileRSS'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'MobileRSS/1.0 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ThumbnailService'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'ThumbnailService/39400.005 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'WebProcess/7534.57.2 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookPro8%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3731 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Spector%20Pro3731 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1444 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1444 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader884 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'GrandReporterUpdater1.1.0 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'GrandReporterUpdater1.1.0 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1725 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'RealPlayer%20Downloader1725 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Read%20Later'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Read%20Later/133 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'NewsFire'), 1 => array(0 => 'MacBook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'NewsFire/84 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBook5%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'Spector%20Pro/4413 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'ThumbnailService'), 1 => array(0 => 'MacBookPro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,15136,6, 'ThumbnailService/39600.038 CFNetwork/596.0.1 Darwin/12.0.0 (x86_64) (MacBookPro10%2C1)');
+    $dl[] = array(277516,21180,450584,6, 'Flipboard/1.8.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'FreeRSSReader'), 1 => NULL), $ls);
@@ -2193,7 +1921,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,15136,6, 'FreeRSSReader/1.9.5 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,15136,6, 'FreeRSSReader/1.9.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'browser'), 1 => NULL), $ls);
@@ -2201,7 +1929,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,15136,6, 'browser/29464 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,15136,6, 'browser/29464 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Facebook'), 1 => NULL), $ls);
@@ -2209,7 +1937,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,15136,6, 'Facebook/4110.0 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,15136,6, 'Facebook/4110.0 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Pics4Facebook'), 1 => NULL), $ls);
@@ -2217,31 +1945,23 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,15136,6, 'Pics4Facebook/9.15.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,15136,6, 'Pics4Facebook/9.15.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
-  $ns = E97($segments, array(0 => array(0 => 'MobileSafari'), 1 => NULL), $ls);
+  $ns = E97($segments, array(0 => array(0 => 'Safari'), 1 => array(0 => 'MacBookPro')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,127353,6, 'MobileSafari/7534.48.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(510501,21180,15136,6, 'Safari/7534.48.3 CFNetwork/520.0.13 Darwin/11.1.0 (x86_64) (MacBookPro6%2C1)');
     $ls = $ns;
   }
-  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBook')), $ls);
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBook')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(510429,20173,532599,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBook5%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBookAir')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(510429,20173,532599,6, 'Reeder/1010.69.00 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader/1116 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook6%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBookPro')), $ls);
@@ -2249,7 +1969,287 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(510429,20173,532599,6, 'Reeder/1010.79.00 CFNetwork/596.0.1 Darwin/12.0.0 (x86_64) (MacBookPro10%2C1)');
+    $dl[] = array(510501,21180,15136,6, 'Reeder/1000.09.00 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C5)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader949 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1116 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1569 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1569 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro5%2C5)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3950 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Spector%20Pro3950 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'CoverScout%203'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'CoverScout%203/3.4.3 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader/1444 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, '1PasswordThumbs/1 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook2%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Spector%20Pro/3950 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook6%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader/1569 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookAir3%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'NewsFire'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'NewsFire/84 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro5%2C3)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Mail'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Mail/1084 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, '1PasswordThumbs/1 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => '1PasswordThumbs'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, '1PasswordThumbs/1 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookPro8%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1569 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1569 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader884 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader949 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader949 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook3%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'WebProcess/7534.55.3 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'WebProcess/6534.52.7 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBook7%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1116 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1116 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro5%2C5)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'MobileRSS'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'MobileRSS/1.0 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'ThumbnailService'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'ThumbnailService/39400.005 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookAir4%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'WebProcess'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'WebProcess/7534.57.2 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookPro8%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro3731 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Spector%20Pro3731 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1444 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1444 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader884 CFNetwork'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader884 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBookPro4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'GrandReporterUpdater1.1.0 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'GrandReporterUpdater1.1.0 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook5%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'RealPlayer%20Downloader1725 CFNetwork'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'RealPlayer%20Downloader1725 CFNetwork/438.16 Darwin/9.8.0 (i386) (MacBook4%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Read%20Later'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Read%20Later/133 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBookAir4%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'NewsFire'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'NewsFire/84 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (MacBook5%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Spector%20Pro'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'Spector%20Pro/4413 CFNetwork/454.12.4 Darwin/10.8.0 (i386) (MacBookPro7%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'ThumbnailService'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,15136,6, 'ThumbnailService/39600.038 CFNetwork/596.0.1 Darwin/12.0.0 (x86_64) (MacBookPro10%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'MobileSafari'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,127353,6, 'MobileSafari/7534.48.3 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,532743,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBook5%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBookAir')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,532743,6, 'Reeder/1010.79.00 CFNetwork/596.1 Darwin/12.1.0 (x86_64) (MacBookAir5%2C2)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacBookPro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510501,21180,532743,6, 'Reeder/1010.79.00 CFNetwork/596.1 Darwin/12.1.0 (x86_64) (MacBookPro8%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'browseripad'), 1 => NULL), $ls);
@@ -2268,28 +2268,12 @@ function _H97($useragent) {
     $dl[] = array(21187,86948,15136,6, 'GoodReaderIPad/3.12.0 CFNetwork/548.0.4 Darwin/11.0.0');
     $ls = $ns;
   }
-  $ns = E97($segments, array(0 => array(0 => 'Safari5533.22.3 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerBook')), $ls);
+  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,20173,276675,6, 'Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerBook6%2C7)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Safari5533.22.3 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerMac')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(59266,20173,276675,6, 'Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac8%2C1)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Safari5533.21.1 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerMac')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(59266,20173,276675,6, 'Safari5533.21.1 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac11%2C2)');
+    $dl[] = array(21187,21180,528831,6, 'Reeder/1.5.5 CFNetwork/609 Darwin/13.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'MacPro')), $ls);
@@ -2297,7 +2281,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,532599,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacPro3%2C1)');
+    $dl[] = array(21187,21180,532743,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacPro3%2C1)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'iMac')), $ls);
@@ -2305,7 +2289,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,532599,6, 'Reeder/1010.79.00 CFNetwork/520.4.3 Darwin/11.4.0 (x86_64) (iMac12%2C2)');
+    $dl[] = array(21187,21180,532743,6, 'Reeder/1010.79.00 CFNetwork/596.0.1 Darwin/12.0.0 (x86_64) (iMac12%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => array(0 => 'Macmini')), $ls);
@@ -2313,7 +2297,31 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,532599,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (Macmini3%2C1)');
+    $dl[] = array(21187,21180,532743,6, 'Reeder/1010.69.00 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (Macmini3%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Safari5533.22.3 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerBook')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(59266,21180,276675,6, 'Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerBook6%2C7)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Safari5533.22.3 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerMac')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(59266,21180,276675,6, 'Safari5533.22.3 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac8%2C1)');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Safari5533.21.1 CFNetwork'), 1 => array(0 => 'Macintosh) (PowerMac')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(59266,21180,276675,6, 'Safari5533.21.1 CFNetwork/438.16 Darwin/9.8.0 (Power%20Macintosh) (PowerMac11%2C2)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
@@ -2321,7 +2329,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,528687,6, 'Reeder/1.5.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,528831,6, 'Reeder/1.5.5 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
@@ -2329,23 +2337,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,566019,6, 'Reeder/3.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,20173,528687,6, 'Reeder/1.5.5 CFNetwork/548.1.4 Darwin/11.0.0');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,20173,548548,6, 'Reeder/2.5.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,566379,6, 'Reeder/3.0.3 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'MobileRSSFree-iPad'), 1 => NULL), $ls);
@@ -2353,7 +2345,15 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273283,20173,179816,6, 'MobileRSSFree-iPad/3.1.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(273283,21180,179816,6, 'MobileRSSFree-iPad/3.1.4 CFNetwork/548.1.4 Darwin/11.0.0');
+    $ls = $ns;
+  }
+  $ns = E97($segments, array(0 => array(0 => 'Reeder'), 1 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,21180,548620,6, 'Reeder/2.5.4 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Safari'), 1 => array(0 => 'MacBookPro')), $ls);
@@ -2361,7 +2361,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(510429,20173,276675,6, 'Safari/7534.55.3 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookPro8%2C3)');
+    $dl[] = array(510501,21180,276675,6, 'Safari/7534.55.3 CFNetwork/520.3.2 Darwin/11.3.0 (x86_64) (MacBookPro8%2C3)');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Instacast'), 1 => NULL), $ls);
@@ -2369,7 +2369,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,20173,546463,6, 'Instacast/1.5.1 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(21187,21180,546607,6, 'Instacast/1.5.1 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   $ns = E97($segments, array(0 => array(0 => 'Instacast'), 1 => NULL), $ls);
@@ -2377,7 +2377,7 @@ function _H97($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,20173,546463,6, 'Instacast/1.5.2 CFNetwork/548.1.4 Darwin/11.0.0');
+    $dl[] = array(277516,21180,546607,6, 'Instacast/1.5.2 CFNetwork/548.1.4 Darwin/11.0.0');
     $ls = $ns;
   }
   return $dl;

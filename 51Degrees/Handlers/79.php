@@ -78,7 +78,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347136,20173,21268,6, $ua);
+    $dl[] = array(347136,21180,21268,6, $ua);
   }
   $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0  Novarra-Vision/8.0';
   $ns = E79($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(303946,20173,61499,6, $ua);
+    $dl[] = array(303946,21180,61499,6, $ua);
   }
   $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
   $ns = E79($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(303946,20173,61499,6, $ua);
+    $dl[] = array(303946,21180,61499,6, $ua);
   }
   $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.101 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
   $ns = E79($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(303946,20173,61499,6, $ua);
+    $dl[] = array(303946,21180,61499,6, $ua);
   }
   $ua = 'SHARP/1.1/SH9020C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(342809,20173,21268,6, $ua);
+    $dl[] = array(342809,21180,21268,6, $ua);
   }
   $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
   $ns = E79($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(262731,20173,61499,6, $ua);
+    $dl[] = array(262731,21180,61499,6, $ua);
   }
   $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO';
   $ns = E79($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(262731,20173,61499,6, $ua);
+    $dl[] = array(262731,21180,61499,6, $ua);
   }
   $ua = 'SHARP SH6017D / Obigo Browser Q03C';
   $ns = E79($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(344033,20173,112938,6, $ua);
+    $dl[] = array(344033,21180,112938,6, $ua);
   }
   $ua = 'SharpWXT81/SHS001/1.0 Browser/UP.Browser/7.0.2.1.f.1.112 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
   $ns = E79($useragent, $ua, $ls);
@@ -150,7 +150,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157567,20173,61499,6, $ua);
+    $dl[] = array(157567,21180,61499,6, $ua);
   }
   $ua = 'SHARP/1.1/SH1810C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
@@ -159,7 +159,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(208538,20173,21268,6, $ua);
+    $dl[] = array(208538,21180,21268,6, $ua);
   }
   $ua = 'SHARP SH7110C / Obigo Browser 2.0';
   $ns = E79($useragent, $ua, $ls);
@@ -168,7 +168,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347496,20173,15136,6, $ua);
+    $dl[] = array(347496,21180,15136,6, $ua);
   }
   $ua = 'SHARP WX-T71';
   $ns = E79($useragent, $ua, $ls);
@@ -177,7 +177,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(233686,20173,15136,6, $ua);
+    $dl[] = array(233686,21180,15136,6, $ua);
   }
   $ua = 'SharpT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO';
   $ns = E79($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(233686,20173,61499,6, $ua);
+    $dl[] = array(233686,21180,61499,6, $ua);
   }
   return $dl;
 }

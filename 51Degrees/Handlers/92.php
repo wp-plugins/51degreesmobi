@@ -69,7 +69,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,96796,920,6, $ua);
+    $dl[] = array(21187,96796,926,6, $ua);
   }
   $ua = 'ZTE-TU802_TD/1.0 Linux/2.6.32 Android/2.2 Release/1.1.2011 Browser/AppleWebKit530.17 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E92($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,96796,920,6, $ua);
+    $dl[] = array(21187,96796,926,6, $ua);
   }
   $ua = 'ZTE-TU880_TD/1.0 Linux/2.6.32 Android/2.2 Release/5.25.2011 Browser/AppleWebKit533.1';
   $ns = E92($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(328856,96796,920,6, $ua);
+    $dl[] = array(328856,96796,926,6, $ua);
   }
   $ua = 'ZTE-T95 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T95 T03 Novarra-Vision/8.0';
   $ns = E92($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(202077,20173,21268,6, $ua);
+    $dl[] = array(202077,21180,21268,6, $ua);
   }
   $ua = 'ZTE-T165i/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E92($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(202077,20173,21268,6, $ua);
+    $dl[] = array(202077,21180,21268,6, $ua);
   }
   $ua = 'ZTE-C79/1.0 SMIT-Browser/2.0.0';
   $ns = E92($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H92($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(202077,20173,46382,6, $ua);
+    $dl[] = array(202077,21180,46382,6, $ua);
   }
   return $dl;
 }

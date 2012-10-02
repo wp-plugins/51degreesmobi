@@ -599,7 +599,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#Debian-\\d\\.\\d#',
       '#\\w(U|u)buntu/\\d+\\.\\d+#',
       '#X Ubuntu/\\d+\\.\\d+#',
-      '#(?<=\\((U|u)buntu-)[^\\)]+#'))) {
+      '#(?<=\\((U|u)buntu-)[^\\)]+#',
+      '#(?<=Firefox)[^\\d]+#'))) {
     $h[37] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -1196,7 +1197,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     $useragent,
     array('#(?<=Opera Mini/att/)\\d(/|\\.)\\d#',
       '#^[^;]+#',
-      '#(?<=Opera Mini/)\\d(/|\\.)\\d#'))) {
+      '#(?<=Opera Mini/)\\d(/|\\.)\\d#',
+      '#(?<= /d/d/dX/d/d/d).+#'))) {
     $h[63] = 6;
   }
   if (fiftyone_degrees_CheckHandler(

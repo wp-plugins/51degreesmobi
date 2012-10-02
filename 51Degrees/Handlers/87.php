@@ -114,7 +114,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3.5.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/Palm webOS 1.2.9; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -150,7 +150,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -159,7 +159,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -168,7 +168,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -177,7 +177,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5.1; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -204,7 +204,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -213,7 +213,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -222,7 +222,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -231,7 +231,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.3; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -258,7 +258,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.2.9.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -267,7 +267,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.0; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -276,7 +276,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -285,7 +285,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.2; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -294,7 +294,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -303,7 +303,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3.5; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -312,7 +312,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -321,7 +321,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -330,7 +330,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -339,7 +339,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-CA) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -348,7 +348,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -357,7 +357,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -366,7 +366,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; fr-CA) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -375,7 +375,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.0; U; es-MX) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -384,7 +384,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -393,7 +393,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -402,7 +402,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -411,7 +411,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -420,7 +420,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -429,7 +429,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3.5.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -438,7 +438,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -447,7 +447,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; it-IT) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -456,7 +456,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -465,7 +465,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -474,7 +474,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; es-MX) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -483,7 +483,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430329,430322,429478,6, $ua);
+    $dl[] = array(430401,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -492,7 +492,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -501,7 +501,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Desktop/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -510,7 +510,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -519,7 +519,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
   $ns = E87($useragent, $ua, $ls);
@@ -528,7 +528,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.5; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -537,7 +537,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -546,7 +546,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.1; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -555,7 +555,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.0.1; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
   $ns = E87($useragent, $ua, $ls);
@@ -564,7 +564,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
   $ns = E87($useragent, $ua, $ls);
@@ -573,7 +573,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.2; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -582,7 +582,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.2; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -591,7 +591,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Desktop/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -600,7 +600,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -609,7 +609,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.0; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
   $ns = E87($useragent, $ua, $ls);
@@ -618,7 +618,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/5.0 (webOS/2.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
   $ns = E87($useragent, $ua, $ls);
@@ -627,7 +627,7 @@ function _H87($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,430322,429478,6, $ua);
+    $dl[] = array(21187,429550,429557,6, $ua);
   }
   return $dl;
 }

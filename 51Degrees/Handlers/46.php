@@ -81,7 +81,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-P618/2008.01.15 P618_S022_080115/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-P618/2008.01.15 P618_S022_080115/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i328TD'), 1 => array(0 => 'Lenovo-i328TD/S100 LMP/LML Release/2010.2.28 Profile/MIDP2.1 Configuration/CLDC1.1')), $ls);
@@ -89,7 +89,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-i328TD/S100 LMP/LML Release/2010.2.28 Profile/MIDP2.1 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-i328TD/S100 LMP/LML Release/2010.2.28 Profile/MIDP2.1 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'E307'), 1 => array(0 => 'Lenovo-E307')), $ls);
@@ -97,7 +97,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-E307');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-E307');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i906'), 1 => array(0 => 'Lenovo-i906/S134 Release/2007.10.11 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -105,7 +105,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-i906/S134 Release/2007.10.11 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-i906/S134 Release/2007.10.11 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P790'), 1 => array(0 => 'Lenovo-P790/2008.04.30')), $ls);
@@ -113,7 +113,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-P790/2008.04.30');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-P790/2008.04.30');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i817'), 1 => array(0 => 'Lenovo-i817/CMCC_S114 LMP/XM Release/2007.07.31 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -121,7 +121,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-i817/CMCC_S114 LMP/XM Release/2007.07.31 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-i817/CMCC_S114 LMP/XM Release/2007.07.31 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'A689'), 1 => array(0 => 'Lenovo_A689/(2008.12.15)S012/WAP2.0Profile/MIDP-2.0 Configuration/CLDC-1.0')), $ls);
@@ -129,7 +129,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo_A689/(2008.12.15)S012/WAP2.0Profile/MIDP-2.0 Configuration/CLDC-1.0');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo_A689/(2008.12.15)S012/WAP2.0Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'S520'), 1 => array(0 => 'Lenovo-S520/S100 LMP/LML Release/2010.01.25 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -137,7 +137,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-S520/S100 LMP/LML Release/2010.01.25 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-S520/S100 LMP/LML Release/2010.01.25 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i350'), 1 => array(0 => 'Lenovo-i350/S111 LMP/LML Release/2010.10.12 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -145,7 +145,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-i350/S111 LMP/LML Release/2010.10.12 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-i350/S111 LMP/LML Release/2010.10.12 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'TD16'), 1 => array(0 => 'Lenovo-TD16/S100 LMP/LML Release/2010.7.30 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -153,7 +153,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,55358,55365,6, 'Lenovo-TD16/S100 LMP/LML Release/2010.7.30 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(21187,55286,55365,6, 'Lenovo-TD16/S100 LMP/LML Release/2010.7.30 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'A60'), 1 => array(0 => 'Lenovo-A60/S100 Linux/2.6.35.7 Android/2.3.3 Release/04.19.2011 Browser/AppleWebKit533.1 Profile/ Configuration/')), $ls);
@@ -169,7 +169,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(173537,55358,55365,6, 'Lenovo-i300_VN/S102 LMP/LML Release/2009.08.13 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(173537,55286,55365,6, 'Lenovo-i300_VN/S102 LMP/LML Release/2009.08.13 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i300_VN'), 1 => array(0 => 'Lenovo-i300_VN/S101 LMP/LML Release/2009.08.03 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -177,7 +177,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(173537,55358,55365,6, 'Lenovo-i300_VN/S101 LMP/LML Release/2009.08.03 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(173537,55286,55365,6, 'Lenovo-i300_VN/S101 LMP/LML Release/2009.08.03 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i300_VN'), 1 => array(0 => 'Lenovo-i300_VN/S102 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -185,7 +185,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(173537,55358,55365,6, 'Lenovo-i300_VN/S102 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(173537,55286,55365,6, 'Lenovo-i300_VN/S102 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i300'), 1 => array(0 => 'Lenovo-i300/S003 LMP/LML Release/2009.03.19 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -193,7 +193,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(173537,55358,55365,6, 'Lenovo-i300/S003 LMP/LML Release/2009.03.19 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(173537,55286,55365,6, 'Lenovo-i300/S003 LMP/LML Release/2009.03.19 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P50'), 1 => array(0 => 'Lenovo-P50/S041 LMP/LML Release/2009.12.10 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -201,7 +201,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(435442,55358,55365,6, 'Lenovo-P50/S041 LMP/LML Release/2009.12.10 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(435514,55286,55365,6, 'Lenovo-P50/S041 LMP/LML Release/2009.12.10 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P50'), 1 => array(0 => 'Lenovo-P50/S045 LMP/LML Release/2010.03.08 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -209,7 +209,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(435442,55358,55365,6, 'Lenovo-P50/S045 LMP/LML Release/2010.03.08 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(435514,55286,55365,6, 'Lenovo-P50/S045 LMP/LML Release/2010.03.08 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P629'), 1 => array(0 => 'Lenovo-P629/S118 LMP/LML Release/2010.04.22 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -217,7 +217,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(472840,55358,55365,6, 'Lenovo-P629/S118 LMP/LML Release/2010.04.22 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(472912,55286,55365,6, 'Lenovo-P629/S118 LMP/LML Release/2010.04.22 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i325wg'), 1 => array(0 => 'Lenovo-i325wg/S123 LMP/LML Release/2010.11.24 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -225,7 +225,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182558,55358,55365,6, 'Lenovo-i325wg/S123 LMP/LML Release/2010.11.24 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(182558,55286,55365,6, 'Lenovo-i325wg/S123 LMP/LML Release/2010.11.24 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i325wg'), 1 => array(0 => 'Lenovo-i325wg/S119 LMP/LML Release/2010.07.13 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -233,7 +233,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182558,55358,55365,6, 'Lenovo-i325wg/S119 LMP/LML Release/2010.07.13 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(182558,55286,55365,6, 'Lenovo-i325wg/S119 LMP/LML Release/2010.07.13 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i325wg'), 1 => array(0 => 'Lenovo-i325wg/S123 LMP/LML Release/2010.12.07 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -241,7 +241,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182558,55358,55365,6, 'Lenovo-i325wg/S123 LMP/LML Release/2010.12.07 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(182558,55286,55365,6, 'Lenovo-i325wg/S123 LMP/LML Release/2010.12.07 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i325wg'), 1 => array(0 => 'Lenovo-i325wg/S120 LMP/LML Release/2010.08.16 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -249,7 +249,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182558,55358,55365,6, 'Lenovo-i325wg/S120 LMP/LML Release/2010.08.16 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(182558,55286,55365,6, 'Lenovo-i325wg/S120 LMP/LML Release/2010.08.16 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i325wg'), 1 => array(0 => 'Lenovo-i325wg/S118 LMP/LML Release/2010.07.12 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -257,7 +257,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182558,55358,55365,6, 'Lenovo-i325wg/S118 LMP/LML Release/2010.07.12 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(182558,55286,55365,6, 'Lenovo-i325wg/S118 LMP/LML Release/2010.07.12 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'E268'), 1 => array(0 => 'Lenovo-E268/VN_S105 LMP/LML Release/2010.10.25 Browser/Obigo_Q03c')), $ls);
@@ -265,7 +265,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(313480,55358,55365,6, 'Lenovo-E268/VN_S105 LMP/LML Release/2010.10.25 Browser/Obigo_Q03c');
+    $dl[] = array(313480,55286,55365,6, 'Lenovo-E268/VN_S105 LMP/LML Release/2010.10.25 Browser/Obigo_Q03c');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'E268'), 1 => array(0 => 'Lenovo-E268/CMCC_S100 LMP/LML Release/2009.10.12 Browser/Obigo_Q03c')), $ls);
@@ -273,7 +273,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(313480,55358,55365,6, 'Lenovo-E268/CMCC_S100 LMP/LML Release/2009.10.12 Browser/Obigo_Q03c');
+    $dl[] = array(313480,55286,55365,6, 'Lenovo-E268/CMCC_S100 LMP/LML Release/2009.10.12 Browser/Obigo_Q03c');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'S700'), 1 => array(0 => 'Lenovo-S700/S300 LMP/LML Release/2009.06.11 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -281,7 +281,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(190894,55358,55365,6, 'Lenovo-S700/S300 LMP/LML Release/2009.06.11 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(190894,55286,55365,6, 'Lenovo-S700/S300 LMP/LML Release/2009.06.11 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'S700'), 1 => array(0 => 'Lenovo-S700/CMCC_S101 LMP/LML Release/2008.12.24 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -289,7 +289,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(190894,55358,55365,6, 'Lenovo-S700/CMCC_S101 LMP/LML Release/2008.12.24 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(190894,55286,55365,6, 'Lenovo-S700/CMCC_S101 LMP/LML Release/2008.12.24 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P580'), 1 => array(0 => 'Lenovo-P580/CMCC_S017 BMP/F2 Release/2008.11.18 Browser/TelecaQ03C Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -297,7 +297,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(369272,55358,55365,6, 'Lenovo-P580/CMCC_S017 BMP/F2 Release/2008.11.18 Browser/TelecaQ03C Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(369344,55286,55365,6, 'Lenovo-P580/CMCC_S017 BMP/F2 Release/2008.11.18 Browser/TelecaQ03C Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P80'), 1 => array(0 => 'Lenovo-P80/CMCC_S101 LMP/XM Release/2008.08.26 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -305,7 +305,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(370208,55358,55365,6, 'Lenovo-P80/CMCC_S101 LMP/XM Release/2008.08.26 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(370280,55286,55365,6, 'Lenovo-P80/CMCC_S101 LMP/XM Release/2008.08.26 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'X1m'), 1 => array(0 => 'Lenovo-X1m/S102 LMP/LML Release/2008.11.21 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -313,7 +313,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(349367,55358,55365,6, 'Lenovo-X1m/S102 LMP/LML Release/2008.11.21 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(349367,55286,55365,6, 'Lenovo-X1m/S102 LMP/LML Release/2008.11.21 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'TD30t'), 1 => array(0 => 'Lenovo-TD30t/S100 LMP/LML Release/2009.10.15 Profile/MIDP2.1 Configuration/CLDC1.1')), $ls);
@@ -321,7 +321,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(355661,55358,55365,6, 'Lenovo-TD30t/S100 LMP/LML Release/2009.10.15 Profile/MIDP2.1 Configuration/CLDC1.1');
+    $dl[] = array(355661,55286,55365,6, 'Lenovo-TD30t/S100 LMP/LML Release/2009.10.15 Profile/MIDP2.1 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i909'), 1 => array(0 => 'Lenovo-i909/S155 Release/2008.08.20 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -329,7 +329,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(332244,55358,55365,6, 'Lenovo-i909/S155 Release/2008.08.20 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(332244,55286,55365,6, 'Lenovo-i909/S155 Release/2008.08.20 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'i909'), 1 => array(0 => 'Lenovo-i909/S141 Release/2007.11.28 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -337,7 +337,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(332244,55358,55365,6, 'Lenovo-i909/S141 Release/2007.11.28 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(332244,55286,55365,6, 'Lenovo-i909/S141 Release/2007.11.28 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'TD36t'), 1 => array(0 => 'Lenovo-TD36t/S100 LMP/LML Release/2010.08.25 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -345,7 +345,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(230643,55358,55365,6, 'Lenovo-TD36t/S100 LMP/LML Release/2010.08.25 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(230643,55286,55365,6, 'Lenovo-TD36t/S100 LMP/LML Release/2010.08.25 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P609'), 1 => array(0 => 'Lenovo-P609/2008.12.16 R002_QCY_LANG_C_V0.1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -353,7 +353,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337907,55358,55365,6, 'Lenovo-P609/2008.12.16 R002_QCY_LANG_C_V0.1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(337907,55286,55365,6, 'Lenovo-P609/2008.12.16 R002_QCY_LANG_C_V0.1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'S710'), 1 => array(0 => 'Lenovo-S710/S100 LMP/LML Release/2010.05.22 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -361,7 +361,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(346561,55358,55365,6, 'Lenovo-S710/S100 LMP/LML Release/2010.05.22 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(346561,55286,55365,6, 'Lenovo-S710/S100 LMP/LML Release/2010.05.22 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'E218'), 1 => array(0 => 'Lenovo-E218/CMCC_S101 LMP/LML Release/2009.05.20')), $ls);
@@ -369,7 +369,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(219332,55358,55365,6, 'Lenovo-E218/CMCC_S101 LMP/LML Release/2009.05.20');
+    $dl[] = array(219332,55286,55365,6, 'Lenovo-E218/CMCC_S101 LMP/LML Release/2009.05.20');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P650WG'), 1 => array(0 => 'Lenovo-P650WG/S100 LMP/LML Release/2010.02.22 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -377,7 +377,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(356669,55358,55365,6, 'Lenovo-P650WG/S100 LMP/LML Release/2010.02.22 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(356669,55286,55365,6, 'Lenovo-P650WG/S100 LMP/LML Release/2010.02.22 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'E228'), 1 => array(0 => 'Lenovo-E228/CMCC BMP/F2 Release/2008.09.10 Browser/TelecaQ03C')), $ls);
@@ -385,7 +385,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(279129,55358,55365,6, 'Lenovo-E228/CMCC BMP/F2 Release/2008.09.10 Browser/TelecaQ03C');
+    $dl[] = array(279129,55286,55365,6, 'Lenovo-E228/CMCC BMP/F2 Release/2008.09.10 Browser/TelecaQ03C');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P82'), 1 => array(0 => 'Lenovo-P82/S103 LMP/LML Release/2009.05.19 Profile/MIDP2.0 Configuration/CLDC1.1')), $ls);
@@ -393,7 +393,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(290065,55358,55365,6, 'Lenovo-P82/S103 LMP/LML Release/2009.05.19 Profile/MIDP2.0 Configuration/CLDC1.1');
+    $dl[] = array(290065,55286,55365,6, 'Lenovo-P82/S103 LMP/LML Release/2009.05.19 Profile/MIDP2.0 Configuration/CLDC1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => array(0 => 'P612'), 1 => array(0 => 'Lenovo-P612/2009.08.12 P612_S112_090812/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -401,7 +401,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(375680,55358,55365,6, 'Lenovo-P612/2009.08.12 P612_S112_090812/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(375752,55286,55365,6, 'Lenovo-P612/2009.08.12 P612_S112_090812/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => NULL, 1 => array(0 => 'LenovoI389_CMCC/S100 LMP/SH Release/2008.07.30 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -409,7 +409,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(193125,55358,55365,6, 'LenovoI389_CMCC/S100 LMP/SH Release/2008.07.30 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(193125,55286,55365,6, 'LenovoI389_CMCC/S100 LMP/SH Release/2008.07.30 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E46($segments, array(0 => NULL, 1 => array(0 => 'LenovoI389_CMCC/S100 LMP/SH Release/2009.03.04 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
@@ -417,7 +417,7 @@ function _H46($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(193125,55358,55365,6, 'LenovoI389_CMCC/S100 LMP/SH Release/2009.03.04 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(193125,55286,55365,6, 'LenovoI389_CMCC/S100 LMP/SH Release/2009.03.04 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   return $dl;

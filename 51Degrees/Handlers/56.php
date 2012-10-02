@@ -51,7 +51,7 @@ function _H56($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315352,20173,18014,6, $ua);
+    $dl[] = array(315352,21180,18086,6, $ua);
   }
   $ua = 'NEC-E232/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0';
   $ns = E56($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H56($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315352,20173,18014,6, $ua);
+    $dl[] = array(315352,21180,18086,6, $ua);
   }
   $ua = 'NEC-E232/1.0 UP.Browser/6.2.3.2.g.1.108 (GUI) MMP/2.0';
   $ns = E56($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H56($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315352,20173,18014,6, $ua);
+    $dl[] = array(315352,21180,18086,6, $ua);
   }
   return $dl;
 }

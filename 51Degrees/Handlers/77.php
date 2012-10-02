@@ -44,78 +44,6 @@ function E77($target, $test, $ls) {
 function _H77($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700 Novarra-Vision/8.0';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(274867,101999,158626,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(274867,101999,158626,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(274867,101999,158626,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700 Novarra-Vision/8.0';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(274867,101999,158626,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810 Novarra-Vision/8.0';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279489,101999,17077,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279489,101999,17077,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810, Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279489,101999,17077,6, $ua);
-  }
-  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-3810';
-  $ns = E77($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279489,101999,17077,6, $ua);
-  }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760 Novarra-Vision/8.0';
   $ns = E77($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -123,7 +51,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(111282,101999,17077,6, $ua);
+    $dl[] = array(111282,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760 Novarra-Vision/8.0';
   $ns = E77($useragent, $ua, $ls);
@@ -132,7 +60,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(111282,101999,17077,6, $ua);
+    $dl[] = array(111282,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760, Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760';
   $ns = E77($useragent, $ua, $ls);
@@ -141,7 +69,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(111282,101999,17077,6, $ua);
+    $dl[] = array(111282,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760';
   $ns = E77($useragent, $ua, $ls);
@@ -150,7 +78,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(111282,101999,17077,6, $ua);
+    $dl[] = array(111282,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760';
   $ns = E77($useragent, $ua, $ls);
@@ -159,7 +87,79 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(111282,101999,17077,6, $ua);
+    $dl[] = array(111282,102071,17077,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700 Novarra-Vision/8.0';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(274867,102071,158626,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(274867,102071,158626,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(274867,102071,158626,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700 Novarra-Vision/8.0';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(274867,102071,158626,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810 Novarra-Vision/8.0';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(279489,102071,17077,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(279489,102071,17077,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810, Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(279489,102071,17077,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-3810';
+  $ns = E77($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(279489,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6780';
   $ns = E77($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(367617,101999,158626,6, $ua);
+    $dl[] = array(367689,102071,158626,6, $ua);
   }
   $ua = 'Mozilla/4.0 (MobilePhone SCP-3100/CA/1.0) NetFront/3.1 MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -222,7 +222,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(231370,20173,61499,6, $ua);
+    $dl[] = array(231370,21180,61499,6, $ua);
   }
   $ua = 'SANYO-S750/1.810 UP.Browser/7.0.2.1.sn.1.159 (GUI) MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -231,7 +231,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(231370,20173,61499,6, $ua);
+    $dl[] = array(231370,21180,61499,6, $ua);
   }
   $ua = 'SANYO-S750/1.720 UP.Browser/7.0.2.1.sn.1.159 (GUI) MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(231370,20173,61499,6, $ua);
+    $dl[] = array(231370,21180,61499,6, $ua);
   }
   $ua = 'SANYO-S750/2.280 UP.Browser/7.0.2.1.sn.1.222.a (GUI) MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(231370,20173,61499,6, $ua);
+    $dl[] = array(231370,21180,61499,6, $ua);
   }
   $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) PL3810';
   $ns = E77($useragent, $ua, $ls);
@@ -258,7 +258,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259417,101999,17077,6, $ua);
+    $dl[] = array(259417,102071,17077,6, $ua);
   }
   $ua = 'Mozilla/4.0 (MobilePhone SCP-8400/US/1.0) NetFront/3.3 MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -267,7 +267,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(371288,114953,34682,6, $ua);
+    $dl[] = array(371360,114953,34682,6, $ua);
   }
   $ua = 'Sanyo-SCP6600CA NetFront/3.1 MMP/2.0 Mozilla/4.0';
   $ns = E77($useragent, $ua, $ls);
@@ -276,7 +276,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(356813,20173,169863,6, $ua);
+    $dl[] = array(356813,21180,169863,6, $ua);
   }
   $ua = 'SANYO-S103/1.803 UP.Browser/7.0.2.1.sn.1.289 (GUI) MMP/2.0';
   $ns = E77($useragent, $ua, $ls);
@@ -285,7 +285,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(272731,20173,61499,6, $ua);
+    $dl[] = array(272731,21180,61499,6, $ua);
   }
   $ua = 'Sanyo-SCP7000CA NetFront/3.1 MMP/2.0 Mozilla/4.0';
   $ns = E77($useragent, $ua, $ls);
@@ -294,7 +294,7 @@ function _H77($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(274651,20173,169863,6, $ua);
+    $dl[] = array(274651,21180,169863,6, $ua);
   }
   return $dl;
 }

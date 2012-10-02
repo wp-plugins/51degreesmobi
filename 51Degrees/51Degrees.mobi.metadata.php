@@ -146,43 +146,6 @@ $_51d_meta_data = array(
       '758' => array()
     )
   ),
-  'LayoutEngine' => array(
-    'Description' => 'The underlying technology behind the web browser.',
-    'URL' => 'http://en.wikipedia.org/wiki/Web_browser_engine',
-    'List' => 'False',
-    'Values' => array(
-      'Webkit' => array(
-        'Description' => 'The browser uses the Webkit engine - usually Apple and Google (Android) browsers.'
-        ),
-      'Mango' => array(
-        'Description' => 'Used on v4 and v5 BlackberryOS (not to be confused with Windows Phone OS 7.5).'
-        ),
-      'Trident' => array(
-        'Description' => 'The browser uses the Trident engine - nearly always IE and other Microsoft made browsers.'
-        ),
-      'Unknown' => array(
-        'Description' => 'It is not known what the layout engine is.'
-        ),
-      'Netfront' => array(
-        'Description' => 'The browser uses the Netfront engine - used by the Access Netfront browser.'
-        ),
-      'Presto' => array(
-        'Description' => 'The browser uses the Presto engine - nearly always used by Opera made browsers.'
-        ),
-      'MotoWebkit' => array(
-        'Description' => 'Used by Motorola based devices with Mobile Linux platform, browser name is Unknown'
-        ),
-      'Gecko' => array(
-        'Description' => 'The browser uses the Gecko engine - nearly always Firefox and Fennec browsers.'
-        ),
-      'Lumi' => array(
-        'Description' => 'Used on Poloaris v6'
-        ),
-      'KHTML' => array(
-        'Description' => 'Forerunner to Webkit, Webkit UAs usually contain \'KHTML\' but they are seperate projects Most commonly used by the Konqueror browser.'
-        )
-    )
-  ),
   'CssColumn' => array(
     'Description' => 'Indicates if the browser supports CSS3 columns.',
     'URL' => 'http://www.w3schools.com/css3/css3_multiple_columns.asp',
@@ -219,36 +182,6 @@ $_51d_meta_data = array(
       'True' => array()
     )
   ),
-  'BlobBuilder' => array(
-    'Description' => 'Beta property. Indicates that the browser fully supports BlobBuilder, containing a BlobBuilder interface, a FileSaver interface, a FileWriter interface, and a FileWriterSync interface.',
-    'URL' => 'http://dev.w3.org/2009/dap/file-system/file-writer.html#the-blobbuilder-interface',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'False' => array(),
-      'Unknown' => array()
-    )
-  ),
-  'CssBackground' => array(
-    'Description' => 'Beta property. Indicates if the browser supports CSS3 backgrounds. This allows styling of the border, the background of the box. The box may be given a shadow effect.',
-    'URL' => 'http://www.w3.org/TR/css3-background/',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'Unknown' => array(),
-      'False' => array()
-    )
-  ),
-  'CssBorderImage' => array(
-    'Description' => 'Beta property. Indicates if the browser supports Border Images, allowing decoration of the border around a box.',
-    'URL' => 'http://www.w3.org/TR/css3-background/',
-    'List' => 'False',
-    'Values' => array(
-      'False' => array(),
-      'Unknown' => array(),
-      'True' => array()
-    )
-  ),
   'CssCanvas' => array(
     'Description' => 'Beta property. Indicates if the browser can draw CSS images into a Canvas.',
     'URL' => 'http://www.webkit.org/blog/176/css-canvas-drawing/',
@@ -267,26 +200,6 @@ $_51d_meta_data = array(
       'True' => array(),
       'Unknown' => array(),
       'False' => array()
-    )
-  ),
-  'CssOverflow' => array(
-    'Description' => 'Beta property. Indicates if the browser supports overflowing of clipped blocks (blocks have scroll mechanisms).',
-    'URL' => 'http://www.w3.org/TR/CSS2/visufx.html',
-    'List' => 'False',
-    'Values' => array(
-      'False' => array(),
-      'Unknown' => array(),
-      'True' => array()
-    )
-  ),
-  'CssPosition' => array(
-    'Description' => 'Beta property. Indicates if the browser supports CSS position, allowing for different box placement algorithms (static, relative, absolute, fixed).',
-    'URL' => 'http://www.w3.org/TR/CSS21/visuren.html#choose-position',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'False' => array(),
-      'Unknown' => array()
     )
   ),
   'CssFlexbox' => array(
@@ -318,16 +231,6 @@ $_51d_meta_data = array(
       'Unknown' => array()
     )
   ),
-  'CssMinMax' => array(
-    'Description' => 'Beta property. Indicates if the browser supports the CSS \'min-width\'  and \'max-width\' properties.',
-    'URL' => 'http://www.w3.org/TR/CSS21/visudet.html#min-max-widths',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'Unknown' => array(),
-      'False' => array()
-    )
-  ),
   'DataSet' => array(
     'Description' => 'Beta property. Indicates if the browser allows custom data attributes for th a site\'s own use. An attribute with the form \'data-*\' will not be interpreted by the browser engine.',
     'URL' => 'http://www.w3.org/TR/html5/elements.html#embedding-custom-non-visible-data-with-the-data-attributes',
@@ -357,9 +260,49 @@ $_51d_meta_data = array(
       'Unknown' => array()
     )
   ),
-  'FileReader' => array(
-    'Description' => 'Beta property. Indicates if the browser supports file reading with events to show progress and errors.',
-    'URL' => 'http://www.w3.org/TR/FileAPI/',
+  'BlobBuilder' => array(
+    'Description' => 'Beta property. Indicates that the browser fully supports BlobBuilder, containing a BlobBuilder interface, a FileSaver interface, a FileWriter interface, and a FileWriterSync interface.',
+    'URL' => 'http://dev.w3.org/2009/dap/file-system/file-writer.html#the-blobbuilder-interface',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'False' => array(),
+      'Unknown' => array()
+    )
+  ),
+  'CssBackground' => array(
+    'Description' => 'Beta property. Indicates if the browser supports CSS3 backgrounds. This allows styling of the border, the background of the box. The box may be given a shadow effect.',
+    'URL' => 'http://www.w3.org/TR/css3-background/',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'Unknown' => array(),
+      'False' => array()
+    )
+  ),
+  'CssBorderImage' => array(
+    'Description' => 'Beta property. Indicates if the browser supports Border Images, allowing decoration of the border around a box.',
+    'URL' => 'http://www.w3.org/TR/css3-background/',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array(),
+      'Unknown' => array(),
+      'True' => array()
+    )
+  ),
+  'CssOverflow' => array(
+    'Description' => 'Beta property. Indicates if the browser supports overflowing of clipped blocks (blocks have scroll mechanisms).',
+    'URL' => 'http://www.w3.org/TR/CSS2/visufx.html',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array(),
+      'Unknown' => array(),
+      'True' => array()
+    )
+  ),
+  'CssPosition' => array(
+    'Description' => 'Beta property. Indicates if the browser supports CSS position, allowing for different box placement algorithms (static, relative, absolute, fixed).',
+    'URL' => 'http://www.w3.org/TR/CSS21/visuren.html#choose-position',
     'List' => 'False',
     'Values' => array(
       'True' => array(),
@@ -390,6 +333,35 @@ $_51d_meta_data = array(
   'CssUI' => array(
     'Description' => 'Beta property. Indicates if the browser supports various CSS UI stylings.',
     'URL' => 'http://www.w3.org/TR/css3-ui/',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'Unknown' => array(),
+      'False' => array()
+    )
+  ),
+  'History' => array(
+    'Description' => 'Beta property. Indicates if the browser stores the session history for a webpage to use.',
+    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'False' => array(),
+      'Unknown' => array()
+    )
+  ),
+  'Html-Media-Capture' => array(
+    'Description' => 'Beta property. Indicates if the browser can use media inputs (webcam, microphones etc) in script and as an input for forms (eg. &lt;input type="file" accept="image/*" id="capture"&gt; would prompt image capturing software to open).',
+    'URL' => 'http://www.w3.org/TR/html-media-capture/',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array(),
+      'Unknown' => array()
+    )
+  ),
+  'CssMinMax' => array(
+    'Description' => 'Beta property. Indicates if the browser supports the CSS \'min-width\'  and \'max-width\' properties.',
+    'URL' => 'http://www.w3.org/TR/CSS21/visudet.html#min-max-widths',
     'List' => 'False',
     'Values' => array(
       'True' => array(),
@@ -436,9 +408,39 @@ $_51d_meta_data = array(
       'False' => array()
     )
   ),
-  'History' => array(
-    'Description' => 'Beta property. Indicates if the browser stores the session history for a webpage to use.',
-    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html',
+  'Prompts' => array(
+    'Description' => 'Beta property. Indicates if the browser supports simple dialogs (windows.alert, window.confirm and window.prompt).',
+    'URL' => 'http://www.w3.org/TR/html5/timers.html#user-prompts',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'Unknown' => array(),
+      'False' => array()
+    )
+  ),
+  'Selector' => array(
+    'Description' => 'Beta property. Indicates if the browser supports Selectors, used for more consice searching in DOM.',
+    'URL' => 'http://www.w3.org/TR/selectors-api2/',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'Unknown' => array(),
+      'False' => array()
+    )
+  ),
+  'Svg' => array(
+    'Description' => 'Beta property. Indicates if the browser supports SVG (scalable vector graphics), useful for 2D animations and applications as all objects within the SVG can be accessed via the DOM and can be assigned event listeners.',
+    'URL' => 'http://www.w3.org/TR/SVG/',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array(),
+      'Unknown' => array(),
+      'True' => array()
+    )
+  ),
+  'FileReader' => array(
+    'Description' => 'Beta property. Indicates if the browser supports file reading with events to show progress and errors.',
+    'URL' => 'http://www.w3.org/TR/FileAPI/',
     'List' => 'False',
     'Values' => array(
       'True' => array(),
@@ -474,29 +476,9 @@ $_51d_meta_data = array(
       'False' => array()
     )
   ),
-  'Prompts' => array(
-    'Description' => 'Beta property. Indicates if the browser supports simple dialogs (windows.alert, window.confirm and window.prompt).',
-    'URL' => 'http://www.w3.org/TR/html5/timers.html#user-prompts',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'Unknown' => array(),
-      'False' => array()
-    )
-  ),
-  'Selector' => array(
-    'Description' => 'Beta property. Indicates if the browser supports Selectors, used for more consice searching in DOM.',
-    'URL' => 'http://www.w3.org/TR/selectors-api2/',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'Unknown' => array(),
-      'False' => array()
-    )
-  ),
-  'Svg' => array(
-    'Description' => 'Beta property. Indicates if the browser supports SVG (scalable vector graphics), useful for 2D animations and applications as all objects within the SVG can be accessed via the DOM and can be assigned event listeners.',
-    'URL' => 'http://www.w3.org/TR/SVG/',
+  'TouchEvents' => array(
+    'Description' => 'Beta property. Indicates if the browser supports multiple touch events happening simultaneously.',
+    'URL' => 'http://www.w3.org/TR/touch-events/',
     'List' => 'False',
     'Values' => array(
       'False' => array(),
@@ -504,13 +486,41 @@ $_51d_meta_data = array(
       'True' => array()
     )
   ),
-  'Html-Media-Capture' => array(
-    'Description' => 'Beta property. Indicates if the browser can use media inputs (webcam, microphones etc) in script and as an input for forms (eg. &lt;input type="file" accept="image/*" id="capture"&gt; would prompt image capturing software to open).',
-    'URL' => 'http://www.w3.org/TR/html-media-capture/',
+  'Track' => array(
+    'Description' => 'Beta property. Indicates if the browser supports text tracks being played with media, eg subtitles, captions.',
+    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-track-element',
     'List' => 'False',
     'Values' => array(
       'False' => array(),
       'Unknown' => array()
+    )
+  ),
+  'Xhr2' => array(
+    'Description' => 'Beta property. Indicates if the browser supports client - server communication with XmlHttpRequests.',
+    'URL' => 'http://www.w3.org/TR/XMLHttpRequest/',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array(),
+      'Unknown' => array(),
+      'True' => array()
+    )
+  ),
+  'Canvas' => array(
+    'Description' => 'Beta property. Indicates if the browser supports the canvas element, useful for drawing with javscript.',
+    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html',
+    'List' => 'False',
+    'Values' => array(
+      'True' => array(),
+      'Unknown' => array(),
+      'False' => array()
+    )
+  ),
+  'CssImages' => array(
+    'Description' => 'Beta property. Indicates if CSS3 images are supported, allowing for fallback images, gradients and other effects.',
+    'URL' => 'http://dev.w3.org/csswg/css3-images/',
+    'List' => 'False',
+    'Values' => array(
+      'False' => array()
     )
   ),
   'Html5' => array(
@@ -580,25 +590,6 @@ $_51d_meta_data = array(
       'Unknown' => array()
     )
   ),
-  'TouchEvents' => array(
-    'Description' => 'Beta property. Indicates if the browser supports multiple touch events happening simultaneously.',
-    'URL' => 'http://www.w3.org/TR/touch-events/',
-    'List' => 'False',
-    'Values' => array(
-      'False' => array(),
-      'Unknown' => array(),
-      'True' => array()
-    )
-  ),
-  'Track' => array(
-    'Description' => 'Beta property. Indicates if the browser supports text tracks being played with media, eg subtitles, captions.',
-    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/the-video-element.html#the-track-element',
-    'List' => 'False',
-    'Values' => array(
-      'False' => array(),
-      'Unknown' => array()
-    )
-  ),
   'WebWorkers' => array(
     'Description' => 'Beta property. Indicates if the browser supports background workers in javascript.',
     'URL' => 'http://www.w3.org/TR/workers/',
@@ -609,33 +600,42 @@ $_51d_meta_data = array(
       'Unknown' => array()
     )
   ),
-  'Xhr2' => array(
-    'Description' => 'Beta property. Indicates if the browser supports client - server communication with XmlHttpRequests.',
-    'URL' => 'http://www.w3.org/TR/XMLHttpRequest/',
+  'LayoutEngine' => array(
+    'Description' => 'The underlying technology behind the web browser.',
+    'URL' => 'http://en.wikipedia.org/wiki/Web_browser_engine',
     'List' => 'False',
     'Values' => array(
-      'False' => array(),
-      'Unknown' => array(),
-      'True' => array()
-    )
-  ),
-  'Canvas' => array(
-    'Description' => 'Beta property. Indicates if the browser supports the canvas element, useful for drawing with javscript.',
-    'URL' => 'http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html',
-    'List' => 'False',
-    'Values' => array(
-      'True' => array(),
-      'Unknown' => array(),
-      'False' => array()
-    )
-  ),
-  'CssImages' => array(
-    'Description' => 'Beta property. Indicates if CSS3 images are supported, allowing for fallback images, gradients and other effects.',
-    'URL' => 'http://dev.w3.org/csswg/css3-images/',
-    'List' => 'False',
-    'Values' => array(
-      'False' => array()
+      'Webkit' => array(
+        'Description' => 'The browser uses the Webkit engine - usually Apple and Google (Android) browsers.'
+        ),
+      'Mango' => array(
+        'Description' => 'Used on v4 and v5 BlackberryOS (not to be confused with Windows Phone OS 7.5).'
+        ),
+      'Trident' => array(
+        'Description' => 'The browser uses the Trident engine - nearly always IE and other Microsoft made browsers.'
+        ),
+      'Unknown' => array(
+        'Description' => 'It is not known what the layout engine is.'
+        ),
+      'Netfront' => array(
+        'Description' => 'The browser uses the Netfront engine - used by the Access Netfront browser.'
+        ),
+      'Presto' => array(
+        'Description' => 'The browser uses the Presto engine - nearly always used by Opera made browsers.'
+        ),
+      'MotoWebkit' => array(
+        'Description' => 'Used by Motorola based devices with Mobile Linux platform, browser name is Unknown'
+        ),
+      'Gecko' => array(
+        'Description' => 'The browser uses the Gecko engine - nearly always Firefox and Fennec browsers.'
+        ),
+      'Lumi' => array(
+        'Description' => 'Used on Poloaris v6'
+        ),
+      'KHTML' => array(
+        'Description' => 'Forerunner to Webkit, Webkit UAs usually contain \'KHTML\' but they are seperate projects Most commonly used by the Konqueror browser.'
+        )
     )
   ),
 'DatasetName' => 'Lite',
-'Date' => '28/09/2012');
+'Date' => '02/10/2012');

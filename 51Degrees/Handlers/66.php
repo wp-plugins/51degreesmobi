@@ -51,7 +51,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(414595,30509,30587,6, $ua);
+    $dl[] = array(414667,30509,30587,6, $ua);
   }
   $ua = 'Panasonic-X701/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(414595,30509,30587,6, $ua);
+    $dl[] = array(414667,30509,30587,6, $ua);
   }
   $ua = 'Panasonic-G50/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247913,20173,187005,6, $ua);
+    $dl[] = array(247913,21180,187005,6, $ua);
   }
   $ua = 'Panasonic-A210/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(224017,20173,187005,6, $ua);
+    $dl[] = array(224017,21180,187005,6, $ua);
   }
   return $dl;
 }

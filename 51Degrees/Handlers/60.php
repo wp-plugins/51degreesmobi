@@ -90,7 +90,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE7le/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE7le/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-1MIDP-2.0 Configuration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -98,7 +98,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-1'), 1 => array(0 => '3.1NokiaE71'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -106,7 +106,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE71-1/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE71-1/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -114,7 +114,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'NokiaE71/1.0 (410.21.010) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(48759,24384,24390,6, 'NokiaE71/1.0 (410.21.010) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71x'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -122,7 +122,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'NokiaE71x/ATT.03.28 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'NokiaE71x/ATT.03.28 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71x Profile'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -130,7 +130,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3 U; Series60/3.2 NokiaE71x Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3 U; Series60/3.2 NokiaE71x Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'E71-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -138,7 +138,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE71-1/200.21.118; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE71-1/200.21.118; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-1', 1 => 'E71-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -146,7 +146,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1/200.21.118; 60/3.1 NokiaE71-1/200.21.118; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1/200.21.118; 60/3.1 NokiaE71-1/200.21.118; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-2'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -154,7 +154,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-2/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-2/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -162,7 +162,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-3/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-3/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E71-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -170,7 +170,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(48759,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(48759,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE71-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N8-00'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -258,7 +258,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE72-2/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE72-2/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72Series60', 1 => 'E72-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -266,7 +266,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72Series60/3.2 NokiaE72-1/021.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72Series60/3.2 NokiaE72-1/021.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -274,7 +274,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-2/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-2/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -282,7 +282,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'NokiaE72/021.024 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(89487,24384,24390,6, 'NokiaE72/021.024 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-2', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -290,7 +290,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-2/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-2/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -298,7 +298,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/031.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-1-2.1 Configuration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -306,7 +306,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -314,7 +314,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'NokiaE72-1/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(89487,24384,24390,6, 'NokiaE72-1/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-1', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -322,7 +322,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/081.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.32 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(89487,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/081.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.32 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E72-1;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -330,7 +330,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89487,25233,24312,6, 'MQQBrowser/2.0 (NokiaE72-1;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(89487,24384,24390,6, 'MQQBrowser/2.0 (NokiaE72-1;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00u'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -338,7 +338,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00u/043.115; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00u/043.115; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -346,7 +346,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00.2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -354,7 +354,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00.2/046.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00.2/046.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00.2', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -362,7 +362,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -370,7 +370,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/042.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/042.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00u', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -378,7 +378,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00u/072.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00u/072.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00', 1 => 'Browser'), 1 => array(0 => '3.2NokiaE5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -386,7 +386,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(135510,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -394,7 +394,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'MQQBrowser/2.0 (NokiaE5-00;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(135510,24384,24390,6, 'MQQBrowser/2.0 (NokiaE5-00;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E5-00'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -402,247 +402,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(135510,25233,24312,6, 'NokiaE5-00/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-c'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230-c/20.2.098; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.3.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-1b'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1b/20.2.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-1d'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1d/20.4.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230', 1 => '5230'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/20..4; Series60/5.0 Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230', 1 => 'Browser'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230/50.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230', 1 => '-MusicShop-Version: 11.0944.15'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3X-Nokia-MusicShop-Version: 11.0944.15');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-1d', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1d/50.4.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-c'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-c/20.2.098; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.3.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/40.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-1c'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1c/20.8.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5230-1b', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47535,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1b/51.2.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3(SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E6S', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE6S/9.2; U; Series60/3.1 NokiaE63-1/100.21.110; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/400.2Series60/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1', 1 => 'E63-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/400.21.013; Pr/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1.2; U; Series60', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1.2; U; Series60/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.(SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE63-3/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-2'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-2/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'NokiaE63/200.21.005 (SymbianOS/9.2; U; Series60/3.1 Mozilla/5.0; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/100.21.110; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E63-1_Orange'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102653,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1_Orange/100.21.80; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(135510,24384,24390,6, 'NokiaE5-00/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1b '), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -650,7 +410,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1b /11.2.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1b /11.2.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800-1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -658,7 +418,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1'), 1 => array(0 => '5.0Nokia5800d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -666,7 +426,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5800d-1/50.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5800d-1/50.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800w'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -674,7 +434,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Nokia5800w/52.0.007 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Nokia5800w/52.0.007 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -682,7 +442,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Nokia5800/21.0.025.1 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Nokia5800/21.0.025.1 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1; U; Series60', 1 => '5800d-1'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -690,7 +450,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1; U; Series60/5.0 Nokia5800d-1/11.0.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1; U; Series60/5.0 Nokia5800d-1/11.0.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800i'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -698,7 +458,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Nokia5800i/10.3.007 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Nokia5800i/10.3.007 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1b'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -706,7 +466,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1b/51.2.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1b/51.2.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -714,7 +474,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1', 1 => '5800d-1'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -722,7 +482,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/40.0.00anOS/9.4; U; Series60/5.0 Nokia5800d-1/40.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/40.0.00anOS/9.4; U; Series60/5.0 Nokia5800d-1/40.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1', 1 => '5800d-1', 2 => '5800d-1'), 1 => array(0 => '5.0', 1 => '5.0', 2 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -730,7 +490,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'SymbianOS/9.4; Nokia5800d-1/50.0.005; Series60/5.0 Profile MIDP2.1 Configuration/CLDC-1.1 Series60/5.0 Nokia5800d-1/50.0.005 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/50.0.005; Profile/MIDP-2.1 Configu');
+    $dl[] = array(104872,12258,12336,6, 'SymbianOS/9.4; Nokia5800d-1/50.0.005; Series60/5.0 Profile MIDP2.1 Configuration/CLDC-1.1 Series60/5.0 Nokia5800d-1/50.0.005 Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/50.0.005; Profile/MIDP-2.1 Configu');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1', 1 => '5800d-1r100-3G.xml TML, like Gecko) Version'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -738,7 +498,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KH-profile: "http://nds1.nds.nokia.com/uaprof/Nokia5800d-1r100-3G.xml TML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/52.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KH-profile: "http://nds1.nds.nokia.com/uaprof/Nokia5800d-1r100-3G.xml TML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1b'), 1 => array(0 => '5.0Nokia5800d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -746,7 +506,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0Nokia5800d-1b/21.2.025; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0Nokia5800d-1b/21.2.025; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800d-1', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -754,7 +514,343 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/60.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(104872,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5800d-1/60.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3(SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E6S', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE6S/9.2; U; Series60/3.1 NokiaE63-1/100.21.110; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/400.2Series60/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1', 1 => 'E63-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/400.21.013; Pr/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1.2; U; Series60', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1.2; U; Series60/3.1 NokiaE63-1/400.21.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63', 1 => 'E63-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.(SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/410.21.010; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1NokiaE63'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaE63-3/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-2'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-2/200.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'NokiaE63/200.21.005 (SymbianOS/9.2; U; Series60/3.1 Mozilla/5.0; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-3/100.21.110; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E63-1_Orange'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102653,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE63-1_Orange/100.21.80; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-c'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230-c/20.2.098; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.3.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-1b'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1b/20.2.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-1d'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1d/20.4.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230', 1 => '5230'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/20..4; Series60/5.0 Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230', 1 => 'Browser'), 1 => array(0 => '5.0Nokia5230'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5230/50.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230', 1 => '-MusicShop-Version: 11.0944.15'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3X-Nokia-MusicShop-Version: 11.0944.15');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-1d', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1d/50.4.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-c'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-c/20.2.098; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.3.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/40.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-1c'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1c/20.8.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230/51.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5230-1b', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47535,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5230-1b/51.2.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/22.0.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'NokiaN97/22.1.112 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-4'), 1 => array(0 => '5.0NokiaN97'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaN97-4/11.0.105; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-lla', 1 => 'N97-1'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-lla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/21.0.102; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-4', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/30.0.004; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-5', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-5/30.2.004; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97i'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'NokiaN97i/22.0.110 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-1', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/22.0.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-5'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-5/11.2.102; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-3'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-3/22.2.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N97-4'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/12.0.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => ' N97 RM-505) AppleWebKit'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(60274,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0; en-GB; Nokia N97 RM-505) AppleWebKit/532.4 (KHTML, like Gecko) Qt/4.6.3 Mobile Safari/532.4');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C7-00.1', 1 => 'Browser'), 1 => array(0 => '5.2NokiaC7'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -837,108 +933,12 @@ function _H60($useragent) {
     $dl[] = array(162799,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC7-00s/020.034/111.030.0609; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N97-1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/21.0.045; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'NokiaN97/22.1.112 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-4'), 1 => array(0 => '5.0NokiaN97'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaN97-4/11.0.105; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-lla', 1 => 'N97-1'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-lla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/21.0.102; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-4', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/30.0.004; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-5', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-5/30.2.004; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97i'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'NokiaN97i/22.0.110 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-1', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-1/22.0.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-5'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-5/11.2.102; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-3'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-3/22.2.110; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N97-4'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/11.0.102; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => ' N97 RM-505) AppleWebKit'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60274,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0; en-GB; Nokia N97 RM-505) AppleWebKit/532.4 (KHTML, like Gecko) Qt/4.6.3 Mobile Safari/532.4');
-    $ls = $ns;
-  }
   $ns = E60($segments, array(0 => array(0 => 'C6-00.1'), 1 => array(0 => '5.0NokiaC6'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC6-00.1/20.2.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(139952,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC6-00.1/20.2.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-00.1', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -946,7 +946,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00.1/40.2.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
+    $dl[] = array(139952,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00.1/40.2.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-00', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -954,7 +954,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/40.0.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
+    $dl[] = array(139952,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/40.0.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-00.1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -962,7 +962,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00.1/20.2.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(139952,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00.1/20.2.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-00'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -970,7 +970,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/20.0.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(139952,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/20.0.042; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00.1'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -978,7 +978,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00.1/30.2.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.6 3gpp-gba');
+    $dl[] = array(107019,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00.1/30.2.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.6 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00m'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -986,7 +986,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,12258,12264,6, 'NokiaX6-00m/21.1.004 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
+    $dl[] = array(107019,12258,12336,6, 'NokiaX6-00m/21.1.004 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -994,7 +994,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $dl[] = array(107019,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/20.0.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1002,7 +1002,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/40.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(107019,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00/40.0.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00.1', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1010,7 +1010,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00.1/40.2.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(107019,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaX6-00.1/40.2.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1018,7 +1018,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/071.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/071.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00.2', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1026,7 +1026,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00.1', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1034,7 +1034,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.1/071.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.1/071.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00.1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1042,7 +1042,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.1/032.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.1/032.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1050,7 +1050,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/032.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/032.010; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00i'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1058,7 +1058,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'NokiaC5-00i/071.003 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) Version/3.0 Safari/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'NokiaC5-00i/071.003 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/533.4 (KHTML, like Gecko) Version/3.0 Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00.2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1066,7 +1066,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) Appri/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.2/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) Appri/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00', 1 => '-MusicShop-Bearer: GPRS'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1074,7 +1074,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleX-Nokia-MusicShop-Bearer: GPRS/3G');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleX-Nokia-MusicShop-Bearer: GPRS/3G');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-00.3', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1082,7 +1082,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116549,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.3/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(116549,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00.3/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1090,7 +1090,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'NokiaE52/033.003 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(70156,24384,24390,6, 'NokiaE52/033.003 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1098,7 +1098,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/054.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
+    $dl[] = array(70156,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/054.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-1', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1106,7 +1106,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(70156,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-1/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1114,7 +1114,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2/034.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5');
+    $dl[] = array(70156,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2/034.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-2; Profile'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1122,7 +1122,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.18430');
+    $dl[] = array(70156,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.18430');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-2', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1130,7 +1130,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(70156,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE52-2/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E52-1;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1138,7 +1138,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70156,25233,24312,6, 'MQQBrowser/2.0 (NokiaE52-1;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(70156,24384,24390,6, 'MQQBrowser/2.0 (NokiaE52-1;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1146,7 +1146,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/20.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/20.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03', 1 => 'Browser'), 1 => array(0 => '5.0NokiaC5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1154,7 +1154,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC5-03/20.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC5-03/20.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03'), 1 => array(0 => '5.0NokiaC5'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1162,7 +1162,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC5-03/12.0.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0NokiaC5-03/12.0.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03.2', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1170,7 +1170,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03.2/20.1.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03.2/20.1.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03.2'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1178,7 +1178,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03.2/12.1.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03.2/12.1.023; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03', 1 => '-MusicShop-Bearer: GPRS'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1186,7 +1186,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/12.0.023; Profile/MIDP-2.1 ConfNokia-MusicShop-Bearer: GPRS/3G');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/12.0.023; Profile/MIDP-2.1 ConfNokia-MusicShop-Bearer: GPRS/3G');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1194,7 +1194,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/11.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(184269,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-03/11.0.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X2-01', 1 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1203,102 +1203,6 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(93663,25311,31594,6, 'NokiaX2-01/5.0 (08.63) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95', 1 => 'N95'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/30.0.01/3.1 NokiaN95/30.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'NokiaN95-1/3.2 (07.13.0.0) SymbianOS/9.2 Series60/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N95'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaN95/21.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95-5'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-5/22.1.002; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.(SymbianOS/9.2; U; Series60/3.1 NokiaN95/21.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 NokiaN95/12.0.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '0', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/11.0.026; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95', 1 => 'N95'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/31.; U; Series60/3.1 NokiaN95/31.0.017; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95-3'), 1 => array(0 => '3', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3(SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95-3', 1 => 'N95-3'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(85041,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/35.0.002; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E7-00'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1341,172 +1245,100 @@ function _H60($useragent) {
     $dl[] = array(166118,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaE7-00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N95_8GB-3;Mozilla', 1 => 'N95_8GB-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95', 1 => 'N95'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84969,25233,24312,6, 'NokiaN95_8GB-3;Mozilla/5.0 SymbianOS/9.2;U; Series60/3.1 NokiaN95_8GB-3/11.2.011 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko)');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/30.0.01/3.1 NokiaN95/30.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N95_8GB-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84969,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB-3/1.2.011 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'NokiaN95-1/3.2 (07.13.0.0) SymbianOS/9.2 Series60/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N95'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84969,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/20.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaN95/21.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95-5'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84969,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 ymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/15.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-5/22.1.002; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1NokiaN95_8GB'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84969,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.(SymbianOS/9.2; U; Series60/3.1 NokiaN95/21.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6120c', 1 => '6120c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Nokia6120c/4.21 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 NokiaN95/12.0.013; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6; Series60', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '0', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/11.0.026; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95', 1 => 'N95'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/31.; U; Series60/3.1 NokiaN95/31.0.017; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '61209.2; U; Series60', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95-3'), 1 => array(0 => '3', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia61209.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3(SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95-3', 1 => 'N95-3'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NobianOS/9.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '0', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95-3/10.2.006; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '6120c', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/3.U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '61S', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia61S/9.2; U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120ci'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120ci/7.02; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120ci', 1 => '6120ci'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Nokia6120ci/7.10 (SymbianOS/9.2; U; Series60/3.1 Nokia6120ci/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120ciB11.04'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Nokia6120ciB11.04/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120c(B20.03)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Nokia6120c(B20.03)/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120guration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120guration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120c Series60'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'Nokia6120c Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6120c(B20.01);SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(30365,25233,24312,6, 'MQQBrowser/2.0 (Nokia6120c(B20.01);SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(85041,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/35.0.002; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-01.3'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1573,12 +1405,172 @@ function _H60($useragent) {
     $dl[] = array(166622,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaC6-01; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '5233', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N95_8GB-3;Mozilla', 1 => 'N95_8GB-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(84969,24384,24390,6, 'NokiaN95_8GB-3;Mozilla/5.0 SymbianOS/9.2;U; Series60/3.1 NokiaN95_8GB-3/11.2.011 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko)');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N95_8GB-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(84969,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB-3/1.2.011 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(84969,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/20.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(84969,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 ymbianOS/9.2; U; Series60/3.1 NokiaN95_8GB/15.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N95_8GB'), 1 => array(0 => '3.1NokiaN95_8GB'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(84969,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1NokiaN95_8GB/31.0.015; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c', 1 => '6120c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Nokia6120c/4.21 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6; Series60', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1SymbianOS', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1SymbianOS/9.2; U; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '61209.2; U; Series60', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia61209.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NobianOS/9.2; U; Series60/3.1 Nokia6120c/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '0', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/3.U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '61S', 1 => '6120c'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia61S/9.2; U; Series60/3.1 Nokia6120c/3.83; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120ci'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120ci/7.02; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120ci', 1 => '6120ci'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Nokia6120ci/7.10 (SymbianOS/9.2; U; Series60/3.1 Nokia6120ci/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120ciB11.04'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Nokia6120ciB11.04/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c(B20.03)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Nokia6120c(B20.03)/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120guration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6120guration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c Series60'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'Nokia6120c Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6120c(B20.01);SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(30365,24384,24390,6, 'MQQBrowser/2.0 (Nokia6120c(B20.01);SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233'), 1 => array(0 => '5.0Nokia5233'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1586,7 +1578,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5233/21.1.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5233/21.1.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233', 1 => 'Browser'), 1 => array(0 => '5.0Nokia5233'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1594,7 +1586,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1602,7 +1594,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/40.1.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/40.1.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233', 1 => '5233r100-2G.xml "'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1610,7 +1602,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/21.1.102; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Vnds1.nds.nokia.com/uaprof/Nokia5233r100-2G.xml "');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/21.1.102; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Vnds1.nds.nokia.com/uaprof/Nokia5233r100-2G.xml "');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233', 1 => '-MusicShop-Bearer: GPRS'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1618,7 +1610,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/21.1.102; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, lNokia-MusicShop-Bearer: GPRS/3G');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/21.1.102; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, lNokia-MusicShop-Bearer: GPRS/3G');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233', 1 => 'sicShop-Version: 11.1027.15'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1626,7 +1618,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiasicShop-Version: 11.1027.15');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiasicShop-Version: 11.1027.15');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5233', 1 => 'a-MusicShop-Bearer: GPRS'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1634,7 +1626,15 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) Nokiaa-MusicShop-Bearer: GPRS/3G');
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) Nokiaa-MusicShop-Bearer: GPRS/3G');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5233', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12264,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5233/51.1.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => '5530c-2'), 1 => array(0 => '5.0', 1 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1642,7 +1642,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 NokianOS/9.4; U; Series60/5.0 Nokia5530c-2/11.0.054; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525');
+    $dl[] = array(138656,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 NokianOS/9.4; U; Series60/5.0 Nokia5530c-2/11.0.054; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5530'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1650,7 +1650,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,12258,12264,6, 'Nokia5530/32.0.007 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
+    $dl[] = array(138656,12258,12336,6, 'Nokia5530/32.0.007 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5530c-2'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1658,7 +1658,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/32.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(138656,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/32.0.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5530c-2', 1 => '-MusicShop-Version: 11.0935.15'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1666,7 +1666,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5530c-2/20.0.080; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KH-Nokia-MusicShop-Version: 11.0935.15');
+    $dl[] = array(138656,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5530c-2/20.0.080; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KH-Nokia-MusicShop-Version: 11.0935.15');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5530c-2', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1674,7 +1674,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/40.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(138656,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5530c-2/40.0.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E66'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1682,7 +1682,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'NokiaE66/1.0 (410.21.010) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(102725,24384,24390,6, 'NokiaE66/1.0 (410.21.010) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E66-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1690,7 +1690,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(102725,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1/500.21.009; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E66-1MIDP-2.0 Configuration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1698,7 +1698,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(102725,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'E66-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1706,7 +1706,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE66-1/210.21.007; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(102725,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaE66-1/210.21.007; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E66-1'), 1 => array(0 => '3.1NokiaE66'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1714,7 +1714,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'Mozilla/5.0(SymbianOS/9.2;U;Series60/3.1NokiaE66-1');
+    $dl[] = array(102725,24384,24390,6, 'Mozilla/5.0(SymbianOS/9.2;U;Series60/3.1NokiaE66-1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E66-1Orange'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1722,7 +1722,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102725,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1Orange/110.07.126; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(102725,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-1Orange/110.07.126; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1730,7 +1730,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'SoftBank/1.0/705NK/NKJ001 Series60/3.0 NokiaN73/3.0650 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'SoftBank/1.0/705NK/NKJ001 Series60/3.0 NokiaN73/3.0650 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-5'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1738,7 +1738,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-5/3.0628.0.0.6 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-5/3.0628.0.0.6 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1'), 1 => array(0 => '3.0Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1746,7 +1746,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/3.0705.1.0.31 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/3.0705.1.0.31 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1'), 1 => array(0 => '3.N73', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1754,7 +1754,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/4.0735.3.0.2 Series60/3.N73-1/4.0735.3.0.2 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/4.0735.3.0.2 Series60/3.N73-1/4.0735.3.0.2 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1', 1 => 'N73-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1762,7 +1762,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/3.0638.0.0.2 Sent: NokiaN73-1/3.0638.0.0.2 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/3.0638.0.0.2 Sent: NokiaN73-1/3.0638.0.0.2 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1'), 1 => array(0 => '3aN73', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1770,7 +1770,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/4.0726.2.0.1 Series60/3aN73-1/4.0726.2.0.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/4.0726.2.0.1 Series60/3aN73-1/4.0726.2.0.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-2'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1778,7 +1778,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-2/2.0628.0.0.5 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-2/2.0628.0.0.5 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1786,7 +1786,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/4.0839.42.2.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/4.0839.42.2.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1794,7 +1794,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'NokiaN73-1/4.0736.3.2.1Series60/3.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(73708,24384,24390,6, 'NokiaN73-1/4.0736.3.2.1Series60/3.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73(08);SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1802,7 +1802,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'MQQBrowser/2.0 (NokiaN73(08);SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(73708,24384,24390,6, 'MQQBrowser/2.0 (NokiaN73(08);SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N73(12);SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1810,95 +1810,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,24312,6, 'MQQBrowser/2.0 (NokiaN73(12);SymbianOS/9.1 Series60/3.0)');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s-1c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s-1c/032.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s', 1 => '6700s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/032.60/3.2 Nokia6700s/032.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s-1c', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s-1c/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/032.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6700s'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124619,25233,24312,6, '(C)Nokia6700s/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E51-1', 1 => 'E51-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126275,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1/220.34.37; Profile/NokiaE51-1/220.34.37; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E51-2'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126275,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-2/411.34.001; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E51-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126275,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1/100.34.20; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E51'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126275,25233,24312,6, 'Mozilla/5.0(SymbianOS/9.2; U; Series60/3.1 NokiaE51/1.00.000; Profile/MIDP-2.0 Configuration/CLDC-1.1;)AppleWebKit/413(KHTML,like Gecko)Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E51-1Orange'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126275,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1Orange/300.34.52; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(73708,24384,24390,6, 'MQQBrowser/2.0 (NokiaN73(12);SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E6-00', 1 => 'Browser'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1931,6 +1843,94 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(316001,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia500/111.020.0059; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s-1c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s-1c/032.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s', 1 => '6700s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/032.60/3.2 Nokia6700s/032.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s-1c', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s-1c/071.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/032.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.6');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6700s'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124619,24384,24390,6, '(C)Nokia6700s/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E51-1', 1 => 'E51-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(126275,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1/220.34.37; Profile/NokiaE51-1/220.34.37; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E51-2'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(126275,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-2/411.34.001; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E51-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(126275,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1/100.34.20; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E51'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(126275,24384,24390,6, 'Mozilla/5.0(SymbianOS/9.2; U; Series60/3.1 NokiaE51/1.00.000; Profile/MIDP-2.0 Configuration/CLDC-1.1;)AppleWebKit/413(KHTML,like Gecko)Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E51-1Orange'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(126275,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE51-1Orange/300.34.52; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X7-00', 1 => 'Browser'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1981,12 +1981,20 @@ function _H60($useragent) {
     $dl[] = array(189309,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 NokiaX7-00/111.030.0609; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.2.6 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'C1-01', 1 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(93879,25311,31594,6, 'NokiaC1-01/2.0 (04.40) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => 'N8 Series60'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,25233,15136,6, 'NokiaN8 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
+    $dl[] = array(21187,24384,15136,6, 'NokiaN8 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E75-2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -1994,7 +2002,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79612,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE75-2/202.12.01; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(79612,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE75-2/202.12.01; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E75-1'), 1 => array(0 => '3.2NokiaE75'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2002,7 +2010,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79612,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2NokiaE75-1/100.48.78 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(79612,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2NokiaE75-1/100.48.78 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E75-1 '), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2010,7 +2018,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79612,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE75-1 /110.48.125 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(79612,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE75-1 /110.48.125 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E75-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2018,7 +2026,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79612,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE75-1/211.12.01; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.1');
+    $dl[] = array(79612,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE75-1/211.12.01; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2058,7 +2066,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60-3.1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60-3.1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-P-2.0 Configuration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2066,7 +2074,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-P-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-P-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81 SymbianOS'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2074,7 +2082,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'NokiaN81 SymbianOS/9.2 Series60/3.1 Release/10.1.028 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'NokiaN81 SymbianOS/9.2 Series60/3.1 Release/10.1.028 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-3', 1 => 'N81-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2082,7 +2090,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-3/11.0.045 Profile/1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-3/11.0.045 Profile/1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2090,7 +2098,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.2 NokiaN81-1/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.2 NokiaN81-1/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2098,7 +2106,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-3/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2106,7 +2114,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'NokiaN81/ SymbianOS/9.2 Series60/3.1 Release/20.1.009 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'NokiaN81/ SymbianOS/9.2 Series60/3.1 Release/20.1.009 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2114,7 +2122,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(30437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/11.0.045 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81(14.01)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2122,7 +2130,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,24312,6, 'NokiaN81(14.01)/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(30437,24384,24390,6, 'NokiaN81(14.01)/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N86;Mozilla', 1 => 'N86-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2130,7 +2138,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166838,25233,24312,6, 'NokiaN86;Mozilla/5.0( SymbianOS/9.3; U; Series60/3.2 NokiaN86-3/20.115; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(166838,24384,24390,6, 'NokiaN86;Mozilla/5.0( SymbianOS/9.3; U; Series60/3.2 NokiaN86-3/20.115; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N86-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2138,7 +2146,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166838,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaN86-3/30.009;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(166838,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaN86-3/30.009;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N86'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2146,7 +2154,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166838,25233,24312,6, 'NokiaN86/21.006 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/425 (KHTML, like Gecko) Vesion/3.0 Browser NG/7.1.13036');
+    $dl[] = array(166838,24384,24390,6, 'NokiaN86/21.006 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/425 (KHTML, like Gecko) Vesion/3.0 Browser NG/7.1.13036');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N86-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2154,7 +2162,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166838,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaN86-1/30.009;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
+    $dl[] = array(166838,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaN86-1/30.009;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N868MP'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2162,103 +2170,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166838,25233,24312,6, 'NokiaN868MP/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N85'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(146108,25233,24312,6, 'NokiaN85/SymbianOS/9.3 Series60/3.2 Release/30.019; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N85-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(146108,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN85-3/11.047; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N85-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(146108,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN85-1/31.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N82', 1 => 'N82'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89991,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN82/31.0.016; Profile/.1 NokiaN82/31.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N82'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89991,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaN82/20.0.062; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N82'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89991,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN82/20.0.062; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N96-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94527,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-3/3.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N96-9.3; U; Series60', 1 => 'N96-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94527,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-9.3; U; Series60/3.2 NokiaN96-1/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N96'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94527,25233,24312,6, 'NokiaN96/SymbianOS/9.3 Series60/3.2 Release/30.033; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N96-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94527,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-1/3.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E73'), 1 => array(0 => '3.2NokiaE73'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(135870,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE73/044.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E73'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(135870,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE73/044.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(166838,24384,24390,6, 'NokiaN868MP/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '700', 1 => 'Browser'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2285,44 +2197,100 @@ function _H60($useragent) {
     $dl[] = array(317182,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia700/112.010.1404; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.20 Mobile Safari/535.1 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N78-5'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N82', 1 => 'N82'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-5/11.043; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(89991,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN82/31.0.016; Profile/.1 NokiaN82/31.0.016; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N78'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N82'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102437,25233,24312,6, 'NokiaN78/SymbianOS/9.3 Series60/3.2 Release/30.014; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(89991,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokianOS/9.2; U; Series60/3.1 NokiaN82/20.0.062; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N78-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N82'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokianOS/9.3; U; Series60/3.2 NokiaN78-1/12.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(89991,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN82/20.0.062; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N78-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N85'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102437,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-1/12.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(146108,24384,24390,6, 'NokiaN85/SymbianOS/9.3 Series60/3.2 Release/30.019; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N78'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'N85-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102437,25233,24312,6, '(C)NokiaN78/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(146108,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN85-3/11.047; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N85-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(146108,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN85-1/31.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N96-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94527,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-3/3.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N96-9.3; U; Series60', 1 => 'N96-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94527,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-9.3; U; Series60/3.2 NokiaN96-1/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N96'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94527,24384,24390,6, 'NokiaN96/SymbianOS/9.3 Series60/3.2 Release/30.033; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N96-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94527,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN96-1/3.00; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E73'), 1 => array(0 => '3.2NokiaE73'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(135870,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2NokiaE73/044.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E73'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(135870,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE73/044.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '701', 1 => 'Browser'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2349,12 +2317,52 @@ function _H60($useragent) {
     $dl[] = array(319345,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia701/112.010.1404; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.20 Mobile Safari/535.1 3gpp-gba');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N78-5'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-5/11.043; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N78'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102437,24384,24390,6, 'NokiaN78/SymbianOS/9.3 Series60/3.2 Release/30.014; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => 'N78-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokianOS/9.3; U; Series60/3.2 NokiaN78-1/12.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N78-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102437,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN78-1/12.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N78'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102437,24384,24390,6, '(C)NokiaN78/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => 'N79-3'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(25161,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-3/30.019; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(24312,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-3/30.019; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N79'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2362,7 +2370,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(25161,25233,24312,6, 'NokiaN79/CMCC SymbianOS/9.3 Series60/3.2 Release/11.049; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(24312,24384,24390,6, 'NokiaN79/CMCC SymbianOS/9.3 Series60/3.2 Release/11.049; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N79-1', 1 => 'N79-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2370,7 +2378,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(25161,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; PanOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(24312,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; PanOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N79-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2378,15 +2386,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(25161,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N70'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(58036,30509,301731,6, 'NokiaN70/ 5.0741.4.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.0.102/27/351/UCWEB');
+    $dl[] = array(24312,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/32.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2397,12 +2397,20 @@ function _H60($useragent) {
     $dl[] = array(58036,30509,301731,6, 'NokiaN70-1/5.0737.3.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/351/UCWEB');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N70'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58036,30509,301731,6, 'NokiaN70/ 5.0741.4.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/351/UCWEB');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => '5250'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(163375,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5250/11.0.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 3gpp-gba');
+    $dl[] = array(163375,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5250/11.0.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6210N.3; U; Series60', 1 => '6210Navigator'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2410,7 +2418,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93951,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6210N.3; U; Series60/3.2 Nokia6210Navigator/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93951,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6210N.3; U; Series60/3.2 Nokia6210Navigator/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6OS', 1 => '6210Navigator'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2418,7 +2426,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93951,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6OS/9.3; U; Series60/3.2 Nokia6210Navigator/03.25; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93951,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6OS/9.3; U; Series60/3.2 Nokia6210Navigator/03.25; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6210Navigator'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2426,7 +2434,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93951,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NobianOS/9.3; U; Series60/3.2 Nokia6210Navigator/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93951,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NobianOS/9.3; U; Series60/3.2 Nokia6210Navigator/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6210s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2434,7 +2442,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93951,25233,24312,6, 'Nokia6210s/03.09.2 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93951,24384,24390,6, 'Nokia6210s/03.09.2 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6210Navigator'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2442,7 +2450,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93951,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6210Navigator/05.16; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93951,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6210Navigator/05.16; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235-1d'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2450,7 +2458,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5235-1d/12.8.092; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5235-1d/12.8.092; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235-1b', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2458,7 +2466,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1b/50.8.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1b/50.8.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235-1d', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2466,7 +2474,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1d/50.8.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1d/50.8.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2474,7 +2482,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235/21.6.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235/21.6.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235-1b'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2482,7 +2490,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1b/20.8.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235-1b/20.8.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5235', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2490,7 +2498,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235/51.6.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(139664,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5235/51.6.002; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6790s-1b'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2498,7 +2506,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(111354,25233,24312,6, 'Nokia6790s-1b/ATT.03.22 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(111354,24384,24390,6, 'Nokia6790s-1b/ATT.03.22 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6790s-1c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2506,7 +2514,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(111354,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6790s-1c/20.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(111354,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6790s-1c/20.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E90-1', 1 => 'E90-1'), 1 => array(0 => '3.1', 1 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2514,7 +2522,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(126203,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE90-1/0; U; Series60/3.1 NokiaE90-1/07.22.4.0; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(126203,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE90-1/0; U; Series60/3.1 NokiaE90-1/07.22.4.0; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E-90-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2522,7 +2530,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(126203,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE-90-1/07.24.0.3; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(126203,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE-90-1/07.24.0.3; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E90-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2530,7 +2538,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(126203,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE90-1/400.34.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(126203,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE90-1/400.34.93 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2557,100 +2565,12 @@ function _H60($useragent) {
     $dl[] = array(73492,30509,30587,6, 'NokiaN72/SymbianOS/8.0 Series60/2.6');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '5320'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Nokia5320/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320d-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320di'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Nokia5320di/05.302 SymbianOS/9.3 Series60/3.2 Release/03.19.2009 Browser/Mozilla5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320_CMCC'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Nokia5320_CMCC/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => '5320d-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320d-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 ymbianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320d-1b'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320d-1b/03.08; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => ' 5320di XpressMusic'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia 5320di XpressMusic/05.302; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320di XpressMusic'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320di XpressMusic/06.203; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320diXpressMusic(19.01)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Nokia5320diXpressMusic(19.01)/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5320(19.01)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50881,25233,24312,6, 'Nokia5320(19.01)/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
   $ns = E60($segments, array(0 => array(0 => '6220c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104656,25233,24312,6, 'Nokia6220c/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104656,24384,24390,6, 'Nokia6220c/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6220c-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2658,7 +2578,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104656,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6220c-1/05.15; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104656,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6220c-1/05.15; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6220c-iguration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2666,15 +2586,95 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104656,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6220c-iguration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(104656,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6220c-iguration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'C1-01', 1 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '5320'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93879,25311,31594,6, 'NokiaC1-01/2.0 (04.40) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(50881,24384,24390,6, 'Nokia5320/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320d-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320di'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Nokia5320di/05.302 SymbianOS/9.3 Series60/3.2 Release/03.19.2009 Browser/Mozilla5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320_CMCC'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Nokia5320_CMCC/04.13 (SymbianOS/9.3; U; Series60/3.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'nOS', 1 => '5320d-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320d-1'), 1 => array(0 => '3.2', 1 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 ymbianOS/9.3; U; Series60/3.2 Nokia5320d-1/04.13; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320d-1b'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320d-1b/03.08; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => ' 5320di XpressMusic'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia 5320di XpressMusic/05.302; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320di XpressMusic'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5320di XpressMusic/06.203; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320diXpressMusic(19.01)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Nokia5320diXpressMusic(19.01)/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5320(19.01)'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(50881,24384,24390,6, 'Nokia5320(19.01)/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6630', 1 => '6630'), 1 => array(0 => '2.6', 1 => '2.6'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2709,6 +2709,22 @@ function _H60($useragent) {
     $dl[] = array(138728,30509,30587,6, 'Nokia6630/2.0 (4.0437.4) SymbianOS/7.0s Series60/2.1Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => '5228', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162007,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5228/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5228'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162007,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5228/21.1.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => '6680', 1 => '6680'), 1 => array(0 => '2.6', 1 => '2.6'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -2725,20 +2741,12 @@ function _H60($useragent) {
     $dl[] = array(97810,30509,30587,6, 'Nokia6680/1.0 (4.04.07) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '5228', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '6760s-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(162007,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5228/50.1.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.25 Mobile Safari/533.4 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5228'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162007,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Nokia5228/21.1.004; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.5.2 3gpp-gba');
+    $dl[] = array(44577,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6760s-1/03.38; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2755,14 +2763,6 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(102509,30509,30587,6, 'Nokia7610/2.0 (7.0642.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6760s-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44577,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6760s-1/03.38; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3230', 1 => '3230'), 1 => array(0 => '2.1', 1 => '2.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2786,7 +2786,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(111210,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6730c-1/021.009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.13126');
+    $dl[] = array(111210,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6730c-1/021.009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.13126');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6730c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2794,135 +2794,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(111210,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6730c/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2Nokia5630d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(69796,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2Nokia5630d-1/012.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5630donfiguration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(69796,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5630donfiguration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5630_CMCC'), 1 => array(0 => '3.2.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(69796,25233,24312,6, 'Nokia5630_CMCC/012.008 (SymbianOS/9.3; U; Series60/3.2.3 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(69796,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5630d-1/013.009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(69796,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2.3 Nokia5630d-1/011.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5MIDP-2.1 Configuration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'C'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '20c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia20c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E-90-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE-90-1/07.02.4.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E55-2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE55-2/1.00.000; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413(KHTML, like Gecko)Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'NXX;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'MQQBrowser/2.0 (NokiaNXX;SymbianOS/9.1 Series60/3.0)');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'NXX'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, '(C)NokiaNXX/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'NXX;SymbianOS'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,25233,24312,6, 'iBrowser/2.5 (NokiaNXX;SymbianOS/9.3 Series60/3.2)');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6720c'), 1 => array(0 => '3.2Nokia6720c'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(125267,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2Nokia6720c/012.008 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6720c-1b'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(125267,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6720c-1b/012.008 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6720c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(125267,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6720c/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $dl[] = array(111210,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6730c/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '603', 1 => 'Browser'), 1 => array(0 => '5.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2930,7 +2802,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(532930,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia603/112.010.1404; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.20 Mobile Safari/535.1 3gpp-gba');
+    $dl[] = array(533074,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia603/112.010.1404; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.20 Mobile Safari/535.1 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '603', 1 => 'Browser'), 1 => array(0 => '5.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2938,7 +2810,135 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(532930,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia603/111.020.0310; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.1.14 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(533074,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia603/111.020.0310; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.1.14 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2Nokia5630d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69796,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2Nokia5630d-1/012.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5630donfiguration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69796,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5630donfiguration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5630_CMCC'), 1 => array(0 => '3.2.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69796,24384,24390,6, 'Nokia5630_CMCC/012.008 (SymbianOS/9.3; U; Series60/3.2.3 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69796,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5630d-1/013.009; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5630d-1'), 1 => array(0 => '3.2.3'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69796,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2.3 Nokia5630d-1/011.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5MIDP-2.1 Configuration'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'C'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.2 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '20c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia20c/7.10; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E-90-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE-90-1/07.02.4.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E55-2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaE55-2/1.00.000; Profile/MIDP-2.1 Configuration/CLDC-1.1;) AppleWebKit/413(KHTML, like Gecko)Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'NXX;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'MQQBrowser/2.0 (NokiaNXX;SymbianOS/9.1 Series60/3.0)');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'NXX'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, '(C)NokiaNXX/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'NXX;SymbianOS'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(21187,24384,24390,6, 'iBrowser/2.5 (NokiaNXX;SymbianOS/9.3 Series60/3.2)');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6720c'), 1 => array(0 => '3.2Nokia6720c'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(125267,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2Nokia6720c/012.008 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6720c-1b'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(125267,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6720c-1b/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6720c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(125267,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6720c/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6710s'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2946,7 +2946,31 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(91431,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6710s/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $dl[] = array(91431,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6710s/031.022; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.3.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6110Navigator', 1 => '6110Navigator'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(180831,24384,24390,6, 'Nokia6110Navigator/5.11.1 (SymbianOS/9.2; U; Series60/3.1 Nokia6110Navigator/5.11.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6110Navigator'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(180831,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6110Navigator/3.58; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6110'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(180831,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6110/3.01; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -2963,30 +2987,6 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(73492,30509,301731,6, 'NokiaN72/ 5.0741.4.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB7.9.0.94/27/999');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6110Navigator', 1 => '6110Navigator'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(180831,25233,24312,6, 'Nokia6110Navigator/5.11.1 (SymbianOS/9.2; U; Series60/3.1 Nokia6110Navigator/5.11.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6110Navigator'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(180831,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6110Navigator/3.58; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6110'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(180831,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6110/3.01; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3010,7 +3010,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(281505,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5730s-1/100.48.122; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(281505,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia5730s-1/100.48.122; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E6le'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3018,7 +3018,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93159,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE6le/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(93159,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE6le/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E61i Orange', 1 => ' E61i'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3026,7 +3026,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93159,25233,24312,6, 'NokiaE61i Orange/1.0 Series60/3.0 Nokia E61i/2.0633.65.01 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(93159,24384,24390,6, 'NokiaE61i Orange/1.0 Series60/3.0 Nokia E61i/2.0633.65.01 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E61-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3034,7 +3034,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93159,25233,24312,6, 'NokiaE61-1/3.0 (2.0618.06.05) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(93159,24384,24390,6, 'NokiaE61-1/3.0 (2.0618.06.05) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E61i-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3042,7 +3042,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93159,25233,24312,6, 'NokiaE61i-1/3.0 (1.0633.62.05) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(93159,24384,24390,6, 'NokiaE61i-1/3.0 (1.0633.62.05) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E61'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3050,79 +3050,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(93159,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.1; U; [en-us]; Series60/3.0 NokiaE61/3.0633.09.04) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1 Orange'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1 Orange/1.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1', 1 => 'E65-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1/3.0 (3.0633.69.nt: NokiaE65-1/3.0 (3.0633.69.00) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1/3.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 ProfileianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65'), 1 => array(0 => '3.0Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65/3.0 (1.0633.58.02) SymbianOS/9.1 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1/3.0 (1.0633.18.01) SymbianOS/9.1 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3..02', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1/3.0 (1.0633.18.02) SymbianOS/9.1 Series60/3..02) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65/3.0 (1.0633.58.02) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'NokiaE65-1/3.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E65;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134453,25233,24312,6, 'MQQBrowser/2.0 (NokiaE65;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(93159,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.1; U; [en-us]; Series60/3.0 NokiaE61/3.0633.09.04) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X5-01.2'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3130,7 +3058,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(157063,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01.2/043.016; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
+    $dl[] = array(157063,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01.2/043.016; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X5-01'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3138,47 +3066,79 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(157063,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01/043.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.3 3gpp-gba');
+    $dl[] = array(157063,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaX5-01/043.005; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.3 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'E65-1 Orange'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; [en]; Series60/3.1 Nokia3250/1.00 ) Profile/MIDP-2.0 Configuration/CLDC-1.1;   AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1 Orange/1.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'E65-1', 1 => 'E65-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; [en]; Series60/3.2 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1/3.0 (3.0633.69.nt: NokiaE65-1/3.0 (3.0633.69.00) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '3250', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.2 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.1 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1/3.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 ProfileianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => ' 3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'E65'), 1 => array(0 => '3.0Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,25233,24312,6, 'Nokia 3250/2.0 (3.09) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65/3.0 (1.0633.58.02) SymbianOS/9.1 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,25233,24312,6, 'Nokia3250/2.0 (04.60) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1/3.0 (1.0633.18.01) SymbianOS/9.1 Series60/3.0Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3..02', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1/3.0 (1.0633.18.02) SymbianOS/9.1 Series60/3..02) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E65'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65/3.0 (1.0633.58.02) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E65-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(134453,24384,24390,6, 'NokiaE65-1/3.0 (2.0633.65.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E65;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(134453,24384,24390,6, 'MQQBrowser/2.0 (NokiaE65;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93-1', 1 => 'N93-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3186,7 +3146,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94311,25233,24312,6, 'NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1, NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(94311,24384,24390,6, 'NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1, NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3194,7 +3154,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94311,25233,24312,6, 'NokiaN93-1/20.0.058 SymbianOS/9.1 Series60/3.0 ProfilbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(94311,24384,24390,6, 'NokiaN93-1/20.0.058 SymbianOS/9.1 Series60/3.0 ProfilbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3202,7 +3162,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94311,25233,24312,6, 'NokiaN93/20.0.058 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(94311,24384,24390,6, 'NokiaN93/20.0.058 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3210,7 +3170,47 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94311,25233,24312,6, 'NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(94311,24384,24390,6, 'NokiaN93-1/20.0.041 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138944,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; [en]; Series60/3.1 Nokia3250/1.00 ) Profile/MIDP-2.0 Configuration/CLDC-1.1;   AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138944,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; [en]; Series60/3.2 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '3250', 1 => 'Browser'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138944,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.2 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.1 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => ' 3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138944,24384,24390,6, 'Nokia 3250/2.0 (3.09) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138944,24384,24390,6, 'Nokia3250/2.0 (04.60) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5700', 1 => '5700'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3218,7 +3218,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79252,25233,24312,6, 'Nokia5700/6.01 (SymbianOS/9.2; U; Series60/3.1 Nokia5700/6.01; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(79252,24384,24390,6, 'Nokia5700/6.01 (SymbianOS/9.2; U; Series60/3.1 Nokia5700/6.01; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5700'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3226,7 +3226,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79252,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.2 Nokia5700/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(79252,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.2 Nokia5700/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5700'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3234,39 +3234,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(79252,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia5700/3.83.1; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N76-1figuration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124763,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN76-1figuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N76'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124763,25233,24312,6, 'NokiaN76/CMCC SymbianOS/9.2 Series60/3.1 Release/10.1.048 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N76-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124763,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN76-1/31.0.014 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'E55-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(135726,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE55-1/034.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5');
+    $dl[] = array(79252,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia5700/3.27; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-05', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3274,7 +3242,47 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(516759,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-05/22.5.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(516831,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-05/22.5.007; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.33 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'C5-06', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(558423,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-06/20.6.039; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.27 Mobile Safari/533.4 3gpp-gba');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'E55-1'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(135726,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE55-1/034.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N76-1figuration'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124763,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN76-1figuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N76'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124763,24384,24390,6, 'NokiaN76/CMCC SymbianOS/9.2 Series60/3.1 Release/10.1.048 Mozilla/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N76-1'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(124763,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN76-1/31.0.014 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6670'), 1 => array(0 => '2.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3309,12 +3317,20 @@ function _H60($useragent) {
     $dl[] = array(58036,30509,267463,6, 'NokiaN70-1/5.0737.3.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UCWEB7.8.0.87/27/352');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'C5-06', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '5233'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(558279,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-06/20.6.039; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.27 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(12264,24384,24390,6, 'Nokia5233/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5233;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(12264,24384,24390,6, 'MQQBrowser/2.0 (Nokia5233;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3341,20 +3357,12 @@ function _H60($useragent) {
     $dl[] = array(246177,30509,30587,6, 'Nokia 6600/1.0 (4.09.1) SymbianOS/7.0s Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => '5233'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '808PureView', 1 => 'Browser'), 1 => array(0 => '5.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(13113,25233,24312,6, 'Nokia5233/SymbianOS/9.1 Series60/3.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5233;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(13113,25233,24312,6, 'MQQBrowser/2.0 (Nokia5233;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(565416,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia808PureView/112.020.0309; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.22 Mobile Safari/535.1 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N91'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3362,7 +3370,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(144451,25233,24312,6, 'NokiaN91/3.0 (2.20.008) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(144451,24384,24390,6, 'NokiaN91/3.0 (2.20.008) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N91-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3370,7 +3378,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(144451,25233,24312,6, 'NokiaN91-1/3.0 (2.20.008) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(144451,24384,24390,6, 'NokiaN91-1/3.0 (2.20.008) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N91-2'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3378,7 +3386,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(144451,25233,24312,6, 'NokiaN91-2/3.0 (3.10.023) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(144451,24384,24390,6, 'NokiaN91-2/3.0 (3.10.023) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E50-2'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3386,7 +3394,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102581,25233,24312,6, 'NokiaE50-2/3.0 (06.41.3.0) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(102581,24384,24390,6, 'NokiaE50-2/3.0 (06.41.3.0) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E50-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3394,15 +3402,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102581,25233,24312,6, 'NokiaE50-1/3.0 (06.41.3.0) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(73492,30509,136590,6, 'NokiaN72/5.0819.4.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.7.1.88/27/444');
+    $dl[] = array(102581,24384,24390,6, 'NokiaE50-1/3.0 (06.41.3.0) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6682'), 1 => array(0 => '2.6'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3419,6 +3419,14 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(49047,30509,30587,6, 'Nokia6681/2.0 (7.11.00) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73492,30509,136590,6, 'NokiaN72/5.0819.4.0.1 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.7.1.88/27/444');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3442,7 +3450,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(149278,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3 U; [en]; Series60/3.2 Nokia6650d-1bH/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(149278,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3 U; [en]; Series60/3.2 Nokia6650d-1bH/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6650d-1bh'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3450,7 +3458,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(149278,25233,24312,6, 'Nokia6650d-1bh/ATT.3.26 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(149278,24384,24390,6, 'Nokia6650d-1bh/ATT.3.26 Mozilla/5.0 SymbianOS/9.3; U; [en]; Series60/3.2; Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6650d-1c'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3458,23 +3466,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(149278,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6650d-1c/03.09; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N80-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(75293,25233,24312,6, 'NokiaN80-1/3.0 (4.0632.0.10) Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N80'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(75293,25233,24312,6, 'NokiaN80/1.0.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(149278,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6650d-1c/03.09; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N97mini', 1 => 'Browser'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3482,7 +3474,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122766,12258,12264,6, 'NokiaN97mini/30.0.004 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
+    $dl[] = array(122766,12258,12336,6, 'NokiaN97mini/30.0.004 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.28 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N97mini'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3490,7 +3482,31 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122766,12258,12264,6, 'NokiaN97mini/12.0.110 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $dl[] = array(122766,12258,12336,6, 'NokiaN97mini/12.0.110 (SymbianOS/9.4; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebkit/525 (KHTML, like Gecko) BrowserNG/7.1.4');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N80-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(75293,24384,24390,6, 'NokiaN80-1/3.0 (4.0632.0.10) Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N80'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(75293,24384,24390,6, 'NokiaN80/1.0.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '6124c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(231658,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6124c/4.34; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N90-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3499,22 +3515,6 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(222001,30509,30587,6, 'NokiaN90-1/5.0607.7.3 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6124c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(231658,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6124c/4.34; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '808PureView', 1 => 'Browser'), 1 => array(0 => '5.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(565056,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.4 Nokia808PureView/112.020.0309; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/535.1 (KHTML, like Gecko) NokiaBrowser/8.2.1.22 Mobile Safari/535.1 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => array(0 => '7.6'), 5 => NULL, 6 => NULL), $ls);
@@ -3578,7 +3578,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(111498,25233,24312,6, 'Nokia5500d/2.0 (03.55) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(111498,24384,24390,6, 'Nokia5500d/2.0 (03.55) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6260'), 1 => array(0 => '2.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3594,7 +3594,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(358037,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-04.1/10.1.031; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
+    $dl[] = array(358037,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC5-04.1/10.1.031; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.9 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5230'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3602,7 +3602,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47535,25233,24312,6, 'Nokia5230/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(47535,24384,24390,6, 'Nokia5230/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5230;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3610,31 +3610,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47535,25233,24312,6, 'MQQBrowser/2.0 (Nokia5230;SymbianOS/9.1 Series60/3.0)');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6680'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97810,30509,301731,6, 'Nokia6680/1.0 (5.04.07) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/352/UCWEB');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '6121c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(234550,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6121c/5.11; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102509,30509,136590,6, 'Nokia7610/2.0 (7.0642.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0/UC Browser7.7.1.88/27/444');
+    $dl[] = array(47535,24384,24390,6, 'MQQBrowser/2.0 (Nokia5230;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '701; Profile', 1 => 'Browser'), 1 => array(0 => '5.4'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3661,20 +3637,28 @@ function _H60($useragent) {
     $dl[] = array(21187,94743,94749,6, 'Mozilla/5.0 (Symbian/3; Series60/5.3 Nokia701; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.4.1.14 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N77-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '6121c'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47463,25233,24312,6, 'NokiaN77-1/3.0747.2.0.3 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(234550,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6121c/5.11; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N77-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E60($segments, array(0 => array(0 => '6680'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47463,25233,24312,6, 'NokiaN77-1/3.0838.22.0.1Series60/3.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(97810,30509,301731,6, 'Nokia6680/1.0 (5.04.07) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/352/UCWEB');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102509,30509,136590,6, 'Nokia7610/2.0 (7.0642.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0/UC Browser7.7.1.88/27/444');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93i'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3682,7 +3666,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138872,25233,24312,6, 'NokiaN93i/20.0.084 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(138872,24384,24390,6, 'NokiaN93i/20.0.084 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N93i-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3690,7 +3674,23 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138872,25233,24312,6, 'NokiaN93i-1/10.0.025 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(138872,24384,24390,6, 'NokiaN93i-1/10.0.025 SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N77-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47463,24384,24390,6, 'NokiaN77-1/3.0747.2.0.3 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N77-1'), 1 => array(0 => '3.0', 1 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47463,24384,24390,6, 'NokiaN77-1/3.0838.22.0.1Series60/3.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6122c_CMCC', 1 => '6122c_CMCC'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3698,7 +3698,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(281865,25233,24312,6, 'Nokia6122c_CMCC/4.34 (SymbianOS/9.2; U; Series60/3.1 Nokia6122c_CMCC/4.34; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(281865,24384,24390,6, 'Nokia6122c_CMCC/4.34 (SymbianOS/9.2; U; Series60/3.1 Nokia6122c_CMCC/4.34; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) Mozilla/5.0 AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6122cCN01.02'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3706,7 +3706,15 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(281865,25233,24312,6, 'Nokia6122cCN01.02/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(281865,24384,24390,6, 'Nokia6122cCN01.02/SymbianOS/9.1 Series60/3.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => '5236'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(259489,12258,12336,6, 'Nokia5236/51.9.002 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3722,15 +3730,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139448,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-2/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => '5236'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(259489,12258,12264,6, 'Nokia5236/51.9.002 (SymbianOS/9.4; U; Series60/5.0; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML,like Gecko) Safari/413 3gpp-gba');
+    $dl[] = array(139448,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-2/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3749,20 +3749,20 @@ function _H60($useragent) {
     $dl[] = array(138728,30509,136590,6, 'Nokia6630/1.0 (6.03.40) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.7.1.88/27/444');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N75-3'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(200269,24384,24390,6, 'NokiaN75-3/3.0(20.1.172) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
     $dl[] = array(102509,30509,9450,6, 'Nokia7610/2.0 (7.0642.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0/UC Browser7.4.0.65/27/351');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N75-3'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(200269,25233,24312,6, 'NokiaN75-3/3.0(20.1.172) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => array(0 => '7.6'), 5 => NULL, 6 => NULL), $ls);
@@ -3794,7 +3794,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134381,25233,24312,6, 'NokiaE70-2/3.0 (2.0618.07.10) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(134381,24384,24390,6, 'NokiaE70-2/3.0 (2.0618.07.10) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E70-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3802,7 +3802,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134381,25233,24312,6, 'NokiaE70-1/3.0 (1.0610.05.06) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(134381,24384,24390,6, 'NokiaE70-1/3.0 (1.0610.05.06) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5238'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3810,7 +3810,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(254378,12258,12264,6, 'Nokia5238/40.9.003 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
+    $dl[] = array(254378,12258,12336,6, 'Nokia5238/40.9.003 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6290'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3818,7 +3818,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(213439,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6290/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(213439,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Nokia6290/4.21; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6290'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3826,7 +3826,39 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(213439,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3 U; [en]; Series60/3.2 Nokia6290/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(213439,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3 U; [en]; Series60/3.2 Nokia6290/1.00 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N-Gage'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,177291,6, 'NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2', 1 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,177291,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 ProfilbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,177291,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N-Gage'), 1 => array(0 => '1.2Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,177291,6, 'NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6681'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3837,44 +3869,12 @@ function _H60($useragent) {
     $dl[] = array(49047,30509,301731,6, 'Nokia6681/2.0 (6.09.00) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.9.1.120/27/351/UCWEB');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N-Gage'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,177291,6, 'NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2', 1 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,177291,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 ProfilbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,177291,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N-Gage'), 1 => array(0 => '1.2Profile'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,177291,6, 'NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2Profile/MIDP-1.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
   $ns = E60($segments, array(0 => array(0 => 'E66-3'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(152661,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-3/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(152661,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaE66-3/300.21.012; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.8'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3898,7 +3898,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,25233,24312,6, 'Nokia5800wXpressMusic/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(104872,24384,24390,6, 'Nokia5800wXpressMusic/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800XpressMusic'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3906,7 +3906,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,25233,24312,6, 'Nokia5800XpressMusic/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(104872,24384,24390,6, 'Nokia5800XpressMusic/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5800XpressMusic;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3914,7 +3914,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104872,25233,24312,6, 'MQQBrowser/2.0 (Nokia5800XpressMusic;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(104872,24384,24390,6, 'MQQBrowser/2.0 (Nokia5800XpressMusic;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3650'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3941,6 +3941,22 @@ function _H60($useragent) {
     $dl[] = array(49047,30509,136590,6, 'Nokia6681/2.0 (6.09.00) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.7.1.88/27/444');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N71-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(262299,24384,24390,6, 'NokiaN71-1/2.0613 Series60/3.0  Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E60($segments, array(0 => array(0 => 'N71'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(262299,24384,24390,6, 'V804NK/NKJ001 Series60/3.0 NokiaN71/3.0630 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => NULL, 4 => array(0 => '7.6'), 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -3957,28 +3973,12 @@ function _H60($useragent) {
     $dl[] = array(102509,30509,28997,6, 'Nokia7610/2.0 (6.0522.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0/UC Browser7.6.1.82/27/354');
     $ls = $ns;
   }
-  $ns = E60($segments, array(0 => array(0 => 'N71-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(262299,25233,24312,6, 'NokiaN71-1/2.0613 Series60/3.0  Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N71'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(262299,25233,24312,6, 'V804NK/NKJ001 Series60/3.0 NokiaN71/3.0630 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
   $ns = E60($segments, array(0 => array(0 => 'E62'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139736,25233,24312,6, 'NokiaE62/3.0 (2.0618.06.32); SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(139736,24384,24390,6, 'NokiaE62/3.0 (2.0618.06.32); SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'E62-1'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -3986,7 +3986,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139736,25233,24312,6, 'NokiaE62-1/3.0 (2.0618.06.17); SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
+    $dl[] = array(139736,24384,24390,6, 'NokiaE62-1/3.0 (2.0618.06.17); SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4010,7 +4010,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(116909,25233,24312,6, 'NokiaE60-1/3.0 (1.0610.02.15) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(116909,24384,24390,6, 'NokiaE60-1/3.0 (1.0610.02.15) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4018,7 +4018,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,9450,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.4.0.65/26/352');
+    $dl[] = array(154771,24384,9450,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.4.0.65/26/352');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4026,7 +4026,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,25233,24312,6, 'NokiaC5-03/SymbianOS/9.1 Series60/3.0 3gpp-gba');
+    $dl[] = array(184269,24384,24390,6, 'NokiaC5-03/SymbianOS/9.1 Series60/3.0 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C5-03;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4034,7 +4034,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(184269,25233,24312,6, 'MQQBrowser/2.7 (NokiaC5-03;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(184269,24384,24390,6, 'MQQBrowser/2.7 (NokiaC5-03;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4042,7 +4042,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,136590,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.7.1.88/26/444');
+    $dl[] = array(154771,24384,136590,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.7.1.88/26/444');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6680'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4058,7 +4058,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(163375,25233,24312,6, 'Nokia5250/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(163375,24384,24390,6, 'Nokia5250/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5250;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4066,15 +4066,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(163375,25233,24312,6, 'MQQBrowser/2.0 (Nokia5250;SymbianOS/9.1 Series60/3.0)');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,10386,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.2.2.51/26/352');
+    $dl[] = array(163375,24384,24390,6, 'MQQBrowser/2.0 (Nokia5250;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.7'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4085,6 +4077,14 @@ function _H60($useragent) {
     $dl[] = array(246177,30509,136590,6, 'Nokia6600/1.0 (5.53.0) SymbianOS/7.0s Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0/UC Browser7.7.1.88/27/444');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,10386,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.2.2.51/26/352');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => '6630'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
@@ -4093,12 +4093,20 @@ function _H60($useragent) {
     $dl[] = array(138728,30509,9450,6, 'Nokia6630/1.0 (5.03.08) SymbianOS/8.0 Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.4.0.65/27/351');
     $ls = $ns;
   }
+  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(154771,24384,301731,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.9.0.102/26/351/UCWEB');
+    $ls = $ns;
+  }
   $ns = E60($segments, array(0 => array(0 => 'C6-00'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,25233,24312,6, 'NokiaC6-00/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(139952,24384,24390,6, 'NokiaC6-00/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C6-00;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4106,7 +4114,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139952,25233,24312,6, 'MQQBrowser/2.0 (NokiaC6-00;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(139952,24384,24390,6, 'MQQBrowser/2.0 (NokiaC6-00;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6620'), 1 => array(0 => '2.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4115,14 +4123,6 @@ function _H60($useragent) {
       unset($dl);
     }
     $dl[] = array(190390,30509,30587,6, 'Nokia6620/2.0 (4.22.1) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0');
-    $ls = $ns;
-  }
-  $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '1.2'), 2 => NULL, 3 => array(0 => '7.9'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(154771,25233,301731,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.9.0.102/26/351/UCWEB');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6630'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.8'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4138,7 +4138,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(185853,25233,177291,6, 'Nokia3660/1.0 (5.08) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(185853,24384,177291,6, 'Nokia3660/1.0 (5.08) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3660'), 1 => array(0 => '0.9'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4146,7 +4146,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(185853,25233,177291,6, 'Nokia3660/1.0 (4.57) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(185853,24384,177291,6, 'Nokia3660/1.0 (4.57) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N72'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4162,7 +4162,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,267463,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.8.0.95/26/352');
+    $dl[] = array(154771,24384,267463,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.8.0.95/26/352');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C7-00'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4170,7 +4170,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(162799,25233,24312,6, 'NokiaC7-00/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(162799,24384,24390,6, 'NokiaC7-00/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'C7-00;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4178,7 +4178,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(162799,25233,24312,6, 'MQQBrowser/2.0 (NokiaC7-00;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(162799,24384,24390,6, 'MQQBrowser/2.0 (NokiaC7-00;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6681'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4194,7 +4194,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,12258,12264,6, 'Nokia5802_CMCC/21.0.025.6 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(21187,12258,12336,6, 'Nokia5802_CMCC/21.0.025.6 (SymbianOS/9.4; U; Series60/5.0 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => ' 5800 XpressMusic'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4202,7 +4202,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia 5800 XpressMusic/RM-35601; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(21187,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia 5800 XpressMusic/RM-35601; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5232-2G'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4210,7 +4210,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5232-2G/10.0.055; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(21187,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5232-2G/10.0.055; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => array(0 => '7.0'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4258,7 +4258,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,25233,24312,6, 'NokiaX6-00/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(107019,24384,24390,6, 'NokiaX6-00/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X6-00;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4266,7 +4266,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107019,25233,24312,6, 'MQQBrowser/2.0 (NokiaX6-00;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(107019,24384,24390,6, 'MQQBrowser/2.0 (NokiaX6-00;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.6'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4282,7 +4282,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,28997,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.6.1.82/26/352');
+    $dl[] = array(154771,24384,28997,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.6.1.82/26/352');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.8'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4298,7 +4298,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(311824,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6650fold/04.18; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(311824,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Nokia6650fold/04.18; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '2.0'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4314,7 +4314,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(218395,25233,24312,6, 'NokiaC5-01_TD/CMCC SymbianOS/9.3 Series60/3.2 Release/10.1026.018; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(218395,24384,24390,6, 'NokiaC5-01_TD/CMCC SymbianOS/9.3 Series60/3.2 Release/10.1026.018; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3250'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4322,7 +4322,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138944,12258,12264,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/5.0 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(138944,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/5.0 Nokia3250/1.00; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N-GageQD'), 1 => array(0 => '0.9'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4330,7 +4330,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,7670,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(154771,24384,7670,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N-Gage'), 1 => array(0 => '0.9'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4338,7 +4338,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,7670,6, 'NokiaN-Gage/1.0 (4.03) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(154771,24384,7670,6, 'NokiaN-Gage/1.0 (4.03) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X5-00_TD'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4346,7 +4346,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(245601,25233,24312,6, 'NokiaX5-00_TD/CMCC SymbianOS/9.3 Series60/3.2 Release/12.1026.023; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(245601,24384,24390,6, 'NokiaX5-00_TD/CMCC SymbianOS/9.3 Series60/3.2 Release/12.1026.023; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'X5-00'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4354,7 +4354,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(245601,25233,24312,6, 'NokiaX5-00/CMCC SymbianOS/9.3 Series60/3.2 Release/10.1018.28; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(245601,24384,24390,6, 'NokiaX5-00/CMCC SymbianOS/9.3 Series60/3.2 Release/10.1018.28; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5530;SymbianOS'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4362,7 +4362,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138656,25233,24312,6, 'MQQBrowser/2.0 (Nokia5530;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(138656,24384,24390,6, 'MQQBrowser/2.0 (Nokia5530;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6788i'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4370,7 +4370,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(201717,25233,24312,6, 'Nokia6788i/CMCC SymbianOS/9.3 Series60/3.2 Release/19.013.314.1; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(201717,24384,24390,6, 'Nokia6788i/CMCC SymbianOS/9.3 Series60/3.2 Release/19.013.314.1; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N8-00', 1 => 'N8-00'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4378,7 +4378,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94671,25233,24312,6, 'NokiaN8-00/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN8-00/5.11; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(94671,24384,24390,6, 'NokiaN8-00/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN8-00/5.11; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N8-00'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4386,7 +4386,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94671,25233,24312,6, 'NokiaN8-00/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(94671,24384,24390,6, 'NokiaN8-00/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '7610'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.0'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4410,7 +4410,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(139664,25233,24312,6, 'MQQBrowser/2.0 (Nokia5235;SymbianOS/9.1 Series60/3.0)');
+    $dl[] = array(139664,24384,24390,6, 'MQQBrowser/2.0 (Nokia5235;SymbianOS/9.1 Series60/3.0)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6680'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4442,7 +4442,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(154771,25233,11322,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.0.0.41/26/352');
+    $dl[] = array(154771,24384,11322,6, 'NokiaN-GageQD/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0/UC Browser7.0.0.41/26/352');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6680'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.8'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4458,7 +4458,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(306707,25233,24312,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 VertuConstellationQuest/051.844.1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(306707,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 VertuConstellationQuest/051.844.1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => NULL, 3 => NULL, 4 => array(0 => '7.5'), 5 => NULL, 6 => NULL), $ls);
@@ -4498,7 +4498,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404814,25233,7670,6, 'Nokia7650/1.0 SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(404886,24384,7670,6, 'Nokia7650/1.0 SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5232'), 1 => array(0 => '5.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4506,7 +4506,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(305987,12258,12264,6, 'Nokia5232/CMCC (SymbianOS/9.4; Series60/5.0; Release/21.1.004; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
+    $dl[] = array(305987,12258,12336,6, 'Nokia5232/CMCC (SymbianOS/9.4; Series60/5.0; Release/21.1.004; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6681'), 1 => array(0 => '2.6'), 2 => NULL, 3 => array(0 => '7.2'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4530,7 +4530,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(254378,25233,24312,6, 'Nokia5238/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(254378,24384,24390,6, 'Nokia5238/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6638'), 1 => array(0 => '2.7'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4562,7 +4562,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122766,25233,24312,6, 'NokiaN97mini/SymbianOS/9.1 Series60/3.0');
+    $dl[] = array(122766,24384,24390,6, 'NokiaN97mini/SymbianOS/9.1 Series60/3.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6670'), 1 => array(0 => '2.1'), 2 => NULL, 3 => array(0 => '7.4'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4626,7 +4626,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(138728,25233,24312,6, 'Mozilla/4.0 (compatible; MSIE 5.0; Series60/3.0 Nokia6630/4.06.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
+    $dl[] = array(138728,24384,24390,6, 'Mozilla/4.0 (compatible; MSIE 5.0; Series60/3.0 Nokia6630/4.06.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6788'), 1 => array(0 => '3.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4634,7 +4634,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(341433,25233,24312,6, 'Nokia6788/CMCC SymbianOS/9.3 Series60/3.2 Release/11.018.314.1; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
+    $dl[] = array(341433,24384,24390,6, 'Nokia6788/CMCC SymbianOS/9.3 Series60/3.2 Release/11.018.314.1; Mozilla/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 AppleWebKit/413 (KHTML,like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3600'), 1 => array(0 => '0.9'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4650,7 +4650,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(246177,30509,18014,6, 'Nokia6600/1.0 (3.42.1) SymbianOS/7.0s Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.4.100 (GUI) MMP/2.0');
+    $dl[] = array(246177,30509,18086,6, 'Nokia6600/1.0 (3.42.1) SymbianOS/7.0s Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.4.100 (GUI) MMP/2.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '801T_TD', 1 => 'Browser'), 1 => array(0 => '5.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4658,7 +4658,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(547656,94743,94749,6, 'Nokia801T_TD/CMCC (SymbianOS/3; Release/027.005; Series60/5.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko)NokiaBrowser/7.3.1.37 Mobile Safari/533.4 3gpp-gba');
+    $dl[] = array(547800,94743,94749,6, 'Nokia801T_TD/CMCC (SymbianOS/3; Release/027.005; Series60/5.2 Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko)NokiaBrowser/7.3.1.37 Mobile Safari/533.4 3gpp-gba');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '7020', 1 => '3250'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4666,7 +4666,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134525,25311,24312,6, 'Nokia7020/2.0 (08.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(134525,25311,24390,6, 'Nokia7020/2.0 (08.10) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '5320(19.01)'), 1 => array(0 => '2.6'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4698,7 +4698,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(41834,25233,24312,6, 'Nokia2700c-2/2.0 (09.98) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(41834,24384,24390,6, 'Nokia2700c-2/2.0 (09.98) Profile/MIDP-2.1 Configuration/CLDC-1.1 Nokia3250/2.0 (3.21) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '3620'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4706,7 +4706,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404742,25233,177291,6, 'Nokia3620/1.0 (3.00) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(404814,24384,177291,6, 'Nokia3620/1.0 (3.00) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '6600'), 1 => array(0 => '1.2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4714,7 +4714,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(246177,25233,177291,6, 'Nokia6600/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
+    $dl[] = array(246177,24384,177291,6, 'Nokia6600/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N70-1'), 1 => array(0 => '2.8'), 2 => array(0 => '7.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4770,7 +4770,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(73708,25233,15136,6, 'NokiaN73 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
+    $dl[] = array(73708,24384,15136,6, 'NokiaN73 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N80 Series60'), 1 => array(0 => '3.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4778,7 +4778,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(75293,25233,15136,6, 'NokiaN80 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
+    $dl[] = array(75293,24384,15136,6, 'NokiaN80 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => '100'), 1 => array(0 => '2.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4786,7 +4786,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404670,30509,30587,6, 'Nokia100/2.0 (2.0423.0_rc02) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0');
+    $dl[] = array(404742,30509,30587,6, 'Nokia100/2.0 (2.0423.0_rc02) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0');
     $ls = $ns;
   }
   $ns = E60($segments, array(0 => array(0 => 'N81-1'), 1 => array(0 => '3.1'), 2 => array(0 => '7.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -4794,7 +4794,7 @@ function _H60($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(30437,25233,61499,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/1.00 Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO');
+    $dl[] = array(30437,24384,61499,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/1.00 Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO');
     $ls = $ns;
   }
   return $dl;

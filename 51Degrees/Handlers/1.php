@@ -51,7 +51,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'Amoi-A636/(2006.10.21)SW1.0.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E1($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'Amoi-M600/(2006.10.21)SW1.0.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E1($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'Amoi-M515/(2006.10.21)SW1.0.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E1($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'Amoi-E5/(2006.10.21)SW1.0.2/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E1($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'Amoi-F90/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-A310/Plat-F-VIM/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.102 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-A320/Plat-F-VIM/WAP2.0 UP.Browser/6.2.2.7.c.1.102 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-F8/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-F8/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.102 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoisonic-F9/1.0 UP.Browser/6.2.2.1.250 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-F90/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -150,7 +150,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-A9B/1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -159,7 +159,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-CS6/1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -168,7 +168,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-M636/Plat-V-VIM/WAP2.0 UP.Browser/6.2.3.8.c.1.101 (GUI) MMP/2.0';
   $ns = E1($useragent, $ua, $ls);
@@ -177,7 +177,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi-M630/Plat-V-VIM/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.8.c.1.100 (GUI) MMP/2.0';
   $ns = E1($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,18014,6, $ua);
+    $dl[] = array(21187,21180,18086,6, $ua);
   }
   $ua = 'Amoi 8512/R23.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R21.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -204,7 +204,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R18.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -213,7 +213,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R22.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -222,7 +222,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R10.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -231,7 +231,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R18.7 NF-Browser/3.3 Novarra-Vision/8.0';
   $ns = E1($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R20.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R18.5 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -258,7 +258,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R18.7 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -267,7 +267,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R28.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -276,7 +276,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoi 8512/R18.6 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -285,7 +285,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,34682,6, $ua);
+    $dl[] = array(21187,21180,34682,6, $ua);
   }
   $ua = 'Amoisonic-F99/1.0 UP.Browser/5.0.3.2 (GUI)';
   $ns = E1($useragent, $ua, $ls);
@@ -294,7 +294,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,47823,6, $ua);
+    $dl[] = array(21187,21180,47823,6, $ua);
   }
   $ua = 'Amoi-V600/Plat-EMP/WAP2.0/MIDP2.0/CLDC1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -303,7 +303,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(268399,20173,15136,6, $ua);
+    $dl[] = array(268399,21180,15136,6, $ua);
   }
   $ua = 'Amoi-V600';
   $ns = E1($useragent, $ua, $ls);
@@ -312,7 +312,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(268399,20173,15136,6, $ua);
+    $dl[] = array(268399,21180,15136,6, $ua);
   }
   $ua = 'Amoi-V100/Plat-EMP/WAP2.0/MIDP2.0/CLDC1.0';
   $ns = E1($useragent, $ua, $ls);
@@ -321,7 +321,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(268543,20173,15136,6, $ua);
+    $dl[] = array(268543,21180,15136,6, $ua);
   }
   return $dl;
 }
