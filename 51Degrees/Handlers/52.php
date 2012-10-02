@@ -51,7 +51,7 @@ function _H52($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   return $dl;
 }

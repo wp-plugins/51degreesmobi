@@ -53,15 +53,6 @@ function _H85($useragent) {
     }
     $dl[] = array(21187,5707,14193,6, $ua);
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/X02T; Windows Phone 6.5)';
-  $ns = E85($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,6649,6655,6, $ua);
-  }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/02/ PPC; 480x800';
   $ns = E85($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -116,6 +107,15 @@ function _H85($useragent) {
     }
     $dl[] = array(148557,5707,5713,6, $ua);
   }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/X02T; Windows Phone 6.5)';
+  $ns = E85($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(21187,7586,6649,6, $ua);
+  }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/TG01/02; Windows Phone 6.5)';
   $ns = E85($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -123,7 +123,7 @@ function _H85($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148557,6649,6655,6, $ua);
+    $dl[] = array(148557,7586,6649,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba_TG01; Windows Phone 6.5)';
   $ns = E85($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H85($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148557,6649,6655,6, $ua);
+    $dl[] = array(148557,7586,6649,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 02; Windows Phone 6.5)';
   $ns = E85($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H85($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148557,6649,6655,6, $ua);
+    $dl[] = array(148557,7586,6649,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081018_092ES2_61';
   $ns = E85($useragent, $ua, $ls);

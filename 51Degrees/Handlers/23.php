@@ -51,7 +51,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(199261,20173,15136,6, $ua);
+    $dl[] = array(199261,21180,15136,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
   $ns = E23($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403223,15130,80981,6, $ua);
+    $dl[] = array(403295,15130,80981,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
   $ns = E23($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403223,15130,80981,6, $ua);
+    $dl[] = array(403295,15130,80981,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600';
   $ns = E23($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403223,20173,15136,6, $ua);
+    $dl[] = array(403295,21180,15136,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT/T120SP0T17 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,20173,18014,6, $ua);
+    $dl[] = array(403367,21180,18086,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT/T120SP0T12 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,20173,18014,6, $ua);
+    $dl[] = array(403367,21180,18086,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT';
   $ns = E23($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,20173,15136,6, $ua);
+    $dl[] = array(403367,21180,15136,6, $ua);
   }
   $ua = 'AUDIOVOX-9155GPX';
   $ns = E23($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403151,20173,15136,6, $ua);
+    $dl[] = array(403223,21180,15136,6, $ua);
   }
   return $dl;
 }

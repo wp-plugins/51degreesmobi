@@ -51,7 +51,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421301,20173,15136,6, $ua);
+    $dl[] = array(421373,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 LG342i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,5556,15136,6, $ua);
+    $dl[] = array(21187,4620,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 LG342i(c10;TJ)';
   $ns = E69($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,5556,15136,6, $ua);
+    $dl[] = array(21187,4620,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 LG342i(c30;TD)';
   $ns = E69($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,5556,15136,6, $ua);
+    $dl[] = array(21187,4620,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S400i';
   $ns = E69($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421085,20173,15136,6, $ua);
+    $dl[] = array(421157,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S400i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421085,20173,15136,6, $ua);
+    $dl[] = array(421157,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S400i(c100,TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421085,20173,15136,6, $ua);
+    $dl[] = array(421157,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S400i(c10,TJ)';
   $ns = E69($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421085,20173,15136,6, $ua);
+    $dl[] = array(421157,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S400i(c10;TC)';
   $ns = E69($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421085,20173,15136,6, $ua);
+    $dl[] = array(421157,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 K550im(c100;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(235414,20173,15136,6, $ua);
+    $dl[] = array(235414,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 K550im(c20;TD)';
   $ns = E69($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(235414,20173,15136,6, $ua);
+    $dl[] = array(235414,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 K550im(c100;TJ)';
   $ns = E69($useragent, $ua, $ls);
@@ -150,7 +150,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(235414,20173,15136,6, $ua);
+    $dl[] = array(235414,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 K550im(c100;TC)';
   $ns = E69($useragent, $ua, $ls);
@@ -159,7 +159,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(235414,20173,15136,6, $ua);
+    $dl[] = array(235414,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z650i';
   $ns = E69($useragent, $ua, $ls);
@@ -168,7 +168,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420509,20173,15136,6, $ua);
+    $dl[] = array(420581,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z650i(c20;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -177,7 +177,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420509,20173,15136,6, $ua);
+    $dl[] = array(420581,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z650i(c100;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420509,20173,15136,6, $ua);
+    $dl[] = array(420581,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z650i(c300;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420509,20173,15136,6, $ua);
+    $dl[] = array(420581,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S410i';
   $ns = E69($useragent, $ua, $ls);
@@ -204,7 +204,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421229,20173,15136,6, $ua);
+    $dl[] = array(421301,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S410i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -213,7 +213,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421229,20173,15136,6, $ua);
+    $dl[] = array(421301,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S410i(c10;TC)';
   $ns = E69($useragent, $ua, $ls);
@@ -222,7 +222,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421229,20173,15136,6, $ua);
+    $dl[] = array(421301,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S410i(c10;TJ)';
   $ns = E69($useragent, $ua, $ls);
@@ -231,7 +231,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421229,20173,15136,6, $ua);
+    $dl[] = array(421301,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S410i(c30;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421229,20173,15136,6, $ua);
+    $dl[] = array(421301,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z320i';
   $ns = E69($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420581,20173,15136,6, $ua);
+    $dl[] = array(420653,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z320i(c100;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -258,7 +258,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420581,20173,15136,6, $ua);
+    $dl[] = array(420653,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z320i(c30;TD)';
   $ns = E69($useragent, $ua, $ls);
@@ -267,7 +267,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420581,20173,15136,6, $ua);
+    $dl[] = array(420653,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 Z320i(c10;TJ)';
   $ns = E69($useragent, $ua, $ls);
@@ -276,7 +276,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420581,20173,15136,6, $ua);
+    $dl[] = array(420653,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S401i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -285,7 +285,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421157,20173,15136,6, $ua);
+    $dl[] = array(421229,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S342i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -294,7 +294,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420437,20173,15136,6, $ua);
+    $dl[] = array(420509,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S342i(c30;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -303,7 +303,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420437,20173,15136,6, $ua);
+    $dl[] = array(420509,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S342i(c100;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -312,7 +312,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420437,20173,15136,6, $ua);
+    $dl[] = array(420509,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S501i';
   $ns = E69($useragent, $ua, $ls);
@@ -321,7 +321,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421373,20173,15136,6, $ua);
+    $dl[] = array(421445,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S501i(c20;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -330,7 +330,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421373,20173,15136,6, $ua);
+    $dl[] = array(421445,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG321i';
   $ns = E69($useragent, $ua, $ls);
@@ -339,7 +339,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420653,20173,15136,6, $ua);
+    $dl[] = array(420725,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG321i (c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -348,7 +348,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420653,20173,15136,6, $ua);
+    $dl[] = array(420725,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG321i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -357,7 +357,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420653,20173,15136,6, $ua);
+    $dl[] = array(420725,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG342i';
   $ns = E69($useragent, $ua, $ls);
@@ -366,7 +366,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420797,20173,15136,6, $ua);
+    $dl[] = array(420869,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG342i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -375,7 +375,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420797,20173,15136,6, $ua);
+    $dl[] = array(420869,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 my401Ci';
   $ns = E69($useragent, $ua, $ls);
@@ -384,7 +384,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409499,20173,15136,6, $ua);
+    $dl[] = array(409571,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 my401Ci(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -393,7 +393,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409499,20173,15136,6, $ua);
+    $dl[] = array(409571,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S720i';
   $ns = E69($useragent, $ua, $ls);
@@ -402,7 +402,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409857,20173,15136,6, $ua);
+    $dl[] = array(409929,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S720i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -411,7 +411,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409857,20173,15136,6, $ua);
+    $dl[] = array(409929,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S730i';
   $ns = E69($useragent, $ua, $ls);
@@ -420,7 +420,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409929,20173,15136,6, $ua);
+    $dl[] = array(410001,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 S730i(c20;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -429,7 +429,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409929,20173,15136,6, $ua);
+    $dl[] = array(410001,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG341i (c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -438,7 +438,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420725,20173,15136,6, $ua);
+    $dl[] = array(420797,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG346i';
   $ns = E69($useragent, $ua, $ls);
@@ -447,7 +447,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421013,20173,15136,6, $ua);
+    $dl[] = array(421085,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG346i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -456,7 +456,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(421013,20173,15136,6, $ua);
+    $dl[] = array(421085,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG345i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -465,7 +465,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409715,20173,15136,6, $ua);
+    $dl[] = array(409787,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG321i (c10;TB) Profile/DoCoMoProfile-1.5oe Configuration/CLDC-1.0 UP.Browser/7.0.0.1.102 (GUI)';
   $ns = E69($useragent, $ua, $ls);
@@ -474,7 +474,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420653,275731,61499,6, $ua);
+    $dl[] = array(420725,276668,61499,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG343i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -483,7 +483,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420869,20173,15136,6, $ua);
+    $dl[] = array(420941,21180,15136,6, $ua);
   }
   $ua = 'portalmmm/2.0 SG344i(c10;TB)';
   $ns = E69($useragent, $ua, $ls);
@@ -492,7 +492,7 @@ function _H69($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420941,20173,15136,6, $ua);
+    $dl[] = array(421013,21180,15136,6, $ua);
   }
   return $dl;
 }

@@ -51,7 +51,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(432705,430322,429478,6, $ua);
+    $dl[] = array(432777,429550,429557,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Palm-Treo850e BM BMC';
   $ns = E65($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(272155,272149,271213,6, $ua);
+    $dl[] = array(271213,271285,271291,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D050; Blazer/4.3) 16;320x448';
   $ns = E65($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(272155,272149,271213,6, $ua);
+    $dl[] = array(271213,271285,271291,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D050; Blazer/4.3) 16;320x320';
   $ns = E65($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(272155,272149,271213,6, $ua);
+    $dl[] = array(271213,271285,271291,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D050; Blazer/4.3)';
   $ns = E65($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(272155,272149,271213,6, $ua);
+    $dl[] = array(271213,271285,271291,6, $ua);
   }
   $ua = 'Palm850/V0100 Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E65($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H65($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381801,50443,13257,6, $ua);
+    $dl[] = array(381873,50443,13257,6, $ua);
   }
   $ua = 'Palm750/v0004 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E65($useragent, $ua, $ls);

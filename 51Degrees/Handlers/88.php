@@ -51,7 +51,7 @@ function _H88($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'W3C_Validator/1.432.2.22';
   $ns = E88($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H88($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'W3C_Validator/1.2';
   $ns = E88($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H88($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   $ua = 'W3C_Validator/1.3';
   $ns = E88($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H88($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,15136,6, $ua);
+    $dl[] = array(21187,21180,15136,6, $ua);
   }
   return $dl;
 }

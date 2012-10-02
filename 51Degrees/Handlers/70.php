@@ -87,7 +87,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,20173,15136,6, $ua);
+    $dl[] = array(145820,21180,15136,6, $ua);
   }
   $ua = 'Qtek8010';
   $ns = E70($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,20173,15136,6, $ua);
+    $dl[] = array(145820,21180,15136,6, $ua);
   }
   $ua = 'Qtek8080';
   $ns = E70($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,20173,15136,6, $ua);
+    $dl[] = array(145820,21180,15136,6, $ua);
   }
   $ua = 'Qtek9090';
   $ns = E70($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,20173,15136,6, $ua);
+    $dl[] = array(145820,21180,15136,6, $ua);
   }
   $ua = 'Qtek S200/2.9.7.122 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (Compatible; MSIE 4.01;Windows CE; PPC; 240X320) UP.Link/6.2.3.15.0 (compatible; MSIE 4.01; Windows     CE; PPC; 240x320)';
   $ns = E70($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417413,15130,80981,6, $ua);
+    $dl[] = array(417485,15130,80981,6, $ua);
   }
   $ua = 'Qtek S200';
   $ns = E70($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417413,20173,15136,6, $ua);
+    $dl[] = array(417485,21180,15136,6, $ua);
   }
   $ua = 'Qtek8020 (Mozilla\\\\4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613';
   $ns = E70($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,198672,79972,6, $ua);
+    $dl[] = array(145820,198744,80044,6, $ua);
   }
   return $dl;
 }

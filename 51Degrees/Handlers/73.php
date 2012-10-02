@@ -51,7 +51,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409571,15130,80981,6, $ua);
+    $dl[] = array(409643,15130,80981,6, $ua);
   }
   $ua = 'Sagem-my721X/1.0/ETN_EE MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)';
   $ns = E73($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,35619,6, $ua);
+    $dl[] = array(21187,21180,35619,6, $ua);
   }
   $ua = 'Sagem-my721X/1.0/ETN_EF MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)';
   $ns = E73($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,35619,6, $ua);
+    $dl[] = array(21187,21180,35619,6, $ua);
   }
   $ua = 'SAGEM-myV-75/1.0 Profile/DoCoMoProfile-1.5oe, MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.5.110 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409643,275731,18014,6, $ua);
+    $dl[] = array(409715,276668,18086,6, $ua);
   }
   return $dl;
 }

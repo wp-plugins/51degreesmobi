@@ -51,7 +51,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JFUS03152010F; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -60,7 +60,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JLUS05242010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -69,7 +69,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JLUS04042011; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -78,7 +78,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JFUSXF; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -87,7 +87,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JFUSXF; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -96,7 +96,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JLUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -105,7 +105,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP7040/JLUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -114,7 +114,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,44943,6, $ua);
+    $dl[] = array(247841,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUS05172010R; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -123,7 +123,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,44943,6, $ua);
+    $dl[] = array(282009,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUS05172010R; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -132,7 +132,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,44943,6, $ua);
+    $dl[] = array(282009,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUSXR; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -141,7 +141,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,44943,6, $ua);
+    $dl[] = array(282009,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUSXR; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -150,7 +150,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,44943,6, $ua);
+    $dl[] = array(282009,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -159,7 +159,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,44943,6, $ua);
+    $dl[] = array(282009,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUS10052009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -168,7 +168,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,44943,6, $ua);
+    $dl[] = array(338252,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUS10052009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -177,7 +177,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,44943,6, $ua);
+    $dl[] = array(338252,154692,44943,6, $ua);
   }
   $ua = 'PantechP7000/JDUS08102009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14822; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -186,7 +186,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,44943,6, $ua);
+    $dl[] = array(338252,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -195,7 +195,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,44943,6, $ua);
+    $dl[] = array(338252,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15645; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -204,7 +204,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,44943,6, $ua);
+    $dl[] = array(338252,154692,44943,6, $ua);
   }
   $ua = 'PantechP9020/JEUS04262010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -213,7 +213,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,44943,6, $ua);
+    $dl[] = array(165614,154692,44943,6, $ua);
   }
   $ua = 'PantechP9020/JEUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -222,7 +222,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,44943,6, $ua);
+    $dl[] = array(165614,154692,44943,6, $ua);
   }
   $ua = 'PantechP9020/JEUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.18216; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -231,7 +231,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,44943,6, $ua);
+    $dl[] = array(165614,154692,44943,6, $ua);
   }
   $ua = 'PantechP6010/JNUS06062011D BMP/1.0.2 DeviceId/141020 NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -240,7 +240,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(323304,154620,189381,6, $ua);
+    $dl[] = array(323304,154692,189453,6, $ua);
   }
   $ua = 'PantechP6010/JNUS06062011D BMP/1.0.2 DeviceId/141020 NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -249,7 +249,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(323304,154620,189381,6, $ua);
+    $dl[] = array(323304,154692,189453,6, $ua);
   }
   $ua = 'PantechP6010/JNUSXD BMP/1.0.2 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -258,7 +258,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(323304,154620,189381,6, $ua);
+    $dl[] = array(323304,154692,189453,6, $ua);
   }
   $ua = 'PantechP6010/JNUSXD BMP/1.0.2 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -267,7 +267,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(323304,154620,189381,6, $ua);
+    $dl[] = array(323304,154692,189453,6, $ua);
   }
   $ua = 'PantechP6010/JNUSX BMP/1.0.2 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -276,7 +276,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(323304,154620,189381,6, $ua);
+    $dl[] = array(323304,154692,189453,6, $ua);
   }
   $ua = 'PantechP7040/JLUS05242010 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -285,7 +285,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JFUS03152010F Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -294,7 +294,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JFUS03152010F Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -303,7 +303,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JLUS04042011 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -312,7 +312,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JLUS05242010 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -321,7 +321,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JLUS04042011 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -330,7 +330,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JFUSXF Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -339,7 +339,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JLUSX Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -348,7 +348,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PantechP7040/JLUSX Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -357,7 +357,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247841,154620,108243,6, $ua);
+    $dl[] = array(247841,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUS08312009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14866; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -366,7 +366,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,44943,6, $ua);
+    $dl[] = array(154620,154692,44943,6, $ua);
   }
   $ua = 'PantechC790/JAUS05252009 Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14329; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -375,7 +375,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,44943,6, $ua);
+    $dl[] = array(154620,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14866; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -384,7 +384,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,44943,6, $ua);
+    $dl[] = array(154620,154692,44943,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14866; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -393,7 +393,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,44943,6, $ua);
+    $dl[] = array(154620,154692,44943,6, $ua);
   }
   $ua = 'PantechP2000/JGUS03292010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -402,7 +402,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322224,154620,44943,6, $ua);
+    $dl[] = array(322224,154692,44943,6, $ua);
   }
   $ua = 'PantechP2000/JGUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -411,7 +411,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322224,154620,44943,6, $ua);
+    $dl[] = array(322224,154692,44943,6, $ua);
   }
   $ua = 'PantechP2000/JGUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.16479; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -420,7 +420,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322224,154620,44943,6, $ua);
+    $dl[] = array(322224,154692,44943,6, $ua);
   }
   $ua = 'PantechP9050/JJUS09132010; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.21329; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -429,7 +429,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,44943,6, $ua);
+    $dl[] = array(304854,154692,44943,6, $ua);
   }
   $ua = 'PantechP9050/JJUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.21329; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -438,7 +438,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,44943,6, $ua);
+    $dl[] = array(304854,154692,44943,6, $ua);
   }
   $ua = 'PantechP9050/JJUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.21329; U; es) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -447,7 +447,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,44943,6, $ua);
+    $dl[] = array(304854,154692,44943,6, $ua);
   }
   $ua = 'PantechP2020/JIUS05172010R NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -456,7 +456,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,17077,6, $ua);
+    $dl[] = array(282009,154692,17077,6, $ua);
   }
   $ua = 'PantechP2020/JIUS05172010R NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -465,7 +465,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,17077,6, $ua);
+    $dl[] = array(282009,154692,17077,6, $ua);
   }
   $ua = 'PantechP2020/JIUSXR NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -474,7 +474,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,17077,6, $ua);
+    $dl[] = array(282009,154692,17077,6, $ua);
   }
   $ua = 'PantechP2020/JIUSX NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -483,7 +483,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(282009,154620,17077,6, $ua);
+    $dl[] = array(282009,154692,17077,6, $ua);
   }
   $ua = 'PantechP2030/JSUS06132011; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.22250; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -492,7 +492,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380865,154620,44943,6, $ua);
+    $dl[] = array(380937,154692,44943,6, $ua);
   }
   $ua = 'PantechP2030/JSUSX; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.22250; U; en-US) Opera 9.50';
   $ns = E67($useragent, $ua, $ls);
@@ -501,7 +501,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380865,154620,44943,6, $ua);
+    $dl[] = array(380937,154692,44943,6, $ua);
   }
   $ua = 'PantechP5000/JTUS08292011A BMP/1.0.2 DeviceId/141025 NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -510,7 +510,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(390128,154620,189381,6, $ua);
+    $dl[] = array(390200,154692,189453,6, $ua);
   }
   $ua = 'PantechP5000/JTUSXA BMP/1.0.2 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -519,7 +519,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(390128,154620,189381,6, $ua);
+    $dl[] = array(390200,154692,189453,6, $ua);
   }
   $ua = 'PantechP5000/JTUSX BMP/1.0.2 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -528,7 +528,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(390128,154620,189381,6, $ua);
+    $dl[] = array(390200,154692,189453,6, $ua);
   }
   $ua = 'PantechP9050/JJUS09132010 NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -537,7 +537,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,17077,6, $ua);
+    $dl[] = array(304854,154692,17077,6, $ua);
   }
   $ua = 'PantechP9050/JJUS09132010 NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -546,7 +546,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,17077,6, $ua);
+    $dl[] = array(304854,154692,17077,6, $ua);
   }
   $ua = 'PantechP9050/JJUSX NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -555,7 +555,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,17077,6, $ua);
+    $dl[] = array(304854,154692,17077,6, $ua);
   }
   $ua = 'PantechP9050/JJUSX NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -564,7 +564,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(304854,154620,17077,6, $ua);
+    $dl[] = array(304854,154692,17077,6, $ua);
   }
   $ua = 'PANTECH-C740/ISUS09012008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -573,7 +573,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275371,154620,108243,6, $ua);
+    $dl[] = array(275371,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C740/ISUS09012008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -582,7 +582,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275371,154620,108243,6, $ua);
+    $dl[] = array(275371,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C740/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -591,7 +591,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275371,154620,108243,6, $ua);
+    $dl[] = array(275371,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C740/ISUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -600,7 +600,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275371,154620,108243,6, $ua);
+    $dl[] = array(275371,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C740/ISUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -609,7 +609,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275371,154620,108243,6, $ua);
+    $dl[] = array(275371,154692,108243,6, $ua);
   }
   $ua = 'PantechP9020/JEUS04262010 NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -618,7 +618,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,17077,6, $ua);
+    $dl[] = array(165614,154692,17077,6, $ua);
   }
   $ua = 'PantechP9020/JEUS04262010 NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -627,7 +627,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,17077,6, $ua);
+    $dl[] = array(165614,154692,17077,6, $ua);
   }
   $ua = 'PantechP9020/JEUSS0111042009 NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -636,7 +636,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,17077,6, $ua);
+    $dl[] = array(165614,154692,17077,6, $ua);
   }
   $ua = 'PantechP9020/JEUSX NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -645,7 +645,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,17077,6, $ua);
+    $dl[] = array(165614,154692,17077,6, $ua);
   }
   $ua = 'PantechP9020/JEUSX NetFront/3.5 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -654,7 +654,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165614,154620,17077,6, $ua);
+    $dl[] = array(165614,154692,17077,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUS10052009 Browser/Obigo/Q05A Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -663,7 +663,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,108243,6, $ua);
+    $dl[] = array(338252,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-P7000/JDUSX Browser/Obigo/Q05A Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -672,7 +672,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,108243,6, $ua);
+    $dl[] = array(338252,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUS10062008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -681,7 +681,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUS10062008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -690,7 +690,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUS08042008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -699,7 +699,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -708,7 +708,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUS10062008Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -717,7 +717,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -726,7 +726,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -735,7 +735,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C530/ITUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -744,7 +744,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253802,154620,108243,6, $ua);
+    $dl[] = array(253802,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUS08312009 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -753,7 +753,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,108243,6, $ua);
+    $dl[] = array(154620,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUS08312009 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -762,7 +762,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,108243,6, $ua);
+    $dl[] = array(154620,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C790/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -771,7 +771,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,108243,6, $ua);
+    $dl[] = array(154620,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C790/JAUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -780,7 +780,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(154627,154620,108243,6, $ua);
+    $dl[] = array(154620,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUS04212008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -789,7 +789,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUS04212008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -798,7 +798,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUS04132009 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E67($useragent, $ua, $ls);
@@ -807,7 +807,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUS04132009 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -816,7 +816,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUS04212008Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -825,7 +825,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -834,7 +834,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C520/IQUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -843,7 +843,25 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265447,154620,108243,6, $ua);
+    $dl[] = array(265447,154692,108243,6, $ua);
+  }
+  $ua = 'PantechP6020/JXUSX BMP/1.0.4 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ns = E67($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(21187,154692,189453,6, $ua);
+  }
+  $ua = 'PantechP6030/JZUSX BMP/1.0.4 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ns = E67($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(21187,154692,189453,6, $ua);
   }
   $ua = 'PantechP2000/JGUS03292010 Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -852,7 +870,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322224,154620,108243,6, $ua);
+    $dl[] = array(322224,154692,108243,6, $ua);
   }
   $ua = 'PantechP2000/JGUSX Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -861,7 +879,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322224,154620,108243,6, $ua);
+    $dl[] = array(322224,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C810/M044.33 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E67($useragent, $ua, $ls);
@@ -935,15 +953,6 @@ function _H67($useragent) {
     }
     $dl[] = array(228411,5707,13257,6, $ua);
   }
-  $ua = 'PantechP6020/JXUSX BMP/1.0.4 DeviceId/X NetFront/4.1 OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
-  $ns = E67($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,154620,189381,6, $ua);
-  }
   $ua = 'PG-C510/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -951,7 +960,16 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,20173,108243,6, $ua);
+    $dl[] = array(21187,21180,108243,6, $ua);
+  }
+  $ua = 'PantechP2030/JSUSX Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ns = E67($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380937,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C820/WM28.31 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E67($useragent, $ua, $ls);
@@ -962,15 +980,6 @@ function _H67($useragent) {
     }
     $dl[] = array(234910,5707,13257,6, $ua);
   }
-  $ua = 'PantechP2030/JSUSX Browser/Obigo/Q05A OMC/1.5.3 Profile/MIDP-2.1 Configuration/CLDC-1.1';
-  $ns = E67($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(380865,154620,108243,6, $ua);
-  }
   $ua = 'PANTECH-C610/IRUS08252008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -978,7 +987,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(357245,154620,108243,6, $ua);
+    $dl[] = array(357245,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C610/IRUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -987,7 +996,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(357245,154620,108243,6, $ua);
+    $dl[] = array(357245,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C630/IUUS10272008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -996,7 +1005,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(251200,154620,108243,6, $ua);
+    $dl[] = array(251200,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C630/IUUS08112008 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1005,7 +1014,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(251200,154620,108243,6, $ua);
+    $dl[] = array(251200,154692,108243,6, $ua);
   }
   $ua = 'PANTECH-C630/IUUSX Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1014,7 +1023,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(251200,154620,108243,6, $ua);
+    $dl[] = array(251200,154692,108243,6, $ua);
   }
   $ua = 'PG-C300/R03 MIC/1.1.14 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1023,7 +1032,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(359339,20173,197521,6, $ua);
+    $dl[] = array(359339,21180,197521,6, $ua);
   }
   $ua = 'PG-C300/R01 MIC/1.1.14 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1032,7 +1041,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(359339,20173,197521,6, $ua);
+    $dl[] = array(359339,21180,197521,6, $ua);
   }
   $ua = 'PG-3000';
   $ns = E67($useragent, $ua, $ls);
@@ -1041,7 +1050,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419501,20173,15136,6, $ua);
+    $dl[] = array(419573,21180,15136,6, $ua);
   }
   $ua = 'PG-3000/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1050,7 +1059,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419501,20173,15136,6, $ua);
+    $dl[] = array(419573,21180,15136,6, $ua);
   }
   $ua = 'PG-3200';
   $ns = E67($useragent, $ua, $ls);
@@ -1059,7 +1068,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419573,20173,15136,6, $ua);
+    $dl[] = array(419645,21180,15136,6, $ua);
   }
   $ua = 'PG-3200/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1068,7 +1077,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419573,20173,15136,6, $ua);
+    $dl[] = array(419645,21180,15136,6, $ua);
   }
   $ua = 'PANTECH-EUROPA-U4000/1.0 Obigo/Q04C MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1077,7 +1086,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420293,154620,82133,6, $ua);
+    $dl[] = array(420365,154692,82133,6, $ua);
   }
   $ua = 'PANTECH-EUROPA-U4000-orange/1.0 Obigo/Q04C MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1086,7 +1095,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420293,154620,82133,6, $ua);
+    $dl[] = array(420365,154692,82133,6, $ua);
   }
   $ua = 'PANTECH-C510/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1095,7 +1104,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,154620,108243,6, $ua);
+    $dl[] = array(21187,154692,108243,6, $ua);
   }
   $ua = 'PG-3900';
   $ns = E67($useragent, $ua, $ls);
@@ -1104,7 +1113,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210698,20173,15136,6, $ua);
+    $dl[] = array(210698,21180,15136,6, $ua);
   }
   $ua = 'PG-3900/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1113,7 +1122,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210698,20173,15136,6, $ua);
+    $dl[] = array(210698,21180,15136,6, $ua);
   }
   $ua = 'PG-1400/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1122,7 +1131,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362075,20173,15136,6, $ua);
+    $dl[] = array(362075,21180,15136,6, $ua);
   }
   $ua = 'PG-1400';
   $ns = E67($useragent, $ua, $ls);
@@ -1131,7 +1140,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362075,20173,15136,6, $ua);
+    $dl[] = array(362075,21180,15136,6, $ua);
   }
   $ua = 'PG-1400L';
   $ns = E67($useragent, $ua, $ls);
@@ -1140,7 +1149,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362075,20173,15136,6, $ua);
+    $dl[] = array(362075,21180,15136,6, $ua);
   }
   $ua = 'PG-1400L/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1149,7 +1158,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362075,20173,15136,6, $ua);
+    $dl[] = array(362075,21180,15136,6, $ua);
   }
   $ua = 'PG-1600';
   $ns = E67($useragent, $ua, $ls);
@@ -1158,7 +1167,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419213,20173,15136,6, $ua);
+    $dl[] = array(419285,21180,15136,6, $ua);
   }
   $ua = 'PG-1600/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1167,7 +1176,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419213,20173,15136,6, $ua);
+    $dl[] = array(419285,21180,15136,6, $ua);
   }
   $ua = 'PG-C150/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1176,7 +1185,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420221,20173,108243,6, $ua);
+    $dl[] = array(420293,21180,108243,6, $ua);
   }
   $ua = 'PG-8000/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1185,7 +1194,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(363443,20173,15136,6, $ua);
+    $dl[] = array(363515,21180,15136,6, $ua);
   }
   $ua = 'PG-8000';
   $ns = E67($useragent, $ua, $ls);
@@ -1194,7 +1203,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(363443,20173,15136,6, $ua);
+    $dl[] = array(363515,21180,15136,6, $ua);
   }
   $ua = 'PG-1000S';
   $ns = E67($useragent, $ua, $ls);
@@ -1203,7 +1212,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418709,20173,15136,6, $ua);
+    $dl[] = array(418781,21180,15136,6, $ua);
   }
   $ua = 'PG-1000S/01.00BR';
   $ns = E67($useragent, $ua, $ls);
@@ -1212,7 +1221,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418709,20173,15136,6, $ua);
+    $dl[] = array(418781,21180,15136,6, $ua);
   }
   $ua = 'PG-1210';
   $ns = E67($useragent, $ua, $ls);
@@ -1221,7 +1230,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418853,20173,15136,6, $ua);
+    $dl[] = array(418925,21180,15136,6, $ua);
   }
   $ua = 'PG-1210/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1230,7 +1239,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418853,20173,15136,6, $ua);
+    $dl[] = array(418925,21180,15136,6, $ua);
   }
   $ua = 'PG-1410';
   $ns = E67($useragent, $ua, $ls);
@@ -1239,7 +1248,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419069,20173,15136,6, $ua);
+    $dl[] = array(419141,21180,15136,6, $ua);
   }
   $ua = 'PG-1410/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1248,7 +1257,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419069,20173,15136,6, $ua);
+    $dl[] = array(419141,21180,15136,6, $ua);
   }
   $ua = 'PG-1610';
   $ns = E67($useragent, $ua, $ls);
@@ -1257,7 +1266,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419285,20173,15136,6, $ua);
+    $dl[] = array(419357,21180,15136,6, $ua);
   }
   $ua = 'PG-1610/R01';
   $ns = E67($useragent, $ua, $ls);
@@ -1266,7 +1275,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419285,20173,15136,6, $ua);
+    $dl[] = array(419357,21180,15136,6, $ua);
   }
   $ua = 'PG-3300';
   $ns = E67($useragent, $ua, $ls);
@@ -1275,7 +1284,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419717,20173,15136,6, $ua);
+    $dl[] = array(419789,21180,15136,6, $ua);
   }
   $ua = 'PG-3300/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1284,7 +1293,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419717,20173,15136,6, $ua);
+    $dl[] = array(419789,21180,15136,6, $ua);
   }
   $ua = 'PT-GF200';
   $ns = E67($useragent, $ua, $ls);
@@ -1293,7 +1302,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417701,20173,15136,6, $ua);
+    $dl[] = array(417773,21180,15136,6, $ua);
   }
   $ua = 'PT-GF200 CLDC/CLDC-1.0 MIDP/MIDP-1.0';
   $ns = E67($useragent, $ua, $ls);
@@ -1302,7 +1311,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417701,20173,15136,6, $ua);
+    $dl[] = array(417773,21180,15136,6, $ua);
   }
   $ua = 'PT-G600';
   $ns = E67($useragent, $ua, $ls);
@@ -1311,7 +1320,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417917,20173,15136,6, $ua);
+    $dl[] = array(417989,21180,15136,6, $ua);
   }
   $ua = 'PT-G600 CLDC/CLDC-1.0 MIDP/MIDP-1.0';
   $ns = E67($useragent, $ua, $ls);
@@ -1320,7 +1329,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417917,20173,15136,6, $ua);
+    $dl[] = array(417989,21180,15136,6, $ua);
   }
   $ua = 'PT-GB200';
   $ns = E67($useragent, $ua, $ls);
@@ -1329,7 +1338,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418061,20173,15136,6, $ua);
+    $dl[] = array(418133,21180,15136,6, $ua);
   }
   $ua = 'PT-GI100 CLDC';
   $ns = E67($useragent, $ua, $ls);
@@ -1338,7 +1347,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418637,20173,15136,6, $ua);
+    $dl[] = array(418709,21180,15136,6, $ua);
   }
   $ua = 'PT-GI100 CLDC/CLDC-1.0 MIDP/MIDP-1.0';
   $ns = E67($useragent, $ua, $ls);
@@ -1347,7 +1356,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418637,20173,15136,6, $ua);
+    $dl[] = array(418709,21180,15136,6, $ua);
   }
   $ua = 'PG-3810';
   $ns = E67($useragent, $ua, $ls);
@@ -1356,7 +1365,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420005,20173,15136,6, $ua);
+    $dl[] = array(420077,21180,15136,6, $ua);
   }
   $ua = 'PG-3810/R01 Profile/MIDP-2.0';
   $ns = E67($useragent, $ua, $ls);
@@ -1365,7 +1374,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420005,20173,15136,6, $ua);
+    $dl[] = array(420077,21180,15136,6, $ua);
   }
   $ua = 'PANTECH_PG-6100';
   $ns = E67($useragent, $ua, $ls);
@@ -1374,7 +1383,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420077,154620,15136,6, $ua);
+    $dl[] = array(420149,154692,15136,6, $ua);
   }
   $ua = 'PANTECH_PG-6100/(2005.06.24)Ver1.00/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1383,7 +1392,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420077,154620,15136,6, $ua);
+    $dl[] = array(420149,154692,15136,6, $ua);
   }
   $ua = 'PG-C120/R01 MIC/1.1.14 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1392,7 +1401,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420149,20173,197521,6, $ua);
+    $dl[] = array(420221,21180,197521,6, $ua);
   }
   $ua = 'PT-G670';
   $ns = E67($useragent, $ua, $ls);
@@ -1401,7 +1410,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417989,20173,15136,6, $ua);
+    $dl[] = array(418061,21180,15136,6, $ua);
   }
   $ua = 'PT-G700';
   $ns = E67($useragent, $ua, $ls);
@@ -1410,7 +1419,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418349,20173,15136,6, $ua);
+    $dl[] = array(418421,21180,15136,6, $ua);
   }
   $ua = 'PT-GB300';
   $ns = E67($useragent, $ua, $ls);
@@ -1419,7 +1428,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418421,20173,15136,6, $ua);
+    $dl[] = array(418493,21180,15136,6, $ua);
   }
   $ua = 'PG-1300';
   $ns = E67($useragent, $ua, $ls);
@@ -1428,7 +1437,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418925,20173,15136,6, $ua);
+    $dl[] = array(418997,21180,15136,6, $ua);
   }
   $ua = 'PG-1810';
   $ns = E67($useragent, $ua, $ls);
@@ -1437,7 +1446,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(375608,20173,15136,6, $ua);
+    $dl[] = array(375680,21180,15136,6, $ua);
   }
   $ua = 'PG-1810/R01';
   $ns = E67($useragent, $ua, $ls);
@@ -1446,7 +1455,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(375608,20173,15136,6, $ua);
+    $dl[] = array(375680,21180,15136,6, $ua);
   }
   $ua = 'PG-2800';
   $ns = E67($useragent, $ua, $ls);
@@ -1455,7 +1464,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419429,20173,15136,6, $ua);
+    $dl[] = array(419501,21180,15136,6, $ua);
   }
   $ua = 'PG-2800/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1464,7 +1473,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419429,20173,15136,6, $ua);
+    $dl[] = array(419501,21180,15136,6, $ua);
   }
   $ua = 'Pantech c8816';
   $ns = E67($useragent, $ua, $ls);
@@ -1473,7 +1482,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,154620,15136,6, $ua);
+    $dl[] = array(21187,154692,15136,6, $ua);
   }
   $ua = 'PANTECH G200';
   $ns = E67($useragent, $ua, $ls);
@@ -1482,7 +1491,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417629,154620,15136,6, $ua);
+    $dl[] = array(417701,154692,15136,6, $ua);
   }
   $ua = 'PT-GF100';
   $ns = E67($useragent, $ua, $ls);
@@ -1491,7 +1500,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417773,20173,15136,6, $ua);
+    $dl[] = array(417845,21180,15136,6, $ua);
   }
   $ua = 'PT-GF500J';
   $ns = E67($useragent, $ua, $ls);
@@ -1500,7 +1509,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417845,20173,15136,6, $ua);
+    $dl[] = array(417917,21180,15136,6, $ua);
   }
   $ua = 'PT-GB100';
   $ns = E67($useragent, $ua, $ls);
@@ -1509,7 +1518,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418133,20173,15136,6, $ua);
+    $dl[] = array(418205,21180,15136,6, $ua);
   }
   $ua = 'PANTECH G300';
   $ns = E67($useragent, $ua, $ls);
@@ -1518,7 +1527,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418205,154620,15136,6, $ua);
+    $dl[] = array(418277,154692,15136,6, $ua);
   }
   $ua = 'PT-G800';
   $ns = E67($useragent, $ua, $ls);
@@ -1527,7 +1536,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418277,20173,15136,6, $ua);
+    $dl[] = array(418349,21180,15136,6, $ua);
   }
   $ua = 'PANTECH G500';
   $ns = E67($useragent, $ua, $ls);
@@ -1536,7 +1545,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418493,154620,15136,6, $ua);
+    $dl[] = array(418565,154692,15136,6, $ua);
   }
   $ua = 'PT-G900';
   $ns = E67($useragent, $ua, $ls);
@@ -1545,7 +1554,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418565,20173,15136,6, $ua);
+    $dl[] = array(418637,21180,15136,6, $ua);
   }
   $ua = 'PG-1200/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1554,7 +1563,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418781,20173,15136,6, $ua);
+    $dl[] = array(418853,21180,15136,6, $ua);
   }
   $ua = 'PG-1310V/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1563,7 +1572,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(418997,20173,15136,6, $ua);
+    $dl[] = array(419069,21180,15136,6, $ua);
   }
   $ua = 'PG-1500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1572,7 +1581,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419141,20173,15136,6, $ua);
+    $dl[] = array(419213,21180,15136,6, $ua);
   }
   $ua = 'PG-1900';
   $ns = E67($useragent, $ua, $ls);
@@ -1581,7 +1590,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419357,20173,15136,6, $ua);
+    $dl[] = array(419429,21180,15136,6, $ua);
   }
   $ua = 'PG-3210';
   $ns = E67($useragent, $ua, $ls);
@@ -1590,7 +1599,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419645,20173,15136,6, $ua);
+    $dl[] = array(419717,21180,15136,6, $ua);
   }
   $ua = 'PG-3500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1599,7 +1608,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419789,20173,15136,6, $ua);
+    $dl[] = array(419861,21180,15136,6, $ua);
   }
   $ua = 'PG-3600';
   $ns = E67($useragent, $ua, $ls);
@@ -1608,7 +1617,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419861,20173,15136,6, $ua);
+    $dl[] = array(419933,21180,15136,6, $ua);
   }
   $ua = 'PG-3700';
   $ns = E67($useragent, $ua, $ls);
@@ -1617,7 +1626,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(419933,20173,15136,6, $ua);
+    $dl[] = array(420005,21180,15136,6, $ua);
   }
   $ua = 'PG-6100/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1626,7 +1635,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420077,20173,15136,6, $ua);
+    $dl[] = array(420149,21180,15136,6, $ua);
   }
   $ua = 'PG-C300';
   $ns = E67($useragent, $ua, $ls);
@@ -1635,7 +1644,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(359339,20173,15136,6, $ua);
+    $dl[] = array(359339,21180,15136,6, $ua);
   }
   $ua = 'PANTECH-EUROPA-U4000';
   $ns = E67($useragent, $ua, $ls);
@@ -1644,7 +1653,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420293,154620,15136,6, $ua);
+    $dl[] = array(420365,154692,15136,6, $ua);
   }
   $ua = 'PANTECH-PN3200/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0';
   $ns = E67($useragent, $ua, $ls);
@@ -1653,7 +1662,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,154620,18014,6, $ua);
+    $dl[] = array(21187,154692,18086,6, $ua);
   }
   $ua = 'PG-3310/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1662,7 +1671,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(427734,20173,15136,6, $ua);
+    $dl[] = array(427806,21180,15136,6, $ua);
   }
   $ua = 'PANTECH-P7000/';
   $ns = E67($useragent, $ua, $ls);
@@ -1671,7 +1680,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(338252,154620,15136,6, $ua);
+    $dl[] = array(338252,154692,15136,6, $ua);
   }
   $ua = 'PANTECH-P4000/R01 Browser/Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E67($useragent, $ua, $ls);
@@ -1680,7 +1689,7 @@ function _H67($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(450072,154620,112938,6, $ua);
+    $dl[] = array(450144,154692,112938,6, $ua);
   }
   return $dl;
 }
