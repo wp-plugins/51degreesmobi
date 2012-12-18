@@ -262,7 +262,7 @@ function _51d_submit_filter() {
 		}
 		else {
 			$updatedFilter['action'] = 'theme';
-			$updatedFilter['theme'] = get_theme($_POST['_51D_Theme']);
+			$updatedFilter['theme'] = @get_theme($_POST['_51D_Theme']);
 		}
 		unset($_POST['_51D_Theme']);
 	}
@@ -305,6 +305,11 @@ function _51d_print_admin_panel() {
 		
 		<div id="51d_admin_panel" class="wrap">
 			<h2>51Degrees.mobi Device Detection</h2>
+      <form method="GET" >
+        <input type="hidden" name="page" value="<?php echo $_GET['page']; ?>" />
+        <input type="hidden" name="_51D_NewFilter" value="true" />
+        <input class="button-primary" type="submit" value="Create New Rule" />
+      </form>
 			<form id="_51DFilterMenu" class="update-nav-menu" method="post">
 				<?php
 					_51d_print_filters();
@@ -587,8 +592,8 @@ function _51d_print_filter_tab($index, $filters) {
 									echo '<option';
 									if(isset($filter['theme']['Name']) && $filter['theme']['Name'] == $theme['Name'])
 										echo ' selected="selected"';
-									echo ' value="'.$theme.'">';
-									echo $theme;
+									echo ' value="'.$theme['Name'].'">';
+									echo $theme['Name'];
 									echo '</option>';
 								}
 
@@ -598,7 +603,6 @@ function _51d_print_filter_tab($index, $filters) {
 								echo '>[Redirect to url]</option>';
 							?>
 						</select>
-
 						<input id="redirect_text" type="text" name="_51D_RedirectionUrl" style="width:40%;display:none" <?php if(isset($filter['url'])) echo ' value="'.$filter['url'].'"'; ?> />
 						<script text="javascript">checkRedirectText();</script>
 						<p style="font-size:1.2em; font-weight:bold; color: red;">
@@ -627,8 +631,7 @@ function _51d_print_filters() {
 	$filters = get_option('51DFilterStore');
 
 	if ($filters == false || count($filters) == 0)
-		echo 'You can setup a switcher rule to control if a particular device uses a theme or webpage that will better suite its form.
-		Click <a href="'.add_query_arg('_51D_NewFilter', 'true').'">here</a> to create one.';
+		echo 'No rules have been created. Click the button above to create your first redirection rule.';
 	else {
 		$keys = array_keys($filters);
 		$GLOBALS['keys'] = &$keys;
@@ -673,9 +676,9 @@ function _51d_print_filters() {
 			}
 			echo '<div class="tab_spacers" style="width:5px; display:inline-block" ondragover="dragOver(event)"></div>';
 		}
-		echo '<a href="'.add_query_arg('_51D_NewFilter', 'true').'" class="nav-tab menu-add-new">';
-		echo '<abbr title="Add Filter">+</abbr>';
-		echo '</a>';
+		// echo '<a href="'.add_query_arg('_51D_NewFilter', 'true').'" class="nav-tab menu-add-new">';
+		// echo '<abbr title="Add Filter">+</abbr>';
+		// echo '</a>';
 
 		echo '</div>';
 		echo '</div>';//end of tabs
@@ -922,7 +925,7 @@ function _51d_loadFilters($currentTheme, $tag) {
 
 function _51d_checkFilters() {
 	// confirm that session is enabled for every request
-	session_start();
+	@session_start();
 	// check if user has requested not to be switched
 	if(isset($_SESSION['NO_SWITCH']) && $_SESSION['NO_SWITCH'] == true)
 		return false;

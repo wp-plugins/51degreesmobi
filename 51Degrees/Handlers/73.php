@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409643,15130,80981,6, $ua);
+    $dl[] = array(464414,16329,85073,6, $ua);
   }
   $ua = 'Sagem-my721X/1.0/ETN_EE MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)';
   $ns = E73($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,35619,6, $ua);
+    $dl[] = array(20443,20547,36607,6, $ua);
   }
   $ua = 'Sagem-my721X/1.0/ETN_EF MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)';
   $ns = E73($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,35619,6, $ua);
+    $dl[] = array(20443,20547,36607,6, $ua);
   }
   $ua = 'SAGEM-myV-75/1.0 Profile/DoCoMoProfile-1.5oe, MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.5.110 (GUI) MMP/1.0';
   $ns = E73($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H73($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(409715,276668,18086,6, $ua);
+    $dl[] = array(464588,309889,18306,6, $ua);
   }
   return $dl;
 }

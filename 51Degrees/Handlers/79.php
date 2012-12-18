@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(36555,114953,44943,6, $ua);
+    $dl[] = array(36506,123108,46518,6, $ua);
   }
   $ua = 'SHARP-STX2/MC.40 POLARIS/6.15 Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
   $ns = E79($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(306563,114953,129636,6, $ua);
+    $dl[] = array(344844,123108,139690,6, $ua);
   }
   $ua = 'SHARP-STX2/MC.40 POLARIS/6.15 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
@@ -69,43 +62,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(306563,114953,129636,6, $ua);
-  }
-  $ua = 'SHARP/1.0/SH9010C/SHC001 Mozilla/4.08 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(347136,21180,21268,6, $ua);
-  }
-  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0  Novarra-Vision/8.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(303946,21180,61499,6, $ua);
-  }
-  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(303946,21180,61499,6, $ua);
-  }
-  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.101 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(303946,21180,61499,6, $ua);
+    $dl[] = array(344844,123108,139690,6, $ua);
   }
   $ua = 'SHARP/1.1/SH9020C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
@@ -114,25 +71,16 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(342809,21180,21268,6, $ua);
+    $dl[] = array(388118,20547,21672,6, $ua);
   }
-  $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ua = 'SHARP/1.0/SH9010C/SHC001 Mozilla/4.08 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(262731,21180,61499,6, $ua);
-  }
-  $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO';
-  $ns = E79($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(262731,21180,61499,6, $ua);
+    $dl[] = array(393491,20547,21672,6, $ua);
   }
   $ua = 'SHARP SH6017D / Obigo Browser Q03C';
   $ns = E79($useragent, $ua, $ls);
@@ -141,16 +89,34 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(344033,21180,112938,6, $ua);
+    $dl[] = array(389613,20547,121058,6, $ua);
   }
-  $ua = 'SharpWXT81/SHS001/1.0 Browser/UP.Browser/7.0.2.1.f.1.112 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0  Novarra-Vision/8.0';
   $ns = E79($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157567,21180,61499,6, $ua);
+    $dl[] = array(342004,20547,64260,6, $ua);
+  }
+  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(342004,20547,64260,6, $ua);
+  }
+  $ua = 'SharpWXT91/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.101 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(342004,20547,64260,6, $ua);
   }
   $ua = 'SHARP/1.1/SH1810C/SHC001 Mozilla/5.00 (compatible) Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E79($useragent, $ua, $ls);
@@ -159,7 +125,34 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(208538,21180,21268,6, $ua);
+    $dl[] = array(230918,20547,21672,6, $ua);
+  }
+  $ua = 'SharpWXT81/SHS001/1.0 Browser/UP.Browser/7.0.2.1.f.1.112 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(172145,20547,64260,6, $ua);
+  }
+  $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(295413,20547,64260,6, $ua);
+  }
+  $ua = 'SharpWXT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO';
+  $ns = E79($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(295413,20547,64260,6, $ua);
   }
   $ua = 'SHARP SH7110C / Obigo Browser 2.0';
   $ns = E79($useragent, $ua, $ls);
@@ -168,7 +161,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347496,21180,15136,6, $ua);
+    $dl[] = array(393929,20547,16335,6, $ua);
   }
   $ua = 'SHARP WX-T71';
   $ns = E79($useragent, $ua, $ls);
@@ -177,7 +170,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(233686,21180,15136,6, $ua);
+    $dl[] = array(260353,20547,16335,6, $ua);
   }
   $ua = 'SharpT71/SHS001/1.0 Browser/UP.Browser/7.0.2.1a.f.1.104 (GUI) Profile/MIDP-2.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO';
   $ns = E79($useragent, $ua, $ls);
@@ -186,7 +179,7 @@ function _H79($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(233686,21180,61499,6, $ua);
+    $dl[] = array(260353,20547,64260,6, $ua);
   }
   return $dl;
 }

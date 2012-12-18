@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -44,33 +37,6 @@ function E21($target, $test, $ls) {
 function _H21($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Apple+iPhone+OS+v3.1.2+CoreMedia+v1.0.0.7D11';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(100555,86948,15136,6, $ua);
-  }
-  $ua = 'Apple iPhone v1.1.4 CoreMedia v1.0.0.4A102';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(100555,86948,15136,6, $ua);
-  }
-  $ua = 'Apple iPhone v1.1.5 CoreMedia v1.0.0.4B1';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(100555,86948,15136,6, $ua);
-  }
   $ua = 'AppleCoreMedia/1.0.0.11B26 (Macintosh; U; Intel Mac OS X 10_7_1; en_us)';
   $ns = E21($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -78,7 +44,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -87,7 +53,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11A511a (Macintosh; U; Intel Mac OS X 10_7; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -96,16 +62,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
-  }
-  $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; de_de)';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11D50 (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -114,7 +71,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11D50b (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -123,16 +80,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
-  }
-  $ua = 'AppleCoreMedia/1.0.0.11D50b (Macintosh; U; Intel Mac OS X 10_7_3; de_de)';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11A511 (Macintosh; U; Intel Mac OS X 10_7; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -141,16 +89,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
-  }
-  $ua = 'AppleCoreMedia/1.0.0.11A2063 (Macintosh; U; Intel Mac OS X 10_7; en_us)';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11D50d (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -159,7 +98,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11E53 (Macintosh; U; Intel Mac OS X 10_7_4; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -168,7 +107,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11C2002 (Macintosh; U; Intel Mac OS X 10_7_2; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -177,7 +116,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11D2001 (Macintosh; U; Intel Mac OS X 10_7_3; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -186,16 +125,7 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
-  }
-  $ua = 'AppleCoreMedia/1.0.0.11C74 (Macintosh; U; Intel Mac OS X 10_7_2; es_es)';
-  $ns = E21($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
   }
   $ua = 'AppleCoreMedia/1.0.0.11E2620 (Macintosh; U; Intel Mac OS X 10_7_4; en_us)';
   $ns = E21($useragent, $ua, $ls);
@@ -204,7 +134,124 @@ function _H21($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(59266,350663,128267,6, $ua);
+    $dl[] = array(61820,397809,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11E2705 (Macintosh; U; Intel Mac OS X 10_7_4; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,397809,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11G63 (Macintosh; U; Intel Mac OS X 10_7_5; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,397809,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11G56 (Macintosh; U; Intel Mac OS X 10_7_5; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,397809,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.11G63b (Macintosh; U; Intel Mac OS X 10_7_5; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,397809,138216,6, $ua);
+  }
+  $ua = 'Apple+iPhone+OS+v3.1.2+CoreMedia+v1.0.0.7D11';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(106891,91563,16335,6, $ua);
+  }
+  $ua = 'Apple iPhone v1.1.4 CoreMedia v1.0.0.4A102';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(106891,91563,16335,6, $ua);
+  }
+  $ua = 'Apple iPhone v1.1.5 CoreMedia v1.0.0.4B1';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(106891,91563,16335,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.12A269 (Macintosh; U; Intel Mac OS X 10_8; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,576935,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.12B19 (Macintosh; U; Intel Mac OS X 10_8_1; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,576935,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.12C54 (Macintosh; U; Intel Mac OS X 10_8_2; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,576935,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.12C60 (Macintosh; U; Intel Mac OS X 10_8_2; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,576935,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.9B830 (Apple?TV; U; CPU OS 5_1_1 like Mac OS X; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,146452,138216,6, $ua);
+  }
+  $ua = 'AppleCoreMedia/1.0.0.10A406e (Apple TV; U; CPU OS 6_0 like Mac OS X; en_us)';
+  $ns = E21($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61820,146452,138216,6, $ua);
   }
   return $dl;
 }

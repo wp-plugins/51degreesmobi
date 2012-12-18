@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -80,7 +73,7 @@ function _H81($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,60195,86126,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7;en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
+    $dl[] = array(36506,62771,90553,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7;en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
     $ls = $ns;
   }
   $ns = E81($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
@@ -88,7 +81,7 @@ function _H81($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,60195,86126,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
+    $dl[] = array(36506,62771,90553,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
     $ls = $ns;
   }
   $ns = E81($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
@@ -96,7 +89,7 @@ function _H81($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,60195,86126,6, 'Mozilla/5.0(Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
+    $dl[] = array(36506,62771,90553,6, 'Mozilla/5.0(Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0');
     $ls = $ns;
   }
   $ns = E81($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.18'), 3 => array(0 => '528.17'), 4 => array(0 => '4.0')), $ls);
@@ -104,7 +97,7 @@ function _H81($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,60195,86126,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.18 (KHTML, like Gecko) Version/4.0 Safari/528.17 Skyfire/2.0');
+    $dl[] = array(36506,62771,90553,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.18 (KHTML, like Gecko) Version/4.0 Safari/528.17 Skyfire/2.0');
     $ls = $ns;
   }
   return $dl;

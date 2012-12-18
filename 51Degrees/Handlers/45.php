@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H45($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,112938,6, $ua);
+    $dl[] = array(20443,20547,121058,6, $ua);
   }
   $ua = 'LCT_X880B_01/1.0 Nucleus/1.13.21 MTK6225/07A Release/5.1.2008 Browser/TelecaQ03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E45($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H45($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,112938,6, $ua);
+    $dl[] = array(20443,20547,121058,6, $ua);
   }
   $ua = 'LCT_D800B_01/1.0 Nucleus/1.13.21 MTK6225/07A Release/5.1.2008 Browser/TelecaQ03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E45($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H45($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,112938,6, $ua);
+    $dl[] = array(20443,20547,121058,6, $ua);
   }
   $ua = 'LCT_L300B_01/L3PM510/WAP2.0 Profile';
   $ns = E45($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H45($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(199261,21180,15136,6, $ua);
+    $dl[] = array(219986,20547,16335,6, $ua);
   }
   $ua = 'LCTW660 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E45($useragent, $ua, $ls);
@@ -87,7 +80,7 @@ function _H45($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366970,21180,21268,6, $ua);
+    $dl[] = array(417311,20547,21672,6, $ua);
   }
   return $dl;
 }

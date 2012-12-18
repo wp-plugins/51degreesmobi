@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(292877,105376,105382,6, $ua);
+    $dl[] = array(329311,112475,112481,6, $ua);
   }
   $ua = 'Huawei-Videocon_V7400/V7400V100R001INDC180B257 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -60,34 +53,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,0,85,6, $ua);
-  }
-  $ua = 'Huawei-M860/M860V100R001C153B251SP03 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(164167,0,85,6, $ua);
-  }
-  $ua = 'Huawei-HUAWEI-M860/M860V100R001C177B261 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(164167,0,85,6, $ua);
-  }
-  $ua = 'Huawei-HUAWEI-M860/M860V100R001C177B258SP01 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(164167,0,85,6, $ua);
+    $dl[] = array(91375,0,105,6, $ua);
   }
   $ua = 'HuaweiU8650/C00B828SP03 CORE/6.506.4.1 OpenCORE/2.02 (Linux;Android 2.3.3)';
   $ns = E42($useragent, $ua, $ls);
@@ -96,7 +62,43 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(296394,105376,105382,6, $ua);
+    $dl[] = array(333234,112475,112481,6, $ua);
+  }
+  $ua = 'Huawei-M860/M860V100R001C153B251SP03 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(179458,0,105,6, $ua);
+  }
+  $ua = 'Huawei-HUAWEI-M860/M860V100R001C177B261 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(179458,0,105,6, $ua);
+  }
+  $ua = 'Huawei-HUAWEI-M860/M860V100R001C177B258SP01 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(179458,0,105,6, $ua);
+  }
+  $ua = 'JUC (Linux; U; 4.0.3; zh-cn; HUAWEI_C8812; 480*800) UCWEB7.9.4.145/139/800';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,145607,339689,6, $ua);
   }
   $ua = 'Huawei-Vodafone 845/U8120V100R001IRLC02B220SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -105,7 +107,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(142026,0,85,6, $ua);
+    $dl[] = array(154040,0,105,6, $ua);
   }
   $ua = 'Huawei-Vodafone 845/U8120V100R001HUNC02B221SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -114,7 +116,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(142026,0,85,6, $ua);
+    $dl[] = array(154040,0,105,6, $ua);
   }
   $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Mozilla/5.0 (HW-HUAWEI_C8300/C8300V100R001C00B102;U;Windows Mobile/6.5;320*480;CTC/2.0) IE/6.0';
   $ns = E42($useragent, $ua, $ls);
@@ -123,16 +125,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(36555,7586,6649,6, $ua);
-  }
-  $ua = 'HUAWEI-M735/001.00 Opera/9.70';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(345545,21180,49191,6, $ua);
+    $dl[] = array(36506,7696,6759,6, $ua);
   }
   $ua = 'HUAWEI-M635/001.00 WAP/OBIGO/Q05A';
   $ns = E42($useragent, $ua, $ls);
@@ -141,7 +134,16 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(387816,21180,15136,6, $ua);
+    $dl[] = array(441333,20547,16335,6, $ua);
+  }
+  $ua = 'HUAWEI-M735/001.00 Opera/9.70';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(391550,20547,51124,6, $ua);
   }
   $ua = 'Huawei-RBM2/U8230V100R001C157B826 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -150,7 +152,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(139376,0,85,6, $ua);
+    $dl[] = array(150946,0,105,6, $ua);
   }
   $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP04 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -159,7 +161,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(143227,0,85,6, $ua);
+    $dl[] = array(155332,0,105,6, $ua);
   }
   $ua = 'Huawei-Turkcell T10/U8110V100R001C121B256SP02 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -168,7 +170,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(143227,0,85,6, $ua);
+    $dl[] = array(155332,0,105,6, $ua);
   }
   $ua = 'HUAWEI-M750/001.00 ACS-NetFront/3.2';
   $ns = E42($useragent, $ua, $ls);
@@ -177,34 +179,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365602,21180,46382,6, $ua);
-  }
-  $ua = 'HUAWEI-M228/001.00 ACCESS-NetFront/3.2(Mobile) Mozilla/5.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279561,21180,46382,6, $ua);
-  }
-  $ua = 'HUAWEI-M228/001.00 ACS-NetFront/3.2 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279561,21180,46382,6, $ua);
-  }
-  $ua = 'HUAWEI-M228/001.00 ACS-NetFront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(279561,21180,46382,6, $ua);
+    $dl[] = array(415713,20547,48081,6, $ua);
   }
   $ua = 'Huawei-Smile/U8300V100R001THAC208B258 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
@@ -213,7 +188,34 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(172168,0,85,6, $ua);
+    $dl[] = array(189234,0,105,6, $ua);
+  }
+  $ua = 'HUAWEI-M228/001.00 ACCESS-NetFront/3.2(Mobile) Mozilla/5.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(313974,20547,48081,6, $ua);
+  }
+  $ua = 'HUAWEI-M228/001.00 ACS-NetFront/3.2 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(313974,20547,48081,6, $ua);
+  }
+  $ua = 'HUAWEI-M228/001.00 ACS-NetFront/3.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(313974,20547,48081,6, $ua);
   }
   $ua = 'Huawei-U2800/U2800ACBXB119 Browser/Obigo-Browser/Q05A';
   $ns = E42($useragent, $ua, $ls);
@@ -222,7 +224,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381513,21180,108243,6, $ua);
+    $dl[] = array(434401,20547,115844,6, $ua);
   }
   $ua = 'Huawei-U2800/U2800ACBXB119 Browser/Obigo-Browser/Q05A Novarra-Vision/8.0';
   $ns = E42($useragent, $ua, $ls);
@@ -231,7 +233,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381513,21180,108243,6, $ua);
+    $dl[] = array(434401,20547,115844,6, $ua);
   }
   $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c, Huawei/1.0/G6600/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -240,7 +242,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(360347,21180,112938,6, $ua);
+    $dl[] = array(409322,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G6600/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -249,34 +251,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(360347,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(259633,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2, Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(259633,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(259633,21180,112938,6, $ua);
+    $dl[] = array(409322,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G7010/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -285,7 +260,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259273,21180,112938,6, $ua);
+    $dl[] = array(291584,20547,121058,6, $ua);
   }
   $ua = 'Huawei/G7010/1.0/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -294,7 +269,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259273,21180,112938,6, $ua);
+    $dl[] = array(291584,20547,121058,6, $ua);
   }
   $ua = 'Huawei/G7010/1.0/Browser/obigo-browser/q03c Novarra-Vision/8.0';
   $ns = E42($useragent, $ua, $ls);
@@ -303,7 +278,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259273,21180,112938,6, $ua);
+    $dl[] = array(291584,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G7010/Browser/obigo-browser/q03c Novarra-Vision/8.0';
   $ns = E42($useragent, $ua, $ls);
@@ -312,7 +287,34 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259273,21180,112938,6, $ua);
+    $dl[] = array(291584,20547,121058,6, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(291941,20547,121058,6, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2, Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(291941,20547,121058,6, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3610/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(291941,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiG6620/SP01 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2, Huawei/1.0/0HuaweiG6620/SP01 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -321,7 +323,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(234334,21180,112938,6, $ua);
+    $dl[] = array(261061,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiG6620/SP01 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -330,7 +332,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(234334,21180,112938,6, $ua);
+    $dl[] = array(261061,20547,121058,6, $ua);
   }
   $ua = 'Huawei-G6620/1.0/0/SP01 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -339,7 +341,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(234334,21180,112938,6, $ua);
+    $dl[] = array(261061,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G6603/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -348,7 +350,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(217747,21180,112938,6, $ua);
+    $dl[] = array(241412,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G6603/Browser/obigo-browser/q03c Novarra-Vision/8.0';
   $ns = E42($useragent, $ua, $ls);
@@ -357,7 +359,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(217747,21180,112938,6, $ua);
+    $dl[] = array(241412,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -366,7 +368,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259201,21180,112938,6, $ua);
+    $dl[] = array(291495,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiG3511/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
   $ns = E42($useragent, $ua, $ls);
@@ -375,43 +377,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(259201,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei-V8401/V8401V100R001C219B256 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(159559,0,85,6, $ua);
-  }
-  $ua = 'HUAWEI-M328/001.00 ACS-NetFront/3.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(264080,21180,46382,6, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(327411,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(327411,21180,112938,6, $ua);
+    $dl[] = array(291495,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/HUAWEI_G6005/Obigo Browser/Q03C Browser/Q03C MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -420,25 +386,34 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(364451,21180,112938,6, $ua);
+    $dl[] = array(414214,20547,121058,6, $ua);
   }
-  $ua = 'Huawei/1.0/G6605/Browser/obigo-browser/q03c';
+  $ua = 'Huawei-V8401/V8401V100R001C219B256 Player/OpenCORE-Player/2.02 (Linux;Android 2.1-update1)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365962,21180,112938,6, $ua);
+    $dl[] = array(174184,0,105,6, $ua);
   }
-  $ua = 'HUAWEI-M318/001.00 ACS-NetFront/3.2';
+  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(343601,21180,46382,6, $ua);
+    $dl[] = array(369704,20547,121058,6, $ua);
+  }
+  $ua = 'Huawei/1.0/0HuaweiG3510/WAP2.0/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2 Novarra-Vision/8.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(369704,20547,121058,6, $ua);
   }
   $ua = 'Huawei/1.0/G6150/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
@@ -447,34 +422,25 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(325466,21180,112938,6, $ua);
+    $dl[] = array(367304,20547,121058,6, $ua);
   }
-  $ua = 'Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Huawei/1.0/G6605/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238942,102071,15136,6, $ua);
+    $dl[] = array(416071,20547,121058,6, $ua);
   }
-  $ua = 'Huawei/1.0/G5730/Browser/obigo-browser/q03c';
+  $ua = 'HUAWEI-M328/001.00 ACS-NetFront/3.2';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(250480,21180,112938,6, $ua);
-  }
-  $ua = 'Huawei/1.0/U1000/B000 Browser/Obigo-Browser';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(306275,21180,15136,6, $ua);
+    $dl[] = array(296880,20547,48081,6, $ua);
   }
   $ua = 'HUAWEIU8520/1.0 Linux/2.6.35 Android/2.2.2 Release/5.26.2011 Browser/WebKit533.1';
   $ns = E42($useragent, $ua, $ls);
@@ -483,16 +449,25 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(549009,96796,926,6, $ua);
+    $dl[] = array(616169,102822,946,6, $ua);
   }
-  $ua = 'Huawei/1.0/T520/B000 Browser/obigo-browser/q04a';
+  $ua = 'Huawei/1.0/G5730/Browser/obigo-browser/q03c';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(358907,21180,15136,6, $ua);
+    $dl[] = array(280753,20547,121058,6, $ua);
+  }
+  $ua = 'Huawei/1.0/U1000/B000 Browser/Obigo-Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(344486,20547,16335,6, $ua);
   }
   $ua = 'Huawei/1.0/0HuaweiG6610/SW03 Browser/Obigo-Browser/Q03C MMS/Obigo-MMS/1.2';
   $ns = E42($useragent, $ua, $ls);
@@ -501,7 +476,34 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(317038,21180,112938,6, $ua);
+    $dl[] = array(357549,20547,121058,6, $ua);
+  }
+  $ua = 'HUAWEI-M318/001.00 ACS-NetFront/3.2';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(389172,20547,48081,6, $ua);
+  }
+  $ua = 'Huawei/1.0/T520/B000 Browser/obigo-browser/q04a';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(407653,20547,16335,6, $ua);
+  }
+  $ua = 'Huawei-U526/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266830,108460,16335,6, $ua);
   }
   $ua = 'HUAWEI-C6100/001.00 ACS-Netfront/3.2';
   $ns = E42($useragent, $ua, $ls);
@@ -510,7 +512,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(233614,21180,46382,6, $ua);
+    $dl[] = array(260178,20547,48081,6, $ua);
   }
   $ua = 'Mozilla/5.0 (HUAWEI/S6510V100R001C1X;U;REX/1.0;Opera Mini/4.2;BREW/3.1.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;320*240;CTC/2.0) NetFront/3.5';
   $ns = E42($useragent, $ua, $ls);
@@ -519,7 +521,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(291865,102071,44943,6, $ua);
+    $dl[] = array(328283,108460,46518,6, $ua);
   }
   $ua = 'Huawei/1.0/H11HW/B000 Browser/Obigo-Browser/Q04A';
   $ns = E42($useragent, $ua, $ls);
@@ -528,16 +530,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(358691,21180,82133,6, $ua);
-  }
-  $ua = 'Huawei/1.0/T566/B000 Browser/obigo-browser/q04a';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(245025,21180,15136,6, $ua);
+    $dl[] = array(407390,20547,86277,6, $ua);
   }
   $ua = 'Huawei-U626/1.0 BREW/2.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -546,16 +539,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,358397,15136,6, $ua);
-  }
-  $ua = 'HUAWEI G6610';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(317038,21180,15136,6, $ua);
+    $dl[] = array(20443,472478,16335,6, $ua);
   }
   $ua = 'Huawei-U528/1.0 BREW/3.1 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -564,7 +548,25 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,102071,15136,6, $ua);
+    $dl[] = array(20443,108460,16335,6, $ua);
+  }
+  $ua = 'Huawei/1.0/T566/B000 Browser/obigo-browser/q04a';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(274137,20547,16335,6, $ua);
+  }
+  $ua = 'HUAWEI G6610';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(357549,20547,16335,6, $ua);
   }
   return $dl;
 }

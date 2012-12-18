@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -70,7 +63,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(74212,37792,37798,6, 'BlackBerry9700/5.0.0.714 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(77554,39688,38754,6, 'BlackBerry9700/5.0.0.714 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '8520_CMCC'), 1 => NULL, 2 => NULL), $ls);
@@ -78,7 +71,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,37792,37798,6, 'BlackBerry8520_CMCC/5.0.0.1056 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
+    $dl[] = array(113326,39688,38754,6, 'BlackBerry8520_CMCC/5.0.0.1056 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
@@ -86,7 +79,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,37792,37798,6, 'BlackBerry8520/5.0.0.592 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
+    $dl[] = array(113326,39688,38754,6, 'BlackBerry8520/5.0.0.592 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '8520'), 1 => NULL, 2 => NULL), $ls);
@@ -94,7 +87,15 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,37792,37798,6, 'BlackBerry8520/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(113326,39688,38754,6, 'BlackBerry8520/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '2.0.0 (BlackBerry8520'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,39688,38754,6, 'iBrowser/for Blackberry2.0.0 (BlackBerry8520/5.0.0.681)');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9800'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
@@ -102,7 +103,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(103301,103373,103379,6, 'BlackBerry9800/6.0.0.600 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
+    $dl[] = array(110093,110185,110191,6, 'BlackBerry9800/6.0.0.600 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
@@ -110,7 +111,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,103379,6, 'BlackBerry9780/6.0.0.285 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
+    $dl[] = array(159905,110185,110191,6, 'BlackBerry9780/6.0.0.448 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
@@ -118,7 +119,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,103379,6, 'BlackBerry9780/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
+    $dl[] = array(159905,110185,110191,6, 'BlackBerry9780/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9780'), 1 => NULL, 2 => NULL), $ls);
@@ -126,7 +127,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,103379,6, 'BlackBerry9780/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
+    $dl[] = array(159905,110185,110191,6, 'BlackBerry9780/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.5.0'), 2 => NULL), $ls);
@@ -134,1063 +135,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,103379,6, 'BlackBerry9780/6.5.0.136 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112506,103373,103379,6, 'BlackBerry9300/6.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112506,103373,103379,6, 'BlackBerry9300/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9700'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(74212,103373,103379,6, 'Blackberry9700/6.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9700'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(74212,103373,103379,6, 'BlackBerry9700');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9700a'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(74212,103373,103379,6, 'BlackBerry9700a/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112506,37792,37798,6, 'BlackBerry9300/5.0.0.955 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112506,37792,37798,6, 'BlackBerry9300/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9900'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(223801,284657,284663,6, 'BlackBerry9900/7.0.0.576 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8530'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89265,37792,37798,6, 'BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106227,66392,65386,6, 'BlackBerry8520/4.6.1.314 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/603');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(37720,37792,37798,6, 'BlackBerry9000/5.0.0.1067 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(37720,68566,65386,6, 'BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-agent');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(37720,68566,65386,6, 'BlackBerry9000/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,453208,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.5.27548/27.1940; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66320,37792,37798,6, 'BlackBerry8900/5.0.0.900 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66320,37792,37798,6, 'BlackBerry8900/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9810'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(201069,284657,284663,6, 'BlackBerry9810/7.0.0.261 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; U; BlackBerry 9810; en-US) Version'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(201069,284657,284663,6, 'TwitterForBlackBerry/2.1.0.28 (BlackBerry; U; BlackBerry 9810; en-US) Version/7.0.0.261');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9360'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(236422,284657,284663,6, 'BlackBerry9360/7.0.0.464 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66320,66392,65386,6, 'BlackBerry8900/4.6.1.231 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89337,37792,37798,6, 'BlackBerry9630/5.0.0.975 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,555776,6, 'Opera/9.80 (BlackBerry; Opera Mini/7.0.29990/28.2504; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,4614,3608,6, 'BlackBerry8330/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,4614,3608,6, 'BlackBerry8330m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102077,103373,103379,6, 'BlackBerry9650/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149206,103373,103379,6, 'BlackBerry9330/6.0.0.524 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/-1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149206,103373,103379,6, 'BlackBerry9330/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9860'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(224745,284657,284663,6, 'BlackBerry9860/7.0.0.440 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102077,37792,37798,6, 'BlackBerry9650/5.0.0.1006 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310_CMCC'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,4614,3608,6, 'BlackBerry8310_CMCC/4.5.0.142 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/241');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,4614,3608,6, 'BlackBerry8310/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9520'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(123898,37792,37798,6, 'BlackBerry9520/5.0.0.497 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9670'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(166550,103373,103379,6, 'BlackBerry9670/6.0.0.407 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/-1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122190,37792,37798,6, 'BlackBerry9105/5.0.0.696 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/603');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122190,37792,37798,6, 'BlackBerry9105/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9550'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(111930,37792,37798,6, 'BlackBerry9550/5.0.0.1015 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(70084,4614,3608,6, 'BlackBerry8320/4.5.0.81 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9930'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(228771,284657,284663,6, 'BlackBerry9930/7.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,388329,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.1.25376/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9100'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(133311,37792,37798,6, 'BlackBerry9100/5.0.0.921 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9630fts'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89337,89409,51031,6, 'BlackBerry9630fts/4.7.1.40 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.7.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89337,89409,51031,6, 'BlackBerry9630/4.7.1.61 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102149,37792,37798,6, 'BlackBerry9530/5.0.0.328 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149206,37792,37798,6, 'BlackBerry9330/5.0.0.857 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9500'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50953,37792,37798,6, 'BlackBerry9500/5.0.0.841 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,440993,6, 'Opera/9.80 (BlackBerry; Opera Mini/4.4.29477/28.2359; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,389265,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.24851/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9500'), 1 => array(0 => '4.7.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50953,51025,51031,6, 'BlackBerry9500/4.7.0.181 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122190,103373,103379,6, 'BlackBerry9105/6.0.0.461 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/-1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122190,103373,103379,6, 'BlackBerry9105/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47751,4614,3608,6, 'BlackBerry8100/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8350i'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(78964,37792,37798,6, 'BlackBerry8350i/5.0.0.1051 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/103');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,188373,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.1.21216/22.414; U; en) Presto/2.5.25 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,4614,3608,6, 'BlackBerry8110/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92655,4614,3608,6, 'BlackBerry8830/4.5.0.175 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92151,4614,3608,6, 'BlackBerry8120/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(67404,4614,3608,6, 'BlackBerry8130/4.5.0.77 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9100'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(133311,103373,103379,6, 'BlackBerry9100/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/331');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.7.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102149,51025,51031,6, 'BlackBerry9530/4.7.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91791,4614,3608,6, 'BlackBerry8820/4.5.0.110 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8220'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91359,68566,65386,6, 'BlackBerry8220/4.6.0.180 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,67476,66470,6, 'BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8350i'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(78964,66392,65386,6, 'BlackBerry8350i/4.6.1.313 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134237,4614,3608,6, 'BlackBerry8800/4.5.0.69 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/123');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'BlackBerry8700/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700c'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,97888,6, 'BlackBerry8700c/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,4614,3608,6, 'BlackBerry8700/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,4614,3608,6, 'BlackBerry8700/4.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,386737,6, 'Opera/9.80 (BlackBerry; Opera Mini/4.3.25172/26.1305; U; en) Presto/2.8.119 Version/10.54');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,37792,37798,6, 'BlackBerry8330/5.0.0.438 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/389');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(68416,4614,3608,6, 'BlackBerry8300/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47751,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47751,87531,67482,6, 'BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47751,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/132');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92655,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92655,68488,67482,6, 'BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92655,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92655,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 Novarra-Vision/8.0');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,4614,47823,6, 'BlackBerry8330/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8330m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(60418,4614,47823,6, 'BlackBerry8330m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47751,130569,67482,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8100/4.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8230'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(119377,66392,65386,6, 'BlackBerry8230/4.6.1.309 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(70084,68488,67482,6, 'BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(70084,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106227,328490,267463,6, 'BlackBerry8520/5.2.0.64 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8230f'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(129204,66392,65386,6, 'BlackBerry8230f/4.6.1.309 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/294');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,557053,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.0.24209/28.2359; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134237,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134237,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/125');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134237,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134237,87531,67482,6, 'BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(107811,97882,97888,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8703e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(68416,68488,67482,6, 'BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(68416,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92151,67476,66470,6, 'BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92151,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(92151,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,67476,66470,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,67476,66470,6, 'BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(442865,442945,534278,6, 'Opera/9.80 (BlackBerry; Opera Mini/7.29990/27.1940; U; en) Presto/2.8.119 Version/11.10');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(67404,67476,66470,6, 'BlackBerry8130/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91791,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91791,68488,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91791,68488,67482,6, 'BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,87531,67482,6, 'BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(252214,291937,47823,6, 'BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3  (Google WAP Proxy/1.0)');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(98822,68488,67482,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8707/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/150');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8830m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(4542,4614,3608,6, 'BlackBerry8830m/4.5.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,4614,47823,6, 'BlackBerry8310/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(107811,87531,67482,6, 'BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(107811,87531,67482,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/236');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106227,328490,327555,6, 'BlackBerry8520/5.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106227,328490,327555,6, 'BlackBerry8520/5.2.0.67 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(70084,4614,47823,6, 'BlackBerry8320/4.5.0.81 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8130m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131007,4614,3608,6, 'BlackBerry8130m/4.5.0.127 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/106');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(67404,4614,47823,6, 'BlackBerry8130/4.5.0.77 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106227,130569,267463,6, 'BlackBerry8520/4.2.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156127,97882,97888,6, 'BlackBerry7290/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $dl[] = array(159905,110185,110191,6, 'BlackBerry9780/6.5.0.136 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.6.0'), 2 => NULL), $ls);
@@ -1198,135 +143,87 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,267463,6, 'BlackBerry9780/6.6.0.207 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $dl[] = array(159905,110185,110191,6, 'BlackBerry9780/6.6.0.207 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.5.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,267463,6, 'BlackBerry9780/6.5.0.54 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $dl[] = array(120523,110185,110191,6, 'BlackBerry9300/6.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(91143,87531,67482,6, 'BlackBerry7130/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $dl[] = array(120523,110185,110191,6, 'BlackBerry9300/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7100i'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9900'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(355589,97882,97888,6, 'BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
+    $dl[] = array(248420,320997,320155,6, 'BlackBerry9900/7.0.0.576 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8910_CMCC'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9700'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(281577,37792,37798,6, 'BlackBerry8910_CMCC/5.0.0.608 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
+    $dl[] = array(77554,110185,110191,6, 'Blackberry9700/6.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8910'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9700'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(281577,37792,37798,6, 'BlackBerry8910/5.0.0.461 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/612');
+    $dl[] = array(77554,110185,110191,6, 'BlackBerry9700');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9700a'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(60418,67476,47823,6, 'BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $dl[] = array(77554,110185,110191,6, 'BlackBerry9700a/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(91143,97882,97888,6, 'BlackBerry7130/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $dl[] = array(120523,39688,38754,6, 'BlackBerry9300/5.0.0.955 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9300'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89337,130569,267463,6, 'BlackBerry9630/4.2.0.424 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/160/352');
+    $dl[] = array(120523,39688,38754,6, 'BlackBerry9300/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8530'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(98822,97882,97888,6, 'BlackBerry8707/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $dl[] = array(94124,39688,38754,6, 'BlackBerry8530/5.0.0.973 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9900'), 1 => array(0 => '7.1.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(98822,87531,67482,6, 'BlackBerry8707/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106947,68488,47823,6, 'BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7130e'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(250696,97882,97888,6, 'BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8980'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(217531,37792,37798,6, 'BlackBerry8980/5.0.0.978 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8980_CMCC'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(217531,37792,37798,6, 'BlackBerry8980_CMCC/5.0.0.1055 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,4614,47823,6, 'BlackBerry8110/4.5.0.55 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(67404,67476,47823,6, 'BlackBerry8130/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $dl[] = array(248420,331225,330380,6, 'BlackBerry9900/7.1.0.694 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
@@ -1334,63 +231,79 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(442865,442945,184845,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.0.19692/22.414; U; en) Presto/2.5.25 Version/10.54');
+    $dl[] = array(501253,501353,625997,6, 'Opera/9.80 (BlackBerry; Opera Mini/7.0.29990/28.2555; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(179024,97882,97888,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(501253,501353,513557,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.5.27548/27.1940; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(179024,97882,97888,6, 'BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $dl[] = array(113326,69137,68112,6, 'BlackBerry8520/4.6.1.314 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/600');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9360'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(92151,4614,47823,6, 'BlackBerry8120/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $dl[] = array(263635,320997,320155,6, 'BlackBerry9360/7.0.0.586 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9810'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47751,87531,47823,6, 'BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $dl[] = array(222211,320997,320155,6, 'BlackBerry9810/7.0.0.261 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; U; BlackBerry 9810; en-US) Version'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(156127,288115,291943,6, 'BlackBerry7290/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(222211,320997,320155,6, 'TwitterForBlackBerry/2.1.0.28 (BlackBerry; U; BlackBerry 9810; en-US) Version/7.0.0.261');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107811,4614,3608,6, 'BlackBerry8703e/4.5.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $dl[] = array(38663,39688,38754,6, 'BlackBerry9000/5.0.0.1067 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(66320,68566,65386,6, 'BlackBerry8900/4.6.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(38663,71384,68112,6, 'BlackBerry9000/4.6.0.167 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 ips-agent');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38663,71384,68112,6, 'BlackBerry9000/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,39688,38754,6, 'BlackBerry8900/5.0.0.900 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '8900'), 1 => NULL, 2 => NULL), $ls);
@@ -1398,383 +311,159 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(66320,68566,65386,6, 'BlackBerry8900/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(69046,39688,38754,6, 'BlackBerry8900/5.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(91791,4614,47823,6, 'BlackBerry8820/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $dl[] = array(94305,39688,38754,6, 'BlackBerry9630/5.0.0.975 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(92655,4614,47823,6, 'BlackBerry8830/4.5.0.175 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 UP.Browser/5.0.3.3');
+    $dl[] = array(69046,69137,68112,6, 'BlackBerry8900/4.6.1.231 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9860'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(265807,97882,97888,6, 'BlackBerry7250/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126');
+    $dl[] = array(249669,320997,320155,6, 'BlackBerry9860/7.0.0.440 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(156127,291937,291943,6, 'BlackBerry7290/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(108466,110185,110191,6, 'BlackBerry9650/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9810'), 1 => array(0 => '7.1.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(179024,288115,291943,6, 'BlackBerry7100/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(222211,331225,330380,6, 'BlackBerry9810/7.1.0.694 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(66320,328490,267463,6, 'BlackBerry8900/5.2.0.67 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $dl[] = array(162329,110185,110191,6, 'BlackBerry9330/6.0.0.524 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/-1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(70084,68488,47823,6, 'BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $dl[] = array(162329,110185,110191,6, 'BlackBerry9330/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(252214,97882,97888,6, 'BlackBerry7520/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
+    $dl[] = array(63049,4688,3665,6, 'BlackBerry8330/4.5.0.77 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,130569,67482,6, 'BlackBerry8520/4.2.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(63049,4688,3665,6, 'BlackBerry8330m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9360'), 1 => array(0 => '7.1.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(91791,68488,47823,6, 'BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $dl[] = array(263635,331225,330380,6, 'BlackBerry9360/7.1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/608');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102149,130569,267463,6, 'BlackBerry9530/4.2.0.128 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/352');
+    $dl[] = array(108466,39688,38754,6, 'BlackBerry9650/5.0.0.1006 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310_CMCC'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47751,4614,47823,6, 'BlackBerry8100/4.5.0.55 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179 UP.Browser/5.0.3.3');
+    $dl[] = array(114228,4688,3665,6, 'BlackBerry8310_CMCC/4.5.0.142 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/241');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134237,4614,47823,6, 'BlackBerry8800/4.5.0.52 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/122 UP.Browser/5.0.3.3');
+    $dl[] = array(114228,4688,3665,6, 'BlackBerry8310/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9670'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(179024,291937,291943,6, 'BlackBerry7100/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(182521,110185,110191,6, 'BlackBerry9670/6.0.0.407 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/-1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7130e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(250696,87531,67482,6, 'BlackBerry7130e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $dl[] = array(131264,39688,38754,6, 'BlackBerry9105/5.0.0.696 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/603');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(92151,67476,47823,6, 'BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $dl[] = array(131264,39688,38754,6, 'BlackBerry9105/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9520'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134237,87531,47823,6, 'BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179 UP.Browser/5.0.3.3');
+    $dl[] = array(133190,39688,38754,6, 'BlackBerry9520/5.0.0.497 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9550'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(288043,291937,291943,6, 'BlackBerry7230/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(119802,39688,38754,6, 'BlackBerry9550/5.0.0.1015 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9930'), 1 => array(0 => '7.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(92655,68488,47823,6, 'BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8500'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134669,66392,65386,6, 'BlackBerry8500/4.6.1.320 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,4614,47823,6, 'BlackBerry8700/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(68416,68488,47823,6, 'BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(68416,4614,47823,6, 'BlackBerry8300/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(265807,291937,291943,6, 'BlackBerry7250/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(89337,130569,67482,6, 'BlackBerry9630/4.2.0.424 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56380,97882,47823,6, 'BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.3.1'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(70084,376184,66470,6, 'BlackBerry8320/4.3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7730'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(404238,291937,291943,6, 'BlackBerry7730/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => 'Tardis'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,37792,37798,6, 'BlackBerryTardis/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => 'Unknown'), 1 => NULL, 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,37792,37798,6, 'BlackBerryUnknown/5.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/11');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => 'essex'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,37792,37798,6, 'BlackBerryessex/5.0.0.273 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8600'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(330154,37792,37798,6, 'BlackBerry8600/5.0.0.564 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '6230'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403727,291937,291943,6, 'BlackBerry6230/4.0.0');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66398,67476,47823,6, 'BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9800'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(103301,37792,37798,6, 'BlackBerry9800/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9650x'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(194563,37792,37798,6, 'BlackBerry9650x/5.0.0.549 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(179024,97882,47823,6, 'BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(288043,288115,291943,6, 'BlackBerry7230/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7280'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(100627,291937,291943,6, 'BlackBerry7280/4.0.0');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(252214,291937,291943,6, 'BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(37720,328490,267463,6, 'BlackBerry9000/5.2.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/351');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '5810'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403439,100699,100705,6, 'BlackBerry5810/3.6.0');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7780'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(404382,291937,291943,6, 'BlackBerry7780/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(66320,130569,267463,6, 'BlackBerry8900/4.2.0.102 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(91143,97882,47823,6, 'BlackBerry7130/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '6710'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403950,100699,100705,6, 'BlackBerry6710/3.6.0');
-    $ls = $ns;
-  }
-  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(37720,291937,267463,6, 'BlackBerry9000/4.0.0.155 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444');
+    $dl[] = array(254313,320997,320155,6, 'BlackBerry9930/7.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
@@ -1782,311 +471,663 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(442865,442945,57100,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.20798/27.1324; U; ja) Presto/2.8.119 Version/11.10');
+    $dl[] = array(501253,501353,442059,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.1.25376/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7280'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100627,100699,100705,6, 'BlackBerry7280/3.6.0');
+    $dl[] = array(73045,4688,3665,6, 'BlackBerry8320/4.5.0.81 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9100'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107811,97882,47823,6, 'BlackBerry8703e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $dl[] = array(144033,39688,38754,6, 'BlackBerry9100/5.0.0.921 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47751,130569,47823,6, 'BlackBerry8100/4.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $dl[] = array(501253,501353,499381,6, 'Opera/9.80 (BlackBerry; Opera Mini/4.4.29477/28.2555; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '5820'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9330'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403511,100699,100705,6, 'BlackBerry5820/3.6.0');
+    $dl[] = array(162329,39688,38754,6, 'BlackBerry9330/5.0.0.857 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6510'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403878,291937,47823,6, 'BlackBerry6510/4.0.0 UP.Browser/5.0.3.3');
+    $dl[] = array(108557,39688,38754,6, 'BlackBerry9530/5.0.0.328 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6720'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9630fts'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404022,100699,100705,6, 'BlackBerry6720/3.6.0');
+    $dl[] = array(94305,94396,53175,6, 'BlackBerry9630fts/4.7.1.40 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.7.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(265807,288115,291943,6, 'BlackBerry7250/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(94305,94396,53175,6, 'BlackBerry9630/4.7.1.61 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9860'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(224745,37792,267463,6, 'BlackBerry9860/5.0.0.496 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/350');
+    $dl[] = array(131264,110185,110191,6, 'BlackBerry9105/6.0 Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9105'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(66320,328490,327555,6, 'BlackBerry8900/5.2.0.58 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(131264,110185,110191,6, 'BlackBerry9105/6.0.0.570 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/123');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '4.4.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9500'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102077,309227,267463,6, 'BlackBerry9650/4.4.0.438 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444');
+    $dl[] = array(53084,39688,38754,6, 'BlackBerry9500/5.0.0.841 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => 'Tardis256'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,328490,327555,6, 'BlackBerryTardis256/5.2.0.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $dl[] = array(501253,501353,207598,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.1.22303/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8830m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9100'), 1 => array(0 => '6.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(4542,4614,47823,6, 'BlackBerry8830m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
+    $dl[] = array(144033,110185,110191,6, 'BlackBerry9100/6.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/331');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6210'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8350i'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403583,100699,100705,6, 'BlackBerry6210/3.6.0');
+    $dl[] = array(82790,39688,38754,6, 'BlackBerry8350i/5.0.0.1051 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/103');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6220'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403655,100699,100705,6, 'BlackBerry6220/3.6.0');
+    $dl[] = array(501253,501353,442995,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.24851/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6220'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9500'), 1 => array(0 => '4.7.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403655,291937,291943,6, 'BlackBerry6220/4.0.0');
+    $dl[] = array(53084,54109,53175,6, 'BlackBerry9500/4.7.0.181 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6710'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403950,291937,291943,6, 'BlackBerry6710/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(49555,4688,3665,6, 'BlackBerry8100/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(265807,291937,47823,6, 'BlackBerry7250/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $dl[] = array(97491,4688,3665,6, 'BlackBerry8120/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7750'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404310,291937,47823,6, 'BlackBerry7750/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $dl[] = array(69143,4688,3665,6, 'BlackBerry8110/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107811,87531,47823,6, 'BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $dl[] = array(98118,4688,3665,6, 'BlackBerry8830/4.5.0.175 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8705g'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.7.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(298922,97882,97888,6, 'BlackBerry8705g/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(108557,54109,53175,6, 'BlackBerry9530/4.7.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6280'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8350i'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403799,291937,291943,6, 'BlackBerry6280/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(82790,69137,68112,6, 'BlackBerry8350i/4.6.1.313 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6720'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404022,291937,291943,6, 'BlackBerry6720/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(114228,71198,70264,6, 'BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6750'), 1 => array(0 => '3.6.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404094,403871,100705,6, 'BlackBerry6750/3.6.1');
+    $dl[] = array(114228,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6750'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404094,291937,47823,6, 'BlackBerry6750/4.0.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/5.0.3.3');
+    $dl[] = array(114228,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7750'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404310,291937,291943,6, 'BlackBerry7750/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(114228,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102149,68566,65386,6, 'BlackBerry9530/4.6.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $dl[] = array(114228,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(98822,87531,47823,6, 'BlackBerry8707/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $dl[] = array(114228,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(92655,87531,67482,6, 'BlackBerry8830/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 Novarra-Vision/8.0');
+    $dl[] = array(70173,4688,3665,6, 'BlackBerry8130/4.5.0.77 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8220'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(60418,68488,67482,6, 'BlackBerry8330/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/1');
+    $dl[] = array(96595,71384,68112,6, 'BlackBerry8220/4.6.0.180 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(98822,68488,47823,6, 'BlackBerry8707/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/162 UP.Browser/5.0.3.3');
+    $dl[] = array(501253,501353,440124,6, 'Opera/9.80 (BlackBerry; Opera Mini/4.3.25172/26.1305; U; en) Presto/2.8.119 Version/10.54');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8110m'), 1 => array(0 => '4.4.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(309234,309227,309306,6, 'BlackBerry8110m/4.4.0.112 Profile/MIDP-1.9 Configuration/CLDC-1.0');
+    $dl[] = array(97040,4688,3665,6, 'BlackBerry8820/4.5.0.110 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106947,87531,67482,6, 'BlackBerry8310/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/248 Novarra-Vision/8.0');
+    $dl[] = array(63049,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8705g'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(298922,4614,3608,6, 'BlackBerry8705g/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(63049,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '6510'), 1 => array(0 => '3.6.1'), 2 => NULL), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403878,403871,100705,6, 'BlackBerry6510/3.6.1');
+    $dl[] = array(63049,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(107811,4614,47823,6, 'BlackBerry8703e/4.5.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
+    $dl[] = array(63049,70167,69233,6, 'BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(56380,87531,47823,6, 'BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $dl[] = array(501253,501353,627452,6, 'Opera/9.80 (BlackBerry; Opera Mini/6.0.24851/28.2555; U; en) Presto/2.8.119 Version/11.10');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.2'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(288043,288115,47823,6, 'BlackBerry7230/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $dl[] = array(144978,4688,3665,6, 'BlackBerry8800/4.5.0.69 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/123');
     $ls = $ns;
   }
-  $ns = E30($segments, array(0 => array(0 => '8130m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131007,4614,47823,6, 'BlackBerry8130m/4.5.0.127 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179 UP.Browser/5.0.3.3');
+    $dl[] = array(58684,104967,104033,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,104033,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,104033,6, 'BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,104033,6, 'BlackBerry8700/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,104033,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/154');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700c'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,104033,6, 'BlackBerry8700c/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,4688,3665,6, 'BlackBerry8700/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,4688,3665,6, 'BlackBerry8700/4.5 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,369970,300819,6, 'BlackBerry8520/5.2.0.64 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(63049,39688,38754,6, 'BlackBerry8330/5.0.0.438 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/389');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,71198,70264,6, 'BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(71204,4688,3665,6, 'BlackBerry8300/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,92195,70264,6, 'BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/132');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,140623,70264,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8100/4.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73045,71198,70264,6, 'BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73045,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(63049,4688,49645,6, 'BlackBerry8330/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8330m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(63049,4688,49645,6, 'BlackBerry8330m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8230'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(128220,69137,68112,6, 'BlackBerry8230/4.6.1.234 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(501253,501353,600465,6, 'Opera/9.80 (BlackBerry; Opera Mini/7.29990/27.1940; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69143,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69143,70167,69233,6, 'BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97491,70167,69233,6, 'BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97491,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97491,70167,69233,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,92195,70264,6, 'BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/125');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,104967,104033,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8703e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(71204,71198,70264,6, 'BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(71204,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97040,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97040,71198,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97040,71198,70264,6, 'BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8230f'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(139153,69137,68112,6, 'BlackBerry8230f/4.6.1.309 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/294');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.3.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(70173,70167,69233,6, 'BlackBerry8130/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,92195,70264,6, 'BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(104973,71198,70264,6, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) BlackBerry8707/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/150');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '8520'), 1 => NULL, 2 => NULL), $ls);
@@ -2094,7 +1135,999 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,68566,65386,6, 'BlackBerry8520/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $dl[] = array(113326,369970,369976,6, 'BlackBerry8520/5.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,369970,369976,6, 'BlackBerry8520/5.2.0.67 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(159905,110185,300819,6, 'BlackBerry9780/6.6.0.207 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9780'), 1 => array(0 => '6.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(159905,110185,300819,6, 'BlackBerry9780/6.5.0.54 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(4599,4688,3665,6, 'BlackBerry8830m/4.5.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,140623,300819,6, 'BlackBerry8520/4.2.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114228,4688,49645,6, 'BlackBerry8310/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94305,140623,300819,6, 'BlackBerry9630/4.2.0.424 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/160/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73045,4688,49645,6, 'BlackBerry8320/4.5.0.81 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(96236,92195,70264,6, 'BlackBerry7130/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,92195,70264,6, 'BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,92195,70264,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/236');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(70173,4688,49645,6, 'BlackBerry8130/4.5.0.77 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8910_CMCC'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(316468,39688,38754,6, 'BlackBerry8910_CMCC/5.0.0.608 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8910'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(316468,39688,38754,6, 'BlackBerry8910/5.0.0.461 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/612');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8130m'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(141257,4688,3665,6, 'BlackBerry8130m/4.5.0.127 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/106');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(170371,104967,104033,6, 'BlackBerry7290/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,369970,300819,6, 'BlackBerry8900/5.2.0.31 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(63049,70167,49645,6, 'BlackBerry8330/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100i'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(403704,104967,104033,6, 'BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(104973,104967,104033,6, 'BlackBerry8707/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(104973,92195,70264,6, 'BlackBerry8707/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(96236,104967,104033,6, 'BlackBerry7130/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,140623,70264,6, 'BlackBerry8520/4.2.0.135 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8980'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(241147,39688,38754,6, 'BlackBerry8980/5.0.0.978 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8980_CMCC'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(241147,39688,38754,6, 'BlackBerry8980_CMCC/5.0.0.1055 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/204');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97491,4688,49645,6, 'BlackBerry8120/4.5.0.174 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/303 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7130e'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(281017,104967,104033,6, 'BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,71384,68112,6, 'BlackBerry8900/4.6.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,71384,68112,6, 'BlackBerry8900/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114228,71198,49645,6, 'BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197124,104967,104033,6, 'Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197124,104967,104033,6, 'BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8130'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(70173,70167,49645,6, 'BlackBerry8130/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(170371,324184,328371,6, 'BlackBerry7290/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69143,4688,49645,6, 'BlackBerry8110/4.5.0.174 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/303 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9650'), 1 => array(0 => '4.4.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(108466,348128,300819,6, 'BlackBerry9650/4.4.0.560 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,92195,49645,6, 'BlackBerry8100/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,4688,3665,6, 'BlackBerry8703e/4.5.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97040,4688,49645,6, 'BlackBerry8820/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,369970,369976,6, 'BlackBerry8900/5.2.0.67 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7290'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(170371,329305,328371,6, 'BlackBerry7290/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(298790,104967,104033,6, 'BlackBerry7250/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197124,324184,328371,6, 'BlackBerry7100/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(501253,501353,203591,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.0.18832/27.1993; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,4688,49645,6, 'BlackBerry8830/4.5.0.175 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(108557,140623,300819,6, 'BlackBerry9530/4.2.0.128 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(324096,329305,328371,6, 'BlackBerry7230/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73045,71198,49645,6, 'BlackBerry8320/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,71198,49645,6, 'BlackBerry8830/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(501253,501353,601311,6, 'Opera/9.80 (BlackBerry; Opera Mini/7.30065/27.1940; U; en) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197124,329305,328371,6, 'BlackBerry7100/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,4688,49645,6, 'BlackBerry8100/4.5.0.55 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8820'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97040,71198,49645,6, 'BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9630'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(94305,140623,70264,6, 'BlackBerry9630/4.2.0.424 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8120'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(97491,70167,49645,6, 'BlackBerry8120/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(71204,71198,49645,6, 'BlackBerry8300/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(104973,92195,49645,6, 'BlackBerry8707/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,4688,49645,6, 'BlackBerry8800/4.5.0.174 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/240 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(282792,104967,104033,6, 'BlackBerry7520/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8800'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144978,92195,49645,6, 'BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7730'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458239,329305,328371,6, 'BlackBerry7730/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8300'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(71204,4688,49645,6, 'BlackBerry8300/4.5.0.182 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6230'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457534,329305,328371,6, 'BlackBerry6230/4.0.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8900'), 1 => array(0 => '4.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69046,140623,300819,6, 'BlackBerry8900/4.2.0.102 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/352');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '5.2.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38663,369970,300819,6, 'BlackBerry9000/5.2.0.93 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/351');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8600'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(373059,39688,38754,6, 'BlackBerry8600/5.0.0.564 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(324096,324184,328371,6, 'BlackBerry7230/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9000'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38663,329305,300819,6, 'BlackBerry9000/4.0.0.155 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/159/444');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8110'), 1 => array(0 => '4.3.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(69143,70167,49645,6, 'BlackBerry8110/4.3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/102 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7130e'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(281017,92195,70264,6, 'BlackBerry7130e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,4688,49645,6, 'BlackBerry8700/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9860'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(249669,39688,300819,6, 'BlackBerry9860/5.0.0.496 Profile/MIDP-2.0 Configuration/CLDC-1.1/UC Browser7.8.0.95/161/350');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,104967,49645,6, 'BlackBerry8700/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/142 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,104967,49645,6, 'BlackBerry8703e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '; Opera Mini'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(501253,501353,59582,6, 'Opera/9.80 (BlackBerry; Opera Mini/5.20798/27.1324; U; ja) Presto/2.8.119 Version/11.10');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8500'), 1 => array(0 => '4.6.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145643,69137,68112,6, 'BlackBerry8500/4.6.1.320 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/-1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9650x'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(214526,39688,38754,6, 'BlackBerry9650x/5.0.0.549 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(282792,329305,49645,6, 'BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3  (Google WAP Proxy/1.0)');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(298790,329305,328371,6, 'BlackBerry7250/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(298790,324184,328371,6, 'BlackBerry7250/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8320'), 1 => array(0 => '4.3.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73045,428455,69233,6, 'BlackBerry8320/4.3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '5810'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457186,108007,107073,6, 'BlackBerry5810/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7280'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106985,329305,328371,6, 'BlackBerry7280/4.0.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7520'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(282792,329305,328371,6, 'BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7780'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458414,329305,328371,6, 'BlackBerry7780/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => 'Tardis'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,39688,38754,6, 'BlackBerryTardis/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => 'Unknown'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,39688,38754,6, 'BlackBerryUnknown/5.0.0.526 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/11');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => 'essex'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,39688,38754,6, 'BlackBerryessex/5.0.0.273 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6210'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457360,108007,107073,6, 'BlackBerry6210/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6220'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457447,108007,107073,6, 'BlackBerry6220/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6510'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457629,329305,49645,6, 'BlackBerry6510/4.0.0 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7250'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(298790,329305,49645,6, 'BlackBerry7250/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7750'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458327,329305,49645,6, 'BlackBerry7750/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7280'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106985,108007,107073,6, 'BlackBerry7280/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7130'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(96236,104967,49645,6, 'BlackBerry7130/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,92195,49645,6, 'BlackBerry8703e/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/126 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8100'), 1 => array(0 => '4.2.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(49555,140623,49645,6, 'BlackBerry8100/4.2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9800'), 1 => array(0 => '5.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(110093,39688,38754,6, 'BlackBerry9800/5.0.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/168');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6220'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457447,329305,328371,6, 'BlackBerry6220/4.0.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6280'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457716,329305,328371,6, 'BlackBerry6280/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6710'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457890,108007,107073,6, 'BlackBerry6710/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6720'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457977,108007,107073,6, 'BlackBerry6720/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6710'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457890,329305,328371,6, 'BlackBerry6710/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '9530'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(108557,71384,68112,6, 'BlackBerry9530/4.6.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8703e'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(115307,4688,49645,6, 'BlackBerry8703e/4.5.0.148 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98118,92195,70264,6, 'BlackBerry8830/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/105 Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8330'), 1 => array(0 => '4.2.2'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(63049,71198,70264,6, 'BlackBerry8330/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8707'), 1 => array(0 => '4.2.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(104973,71198,49645,6, 'BlackBerry8707/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/162 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8700'), 1 => array(0 => '4.2.1'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(58684,92195,49645,6, 'BlackBerry8700/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/120 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7230'), 1 => array(0 => '4.0.2'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(324096,324184,49645,6, 'BlackBerry7230/4.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8705g'), 1 => array(0 => '4.1.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336449,104967,104033,6, 'BlackBerry8705g/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8110m'), 1 => array(0 => '4.4.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(348135,348128,348222,6, 'BlackBerry8110m/4.4.0.112 Profile/MIDP-1.9 Configuration/CLDC-1.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => 'Tardis256'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,369970,369976,6, 'BlackBerryTardis256/5.2.0.3 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8830m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(4599,4688,49645,6, 'BlackBerry8830m/4.5.0.186 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7100'), 1 => array(0 => '4.1.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(197124,104967,49645,6, 'BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/168 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8130m'), 1 => array(0 => '4.5.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(141257,4688,49645,6, 'BlackBerry8130m/4.5.0.127 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/179 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8310'), 1 => array(0 => '4.2.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114228,92195,70264,6, 'BlackBerry8310/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/248 Novarra-Vision/8.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8705g'), 1 => array(0 => '4.5.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336449,4688,3665,6, 'BlackBerry8705g/4.5.0.124 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '8520'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113326,71384,68112,6, 'BlackBerry8520/4.6 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '5820'), 1 => array(0 => '3.6.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457273,108007,107073,6, 'BlackBerry5820/3.6.0');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6510'), 1 => array(0 => '3.6.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457629,457622,107073,6, 'BlackBerry6510/3.6.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6750'), 1 => array(0 => '3.6.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458064,457622,107073,6, 'BlackBerry6750/3.6.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6720'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457977,329305,328371,6, 'BlackBerry6720/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '6750'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458064,329305,49645,6, 'BlackBerry6750/4.0.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/5.0.3.3');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '7510'), 1 => array(0 => '4.0.0'), 2 => array(0 => '5.0')), $ls);
@@ -2102,7 +2135,15 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404166,291937,47823,6, 'BlackBerry7510/4.0.0 UP.Browser/5.0.3.3');
+    $dl[] = array(458151,329305,49645,6, 'BlackBerry7510/4.0.0 UP.Browser/5.0.3.3');
+    $ls = $ns;
+  }
+  $ns = E30($segments, array(0 => array(0 => '7750'), 1 => array(0 => '4.0.0'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458327,329305,328371,6, 'BlackBerry7750/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E30($segments, array(0 => array(0 => '9100'), 1 => array(0 => '4.6.0'), 2 => NULL), $ls);
@@ -2110,7 +2151,7 @@ function _H30($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(133311,68566,65386,6, 'BlackBerry9100/4.6.0.31 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
+    $dl[] = array(144033,71384,68112,6, 'BlackBerry9100/4.6.0.31 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100');
     $ls = $ns;
   }
   return $dl;

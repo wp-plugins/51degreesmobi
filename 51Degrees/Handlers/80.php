@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'SIE-C60/12 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'SIE-M65/04 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'SIE-AX72/01 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'SIE-A60/23 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -87,7 +80,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'SIE-CFX65/9 Obigo/Q03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -96,25 +89,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,112938,6, $ua);
+    $dl[] = array(20443,20547,121058,6, $ua);
   }
-  $ua = 'SIE-CF75/10 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-C65/14 UP.Browser/7.0.0.1.c.2 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
-  }
-  $ua = 'SIE-CX65/08 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-S65/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -123,16 +107,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
-  }
-  $ua = 'SIE-CX65/14 UP.Browser/7.0.0.1.c.2 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-CF75/22 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -141,7 +116,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX65/25 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -150,7 +125,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-ME75/22 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -159,7 +134,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX65/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -168,16 +143,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
-  }
-  $ua = 'SIE-CX65/43 UP.Browser/7.0.2.2.d.1.100(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-C65/54 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -186,7 +152,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-C72/22 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -195,25 +161,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
-  $ua = 'SIE-M65/43 UP.Browser/7.0.2.2.d.1.100(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-ME75/19 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
-  }
-  $ua = 'SIE-C65/16 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-C65/25 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -222,7 +179,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CF75/07 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-C72/16 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -231,7 +197,34 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,61499,6, $ua);
+    $dl[] = array(20443,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-C65/12 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-C65/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-S65/25 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,64260,6, $ua);
   }
   $ua = 'SIE-CF62/95 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -240,7 +233,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-A65/05 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -249,7 +242,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
+  }
+  $ua = 'SIE-M55/04 UP.Browser/6.1.0.5.c.4 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-C60/25 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -258,7 +260,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-C60/16 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -267,7 +269,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-M55/07 UP.Browser/6.1.0.5.c.5 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -276,16 +278,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
-  $ua = 'SIE-SL55/14 UP.Browser/6.1.0.5.c.5 (GUI) MMP/1.0';
+  $ua = 'SIE-A60/20 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-A60/27 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -294,7 +296,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-A65/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -303,16 +305,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
-  $ua = 'SIE-CF62/12 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ua = 'SIE-A65/15 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-AX72/01 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -321,7 +323,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-M55/11 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -330,7 +332,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-M55/10 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -339,25 +341,16 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
-  $ua = 'SIE-CF62/21 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ua = 'SIE-MC6C/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-A60/23 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,187005,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-A75/20 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -366,142 +359,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-SL75/(2005.11.01)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/39 UP.Browser/7.1.0.e.20(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/30 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.15 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68C/51 UP.Browser/7.1.0.e.25(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.25 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/38 UP.Browser/7.1.0.e.18(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/24 UP.Browser/7.1.0.e.13(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/13 UP.Browser/7.1.0.e.8(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.8 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/31 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/35 UP.Browser/7.1.0.e.16(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.16 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-SL75/(2005.11.01)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.16 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/34 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/34 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.15 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/47 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/22 UP.Browser/7.1.0.e.12(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.12 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-S68/36 UP.Browser/7.1.0.e.18 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,206127,6, $ua);
   }
   $ua = 'SIE-2128/11 UP.Browser/5.0.3.3 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -510,7 +368,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-2128/17 UP.Browser/5.0.3.3 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -519,7 +377,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-2128/18 UP.Browser/5.0.3.3 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -528,7 +386,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-3118/17 UP.Browser/5.0.2.3.100 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -537,7 +395,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-6618/01 UP.Browser/5.0.1.1.102 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -546,7 +404,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-A50/01 UP.Browser/5.0.2.3.100 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -555,7 +413,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-A55A/07 UP.Browser/5.0.3.3 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -564,7 +422,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-C45/00 UP.Browser/5.0.1.1.102 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -573,7 +431,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-C45/31 UP.Browser/5.0.2.2 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -582,7 +440,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-ME45/23 UP.Browser/5.0.2.2 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -591,7 +449,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-S45/00 UP.Browser/5.0.1.1.102 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -600,7 +458,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-S46/07 UP.Browser/5.0.2.1.103 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -609,7 +467,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-MT50/07 UP.Browser/5.0.2.2 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -618,7 +476,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-A56i/02 UP.Browser/5.0.3.3.1.e.4 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -627,7 +485,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
   $ua = 'SIE-C55/18 UP.Browser/5.0.3.3 (GUI)';
   $ns = E80($useragent, $ua, $ls);
@@ -636,196 +494,142 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,47823,6, $ua);
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
-  $ua = 'SIE-EL71/31 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ua = 'SIE-SL75/(2005.11.01)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/17 UP.Browser/7.1.0.e.21(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.21 (GUI) MMP/2.0';
+  $ua = 'SIE-SL75/39 UP.Browser/7.1.0.e.20(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/38 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ua = 'SIE-S68/30 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.15 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/(2006.02.15)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ua = 'SIE-S68C/51 UP.Browser/7.1.0.e.25(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.25 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
+  $ua = 'SIE-S68/38 UP.Browser/7.1.0.e.18(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-SL75/24 UP.Browser/7.1.0.e.13(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/31 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-SL75/13 UP.Browser/7.1.0.e.8(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.8 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/36 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ua = 'SIE-SL75/31 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/26 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ua = 'SIE-SL75/(2005.11.01)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.16 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/12 UP.Browser/7.1.0.e.18(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.18 (GUI) MMP/2.0';
+  $ua = 'SIE-SL75/35 UP.Browser/7.1.0.e.16(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.16 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EL71/22 UP.Browser/7.1.0.e.23(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.23 (GUI) MMP/2.0';
+  $ua = 'SIE-S68/34 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EF81/39 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
+  $ua = 'SIE-S68/34 UP.Browser/7.1.0.e.15(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.15 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75725,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EF81/00 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.4 (GUI) MMP/2.0';
+  $ua = 'SIE-S68/47 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75725,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EF81/23 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
+  $ua = 'SIE-S68/22 UP.Browser/7.1.0.e.12(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.12 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75725,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
-  $ua = 'SIE-EF81/26 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
+  $ua = 'SIE-S68/36 UP.Browser/7.1.0.e.18 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/58 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/48 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/31 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/58 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.10 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/22 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-EF81/12 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(75725,21180,75797,6, $ua);
+    $dl[] = array(20443,20547,79299,6, $ua);
   }
   $ua = 'SIE-C75/11 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -834,7 +638,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(244881,21180,61499,6, $ua);
+    $dl[] = array(274048,20547,64260,6, $ua);
   }
   $ua = 'SIE-C75/13 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -843,7 +647,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(244881,21180,61499,6, $ua);
+    $dl[] = array(274048,20547,64260,6, $ua);
   }
   $ua = 'SIE-C75/24 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -852,7 +656,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(244881,21180,61499,6, $ua);
+    $dl[] = array(274048,20547,64260,6, $ua);
   }
   $ua = 'SIE-C75/22 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -861,106 +665,196 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(244881,21180,61499,6, $ua);
+    $dl[] = array(274048,20547,64260,6, $ua);
   }
-  $ua = 'SIE-CX75/13 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/39 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/05 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/00 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.4 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/16 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/23 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/11 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/26 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/25 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/58 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/08 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/48 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-CX75/10 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-EF81/31 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,61499,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-MC60/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ua = 'SIE-EF81/58 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.k.10 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346849,21180,187005,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-MC60/10 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ua = 'SIE-EF81/22 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346849,21180,187005,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-MC60/05 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0';
+  $ua = 'SIE-EF81/12 UP.Browser/7.0.0.1.181 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.1.3.h (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346849,21180,187005,6, $ua);
+    $dl[] = array(79210,20547,79299,6, $ua);
   }
-  $ua = 'SIE-MC60/06 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ua = 'SIE-EL71/31 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346849,21180,187005,6, $ua);
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/17 UP.Browser/7.1.0.e.21(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.21 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/38 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/(2006.02.15)SW01/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/31 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/36 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/26 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/12 UP.Browser/7.1.0.e.18(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.18 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-EL71/22 UP.Browser/7.1.0.e.23(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.23 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,79299,6, $ua);
   }
   $ua = 'SIE-CX70/54 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -969,7 +863,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,61499,6, $ua);
+    $dl[] = array(233665,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX70/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -978,7 +872,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,61499,6, $ua);
+    $dl[] = array(233665,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX70/56 UP.Browser/7.0.2.2.d.4(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -987,7 +881,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,61499,6, $ua);
+    $dl[] = array(233665,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX70/36 UP.Browser/7.0.2.2.156(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -996,7 +890,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,61499,6, $ua);
+    $dl[] = array(233665,20547,64260,6, $ua);
   }
   $ua = 'SIE-CX70/43 UP.Browser/7.0.2.2.d.1.100(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1005,7 +899,43 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,61499,6, $ua);
+    $dl[] = array(233665,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-MC60/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(393139,20547,206127,6, $ua);
+  }
+  $ua = 'SIE-MC60/10 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(393139,20547,206127,6, $ua);
+  }
+  $ua = 'SIE-MC60/05 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(393139,20547,206127,6, $ua);
+  }
+  $ua = 'SIE-MC60/06 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(393139,20547,206127,6, $ua);
   }
   $ua = 'SIE-S75/35 UP.Browser/7.1.0.e.16(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.16 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1014,7 +944,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/13 UP.Browser/7.1.0.e.8(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.8 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1023,7 +953,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/40 UP.Browser/7.1.0.e.20(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1032,7 +962,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/24 UP.Browser/7.1.0.e.13(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.13 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1041,7 +971,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/20 UP.Browser/7.1.0.e.12(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.12 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1050,7 +980,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/39 UP.Browser/7.1.0.e.20(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.20 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1059,7 +989,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/10 UP.Browser/7.1.0.e.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1068,7 +998,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-S75/47 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1077,7 +1007,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,75797,6, $ua);
+    $dl[] = array(353678,20547,79299,6, $ua);
   }
   $ua = 'SIE-A31/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1086,7 +1016,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365530,21180,187005,6, $ua);
+    $dl[] = array(415536,20547,206127,6, $ua);
   }
   $ua = 'SIE-A31/09 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1095,7 +1025,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365530,21180,187005,6, $ua);
+    $dl[] = array(415536,20547,206127,6, $ua);
   }
   $ua = 'SIE-A31a/03 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1104,7 +1034,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365530,21180,187005,6, $ua);
+    $dl[] = array(415536,20547,206127,6, $ua);
   }
   $ua = 'SIE-A31C/02 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1113,61 +1043,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365530,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-E71/39 UP.Browser/7.1.0.k.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.5 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(239302,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-E71/37 UP.Browser/7.1.0.k.4(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.4 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(239302,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-E71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(239302,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-E71C/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(239302,21180,75797,6, $ua);
-  }
-  $ua = 'SIE-CL75/01 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(359987,21180,18086,6, $ua);
-  }
-  $ua = 'SIE-CL75/01 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(359987,21180,18086,6, $ua);
+    $dl[] = array(415536,20547,206127,6, $ua);
   }
   $ua = 'SIE-SK6R/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1176,7 +1052,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(241898,21180,61499,6, $ua);
+    $dl[] = array(270376,20547,64260,6, $ua);
   }
   $ua = 'SIE-SK6R/46 UP.Browser/7.0.2.2.d.1.100(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1185,7 +1061,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(241898,21180,61499,6, $ua);
+    $dl[] = array(270376,20547,64260,6, $ua);
   }
   $ua = 'SIE-SK6R/30 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1194,7 +1070,124 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(241898,21180,61499,6, $ua);
+    $dl[] = array(270376,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/13 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/05 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/16 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/11 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/25 UP.Browser/7.0.2.2.d.7(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/08 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-CX75/10 UP.Browser/7.0.2.2.d.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(266472,20547,64260,6, $ua);
+  }
+  $ua = 'SIE-E71/39 UP.Browser/7.1.0.k.5(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.5 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(267188,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-E71/37 UP.Browser/7.1.0.k.4(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.4 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(267188,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-E71/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(267188,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-E71C/41 UP.Browser/7.1.0.k.6(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.k.6 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(267188,20547,79299,6, $ua);
+  }
+  $ua = 'SIE-CL75/01 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(408971,20547,18306,6, $ua);
+  }
+  $ua = 'SIE-CL75/01 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(408971,20547,18306,6, $ua);
   }
   $ua = 'SIE-AF51/12 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1203,7 +1196,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369416,21180,187005,6, $ua);
+    $dl[] = array(420317,20547,206127,6, $ua);
   }
   $ua = 'SIE-AF51/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1212,43 +1205,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369416,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-A62/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(365171,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-A62/02 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(365171,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-ST60/1.0 UP.Browser/6.1.0.7.4 (GUI) MMP/1.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(370136,21180,187005,6, $ua);
-  }
-  $ua = 'SIE-ST60/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
-  $ns = E80($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(370136,21180,187005,6, $ua);
+    $dl[] = array(420317,20547,206127,6, $ua);
   }
   $ua = 'SIE-SP65/49 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1257,7 +1214,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(203949,21180,61499,6, $ua);
+    $dl[] = array(225682,20547,64260,6, $ua);
   }
   $ua = 'SIE-SP65/47 UP.Browser/7.0.2.2.d.1(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1266,7 +1223,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(203949,21180,61499,6, $ua);
+    $dl[] = array(225682,20547,64260,6, $ua);
   }
   $ua = 'SIE-M6V/50 UP.Browser/7.0.2.2.d.3(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1275,25 +1232,25 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369056,21180,61499,6, $ua);
+    $dl[] = array(419876,20547,64260,6, $ua);
   }
-  $ua = 'SIE-SX1/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ua = 'SIE-ST60/1.0 UP.Browser/6.1.0.7.4 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,24384,177291,6, $ua);
+    $dl[] = array(421203,20547,206127,6, $ua);
   }
-  $ua = 'SIE-SX1/1.1 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ua = 'SIE-ST60/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,24384,177291,6, $ua);
+    $dl[] = array(421203,20547,206127,6, $ua);
   }
   $ua = 'SIE-M6V';
   $ns = E80($useragent, $ua, $ls);
@@ -1302,34 +1259,43 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369056,21180,15136,6, $ua);
+    $dl[] = array(419876,20547,16335,6, $ua);
   }
-  $ua = 'SIE-EL71/41 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'SIE-SX1/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,15136,6, $ua);
+    $dl[] = array(20443,25611,195292,6, $ua);
   }
-  $ua = 'SIE-EL71';
+  $ua = 'SIE-SX1/1.1 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179312,21180,15136,6, $ua);
+    $dl[] = array(20443,25611,195292,6, $ua);
   }
-  $ua = 'SIE-AX75/12 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
+  $ua = 'SIE-A62/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253442,21180,187005,6, $ua);
+    $dl[] = array(415097,20547,206127,6, $ua);
+  }
+  $ua = 'SIE-A62/02 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(415097,20547,206127,6, $ua);
   }
   $ua = 'SIE-A31';
   $ns = E80($useragent, $ua, $ls);
@@ -1338,7 +1304,34 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365530,21180,15136,6, $ua);
+    $dl[] = array(415536,20547,16335,6, $ua);
+  }
+  $ua = 'SIE-EL71/41 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,16335,6, $ua);
+  }
+  $ua = 'SIE-EL71';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(197482,20547,16335,6, $ua);
+  }
+  $ua = 'SIE-AX75/12 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
+  $ns = E80($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(284307,20547,206127,6, $ua);
   }
   $ua = 'SIE-MC60';
   $ns = E80($useragent, $ua, $ls);
@@ -1347,7 +1340,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346849,21180,15136,6, $ua);
+    $dl[] = array(393139,20547,16335,6, $ua);
   }
   $ua = 'SIE-SK65/00 UP.Browser/7.0.0.1.154eng (GUI) MMP/2.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1356,7 +1349,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(405109,21180,61499,6, $ua);
+    $dl[] = array(459292,20547,64260,6, $ua);
   }
   $ua = 'SIE-SK65/30 UP.Browser/7.0.0.1.c.3 (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E80($useragent, $ua, $ls);
@@ -1365,7 +1358,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(405109,21180,61499,6, $ua);
+    $dl[] = array(459292,20547,64260,6, $ua);
   }
   $ua = 'SIE-C75';
   $ns = E80($useragent, $ua, $ls);
@@ -1374,7 +1367,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(244881,21180,15136,6, $ua);
+    $dl[] = array(274048,20547,16335,6, $ua);
   }
   $ua = 'SIE-S75/12';
   $ns = E80($useragent, $ua, $ls);
@@ -1383,7 +1376,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,15136,6, $ua);
+    $dl[] = array(353678,20547,16335,6, $ua);
   }
   $ua = 'SIE-S75/31';
   $ns = E80($useragent, $ua, $ls);
@@ -1392,7 +1385,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313912,21180,15136,6, $ua);
+    $dl[] = array(353678,20547,16335,6, $ua);
   }
   $ua = 'SIE-CF110/14 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0';
   $ns = E80($useragent, $ua, $ls);
@@ -1401,7 +1394,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366394,21180,187005,6, $ua);
+    $dl[] = array(416604,20547,206127,6, $ua);
   }
   $ua = 'SIE-A62';
   $ns = E80($useragent, $ua, $ls);
@@ -1410,7 +1403,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(365171,21180,15136,6, $ua);
+    $dl[] = array(415097,20547,16335,6, $ua);
   }
   $ua = 'SIE-AF51';
   $ns = E80($useragent, $ua, $ls);
@@ -1419,7 +1412,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369416,21180,15136,6, $ua);
+    $dl[] = array(420317,20547,16335,6, $ua);
   }
   $ua = 'SIE-ST60';
   $ns = E80($useragent, $ua, $ls);
@@ -1428,7 +1421,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370136,21180,15136,6, $ua);
+    $dl[] = array(421203,20547,16335,6, $ua);
   }
   $ua = 'SIE-CX70';
   $ns = E80($useragent, $ua, $ls);
@@ -1437,7 +1430,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210915,21180,15136,6, $ua);
+    $dl[] = array(233665,20547,16335,6, $ua);
   }
   $ua = 'SIE-SK65';
   $ns = E80($useragent, $ua, $ls);
@@ -1446,7 +1439,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(405109,21180,15136,6, $ua);
+    $dl[] = array(459292,20547,16335,6, $ua);
   }
   $ua = 'SIE-SP65';
   $ns = E80($useragent, $ua, $ls);
@@ -1455,7 +1448,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(203949,21180,15136,6, $ua);
+    $dl[] = array(225682,20547,16335,6, $ua);
   }
   $ua = 'SIE-AX75';
   $ns = E80($useragent, $ua, $ls);
@@ -1464,7 +1457,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(253442,21180,15136,6, $ua);
+    $dl[] = array(284307,20547,16335,6, $ua);
   }
   $ua = 'SIE-CL75';
   $ns = E80($useragent, $ua, $ls);
@@ -1473,7 +1466,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(359987,21180,15136,6, $ua);
+    $dl[] = array(408971,20547,16335,6, $ua);
   }
   $ua = 'SIE-CX75';
   $ns = E80($useragent, $ua, $ls);
@@ -1482,7 +1475,7 @@ function _H80($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(238726,21180,15136,6, $ua);
+    $dl[] = array(266472,20547,16335,6, $ua);
   }
   return $dl;
 }

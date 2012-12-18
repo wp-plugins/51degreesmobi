@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -55,6 +48,10 @@ function E38($target, $test, $ls) {
   if ($score == PHP_INT_MAX) {
     return PHP_INT_MAX;
   }
+  fiftyone_degrees_calculate_segment_score($target[6], $test[6], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
   return $score;
 }
 
@@ -79,325 +76,342 @@ function _H38($useragent) {
     2 => fiftyone_degrees_preg_match_all('#Fennec#', $useragent),
     3 => fiftyone_degrees_preg_match_all('#(?<=\\()[^\\)]+#', $useragent),
     4 => fiftyone_degrees_preg_match_all('#(?<=Gecko/)[\\d]+#', $useragent),
-    5 => fiftyone_degrees_preg_match_all('#(?<=Firefox/)[\\d\\.]+#', $useragent));
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'X11; U; Linux armv7l; en-US; rv:1.9.2.5'), 4 => NULL, 5 => array(0 => '3.6.5')), $ls);
+    5 => fiftyone_degrees_preg_match_all('#(?<=Firefox/)[\\d\\.]+#', $useragent),
+    6 => fiftyone_degrees_preg_match_all('#(?<=;\\sAndroid)[\\d\\s][^;\\)]+#', $useragent));
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'X11; U; Linux armv7l; en-US; rv:1.9.2.5'), 4 => NULL, 5 => array(0 => '3.6.5'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,15136,6, 'Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2.5) Gecko/X Firefox/3.6.5pre Fennec/1.1');
+    $dl[] = array(20443,145607,16335,6, 'Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2.5) Gecko/X Firefox/3.6.5pre Fennec/1.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:2.1'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:2.1'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,15136,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:2.1) Gecko/X Firefox/4.0b13pre Fennec/4.0');
+    $dl[] = array(20443,145607,16335,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:2.1) Gecko/X Firefox/4.0b13pre Fennec/4.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Windows NT 6.1; WOW64; rv:2.1.1'), 4 => NULL, 5 => array(0 => '4.0.2')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Windows NT 6.1; WOW64; rv:2.1.1'), 4 => NULL, 5 => array(0 => '4.0.2'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,15136,6, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.1.1) Gecko/X Firefox/4.0.2pre Fennec/4.0.1');
+    $dl[] = array(20443,118535,16335,6, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.1.1) Gecko/X Firefox/4.0.2pre Fennec/4.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0a2'), 4 => NULL, 5 => array(0 => '10.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0a2'), 4 => NULL, 5 => array(0 => '10.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0a2) Gecko/X Firefox/10.0a2 Fennec/10.0a2');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0a2) Gecko/X Firefox/10.0a2 Fennec/10.0a2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0'), 4 => NULL, 5 => array(0 => '10.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0'), 4 => NULL, 5 => array(0 => '10.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0) Gecko/X Firefox/10.0 Fennec/10.0');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0) Gecko/X Firefox/10.0 Fennec/10.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.1'), 4 => NULL, 5 => array(0 => '10.0.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.1'), 4 => NULL, 5 => array(0 => '10.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/X Firefox/10.0.1 Fennec/10.0.1');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/X Firefox/10.0.1 Fennec/10.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.2'), 4 => NULL, 5 => array(0 => '10.0.2')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.2'), 4 => NULL, 5 => array(0 => '10.0.2'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.2) Gecko/X Firefox/10.0.2 Fennec/10.0.2');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.2) Gecko/X Firefox/10.0.2 Fennec/10.0.2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.3'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.3'), 4 => NULL, 5 => array(0 => '10.0.3')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.3'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:10.0.3'), 4 => NULL, 5 => array(0 => '10.0.3'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.3) Gecko/X Firefox/10.0.3 Fennec/10.0.3');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:10.0.3) Gecko/X Firefox/10.0.3 Fennec/10.0.3');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.4'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:10.0.4'), 4 => array(0 => '10'), 5 => array(0 => '10.0.4')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.4'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:10.0.4'), 4 => array(0 => '10'), 5 => array(0 => '10.0.4'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Tablet; rv:10.0.4) Gecko/10.0.4 Firefox/10.0.4 Fennec/10.0.4');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Mobile; rv:10.0.4) Gecko/10.0.4 Firefox/10.0.4 Fennec/10.0.4');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.4'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:10.0.4'), 4 => array(0 => '10'), 5 => array(0 => '10.0.4')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.5'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:10.0.5'), 4 => array(0 => '10'), 5 => array(0 => '10.0.5'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Mobile; rv:10.0.4) Gecko/10.0.4 Firefox/10.0.4 Fennec/10.0.4');
+    $dl[] = array(381670,102822,583550,6, 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.5'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:10.0.5'), 4 => array(0 => '10'), 5 => array(0 => '10.0.5')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.4'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:10.0.4'), 4 => array(0 => '10'), 5 => array(0 => '10.0.4'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Tablet; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5');
+    $dl[] = array(547493,102822,583550,6, 'Mozilla/5.0 (Android; Tablet; rv:10.0.4) Gecko/10.0.4 Firefox/10.0.4 Fennec/10.0.4');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.5'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:10.0.5'), 4 => array(0 => '10'), 5 => array(0 => '10.0.5')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.5'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:10.0.5'), 4 => array(0 => '10'), 5 => array(0 => '10.0.5'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,518624,6, 'Mozilla/5.0 (Android; Mobile; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5');
+    $dl[] = array(547493,102822,583550,6, 'Mozilla/5.0 (Android; Tablet; rv:10.0.5) Gecko/10.0.5 Firefox/10.0.5 Fennec/10.0.5');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b7pre'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b7pre'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b7pre) Gecko/X Firefox/4.0b8pre Fennec/4.0b2');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b7pre) Gecko/X Firefox/4.0b8pre Fennec/4.0b2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b8'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b8'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b8) Gecko/X Firefox/4.0b8 Fennec/4.0b3');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b8) Gecko/X Firefox/4.0b8 Fennec/4.0b3');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b11pre'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b11pre'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b11pre) Gecko/X Firefox/4.0b11pre Fennec/4.0b4');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b11pre) Gecko/X Firefox/4.0b11pre Fennec/4.0b4');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.1'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.1'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.1) Gecko/X Firefox/4.0b13pre Fennec/4.0');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.1) Gecko/X Firefox/4.0b13pre Fennec/4.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b12pre'), 4 => NULL, 5 => array(0 => '4.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.0b12pre'), 4 => NULL, 5 => array(0 => '4.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b12pre) Gecko/X Firefox/4.0b12pre Fennec/4.0b5');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.0b12pre) Gecko/X Firefox/4.0b12pre Fennec/4.0b5');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.1.1'), 4 => NULL, 5 => array(0 => '4.0.2')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '4.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:2.1.1'), 4 => NULL, 5 => array(0 => '4.0.2'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,15136,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.1.1) Gecko/X Firefox/4.0.2pre Fennec/4.0.1');
+    $dl[] = array(381670,102822,16335,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:2.1.1) Gecko/X Firefox/4.0.2pre Fennec/4.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:7.0'), 4 => NULL, 5 => array(0 => '7.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '14.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:14.0'), 4 => array(0 => '14'), 5 => array(0 => '14.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,495272,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:7.0) Gecko/X Firefox/7.0 Fennec/7.0');
+    $dl[] = array(547493,102822,620821,6, 'Mozilla/5.0 (Android; Tablet; rv:14.0) Gecko/14.0 Firefox/14.0 Fennec/14.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:7.0.1'), 4 => NULL, 5 => array(0 => '7.0.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '13.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:13.0'), 4 => array(0 => '13'), 5 => array(0 => '13.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,495272,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:7.0.1) Gecko/X Firefox/7.0.1 Fennec/7.0.1');
+    $dl[] = array(381670,102822,621671,6, 'Mozilla/5.0 (Android; Mobile; rv:13.0) Gecko/13.0 Firefox/13.0 Fennec/13.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:6.0'), 4 => NULL, 5 => array(0 => '6.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:11.0a2'), 4 => NULL, 5 => array(0 => '11.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,492095,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:6.0) Gecko/X Firefox/6.0 Fennec/6.0');
+    $dl[] = array(381670,102822,585515,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:11.0a2) Gecko/X Firefox/11.0a2 Fennec/11.0a2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:6.0.2'), 4 => NULL, 5 => array(0 => '6.0.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:11.0'), 4 => NULL, 5 => array(0 => '11.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,492095,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:6.0.2) Gecko/X Firefox/6.0.1 Fennec/6.0.2');
+    $dl[] = array(381670,102822,585515,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:11.0) Gecko/X Firefox/11.0 Fennec/11.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:11.0a2'), 4 => NULL, 5 => array(0 => '11.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:11.0'), 4 => array(0 => '11'), 5 => array(0 => '11.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,520533,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:11.0a2) Gecko/X Firefox/11.0a2 Fennec/11.0a2');
+    $dl[] = array(381670,102822,585515,6, 'Mozilla/5.0 (Android; Mobile; rv:11.0) Gecko/11.0 Firefox/11.0 Fennec/11.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:11.0'), 4 => NULL, 5 => array(0 => '11.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '13.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:13.0'), 4 => array(0 => '13'), 5 => array(0 => '13.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,520533,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:11.0) Gecko/X Firefox/11.0 Fennec/11.0');
+    $dl[] = array(547493,102822,621671,6, 'Mozilla/5.0 (Android; Tablet; rv:13.0) Gecko/13.0 Firefox/13.0 Fennec/13.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Mobile; rv:11.0'), 4 => array(0 => '11'), 5 => array(0 => '11.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '13.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:13.0'), 4 => NULL, 5 => array(0 => '13.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,520533,6, 'Mozilla/5.0 (Android; Mobile; rv:11.0) Gecko/11.0 Firefox/11.0 Fennec/11.0');
+    $dl[] = array(20443,145607,621671,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:13.0) Gecko/X Firefox/13.0 Fennec/13.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:11.0'), 4 => array(0 => '11'), 5 => array(0 => '11.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '13.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:13.0'), 4 => NULL, 5 => array(0 => '13.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,520533,6, 'Mozilla/5.0 (Android; Tablet; rv:11.0) Gecko/11.0 Firefox/11.0 Fennec/11.0');
+    $dl[] = array(20443,145607,621671,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:13.0) Gecko/X Firefox/13.0.1 Fennec/13.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '9.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:9.0'), 4 => NULL, 5 => array(0 => '9.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Tablet; rv:11.0'), 4 => array(0 => '11'), 5 => array(0 => '11.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,506570,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:9.0) Gecko/X Firefox/9.0 Fennec/9.0');
+    $dl[] = array(547493,102822,585515,6, 'Mozilla/5.0 (Android; Tablet; rv:11.0) Gecko/11.0 Firefox/11.0 Fennec/11.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '9.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:9.0.1'), 4 => NULL, 5 => array(0 => '9.0.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:10.0a1'), 4 => NULL, 5 => array(0 => '10.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,506570,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:9.0.1) Gecko/X Firefox/9.0.1 Fennec/9.0 NetNanny/1.0');
+    $dl[] = array(20443,145607,583550,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:10.0a1) Gecko/X Firefox/10.0a1 Fennec/10.0a1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '5.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:5.0'), 4 => NULL, 5 => array(0 => '5.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:10.0.2'), 4 => NULL, 5 => array(0 => '10.0.2'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,486570,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:5.0) Gecko/X Firefox/5.0 Fennec/5.0');
+    $dl[] = array(20443,145607,583550,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:10.0.2) Gecko/X Firefox/10.0.2 Fennec/10.0.2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:6.0'), 4 => NULL, 5 => array(0 => '6.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'X11; U; Linux armv7l; en-US; rv:1.9.2.1'), 4 => NULL, 5 => array(0 => '3.6.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,492095,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:6.0) Gecko/X Firefox/6.0 Fennec/6.0');
+    $dl[] = array(20443,145607,489915,6, 'Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2.1) Gecko/X Firefox/3.6.1 Fennec/1.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:10.0a1'), 4 => NULL, 5 => array(0 => '10.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:11.0'), 4 => NULL, 5 => array(0 => '11.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,518624,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:10.0a1) Gecko/X Firefox/10.0a1 Fennec/10.0a1');
+    $dl[] = array(20443,145607,585515,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:11.0) Gecko/X Firefox/11.0 Fennec/11.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '10.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:10.0.2'), 4 => NULL, 5 => array(0 => '10.0.2')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:7.0.1'), 4 => NULL, 5 => array(0 => '7.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,518624,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:10.0.2) Gecko/X Firefox/10.0.2 Fennec/10.0.2');
+    $dl[] = array(20443,145607,558525,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:7.0.1) Gecko/X Firefox/7.0.1 Fennec/7.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '11.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:11.0'), 4 => NULL, 5 => array(0 => '11.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '9.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:9.0.1'), 4 => NULL, 5 => array(0 => '9.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,520533,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:11.0) Gecko/X Firefox/11.0 Fennec/11.0');
+    $dl[] = array(381670,102822,570114,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:9.0.1) Gecko/X Firefox/9.0.1 Fennec/9.0 NetNanny/1.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '8.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:8.0'), 4 => NULL, 5 => array(0 => '8.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '9.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:9.0'), 4 => NULL, 5 => array(0 => '9.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,96796,497582,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:8.0) Gecko/X Firefox/8.0 Fennec/8.0');
+    $dl[] = array(381670,102822,570114,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:9.0) Gecko/ Firefox/9.0 Fennec/9.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '5.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:5.0'), 4 => NULL, 5 => array(0 => '5.0')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '8.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:8.0'), 4 => NULL, 5 => array(0 => '8.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,486570,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:5.0) Gecko/X Firefox/5.0 Fennec/5.0');
+    $dl[] = array(381670,102822,560946,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:8.0) Gecko/ Firefox/8.0 Fennec/8.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'X11; U; Linux armv61; en-US; rv:1.9.1b2pre'), 4 => NULL, 5 => NULL), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:6.0'), 4 => NULL, 5 => array(0 => '6.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,431698,6, 'Mozilla/5.0 (X11; U; Linux armv61; en-US; rv:1.9.1b2pre) Gecko/X Fennec/1.0a1');
+    $dl[] = array(381670,102822,554926,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:6.0) Gecko/X Firefox/6.0 Fennec/6.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'X11; U; Linux armv7l; en-US; rv:1.9.2.1'), 4 => NULL, 5 => array(0 => '3.6.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0.2'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:6.0.2'), 4 => NULL, 5 => array(0 => '6.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,431698,6, 'Mozilla/5.0 (X11; U; Linux armv7l; en-US; rv:1.9.2.1) Gecko/X Firefox/3.6.1 Fennec/1.0.1');
+    $dl[] = array(381670,102822,554926,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:6.0.2) Gecko/X Firefox/6.0.1 Fennec/6.0.2');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:7.0.1'), 4 => NULL, 5 => array(0 => '7.0.1')), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:7.0'), 4 => NULL, 5 => array(0 => '7.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,495272,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:7.0.1) Gecko/X Firefox/7.0.1 Fennec/7.0.1');
+    $dl[] = array(381670,102822,558525,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:7.0) Gecko/X Firefox/7.0 Fennec/7.0');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Windows; U; Windows CE 5.2; en-US; rv:1.9.2a1pre'), 4 => array(0 => '20090513'), 5 => NULL), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '7.0.1'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:7.0.1'), 4 => NULL, 5 => array(0 => '7.0.1'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(36555,15130,431698,6, 'Mozilla/5.0 (Windows; U; Windows CE 5.2; en-US; rv:1.9.2a1pre) Gecko/20090513 Fennec/1.0a1');
+    $dl[] = array(381670,102822,558525,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:7.0.1) Gecko/X Firefox/7.0.1 Fennec/7.0.1');
     $ls = $ns;
   }
-  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '1.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Windows; U; Windows CE 5.2; en-US; rv:1.9.2a1pre'), 4 => NULL, 5 => NULL), $ls);
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '5.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Android; Linux armv7l; rv:5.0'), 4 => NULL, 5 => array(0 => '5.0'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,15130,431698,6, 'Mozilla/5.0 (Windows; U; Windows CE 5.2; en-US; rv:1.9.2a1pre) Gecko/X Fennec/1.0a1');
+    $dl[] = array(381670,102822,548963,6, 'Mozilla/5.0 (Android; Linux armv7l; rv:5.0) Gecko/X Firefox/5.0 Fennec/5.0');
+    $ls = $ns;
+  }
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '5.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:5.0'), 4 => NULL, 5 => array(0 => '5.0'), 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,548963,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:5.0) Gecko/X Firefox/5.0 Fennec/5.0');
+    $ls = $ns;
+  }
+  $ns = E38($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '6.0'), 2 => array(0 => 'Fennec'), 3 => array(0 => 'Maemo; Linux armv7l; rv:6.0'), 4 => NULL, 5 => array(0 => '6.0'), 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,554926,6, 'Mozilla/5.0 (Maemo; Linux armv7l; rv:6.0) Gecko/X Firefox/6.0 Fennec/6.0');
     $ls = $ns;
   }
   return $dl;

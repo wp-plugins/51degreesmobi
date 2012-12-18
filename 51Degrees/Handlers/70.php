@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,15130,80981,6, $ua);
+    $dl[] = array(158341,16329,85073,6, $ua);
   }
   $ua = 'Qtek9090; Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
   $ns = E70($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,15130,80981,6, $ua);
+    $dl[] = array(158341,16329,85073,6, $ua);
   }
   $ua = 'Qtek_9100/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
   $ns = E70($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,15130,80981,6, $ua);
+    $dl[] = array(158341,16329,85073,6, $ua);
   }
   $ua = 'Qtek8020 (Mozilla\\4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
   $ns = E70($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,15130,80981,6, $ua);
+    $dl[] = array(158341,16329,85073,6, $ua);
   }
   $ua = 'Qtek S100';
   $ns = E70($useragent, $ua, $ls);
@@ -87,7 +80,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,21180,15136,6, $ua);
+    $dl[] = array(158341,20547,16335,6, $ua);
   }
   $ua = 'Qtek8010';
   $ns = E70($useragent, $ua, $ls);
@@ -96,7 +89,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,21180,15136,6, $ua);
+    $dl[] = array(158341,20547,16335,6, $ua);
   }
   $ua = 'Qtek8080';
   $ns = E70($useragent, $ua, $ls);
@@ -105,7 +98,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,21180,15136,6, $ua);
+    $dl[] = array(158341,20547,16335,6, $ua);
   }
   $ua = 'Qtek9090';
   $ns = E70($useragent, $ua, $ls);
@@ -114,16 +107,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,21180,15136,6, $ua);
-  }
-  $ua = 'Qtek S200/2.9.7.122 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (Compatible; MSIE 4.01;Windows CE; PPC; 240X320) UP.Link/6.2.3.15.0 (compatible; MSIE 4.01; Windows     CE; PPC; 240x320)';
-  $ns = E70($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(417485,15130,80981,6, $ua);
+    $dl[] = array(158341,20547,16335,6, $ua);
   }
   $ua = 'Qtek S200';
   $ns = E70($useragent, $ua, $ls);
@@ -132,7 +116,16 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(417485,21180,15136,6, $ua);
+    $dl[] = array(473434,20547,16335,6, $ua);
+  }
+  $ua = 'Qtek S200/2.9.7.122 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (Compatible; MSIE 4.01;Windows CE; PPC; 240X320) UP.Link/6.2.3.15.0 (compatible; MSIE 4.01; Windows     CE; PPC; 240x320)';
+  $ns = E70($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(473434,16329,85073,6, $ua);
   }
   $ua = 'Qtek8020 (Mozilla\\\\4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613';
   $ns = E70($useragent, $ua, $ls);
@@ -141,7 +134,7 @@ function _H70($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(145820,198744,80044,6, $ua);
+    $dl[] = array(158341,219175,84047,6, $ua);
   }
   return $dl;
 }

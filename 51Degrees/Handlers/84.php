@@ -7,18 +7,11 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -27,24 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E84($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 2, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -52,573 +35,466 @@ function E84($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H84($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=TIANYU-KTOUCH/)[^/]+#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#.+#', $useragent));
-  $ns = E84($segments, array(0 => array(0 => 'A630'), 1 => array(0 => 'TIANYU-KTOUCH/A630')), $ls);
+  $ua = 'Spice-S7/KAA263_0.93.C01 Nucleus/1.0 MTK/6226 Release/0C.01.2005 Browser/Teleca_obigo Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A630');
-    $ls = $ns;
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A660'), 1 => array(0 => 'TIANYU-KTOUCH/A660')), $ls);
+  $ua = 'Browser/Opera Spice M6868n Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A660');
-    $ls = $ns;
+    $dl[] = array(20443,20547,167488,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662')), $ls);
+  $ua = 'Spice D1100/WAP2.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A662');
-    $ls = $ns;
+    $dl[] = array(20443,6753,14359,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A691'), 1 => array(0 => 'TIANYU-KTOUCH/A691')), $ls);
+  $ua = 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A691');
-    $ls = $ns;
+    $dl[] = array(20443,20547,497327,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A907'), 1 => array(0 => 'TIANYU-KTOUCH/A907')), $ls);
+  $ua = 'Spice M6800 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A907');
-    $ls = $ns;
+    $dl[] = array(366240,20547,245270,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B2012'), 1 => array(0 => 'TIANYU-KTOUCH/B2012')), $ls);
+  $ua = 'Spice M6800  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B2012');
-    $ls = $ns;
+    $dl[] = array(366240,20547,245270,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B2015'), 1 => array(0 => 'TIANYU-KTOUCH/B2015')), $ls);
+  $ua = 'Spice M6900 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B2015');
-    $ls = $ns;
+    $dl[] = array(445132,20547,245270,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'C500'), 1 => array(0 => 'TIANYU-KTOUCH/C500')), $ls);
+  $ua = 'Spice M6900  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/C500');
-    $ls = $ns;
+    $dl[] = array(445132,20547,245270,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'C800'), 1 => array(0 => 'TIANYU-KTOUCH/C800')), $ls);
+  $ua = 'Spice S707/2008.07.09 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/C800');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D172'), 1 => array(0 => 'TIANYU-KTOUCH/D172')), $ls);
+  $ua = 'Spice S707/2008.09.26 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D172');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D702'), 1 => array(0 => 'TIANYU-KTOUCH/D702')), $ls);
+  $ua = 'Spice S707/2008.05.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D702');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D770'), 1 => array(0 => 'TIANYU-KTOUCH/D770')), $ls);
+  $ua = 'Spice S707/2008.10.24 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D770');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D780'), 1 => array(0 => 'TIANYU-KTOUCH/D780')), $ls);
+  $ua = 'Spice S707/2009.03.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D780');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D788'), 1 => array(0 => 'TIANYU-KTOUCH/D788')), $ls);
+  $ua = 'Spice S707/2009.04.28 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D788');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'DT28'), 1 => array(0 => 'TIANYU-KTOUCH/DT28')), $ls);
+  $ua = 'Spice S707/2008.09.02 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/DT28');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'H800'), 1 => array(0 => 'TIANYU-KTOUCH/H800')), $ls);
+  $ua = 'Spice S707/2009.04.10 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/H800');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'H711'), 1 => array(0 => 'TIANYU-KTOUCH/H711')), $ls);
+  $ua = 'Spice S707/2009.07.15 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/H711');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V760'), 1 => array(0 => 'TIANYU-KTOUCH/V760')), $ls);
+  $ua = 'Spice S707/2009.06.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/V760');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V918'), 1 => array(0 => 'TIANYU-KTOUCH/V918')), $ls);
+  $ua = 'Spice S707/2009.05.31 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/V918');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D772'), 1 => array(0 => 'TIANYU-KTOUCH/D772/Screen-176X220')), $ls);
+  $ua = 'Spice S707/2008.08.20 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D772/Screen-176X220');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'DT200'), 1 => array(0 => 'TIANYU-KTOUCH/DT200/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Spice S707/2008.09.27 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/DT200/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A610'), 1 => array(0 => 'TIANYU-KTOUCH/A610/Screen-176X220')), $ls);
+  $ua = 'Spice S707/2008.12.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A610/Screen-176X220');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D159'), 1 => array(0 => 'TIANYU-KTOUCH/D159/Screen-128X128')), $ls);
+  $ua = 'Spice S707/2009.03.25 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D159/Screen-128X128');
-    $ls = $ns;
+    $dl[] = array(162239,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D175'), 1 => array(0 => 'TIANYU-KTOUCH/D175/Screen-128X160')), $ls);
+  $ua = 'UP.Browser/5.0/Spice G6550';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D175/Screen-128X160');
-    $ls = $ns;
+    $dl[] = array(20443,20547,49645,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'X90'), 1 => array(0 => 'TIANYU-KTOUCH/X90/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
+  $ua = 'Spice M5445';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/X90/MIDP2.0/CLDC1.1/Screen-320X240');
-    $ls = $ns;
+    $dl[] = array(335297,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A927'), 1 => array(0 => 'TIANYU-KTOUCH/A927/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Spice M5700';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A927/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
+    $dl[] = array(281105,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'FT05'), 1 => array(0 => 'TIANYU-KTOUCH/FT05/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Spice M5700 Novarra-Vision/8.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/FT05/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(281105,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B858'), 1 => array(0 => 'TIANYU-KTOUCH/B858/Screen-240X320')), $ls);
+  $ua = 'Spice M5252';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B858/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(488772,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V320'), 1 => array(0 => 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Spice M5170';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(277243,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B922'), 1 => array(0 => 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Spice M5170 Novarra-Vision/8.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(277243,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'C350'), 1 => array(0 => 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1, Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(212730,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B2012'), 1 => array(0 => 'TIANYU-KTOUCH/B2012/Screen-128X128')), $ls);
+  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B2012/Screen-128X128');
-    $ls = $ns;
+    $dl[] = array(212730,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'B2016'), 1 => array(0 => 'TIANYU-KTOUCH/B2016/Screen-128X128')), $ls);
+  $ua = 'Spice M5570';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/B2016/Screen-128X128');
-    $ls = $ns;
+    $dl[] = array(290962,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'D172'), 1 => array(0 => 'TIANYU-KTOUCH/D172/Screen-128x160')), $ls);
+  $ua = 'Spice M5570 Novarra-Vision/8.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/D172/Screen-128x160');
-    $ls = $ns;
+    $dl[] = array(290962,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A660'), 1 => array(0 => 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Spice QT68';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
+    $dl[] = array(277331,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Spice M5750';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(288748,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'H711'), 1 => array(0 => 'TIANYU-KTOUCH/H711/Screen-176X220')), $ls);
+  $ua = 'Spice QT-57/(2010.06.22) S005/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/H711/Screen-176X220');
-    $ls = $ns;
+    $dl[] = array(421113,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  $ua = 'Spice S580';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400');
-    $ls = $ns;
+    $dl[] = array(483570,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A168'), 1 => array(0 => 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430')), $ls);
+  $ua = 'Spice S5420';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430');
-    $ls = $ns;
+    $dl[] = array(489652,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V760'), 1 => array(0 => 'TIANYU-KTOUCH/V760/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  $ua = 'Spice S950 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,54198,54205,6, 'TIANYU-KTOUCH/V760/MIDP2.0/CLDC1.1/Screen-240X400');
-    $ls = $ns;
+    $dl[] = array(397363,20547,35569,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930/Screen-240X320')), $ls);
+  $ua = 'Spice_M6400/WapBrowserConfiguration2.0/MIDP2.0/CLDC1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(367185,54198,54205,6, 'TIANYU-KTOUCH/A930/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(324542,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930/Screen-240X320 Novarra-Vision/8.0')), $ls);
+  $ua = 'Spice/1.0/QT-68/Obigo Browser/Q03C Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(367185,54198,54205,6, 'TIANYU-KTOUCH/A930/Screen-240X320 Novarra-Vision/8.0');
-    $ls = $ns;
+    $dl[] = array(277331,20547,121058,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930')), $ls);
+  $ua = 'Spice S650/KAA736_0.90.626 Nucleus/1.0 MTK/6223 Release/06.26.2007 Browser/Teleca_obigo Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(367185,54198,54205,6, 'TIANYU-KTOUCH/A930');
-    $ls = $ns;
+    $dl[] = array(482958,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'H699'), 1 => array(0 => 'TIANYU-KTOUCH/H699')), $ls);
+  $ua = 'Spice S5330';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(449928,54198,54205,6, 'TIANYU-KTOUCH/H699');
-    $ls = $ns;
+    $dl[] = array(489036,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'H699'), 1 => array(0 => 'TIANYU-KTOUCH/H699/Screen-176X220')), $ls);
+  $ua = 'Spice S710';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(449928,54198,54205,6, 'TIANYU-KTOUCH/H699/Screen-176X220');
-    $ls = $ns;
+    $dl[] = array(485030,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'X260'), 1 => array(0 => 'TIANYU-KTOUCH/X260')), $ls);
+  $ua = 'Spice S705';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(450000,54198,54205,6, 'TIANYU-KTOUCH/X260');
-    $ls = $ns;
+    $dl[] = array(490850,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'X260'), 1 => array(0 => 'TIANYU-KTOUCH/X260/Screen-176X220')), $ls);
+  $ua = 'Spice-S1000/1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(450000,54198,54205,6, 'TIANYU-KTOUCH/X260/Screen-176X220');
-    $ls = $ns;
+    $dl[] = array(307269,16329,85073,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Spice S820';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(94167,54198,54205,6, 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
+    $dl[] = array(488685,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908')), $ls);
+  $ua = 'Spice M-6Sports/(2009.12.17) S001/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Novarra-Vision/8.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(94167,54198,54205,6, 'TIANYU-KTOUCH/V908');
-    $ls = $ns;
+    $dl[] = array(339069,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V908|V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908|V908/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Spice M6700 Novarra-Vision/8.0';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(94167,54198,54205,6, 'TIANYU-KTOUCH/V908|V908/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
+    $dl[] = array(436143,20547,16335,6, $ua);
   }
-  $ns = E84($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Spice D88';
+  $ns = E84($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(94167,54198,54205,6, 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H688'), 1 => array(0 => 'TIANYU-KTOUCH/H688/Screen-176X220')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475882,54198,54205,6, 'TIANYU-KTOUCH/H688/Screen-176X220');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H999'), 1 => array(0 => 'TIANYU-KTOUCH/H999')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449856,54198,54205,6, 'TIANYU-KTOUCH/H999');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H999'), 1 => array(0 => 'TIANYU-KTOUCH/H999/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449856,54198,54205,6, 'TIANYU-KTOUCH/H999/MIDP2.0/CLDC1.1/Screen-320X240');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'B832'), 1 => array(0 => 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94599,54198,54205,6, 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(247193,54198,54205,6, 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(247193,54198,54205,6, 'TIANYU-KTOUCH/H877');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(247193,54198,54205,6, 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H677'), 1 => array(0 => 'TIANYU-KTOUCH/H677/Screen-176X220')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(471782,54198,54205,6, 'TIANYU-KTOUCH/H677/Screen-176X220');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'V388'), 1 => array(0 => 'TIANYU-KTOUCH/V388/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(474854,54198,54205,6, 'TIANYU-KTOUCH/V388/MIDP2.0/CLDC1.1/Screen-240X320');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'E62'), 1 => array(0 => 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93447,54198,54205,6, 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'E62'), 1 => array(0 => 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93447,54198,54205,6, 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'B2010'), 1 => array(0 => 'TIANYU-KTOUCH/B2010/Screen-128X128')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475968,54198,54205,6, 'TIANYU-KTOUCH/B2010/Screen-128X128');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H777'), 1 => array(0 => 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243729,54198,54205,6, 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'H777'), 1 => array(0 => 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243729,54198,54205,6, 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'A7726'), 1 => array(0 => 'TIANYU-KTOUCH/A7726/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(467897,54198,54205,6, 'TIANYU-KTOUCH/A7726/MIDP2.0/CLDC1.1/Screen-240x320');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'D6600'), 1 => array(0 => 'TIANYU-KTOUCH/D6600/Screen-240X432')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(55142,54198,54205,6, 'TIANYU-KTOUCH/D6600/Screen-240X432');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'A665'), 1 => array(0 => 'TIANYU-KTOUCH/A665/MIDP2.0/CLDC1.1/Screen-240X320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94455,54198,54205,6, 'TIANYU-KTOUCH/A665/MIDP2.0/CLDC1.1/Screen-240X320 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'A665'), 1 => array(0 => 'TIANYU-KTOUCH/A665')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94455,54198,54205,6, 'TIANYU-KTOUCH/A665');
-    $ls = $ns;
-  }
-  $ns = E84($segments, array(0 => array(0 => 'L65'), 1 => array(0 => 'TIANYU-KTOUCH/L65/Screen-240X320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(55214,54198,54205,6, 'TIANYU-KTOUCH/L65/Screen-240X320');
-    $ls = $ns;
+    $dl[] = array(480945,20547,16335,6, $ua);
   }
   return $dl;
 }

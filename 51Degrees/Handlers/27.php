@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -65,7 +58,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Yeti/1.0 (NHN Corp.; http://help.naver.com/robots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'CrawlerBoy Pinpoint.com')), $ls);
@@ -73,7 +66,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CrawlerBoy Pinpoint.com');
+    $dl[] = array(311674,311783,198102,311776, 'CrawlerBoy Pinpoint.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'EricssonR320/R1A (Fast Wireless Crawler)')), $ls);
@@ -81,7 +74,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'EricssonR320/R1A (Fast Wireless Crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'EricssonR320/R1A (Fast Wireless Crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'm-crawler/2.3', 1 => '(m-crawler@m-central.com;'), 1 => array(0 => 'm-crawler/2.3 WAP (m-crawler@m-central.com; http://m-central.com)')), $ls);
@@ -89,7 +82,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'm-crawler/2.3 WAP (m-crawler@m-central.com; http://m-central.com)');
+    $dl[] = array(311674,311783,198102,311776, 'm-crawler/2.3 WAP (m-crawler@m-central.com; http://m-central.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'm-crawler/2.5', 1 => '(m-crawler@m-find.com;'), 1 => array(0 => 'm-crawler/2.5 WAP (m-crawler@m-find.com; http://m-find.com)')), $ls);
@@ -97,15 +90,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'm-crawler/2.5 WAP (m-crawler@m-find.com; http://m-find.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'upictoBot'), 1 => array(0 => 'upictoBot')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,277597, 'upictoBot');
+    $dl[] = array(311674,311783,198102,311776, 'm-crawler/2.5 WAP (m-crawler@m-find.com; http://m-find.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jikespider', 1 => 'JikeSpider;', 2 => '+http://shoulu.jike.com/spider.html))'), 1 => array(0 => 'jikespider ( (compatible; JikeSpider; +http://shoulu.jike.com/spider.html))')), $ls);
@@ -113,7 +98,15 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'jikespider ( (compatible; JikeSpider; +http://shoulu.jike.com/spider.html))');
+    $dl[] = array(311674,311783,198102,311776, 'jikespider ( (compatible; JikeSpider; +http://shoulu.jike.com/spider.html))');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'upictoBot'), 1 => array(0 => 'upictoBot')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'upictoBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'S2-Crawler/1.1', 1 => 'bot'), 1 => array(0 => 'S2-Crawler/1.1 (your search engine - search2.net; http://www.search2.net; bot@search2.net)')), $ls);
@@ -121,7 +114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'S2-Crawler/1.1 (your search engine - search2.net; http://www.search2.net; bot@search2.net)');
+    $dl[] = array(311674,311783,198102,311776, 'S2-Crawler/1.1 (your search engine - search2.net; http://www.search2.net; bot@search2.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jikespider', 1 => 'JikeSpider;', 2 => '+http://shoulu.jike.com/spider.html)'), 1 => array(0 => 'jikespider  (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)')), $ls);
@@ -129,7 +122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'jikespider  (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'jikespider  (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'HappyFunBot/1.1', 1 => '(+http://www.happyfunsearch.com/bot.html)'), 1 => array(0 => 'HappyFunBot/1.1 (+http://www.happyfunsearch.com/bot.html)')), $ls);
@@ -137,7 +130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'HappyFunBot/1.1 (+http://www.happyfunsearch.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'HappyFunBot/1.1 (+http://www.happyfunsearch.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'Survey Robot')), $ls);
@@ -145,7 +138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Survey Robot');
+    $dl[] = array(311674,311783,198102,311776, 'Survey Robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot/1.1', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot/1.1 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -153,7 +146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot/1.1 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot/1.1 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot/2.0b', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -161,7 +154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider+(+http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider+(+http://www.baidu.com/search/spider.htm)')), $ls);
@@ -169,7 +162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider+(+http://www.baidu.com/search/spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider+(+http://www.baidu.com/search/spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SimpleCrawler/0.1'), 1 => array(0 => 'SimpleCrawler/0.1')), $ls);
@@ -177,7 +170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SimpleCrawler/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'SimpleCrawler/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'bot')), $ls);
@@ -185,7 +178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'bot');
+    $dl[] = array(311674,311783,198102,311776, 'bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AdsBot-Google', 1 => '(+http://www.google.com/adsbot.html)'), 1 => array(0 => 'AdsBot-Google (+http://www.google.com/adsbot.html)')), $ls);
@@ -193,7 +186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AdsBot-Google (+http://www.google.com/adsbot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'AdsBot-Google (+http://www.google.com/adsbot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.envolk.com/envolkspiderinfo.html)'), 1 => array(0 => 'envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.html)')), $ls);
@@ -201,7 +194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.html)');
+    $dl[] = array(311674,311783,198102,311776, 'envolk/1.7 (+http://www.envolk.com/envolkspiderinfo.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://sindice.com/developers/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; sindice-fetcher/0.1.0 +http://sindice.com/developers/bot)')), $ls);
@@ -209,7 +202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; sindice-fetcher/0.1.0 +http://sindice.com/developers/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; sindice-fetcher/0.1.0 +http://sindice.com/developers/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider+(+http://www.baidu.jp/spider/)'), 1 => array(0 => 'Baiduspider+(+http://www.baidu.jp/spider/)')), $ls);
@@ -217,7 +210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider+(+http://www.baidu.jp/spider/)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider+(+http://www.baidu.jp/spider/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BaiduImagespider+(+http://help.baidu.jp/system/05.html)'), 1 => array(0 => 'BaiduImagespider+(+http://help.baidu.jp/system/05.html)')), $ls);
@@ -225,7 +218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BaiduImagespider+(+http://help.baidu.jp/system/05.html)');
+    $dl[] = array(311674,311783,198102,311776, 'BaiduImagespider+(+http://help.baidu.jp/system/05.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bitlybot'), 1 => array(0 => 'bitlybot')), $ls);
@@ -233,7 +226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'bitlybot');
+    $dl[] = array(311674,311783,198102,311776, 'bitlybot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TurnitinBot/2.1', 1 => '(http://www.turnitin.com/robot/crawlerinfo.html)'), 1 => array(0 => 'TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)')), $ls);
@@ -241,7 +234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)');
+    $dl[] = array(311674,311783,198102,311776, 'TurnitinBot/2.1 (http://www.turnitin.com/robot/crawlerinfo.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRI/0.0.1 crawler ( http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html )')), $ls);
@@ -249,7 +242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Y!J-BRI/0.0.1 crawler ( http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html )');
+    $dl[] = array(311674,311783,198102,311776, 'Y!J-BRI/0.0.1 crawler ( http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://pmoz.info/doc/botinfo.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; pmoz.info ODP link checker; +http://pmoz.info/doc/botinfo.htm)')), $ls);
@@ -257,7 +250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; pmoz.info ODP link checker; +http://pmoz.info/doc/botinfo.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; pmoz.info ODP link checker; +http://pmoz.info/doc/botinfo.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)')), $ls);
@@ -265,7 +258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)');
+    $dl[] = array(311674,311783,198102,311776, 'ia_archiver (+http://www.alexa.com/site/help/webmasters; crawler@alexa.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)')), $ls);
@@ -273,7 +266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)');
+    $dl[] = array(311674,311783,198102,311776, 'Sogou web spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Magus Bot 1.0')), $ls);
@@ -281,7 +274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Magus Bot 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Magus Bot 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Wepbot/3.0'), 1 => array(0 => 'Wepbot/3.0 (+http://www.nurago.com/index.php?id=210); Jakarta Commons-HttpClient/3.1')), $ls);
@@ -289,7 +282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Wepbot/3.0 (+http://www.nurago.com/index.php?id=210); Jakarta Commons-HttpClient/3.1');
+    $dl[] = array(311674,311783,198102,311776, 'Wepbot/3.0 (+http://www.nurago.com/index.php?id=210); Jakarta Commons-HttpClient/3.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot-UDiscovery/2.0b', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot-UDiscovery/2.0b (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -297,7 +290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot-UDiscovery/2.0b (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot-UDiscovery/2.0b (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AlbertBot'), 1 => array(0 => 'AlbertBot')), $ls);
@@ -305,7 +298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AlbertBot');
+    $dl[] = array(311674,311783,198102,311776, 'AlbertBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'RSSMicro.com RSS/Atom Feed Robot')), $ls);
@@ -313,7 +306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RSSMicro.com RSS/Atom Feed Robot');
+    $dl[] = array(311674,311783,198102,311776, 'RSSMicro.com RSS/Atom Feed Robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NaverBot/1.0;'), 1 => array(0 => 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/delete_main.asp)')), $ls);
@@ -321,7 +314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/delete_main.asp)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/delete_main.asp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Willow Internet Crawler by Twotrees V2.1')), $ls);
@@ -329,7 +322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Willow Internet Crawler by Twotrees V2.1');
+    $dl[] = array(311674,311783,198102,311776, 'Willow Internet Crawler by Twotrees V2.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot;'), 1 => array(0 => 'Checklinks/1.3 (pywikipedia robot; http://toolserver.org/~dispenser/view/Checklinks)')), $ls);
@@ -337,7 +330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Checklinks/1.3 (pywikipedia robot; http://toolserver.org/~dispenser/view/Checklinks)');
+    $dl[] = array(311674,311783,198102,311776, 'Checklinks/1.3 (pywikipedia robot; http://toolserver.org/~dispenser/view/Checklinks)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider-image+(+http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider-image+(+http://www.baidu.com/search/spider.htm)')), $ls);
@@ -345,7 +338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider-image+(+http://www.baidu.com/search/spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider-image+(+http://www.baidu.com/search/spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; RSSMicro.com RSS/Atom Feed Robot)')), $ls);
@@ -353,7 +346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; RSSMicro.com RSS/Atom Feed Robot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; RSSMicro.com RSS/Atom Feed Robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'radian6_default_(www.radian6.com/crawler)'), 1 => array(0 => 'radian6_default_(www.radian6.com/crawler)')), $ls);
@@ -361,15 +354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'radian6_default_(www.radian6.com/crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Exabot/3.0;', 1 => '+http://www.exabot.com/go/robot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)');
+    $dl[] = array(311674,311783,198102,311776, 'radian6_default_(www.radian6.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MLBot', 1 => '(www.metadatalabs.com/mlbot)'), 1 => array(0 => 'MLBot (www.metadatalabs.com/mlbot)')), $ls);
@@ -377,7 +362,15 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MLBot (www.metadatalabs.com/mlbot)');
+    $dl[] = array(311674,311783,198102,311776, 'MLBot (www.metadatalabs.com/mlbot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Exabot/3.0;', 1 => '+http://www.exabot.com/go/robot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Exabot/3.0; +http://www.exabot.com/go/robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'woriobot'), 1 => array(0 => 'Mozilla/5.0 (compatible; woriobot support [at] worio [dot] com +http://worio.com)')), $ls);
@@ -385,7 +378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; woriobot support [at] worio [dot] com +http://worio.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; woriobot support [at] worio [dot] com +http://worio.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.2.1;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.2.1; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -393,7 +386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.2.1; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.2.1; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YoudaoBot/1.0;', 1 => 'http://www.youdao.com/help/webmaster/spider/;'), 1 => array(0 => 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )')), $ls);
@@ -401,7 +394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NextGenSearchBot', 1 => 'http://www.zoominfo.com/About/misc/NextGenSearchBot.aspx)'), 1 => array(0 => 'NextGenSearchBot 1 (for information visit http://www.zoominfo.com/About/misc/NextGenSearchBot.aspx)')), $ls);
@@ -409,7 +402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NextGenSearchBot 1 (for information visit http://www.zoominfo.com/About/misc/NextGenSearchBot.aspx)');
+    $dl[] = array(311674,311783,198102,311776, 'NextGenSearchBot 1 (for information visit http://www.zoominfo.com/About/misc/NextGenSearchBot.aspx)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot-media/1.1', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -417,7 +410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot-media/1.1 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'R6_FeedFetcher(www.radian6.com/crawler)'), 1 => array(0 => 'R6_FeedFetcher(www.radian6.com/crawler)')), $ls);
@@ -425,7 +418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'R6_FeedFetcher(www.radian6.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'R6_FeedFetcher(www.radian6.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosospider+(+http://help.soso.com/webspider.htm)'), 1 => array(0 => 'Sosospider+(+http://help.soso.com/webspider.htm)')), $ls);
@@ -433,7 +426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sosospider+(+http://help.soso.com/webspider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Sosospider+(+http://help.soso.com/webspider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FriendFeedBot/0.1;', 1 => '+Http://friendfeed.com/about/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; FriendFeedBot/0.1; +Http://friendfeed.com/about/bot)')), $ls);
@@ -441,7 +434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; FriendFeedBot/0.1; +Http://friendfeed.com/about/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FriendFeedBot/0.1; +Http://friendfeed.com/about/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'woriobot'), 1 => array(0 => 'Mozilla/5.0 (compatible; woriobot +http://worio.com)')), $ls);
@@ -449,7 +442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; woriobot +http://worio.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; woriobot +http://worio.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider+(+http://help.baidu.jp/system/05.html)'), 1 => array(0 => 'Baiduspider+(+http://help.baidu.jp/system/05.html)')), $ls);
@@ -457,7 +450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider+(+http://help.baidu.jp/system/05.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider+(+http://help.baidu.jp/system/05.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Purebot/1.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Purebot/1.1; +http://www.puritysearch.net/)')), $ls);
@@ -465,7 +458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Purebot/1.1; +http://www.puritysearch.net/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Purebot/1.1; +http://www.puritysearch.net/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'aiHitBot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; aiHitBot/1.0; +http://www.aihit.com/)')), $ls);
@@ -473,7 +466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; aiHitBot/1.0; +http://www.aihit.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; aiHitBot/1.0; +http://www.aihit.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.shopwiki.com/wiki/Help:Bot)'), 1 => array(0 => 'ShopWiki/1.0 ( +http://www.shopwiki.com/wiki/Help:Bot)')), $ls);
@@ -481,7 +474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ShopWiki/1.0 ( +http://www.shopwiki.com/wiki/Help:Bot)');
+    $dl[] = array(311674,311783,198102,311776, 'ShopWiki/1.0 ( +http://www.shopwiki.com/wiki/Help:Bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Searchbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Dow Jones Searchbot)')), $ls);
@@ -489,7 +482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Dow Jones Searchbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Dow Jones Searchbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FatBot', 1 => 'http://www.thefind.com/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler)')), $ls);
@@ -497,7 +490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SuperPagesUrlVerifyBot/1.0'), 1 => array(0 => 'SuperPagesUrlVerifyBot/1.0')), $ls);
@@ -505,7 +498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SuperPagesUrlVerifyBot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'SuperPagesUrlVerifyBot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NaverBot/1.0;'), 1 => array(0 => 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/customer_webtxt_02.jsp)')), $ls);
@@ -513,7 +506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/customer_webtxt_02.jsp)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; NaverBot/1.0; http://help.naver.com/customer_webtxt_02.jsp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FyberSpider/1.3', 1 => '(http://www.fybersearch.com/fyberspider.php)'), 1 => array(0 => 'FyberSpider/1.3 (http://www.fybersearch.com/fyberspider.php)')), $ls);
@@ -521,7 +514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FyberSpider/1.3 (http://www.fybersearch.com/fyberspider.php)');
+    $dl[] = array(311674,311783,198102,311776, 'FyberSpider/1.3 (http://www.fybersearch.com/fyberspider.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'discobot/1.1;', 1 => '+http://discoveryengine.com/discobot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html)')), $ls);
@@ -529,7 +522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spider')), $ls);
@@ -537,7 +530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'spider');
+    $dl[] = array(311674,311783,198102,311776, 'spider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'seexie.com_bot/4.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; seexie.com_bot/4.1; +http://www.seexie.com)')), $ls);
@@ -545,7 +538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; seexie.com_bot/4.1; +http://www.seexie.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; seexie.com_bot/4.1; +http://www.seexie.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MarketwireBot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; MarketwireBot/1.0; +http://www.marketwire.com)')), $ls);
@@ -553,7 +546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MarketwireBot/1.0; +http://www.marketwire.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MarketwireBot/1.0; +http://www.marketwire.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Inspyder-Crawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; Inspyder-Crawler; http://www.inspyder.com)')), $ls);
@@ -561,7 +554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; Inspyder-Crawler; http://www.inspyder.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; Inspyder-Crawler; http://www.inspyder.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YodaoBot/1.0;', 1 => 'http://www.yodao.com/help/webmaster/spider/;'), 1 => array(0 => 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )')), $ls);
@@ -569,7 +562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TjoosBot/1.0', 1 => '(http://www.tjoos.com/Page-Content/34/TjoosBot)'), 1 => array(0 => 'TjoosBot/1.0 (http://www.tjoos.com/Page-Content/34/TjoosBot)')), $ls);
@@ -577,7 +570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TjoosBot/1.0 (http://www.tjoos.com/Page-Content/34/TjoosBot)');
+    $dl[] = array(311674,311783,198102,311776, 'TjoosBot/1.0 (http://www.tjoos.com/Page-Content/34/TjoosBot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ICC-Crawler/2.0'), 1 => array(0 => 'ICC-Crawler/2.0 (Mozilla-compatible; ; http://kc.nict.go.jp/project1/crawl.html)')), $ls);
@@ -585,7 +578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ICC-Crawler/2.0 (Mozilla-compatible; ; http://kc.nict.go.jp/project1/crawl.html)');
+    $dl[] = array(311674,311783,198102,311776, 'ICC-Crawler/2.0 (Mozilla-compatible; ; http://kc.nict.go.jp/project1/crawl.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'psbot/0.1', 1 => '(+http://www.picsearch.com/bot.html)'), 1 => array(0 => 'psbot/0.1 (+http://www.picsearch.com/bot.html)')), $ls);
@@ -593,7 +586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'psbot/0.1 (+http://www.picsearch.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'psbot/0.1 (+http://www.picsearch.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; Qualidator.com Bot 1.0;)')), $ls);
@@ -601,7 +594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Qualidator.com Bot 1.0;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Qualidator.com Bot 1.0;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'UCMore Crawler App')), $ls);
@@ -609,7 +602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'UCMore Crawler App');
+    $dl[] = array(311674,311783,198102,311776, 'UCMore Crawler App');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Nigma.ru/3.0; crawler@nigma.ru)')), $ls);
@@ -617,7 +610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Nigma.ru/3.0; crawler@nigma.ru)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Nigma.ru/3.0; crawler@nigma.ru)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)'), 1 => array(0 => 'Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)')), $ls);
@@ -625,7 +618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Sosoimagespider+(+http://help.soso.com/soso-image-spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YandexBot/3.0;', 1 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)')), $ls);
@@ -633,7 +626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)')), $ls);
@@ -641,7 +634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexImages/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => '(http://code.google.com/p/crawler4j/)'), 1 => array(0 => 'crawler4j (http://code.google.com/p/crawler4j/)')), $ls);
@@ -649,7 +642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'crawler4j (http://code.google.com/p/crawler4j/)');
+    $dl[] = array(311674,311783,198102,311776, 'crawler4j (http://code.google.com/p/crawler4j/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => '+http://www.netseer.com/crawler.html;', 2 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; NetSeer crawler/2.0; +http://www.netseer.com/crawler.html; crawler@netseer.com)')), $ls);
@@ -657,7 +650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; NetSeer crawler/2.0; +http://www.netseer.com/crawler.html; crawler@netseer.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; NetSeer crawler/2.0; +http://www.netseer.com/crawler.html; crawler@netseer.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(compatible;YodaoBot-Image/1.0;http://www.youdao.com/help/webmaster/spider/;)'), 1 => array(0 => 'Mozilla/5.0 (compatible;YodaoBot-Image/1.0;http://www.youdao.com/help/webmaster/spider/;)')), $ls);
@@ -665,7 +658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;YodaoBot-Image/1.0;http://www.youdao.com/help/webmaster/spider/;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;YodaoBot-Image/1.0;http://www.youdao.com/help/webmaster/spider/;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bnf.fr_bot;', 1 => '+http://www.bnf.fr/fr/outils/a.dl_web_capture_robot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bnf.fr_bot; +http://www.bnf.fr/fr/outils/a.dl_web_capture_robot.html)')), $ls);
@@ -673,7 +666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; bnf.fr_bot; +http://www.bnf.fr/fr/outils/a.dl_web_capture_robot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; bnf.fr_bot; +http://www.bnf.fr/fr/outils/a.dl_web_capture_robot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TwengaBot'), 1 => array(0 => 'TwengaBot')), $ls);
@@ -681,7 +674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TwengaBot');
+    $dl[] = array(311674,311783,198102,311776, 'TwengaBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Caliperbot/1.0', 1 => '(+http://www.conductor.com/caliperbot)'), 1 => array(0 => 'Caliperbot/1.0 (+http://www.conductor.com/caliperbot)')), $ls);
@@ -689,7 +682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Caliperbot/1.0 (+http://www.conductor.com/caliperbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Caliperbot/1.0 (+http://www.conductor.com/caliperbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'zibber-v0.1(www.zibb.com/crawler/)'), 1 => array(0 => 'zibber-v0.1(www.zibb.com/crawler/)')), $ls);
@@ -697,7 +690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'zibber-v0.1(www.zibb.com/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'zibber-v0.1(www.zibb.com/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.flamingosearch.com/bot)'), 1 => array(0 => 'Flamingo_SearchEngine (+http://www.flamingosearch.com/bot)')), $ls);
@@ -705,7 +698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Flamingo_SearchEngine (+http://www.flamingosearch.com/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Flamingo_SearchEngine (+http://www.flamingosearch.com/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'oodlebot/1.0'), 1 => array(0 => 'oodlebot/1.0')), $ls);
@@ -713,7 +706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'oodlebot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'oodlebot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YesupBot/1.0;', 1 => '+http://www.yesup.net/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YesupBot/1.0; +http://www.yesup.net/bot.html)')), $ls);
@@ -721,7 +714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YesupBot/1.0; +http://www.yesup.net/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YesupBot/1.0; +http://www.yesup.net/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YioopBot', 1 => '+http://www.yioop.com/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YioopBot  +http://www.yioop.com/bot.php)')), $ls);
@@ -729,7 +722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YioopBot  +http://www.yioop.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YioopBot  +http://www.yioop.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'JUST-CRAWLER(+http://www.justsystems.com/jp/tech/crawler/)'), 1 => array(0 => 'JUST-CRAWLER(+http://www.justsystems.com/jp/tech/crawler/)')), $ls);
@@ -737,7 +730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'JUST-CRAWLER(+http://www.justsystems.com/jp/tech/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'JUST-CRAWLER(+http://www.justsystems.com/jp/tech/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.feedage.com/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Feedage/2.0; +http://www.feedage.com/bot.php)')), $ls);
@@ -745,7 +738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Feedage/2.0; +http://www.feedage.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Feedage/2.0; +http://www.feedage.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'HLTBot/1.3', 1 => '(+http://hlt.fbk.eu/hltbot.html)'), 1 => array(0 => 'HLTBot/1.3 (+http://hlt.fbk.eu/hltbot.html)')), $ls);
@@ -753,7 +746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'HLTBot/1.3 (+http://hlt.fbk.eu/hltbot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'HLTBot/1.3 (+http://hlt.fbk.eu/hltbot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Crawler')), $ls);
@@ -761,7 +754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'HubSpot Crawler 1.0 http://www.hubspot.com/')), $ls);
@@ -769,7 +762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'HubSpot Crawler 1.0 http://www.hubspot.com/');
+    $dl[] = array(311674,311783,198102,311776, 'HubSpot Crawler 1.0 http://www.hubspot.com/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot'), 1 => array(0 => 'AddThis.com robot tech.support@clearspring.com')), $ls);
@@ -777,7 +770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AddThis.com robot tech.support@clearspring.com');
+    $dl[] = array(311674,311783,198102,311776, 'AddThis.com robot tech.support@clearspring.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Yahoo!-AdCrawler;', 1 => 'http://help.yahoo.com/yahoo_adcrawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo!-AdCrawler; http://help.yahoo.com/yahoo_adcrawler)')), $ls);
@@ -785,7 +778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Yahoo!-AdCrawler; http://help.yahoo.com/yahoo_adcrawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Yahoo!-AdCrawler; http://help.yahoo.com/yahoo_adcrawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Gigabot/3.0', 1 => '(http://www.gigablast.com/spider.html)'), 1 => array(0 => 'Gigabot/3.0 (http://www.gigablast.com/spider.html)')), $ls);
@@ -793,7 +786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Gigabot/3.0 (http://www.gigablast.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Gigabot/3.0 (http://www.gigablast.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Who.is Bot')), $ls);
@@ -801,7 +794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Who.is Bot');
+    $dl[] = array(311674,311783,198102,311776, 'Who.is Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'web18bot'), 1 => array(0 => 'web18bot')), $ls);
@@ -809,7 +802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'web18bot');
+    $dl[] = array(311674,311783,198102,311776, 'web18bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Jyxobot/1'), 1 => array(0 => 'Jyxobot/1')), $ls);
@@ -817,7 +810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Jyxobot/1');
+    $dl[] = array(311674,311783,198102,311776, 'Jyxobot/1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.apercite.fr/robot/index.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Apercite; +http://www.apercite.fr/robot/index.html)')), $ls);
@@ -825,7 +818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Apercite; +http://www.apercite.fr/robot/index.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Apercite; +http://www.apercite.fr/robot/index.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)')), $ls);
@@ -833,7 +826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CatchBot/1.0;', 1 => '+http://www.catchbot.com'), 1 => array(0 => 'CatchBot/1.0; +http://www.catchbot.com')), $ls);
@@ -841,7 +834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CatchBot/1.0; +http://www.catchbot.com');
+    $dl[] = array(311674,311783,198102,311776, 'CatchBot/1.0; +http://www.catchbot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'R6_CommentReader(www.radian6.com/crawler)'), 1 => array(0 => 'R6_CommentReader(www.radian6.com/crawler)')), $ls);
@@ -849,7 +842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'R6_CommentReader(www.radian6.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'R6_CommentReader(www.radian6.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)')), $ls);
@@ -857,7 +850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible;  Vagabondo/4.0; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/; http://www.wise-guys.nl/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot/2.0b', 1 => '(+http://search.msn.com/msnbot.htm)._'), 1 => array(0 => 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)._')), $ls);
@@ -865,7 +858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)._');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot/2.0b (+http://search.msn.com/msnbot.htm)._');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SpokeSpider/1.0', 1 => '(http://support.spoke.com/webspider/)'), 1 => array(0 => 'SpokeSpider/1.0 (http://support.spoke.com/webspider/) Mozilla/5.0 (not really)')), $ls);
@@ -873,7 +866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SpokeSpider/1.0 (http://support.spoke.com/webspider/) Mozilla/5.0 (not really)');
+    $dl[] = array(311674,311783,198102,311776, 'SpokeSpider/1.0 (http://support.spoke.com/webspider/) Mozilla/5.0 (not really)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'iisbot/1.0', 1 => '(+http://www.iis.net/iisbot.html)'), 1 => array(0 => 'iisbot/1.0 (+http://www.iis.net/iisbot.html)')), $ls);
@@ -881,7 +874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'iisbot/1.0 (+http://www.iis.net/iisbot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'iisbot/1.0 (+http://www.iis.net/iisbot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://solfo.com/linkbot.html)'), 1 => array(0 => 'solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)')), $ls);
@@ -889,7 +882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Search17Bot/1.1;', 1 => 'http://www.search17.com/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Search17Bot/1.1; http://www.search17.com/bot.php)')), $ls);
@@ -897,7 +890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Search17Bot/1.1; http://www.search17.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Search17Bot/1.1; http://www.search17.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Twitterbot/0.1'), 1 => array(0 => 'Twitterbot/0.1')), $ls);
@@ -905,7 +898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Twitterbot/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'Twitterbot/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LinkedInBot/1.0'), 1 => array(0 => 'LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/3.1 +http://www.linkedin.com)')), $ls);
@@ -913,7 +906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/3.1 +http://www.linkedin.com)');
+    $dl[] = array(311674,311783,198102,311776, 'LinkedInBot/1.0 (compatible; Mozilla/5.0; Jakarta Commons-HttpClient/3.1 +http://www.linkedin.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexImageResizer/2.0; +http://yandex.com/bots)')), $ls);
@@ -921,7 +914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexImageResizer/2.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexImageResizer/2.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot-NewsBlogs/2.0b', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot-NewsBlogs/2.0b (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -929,7 +922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot-NewsBlogs/2.0b (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot-NewsBlogs/2.0b (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bitlybot/2.0'), 1 => array(0 => 'bitlybot/2.0')), $ls);
@@ -937,7 +930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'bitlybot/2.0');
+    $dl[] = array(311674,311783,198102,311776, 'bitlybot/2.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'adidxbot/1.1', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'adidxbot/1.1 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -945,7 +938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'adidxbot/1.1 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'adidxbot/1.1 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'my-robot/0.1'), 1 => array(0 => 'my-robot/0.1')), $ls);
@@ -953,7 +946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'my-robot/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'my-robot/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FlaxCrawler/1.0'), 1 => array(0 => 'FlaxCrawler/1.0')), $ls);
@@ -961,7 +954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FlaxCrawler/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'FlaxCrawler/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CatchBot/2.0;', 1 => '+http://www.catchbot.com'), 1 => array(0 => 'CatchBot/2.0; +http://www.catchbot.com')), $ls);
@@ -969,7 +962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CatchBot/2.0; +http://www.catchbot.com');
+    $dl[] = array(311674,311783,198102,311776, 'CatchBot/2.0; +http://www.catchbot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'eventBot'), 1 => array(0 => 'eventBot')), $ls);
@@ -977,7 +970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'eventBot');
+    $dl[] = array(311674,311783,198102,311776, 'eventBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.3.3;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.3.3; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -985,7 +978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.3.3; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.3.3; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'archive.org_bot', 1 => '+http://www.archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; archive.org_bot +http://www.archive.org/details/archive.org_bot)')), $ls);
@@ -993,7 +986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; archive.org_bot +http://www.archive.org/details/archive.org_bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; archive.org_bot +http://www.archive.org/details/archive.org_bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '123peoplebot/1.0'), 1 => array(0 => '123peoplebot/1.0')), $ls);
@@ -1001,7 +994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '123peoplebot/1.0');
+    $dl[] = array(311674,311783,198102,311776, '123peoplebot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'wikiwix-bot-3.0'), 1 => array(0 => 'wikiwix-bot-3.0')), $ls);
@@ -1009,7 +1002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'wikiwix-bot-3.0');
+    $dl[] = array(311674,311783,198102,311776, 'wikiwix-bot-3.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosospider+(+http://help.soso.com/webspider.htm),gzip(gfe)'), 1 => array(0 => 'Sosospider+(+http://help.soso.com/webspider.htm),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -1017,7 +1010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sosospider+(+http://help.soso.com/webspider.htm),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,311776, 'Sosospider+(+http://help.soso.com/webspider.htm),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.80legs.com/webcrawler.html;)'), 1 => array(0 => 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html;) Gecko/X')), $ls);
@@ -1025,7 +1018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html;) Gecko/X');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html;) Gecko/X');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexAntivirus/2.0; +http://yandex.com/bots)')), $ls);
@@ -1033,7 +1026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexAntivirus/2.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexAntivirus/2.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lssbot'), 1 => array(0 => 'lssbot')), $ls);
@@ -1041,7 +1034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'lssbot');
+    $dl[] = array(311674,311783,198102,311776, 'lssbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Synthesio Crawler release MonaLisa (contact at synthesio dot fr)')), $ls);
@@ -1049,7 +1042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Synthesio Crawler release MonaLisa (contact at synthesio dot fr)');
+    $dl[] = array(311674,311783,198102,311776, 'Synthesio Crawler release MonaLisa (contact at synthesio dot fr)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.80legs.com/webcrawler.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/X')), $ls);
@@ -1057,7 +1050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/X');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/webcrawler.html) Gecko/X');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ssearch_bot', 1 => 'Crawler'), 1 => array(0 => 'ssearch_bot (sSearch Crawler; http://www.semantissimo.de)')), $ls);
@@ -1065,7 +1058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ssearch_bot (sSearch Crawler; http://www.semantissimo.de)');
+    $dl[] = array(311674,311783,198102,311776, 'ssearch_bot (sSearch Crawler; http://www.semantissimo.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'R6_Primer(www.radian6.com/crawler)'), 1 => array(0 => 'R6_Primer(www.radian6.com/crawler)')), $ls);
@@ -1073,7 +1066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'R6_Primer(www.radian6.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'R6_Primer(www.radian6.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zing-BottaBot/1.0'), 1 => array(0 => 'Zing-BottaBot/1.0')), $ls);
@@ -1081,7 +1074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zing-BottaBot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Zing-BottaBot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)'), 1 => array(0 => 'Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)')), $ls);
@@ -1089,7 +1082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Pingdom.com_bot_version_1.4_(http://www.pingdom.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Toplistbot'), 1 => array(0 => 'Toplistbot')), $ls);
@@ -1097,7 +1090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Toplistbot');
+    $dl[] = array(311674,311783,198102,311776, 'Toplistbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://www.spidersoft.com)'), 1 => array(0 => 'WebZIP/x.x (http://www.spidersoft.com)')), $ls);
@@ -1105,7 +1098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WebZIP/x.x (http://www.spidersoft.com)');
+    $dl[] = array(311674,311783,198102,311776, 'WebZIP/x.x (http://www.spidersoft.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'TVersity Media Robot')), $ls);
@@ -1113,7 +1106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TVersity Media Robot');
+    $dl[] = array(311674,311783,198102,311776, 'TVersity Media Robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WordChampBot'), 1 => array(0 => 'WordChampBot')), $ls);
@@ -1121,7 +1114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WordChampBot');
+    $dl[] = array(311674,311783,198102,311776, 'WordChampBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rogerBot/1.0;', 1 => 'UrlCrawler;', 2 => 'http://www.seomoz.org/dp/rogerbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; rogerBot/1.0; UrlCrawler; http://www.seomoz.org/dp/rogerbot)')), $ls);
@@ -1129,7 +1122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; rogerBot/1.0; UrlCrawler; http://www.seomoz.org/dp/rogerbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; rogerBot/1.0; UrlCrawler; http://www.seomoz.org/dp/rogerbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BLP_bbot/0.1'), 1 => array(0 => 'BLP_bbot/0.1')), $ls);
@@ -1137,7 +1130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BLP_bbot/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'BLP_bbot/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rogerBot/1.0;', 1 => 'http://www.seomoz.org/dp/rogerbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; rogerBot/1.0; http://www.seomoz.org/dp/rogerbot)')), $ls);
@@ -1145,7 +1138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; rogerBot/1.0; http://www.seomoz.org/dp/rogerbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; rogerBot/1.0; http://www.seomoz.org/dp/rogerbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NextpointBot/1.0;'), 1 => array(0 => 'Mozilla/5.0 AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7; NextpointBot/1.0; http://nextpoint.com/')), $ls);
@@ -1153,7 +1146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7; NextpointBot/1.0; http://nextpoint.com/');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 AppleWebKit/531.22.7 (KHTML, like Gecko) Version/4.0.5 Safari/531.22.7; NextpointBot/1.0; http://nextpoint.com/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'GumGum Bot (http://gumgum.com; support@gumgum.com)')), $ls);
@@ -1161,7 +1154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GumGum Bot (http://gumgum.com; support@gumgum.com)');
+    $dl[] = array(311674,311783,198102,311776, 'GumGum Bot (http://gumgum.com; support@gumgum.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'netEstate NE Crawler (+http://www.sengine.info/)')), $ls);
@@ -1169,7 +1162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'netEstate NE Crawler (+http://www.sengine.info/)');
+    $dl[] = array(311674,311783,198102,311776, 'netEstate NE Crawler (+http://www.sengine.info/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => 'http://blog.wasalive.com/wasalive-bots/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; WASALive Bot ; http://blog.wasalive.com/wasalive-bots/)')), $ls);
@@ -1177,7 +1170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; WASALive Bot ; http://blog.wasalive.com/wasalive-bots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; WASALive Bot ; http://blog.wasalive.com/wasalive-bots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Twitmunin Crawler http://www.twitmunin.com')), $ls);
@@ -1185,7 +1178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Twitmunin Crawler http://www.twitmunin.com');
+    $dl[] = array(311674,311783,198102,311776, 'Twitmunin Crawler http://www.twitmunin.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.altresium.com/bot.html)'), 1 => array(0 => 'Altresium/4.3 (+http://www.altresium.com/bot.html)')), $ls);
@@ -1193,7 +1186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Altresium/4.3 (+http://www.altresium.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Altresium/4.3 (+http://www.altresium.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'eSyndiCat Bot')), $ls);
@@ -1201,7 +1194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'eSyndiCat Bot');
+    $dl[] = array(311674,311783,198102,311776, 'eSyndiCat Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'http://www.cmscrawler.com)'), 1 => array(0 => 'Mozilla/4.0 (CMS Crawler: http://www.cmscrawler.com)')), $ls);
@@ -1209,7 +1202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (CMS Crawler: http://www.cmscrawler.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (CMS Crawler: http://www.cmscrawler.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(crawler@fast.no)'), 1 => array(0 => 'FAST Enterprise Crawler/6.7.0 (crawler@fast.no)')), $ls);
@@ -1217,7 +1210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler/6.7.0 (crawler@fast.no)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler/6.7.0 (crawler@fast.no)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ScooperBot'), 1 => array(0 => 'ScooperBot www.customscoop.com')), $ls);
@@ -1225,7 +1218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ScooperBot www.customscoop.com');
+    $dl[] = array(311674,311783,198102,311776, 'ScooperBot www.customscoop.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider', 1 => 'Robot', 2 => '(http://robot.abrave.co.uk)'), 1 => array(0 => 'Abrave Spider v4 Robot 1 (http://robot.abrave.co.uk)')), $ls);
@@ -1233,7 +1226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Abrave Spider v4 Robot 1 (http://robot.abrave.co.uk)');
+    $dl[] = array(311674,311783,198102,311776, 'Abrave Spider v4 Robot 1 (http://robot.abrave.co.uk)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spbot/3.0;', 1 => '+http://www.seoprofiler.com/bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; spbot/3.0; +http://www.seoprofiler.com/bot )')), $ls);
@@ -1241,7 +1234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; spbot/3.0; +http://www.seoprofiler.com/bot )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; spbot/3.0; +http://www.seoprofiler.com/bot )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SinaWeiboBot'), 1 => array(0 => 'SinaWeiboBot')), $ls);
@@ -1249,7 +1242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SinaWeiboBot');
+    $dl[] = array(311674,311783,198102,311776, 'SinaWeiboBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Host-Spy Crawler/1.2; +http://www.host-spy.com/)')), $ls);
@@ -1257,7 +1250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Host-Spy Crawler/1.2; +http://www.host-spy.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Host-Spy Crawler/1.2; +http://www.host-spy.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaGeneratorCrawler/1.1'), 1 => array(0 => 'MetaGeneratorCrawler/1.1 (www.metagenerator.info)')), $ls);
@@ -1265,7 +1258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MetaGeneratorCrawler/1.1 (www.metagenerator.info)');
+    $dl[] = array(311674,311783,198102,311776, 'MetaGeneratorCrawler/1.1 (www.metagenerator.info)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://sindice.com/developers/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; sindice-site-manager/0.1.0 +http://sindice.com/developers/bot)')), $ls);
@@ -1273,7 +1266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; sindice-site-manager/0.1.0 +http://sindice.com/developers/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; sindice-site-manager/0.1.0 +http://sindice.com/developers/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'trovitBot/1.0;', 1 => '+http://www.trovit.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; trovitBot/1.0; +http://www.trovit.com/bot.html)')), $ls);
@@ -1281,7 +1274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; trovitBot/1.0; +http://www.trovit.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; trovitBot/1.0; +http://www.trovit.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TwengaBot-2.0', 1 => '(http://www.twenga.com/bot.html)'), 1 => array(0 => 'TwengaBot-2.0 (http://www.twenga.com/bot.html)')), $ls);
@@ -1289,7 +1282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TwengaBot-2.0 (http://www.twenga.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'TwengaBot-2.0 (http://www.twenga.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'reach-local-bot/0.1'), 1 => array(0 => 'reach-local-bot/0.1')), $ls);
@@ -1297,7 +1290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'reach-local-bot/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'reach-local-bot/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ezooms.bot@gmail.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)')), $ls);
@@ -1305,7 +1298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Ezooms/1.0; ezooms.bot@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RSSIncludeBot/1.0', 1 => '(http://www.rssinclude.com/spider)'), 1 => array(0 => 'RSSIncludeBot/1.0 (http://www.rssinclude.com/spider)')), $ls);
@@ -1313,7 +1306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RSSIncludeBot/1.0 (http://www.rssinclude.com/spider)');
+    $dl[] = array(311674,311783,198102,311776, 'RSSIncludeBot/1.0 (http://www.rssinclude.com/spider)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YoonoCrawler/1.0', 1 => '(crawler@yoono.com)'), 1 => array(0 => 'YoonoCrawler/1.0 (crawler@yoono.com)')), $ls);
@@ -1321,7 +1314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'YoonoCrawler/1.0 (crawler@yoono.com)');
+    $dl[] = array(311674,311783,198102,311776, 'YoonoCrawler/1.0 (crawler@yoono.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'suggybot', 1 => 'http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; suggybot v0.01a, http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)')), $ls);
@@ -1329,7 +1322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; suggybot v0.01a, http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; suggybot v0.01a, http://blog.suggy.com/was-ist-suggy/suggy-webcrawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider/2.0;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)')), $ls);
@@ -1337,7 +1330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'fastbot', 1 => 'crawler', 2 => '(+http://www.fastbot.de)'), 1 => array(0 => 'fastbot crawler beta 2.0 (+http://www.fastbot.de)')), $ls);
@@ -1345,7 +1338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'fastbot crawler beta 2.0 (+http://www.fastbot.de)');
+    $dl[] = array(311674,311783,198102,311776, 'fastbot crawler beta 2.0 (+http://www.fastbot.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.infuz.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; InfuzApp/1.0; +http://www.infuz.com/bot.html)')), $ls);
@@ -1353,7 +1346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; InfuzApp/1.0; +http://www.infuz.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; InfuzApp/1.0; +http://www.infuz.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'DomainWatcher Bot')), $ls);
@@ -1361,7 +1354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainWatcher Bot');
+    $dl[] = array(311674,311783,198102,311776, 'DomainWatcher Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'thoorabot'), 1 => array(0 => 'thoorabot')), $ls);
@@ -1369,7 +1362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'thoorabot');
+    $dl[] = array(311674,311783,198102,311776, 'thoorabot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Newscrawler/1.0.9'), 1 => array(0 => 'Hapax Newscrawler/1.0.9')), $ls);
@@ -1377,7 +1370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Hapax Newscrawler/1.0.9');
+    $dl[] = array(311674,311783,198102,311776, 'Hapax Newscrawler/1.0.9');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZapBot/0.2n;', 1 => '+http://www.zapbot.net)'), 1 => array(0 => 'Mozilla/5.0 (compatible; ZapBot/0.2n; +http://www.zapbot.net)')), $ls);
@@ -1385,7 +1378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ZapBot/0.2n; +http://www.zapbot.net)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ZapBot/0.2n; +http://www.zapbot.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; TweetedTimes Bot/1.0; +http://tweetedtimes.com)')), $ls);
@@ -1393,7 +1386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; TweetedTimes Bot/1.0; +http://tweetedtimes.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; TweetedTimes Bot/1.0; +http://tweetedtimes.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk) libwww/5.4.1')), $ls);
@@ -1401,7 +1394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk) libwww/5.4.1');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk) libwww/5.4.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NL-Crawler'), 1 => array(0 => 'NL-Crawler')), $ls);
@@ -1409,7 +1402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NL-Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'NL-Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NerdByNature.Bot;', 1 => 'http://www.nerdbynature.net/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; NerdByNature.Bot; http://www.nerdbynature.net/bot)')), $ls);
@@ -1417,7 +1410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; NerdByNature.Bot; http://www.nerdbynature.net/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; NerdByNature.Bot; http://www.nerdbynature.net/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'KaloogaBot;', 1 => 'http://kalooga.com/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; KaloogaBot; http://kalooga.com/crawler)')), $ls);
@@ -1425,7 +1418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; KaloogaBot; http://kalooga.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; KaloogaBot; http://kalooga.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Check Url Bot/0.20 ( vss at support dot dadapro dot net )')), $ls);
@@ -1433,7 +1426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Check Url Bot/0.20 ( vss at support dot dadapro dot net )');
+    $dl[] = array(311674,311783,198102,311776, 'Check Url Bot/0.20 ( vss at support dot dadapro dot net )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'musobot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; musobot/1.0; info@muso.com; +http://www.muso.com)')), $ls);
@@ -1441,7 +1434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; musobot/1.0; info@muso.com; +http://www.muso.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; musobot/1.0; info@muso.com; +http://www.muso.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WillyBot/1.1', 1 => '(http://www.willyfogg.com/info/willybot)'), 1 => array(0 => 'WillyBot/1.1 (http://www.willyfogg.com/info/willybot)')), $ls);
@@ -1449,7 +1442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WillyBot/1.1 (http://www.willyfogg.com/info/willybot)');
+    $dl[] = array(311674,311783,198102,311776, 'WillyBot/1.1 (http://www.willyfogg.com/info/willybot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Robot;test_robot@gmx-topmail.de)'), 1 => array(0 => 'findfiles.net/0.98 (Robot;test_robot@gmx-topmail.de)')), $ls);
@@ -1457,7 +1450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'findfiles.net/0.98 (Robot;test_robot@gmx-topmail.de)');
+    $dl[] = array(311674,311783,198102,311776, 'findfiles.net/0.98 (Robot;test_robot@gmx-topmail.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRJ/YATS crawler (http://listing.yahoo.co.jp/support/faq/int/other/other_001.html)')), $ls);
@@ -1465,7 +1458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Y!J-BRJ/YATS crawler (http://listing.yahoo.co.jp/support/faq/int/other/other_001.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Y!J-BRJ/YATS crawler (http://listing.yahoo.co.jp/support/faq/int/other/other_001.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'P3Wbot/v0.1;', 1 => 'http://www.p3w.it/p3wbot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; P3Wbot/v0.1; http://www.p3w.it/p3wbot/)')), $ls);
@@ -1473,7 +1466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; P3Wbot/v0.1; http://www.p3w.it/p3wbot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; P3Wbot/v0.1; http://www.p3w.it/p3wbot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'quickobot/quickobot-1', 1 => 'robot'), 1 => array(0 => 'quickobot/quickobot-1 (Quicko Labs; http://quicko.co; robot at quicko dot co)')), $ls);
@@ -1481,7 +1474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'quickobot/quickobot-1 (Quicko Labs; http://quicko.co; robot at quicko dot co)');
+    $dl[] = array(311674,311783,198102,311776, 'quickobot/quickobot-1 (Quicko Labs; http://quicko.co; robot at quicko dot co)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'vcbot'), 1 => array(0 => 'vcbot')), $ls);
@@ -1489,7 +1482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'vcbot');
+    $dl[] = array(311674,311783,198102,311776, 'vcbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'oBot/2.3.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://www-935.ibm.com/services/us/index.wss/detail/iss/aX?cntxt=aX)')), $ls);
@@ -1497,7 +1490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://www-935.ibm.com/services/us/index.wss/detail/iss/aX?cntxt=aX)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://www-935.ibm.com/services/us/index.wss/detail/iss/aX?cntxt=aX)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexDirect/3.0; +http://yandex.com/bots)')), $ls);
@@ -1505,7 +1498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexDirect/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexDirect/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AACrawler'), 1 => array(0 => 'AACrawler')), $ls);
@@ -1513,7 +1506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AACrawler');
+    $dl[] = array(311674,311783,198102,311776, 'AACrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Twitterbot/1.0'), 1 => array(0 => 'Twitterbot/1.0')), $ls);
@@ -1521,7 +1514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Twitterbot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Twitterbot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'mysmutsearch-crawler'), 1 => array(0 => 'mysmutsearch-crawler +http://www.mysmutsearch.com/faq.shtml+')), $ls);
@@ -1529,7 +1522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'mysmutsearch-crawler +http://www.mysmutsearch.com/faq.shtml+');
+    $dl[] = array(311674,311783,198102,311776, 'mysmutsearch-crawler +http://www.mysmutsearch.com/faq.shtml+');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZapBot/0.2c;', 1 => '+http://www.zapbot.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; ZapBot/0.2c; +http://www.zapbot.com)')), $ls);
@@ -1537,7 +1530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ZapBot/0.2c; +http://www.zapbot.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ZapBot/0.2c; +http://www.zapbot.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZapBot/0.2o;', 1 => '+http://www.zapbot.org)'), 1 => array(0 => 'Mozilla/5.0 (compatible; ZapBot/0.2o; +http://www.zapbot.org)')), $ls);
@@ -1545,7 +1538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ZapBot/0.2o; +http://www.zapbot.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ZapBot/0.2o; +http://www.zapbot.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'Dealer.com Robot 1.0')), $ls);
@@ -1553,7 +1546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Dealer.com Robot 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Dealer.com Robot 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexNews/3.0; +http://yandex.com/bots)')), $ls);
@@ -1561,7 +1554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexNews/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexNews/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'woobot/1.1'), 1 => array(0 => 'woobot/1.1')), $ls);
@@ -1569,7 +1562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'woobot/1.1');
+    $dl[] = array(311674,311783,198102,311776, 'woobot/1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'percbotspider'), 1 => array(0 => 'percbotspider')), $ls);
@@ -1577,7 +1570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'percbotspider');
+    $dl[] = array(311674,311783,198102,311776, 'percbotspider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yolinkBot'), 1 => array(0 => 'yolinkBot')), $ls);
@@ -1585,7 +1578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'yolinkBot');
+    $dl[] = array(311674,311783,198102,311776, 'yolinkBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenWebSpider', 1 => '(http://www.openwebspider.org/)'), 1 => array(0 => 'OpenWebSpider v0.1.2.B (http://www.openwebspider.org/)')), $ls);
@@ -1593,7 +1586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OpenWebSpider v0.1.2.B (http://www.openwebspider.org/)');
+    $dl[] = array(311674,311783,198102,311776, 'OpenWebSpider v0.1.2.B (http://www.openwebspider.org/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SkimWordsBot/1.0'), 1 => array(0 => 'SkimWordsBot/1.0')), $ls);
@@ -1601,7 +1594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SkimWordsBot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'SkimWordsBot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'pub-crawler;', 1 => '+http://wiki.github.com/bixo/bixo/bixocrawler;'), 1 => array(0 => 'Mozilla/5.0 (compatible; pub-crawler; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)')), $ls);
@@ -1609,7 +1602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; pub-crawler; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; pub-crawler; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zookabot/2.2;++http://zookabot.com'), 1 => array(0 => 'Zookabot/2.2;++http://zookabot.com')), $ls);
@@ -1617,7 +1610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zookabot/2.2;++http://zookabot.com');
+    $dl[] = array(311674,311783,198102,311776, 'Zookabot/2.2;++http://zookabot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot/0.01', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot/0.01 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -1625,7 +1618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot/0.01 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot/0.01 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Showyoubot'), 1 => array(0 => 'Showyoubot (http://showyou.com/support)')), $ls);
@@ -1633,7 +1626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Showyoubot (http://showyou.com/support)');
+    $dl[] = array(311674,311783,198102,311776, 'Showyoubot (http://showyou.com/support)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LikaholixCrawler/1.0;', 1 => '+http://mylikes.com/about/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; LikaholixCrawler/1.0; +http://mylikes.com/about/crawler)')), $ls);
@@ -1641,7 +1634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; LikaholixCrawler/1.0; +http://mylikes.com/about/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; LikaholixCrawler/1.0; +http://mylikes.com/about/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YandexBot/3.0;', 1 => '+http://yandex.com/bots),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -1649,7 +1642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'knowaboutBot'), 1 => array(0 => 'knowaboutBot 0.01')), $ls);
@@ -1657,7 +1650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'knowaboutBot 0.01');
+    $dl[] = array(311674,311783,198102,311776, 'knowaboutBot 0.01');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Oxyme.Search - Web crawler')), $ls);
@@ -1665,7 +1658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Oxyme.Search - Web crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Oxyme.Search - Web crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://benderthewebrobot.tumblr.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Bender; http://benderthewebrobot.tumblr.com)')), $ls);
@@ -1673,7 +1666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Bender; http://benderthewebrobot.tumblr.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Bender; http://benderthewebrobot.tumblr.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Kyoto-Crawler/2.0', 1 => 'kyoto-crawler-contact(at)nlp(dot)kuee(dot)kyoto-u(dot)ac(dot)jp;'), 1 => array(0 => 'Kyoto-Crawler/2.0 (Mozilla-compatible; kyoto-crawler-contact(at)nlp(dot)kuee(dot)kyoto-u(dot)ac(dot)jp; http://nlp.ist.i.kyoto-u.ac.jp/)')), $ls);
@@ -1681,7 +1674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Kyoto-Crawler/2.0 (Mozilla-compatible; kyoto-crawler-contact(at)nlp(dot)kuee(dot)kyoto-u(dot)ac(dot)jp; http://nlp.ist.i.kyoto-u.ac.jp/)');
+    $dl[] = array(311674,311783,198102,311776, 'Kyoto-Crawler/2.0 (Mozilla-compatible; kyoto-crawler-contact(at)nlp(dot)kuee(dot)kyoto-u(dot)ac(dot)jp; http://nlp.ist.i.kyoto-u.ac.jp/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Newsle bot')), $ls);
@@ -1689,7 +1682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Newsle bot');
+    $dl[] = array(311674,311783,198102,311776, 'Newsle bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SeznamBot/3.0'), 1 => array(0 => 'SeznamBot/3.0 (+http://fulltext.sblog.cz/)')), $ls);
@@ -1697,7 +1690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SeznamBot/3.0 (+http://fulltext.sblog.cz/)');
+    $dl[] = array(311674,311783,198102,311776, 'SeznamBot/3.0 (+http://fulltext.sblog.cz/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SEOkicks-Robot', 1 => '+http://www.seokicks.de/robot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SEOkicks-Robot +http://www.seokicks.de/robot.html)')), $ls);
@@ -1705,7 +1698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SEOkicks-Robot +http://www.seokicks.de/robot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SEOkicks-Robot +http://www.seokicks.de/robot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BacklinkCrawler', 1 => '(http://www.backlinktest.com/crawler.html)'), 1 => array(0 => 'BacklinkCrawler (http://www.backlinktest.com/crawler.html)')), $ls);
@@ -1713,7 +1706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BacklinkCrawler (http://www.backlinktest.com/crawler.html)');
+    $dl[] = array(311674,311783,198102,311776, 'BacklinkCrawler (http://www.backlinktest.com/crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRW/1.0 crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)')), $ls);
@@ -1721,7 +1714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Y!J-BRW/1.0 crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Y!J-BRW/1.0 crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YodaoBot/1.0;', 1 => 'http://www.yodao.com/help/webmaster/spider/;'), 1 => array(0 => 'MozillaTest/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )')), $ls);
@@ -1729,7 +1722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MozillaTest/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )');
+    $dl[] = array(311674,311783,198102,311776, 'MozillaTest/5.0 (compatible; YodaoBot/1.0; http://www.yodao.com/help/webmaster/spider/; )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.4.0;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.4.0; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -1737,7 +1730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.0; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.0; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot/2.0b'), 1 => array(0 => 'msnbot/2.0b')), $ls);
@@ -1745,7 +1738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot/2.0b');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot/2.0b');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MojeekBot/0.2;', 1 => 'http://www.mojeek.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MojeekBot/0.2; http://www.mojeek.com/bot.html)')), $ls);
@@ -1753,7 +1746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MojeekBot/0.2; http://www.mojeek.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MojeekBot/0.2; http://www.mojeek.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jikespider'), 1 => array(0 => 'jikespider ("Mozilla/5.0)')), $ls);
@@ -1761,7 +1754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'jikespider ("Mozilla/5.0)');
+    $dl[] = array(311674,311783,198102,311776, 'jikespider ("Mozilla/5.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jikespider'), 1 => array(0 => 'jikespider "Mozilla/5.0')), $ls);
@@ -1769,7 +1762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'jikespider "Mozilla/5.0');
+    $dl[] = array(311674,311783,198102,311776, 'jikespider "Mozilla/5.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PaperLiBot/2.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/X-what-is-paper-li)')), $ls);
@@ -1777,7 +1770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/X-what-is-paper-li)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; PaperLiBot/2.1; http://support.paper.li/entries/X-what-is-paper-li)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.botje.com/plukkie.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Plukkie/1.4; http://www.botje.com/plukkie.htm)')), $ls);
@@ -1785,7 +1778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Plukkie/1.4; http://www.botje.com/plukkie.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Plukkie/1.4; http://www.botje.com/plukkie.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'UnisterBot', 1 => 'crawler'), 1 => array(0 => 'UnisterBot (Mozilla/5.0 compatible; crawler@unister-gmbh.de)')), $ls);
@@ -1793,7 +1786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'UnisterBot (Mozilla/5.0 compatible; crawler@unister-gmbh.de)');
+    $dl[] = array(311674,311783,198102,311776, 'UnisterBot (Mozilla/5.0 compatible; crawler@unister-gmbh.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'thoora_bot'), 1 => array(0 => 'thoora_bot (tfetcher@thoora.com)')), $ls);
@@ -1801,7 +1794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'thoora_bot (tfetcher@thoora.com)');
+    $dl[] = array(311674,311783,198102,311776, 'thoora_bot (tfetcher@thoora.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://jetsli.de/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Jetslide; +http://jetsli.de/crawler)')), $ls);
@@ -1809,7 +1802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Jetslide; +http://jetsli.de/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Jetslide; +http://jetsli.de/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; GID-01422; jplastiras.com)')), $ls);
@@ -1817,7 +1810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; GID-01422; jplastiras.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; GID-01422; jplastiras.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'askpeterbot/5.4;'), 1 => array(0 => 'Mozilla/5.0 (compatible; askpeterbot/5.4; +http://www.askpeter.info)')), $ls);
@@ -1825,7 +1818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; askpeterbot/5.4; +http://www.askpeter.info)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; askpeterbot/5.4; +http://www.askpeter.info)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(compatible;Baiduspider/2.0;+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible;Baiduspider/2.0;+http://www.baidu.com/search/spider.html)')), $ls);
@@ -1833,7 +1826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;Baiduspider/2.0;+http://www.baidu.com/search/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;Baiduspider/2.0;+http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'http://crawler.sistrix.net/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)')), $ls);
@@ -1841,7 +1834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SISTRIX Crawler; http://crawler.sistrix.net/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AhrefsBot/1.0;', 1 => '+http://ahrefs.com/robot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AhrefsBot/1.0; +http://ahrefs.com/robot/)')), $ls);
@@ -1849,7 +1842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AhrefsBot/1.0; +http://ahrefs.com/robot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AhrefsBot/1.0; +http://ahrefs.com/robot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WangIDSpider/1.0;', 1 => '+http://www.wangid.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; WangIDSpider/1.0; +http://www.wangid.com/spider.html)')), $ls);
@@ -1857,7 +1850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; WangIDSpider/1.0; +http://www.wangid.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; WangIDSpider/1.0; +http://www.wangid.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(bot@wotbox.com;'), 1 => array(0 => 'Wotbox/2.0 (bot@wotbox.com; http://www.wotbox.com)')), $ls);
@@ -1865,7 +1858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Wotbox/2.0 (bot@wotbox.com; http://www.wotbox.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Wotbox/2.0 (bot@wotbox.com; http://www.wotbox.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)'), 1 => array(0 => 'Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)')), $ls);
@@ -1873,7 +1866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible;+PiplBot;++http://www.pipl.com/bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TweetmemeBot/2.11;'), 1 => array(0 => 'Mozilla/5.0 (compatible; TweetmemeBot/2.11; +http://tweetmeme.com/)')), $ls);
@@ -1881,7 +1874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; TweetmemeBot/2.11; +http://tweetmeme.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; TweetmemeBot/2.11; +http://tweetmeme.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mp3Bot2/0.1;', 1 => '+http://azmp3s.com/mp3bot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Mp3Bot2/0.1; +http://azmp3s.com/mp3bot/)')), $ls);
@@ -1889,7 +1882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Mp3Bot2/0.1; +http://azmp3s.com/mp3bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Mp3Bot2/0.1; +http://azmp3s.com/mp3bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RediffNewsBot;betatest;contact:searchops@rediff.co.in'), 1 => array(0 => 'RediffNewsBot;betatest;contact:searchops@rediff.co.in')), $ls);
@@ -1897,7 +1890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RediffNewsBot;betatest;contact:searchops@rediff.co.in');
+    $dl[] = array(311674,311783,198102,311776, 'RediffNewsBot;betatest;contact:searchops@rediff.co.in');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AdnormCrawler', 1 => 'www.adnorm.com/crawler'), 1 => array(0 => 'AdnormCrawler www.adnorm.com/crawler')), $ls);
@@ -1905,7 +1898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AdnormCrawler www.adnorm.com/crawler');
+    $dl[] = array(311674,311783,198102,311776, 'AdnormCrawler www.adnorm.com/crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; LucidWorks/; +; crawler at example dot com)')), $ls);
@@ -1913,7 +1906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; LucidWorks/; +; crawler at example dot com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; LucidWorks/; +; crawler at example dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://help.naver.com/robots/)'), 1 => array(0 => 'Yepi/1.0 (NHN Corp.; http://help.naver.com/robots/)')), $ls);
@@ -1921,7 +1914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Yepi/1.0 (NHN Corp.; http://help.naver.com/robots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Yepi/1.0 (NHN Corp.; http://help.naver.com/robots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'oBot/2.3.1;', 1 => '+http://filterdb.iss.net/crawler/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://filterdb.iss.net/crawler/)')), $ls);
@@ -1929,7 +1922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://filterdb.iss.net/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; oBot/2.3.1; +http://filterdb.iss.net/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => '"http://SiteIntel.net Bot"')), $ls);
@@ -1937,7 +1930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '"http://SiteIntel.net Bot"');
+    $dl[] = array(311674,311783,198102,311776, '"http://SiteIntel.net Bot"');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Content Crawler')), $ls);
@@ -1945,7 +1938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Content Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Content Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SearQuBot/SearQuBot'), 1 => array(0 => 'SearQuBot/SearQuBot v1.0')), $ls);
@@ -1953,7 +1946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SearQuBot/SearQuBot v1.0');
+    $dl[] = array(311674,311783,198102,311776, 'SearQuBot/SearQuBot v1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; crawler/3.1.0-SNAPSHOT-X.X +http://www.notconfigured.com/)')), $ls);
@@ -1961,7 +1954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; crawler/3.1.0-SNAPSHOT-X.X +http://www.notconfigured.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; crawler/3.1.0-SNAPSHOT-X.X +http://www.notconfigured.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'schutzbot/1.1)'), 1 => array(0 => 'Mozilla/5.0 (compatible; schutzbot/1.1)')), $ls);
@@ -1969,7 +1962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; schutzbot/1.1)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; schutzbot/1.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot;', 1 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexNews/3.0; robot; +http://yandex.com/bots)')), $ls);
@@ -1977,7 +1970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexNews/3.0; robot; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexNews/3.0; robot; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'X3Watch Crawler (http://x3watch.com)')), $ls);
@@ -1985,7 +1978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'X3Watch Crawler (http://x3watch.com)');
+    $dl[] = array(311674,311783,198102,311776, 'X3Watch Crawler (http://x3watch.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+CukBot;+Not+a+spammer;+++http://www.companiesintheuk.co.uk/bot.html)'), 1 => array(0 => 'Mozilla/5.0+(compatible;+CukBot;+Not+a+spammer;+++http://www.companiesintheuk.co.uk/bot.html)')), $ls);
@@ -1993,7 +1986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible;+CukBot;+Not+a+spammer;+++http://www.companiesintheuk.co.uk/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible;+CukBot;+Not+a+spammer;+++http://www.companiesintheuk.co.uk/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://postpost.com/crawlers)'), 1 => array(0 => 'PostPost/1.0 (+http://postpost.com/crawlers)')), $ls);
@@ -2001,7 +1994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PostPost/1.0 (+http://postpost.com/crawlers)');
+    $dl[] = array(311674,311783,198102,311776, 'PostPost/1.0 (+http://postpost.com/crawlers)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SemrushBot/0.9'), 1 => array(0 => 'SemrushBot/0.9')), $ls);
@@ -2009,7 +2002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SemrushBot/0.9');
+    $dl[] = array(311674,311783,198102,311776, 'SemrushBot/0.9');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZumBot/1.0'), 1 => array(0 => 'ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)')), $ls);
@@ -2017,7 +2010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)');
+    $dl[] = array(311674,311783,198102,311776, 'ZumBot/1.0 (ZUM Search; http://help.zum.com/inquiry)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Goodzer/2.0; crawler@goodzer.com)')), $ls);
@@ -2025,7 +2018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Goodzer/2.0; crawler@goodzer.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Goodzer/2.0; crawler@goodzer.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'awesomebot'), 1 => array(0 => 'awesomebot')), $ls);
@@ -2033,7 +2026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'awesomebot');
+    $dl[] = array(311674,311783,198102,311776, 'awesomebot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'http://SiteIntel.net Bot')), $ls);
@@ -2041,7 +2034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'http://SiteIntel.net Bot');
+    $dl[] = array(311674,311783,198102,311776, 'http://SiteIntel.net Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Moatbot/2.2;', 1 => '+http://www.moat.com/pages/moatbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Moatbot/2.2; +http://www.moat.com/pages/moatbot)')), $ls);
@@ -2049,7 +2042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Moatbot/2.2; +http://www.moat.com/pages/moatbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Moatbot/2.2; +http://www.moat.com/pages/moatbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AhrefsBot/2.0;', 1 => '+http://ahrefs.com/robot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/)')), $ls);
@@ -2057,7 +2050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Voluniabot/1.0;', 1 => 'spider'), 1 => array(0 => 'Mozilla/5.0 (compatible; Voluniabot/1.0; spider@volunia.com)')), $ls);
@@ -2065,7 +2058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Voluniabot/1.0; spider@volunia.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Voluniabot/1.0; spider@volunia.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WBSearchBot/1.1;', 1 => '+http://www.warebay.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; WBSearchBot/1.1; +http://www.warebay.com/bot.html)')), $ls);
@@ -2073,7 +2066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; WBSearchBot/1.1; +http://www.warebay.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; WBSearchBot/1.1; +http://www.warebay.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'hpa-bot', 1 => 'hpa-bot;'), 1 => array(0 => 'hpa-bot (compatible; hpa-bot; http://www.homepagesarchive.org)')), $ls);
@@ -2081,7 +2074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'hpa-bot (compatible; hpa-bot; http://www.homepagesarchive.org)');
+    $dl[] = array(311674,311783,198102,311776, 'hpa-bot (compatible; hpa-bot; http://www.homepagesarchive.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'JikeSpider;', 1 => '+http://shoulu.jike.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)')), $ls);
@@ -2089,7 +2082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; JikeSpider; +http://shoulu.jike.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zookabot/2.3;++http://zookabot.com'), 1 => array(0 => 'Zookabot/2.3;++http://zookabot.com')), $ls);
@@ -2097,7 +2090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zookabot/2.3;++http://zookabot.com');
+    $dl[] = array(311674,311783,198102,311776, 'Zookabot/2.3;++http://zookabot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jikespider'), 1 => array(0 => 'jikespider "')), $ls);
@@ -2105,7 +2098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'jikespider "');
+    $dl[] = array(311674,311783,198102,311776, 'jikespider "');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BufferBot'), 1 => array(0 => 'BufferBot')), $ls);
@@ -2113,7 +2106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BufferBot');
+    $dl[] = array(311674,311783,198102,311776, 'BufferBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'wsidbbot/;', 1 => '+http://www.wsidb.com/wsidbbot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; wsidbbot/; +http://www.wsidb.com/wsidbbot.html)')), $ls);
@@ -2121,7 +2114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; wsidbbot/; +http://www.wsidb.com/wsidbbot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; wsidbbot/; +http://www.wsidb.com/wsidbbot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Wepbot/3.0', 1 => '(+http://www.nurago.com/en/wepbot/);'), 1 => array(0 => 'Wepbot/3.0 (+http://www.nurago.com/en/wepbot/); Jakarta Commons-HttpClient/3.1')), $ls);
@@ -2129,7 +2122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Wepbot/3.0 (+http://www.nurago.com/en/wepbot/); Jakarta Commons-HttpClient/3.1');
+    $dl[] = array(311674,311783,198102,311776, 'Wepbot/3.0 (+http://www.nurago.com/en/wepbot/); Jakarta Commons-HttpClient/3.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FAST-WebCrawler/3.8', 1 => '(crawler', 2 => 'http://www.alltheweb.com/help/webmaster/crawler)'), 1 => array(0 => 'FAST-WebCrawler/3.8 (crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler)')), $ls);
@@ -2137,7 +2130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST-WebCrawler/3.8 (crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST-WebCrawler/3.8 (crawler at trd dot overture dot com; http://www.alltheweb.com/help/webmaster/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; crawlx, crawler@trd.overture.com)')), $ls);
@@ -2145,7 +2138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; crawlx, crawler@trd.overture.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; crawlx, crawler@trd.overture.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Jolibot/1.0'), 1 => array(0 => 'Jolibot/1.0 (+http://www.jolicloud.com)')), $ls);
@@ -2153,7 +2146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Jolibot/1.0 (+http://www.jolicloud.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Jolibot/1.0 (+http://www.jolicloud.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'politics home blog spider')), $ls);
@@ -2161,7 +2154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'politics home blog spider');
+    $dl[] = array(311674,311783,198102,311776, 'politics home blog spider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Jolibot/1.0'), 1 => array(0 => 'Jolibot/1.0 (+http://www.jolicloud.com/)')), $ls);
@@ -2169,7 +2162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Jolibot/1.0 (+http://www.jolicloud.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Jolibot/1.0 (+http://www.jolicloud.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainCrawler/2.0', 1 => '(info@domaincrawler.com;', 2 => 'http://www.domaincrawler.com/thriftyholidays.co.uk'), 1 => array(0 => 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/thriftyholidays.co.uk')), $ls);
@@ -2177,7 +2170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/thriftyholidays.co.uk');
+    $dl[] = array(311674,311783,198102,311776, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/thriftyholidays.co.uk');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CCBot/1.0', 1 => '(+http://www.commoncrawl.org/bot.html)'), 1 => array(0 => 'CCBot/1.0 (+http://www.commoncrawl.org/bot.html)')), $ls);
@@ -2185,7 +2178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CCBot/1.0 (+http://www.commoncrawl.org/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'CCBot/1.0 (+http://www.commoncrawl.org/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Snapbot/1.0'), 1 => array(0 => 'Snapbot/1.0 (Snap Shots, +http://www.snap.com)')), $ls);
@@ -2193,7 +2186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Snapbot/1.0 (Snap Shots, +http://www.snap.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Snapbot/1.0 (Snap Shots, +http://www.snap.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'topyx-crawler'), 1 => array(0 => 'topyx-crawler')), $ls);
@@ -2201,7 +2194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'topyx-crawler');
+    $dl[] = array(311674,311783,198102,311776, 'topyx-crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.semager.de/blog/semager-bots/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Semager/1.4; http://www.semager.de/blog/semager-bots/)')), $ls);
@@ -2209,7 +2202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Semager/1.4; http://www.semager.de/blog/semager-bots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Semager/1.4; http://www.semager.de/blog/semager-bots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'thumbshots-de-bot'), 1 => array(0 => 'thumbshots-de-bot (+http://www.thumbshots.de/)')), $ls);
@@ -2217,7 +2210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'thumbshots-de-bot (+http://www.thumbshots.de/)');
+    $dl[] = array(311674,311783,198102,311776, 'thumbshots-de-bot (+http://www.thumbshots.de/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexMedia/3.0; +http://yandex.com/bots)')), $ls);
@@ -2225,7 +2218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexMedia/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexMedia/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'discobot/1.1;', 1 => '+http://discoveryengine.com/discobot.html'), 1 => array(0 => 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html')), $ls);
@@ -2233,7 +2226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; discobot/1.1; +http://discoveryengine.com/discobot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ApptusBot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; ApptusBot/1.0; +http://www.apptus.com)')), $ls);
@@ -2241,7 +2234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ApptusBot/1.0; +http://www.apptus.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ApptusBot/1.0; +http://www.apptus.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)')), $ls);
@@ -2249,7 +2242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexFavicons/1.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'librabot/2.0'), 1 => array(0 => 'librabot/2.0 (+http://academic.research.microsoft.com/)')), $ls);
@@ -2257,7 +2250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'librabot/2.0 (+http://academic.research.microsoft.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'librabot/2.0 (+http://academic.research.microsoft.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BOT', 1 => 'Spider', 2 => '+http://botw.org)'), 1 => array(0 => 'Mozilla/4.0 (compatible; BOTW Spider; +http://botw.org)')), $ls);
@@ -2265,7 +2258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; BOTW Spider; +http://botw.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; BOTW Spider; +http://botw.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SiteBot/0.1;', 1 => '+http://www.sitebot.org/robot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SiteBot/0.1; +http://www.sitebot.org/robot/)')), $ls);
@@ -2273,7 +2266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SiteBot/0.1; +http://www.sitebot.org/robot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SiteBot/0.1; +http://www.sitebot.org/robot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ibot'), 1 => array(0 => 'ibot')), $ls);
@@ -2281,7 +2274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ibot');
+    $dl[] = array(311674,311783,198102,311776, 'ibot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GSiteCrawler/v1.23', 1 => '(http://gsitecrawler.com/)'), 1 => array(0 => 'GSiteCrawler/v1.23 rev. 286 (http://gsitecrawler.com/)')), $ls);
@@ -2289,7 +2282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GSiteCrawler/v1.23 rev. 286 (http://gsitecrawler.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'GSiteCrawler/v1.23 rev. 286 (http://gsitecrawler.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; ia_archiver/1.0; +http://www.alexa.com/help/webmasters; crawler@alexa.com)')), $ls);
@@ -2297,7 +2290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ia_archiver/1.0; +http://www.alexa.com/help/webmasters; crawler@alexa.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ia_archiver/1.0; +http://www.alexa.com/help/webmasters; crawler@alexa.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'IssueCrawler'), 1 => array(0 => 'IssueCrawler')), $ls);
@@ -2305,7 +2298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'IssueCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'IssueCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'EuripBot/1.1'), 1 => array(0 => 'EuripBot/1.1 (+http://www.eurip.com) PreCheck')), $ls);
@@ -2313,7 +2306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'EuripBot/1.1 (+http://www.eurip.com) PreCheck');
+    $dl[] = array(311674,311783,198102,311776, 'EuripBot/1.1 (+http://www.eurip.com) PreCheck');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LocalBot/1.1', 1 => '(+http://www.localbot.co.uk/)'), 1 => array(0 => 'LocalBot/1.1 (+http://www.localbot.co.uk/)')), $ls);
@@ -2321,7 +2314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LocalBot/1.1 (+http://www.localbot.co.uk/)');
+    $dl[] = array(311674,311783,198102,311776, 'LocalBot/1.1 (+http://www.localbot.co.uk/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PaperLiBot/2.1)'), 1 => array(0 => 'Mozilla/5.0 (compatible; PaperLiBot/2.1)')), $ls);
@@ -2329,7 +2322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; PaperLiBot/2.1)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; PaperLiBot/2.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '4am-spider/1.0'), 1 => array(0 => '4am-spider/1.0')), $ls);
@@ -2337,7 +2330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '4am-spider/1.0');
+    $dl[] = array(311674,311783,198102,311776, '4am-spider/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'InnovantageBot/1.0'), 1 => array(0 => 'InnovantageBot/1.0 (http://www.innovantage.co.uk/technology/webmaster_information.htm)')), $ls);
@@ -2345,7 +2338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'InnovantageBot/1.0 (http://www.innovantage.co.uk/technology/webmaster_information.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'InnovantageBot/1.0 (http://www.innovantage.co.uk/technology/webmaster_information.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ERIPPbot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; ERIPPbot; +http://eripp.com)')), $ls);
@@ -2353,7 +2346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ERIPPbot; +http://eripp.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ERIPPbot; +http://eripp.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(compatible;7esoorobot(beta);+http://www.7esoo.com/)'), 1 => array(0 => 'Mozilla/5.0 (compatible;7esoorobot(beta);+http://www.7esoo.com/)')), $ls);
@@ -2361,7 +2354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;7esoorobot(beta);+http://www.7esoo.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;7esoorobot(beta);+http://www.7esoo.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Roboter', 1 => 'Spider'), 1 => array(0 => 'Mozilla/5.0 (compatible;WI Job Roboter Spider Version 3;+http://www.webintegration.at)')), $ls);
@@ -2369,7 +2362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;WI Job Roboter Spider Version 3;+http://www.webintegration.at)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;WI Job Roboter Spider Version 3;+http://www.webintegration.at)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'redditbot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; redditbot/1.0; +http://www.reddit.com/feedback)')), $ls);
@@ -2377,7 +2370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; redditbot/1.0; +http://www.reddit.com/feedback)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; redditbot/1.0; +http://www.reddit.com/feedback)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CligooRobot/2.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; CligooRobot/2.0; +http://www.cligoo.de/wk/technik.php)')), $ls);
@@ -2385,7 +2378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; CligooRobot/2.0; +http://www.cligoo.de/wk/technik.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; CligooRobot/2.0; +http://www.cligoo.de/wk/technik.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PrintfulBot/1.0;', 1 => '+http://printful.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; PrintfulBot/1.0; +http://printful.com/bot.html)')), $ls);
@@ -2393,7 +2386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; PrintfulBot/1.0; +http://printful.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; PrintfulBot/1.0; +http://printful.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider'), 1 => array(0 => 'Baiduspider')), $ls);
@@ -2401,7 +2394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot;', 1 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 1 readers')), $ls);
@@ -2409,7 +2402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 1 readers');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 1 readers');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FatBot', 1 => 'http://www.thefind.com/crawler;'), 1 => array(0 => 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler; panda)')), $ls);
@@ -2417,7 +2410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler; panda)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/crawler; panda)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Yahoo-Newscrawler/3.9', 1 => '(news-search-crawler'), 1 => array(0 => 'Yahoo-Newscrawler/3.9 (news-search-crawler at yahoo-inc dot com)')), $ls);
@@ -2425,7 +2418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Yahoo-Newscrawler/3.9 (news-search-crawler at yahoo-inc dot com)');
+    $dl[] = array(311674,311783,198102,311776, 'Yahoo-Newscrawler/3.9 (news-search-crawler at yahoo-inc dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SMXCrawler/1.0'), 1 => array(0 => 'SMXCrawler/1.0 (www.socialmetrix.com)')), $ls);
@@ -2433,7 +2426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SMXCrawler/1.0 (www.socialmetrix.com)');
+    $dl[] = array(311674,311783,198102,311776, 'SMXCrawler/1.0 (www.socialmetrix.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DRKSpider', 1 => 'http://www.drk.com.ar/spider/'), 1 => array(0 => 'DRKSpider - Website link validator - http://www.drk.com.ar/spider/')), $ls);
@@ -2441,7 +2434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DRKSpider - Website link validator - http://www.drk.com.ar/spider/');
+    $dl[] = array(311674,311783,198102,311776, 'DRKSpider - Website link validator - http://www.drk.com.ar/spider/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zimbiobot/2.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Zimbiobot/2.0; support@zimbio.com)')), $ls);
@@ -2449,7 +2442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Zimbiobot/2.0; support@zimbio.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Zimbiobot/2.0; support@zimbio.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SolomonoBot/1.02'), 1 => array(0 => 'SolomonoBot/1.02 (http://www.solomono.ru)')), $ls);
@@ -2457,7 +2450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SolomonoBot/1.02 (http://www.solomono.ru)');
+    $dl[] = array(311674,311783,198102,311776, 'SolomonoBot/1.02 (http://www.solomono.ru)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GigaBot/2.0'), 1 => array(0 => 'GigaBot/2.0')), $ls);
@@ -2465,7 +2458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GigaBot/2.0');
+    $dl[] = array(311674,311783,198102,311776, 'GigaBot/2.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'private test crawler curl-based')), $ls);
@@ -2473,7 +2466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'private test crawler curl-based');
+    $dl[] = array(311674,311783,198102,311776, 'private test crawler curl-based');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FlightDeckReportsBot/2.0', 1 => '(http://www.flightdeckreports.com/pages/bot)'), 1 => array(0 => 'FlightDeckReportsBot/2.0 (http://www.flightdeckreports.com/pages/bot)')), $ls);
@@ -2481,7 +2474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FlightDeckReportsBot/2.0 (http://www.flightdeckreports.com/pages/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'FlightDeckReportsBot/2.0 (http://www.flightdeckreports.com/pages/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'EmailMarketingRobot/2.1;', 1 => '+http://www.emailmarketingrobot.com/webmasters/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; EmailMarketingRobot/2.1; +http://www.emailmarketingrobot.com/webmasters/)')), $ls);
@@ -2489,7 +2482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; EmailMarketingRobot/2.1; +http://www.emailmarketingrobot.com/webmasters/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; EmailMarketingRobot/2.1; +http://www.emailmarketingrobot.com/webmasters/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SWbot/0.1;', 1 => '+http://app.saidwot.com/bot.html'), 1 => array(0 => 'Mozilla/5.0 (compatible; SWbot/0.1; +http://app.saidwot.com/bot.html')), $ls);
@@ -2497,7 +2490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SWbot/0.1; +http://app.saidwot.com/bot.html');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SWbot/0.1; +http://app.saidwot.com/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(SpiffySearchBot', 1 => 'http://www.spiffysearch.com/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (SpiffySearchBot http://www.spiffysearch.com/bot.php)')), $ls);
@@ -2505,7 +2498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (SpiffySearchBot http://www.spiffysearch.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (SpiffySearchBot http://www.spiffysearch.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; Qualidator.com Bot 0.9;)')), $ls);
@@ -2513,7 +2506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Qualidator.com Bot 0.9;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Qualidator.com Bot 0.9;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'JBDA Bot')), $ls);
@@ -2521,7 +2514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'JBDA Bot');
+    $dl[] = array(311674,311783,198102,311776, 'JBDA Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'askpeter_bot/5.4;'), 1 => array(0 => 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.de)')), $ls);
@@ -2529,7 +2522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.de)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'R6_FeedFetcher_(www.radian6.com/crawler)'), 1 => array(0 => 'R6_FeedFetcher_(www.radian6.com/crawler)')), $ls);
@@ -2537,7 +2530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'R6_FeedFetcher_(www.radian6.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'R6_FeedFetcher_(www.radian6.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(lnbot@lexisnexis.com)'), 1 => array(0 => 'FAST Enterprise Crawler 6 used by LexisNexis (lnbot@lexisnexis.com)')), $ls);
@@ -2545,7 +2538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler 6 used by LexisNexis (lnbot@lexisnexis.com)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler 6 used by LexisNexis (lnbot@lexisnexis.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rogerbot/1.0'), 1 => array(0 => 'rogerbot/1.0')), $ls);
@@ -2553,7 +2546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'rogerbot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'rogerbot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '360spider(http://webscan.360.cn)'), 1 => array(0 => '360spider(http://webscan.360.cn)')), $ls);
@@ -2561,7 +2554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '360spider(http://webscan.360.cn)');
+    $dl[] = array(311674,311783,198102,311776, '360spider(http://webscan.360.cn)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; GID-01742;gsatesting@rediffmail.com)')), $ls);
@@ -2569,7 +2562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; GID-01742;gsatesting@rediffmail.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; GID-01742;gsatesting@rediffmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk')), $ls);
@@ -2577,7 +2570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; grapeFX/0.9; crawler@grapeshot.co.uk');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NikoBot1.0'), 1 => array(0 => 'NikoBot1.0')), $ls);
@@ -2585,7 +2578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NikoBot1.0');
+    $dl[] = array(311674,311783,198102,311776, 'NikoBot1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainCrawler/2.0', 1 => '(info@domaincrawler.com;', 2 => 'http://www.domaincrawler.com/vacationokoboji.com'), 1 => array(0 => 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/vacationokoboji.com')), $ls);
@@ -2593,7 +2586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/vacationokoboji.com');
+    $dl[] = array(311674,311783,198102,311776, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/vacationokoboji.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'kulokobot'), 1 => array(0 => 'kulokobot www.kuloko.com kuloko@backweave.com')), $ls);
@@ -2601,7 +2594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'kulokobot www.kuloko.com kuloko@backweave.com');
+    $dl[] = array(311674,311783,198102,311776, 'kulokobot www.kuloko.com kuloko@backweave.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Generalbot/1.0', 1 => '(+http://www.general-world.com/bot.html)'), 1 => array(0 => 'Generalbot/1.0 (+http://www.general-world.com/bot.html)')), $ls);
@@ -2609,7 +2602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Generalbot/1.0 (+http://www.general-world.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Generalbot/1.0 (+http://www.general-world.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'freelinkexplorerbot'), 1 => array(0 => 'freelinkexplorerbot')), $ls);
@@ -2617,7 +2610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'freelinkexplorerbot');
+    $dl[] = array(311674,311783,198102,311776, 'freelinkexplorerbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Updownerbot', 1 => '(+http://www.updowner.com/bot)'), 1 => array(0 => 'Updownerbot (+http://www.updowner.com/bot)')), $ls);
@@ -2625,7 +2618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Updownerbot (+http://www.updowner.com/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Updownerbot (+http://www.updowner.com/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'archive.org_bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html)')), $ls);
@@ -2633,7 +2626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot/1.3'), 1 => array(0 => 'FTRF: Friendly robot/1.3')), $ls);
@@ -2641,7 +2634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FTRF: Friendly robot/1.3');
+    $dl[] = array(311674,311783,198102,311776, 'FTRF: Friendly robot/1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'minicrawler/1'), 1 => array(0 => 'minicrawler/1')), $ls);
@@ -2649,7 +2642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'minicrawler/1');
+    $dl[] = array(311674,311783,198102,311776, 'minicrawler/1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SiBot;'), 1 => array(0 => 'SAE/fetchurl-kw31jl4xol compatible; SiBot; http://www.siteinfor.com/')), $ls);
@@ -2657,7 +2650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SAE/fetchurl-kw31jl4xol compatible; SiBot; http://www.siteinfor.com/');
+    $dl[] = array(311674,311783,198102,311776, 'SAE/fetchurl-kw31jl4xol compatible; SiBot; http://www.siteinfor.com/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zookabot/2.4;++http://zookabot.com'), 1 => array(0 => 'Zookabot/2.4;++http://zookabot.com')), $ls);
@@ -2665,7 +2658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zookabot/2.4;++http://zookabot.com');
+    $dl[] = array(311674,311783,198102,311776, 'Zookabot/2.4;++http://zookabot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebCrawler'), 1 => array(0 => 'http://www.solomyr.com SOLOMYR.COM WebCrawler')), $ls);
@@ -2673,7 +2666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'http://www.solomyr.com SOLOMYR.COM WebCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'http://www.solomyr.com SOLOMYR.COM WebCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CorenSearchBot/1.7'), 1 => array(0 => 'CorenSearchBot/1.7 en libwww-perl/5.834')), $ls);
@@ -2681,7 +2674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CorenSearchBot/1.7 en libwww-perl/5.834');
+    $dl[] = array(311674,311783,198102,311776, 'CorenSearchBot/1.7 en libwww-perl/5.834');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'InsiteRobot/2011.12.07'), 1 => array(0 => 'InsiteRobot/2011.12.07')), $ls);
@@ -2689,7 +2682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'InsiteRobot/2011.12.07');
+    $dl[] = array(311674,311783,198102,311776, 'InsiteRobot/2011.12.07');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'another-crawler/0.9'), 1 => array(0 => 'another-crawler/0.9')), $ls);
@@ -2697,7 +2690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'another-crawler/0.9');
+    $dl[] = array(311674,311783,198102,311776, 'another-crawler/0.9');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GrapeshotCrawler/2.0;', 1 => '+http://www.grapeshot.co.uk/crawler.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; GrapeshotCrawler/2.0; +http://www.grapeshot.co.uk/crawler.php)')), $ls);
@@ -2705,7 +2698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; GrapeshotCrawler/2.0; +http://www.grapeshot.co.uk/crawler.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; GrapeshotCrawler/2.0; +http://www.grapeshot.co.uk/crawler.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Exositesbot/2.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm')), $ls);
@@ -2713,7 +2706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'microbot'), 1 => array(0 => 'microbot')), $ls);
@@ -2721,7 +2714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'microbot');
+    $dl[] = array(311674,311783,198102,311776, 'microbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LinksCrawler'), 1 => array(0 => 'LinksCrawler 0.1beta')), $ls);
@@ -2729,7 +2722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LinksCrawler 0.1beta');
+    $dl[] = array(311674,311783,198102,311776, 'LinksCrawler 0.1beta');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; S5-GC2HQND3U6NJA; nobody@google.com)')), $ls);
@@ -2737,7 +2730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; S5-GC2HQND3U6NJA; nobody@google.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; S5-GC2HQND3U6NJA; nobody@google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MeMoNewsBot/1.0', 1 => '(http://www.memonews.com/en/crawler)'), 1 => array(0 => 'MeMoNewsBot/1.0 (http://www.memonews.com/en/crawler)')), $ls);
@@ -2745,7 +2738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MeMoNewsBot/1.0 (http://www.memonews.com/en/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'MeMoNewsBot/1.0 (http://www.memonews.com/en/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Exositesbot/2.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm)')), $ls);
@@ -2753,7 +2746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;  Exositesbot/2.0; +http://www.sunorbit.net/exosites.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'FEUP Twitter crawler analyzer/0.X')), $ls);
@@ -2761,7 +2754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FEUP Twitter crawler analyzer/0.X');
+    $dl[] = array(311674,311783,198102,311776, 'FEUP Twitter crawler analyzer/0.X');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SETOOZBOT/5.0', 1 => 'http://www.setooz.com/bot.html'), 1 => array(0 => 'SETOOZBOT/5.0 ( http://www.setooz.com/bot.html )')), $ls);
@@ -2769,7 +2762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SETOOZBOT/5.0 ( http://www.setooz.com/bot.html )');
+    $dl[] = array(311674,311783,198102,311776, 'SETOOZBOT/5.0 ( http://www.setooz.com/bot.html )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SETOOZBOT/5.0', 1 => 'SETOOZBOT/0.30', 2 => 'http://www.setooz.com/bot.html'), 1 => array(0 => 'SETOOZBOT/5.0 ( compatible; SETOOZBOT/0.30 ; http://www.setooz.com/bot.html )')), $ls);
@@ -2777,7 +2770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SETOOZBOT/5.0 ( compatible; SETOOZBOT/0.30 ; http://www.setooz.com/bot.html )');
+    $dl[] = array(311674,311783,198102,311776, 'SETOOZBOT/5.0 ( compatible; SETOOZBOT/0.30 ; http://www.setooz.com/bot.html )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FindCanBot', 1 => '+http://www.findcan.ca/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; FindCanBot  +http://www.findcan.ca/bot.php)')), $ls);
@@ -2785,7 +2778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; FindCanBot  +http://www.findcan.ca/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FindCanBot  +http://www.findcan.ca/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YRSpider;', 1 => '+http://www.yunrang.com/yrspider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)')), $ls);
@@ -2793,7 +2786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Lonuabot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Lonuabot/1.0; +http://www.lonua.com/)')), $ls);
@@ -2801,7 +2794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Lonuabot/1.0; +http://www.lonua.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Lonuabot/1.0; +http://www.lonua.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZigoBot1/1.0.0.1'), 1 => array(0 => 'Zigo (ZigoOS; ZigoOS 0.1; en-GB;) ZigoBot1/1.0.0.1')), $ls);
@@ -2809,7 +2802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zigo (ZigoOS; ZigoOS 0.1; en-GB;) ZigoBot1/1.0.0.1');
+    $dl[] = array(311674,311783,198102,311776, 'Zigo (ZigoOS; ZigoOS 0.1; en-GB;) ZigoBot1/1.0.0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Wiamond-Bot', 1 => '+http://www.wiamond.com/zeige/bot.html)'), 1 => array(0 => 'Wiamond-Bot (Version: 1.06, powered by www.wiamond.com +http://www.wiamond.com/zeige/bot.html)')), $ls);
@@ -2817,7 +2810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Wiamond-Bot (Version: 1.06, powered by www.wiamond.com +http://www.wiamond.com/zeige/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Wiamond-Bot (Version: 1.06, powered by www.wiamond.com +http://www.wiamond.com/zeige/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GttBot/0.2'), 1 => array(0 => 'GttBot/0.2')), $ls);
@@ -2825,7 +2818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GttBot/0.2');
+    $dl[] = array(311674,311783,198102,311776, 'GttBot/0.2');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.4.1;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.4.1; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -2833,7 +2826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.1; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.1; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07')), $ls);
@@ -2841,7 +2834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07');
+    $dl[] = array(311674,311783,198102,311776, 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WASALive-Bot', 1 => 'http://blog.wasalive.com/wasalive-bots/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; WASALive-Bot ; http://blog.wasalive.com/wasalive-bots/)')), $ls);
@@ -2849,7 +2842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; WASALive-Bot ; http://blog.wasalive.com/wasalive-bots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; WASALive-Bot ; http://blog.wasalive.com/wasalive-bots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'IntelCSbot/0.2beta)'), 1 => array(0 => 'Mozilla/5.0 (compatible; IntelCSbot/0.2beta)')), $ls);
@@ -2857,7 +2850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; IntelCSbot/0.2beta)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; IntelCSbot/0.2beta)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://wiki.github.com/bixo/bixo/bixocrawler;'), 1 => array(0 => 'Mozilla/5.0 (compatible; bixo-agent; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)')), $ls);
@@ -2865,7 +2858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; bixo-agent; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; bixo-agent; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'IntelCSbot/0.2.1beta)'), 1 => array(0 => 'Mozilla/5.0 (compatible; IntelCSbot/0.2.1beta)')), $ls);
@@ -2873,7 +2866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; IntelCSbot/0.2.1beta)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; IntelCSbot/0.2.1beta)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'feedcrawler4/0.1'), 1 => array(0 => 'feedcrawler4/0.1 libwww-perl/5.837')), $ls);
@@ -2881,7 +2874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'feedcrawler4/0.1 libwww-perl/5.837');
+    $dl[] = array(311674,311783,198102,311776, 'feedcrawler4/0.1 libwww-perl/5.837');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.semager.de/blog/semager-bots/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Semager/1.4c; +http://www.semager.de/blog/semager-bots/)')), $ls);
@@ -2889,7 +2882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Semager/1.4c; +http://www.semager.de/blog/semager-bots/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Semager/1.4c; +http://www.semager.de/blog/semager-bots/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(TREC-KBA-Bot', 1 => 'http://www.mit.edu/~jrf/knowledge-base-acceleration/bot/)'), 1 => array(0 => 'Mozilla/5.0 (TREC-KBA-Bot http://www.mit.edu/~jrf/knowledge-base-acceleration/bot/)')), $ls);
@@ -2897,7 +2890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (TREC-KBA-Bot http://www.mit.edu/~jrf/knowledge-base-acceleration/bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (TREC-KBA-Bot http://www.mit.edu/~jrf/knowledge-base-acceleration/bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GttBot/0.3'), 1 => array(0 => 'GttBot/0.3')), $ls);
@@ -2905,7 +2898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GttBot/0.3');
+    $dl[] = array(311674,311783,198102,311776, 'GttBot/0.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot@reverseget.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; ; robot@reverseget.com)')), $ls);
@@ -2913,7 +2906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; ; robot@reverseget.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; ; robot@reverseget.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'discobot/2.0;', 1 => '+http://discoveryengine.com/discobot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; discobot/2.0; +http://discoveryengine.com/discobot.html)')), $ls);
@@ -2921,7 +2914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; discobot/2.0; +http://discoveryengine.com/discobot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; discobot/2.0; +http://discoveryengine.com/discobot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'feedcrawler4/0.1'), 1 => array(0 => 'feedcrawler4/0.1 libwww-perl/6.03')), $ls);
@@ -2929,7 +2922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'feedcrawler4/0.1 libwww-perl/6.03');
+    $dl[] = array(311674,311783,198102,311776, 'feedcrawler4/0.1 libwww-perl/6.03');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot@reverseget.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; http://reverseget.com/; robot@reverseget.com)')), $ls);
@@ -2937,7 +2930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; http://reverseget.com/; robot@reverseget.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; en-US; ReverseGet/1.0; http://reverseget.com/; robot@reverseget.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WongBot'), 1 => array(0 => 'WongBot // http://www.mister-wong.de/search/')), $ls);
@@ -2945,7 +2938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WongBot // http://www.mister-wong.de/search/');
+    $dl[] = array(311674,311783,198102,311776, 'WongBot // http://www.mister-wong.de/search/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SWEBot/1.0;', 1 => '+http://swebot.net)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot.net)')), $ls);
@@ -2953,7 +2946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot.net)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Exositesbot/2.0.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible;  Exositesbot/2.0.1; +http://www.sunorbit.net/exosites.htm)')), $ls);
@@ -2961,7 +2954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;  Exositesbot/2.0.1; +http://www.sunorbit.net/exosites.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;  Exositesbot/2.0.1; +http://www.sunorbit.net/exosites.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Exositesbot/2.0.14;'), 1 => array(0 => 'Mozilla/5.0 (compatible;  Exositesbot/2.0.14; +http://www.sunorbit.net/exosites.htm)')), $ls);
@@ -2969,7 +2962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;  Exositesbot/2.0.14; +http://www.sunorbit.net/exosites.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;  Exositesbot/2.0.14; +http://www.sunorbit.net/exosites.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PArchiveCrawler/1.0', 1 => '(PArchiveCrawler)'), 1 => array(0 => 'PArchiveCrawler/1.0 (PArchiveCrawler)')), $ls);
@@ -2977,7 +2970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PArchiveCrawler/1.0 (PArchiveCrawler)');
+    $dl[] = array(311674,311783,198102,311776, 'PArchiveCrawler/1.0 (PArchiveCrawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'NewsGator/2.0 Bot (http://www.newsgator.com)')), $ls);
@@ -2985,7 +2978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NewsGator/2.0 Bot (http://www.newsgator.com)');
+    $dl[] = array(311674,311783,198102,311776, 'NewsGator/2.0 Bot (http://www.newsgator.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(+http://www.lijit.com/robot/crawler)'), 1 => array(0 => 'Lijit Crawler (+http://www.lijit.com/robot/crawler)')), $ls);
@@ -2993,7 +2986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Lijit Crawler (+http://www.lijit.com/robot/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Lijit Crawler (+http://www.lijit.com/robot/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenWebSpider', 1 => '(http://www.openwebspider.org/)'), 1 => array(0 => 'OpenWebSpider v0.1.4 (http://www.openwebspider.org/)')), $ls);
@@ -3001,7 +2994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OpenWebSpider v0.1.4 (http://www.openwebspider.org/)');
+    $dl[] = array(311674,311783,198102,311776, 'OpenWebSpider v0.1.4 (http://www.openwebspider.org/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Feedjit Favicon Crawler 1.0')), $ls);
@@ -3009,7 +3002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Feedjit Favicon Crawler 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Feedjit Favicon Crawler 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robots'), 1 => array(0 => 'DS/1.5 robots')), $ls);
@@ -3017,7 +3010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DS/1.5 robots');
+    $dl[] = array(311674,311783,198102,311776, 'DS/1.5 robots');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Pressarmybot/beta', 1 => '(+http://beta.pressarmy.com/bot)'), 1 => array(0 => 'Pressarmybot/beta (+http://beta.pressarmy.com/bot)')), $ls);
@@ -3025,7 +3018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Pressarmybot/beta (+http://beta.pressarmy.com/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Pressarmybot/beta (+http://beta.pressarmy.com/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Castabot/0.1'), 1 => array(0 => 'Castabot/0.1 (+http://topixtream.com/)')), $ls);
@@ -3033,7 +3026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Castabot/0.1 (+http://topixtream.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Castabot/0.1 (+http://topixtream.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(crawler@fast.no)'), 1 => array(0 => 'FAST Enterprise Crawler/5.3.4 (crawler@fast.no)')), $ls);
@@ -3041,7 +3034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler/5.3.4 (crawler@fast.no)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler/5.3.4 (crawler@fast.no)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'scrapybot/1.0'), 1 => array(0 => 'scrapybot/1.0')), $ls);
@@ -3049,7 +3042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'scrapybot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'scrapybot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider-cpro'), 1 => array(0 => 'Baiduspider-cpro')), $ls);
@@ -3057,7 +3050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider-cpro');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider-cpro');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 't_crawler/0.4'), 1 => array(0 => 't_crawler/0.4')), $ls);
@@ -3065,7 +3058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 't_crawler/0.4');
+    $dl[] = array(311674,311783,198102,311776, 't_crawler/0.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YioopBot;', 1 => '+http://www.yioop.com/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YioopBot; +http://www.yioop.com/bot.php)')), $ls);
@@ -3073,7 +3066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YioopBot; +http://www.yioop.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YioopBot; +http://www.yioop.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'percbotspider'), 1 => array(0 => 'percbotspider <ops@percolate.com>')), $ls);
@@ -3081,7 +3074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'percbotspider <ops@percolate.com>');
+    $dl[] = array(311674,311783,198102,311776, 'percbotspider <ops@percolate.com>');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.4.2;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.4.2; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -3089,7 +3082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.2; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.2; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'scirus-crawler@fast.no;'), 1 => array(0 => 'FAST Enterprise Crawler 6 / Scirus scirus-crawler@fast.no; http://www.scirus.com/srsapp/contactus/')), $ls);
@@ -3097,7 +3090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler 6 / Scirus scirus-crawler@fast.no; http://www.scirus.com/srsapp/contactus/');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler 6 / Scirus scirus-crawler@fast.no; http://www.scirus.com/srsapp/contactus/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SurveyBot/2.3'), 1 => array(0 => 'SurveyBot/2.3 (Whois Source)')), $ls);
@@ -3105,7 +3098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SurveyBot/2.3 (Whois Source)');
+    $dl[] = array(311674,311783,198102,311776, 'SurveyBot/2.3 (Whois Source)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => 'crawler'), 1 => array(0 => 'SaladSpoon/ShopSalad 1.0 (Search Engine crawler for ShopSalad.com; http://shopsalad.com/en/partners.html; crawler AT shopsalad.com)')), $ls);
@@ -3113,7 +3106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SaladSpoon/ShopSalad 1.0 (Search Engine crawler for ShopSalad.com; http://shopsalad.com/en/partners.html; crawler AT shopsalad.com)');
+    $dl[] = array(311674,311783,198102,311776, 'SaladSpoon/ShopSalad 1.0 (Search Engine crawler for ShopSalad.com; http://shopsalad.com/en/partners.html; crawler AT shopsalad.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sogou+web+robot+(+http://www.sogou.com/docs/help/webmasters.htm#07)'), 1 => array(0 => 'Sogou+web+robot+(+http://www.sogou.com/docs/help/webmasters.htm#07)')), $ls);
@@ -3121,7 +3114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sogou+web+robot+(+http://www.sogou.com/docs/help/webmasters.htm#07)');
+    $dl[] = array(311674,311783,198102,311776, 'Sogou+web+robot+(+http://www.sogou.com/docs/help/webmasters.htm#07)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'VideoSurf_bot', 1 => '+http://www.videosurf.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; VideoSurf_bot +http://www.videosurf.com/bot.html)')), $ls);
@@ -3129,7 +3122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; VideoSurf_bot +http://www.videosurf.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; VideoSurf_bot +http://www.videosurf.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible: FDSE robot)')), $ls);
@@ -3137,7 +3130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible: FDSE robot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible: FDSE robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Hailoobot/1.2;', 1 => '+http://www.hailoo.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Hailoobot/1.2; +http://www.hailoo.com/spider.html)')), $ls);
@@ -3145,7 +3138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Hailoobot/1.2; +http://www.hailoo.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Hailoobot/1.2; +http://www.hailoo.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Swooglebot/2.0.', 1 => '(+http://swoogle.umbc.edu/swooglebot.html)'), 1 => array(0 => 'Swooglebot/2.0. (+http://swoogle.umbc.edu/swooglebot.html)')), $ls);
@@ -3153,7 +3146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Swooglebot/2.0. (+http://swoogle.umbc.edu/swooglebot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Swooglebot/2.0. (+http://swoogle.umbc.edu/swooglebot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Web CEO Online robot)')), $ls);
@@ -3161,7 +3154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Web CEO Online robot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Web CEO Online robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SmartAndSimpleWebCrawler/1.3', 1 => '(https://crawler.dev.java.net)'), 1 => array(0 => 'SmartAndSimpleWebCrawler/1.3 (https://crawler.dev.java.net)')), $ls);
@@ -3169,7 +3162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SmartAndSimpleWebCrawler/1.3 (https://crawler.dev.java.net)');
+    $dl[] = array(311674,311783,198102,311776, 'SmartAndSimpleWebCrawler/1.3 (https://crawler.dev.java.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Supybot'), 1 => array(0 => 'Mozilla/5.0 (Compatible; Supybot 0.83.4.1)')), $ls);
@@ -3177,7 +3170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Compatible; Supybot 0.83.4.1)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Compatible; Supybot 0.83.4.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Eurobot/1.1', 1 => '(http://eurobot.ayell.eu)'), 1 => array(0 => 'Eurobot/1.1 (http://eurobot.ayell.eu)')), $ls);
@@ -3185,7 +3178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Eurobot/1.1 (http://eurobot.ayell.eu)');
+    $dl[] = array(311674,311783,198102,311776, 'Eurobot/1.1 (http://eurobot.ayell.eu)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Ruky-Roboter', 1 => '+http://www.ruky.de/zeige/bot.html)'), 1 => array(0 => 'Ruky-Roboter (Version: 1.06, powered by www.ruky.de +http://www.ruky.de/zeige/bot.html)')), $ls);
@@ -3193,7 +3186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Ruky-Roboter (Version: 1.06, powered by www.ruky.de +http://www.ruky.de/zeige/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Ruky-Roboter (Version: 1.06, powered by www.ruky.de +http://www.ruky.de/zeige/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'focuseekbot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; focuseekbot)')), $ls);
@@ -3201,7 +3194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; focuseekbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; focuseekbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Liquida.it-Crawler/1.0', 1 => 'crawler'), 1 => array(0 => 'Liquida.it-Crawler/1.0 ( crawler@liquida.it +http://www.liquida.it )')), $ls);
@@ -3209,7 +3202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Liquida.it-Crawler/1.0 ( crawler@liquida.it +http://www.liquida.it )');
+    $dl[] = array(311674,311783,198102,311776, 'Liquida.it-Crawler/1.0 ( crawler@liquida.it +http://www.liquida.it )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'BGSY bot/1.0')), $ls);
@@ -3217,7 +3210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BGSY bot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'BGSY bot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'askpeter_bot/5.4;'), 1 => array(0 => 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.info)')), $ls);
@@ -3225,7 +3218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.info)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; askpeter_bot/5.4; +http://www.askpeter.info)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'JoobleBot'), 1 => array(0 => 'JoobleBot')), $ls);
@@ -3233,7 +3226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'JoobleBot');
+    $dl[] = array(311674,311783,198102,311776, 'JoobleBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Wootbot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Wootbot/1.0; +http://woot.com/)')), $ls);
@@ -3241,7 +3234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Wootbot/1.0; +http://woot.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Wootbot/1.0; +http://woot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetamojiCrawler/1.0;', 1 => '+http://www.metamoji.com/jp/crawler.html'), 1 => array(0 => 'Mozilla/5.0 (compatible; MetamojiCrawler/1.0; +http://www.metamoji.com/jp/crawler.html')), $ls);
@@ -3249,7 +3242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MetamojiCrawler/1.0; +http://www.metamoji.com/jp/crawler.html');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MetamojiCrawler/1.0; +http://www.metamoji.com/jp/crawler.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'TweetedTimes Bot/1.0 (Mozilla/5.0 Compatible, +http://tweetedtimes.com)')), $ls);
@@ -3257,7 +3250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TweetedTimes Bot/1.0 (Mozilla/5.0 Compatible, +http://tweetedtimes.com)');
+    $dl[] = array(311674,311783,198102,311776, 'TweetedTimes Bot/1.0 (Mozilla/5.0 Compatible, +http://tweetedtimes.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)')), $ls);
@@ -3265,7 +3258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)');
+    $dl[] = array(311674,311783,198102,311776, 'Sogou inst spider/4.0(+http://www.sogou.com/docs/help/webmasters.htm#07)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'UnisterBot;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; UnisterBot; crawler@unister.de)')), $ls);
@@ -3273,7 +3266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; UnisterBot; crawler@unister.de)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; UnisterBot; crawler@unister.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; T3-MRHJJGX73YWBJ; estauthamer@emidconsult.com)')), $ls);
@@ -3281,7 +3274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; T3-MRHJJGX73YWBJ; estauthamer@emidconsult.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; T3-MRHJJGX73YWBJ; estauthamer@emidconsult.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'EdisterBot', 1 => '(http://www.edister.com/bot.html)'), 1 => array(0 => 'EdisterBot (http://www.edister.com/bot.html)')), $ls);
@@ -3289,7 +3282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'EdisterBot (http://www.edister.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'EdisterBot (http://www.edister.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SeekBot/1.0'), 1 => array(0 => 'SeekBot/1.0  HTTPFetcher/2.2')), $ls);
@@ -3297,7 +3290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SeekBot/1.0  HTTPFetcher/2.2');
+    $dl[] = array(311674,311783,198102,311776, 'SeekBot/1.0  HTTPFetcher/2.2');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'intelium_bot'), 1 => array(0 => 'intelium_bot')), $ls);
@@ -3305,7 +3298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'intelium_bot');
+    $dl[] = array(311674,311783,198102,311776, 'intelium_bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://pagepeeker.com/robots)'), 1 => array(0 => 'PagePeeker.com (info: http://pagepeeker.com/robots)')), $ls);
@@ -3313,7 +3306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PagePeeker.com (info: http://pagepeeker.com/robots)');
+    $dl[] = array(311674,311783,198102,311776, 'PagePeeker.com (info: http://pagepeeker.com/robots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/bintellibot'), 1 => array(0 => 'Mozilla/bintellibot')), $ls);
@@ -3321,7 +3314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/bintellibot');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/bintellibot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DotNetShoutout-Bot(http://dotnetshout.com)'), 1 => array(0 => 'DotNetShoutout-Bot(http://dotnetshout.com)')), $ls);
@@ -3329,7 +3322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DotNetShoutout-Bot(http://dotnetshout.com)');
+    $dl[] = array(311674,311783,198102,311776, 'DotNetShoutout-Bot(http://dotnetshout.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'UptimeRobot/1.0;', 1 => 'http://www.uptimerobot.com/)'), 1 => array(0 => 'Mozilla/5.0+(compatible; UptimeRobot/1.0; http://www.uptimerobot.com/)')), $ls);
@@ -3337,7 +3330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible; UptimeRobot/1.0; http://www.uptimerobot.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible; UptimeRobot/1.0; http://www.uptimerobot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'imbot/0.1'), 1 => array(0 => 'Mozilla/5.0 (compatible; imbot/0.1 +http://internetmemory.org/en/)')), $ls);
@@ -3345,7 +3338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; imbot/0.1 +http://internetmemory.org/en/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; imbot/0.1 +http://internetmemory.org/en/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'IstellaBot/1.01.18'), 1 => array(0 => 'Mozilla/5.0 (compatible; IstellaBot/1.01.18 +http://www.tiscali.it/)')), $ls);
@@ -3353,7 +3346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; IstellaBot/1.01.18 +http://www.tiscali.it/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; IstellaBot/1.01.18 +http://www.tiscali.it/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ShowyouBot', 1 => '(http://showyou.com/crawler)'), 1 => array(0 => 'ShowyouBot (http://showyou.com/crawler)')), $ls);
@@ -3361,7 +3354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ShowyouBot (http://showyou.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'ShowyouBot (http://showyou.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Scribdbot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Scribdbot/1.0; +http://www.scribd.com)')), $ls);
@@ -3369,7 +3362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Scribdbot/1.0; +http://www.scribd.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Scribdbot/1.0; +http://www.scribd.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://boardreader.com/info/robots.htm)-CommentCrawler5'), 1 => array(0 => 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)-CommentCrawler5')), $ls);
@@ -3377,7 +3370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)-CommentCrawler5');
+    $dl[] = array(311674,311783,198102,311776, 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)-CommentCrawler5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaTagRobot/1.6'), 1 => array(0 => 'MetaTagRobot/1.6 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)')), $ls);
@@ -3385,7 +3378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MetaTagRobot/1.6 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)');
+    $dl[] = array(311674,311783,198102,311776, 'MetaTagRobot/1.6 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Jbot'), 1 => array(0 => 'Jbot')), $ls);
@@ -3393,7 +3386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Jbot');
+    $dl[] = array(311674,311783,198102,311776, 'Jbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Technology/Spider/Crawler'), 1 => array(0 => 'http://www.activesearchresults.com/addwebsite.php ASR Ranking Technology/Spider/Crawler')), $ls);
@@ -3401,7 +3394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'http://www.activesearchresults.com/addwebsite.php ASR Ranking Technology/Spider/Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'http://www.activesearchresults.com/addwebsite.php ASR Ranking Technology/Spider/Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DealOzBot/7.2', 1 => '(+http://www.dealoz.com/bot.pl)'), 1 => array(0 => 'DealOzBot/7.2 (+http://www.dealoz.com/bot.pl)')), $ls);
@@ -3409,7 +3402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DealOzBot/7.2 (+http://www.dealoz.com/bot.pl)');
+    $dl[] = array(311674,311783,198102,311776, 'DealOzBot/7.2 (+http://www.dealoz.com/bot.pl)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider', 1 => '-Bot/2.0'), 1 => array(0 => 'SupremeSearch.net Spider-Bot/2.0 (http://www.supremesearch.net)')), $ls);
@@ -3417,7 +3410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SupremeSearch.net Spider-Bot/2.0 (http://www.supremesearch.net)');
+    $dl[] = array(311674,311783,198102,311776, 'SupremeSearch.net Spider-Bot/2.0 (http://www.supremesearch.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenSearchServer_Bot'), 1 => array(0 => 'OpenSearchServer_Bot')), $ls);
@@ -3425,7 +3418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OpenSearchServer_Bot');
+    $dl[] = array(311674,311783,198102,311776, 'OpenSearchServer_Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'aranhabot'), 1 => array(0 => 'aranhabot')), $ls);
@@ -3433,7 +3426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'aranhabot');
+    $dl[] = array(311674,311783,198102,311776, 'aranhabot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'InfohubbleBot'), 1 => array(0 => 'InfohubbleBot')), $ls);
@@ -3441,7 +3434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'InfohubbleBot');
+    $dl[] = array(311674,311783,198102,311776, 'InfohubbleBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AMZNKAssocBot/4.0)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AMZNKAssocBot/4.0)')), $ls);
@@ -3449,7 +3442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AMZNKAssocBot/4.0)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AMZNKAssocBot/4.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lexxbot/1.0;', 1 => '+http://www.artiesoft.com/lexxbot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; lexxbot/1.0; +http://www.artiesoft.com/lexxbot.php)')), $ls);
@@ -3457,7 +3450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; lexxbot/1.0; +http://www.artiesoft.com/lexxbot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; lexxbot/1.0; +http://www.artiesoft.com/lexxbot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'nsphereinc-crawler'), 1 => array(0 => 'nsphereinc-crawler')), $ls);
@@ -3465,7 +3458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'nsphereinc-crawler');
+    $dl[] = array(311674,311783,198102,311776, 'nsphereinc-crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ApptusBot/2.0;', 1 => '+http://www.apptus.com/apptusbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.apptus.com/apptusbot)')), $ls);
@@ -3473,7 +3466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.apptus.com/apptusbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.apptus.com/apptusbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TwengaBot-2.0', 1 => '(http://www.twenga.com/bot.html)'), 1 => array(0 => 'TwengaBot-2.0 (http://www.twenga.com/bot.html) (Chicago)')), $ls);
@@ -3481,7 +3474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TwengaBot-2.0 (http://www.twenga.com/bot.html) (Chicago)');
+    $dl[] = array(311674,311783,198102,311776, 'TwengaBot-2.0 (http://www.twenga.com/bot.html) (Chicago)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spinachbot/1.1'), 1 => array(0 => 'Spinachbot/1.1')), $ls);
@@ -3489,7 +3482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Spinachbot/1.1');
+    $dl[] = array(311674,311783,198102,311776, 'Spinachbot/1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AskPeterBot;', 1 => '+http://www.askpeter.info/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.info/bot.html)')), $ls);
@@ -3497,7 +3490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.info/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.info/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZingroBot/1.0'), 1 => array(0 => 'ZingroBot/1.0 (+http://www.zingro.com/)')), $ls);
@@ -3505,7 +3498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ZingroBot/1.0 (+http://www.zingro.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'ZingroBot/1.0 (+http://www.zingro.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ezooms.bot@gmail.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Ezooms/1.5; ezooms.bot@gmail.com)')), $ls);
@@ -3513,7 +3506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Ezooms/1.5; ezooms.bot@gmail.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Ezooms/1.5; ezooms.bot@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'unknownbot'), 1 => array(0 => 'unknownbot abc@mail.com')), $ls);
@@ -3521,7 +3514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'unknownbot abc@mail.com');
+    $dl[] = array(311674,311783,198102,311776, 'unknownbot abc@mail.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SWEBot/1.0;', 1 => '+http://swebot-crawler.net)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot-crawler.net)')), $ls);
@@ -3529,7 +3522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot-crawler.net)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SWEBot/1.0; +http://swebot-crawler.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PeekBot'), 1 => array(0 => 'GG PeekBot 1.0 (http://gg.pl)')), $ls);
@@ -3537,7 +3530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GG PeekBot 1.0 (http://gg.pl)');
+    $dl[] = array(311674,311783,198102,311776, 'GG PeekBot 1.0 (http://gg.pl)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot'), 1 => array(0 => 'checkgzipcompression.com robot')), $ls);
@@ -3545,7 +3538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'checkgzipcompression.com robot');
+    $dl[] = array(311674,311783,198102,311776, 'checkgzipcompression.com robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spider-on-the-fly 20q v4.256 Discover Life www.discoverlife.org')), $ls);
@@ -3553,7 +3546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'spider-on-the-fly 20q v4.256 Discover Life www.discoverlife.org');
+    $dl[] = array(311674,311783,198102,311776, 'spider-on-the-fly 20q v4.256 Discover Life www.discoverlife.org');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'FAST Enterprise Crawler 6 used by My Company (administrator@example.com)')), $ls);
@@ -3561,7 +3554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler 6 used by My Company (administrator@example.com)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler 6 used by My Company (administrator@example.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.widgetbox.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Widgetbox; http://www.widgetbox.com/bot.html)')), $ls);
@@ -3569,7 +3562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Widgetbox; http://www.widgetbox.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Widgetbox; http://www.widgetbox.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Kliksafe Search Bot/2.0')), $ls);
@@ -3577,7 +3570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Kliksafe Search Bot/2.0');
+    $dl[] = array(311674,311783,198102,311776, 'Kliksafe Search Bot/2.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Ralocobot;', 1 => '+http://raloco.com/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Ralocobot; +http://raloco.com/bot)')), $ls);
@@ -3585,7 +3578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Ralocobot; +http://raloco.com/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Ralocobot; +http://raloco.com/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SNBot'), 1 => array(0 => 'SNBot 0.93 on human users\' behalf http://www.shoppingnotes.com/help/webmasterfaq')), $ls);
@@ -3593,7 +3586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SNBot 0.93 on human users\' behalf http://www.shoppingnotes.com/help/webmasterfaq');
+    $dl[] = array(311674,311783,198102,311776, 'SNBot 0.93 on human users\' behalf http://www.shoppingnotes.com/help/webmasterfaq');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WikioFeedBot'), 1 => array(0 => 'WikioFeedBot 1.0 (http://www.wikio.com)')), $ls);
@@ -3601,7 +3594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WikioFeedBot 1.0 (http://www.wikio.com)');
+    $dl[] = array(311674,311783,198102,311776, 'WikioFeedBot 1.0 (http://www.wikio.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'i4dwebbot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; i4dwebbot)')), $ls);
@@ -3609,7 +3602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; i4dwebbot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; i4dwebbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'emefgebot/BETA', 1 => '(+http://emefge.de/bot.html)'), 1 => array(0 => 'emefgebot/BETA (+http://emefge.de/bot.html)')), $ls);
@@ -3617,7 +3610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'emefgebot/BETA (+http://emefge.de/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'emefgebot/BETA (+http://emefge.de/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'izp spider')), $ls);
@@ -3625,7 +3618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'izp spider');
+    $dl[] = array(311674,311783,198102,311776, 'izp spider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AskPeterBot;', 1 => '+http://www.askpeter.de/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.de/bot.html)')), $ls);
@@ -3633,7 +3626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.de/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AskPeterBot; +http://www.askpeter.de/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ltbot/1.3;', 1 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; ltbot/1.3; bot@language-tools.com)')), $ls);
@@ -3641,7 +3634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ltbot/1.3; bot@language-tools.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ltbot/1.3; bot@language-tools.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.wesee.com/en/support/bot/)'), 1 => array(0 => 'WeSEE:Search/0.1 (Alpha, http://www.wesee.com/en/support/bot/)')), $ls);
@@ -3649,7 +3642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WeSEE:Search/0.1 (Alpha, http://www.wesee.com/en/support/bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'WeSEE:Search/0.1 (Alpha, http://www.wesee.com/en/support/bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SemrushBot/0.91'), 1 => array(0 => 'SemrushBot/0.91')), $ls);
@@ -3657,7 +3650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SemrushBot/0.91');
+    $dl[] = array(311674,311783,198102,311776, 'SemrushBot/0.91');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainCrawler/2.0', 1 => '(info@domaincrawler.com;', 2 => 'http://www.domaincrawler.com/bot'), 1 => array(0 => 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/bot')), $ls);
@@ -3665,7 +3658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/bot');
+    $dl[] = array(311674,311783,198102,311776, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'HolmesBot'), 1 => array(0 => 'HolmesBot (http://holmes.ge)')), $ls);
@@ -3673,7 +3666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'HolmesBot (http://holmes.ge)');
+    $dl[] = array(311674,311783,198102,311776, 'HolmesBot (http://holmes.ge)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'ClickTale bot')), $ls);
@@ -3681,7 +3674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ClickTale bot');
+    $dl[] = array(311674,311783,198102,311776, 'ClickTale bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RealSpider/2.0;', 1 => '+http://www.minelabs.com/about-our-spider)'), 1 => array(0 => 'Mozilla/5.0 (compatible; RealSpider/2.0; +http://www.minelabs.com/about-our-spider)')), $ls);
@@ -3689,7 +3682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; RealSpider/2.0; +http://www.minelabs.com/about-our-spider)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; RealSpider/2.0; +http://www.minelabs.com/about-our-spider)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'search:robot', 1 => '(http://spider.neofonie.de;', 2 => 'spider', 3 => 'Bot', 4 => 'crawler', 5 => 'spider'), 1 => array(0 => 'mahonie, neofonie search:robot (http://spider.neofonie.de; spider@neofonie.de; This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de) ( admin e-mail: un')), $ls);
@@ -3697,7 +3690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'mahonie, neofonie search:robot (http://spider.neofonie.de; spider@neofonie.de; This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de) ( admin e-mail: un');
+    $dl[] = array(311674,311783,198102,311776, 'mahonie, neofonie search:robot (http://spider.neofonie.de; spider@neofonie.de; This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de) ( admin e-mail: un');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DCPbot/1.2;'), 1 => array(0 => 'Mozilla/5.0 (compatible; DCPbot/1.2; +http://domains.checkparams.com/)')), $ls);
@@ -3705,7 +3698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; DCPbot/1.2; +http://domains.checkparams.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; DCPbot/1.2; +http://domains.checkparams.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SemrushBot/0.92'), 1 => array(0 => 'SemrushBot/0.92')), $ls);
@@ -3713,7 +3706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SemrushBot/0.92');
+    $dl[] = array(311674,311783,198102,311776, 'SemrushBot/0.92');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (XXX bot Content 3.2.19)')), $ls);
@@ -3721,7 +3714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (XXX bot Content 3.2.19)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (XXX bot Content 3.2.19)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GSLFbot'), 1 => array(0 => 'GSLFbot')), $ls);
@@ -3729,7 +3722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GSLFbot');
+    $dl[] = array(311674,311783,198102,311776, 'GSLFbot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'EventGuruBot/1.0;', 1 => '+http://www.eventguru.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; EventGuruBot/1.0; +http://www.eventguru.com/spider.html)')), $ls);
@@ -3737,7 +3730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; EventGuruBot/1.0; +http://www.eventguru.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; EventGuruBot/1.0; +http://www.eventguru.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Biz360 spider (blogsmanager@biz360.com; http://www.biz360.com)')), $ls);
@@ -3745,7 +3738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Biz360 spider (blogsmanager@biz360.com; http://www.biz360.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Biz360 spider (blogsmanager@biz360.com; http://www.biz360.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenfosBot/2.4;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenfosBot/2.4; +http://www.openfos.com)')), $ls);
@@ -3753,7 +3746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; OpenfosBot/2.4; +http://www.openfos.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; OpenfosBot/2.4; +http://www.openfos.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebBot'), 1 => array(0 => 'Xerka WebBot v1.0.0 [Transporte]')), $ls);
@@ -3761,7 +3754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Xerka WebBot v1.0.0 [Transporte]');
+    $dl[] = array(311674,311783,198102,311776, 'Xerka WebBot v1.0.0 [Transporte]');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Kwickbot', 1 => 'http://hilfe.kwick.de/KwickBot)'), 1 => array(0 => 'Mozilla/5.0 (Kwickbot 1.0; http://hilfe.kwick.de/KwickBot)')), $ls);
@@ -3769,7 +3762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Kwickbot 1.0; http://hilfe.kwick.de/KwickBot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Kwickbot 1.0; http://hilfe.kwick.de/KwickBot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PGBot/0.1'), 1 => array(0 => 'PGBot/0.1')), $ls);
@@ -3777,7 +3770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PGBot/0.1');
+    $dl[] = array(311674,311783,198102,311776, 'PGBot/0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LinksManager.com_bot'), 1 => array(0 => 'LinksManager.com_bot')), $ls);
@@ -3785,7 +3778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LinksManager.com_bot');
+    $dl[] = array(311674,311783,198102,311776, 'LinksManager.com_bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Cutbot', 1 => 'Crawler', 2 => 'http://cutbot.net/crawler/'), 1 => array(0 => 'Cutbot Crawler; 1.0; http://cutbot.net/crawler/')), $ls);
@@ -3793,7 +3786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Cutbot Crawler; 1.0; http://cutbot.net/crawler/');
+    $dl[] = array(311674,311783,198102,311776, 'Cutbot Crawler; 1.0; http://cutbot.net/crawler/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'stc-crawler/0.84'), 1 => array(0 => 'stc-crawler/0.84')), $ls);
@@ -3801,7 +3794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'stc-crawler/0.84');
+    $dl[] = array(311674,311783,198102,311776, 'stc-crawler/0.84');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'suma spider')), $ls);
@@ -3809,7 +3802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'suma spider');
+    $dl[] = array(311674,311783,198102,311776, 'suma spider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'vspider'), 1 => array(0 => 'vspider')), $ls);
@@ -3817,7 +3810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'vspider');
+    $dl[] = array(311674,311783,198102,311776, 'vspider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LuminateBot/1.0;', 1 => '+http://www.luminate.com/bot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; LuminateBot/1.0; +http://www.luminate.com/bot/)')), $ls);
@@ -3825,7 +3818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; LuminateBot/1.0; +http://www.luminate.com/bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; LuminateBot/1.0; +http://www.luminate.com/bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SEOENGWorldBot/1.0', 1 => '(+http://www.seoengine.com/seoengbot.htm)'), 1 => array(0 => 'SEOENGWorldBot/1.0 (+http://www.seoengine.com/seoengbot.htm)')), $ls);
@@ -3833,7 +3826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SEOENGWorldBot/1.0 (+http://www.seoengine.com/seoengbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'SEOENGWorldBot/1.0 (+http://www.seoengine.com/seoengbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; Satrix Bot/1.0; +dima@tajseed.com)')), $ls);
@@ -3841,7 +3834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Satrix Bot/1.0; +dima@tajseed.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Satrix Bot/1.0; +dima@tajseed.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexSitelinks; Dyatel; +http://yandex.com/bots)')), $ls);
@@ -3849,7 +3842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexSitelinks; Dyatel; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexSitelinks; Dyatel; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OrbitSpiderBot/1'), 1 => array(0 => 'OrbitSpiderBot/1')), $ls);
@@ -3857,7 +3850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OrbitSpiderBot/1');
+    $dl[] = array(311674,311783,198102,311776, 'OrbitSpiderBot/1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sspider_X'), 1 => array(0 => 'Sspider_X')), $ls);
@@ -3865,7 +3858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sspider_X');
+    $dl[] = array(311674,311783,198102,311776, 'Sspider_X');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SeekBot/1.0', 1 => 'RobotsTxtFetcher/1.3'), 1 => array(0 => 'SeekBot/1.0  RobotsTxtFetcher/1.3')), $ls);
@@ -3873,7 +3866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SeekBot/1.0  RobotsTxtFetcher/1.3');
+    $dl[] = array(311674,311783,198102,311776, 'SeekBot/1.0  RobotsTxtFetcher/1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'BotLaju v2.0 (http://laju.my/)')), $ls);
@@ -3881,7 +3874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BotLaju v2.0 (http://laju.my/)');
+    $dl[] = array(311674,311783,198102,311776, 'BotLaju v2.0 (http://laju.my/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'K-Crawler'), 1 => array(0 => 'K-Crawler')), $ls);
@@ -3889,7 +3882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'K-Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'K-Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BeetleBot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; BeetleBot; )')), $ls);
@@ -3897,7 +3890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; BeetleBot; )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; BeetleBot; )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'aiHitBot/1.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; aiHitBot/1.1; +http://www.aihit.com/)')), $ls);
@@ -3905,7 +3898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; aiHitBot/1.1; +http://www.aihit.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; aiHitBot/1.1; +http://www.aihit.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PeekBot'), 1 => array(0 => 'GG PeekBot 1.0 ( http://gg.pl/ http://info.gadu-gadu.pl/praca )')), $ls);
@@ -3913,7 +3906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GG PeekBot 1.0 ( http://gg.pl/ http://info.gadu-gadu.pl/praca )');
+    $dl[] = array(311674,311783,198102,311776, 'GG PeekBot 1.0 ( http://gg.pl/ http://info.gadu-gadu.pl/praca )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'aiHitBot-BP/1.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; aiHitBot-BP/1.1; +http://www.aihit.com/)')), $ls);
@@ -3921,7 +3914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; aiHitBot-BP/1.1; +http://www.aihit.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; aiHitBot-BP/1.1; +http://www.aihit.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://govid.mobi/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; gofind; +http://govid.mobi/bot.php)')), $ls);
@@ -3929,7 +3922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; gofind; +http://govid.mobi/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; gofind; +http://govid.mobi/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AhrefsBot/3.0;', 1 => '+http://ahrefs.com/robot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AhrefsBot/3.0; +http://ahrefs.com/robot/)')), $ls);
@@ -3937,7 +3930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AhrefsBot/3.0; +http://ahrefs.com/robot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AhrefsBot/3.0; +http://ahrefs.com/robot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot;'), 1 => array(0 => 'Mozilla/4.0 (compatible; Mavicanet robot; www.mavicanet.org)')), $ls);
@@ -3945,7 +3938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; Mavicanet robot; www.mavicanet.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; Mavicanet robot; www.mavicanet.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://tineye.com/crawler.html)'), 1 => array(0 => 'TinEye/1.1 (http://tineye.com/crawler.html)')), $ls);
@@ -3953,7 +3946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TinEye/1.1 (http://tineye.com/crawler.html)');
+    $dl[] = array(311674,311783,198102,311776, 'TinEye/1.1 (http://tineye.com/crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'LargeSmall Crawler')), $ls);
@@ -3961,7 +3954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LargeSmall Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'LargeSmall Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.mrcarlito.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (MrCarlito-0.1 http://www.mrcarlito.com/spider.html)')), $ls);
@@ -3969,7 +3962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (MrCarlito-0.1 http://www.mrcarlito.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (MrCarlito-0.1 http://www.mrcarlito.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://linkaider.com/crawler/)'), 1 => array(0 => 'LinkAider (http://linkaider.com/crawler/)')), $ls);
@@ -3977,7 +3970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LinkAider (http://linkaider.com/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'LinkAider (http://linkaider.com/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '\'citeseerxbot\''), 1 => array(0 => '\'citeseerxbot\'')), $ls);
@@ -3985,7 +3978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '\'citeseerxbot\'');
+    $dl[] = array(311674,311783,198102,311776, '\'citeseerxbot\'');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ConveraCrawler/0.9e'), 1 => array(0 => 'ConveraCrawler/0.9e (+http://ews.converasearch.com/crawl.htm)')), $ls);
@@ -3993,7 +3986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ConveraCrawler/0.9e (+http://ews.converasearch.com/crawl.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'ConveraCrawler/0.9e (+http://ews.converasearch.com/crawl.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'aulinkbot/1.0'), 1 => array(0 => 'aulinkbot/1.0')), $ls);
@@ -4001,7 +3994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'aulinkbot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'aulinkbot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'SciSpi v.1.beta - science spider (+http://www.abitofscience.com/)')), $ls);
@@ -4009,7 +4002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SciSpi v.1.beta - science spider (+http://www.abitofscience.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'SciSpi v.1.beta - science spider (+http://www.abitofscience.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenfosBot/2.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenfosBot/2.1; +http://www.openfos.com)')), $ls);
@@ -4017,7 +4010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; OpenfosBot/2.1; +http://www.openfos.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; OpenfosBot/2.1; +http://www.openfos.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot-Products/1.0', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot-Products/1.0 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -4025,7 +4018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot-Products/1.0 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot-Products/1.0 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'A .NET Web Crawler')), $ls);
@@ -4033,7 +4026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'A .NET Web Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'A .NET Web Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ALeadSoftbot/2.0', 1 => '(+http://www.aleadsoft.com/bot.htm)'), 1 => array(0 => 'ALeadSoftbot/2.0 (+http://www.aleadsoft.com/bot.htm)')), $ls);
@@ -4041,7 +4034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ALeadSoftbot/2.0 (+http://www.aleadsoft.com/bot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'ALeadSoftbot/2.0 (+http://www.aleadsoft.com/bot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TweetMemeBot'), 1 => array(0 => 'TweetMemeBot (Feed Parser; Allow like Gecko)')), $ls);
@@ -4049,7 +4042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TweetMemeBot (Feed Parser; Allow like Gecko)');
+    $dl[] = array(311674,311783,198102,311776, 'TweetMemeBot (Feed Parser; Allow like Gecko)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Rapleafbot/1.0;'), 1 => array(0 => 'Mozilla/4.0 (compatible; Rapleafbot/1.0; +http://www.rapleaf.com/contact.html;)')), $ls);
@@ -4057,7 +4050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; Rapleafbot/1.0; +http://www.rapleaf.com/contact.html;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; Rapleafbot/1.0; +http://www.rapleaf.com/contact.html;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ERACrawler/1.0'), 1 => array(0 => 'ERACrawler/1.0')), $ls);
@@ -4065,7 +4058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ERACrawler/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'ERACrawler/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'msnbot-media/1.0', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -4073,7 +4066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'msnbot-media/1.0 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'QrobotW'), 1 => array(0 => 'QrobotW')), $ls);
@@ -4081,7 +4074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'QrobotW');
+    $dl[] = array(311674,311783,198102,311776, 'QrobotW');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://boardreader.com/info/robots.htm)'), 1 => array(0 => 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)')), $ls);
@@ -4089,7 +4082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'BoardReader/1.0 (http://boardreader.com/info/robots.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'utmailspider'), 1 => array(0 => 'utmailspider')), $ls);
@@ -4097,7 +4090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'utmailspider');
+    $dl[] = array(311674,311783,198102,311776, 'utmailspider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'my-search-bot'), 1 => array(0 => 'my-search-bot')), $ls);
@@ -4105,7 +4098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'my-search-bot');
+    $dl[] = array(311674,311783,198102,311776, 'my-search-bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'OpenLink Virtuoso RDF crawler')), $ls);
@@ -4113,7 +4106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OpenLink Virtuoso RDF crawler');
+    $dl[] = array(311674,311783,198102,311776, 'OpenLink Virtuoso RDF crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sitedomain-Bot', 1 => '+http://www.sitedomain.de/sitedomain-bot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Sitedomain-Bot 1.0; Headers only; +http://www.sitedomain.de/sitedomain-bot/)')), $ls);
@@ -4121,7 +4114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Sitedomain-Bot 1.0; Headers only; +http://www.sitedomain.de/sitedomain-bot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Sitedomain-Bot 1.0; Headers only; +http://www.sitedomain.de/sitedomain-bot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Zookabot/2.1;++http://zookabot.com'), 1 => array(0 => 'Zookabot/2.1;++http://zookabot.com')), $ls);
@@ -4129,7 +4122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Zookabot/2.1;++http://zookabot.com');
+    $dl[] = array(311674,311783,198102,311776, 'Zookabot/2.1;++http://zookabot.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaBot'), 1 => array(0 => 'Xerka MetaBot v1.0.0 [AIDO]')), $ls);
@@ -4137,7 +4130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Xerka MetaBot v1.0.0 [AIDO]');
+    $dl[] = array(311674,311783,198102,311776, 'Xerka MetaBot v1.0.0 [AIDO]');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'netEstate RSS crawler (+http://www.rss-directory.info/)')), $ls);
@@ -4145,7 +4138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'netEstate RSS crawler (+http://www.rss-directory.info/)');
+    $dl[] = array(311674,311783,198102,311776, 'netEstate RSS crawler (+http://www.rss-directory.info/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider-favo+(+http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider-favo+(+http://www.baidu.com/search/spider.htm)')), $ls);
@@ -4153,7 +4146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider-favo+(+http://www.baidu.com/search/spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider-favo+(+http://www.baidu.com/search/spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'SWAT Crawler. AGH University project. In case of problem contact: opal@tempus.metal.agh.edu.pl. Thanks.')), $ls);
@@ -4161,7 +4154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SWAT Crawler. AGH University project. In case of problem contact: opal@tempus.metal.agh.edu.pl. Thanks.');
+    $dl[] = array(311674,311783,198102,311776, 'SWAT Crawler. AGH University project. In case of problem contact: opal@tempus.metal.agh.edu.pl. Thanks.');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaTagRobot/2.1'), 1 => array(0 => 'MetaTagRobot/2.1 (http://www.seocentro.com/tools/search-engines/metatag-analyzer.html)')), $ls);
@@ -4169,7 +4162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MetaTagRobot/2.1 (http://www.seocentro.com/tools/search-engines/metatag-analyzer.html)');
+    $dl[] = array(311674,311783,198102,311776, 'MetaTagRobot/2.1 (http://www.seocentro.com/tools/search-engines/metatag-analyzer.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Influencebot/0.9;'), 1 => array(0 => 'Influencebot/0.9; (Automatic classification of websites; http://www.influencebox.com/; info@influencebox.com)')), $ls);
@@ -4177,7 +4170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Influencebot/0.9; (Automatic classification of websites; http://www.influencebox.com/; info@influencebox.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Influencebot/0.9; (Automatic classification of websites; http://www.influencebox.com/; info@influencebox.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'fastbot.de', 1 => 'crawler', 2 => '(http://www.fastbot.de)'), 1 => array(0 => 'fastbot.de crawler 2.0 beta (http://www.fastbot.de)')), $ls);
@@ -4185,7 +4178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'fastbot.de crawler 2.0 beta (http://www.fastbot.de)');
+    $dl[] = array(311674,311783,198102,311776, 'fastbot.de crawler 2.0 beta (http://www.fastbot.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SocSciBot'), 1 => array(0 => 'SocSciBot')), $ls);
@@ -4193,7 +4186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SocSciBot');
+    $dl[] = array(311674,311783,198102,311776, 'SocSciBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexCatalog/3.0; +http://yandex.com/bots)')), $ls);
@@ -4201,7 +4194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexCatalog/3.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexCatalog/3.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebCrawler'), 1 => array(0 => 'WebCrawler v1.3')), $ls);
@@ -4209,7 +4202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WebCrawler v1.3');
+    $dl[] = array(311674,311783,198102,311776, 'WebCrawler v1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.webLyzard.com/crawler)'), 1 => array(0 => 'webLyzard/1.1 (+http://www.webLyzard.com/crawler)')), $ls);
@@ -4217,7 +4210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'webLyzard/1.1 (+http://www.webLyzard.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'webLyzard/1.1 (+http://www.webLyzard.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'shopstylebot/1.0'), 1 => array(0 => 'shopstylebot/1.0')), $ls);
@@ -4225,7 +4218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'shopstylebot/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'shopstylebot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaBot'), 1 => array(0 => 'Xerka MetaBot v1.0.0 [cartifEDIF]')), $ls);
@@ -4233,7 +4226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Xerka MetaBot v1.0.0 [cartifEDIF]');
+    $dl[] = array(311674,311783,198102,311776, 'Xerka MetaBot v1.0.0 [cartifEDIF]');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RSSingBot'), 1 => array(0 => 'RSSingBot (http://www.rssing.com)')), $ls);
@@ -4241,7 +4234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RSSingBot (http://www.rssing.com)');
+    $dl[] = array(311674,311783,198102,311776, 'RSSingBot (http://www.rssing.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BejiBot', 1 => 'Crawler', 2 => 'http://www.bejjan.net/crawler/)'), 1 => array(0 => 'BejiBot Crawler (BNL Services; http://www.bejjan.net/crawler/)')), $ls);
@@ -4249,7 +4242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BejiBot Crawler (BNL Services; http://www.bejjan.net/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'BejiBot Crawler (BNL Services; http://www.bejjan.net/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Startsidenbot/1.0'), 1 => array(0 => 'Startsidenbot/1.0 (+http://www.startsiden.no)')), $ls);
@@ -4257,7 +4250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Startsidenbot/1.0 (+http://www.startsiden.no)');
+    $dl[] = array(311674,311783,198102,311776, 'Startsidenbot/1.0 (+http://www.startsiden.no)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ServiceUptime.robot'), 1 => array(0 => 'ServiceUptime.robot')), $ls);
@@ -4265,7 +4258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ServiceUptime.robot');
+    $dl[] = array(311674,311783,198102,311776, 'ServiceUptime.robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider-sfkr'), 1 => array(0 => 'Baiduspider-sfkr')), $ls);
@@ -4273,7 +4266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider-sfkr');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider-sfkr');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ApptusBot/2.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.eniro.se)')), $ls);
@@ -4281,7 +4274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.eniro.se)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ApptusBot/2.0; +http://www.eniro.se)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RyzeCrawler/1.1.1', 1 => '(+http://www.domain2day.nl/crawler/)'), 1 => array(0 => 'RyzeCrawler/1.1.1 (+http://www.domain2day.nl/crawler/)')), $ls);
@@ -4289,7 +4282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RyzeCrawler/1.1.1 (+http://www.domain2day.nl/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'RyzeCrawler/1.1.1 (+http://www.domain2day.nl/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'businessdbbot/v1.2', 1 => '(http://www.businessdb.com/bot.php)'), 1 => array(0 => 'businessdbbot/v1.2 (http://www.businessdb.com/bot.php)')), $ls);
@@ -4297,7 +4290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'businessdbbot/v1.2 (http://www.businessdb.com/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'businessdbbot/v1.2 (http://www.businessdb.com/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebBot'), 1 => array(0 => 'Xerka WebBot v1.0.0 [Tecnotour]')), $ls);
@@ -4305,7 +4298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Xerka WebBot v1.0.0 [Tecnotour]');
+    $dl[] = array(311674,311783,198102,311776, 'Xerka WebBot v1.0.0 [Tecnotour]');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rbot', 1 => '(http://ruby-rbot.org)'), 1 => array(0 => 'rbot http util 0.9.15 (http://ruby-rbot.org)')), $ls);
@@ -4313,7 +4306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'rbot http util 0.9.15 (http://ruby-rbot.org)');
+    $dl[] = array(311674,311783,198102,311776, 'rbot http util 0.9.15 (http://ruby-rbot.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Traackr.com Bot')), $ls);
@@ -4321,7 +4314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Traackr.com Bot');
+    $dl[] = array(311674,311783,198102,311776, 'Traackr.com Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainTaggingbot;'), 1 => array(0 => 'DomainTaggingbot; +http://www.opendns.com/community/domaintagging')), $ls);
@@ -4329,7 +4322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainTaggingbot; +http://www.opendns.com/community/domaintagging');
+    $dl[] = array(311674,311783,198102,311776, 'DomainTaggingbot; +http://www.opendns.com/community/domaintagging');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Doubanbot/1.0', 1 => '(bot@douban.com'), 1 => array(0 => 'Doubanbot/1.0 (bot@douban.com http://www.douban.com)')), $ls);
@@ -4337,7 +4330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Doubanbot/1.0 (bot@douban.com http://www.douban.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Doubanbot/1.0 (bot@douban.com http://www.douban.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robots.txt'), 1 => array(0 => 'Robots.txt finder')), $ls);
@@ -4345,7 +4338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Robots.txt finder');
+    $dl[] = array(311674,311783,198102,311776, 'Robots.txt finder');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'sedo_parking_robot'), 1 => array(0 => 'sedo_parking_robot')), $ls);
@@ -4353,7 +4346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'sedo_parking_robot');
+    $dl[] = array(311674,311783,198102,311776, 'sedo_parking_robot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'sharegloo_bot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; sharegloo_bot/1.0; +http://www.sharegloo.com)')), $ls);
@@ -4361,7 +4354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; sharegloo_bot/1.0; +http://www.sharegloo.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; sharegloo_bot/1.0; +http://www.sharegloo.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WikioFeedBot'), 1 => array(0 => 'WikioFeedBot 1.0')), $ls);
@@ -4369,7 +4362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WikioFeedBot 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'WikioFeedBot 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'http://www.wlw.de/extern/crawler/Wer-liefert-was-Crawler.html)'), 1 => array(0 => 'Mozilla/5.0  (compatible; Wer-liefert-was Crawler 1.1; http://www.wlw.de/extern/crawler/Wer-liefert-was-Crawler.html)')), $ls);
@@ -4377,7 +4370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0  (compatible; Wer-liefert-was Crawler 1.1; http://www.wlw.de/extern/crawler/Wer-liefert-was-Crawler.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0  (compatible; Wer-liefert-was Crawler 1.1; http://www.wlw.de/extern/crawler/Wer-liefert-was-Crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SearchBot'), 1 => array(0 => 'SearchBot')), $ls);
@@ -4385,7 +4378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SearchBot');
+    $dl[] = array(311674,311783,198102,311776, 'SearchBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SocialOomphLinkBot/1.0'), 1 => array(0 => 'SocialOomphLinkBot/1.0 (info@socialoomph.com http://socialoomph.com/)')), $ls);
@@ -4393,7 +4386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SocialOomphLinkBot/1.0 (info@socialoomph.com http://socialoomph.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'SocialOomphLinkBot/1.0 (info@socialoomph.com http://socialoomph.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'cis455crawler'), 1 => array(0 => 'cis455crawler')), $ls);
@@ -4401,7 +4394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'cis455crawler');
+    $dl[] = array(311674,311783,198102,311776, 'cis455crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'newsspider.'), 1 => array(0 => 'Scanmine newsspider. See http://www.scanmine.com for more information. NB: We need css files!')), $ls);
@@ -4409,7 +4402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Scanmine newsspider. See http://www.scanmine.com for more information. NB: We need css files!');
+    $dl[] = array(311674,311783,198102,311776, 'Scanmine newsspider. See http://www.scanmine.com for more information. NB: We need css files!');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'your-search-bot'), 1 => array(0 => 'your-search-bot')), $ls);
@@ -4417,7 +4410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'your-search-bot');
+    $dl[] = array(311674,311783,198102,311776, 'your-search-bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+OkidokiBot/0.1;++http://www.okidoki.ro/bot.html)'), 1 => array(0 => 'Mozilla/5.0+(compatible;+OkidokiBot/0.1;++http://www.okidoki.ro/bot.html)')), $ls);
@@ -4425,7 +4418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible;+OkidokiBot/0.1;++http://www.okidoki.ro/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible;+OkidokiBot/0.1;++http://www.okidoki.ro/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexWebmaster/2.0; +http://yandex.com/bots)')), $ls);
@@ -4433,7 +4426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexWebmaster/2.0; +http://yandex.com/bots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexWebmaster/2.0; +http://yandex.com/bots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'sunwukong bot/1.0 (+http://www.swkong.com/addurl)')), $ls);
@@ -4441,7 +4434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'sunwukong bot/1.0 (+http://www.swkong.com/addurl)');
+    $dl[] = array(311674,311783,198102,311776, 'sunwukong bot/1.0 (+http://www.swkong.com/addurl)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MetaTagRobot/1.9'), 1 => array(0 => 'MetaTagRobot/1.9 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)')), $ls);
@@ -4449,7 +4442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MetaTagRobot/1.9 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)');
+    $dl[] = array(311674,311783,198102,311776, 'MetaTagRobot/1.9 (http://www.widexl.com/remote/search-engines/metatag-analyzer.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'robot;', 1 => '+http://yandex.com/bots)'), 1 => array(0 => 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 2 readers')), $ls);
@@ -4457,7 +4450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 2 readers');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YandexBlogs/0.99; robot; B; +http://yandex.com/bots) 2 readers');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BuzzRankingBot/1.0;', 1 => '+http://www.buzzrankingbot.com/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; BuzzRankingBot/1.0; +http://www.buzzrankingbot.com/)')), $ls);
@@ -4465,7 +4458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; BuzzRankingBot/1.0; +http://www.buzzrankingbot.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; BuzzRankingBot/1.0; +http://www.buzzrankingbot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'My Crawler')), $ls);
@@ -4473,7 +4466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'My Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'My Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'FAST Enterprise Crawler/6.7.0 used by ThomasNet.com (admin@thomasnet.com)')), $ls);
@@ -4481,7 +4474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Enterprise Crawler/6.7.0 used by ThomasNet.com (admin@thomasnet.com)');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Enterprise Crawler/6.7.0 used by ThomasNet.com (admin@thomasnet.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Test:robots)'), 1 => array(0 => 'Mozilla/4.75 (Nikto/2.1.4) (Evasions:None) (Test:robots)')), $ls);
@@ -4489,7 +4482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.75 (Nikto/2.1.4) (Evasions:None) (Test:robots)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.75 (Nikto/2.1.4) (Evasions:None) (Test:robots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'animalstxt.org/bot'), 1 => array(0 => 'animalstxt.org/bot (http://animalstxt.org/)')), $ls);
@@ -4497,7 +4490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'animalstxt.org/bot (http://animalstxt.org/)');
+    $dl[] = array(311674,311783,198102,311776, 'animalstxt.org/bot (http://animalstxt.org/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OdklBot/1.0'), 1 => array(0 => 'OdklBot/1.0 (klass@odnoklassniki.ru)')), $ls);
@@ -4505,7 +4498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OdklBot/1.0 (klass@odnoklassniki.ru)');
+    $dl[] = array(311674,311783,198102,311776, 'OdklBot/1.0 (klass@odnoklassniki.ru)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SEOENGBot/1.2', 1 => '(+http://www.seoengine.com/seoengbot.htm)'), 1 => array(0 => 'SEOENGBot/1.2 (+http://www.seoengine.com/seoengbot.htm)')), $ls);
@@ -4513,7 +4506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SEOENGBot/1.2 (+http://www.seoengine.com/seoengbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'SEOENGBot/1.2 (+http://www.seoengine.com/seoengbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenChimeCrawler/1.0'), 1 => array(0 => 'OpenChimeCrawler/1.0')), $ls);
@@ -4521,7 +4514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'OpenChimeCrawler/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'OpenChimeCrawler/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -4529,7 +4522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '2WiD_Robot'), 1 => array(0 => 'Mozilla/5.0 (compatible; 2WiD_Robot 1.0.3 entry check; http://www.2wid.net)')), $ls);
@@ -4537,7 +4530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; 2WiD_Robot 1.0.3 entry check; http://www.2wid.net)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; 2WiD_Robot 1.0.3 entry check; http://www.2wid.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'web_crawler/1.0'), 1 => array(0 => 'web_crawler/1.0')), $ls);
@@ -4545,7 +4538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'web_crawler/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'web_crawler/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'eduCrawler'), 1 => array(0 => 'eduCrawler')), $ls);
@@ -4553,7 +4546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'eduCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'eduCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'KeepRightBot/0.2'), 1 => array(0 => 'KeepRightBot/0.2 (KeepRight OpenStreetMap Checker; http://keepright.ipax.at)')), $ls);
@@ -4561,7 +4554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'KeepRightBot/0.2 (KeepRight OpenStreetMap Checker; http://keepright.ipax.at)');
+    $dl[] = array(311674,311783,198102,311776, 'KeepRightBot/0.2 (KeepRight OpenStreetMap Checker; http://keepright.ipax.at)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (MobilePhone MM-8300/US/1.0) NetFront/3.1 MMP/2.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -4569,7 +4562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (MobilePhone MM-8300/US/1.0) NetFront/3.1 MMP/2.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (MobilePhone MM-8300/US/1.0) NetFront/3.1 MMP/2.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => 'mini-spider,', 2 => 'bot'), 1 => array(0 => 'Update Profile Bot/1.0 (compatible; NZS.com mini-spider,  Local Search New Zealand; http://www.nzs.com/; bot at nzs.com)')), $ls);
@@ -4577,7 +4570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Update Profile Bot/1.0 (compatible; NZS.com mini-spider,  Local Search New Zealand; http://www.nzs.com/; bot at nzs.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Update Profile Bot/1.0 (compatible; NZS.com mini-spider,  Local Search New Zealand; http://www.nzs.com/; bot at nzs.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'nlcrawler/1.0'), 1 => array(0 => 'nlcrawler/1.0')), $ls);
@@ -4585,7 +4578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'nlcrawler/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'nlcrawler/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'merlinkbot/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; merlinkbot/1.0)')), $ls);
@@ -4593,7 +4586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; merlinkbot/1.0)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; merlinkbot/1.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Web Crawler 1.1')), $ls);
@@ -4601,7 +4594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Web Crawler 1.1');
+    $dl[] = array(311674,311783,198102,311776, 'Web Crawler 1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://www.aboundex.com/crawler/)'), 1 => array(0 => 'Aboundex/0.2 (http://www.aboundex.com/crawler/)')), $ls);
@@ -4609,7 +4602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Aboundex/0.2 (http://www.aboundex.com/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'Aboundex/0.2 (http://www.aboundex.com/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Pastec bot')), $ls);
@@ -4617,7 +4610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Pastec bot');
+    $dl[] = array(311674,311783,198102,311776, 'Pastec bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'UiO webquality crawler')), $ls);
@@ -4625,7 +4618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'UiO webquality crawler');
+    $dl[] = array(311674,311783,198102,311776, 'UiO webquality crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'semvisuBot', 1 => '+http://fr.semvisu.com/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; semvisuBot 2.0; +http://fr.semvisu.com/bot)')), $ls);
@@ -4633,7 +4626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; semvisuBot 2.0; +http://fr.semvisu.com/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; semvisuBot 2.0; +http://fr.semvisu.com/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jobs.de-Robot', 1 => '+http://www.jobs.de/robot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; jobs.de-Robot +http://www.jobs.de/robot.html)')), $ls);
@@ -4641,7 +4634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; jobs.de-Robot +http://www.jobs.de/robot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; jobs.de-Robot +http://www.jobs.de/robot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BuiBui-Bot/1.0'), 1 => array(0 => 'BuiBui-Bot/1.0 (email: buibui[at]dadapro[dot]com)')), $ls);
@@ -4649,7 +4642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BuiBui-Bot/1.0 (email: buibui[at]dadapro[dot]com)');
+    $dl[] = array(311674,311783,198102,311776, 'BuiBui-Bot/1.0 (email: buibui[at]dadapro[dot]com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AdBot'), 1 => array(0 => 'AdBot 1.0 (www.adnetik.com)')), $ls);
@@ -4657,7 +4650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AdBot 1.0 (www.adnetik.com)');
+    $dl[] = array(311674,311783,198102,311776, 'AdBot 1.0 (www.adnetik.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.freewebmonitoring.com/bot.html)'), 1 => array(0 => 'FreeWebMonitoring SiteChecker/0.2 (+http://www.freewebmonitoring.com/bot.html)')), $ls);
@@ -4665,7 +4658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FreeWebMonitoring SiteChecker/0.2 (+http://www.freewebmonitoring.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'FreeWebMonitoring SiteChecker/0.2 (+http://www.freewebmonitoring.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://geourl.org/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; geourl/3.1 - http://geourl.org/bot)')), $ls);
@@ -4673,7 +4666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; geourl/3.1 - http://geourl.org/bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; geourl/3.1 - http://geourl.org/bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'HablaCentro/1.0 (HablaCentro Crawler; http://hablacentro.com/; webmaster@hablacentro.com)')), $ls);
@@ -4681,7 +4674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'HablaCentro/1.0 (HablaCentro Crawler; http://hablacentro.com/; webmaster@hablacentro.com)');
+    $dl[] = array(311674,311783,198102,311776, 'HablaCentro/1.0 (HablaCentro Crawler; http://hablacentro.com/; webmaster@hablacentro.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'AhrefsBot/2.0;', 1 => '+http://ahrefs.com/robot/),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/),gzip(gfe) (via translate.google.com)')), $ls);
@@ -4689,7 +4682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/),gzip(gfe) (via translate.google.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; AhrefsBot/2.0; +http://ahrefs.com/robot/),gzip(gfe) (via translate.google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Whoismindbot/1.0', 1 => '(+http://www.whoismind.com/bot.html)'), 1 => array(0 => 'Whoismindbot/1.0 (+http://www.whoismind.com/bot.html)')), $ls);
@@ -4697,7 +4690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Whoismindbot/1.0 (+http://www.whoismind.com/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Whoismindbot/1.0 (+http://www.whoismind.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'x28-job-bot;', 1 => '+http://x28.ch/bot.html'), 1 => array(0 => 'x28-job-bot; +http://x28.ch/bot.html')), $ls);
@@ -4705,7 +4698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'x28-job-bot; +http://x28.ch/bot.html');
+    $dl[] = array(311674,311783,198102,311776, 'x28-job-bot; +http://x28.ch/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'miggibot'), 1 => array(0 => 'A1 Website Download/3.4.7 (+http://www.microsystools.com/products/website-download/) miggibot')), $ls);
@@ -4713,7 +4706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'A1 Website Download/3.4.7 (+http://www.microsystools.com/products/website-download/) miggibot');
+    $dl[] = array(311674,311783,198102,311776, 'A1 Website Download/3.4.7 (+http://www.microsystools.com/products/website-download/) miggibot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; special_archiver/3.1.1 +http://www.archive.org/details/archive.org_bot)')), $ls);
@@ -4721,7 +4714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; special_archiver/3.1.1 +http://www.archive.org/details/archive.org_bot)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; special_archiver/3.1.1 +http://www.archive.org/details/archive.org_bot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'metager2-verification-bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; metager2-verification-bot; +http://metager2.de/technology.php)')), $ls);
@@ -4729,7 +4722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; metager2-verification-bot; +http://metager2.de/technology.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; metager2-verification-bot; +http://metager2.de/technology.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Mozilla/4.0 (compatible; http://www.tekscrew.com spider <a href=http://tekscrew.com/>tek screws</a>)')), $ls);
@@ -4737,7 +4730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; http://www.tekscrew.com spider <a href=http://tekscrew.com/>tek screws</a>)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; http://www.tekscrew.com spider <a href=http://tekscrew.com/>tek screws</a>)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => '=Morzilla (bloz crawler)')), $ls);
@@ -4745,7 +4738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '=Morzilla (bloz crawler)');
+    $dl[] = array(311674,311783,198102,311776, '=Morzilla (bloz crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '100k_bot'), 1 => array(0 => '100k_bot')), $ls);
@@ -4753,7 +4746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, '100k_bot');
+    $dl[] = array(311674,311783,198102,311776, '100k_bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'VeeloBot'), 1 => array(0 => 'VeeloBot 1.0')), $ls);
@@ -4761,7 +4754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'VeeloBot 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'VeeloBot 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'archive.org_bot/3.1.1'), 1 => array(0 => 'Mozilla/5.0 (compatible; archive.org_bot/3.1.1 +http://pandora.nla.gov.au/crawl.html)')), $ls);
@@ -4769,7 +4762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; archive.org_bot/3.1.1 +http://pandora.nla.gov.au/crawl.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; archive.org_bot/3.1.1 +http://pandora.nla.gov.au/crawl.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RISSBot/dev', 1 => '(http://www.tkolb.de/rissbot.txt)'), 1 => array(0 => 'RISSBot/dev (http://www.tkolb.de/rissbot.txt)')), $ls);
@@ -4777,7 +4770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RISSBot/dev (http://www.tkolb.de/rissbot.txt)');
+    $dl[] = array(311674,311783,198102,311776, 'RISSBot/dev (http://www.tkolb.de/rissbot.txt)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; S5-CY8PYVAVBESAB; nobody@google.com)')), $ls);
@@ -4785,7 +4778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; S5-CY8PYVAVBESAB; nobody@google.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; S5-CY8PYVAVBESAB; nobody@google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CorenSearchBot/1.5'), 1 => array(0 => 'CorenSearchBot/1.5 en libwww-perl/6.02')), $ls);
@@ -4793,7 +4786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CorenSearchBot/1.5 en libwww-perl/6.02');
+    $dl[] = array(311674,311783,198102,311776, 'CorenSearchBot/1.5 en libwww-perl/6.02');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '+http://www.hailoo.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Hailoo News Crawler/1.2; +http://www.hailoo.com/spider.html)')), $ls);
@@ -4801,7 +4794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Hailoo News Crawler/1.2; +http://www.hailoo.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Hailoo News Crawler/1.2; +http://www.hailoo.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot', 1 => 'statastico.dk/bot'), 1 => array(0 => 'Statastico DK bot - Learn more at: statastico.dk/bot')), $ls);
@@ -4809,7 +4802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Statastico DK bot - Learn more at: statastico.dk/bot');
+    $dl[] = array(311674,311783,198102,311776, 'Statastico DK bot - Learn more at: statastico.dk/bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SensikaBot/x.33'), 1 => array(0 => 'SensikaBot/x.33 (+http://sensika.com)')), $ls);
@@ -4817,7 +4810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SensikaBot/x.33 (+http://sensika.com)');
+    $dl[] = array(311674,311783,198102,311776, 'SensikaBot/x.33 (+http://sensika.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'xabaducrawler/0.9'), 1 => array(0 => 'xabaducrawler/0.9')), $ls);
@@ -4825,7 +4818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'xabaducrawler/0.9');
+    $dl[] = array(311674,311783,198102,311776, 'xabaducrawler/0.9');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Bot;'), 1 => array(0 => 'Mozilla/5.0 (Bot; +http://flhelp.ru/)')), $ls);
@@ -4833,7 +4826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Bot; +http://flhelp.ru/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Bot; +http://flhelp.ru/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Bot'), 1 => array(0 => 'Mozilla/5.0 (Bot clicker 3.2.73;)')), $ls);
@@ -4841,7 +4834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Bot clicker 3.2.73;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Bot clicker 3.2.73;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DCPbot/1.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; DCPbot/1.1; +http://domains.checkparams.com/)')), $ls);
@@ -4849,7 +4842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; DCPbot/1.1; +http://domains.checkparams.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; DCPbot/1.1; +http://domains.checkparams.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Bot'), 1 => array(0 => 'Mozilla/5.0 (Bot clicker, Sait perser 3.2.73;)')), $ls);
@@ -4857,7 +4850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Bot clicker, Sait perser 3.2.73;)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Bot clicker, Sait perser 3.2.73;)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robota'), 1 => array(0 => 'Robota')), $ls);
@@ -4865,7 +4858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Robota');
+    $dl[] = array(311674,311783,198102,311776, 'Robota');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NightCrawler'), 1 => array(0 => 'NightCrawler')), $ls);
@@ -4873,7 +4866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NightCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'NightCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LitlrBot', 1 => '(http://litlr.me/bot.html)'), 1 => array(0 => 'LitlrBot (http://litlr.me/bot.html)')), $ls);
@@ -4881,7 +4874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LitlrBot (http://litlr.me/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'LitlrBot (http://litlr.me/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(crawler-feedback@yelp.com)'), 1 => array(0 => 'yCrawl/1.0 (crawler-feedback@yelp.com)')), $ls);
@@ -4889,7 +4882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'yCrawl/1.0 (crawler-feedback@yelp.com)');
+    $dl[] = array(311674,311783,198102,311776, 'yCrawl/1.0 (crawler-feedback@yelp.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'StatsBot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; StatsBot/1.0;  http://franckbehaghel.free.fr/web_statistic/result.php )')), $ls);
@@ -4897,7 +4890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; StatsBot/1.0;  http://franckbehaghel.free.fr/web_statistic/result.php )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; StatsBot/1.0;  http://franckbehaghel.free.fr/web_statistic/result.php )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Trove Social Crawler 1.0/python')), $ls);
@@ -4905,7 +4898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Trove Social Crawler 1.0/python');
+    $dl[] = array(311674,311783,198102,311776, 'Trove Social Crawler 1.0/python');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Imperialbot/1.2;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Imperialbot/1.2; +http://http://www.imperialdirectory.com/ContactUs)')), $ls);
@@ -4913,7 +4906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Imperialbot/1.2; +http://http://www.imperialdirectory.com/ContactUs)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Imperialbot/1.2; +http://http://www.imperialdirectory.com/ContactUs)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://localhost/search/bot.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; DataDetective; +http://localhost/search/bot.php)')), $ls);
@@ -4921,7 +4914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; DataDetective; +http://localhost/search/bot.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; DataDetective; +http://localhost/search/bot.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'PPBBCrawler'), 1 => array(0 => 'Mozilla/5.0 (PHP 5) PPBBCrawler 0.1')), $ls);
@@ -4929,7 +4922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (PHP 5) PPBBCrawler 0.1');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (PHP 5) PPBBCrawler 0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot:'), 1 => array(0 => 'CrawlFire - you can disable this Robot: http://pastebin.de/25277')), $ls);
@@ -4937,7 +4930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CrawlFire - you can disable this Robot: http://pastebin.de/25277');
+    $dl[] = array(311674,311783,198102,311776, 'CrawlFire - you can disable this Robot: http://pastebin.de/25277');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NightCrawler'), 1 => array(0 => 'NightCrawler Java/1.6.0_31')), $ls);
@@ -4945,7 +4938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'NightCrawler Java/1.6.0_31');
+    $dl[] = array(311674,311783,198102,311776, 'NightCrawler Java/1.6.0_31');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; news bot /2.1)')), $ls);
@@ -4953,7 +4946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; news bot /2.1)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; news bot /2.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RTSbot/1.0;', 1 => '+http://adamcaudill.com/rtsbot/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; RTSbot/1.0; +http://adamcaudill.com/rtsbot/)')), $ls);
@@ -4961,7 +4954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; RTSbot/1.0; +http://adamcaudill.com/rtsbot/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; RTSbot/1.0; +http://adamcaudill.com/rtsbot/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'CareerBot/1.1;', 1 => '+http://www.career-x.de/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; CareerBot/1.1; +http://www.career-x.de/bot.html)')), $ls);
@@ -4969,7 +4962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; CareerBot/1.1; +http://www.career-x.de/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; CareerBot/1.1; +http://www.career-x.de/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WeblexBot', 1 => '(http://www.weblex.org/bot.html)'), 1 => array(0 => 'WeblexBot (http://www.weblex.org/bot.html)')), $ls);
@@ -4977,7 +4970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WeblexBot (http://www.weblex.org/bot.html)');
+    $dl[] = array(311674,311783,198102,311776, 'WeblexBot (http://www.weblex.org/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'adidxbot/2.0', 1 => '(+http://search.msn.com/msnbot.htm)'), 1 => array(0 => 'adidxbot/2.0 (+http://search.msn.com/msnbot.htm)')), $ls);
@@ -4985,7 +4978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'adidxbot/2.0 (+http://search.msn.com/msnbot.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'adidxbot/2.0 (+http://search.msn.com/msnbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.4.3;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.4.3; http://www.majestic12.co.uk/bot.php?+)')), $ls);
@@ -4993,7 +4986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.3; http://www.majestic12.co.uk/bot.php?+)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.4.3; http://www.majestic12.co.uk/bot.php?+)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'BR Crawler (http://ver4.1)')), $ls);
@@ -5001,7 +4994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BR Crawler (http://ver4.1)');
+    $dl[] = array(311674,311783,198102,311776, 'BR Crawler (http://ver4.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Explorer Bot')), $ls);
@@ -5009,7 +5002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Explorer Bot');
+    $dl[] = array(311674,311783,198102,311776, 'Explorer Bot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Artexia/0.3 (artexia; http://www.httpdb.org; spider@httpdb.org)')), $ls);
@@ -5017,7 +5010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Artexia/0.3 (artexia; http://www.httpdb.org; spider@httpdb.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Artexia/0.3 (artexia; http://www.httpdb.org; spider@httpdb.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; T3-N9VPLYX3QWSGZ; google@ciboodle.com)')), $ls);
@@ -5025,7 +5018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; T3-N9VPLYX3QWSGZ; google@ciboodle.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; T3-N9VPLYX3QWSGZ; google@ciboodle.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FocusedCrawler', 1 => '(http://www2.informatik.hu-berlin.de/~brettsch/focusedcrawler/)'), 1 => array(0 => 'FocusedCrawler (http://www2.informatik.hu-berlin.de/~brettsch/focusedcrawler/)')), $ls);
@@ -5033,7 +5026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FocusedCrawler (http://www2.informatik.hu-berlin.de/~brettsch/focusedcrawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'FocusedCrawler (http://www2.informatik.hu-berlin.de/~brettsch/focusedcrawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; T2-DS3YYS6PYJWAS; admin_gsa_was@emidconsult.com)')), $ls);
@@ -5041,7 +5034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; T2-DS3YYS6PYJWAS; admin_gsa_was@emidconsult.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; T2-DS3YYS6PYJWAS; admin_gsa_was@emidconsult.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Artexia/0.4 (artexia; http://www.httpdb.org; spider@httpdb.org)')), $ls);
@@ -5049,7 +5042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Artexia/0.4 (artexia; http://www.httpdb.org; spider@httpdb.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Artexia/0.4 (artexia; http://www.httpdb.org; spider@httpdb.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Cutbot;', 1 => 'http://cutbot.net/'), 1 => array(0 => 'Cutbot; 1.5; http://cutbot.net/')), $ls);
@@ -5057,7 +5050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Cutbot; 1.5; http://cutbot.net/');
+    $dl[] = array(311674,311783,198102,311776, 'Cutbot; 1.5; http://cutbot.net/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WhyNotSearchBot'), 1 => array(0 => 'WhyNotSearchBot')), $ls);
@@ -5065,7 +5058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WhyNotSearchBot');
+    $dl[] = array(311674,311783,198102,311776, 'WhyNotSearchBot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WocBot/Mozilla/5.0', 1 => 'Crawler', 2 => 'crawler'), 1 => array(0 => 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)')), $ls);
@@ -5073,7 +5066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)');
+    $dl[] = array(311674,311783,198102,311776, 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://otsing.delfi.ee/?c=crawler)'), 1 => array(0 => 'Dolphin/1.4 (+http://otsing.delfi.ee/?c=crawler)')), $ls);
@@ -5081,7 +5074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Dolphin/1.4 (+http://otsing.delfi.ee/?c=crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Dolphin/1.4 (+http://otsing.delfi.ee/?c=crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://search.delfi.lt/?c=crawler)'), 1 => array(0 => 'Dolphin/1.4 (+http://search.delfi.lt/?c=crawler)')), $ls);
@@ -5089,7 +5082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Dolphin/1.4 (+http://search.delfi.lt/?c=crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Dolphin/1.4 (+http://search.delfi.lt/?c=crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainCrawler/2.0', 1 => '(info@domaincrawler.com;', 2 => 'http://www.domaincrawler.com/dolphinskickoffreturn.com'), 1 => array(0 => 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinskickoffreturn.com')), $ls);
@@ -5097,7 +5090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinskickoffreturn.com');
+    $dl[] = array(311674,311783,198102,311776, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinskickoffreturn.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DomainCrawler/2.0', 1 => '(info@domaincrawler.com;', 2 => 'http://www.domaincrawler.com/dolphinspuntreturn.com'), 1 => array(0 => 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinspuntreturn.com')), $ls);
@@ -5105,7 +5098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinspuntreturn.com');
+    $dl[] = array(311674,311783,198102,311776, 'DomainCrawler/2.0 (info@domaincrawler.com; http://www.domaincrawler.com/dolphinspuntreturn.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GarlikCrawler/1.1', 1 => 'crawler'), 1 => array(0 => 'GarlikCrawler/1.1 (http://garlik.com/, crawler@garlik.com)')), $ls);
@@ -5113,7 +5106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GarlikCrawler/1.1 (http://garlik.com/, crawler@garlik.com)');
+    $dl[] = array(311674,311783,198102,311776, 'GarlikCrawler/1.1 (http://garlik.com/, crawler@garlik.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yrspider', 1 => 'YRSpider;', 2 => '+http://www.yunrang.com/yrspider.html)'), 1 => array(0 => 'yrspider Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)')), $ls);
@@ -5121,7 +5114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'yrspider Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'yrspider Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(+http://www.whitevector.com/crawler)'), 1 => array(0 => 'Whitevector Crawler (+http://www.whitevector.com/crawler)')), $ls);
@@ -5129,7 +5122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Whitevector Crawler (+http://www.whitevector.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Whitevector Crawler (+http://www.whitevector.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'search:robot/search:robot/0.0.1', 1 => 'Bot', 2 => 'crawler', 3 => 'spider', 4 => 'http://spider.neofonie.de;', 5 => 'spider'), 1 => array(0 => 'mahonie, neofonie search:robot/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)')), $ls);
@@ -5137,7 +5130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'mahonie, neofonie search:robot/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)');
+    $dl[] = array(311674,311783,198102,311776, 'mahonie, neofonie search:robot/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'www.analyticsseo.com/crawler'), 1 => array(0 => 'Curious George - www.analyticsseo.com/crawler')), $ls);
@@ -5145,7 +5138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Curious George - www.analyticsseo.com/crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Curious George - www.analyticsseo.com/crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MeMoNewsBot/2.0', 1 => '(http://www.memonews.com/en/crawler)'), 1 => array(0 => 'MeMoNewsBot/2.0 (http://www.memonews.com/en/crawler)')), $ls);
@@ -5153,7 +5146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MeMoNewsBot/2.0 (http://www.memonews.com/en/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'MeMoNewsBot/2.0 (http://www.memonews.com/en/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'omgilibot/0.3', 1 => '+http://www.omgili.com/Crawler.html'), 1 => array(0 => 'omgilibot/0.3 +http://www.omgili.com/Crawler.html')), $ls);
@@ -5161,7 +5154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'omgilibot/0.3 +http://www.omgili.com/Crawler.html');
+    $dl[] = array(311674,311783,198102,311776, 'omgilibot/0.3 +http://www.omgili.com/Crawler.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)')), $ls);
@@ -5169,7 +5162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://postpo.st/crawlers)'), 1 => array(0 => 'PostPost/1.0 (+http://postpo.st/crawlers)')), $ls);
@@ -5177,7 +5170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PostPost/1.0 (+http://postpo.st/crawlers)');
+    $dl[] = array(311674,311783,198102,311776, 'PostPost/1.0 (+http://postpo.st/crawlers)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GttBot/0.3', 1 => 'spider'), 1 => array(0 => 'GttBot/0.3 spider@globetrottingtips.com')), $ls);
@@ -5185,7 +5178,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GttBot/0.3 spider@globetrottingtips.com');
+    $dl[] = array(311674,311783,198102,311776, 'GttBot/0.3 spider@globetrottingtips.com');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SiteCrawler'), 1 => array(0 => 'SiteCrawler')), $ls);
@@ -5193,7 +5186,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SiteCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'SiteCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MSR-ISRCCrawler'), 1 => array(0 => 'MSR-ISRCCrawler')), $ls);
@@ -5201,7 +5194,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MSR-ISRCCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'MSR-ISRCCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosoimagespider/2.0;', 1 => '+http://help.soso.com/soso-image-spider.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Sosoimagespider/2.0; +http://help.soso.com/soso-image-spider.htm)')), $ls);
@@ -5209,7 +5202,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Sosoimagespider/2.0; +http://help.soso.com/soso-image-spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Sosoimagespider/2.0; +http://help.soso.com/soso-image-spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lemurwebcrawler', 1 => '+http://boston.lti.cs.cmu.edu/crawler_12/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; lemurwebcrawler admin@lemurproject.org; +http://boston.lti.cs.cmu.edu/crawler_12/)')), $ls);
@@ -5217,7 +5210,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; lemurwebcrawler admin@lemurproject.org; +http://boston.lti.cs.cmu.edu/crawler_12/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; lemurwebcrawler admin@lemurproject.org; +http://boston.lti.cs.cmu.edu/crawler_12/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'TextTrust Crawler')), $ls);
@@ -5225,7 +5218,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TextTrust Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'TextTrust Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 's~crawlerwidget)'), 1 => array(0 => 'AppEngine-Google; (+http://code.google.com/appengine; appid: s~crawlerwidget)')), $ls);
@@ -5233,7 +5226,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'AppEngine-Google; (+http://code.google.com/appengine; appid: s~crawlerwidget)');
+    $dl[] = array(311674,311783,198102,311776, 'AppEngine-Google; (+http://code.google.com/appengine; appid: s~crawlerwidget)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'jobroboter', 1 => 'spider'), 1 => array(0 => 'Mozilla/5.0 (compatible;wi jobroboter spider 4 for ams;+http://www.webintegration.at)')), $ls);
@@ -5241,7 +5234,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible;wi jobroboter spider 4 for ams;+http://www.webintegration.at)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible;wi jobroboter spider 4 for ams;+http://www.webintegration.at)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'http://www.industrycortex.com/crawler.php'), 1 => array(0 => 'Industrial Interface Web Crawler - http://www.industrycortex.com/crawler.php')), $ls);
@@ -5249,7 +5242,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Industrial Interface Web Crawler - http://www.industrycortex.com/crawler.php');
+    $dl[] = array(311674,311783,198102,311776, 'Industrial Interface Web Crawler - http://www.industrycortex.com/crawler.php');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'ImageSpan Crawler')), $ls);
@@ -5257,7 +5250,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ImageSpan Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'ImageSpan Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GermCrawler'), 1 => array(0 => 'GermCrawler')), $ls);
@@ -5265,7 +5258,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GermCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'GermCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRU/VSIDX crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)')), $ls);
@@ -5273,7 +5266,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Y!J-BRU/VSIDX crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Y!J-BRU/VSIDX crawler (http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Toread-Crawler/1.1;', 1 => '+http://news.toread.cc/crawler.php)'), 1 => array(0 => 'Mozilla/4.0 (Toread-Crawler/1.1; +http://news.toread.cc/crawler.php)')), $ls);
@@ -5281,7 +5274,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (Toread-Crawler/1.1; +http://news.toread.cc/crawler.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (Toread-Crawler/1.1; +http://news.toread.cc/crawler.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BaiduImagespider+(+http://www.baidu.jp/spider/)'), 1 => array(0 => 'BaiduImagespider+(+http://www.baidu.jp/spider/)')), $ls);
@@ -5289,7 +5282,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'BaiduImagespider+(+http://www.baidu.jp/spider/)');
+    $dl[] = array(311674,311783,198102,311776, 'BaiduImagespider+(+http://www.baidu.jp/spider/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DotBot/1.1;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)')), $ls);
@@ -5297,7 +5290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; DotBot/1.1; http://www.dotnetdotcom.org/, crawler@dotnetdotcom.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Asmotek Crawler 1.0')), $ls);
@@ -5305,7 +5298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Asmotek Crawler 1.0');
+    $dl[] = array(311674,311783,198102,311776, 'Asmotek Crawler 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SheenBot/SheenBot-1.0.4', 1 => 'crawler'), 1 => array(0 => 'SheenBot/SheenBot-1.0.4 (Sheen web crawler)')), $ls);
@@ -5313,7 +5306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SheenBot/SheenBot-1.0.4 (Sheen web crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'SheenBot/SheenBot-1.0.4 (Sheen web crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'wf_crawler'), 1 => array(0 => 'wf_crawler (http://www.websitefigures.com)')), $ls);
@@ -5321,7 +5314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'wf_crawler (http://www.websitefigures.com)');
+    $dl[] = array(311674,311783,198102,311776, 'wf_crawler (http://www.websitefigures.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GentleCrawler'), 1 => array(0 => 'GentleCrawler')), $ls);
@@ -5329,7 +5322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'GentleCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'GentleCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YodaoBot/1.0;', 1 => 'http://www.youdao.com/help/webmaster/spider/;'), 1 => array(0 => 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )')), $ls);
@@ -5337,7 +5330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YodaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; )');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider/2.0;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) (via babelfish.yahoo.com)')), $ls);
@@ -5345,7 +5338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) (via babelfish.yahoo.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) (via babelfish.yahoo.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider/2.0;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: surf6009)')), $ls);
@@ -5353,7 +5346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: surf6009)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: surf6009)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'deepnet crawler v1.0')), $ls);
@@ -5361,7 +5354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'deepnet crawler v1.0');
+    $dl[] = array(311674,311783,198102,311776, 'deepnet crawler v1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Herold Crawler; +http://www.herold.at)')), $ls);
@@ -5369,7 +5362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Herold Crawler; +http://www.herold.at)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Herold Crawler; +http://www.herold.at)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.secretsearchenginelabs.com/secret-web-crawler.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; SecretSerachEngineLabs.com-SBSearch/0.9; http://www.secretsearchenginelabs.com/secret-web-crawler.php)')), $ls);
@@ -5377,7 +5370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; SecretSerachEngineLabs.com-SBSearch/0.9; http://www.secretsearchenginelabs.com/secret-web-crawler.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; SecretSerachEngineLabs.com-SBSearch/0.9; http://www.secretsearchenginelabs.com/secret-web-crawler.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'YoudaoBot/1.0;', 1 => 'http://www.youdao.com/help/webmaster/spider/;'), 1 => array(0 => 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; ),gzip(gfe) (via translate.google.com)')), $ls);
@@ -5385,7 +5378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; ),gzip(gfe) (via translate.google.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; YoudaoBot/1.0; http://www.youdao.com/help/webmaster/spider/; ),gzip(gfe) (via translate.google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'JavaCrawler/1.1'), 1 => array(0 => 'JavaCrawler/1.1')), $ls);
@@ -5393,7 +5386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'JavaCrawler/1.1');
+    $dl[] = array(311674,311783,198102,311776, 'JavaCrawler/1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(crawler@positiontech.com;'), 1 => array(0 => 'PTech/1.0 (crawler@positiontech.com; http://www.positiontech.com/)')), $ls);
@@ -5401,7 +5394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'PTech/1.0 (crawler@positiontech.com; http://www.positiontech.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'PTech/1.0 (crawler@positiontech.com; http://www.positiontech.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Jayde crawler')), $ls);
@@ -5409,7 +5402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Jayde crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Jayde crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'pd-crawler'), 1 => array(0 => 'pd-crawler (pdsupport@purediscovery.com)')), $ls);
@@ -5417,7 +5410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'pd-crawler (pdsupport@purediscovery.com)');
+    $dl[] = array(311674,311783,198102,311776, 'pd-crawler (pdsupport@purediscovery.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Crawler0.1')), $ls);
@@ -5425,7 +5418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Crawler0.1');
+    $dl[] = array(311674,311783,198102,311776, 'Crawler0.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rapid-miner-crawler'), 1 => array(0 => 'rapid-miner-crawler')), $ls);
@@ -5433,7 +5426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'rapid-miner-crawler');
+    $dl[] = array(311674,311783,198102,311776, 'rapid-miner-crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'CodeGator Crawler v1.0')), $ls);
@@ -5441,7 +5434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CodeGator Crawler v1.0');
+    $dl[] = array(311674,311783,198102,311776, 'CodeGator Crawler v1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; GID-01422; jplastiras@google.com)')), $ls);
@@ -5449,7 +5442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'gsa-crawler (Enterprise; GID-01422; jplastiras@google.com)');
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; GID-01422; jplastiras@google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'naverbookmarkcrawler'), 1 => array(0 => 'naverbookmarkcrawler')), $ls);
@@ -5457,7 +5450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'naverbookmarkcrawler');
+    $dl[] = array(311674,311783,198102,311776, 'naverbookmarkcrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ldspider', 1 => '(http://code.google.com/p/ldspider/wiki/Robots)'), 1 => array(0 => 'ldspider (http://code.google.com/p/ldspider/wiki/Robots)')), $ls);
@@ -5465,7 +5458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ldspider (http://code.google.com/p/ldspider/wiki/Robots)');
+    $dl[] = array(311674,311783,198102,311776, 'ldspider (http://code.google.com/p/ldspider/wiki/Robots)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'netEstate Trend Crawler (+http://www.trendmonitor.org/)')), $ls);
@@ -5473,7 +5466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'netEstate Trend Crawler (+http://www.trendmonitor.org/)');
+    $dl[] = array(311674,311783,198102,311776, 'netEstate Trend Crawler (+http://www.trendmonitor.org/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler@NOSPAMexperimental.net;'), 1 => array(0 => 'Mozilla/3.0 (INGRID/3.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)')), $ls);
@@ -5481,7 +5474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/3.0 (INGRID/3.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/3.0 (INGRID/3.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ChristCrawler.com', 1 => 'ChristCrawler@ChristCENTRAL.com)'), 1 => array(0 => 'Mozilla/4.0 (compatible; ChristCrawler.com ChristCrawler@ChristCENTRAL.com)')), $ls);
@@ -5489,7 +5482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; ChristCrawler.com ChristCrawler@ChristCENTRAL.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; ChristCrawler.com ChristCrawler@ChristCENTRAL.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'websphinx.Crawler'), 1 => array(0 => 'websphinx.Crawler')), $ls);
@@ -5497,7 +5490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'websphinx.Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'websphinx.Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://www.spidersoft.com)'), 1 => array(0 => 'WebZIP/7.0 (http://www.spidersoft.com)')), $ls);
@@ -5505,7 +5498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WebZIP/7.0 (http://www.spidersoft.com)');
+    $dl[] = array(311674,311783,198102,311776, 'WebZIP/7.0 (http://www.spidersoft.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.80legs.com/spider.html;)'), 1 => array(0 => 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/spider.html;) Gecko/X')), $ls);
@@ -5513,7 +5506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/spider.html;) Gecko/X');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; 008/0.83; http://www.80legs.com/spider.html;) Gecko/X');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(crawler-feedback@yelp.com)'), 1 => array(0 => 'yCrawl/0.1 (crawler-feedback@yelp.com)')), $ls);
@@ -5521,7 +5514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'yCrawl/0.1 (crawler-feedback@yelp.com)');
+    $dl[] = array(311674,311783,198102,311776, 'yCrawl/0.1 (crawler-feedback@yelp.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Robot', 1 => '(+http://www.cityreview.org/crawler/)'), 1 => array(0 => 'Cityreview Robot (+http://www.cityreview.org/crawler/)')), $ls);
@@ -5529,7 +5522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Cityreview Robot (+http://www.cityreview.org/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'Cityreview Robot (+http://www.cityreview.org/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TigrinyaCrawler(tirawler@gmail.com)'), 1 => array(0 => 'TigrinyaCrawler(tirawler@gmail.com)')), $ls);
@@ -5537,7 +5530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'TigrinyaCrawler(tirawler@gmail.com)');
+    $dl[] = array(311674,311783,198102,311776, 'TigrinyaCrawler(tirawler@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; crawler/3.0.0 +http://www.notconfigured.com/)')), $ls);
@@ -5545,7 +5538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; crawler/3.0.0 +http://www.notconfigured.com/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; crawler/3.0.0 +http://www.notconfigured.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SiteCrawler/1.1.3'), 1 => array(0 => 'SiteCrawler/1.1.3')), $ls);
@@ -5553,7 +5546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SiteCrawler/1.1.3');
+    $dl[] = array(311674,311783,198102,311776, 'SiteCrawler/1.1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; webcrawler/1.0)')), $ls);
@@ -5561,7 +5554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; webcrawler/1.0)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; webcrawler/1.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.peew.de/crawler/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Peew/1.0; http://www.peew.de/crawler/)')), $ls);
@@ -5569,7 +5562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Peew/1.0; http://www.peew.de/crawler/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Peew/1.0; http://www.peew.de/crawler/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://bixolabs.com/crawler/general;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; bixolabs/1.0; +http://bixolabs.com/crawler/general; crawler@bixolabs.com)')), $ls);
@@ -5577,7 +5570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; bixolabs/1.0; +http://bixolabs.com/crawler/general; crawler@bixolabs.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; bixolabs/1.0; +http://bixolabs.com/crawler/general; crawler@bixolabs.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider', 1 => 'bot'), 1 => array(0 => 'spiderbot119')), $ls);
@@ -5585,7 +5578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'spiderbot119');
+    $dl[] = array(311674,311783,198102,311776, 'spiderbot119');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ptd-crawler;', 1 => '+http://bixolabs.com/crawler/ptd/;', 2 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; ptd-crawler; +http://bixolabs.com/crawler/ptd/; crawler@bixolabs.com)')), $ls);
@@ -5593,7 +5586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ptd-crawler; +http://bixolabs.com/crawler/ptd/; crawler@bixolabs.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ptd-crawler; +http://bixolabs.com/crawler/ptd/; crawler@bixolabs.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rogerbot/1.0', 1 => 'rogerbot-crawler@seomoz.org)'), 1 => array(0 => 'rogerbot/1.0 (http://www.seomoz.org, rogerbot-crawler@seomoz.org)')), $ls);
@@ -5601,7 +5594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'rogerbot/1.0 (http://www.seomoz.org, rogerbot-crawler@seomoz.org)');
+    $dl[] = array(311674,311783,198102,311776, 'rogerbot/1.0 (http://www.seomoz.org, rogerbot-crawler@seomoz.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DEV/search:robot/0.0.1', 1 => 'Bot', 2 => 'crawler', 3 => 'spider', 4 => 'http://spider.neofonie.de;', 5 => 'spider'), 1 => array(0 => 'MIA DEV/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)')), $ls);
@@ -5609,7 +5602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MIA DEV/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)');
+    $dl[] = array(311674,311783,198102,311776, 'MIA DEV/search:robot/0.0.1 (This is the MIA Bot - crawling for mia research project. If you feel unhappy and do not want to be visited by our crawler send an email to spider@neofonie.de; http://spider.neofonie.de; spider@neofonie.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Finderbots', 1 => 'bot', 2 => '+http://wiki.github.com/bixo/bixo/bixocrawler;'), 1 => array(0 => 'Mozilla/5.0 (compatible; Finderbots finder bot; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)')), $ls);
@@ -5617,7 +5610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Finderbots finder bot; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Finderbots finder bot; +http://wiki.github.com/bixo/bixo/bixocrawler; bixo-dev@yahoogroups.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'testspider'), 1 => array(0 => 'testspider')), $ls);
@@ -5625,7 +5618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'testspider');
+    $dl[] = array(311674,311783,198102,311776, 'testspider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WocBot/Mozilla/5.0', 1 => 'Crawler', 2 => 'http://www.wocodi.com/crawler;', 3 => 'crawler'), 1 => array(0 => 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/crawler; crawler@wocodi.com)')), $ls);
@@ -5633,7 +5626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/crawler; crawler@wocodi.com)');
+    $dl[] = array(311674,311783,198102,311776, 'WocBot/Mozilla/5.0 (Wocodi Web Crawler 1.0; http://www.wocodi.com/crawler; crawler@wocodi.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BSC/1.0 crawler (http://help.yahoo.co.jp/help/jp/blog-search/)')), $ls);
@@ -5641,7 +5634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Y!J-BSC/1.0 crawler (http://help.yahoo.co.jp/help/jp/blog-search/)');
+    $dl[] = array(311674,311783,198102,311776, 'Y!J-BSC/1.0 crawler (http://help.yahoo.co.jp/help/jp/blog-search/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ZillaCrawler'), 1 => array(0 => 'ZillaCrawler')), $ls);
@@ -5649,7 +5642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ZillaCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'ZillaCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'media-percbotspider'), 1 => array(0 => 'media-percbotspider <ops@percolate.com>')), $ls);
@@ -5657,7 +5650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'media-percbotspider <ops@percolate.com>');
+    $dl[] = array(311674,311783,198102,311776, 'media-percbotspider <ops@percolate.com>');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'JikeSpider;', 1 => '+http://www.jike.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; JikeSpider; +http://www.jike.com/spider.html)')), $ls);
@@ -5665,7 +5658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; JikeSpider; +http://www.jike.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; JikeSpider; +http://www.jike.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => '(Bot-Seeker;', 2 => 'http://www.Bot-Seeker.ua;', 3 => 'crawler', 4 => '@Bot-Seeker.ua)'), 1 => array(0 => 'Bot-Seeker/1.0 (Bot-Seeker; http://www.Bot-Seeker.ua; crawler@Bot-Seeker.ua)')), $ls);
@@ -5673,7 +5666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Bot-Seeker/1.0 (Bot-Seeker; http://www.Bot-Seeker.ua; crawler@Bot-Seeker.ua)');
+    $dl[] = array(311674,311783,198102,311776, 'Bot-Seeker/1.0 (Bot-Seeker; http://www.Bot-Seeker.ua; crawler@Bot-Seeker.ua)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider', 1 => 'Spider'), 1 => array(0 => 'google spider/1.1 (Google Spider; http://www.google.com; zhstc278@gmail.com)')), $ls);
@@ -5681,7 +5674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'google spider/1.1 (Google Spider; http://www.google.com; zhstc278@gmail.com)');
+    $dl[] = array(311674,311783,198102,311776, 'google spider/1.1 (Google Spider; http://www.google.com; zhstc278@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'siridia spider v1.1')), $ls);
@@ -5689,7 +5682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'siridia spider v1.1');
+    $dl[] = array(311674,311783,198102,311776, 'siridia spider v1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'www.integromedb.org/Crawler'), 1 => array(0 => 'www.integromedb.org/Crawler')), $ls);
@@ -5697,7 +5690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'www.integromedb.org/Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'www.integromedb.org/Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ProCogBot/1.0;', 1 => '+http://www.procog.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; ProCogBot/1.0; +http://www.procog.com/spider.html)')), $ls);
@@ -5705,7 +5698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; ProCogBot/1.0; +http://www.procog.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; ProCogBot/1.0; +http://www.procog.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FoxSpider;', 1 => '+http://shoulu.foxspider.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; FoxSpider; +http://shoulu.foxspider.com/spider.html)')), $ls);
@@ -5713,7 +5706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; FoxSpider; +http://shoulu.foxspider.com/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FoxSpider; +http://shoulu.foxspider.com/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexSpider;', 1 => '+http://www.openindex.io/en/webmasters/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexSpider; +http://www.openindex.io/en/webmasters/spider.html)')), $ls);
@@ -5721,7 +5714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; OpenindexSpider; +http://www.openindex.io/en/webmasters/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; OpenindexSpider; +http://www.openindex.io/en/webmasters/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'agbot/1.0', 1 => 'crawler', 2 => 'bot'), 1 => array(0 => 'agbot/1.0 (AgHaven.com search engine crawler; http://search.aghaven.com; bot@aghaven.com)')), $ls);
@@ -5729,7 +5722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'agbot/1.0 (AgHaven.com search engine crawler; http://search.aghaven.com; bot@aghaven.com)');
+    $dl[] = array(311674,311783,198102,311776, 'agbot/1.0 (AgHaven.com search engine crawler; http://search.aghaven.com; bot@aghaven.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yrspider', 1 => 'YRSpider;', 2 => '+http://www.yunrang.com/yrspider.html))'), 1 => array(0 => 'yrspider (Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html))')), $ls);
@@ -5737,7 +5730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'yrspider (Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html))');
+    $dl[] = array(311674,311783,198102,311776, 'yrspider (Mozilla/5.0 (compatible; YRSpider; +http://www.yunrang.com/yrspider.html))');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Teragram/SAS Crawler')), $ls);
@@ -5745,7 +5738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Teragram/SAS Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Teragram/SAS Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spider/1.0')), $ls);
@@ -5753,7 +5746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'spider/1.0');
+    $dl[] = array(311674,311783,198102,311776, 'spider/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.infohelfer.de/crawler.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Infohelfer/1.2.0; +http://www.infohelfer.de/crawler.php)')), $ls);
@@ -5761,7 +5754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Infohelfer/1.2.0; +http://www.infohelfer.de/crawler.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Infohelfer/1.2.0; +http://www.infohelfer.de/crawler.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'CrawlerProcess (http://www.PowerMapper.com) /4.6.540.0')), $ls);
@@ -5769,7 +5762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'CrawlerProcess (http://www.PowerMapper.com) /4.6.540.0');
+    $dl[] = array(311674,311783,198102,311776, 'CrawlerProcess (http://www.PowerMapper.com) /4.6.540.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.web.nl/webmasters/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; WebNL; +http://www.web.nl/webmasters/spider.html; helpdesk@web.nl)')), $ls);
@@ -5777,7 +5770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; WebNL; +http://www.web.nl/webmasters/spider.html; helpdesk@web.nl)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; WebNL; +http://www.web.nl/webmasters/spider.html; helpdesk@web.nl)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(crawler;', 1 => 'http://riight.com/spider;', 2 => 'spider'), 1 => array(0 => 'riight.com/RIIGHT-1.1 (crawler; http://riight.com/spider; spider@riight.com)')), $ls);
@@ -5785,7 +5778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'riight.com/RIIGHT-1.1 (crawler; http://riight.com/spider; spider@riight.com)');
+    $dl[] = array(311674,311783,198102,311776, 'riight.com/RIIGHT-1.1 (crawler; http://riight.com/spider; spider@riight.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.proximic.com/info/spider.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)')), $ls);
@@ -5793,7 +5786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; proximic; +http://www.proximic.com/info/spider.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MOMspider/1.00'), 1 => array(0 => 'MOMspider/1.00 libwww-perl/0.40')), $ls);
@@ -5801,7 +5794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'MOMspider/1.00 libwww-perl/0.40');
+    $dl[] = array(311674,311783,198102,311776, 'MOMspider/1.00 libwww-perl/0.40');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(+http://www.ilocal.nl/about/crawler.jsp)'), 1 => array(0 => 'ilocal company search (+http://www.ilocal.nl/about/crawler.jsp)')), $ls);
@@ -5809,7 +5802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ilocal company search (+http://www.ilocal.nl/about/crawler.jsp)');
+    $dl[] = array(311674,311783,198102,311776, 'ilocal company search (+http://www.ilocal.nl/about/crawler.jsp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Yahoo-MMCrawler/4.0;'), 1 => array(0 => 'Mozilla/5.0 (Yahoo-MMCrawler/4.0; mailto:vertical-crawl-support@yahoo-inc.com)')), $ls);
@@ -5817,7 +5810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (Yahoo-MMCrawler/4.0; mailto:vertical-crawl-support@yahoo-inc.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (Yahoo-MMCrawler/4.0; mailto:vertical-crawl-support@yahoo-inc.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'netEstate NE Crawler (+http://www.website-datenbank.de/)')), $ls);
@@ -5825,7 +5818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'netEstate NE Crawler (+http://www.website-datenbank.de/)');
+    $dl[] = array(311674,311783,198102,311776, 'netEstate NE Crawler (+http://www.website-datenbank.de/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Exalead Cloudview Crawler')), $ls);
@@ -5833,7 +5826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Exalead Cloudview Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'Exalead Cloudview Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'SAS Web Crawler')), $ls);
@@ -5841,7 +5834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'SAS Web Crawler');
+    $dl[] = array(311674,311783,198102,311776, 'SAS Web Crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'FAST Search Web Crawler 14.0.0325.0000')), $ls);
@@ -5849,7 +5842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'FAST Search Web Crawler 14.0.0325.0000');
+    $dl[] = array(311674,311783,198102,311776, 'FAST Search Web Crawler 14.0.0325.0000');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '(+http://www.lijit.com/robot/crawler)'), 1 => array(0 => 'User-Agent: Lijit Crawler (+http://www.lijit.com/robot/crawler)')), $ls);
@@ -5857,7 +5850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'User-Agent: Lijit Crawler (+http://www.lijit.com/robot/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'User-Agent: Lijit Crawler (+http://www.lijit.com/robot/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Proximic crawler; +http://www.proximic.com/en/about-us/contact-us.html)')), $ls);
@@ -5865,7 +5858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Proximic crawler; +http://www.proximic.com/en/about-us/contact-us.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Proximic crawler; +http://www.proximic.com/en/about-us/contact-us.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosospider+(+help.soso.com/webspider.htm)'), 1 => array(0 => 'Sosospider+(+help.soso.com/webspider.htm)')), $ls);
@@ -5873,7 +5866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sosospider+(+help.soso.com/webspider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Sosospider+(+help.soso.com/webspider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'archive.org_bot/1.5.0-X', 1 => 'http://crawler.archive.org)'), 1 => array(0 => 'Mozilla/5.0 (compatible; archive.org_bot/1.5.0-X http://crawler.archive.org) Hurricane Katrina')), $ls);
@@ -5881,7 +5874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; archive.org_bot/1.5.0-X http://crawler.archive.org) Hurricane Katrina');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; archive.org_bot/1.5.0-X http://crawler.archive.org) Hurricane Katrina');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; GPU p2p crawler http://gpu.sourceforge.net/search_engine.php)')), $ls);
@@ -5889,7 +5882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; GPU p2p crawler http://gpu.sourceforge.net/search_engine.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; GPU p2p crawler http://gpu.sourceforge.net/search_engine.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'charlotte@betaspider.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Charlotte/1.0b; charlotte@betaspider.com)')), $ls);
@@ -5897,7 +5890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Charlotte/1.0b; charlotte@betaspider.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Charlotte/1.0b; charlotte@betaspider.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.whizbang.com/crawler)'), 1 => array(0 => 'Mozilla/4.7 (compatible; WhizBang; http://www.whizbang.com/crawler)')), $ls);
@@ -5905,7 +5898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.7 (compatible; WhizBang; http://www.whizbang.com/crawler)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.7 (compatible; WhizBang; http://www.whizbang.com/crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler@NOSPAMwise-guys.nl;'), 1 => array(0 => 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)')), $ls);
@@ -5913,7 +5906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Mozilla/3.0 (compatible; Fluffy the spider; http://www.searchhippo.com/; info@searchhippo.com)')), $ls);
@@ -5921,7 +5914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/3.0 (compatible; Fluffy the spider; http://www.searchhippo.com/; info@searchhippo.com)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/3.0 (compatible; Fluffy the spider; http://www.searchhippo.com/; info@searchhippo.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://eidetica.com/spider)'), 1 => array(0 => 'Mozilla/4.7 (compatible; http://eidetica.com/spider)')), $ls);
@@ -5929,7 +5922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.7 (compatible; http://eidetica.com/spider)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.7 (compatible; http://eidetica.com/spider)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'archive.org_bot/1.13.1x', 1 => 'http://crawler.archive.org)'), 1 => array(0 => 'Mozilla/5.0 (compatible; archive.org_bot/1.13.1x http://crawler.archive.org)')), $ls);
@@ -5937,7 +5930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; archive.org_bot/1.13.1x http://crawler.archive.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; archive.org_bot/1.13.1x http://crawler.archive.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Vagabondo/2.1; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)')), $ls);
@@ -5945,7 +5938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Vagabondo/2.1; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Vagabondo/2.1; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'FastCrawler3', 1 => 'support-fastcrawler3@fast.no)'), 1 => array(0 => 'Mozilla/4.0 (compatible; FastCrawler3 support-fastcrawler3@fast.no)')), $ls);
@@ -5953,7 +5946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/4.0 (compatible; FastCrawler3 support-fastcrawler3@fast.no)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; FastCrawler3 support-fastcrawler3@fast.no)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'webcrawler@NOSPAMexperimental.net;'), 1 => array(0 => 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)')), $ls);
@@ -5961,7 +5954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/3.0 (Vagabondo/2.0 MT; webcrawler@NOSPAMexperimental.net; http://aanmelden.ilse.nl/?aanmeld_mode=webhints)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'S2-Crawler/1.1'), 1 => array(0 => 'S2-Crawler/1.1 (your search engine; http://www.search2.net/; info at search2 dot net)')), $ls);
@@ -5969,7 +5962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'S2-Crawler/1.1 (your search engine; http://www.search2.net/; info at search2 dot net)');
+    $dl[] = array(311674,311783,198102,311776, 'S2-Crawler/1.1 (your search engine; http://www.search2.net/; info at search2 dot net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'ucsb seclab crawler')), $ls);
@@ -5977,7 +5970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'ucsb seclab crawler');
+    $dl[] = array(311674,311783,198102,311776, 'ucsb seclab crawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html'), 1 => array(0 => 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html')), $ls);
@@ -5985,7 +5978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Artexia/0.5 (artexia; http://www.httpdb.org; spider@httpdb.org)')), $ls);
@@ -5993,7 +5986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Artexia/0.5 (artexia; http://www.httpdb.org; spider@httpdb.org)');
+    $dl[] = array(311674,311783,198102,311776, 'Artexia/0.5 (artexia; http://www.httpdb.org; spider@httpdb.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider-cpro;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider-cpro; +http://www.baidu.com/search/spider.html)')), $ls);
@@ -6001,7 +5994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Baiduspider-cpro; +http://www.baidu.com/search/spider.html)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider-cpro; +http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebCompanyCrawler'), 1 => array(0 => 'WebCompanyCrawler')), $ls);
@@ -6009,7 +6002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'WebCompanyCrawler');
+    $dl[] = array(311674,311783,198102,311776, 'WebCompanyCrawler');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Baiduspider+', 1 => '(http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider+ (http://www.baidu.com/search/spider.htm)')), $ls);
@@ -6017,7 +6010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Baiduspider+ (http://www.baidu.com/search/spider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider+ (http://www.baidu.com/search/spider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RIIGHT-SPIDER/RIIGHT-1.1', 1 => 'SPIDER', 2 => 'http://riight.com/co/spider;', 3 => 'spider'), 1 => array(0 => 'RIIGHT-SPIDER/RIIGHT-1.1 (RIIGHT.COM SEARCH SPIDER; http://riight.com/co/spider; spider@riight.com)')), $ls);
@@ -6025,7 +6018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'RIIGHT-SPIDER/RIIGHT-1.1 (RIIGHT.COM SEARCH SPIDER; http://riight.com/co/spider; spider@riight.com)');
+    $dl[] = array(311674,311783,198102,311776, 'RIIGHT-SPIDER/RIIGHT-1.1 (RIIGHT.COM SEARCH SPIDER; http://riight.com/co/spider; spider@riight.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+http://www.infohelfer.de/crawler.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Infohelfer/1.3.0; +http://www.infohelfer.de/crawler.php)')), $ls);
@@ -6033,7 +6026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0 (compatible; Infohelfer/1.3.0; +http://www.infohelfer.de/crawler.php)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Infohelfer/1.3.0; +http://www.infohelfer.de/crawler.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Sosospider/2.0;', 1 => '+http://help.soso.com/webspider.htm)'), 1 => array(0 => 'Mozilla/5.0(compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)')), $ls);
@@ -6041,7 +6034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Mozilla/5.0(compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)');
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0(compatible; Sosospider/2.0; +http://help.soso.com/webspider.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou web spider/4.0')), $ls);
@@ -6049,7 +6042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'Sogou web spider/4.0');
+    $dl[] = array(311674,311783,198102,311776, 'Sogou web spider/4.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LSSRocketCrawler/1.0'), 1 => array(0 => 'LSSRocketCrawler/1.0 LightspeedSystems')), $ls);
@@ -6057,7 +6050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'LSSRocketCrawler/1.0 LightspeedSystems');
+    $dl[] = array(311674,311783,198102,311776, 'LSSRocketCrawler/1.0 LightspeedSystems');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'rogerbot/1.0', 1 => '(http://www.seomoz.org/dp/rogerbot,', 2 => 'rogerbot-crawler@seomoz.org)'), 1 => array(0 => 'rogerbot/1.0 (http://www.seomoz.org/dp/rogerbot, rogerbot-crawler@seomoz.org)')), $ls);
@@ -6065,7 +6058,351 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,277597, 'rogerbot/1.0 (http://www.seomoz.org/dp/rogerbot, rogerbot-crawler@seomoz.org)');
+    $dl[] = array(311674,311783,198102,311776, 'rogerbot/1.0 (http://www.seomoz.org/dp/rogerbot, rogerbot-crawler@seomoz.org)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'QuickFinder Crawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'QuickFinder Crawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Baiduspider+(+http://www.baidu.com/search/spider_jp.html)'), 1 => array(0 => 'Baiduspider+(+http://www.baidu.com/search/spider_jp.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider+(+http://www.baidu.com/search/spider_jp.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'FAST-WebCrawler/3.6', 1 => '(atw-crawler', 2 => 'http://fast.no/support/crawler.asp)'), 1 => array(0 => 'FAST-WebCrawler/3.6 (atw-crawler at fast dot no; http://fast.no/support/crawler.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'FAST-WebCrawler/3.6 (atw-crawler at fast dot no; http://fast.no/support/crawler.asp)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; Vagabondo/2.2; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; Vagabondo/2.2; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/4.0 (compatible; Vagabondo/4.0Beta; webcrawler at wise-guys dot nl; http://webagent.wise-guys.nl/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Baiduspider/2.0;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: proxy6000)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: proxy6000)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'gsa-crawler'), 1 => array(0 => 'gsa-crawler (Enterprise; GID-01422; pabloeinstaincordeiro.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'gsa-crawler (Enterprise; GID-01422; pabloeinstaincordeiro.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'CrawlerProcess (http://www.PowerMapper.com) /4.7.566.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'CrawlerProcess (http://www.PowerMapper.com) /4.7.566.0');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'webcrawler@NOSPAMwise-guys.nl;'), 1 => array(0 => 'Mozilla/3.0 (Vagabondo/1.1 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/3.0 (Vagabondo/1.1 MT; webcrawler@NOSPAMwise-guys.nl; http://webagent.wise-guys.nl/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'GarlikCrawler/1.2', 1 => 'crawler'), 1 => array(0 => 'GarlikCrawler/1.2 (http://garlik.com/, crawler@garlik.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'GarlikCrawler/1.2 (http://garlik.com/, crawler@garlik.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+crawler@scaleunlimited.com;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; bixolabs; +crawler@scaleunlimited.com; crawler@scaleunlimited.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; bixolabs; +crawler@scaleunlimited.com; crawler@scaleunlimited.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'CompSpyBot/1.0;', 1 => '+http://www.compspy.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; CompSpyBot/1.0; +http://www.compspy.com/spider.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; CompSpyBot/1.0; +http://www.compspy.com/spider.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Marketing Grader Crawler 1.0 (http://marketing.grader.com/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Marketing Grader Crawler 1.0 (http://marketing.grader.com/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'peerindex/0.1 (http://www.peerindex.com/; crawler AT peerindex DOT com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'peerindex/0.1 (http://www.peerindex.com/; crawler AT peerindex DOT com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'PercolateCrawler/3.1.30'), 1 => array(0 => 'PercolateCrawler/3.1.30 (ops@percolate.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'PercolateCrawler/3.1.30 (ops@percolate.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'FAST Search Web Crawler 14.0.0291.0000')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'FAST Search Web Crawler 14.0.0291.0000');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'FatBot', 1 => 'http://www.thefind.com/main/CrawlerFAQs.fhtml)'), 1 => array(0 => 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/main/CrawlerFAQs.fhtml)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; FatBot 2.0; http://www.thefind.com/main/CrawlerFAQs.fhtml)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'ZCrawler'), 1 => array(0 => 'ZCrawler Alpha (+http://www.zazzle.com/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'ZCrawler Alpha (+http://www.zazzle.com/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Baiduspider', 1 => '(+http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider (+http://www.baidu.com/search/spider.htm)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider (+http://www.baidu.com/search/spider.htm)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Wspider-1.0;http://www.w3456.com/', 1 => 'PrimarySpider'), 1 => array(0 => 'Wspider-1.0;http://www.w3456.com/ PrimarySpider')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Wspider-1.0;http://www.w3456.com/ PrimarySpider');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'DEV/search:robot/0.0.1', 1 => 'Bot', 2 => 'http://spider.neofonie.de;', 3 => 'spider'), 1 => array(0 => 'MIA DEV/search:robot/0.0.1 (MIA Bot for research project MIA (www.MIA-marktplatz.de); http://spider.neofonie.de; spider@neofonie.de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'MIA DEV/search:robot/0.0.1 (MIA Bot for research project MIA (www.MIA-marktplatz.de); http://spider.neofonie.de; spider@neofonie.de)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'DEV/search:robot/0.0.1', 1 => 'Bot', 2 => 'http://spider.neofonie.de;', 3 => 'spider'), 1 => array(0 => 'MIA DEV/search:robot/0.0.1 (MIA Bot for research project MIA (www.MIA-marktplatz.de); http://spider.neofonie.de; spider-l@neofonie.de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'MIA DEV/search:robot/0.0.1 (MIA Bot for research project MIA (www.MIA-marktplatz.de); http://spider.neofonie.de; spider-l@neofonie.de)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'HubSpot Links Crawler 1.0 http://www.hubspot.com/')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'HubSpot Links Crawler 1.0 http://www.hubspot.com/');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MJ12bot/v1.3.2;', 1 => 'http://www.majestic12.co.uk/bot.php?+)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MJ12bot/v1.3.2; http://www.majestic12.co.uk/bot.php?+)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; MJ12bot/v1.3.2; http://www.majestic12.co.uk/bot.php?+)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Spider', 1 => '(http://www.apexoo.com/spider/)'), 1 => array(0 => 'Apexoo Spider (http://www.apexoo.com/spider/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Apexoo Spider (http://www.apexoo.com/spider/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'WLA Syndication Platform (Feed Crawler/1.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'WLA Syndication Platform (Feed Crawler/1.0)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => 'mini-spider,', 2 => 'bot'), 1 => array(0 => 'Confirm Domain Bot/1.0 (compatible; NZS.com mini-spider,  Local Search New Zealand; http://www.nzs.com/; bot at nzs.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Confirm Domain Bot/1.0 (compatible; NZS.com mini-spider,  Local Search New Zealand; http://www.nzs.com/; bot at nzs.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Baiduspider-video+(+http://www.baidu.com/search/spider.htm)'), 1 => array(0 => 'Baiduspider-video+(+http://www.baidu.com/search/spider.htm)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Baiduspider-video+(+http://www.baidu.com/search/spider.htm)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'TestCrawler'), 1 => array(0 => 'TestCrawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'TestCrawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'E-Crawler'), 1 => array(0 => 'E-Crawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'E-Crawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spiderman')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'spiderman');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Baiduspider/2.0;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: cgiproxy6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html) AppEngine-Google; (+http://code.google.com/appengine; appid: cgiproxy6)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '(http://www.spidersoft.com)'), 1 => array(0 => 'WebZIP/7.1 (http://www.spidersoft.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'WebZIP/7.1 (http://www.spidersoft.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'PHPCrawler'), 1 => array(0 => 'URL Page Indexer (fritz.baconguis41407@gmail.com) powered by PHPCrawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'URL Page Indexer (fritz.baconguis41407@gmail.com) powered by PHPCrawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'InDorseWebCrawler'), 1 => array(0 => 'InDorseWebCrawler (support@indorse-tech.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'InDorseWebCrawler (support@indorse-tech.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'nrron-crawler'), 1 => array(0 => 'nrron-crawler (pdsupport@purediscovery.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'nrron-crawler (pdsupport@purediscovery.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou web spider/4.0?*')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Sogou web spider/4.0?*');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Sogou web spider/4.0?*')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Sogou web spider/4.0?*');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'parsijoo-crawler'), 1 => array(0 => 'parsijoo-crawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'parsijoo-crawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://www.infohelfer.de/crawler.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Infohelfer/1.3.3; +http://www.infohelfer.de/crawler.php)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; Infohelfer/1.3.3; +http://www.infohelfer.de/crawler.php)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'EasouSpider;', 1 => '+http://www.easou.com/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; EasouSpider; +http://www.easou.com/spider.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Mozilla/5.0 (compatible; EasouSpider; +http://www.easou.com/spider.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Online Chat Crawler')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'Online Chat Crawler');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'CMS Identify Crawler/2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,311776, 'CMS Identify Crawler/2.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'sGroup crawler 1/Nutch-1.3')), $ls);
@@ -6073,7 +6410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'sGroup crawler 1/Nutch-1.3');
+    $dl[] = array(311674,311783,198102,514493, 'sGroup crawler 1/Nutch-1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'COMODOspider/Nutch-1.0'), 1 => array(0 => 'COMODOspider/Nutch-1.0')), $ls);
@@ -6081,7 +6418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'COMODOspider/Nutch-1.0');
+    $dl[] = array(311674,311783,198102,514493, 'COMODOspider/Nutch-1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Domnutch-Bot/Nutch-1.0'), 1 => array(0 => 'Domnutch-Bot/Nutch-1.0 (Domnutch; http://www.Nutch.de/)')), $ls);
@@ -6089,7 +6426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Domnutch-Bot/Nutch-1.0 (Domnutch; http://www.Nutch.de/)');
+    $dl[] = array(311674,311783,198102,514493, 'Domnutch-Bot/Nutch-1.0 (Domnutch; http://www.Nutch.de/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'KSCrawler/Nutch-1.0', 1 => '(http://www.kindsight.net/en/kscrawler;', 2 => 'crawler'), 1 => array(0 => 'KSCrawler/Nutch-1.0 (http://www.kindsight.net/en/kscrawler; crawler@kindsight.net)')), $ls);
@@ -6097,7 +6434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'KSCrawler/Nutch-1.0 (http://www.kindsight.net/en/kscrawler; crawler@kindsight.net)');
+    $dl[] = array(311674,311783,198102,514493, 'KSCrawler/Nutch-1.0 (http://www.kindsight.net/en/kscrawler; crawler@kindsight.net)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Attentio/Nutch-0.9-dev (Attentio\'s beta blog crawler; www.attentio.com; info@attentio.com)')), $ls);
@@ -6105,7 +6442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Attentio/Nutch-0.9-dev (Attentio\'s beta blog crawler; www.attentio.com; info@attentio.com)');
+    $dl[] = array(311674,311783,198102,514493, 'Attentio/Nutch-0.9-dev (Attentio\'s beta blog crawler; www.attentio.com; info@attentio.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'vik-robot/Nutch-1.0', 1 => '(vikspider;'), 1 => array(0 => 'vik-robot/Nutch-1.0 (vikspider; http://vik.com; chenlibiti@163.com)')), $ls);
@@ -6113,7 +6450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'vik-robot/Nutch-1.0 (vikspider; http://vik.com; chenlibiti@163.com)');
+    $dl[] = array(311674,311783,198102,514493, 'vik-robot/Nutch-1.0 (vikspider; http://vik.com; chenlibiti@163.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.3')), $ls);
@@ -6121,7 +6458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.3');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MaxPointCrawler/Nutch-1.1'), 1 => array(0 => 'MaxPointCrawler/Nutch-1.1')), $ls);
@@ -6129,7 +6466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'MaxPointCrawler/Nutch-1.1');
+    $dl[] = array(311674,311783,198102,514493, 'MaxPointCrawler/Nutch-1.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OrangeCrawler/Nutch-1.0', 1 => '(ldorange.crawler@orange-ftgroup.com)'), 1 => array(0 => 'OrangeCrawler/Nutch-1.0 (ldorange.crawler@orange-ftgroup.com)')), $ls);
@@ -6137,7 +6474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'OrangeCrawler/Nutch-1.0 (ldorange.crawler@orange-ftgroup.com)');
+    $dl[] = array(311674,311783,198102,514493, 'OrangeCrawler/Nutch-1.0 (ldorange.crawler@orange-ftgroup.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexSpider/Nutch-1.5-dev;', 1 => '+http://openindex.io/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)')), $ls);
@@ -6145,7 +6482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexDeepSpider/Nutch-1.5-dev;', 1 => '+http://openindex.io/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)')), $ls);
@@ -6153,7 +6490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexShallowSpider/Nutch-1.5-dev;', 1 => '+http://openindex.io/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)')), $ls);
@@ -6161,7 +6498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://openindex.io/spider.html; systemsATopenindexDOTio)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'super.robot/Nutch-1.3'), 1 => array(0 => 'super.robot/Nutch-1.3')), $ls);
@@ -6169,7 +6506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'super.robot/Nutch-1.3');
+    $dl[] = array(311674,311783,198102,514493, 'super.robot/Nutch-1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'ExactSeek Nutch 1.3 Test Crawler/Nutch-1.3')), $ls);
@@ -6177,7 +6514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ExactSeek Nutch 1.3 Test Crawler/Nutch-1.3');
+    $dl[] = array(311674,311783,198102,514493, 'ExactSeek Nutch 1.3 Test Crawler/Nutch-1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.4')), $ls);
@@ -6185,7 +6522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ecoToolshedSpider/Nutch-1.4'), 1 => array(0 => 'ecoToolshedSpider/Nutch-1.4')), $ls);
@@ -6193,7 +6530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ecoToolshedSpider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'ecoToolshedSpider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'COMODOSpider/Nutch-1.2'), 1 => array(0 => 'COMODOSpider/Nutch-1.2')), $ls);
@@ -6201,7 +6538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'COMODOSpider/Nutch-1.2');
+    $dl[] = array(311674,311783,198102,514493, 'COMODOSpider/Nutch-1.2');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Kavande Crawler 1.0/Nutch-1.4 (Kavande)')), $ls);
@@ -6209,7 +6546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Kavande Crawler 1.0/Nutch-1.4 (Kavande)');
+    $dl[] = array(311674,311783,198102,514493, 'Kavande Crawler 1.0/Nutch-1.4 (Kavande)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'nutch/Nutch-1.5-SNAPSHOT (Viterbi Web Crawler using Nutch 1.0)')), $ls);
@@ -6217,7 +6554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'nutch/Nutch-1.5-SNAPSHOT (Viterbi Web Crawler using Nutch 1.0)');
+    $dl[] = array(311674,311783,198102,514493, 'nutch/Nutch-1.5-SNAPSHOT (Viterbi Web Crawler using Nutch 1.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WebCrawler/Nutch-1.4'), 1 => array(0 => 'www.hlt.utdallas.edu WebCrawler/Nutch-1.4')), $ls);
@@ -6225,7 +6562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'www.hlt.utdallas.edu WebCrawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'www.hlt.utdallas.edu WebCrawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://crawler_test_amazon.com;', 1 => 'me@crawler_test_amazon.com)'), 1 => array(0 => 'wiki.do.test/Nutch-1.4 (Nutch testing; http://crawler_test_amazon.com; me@crawler_test_amazon.com)')), $ls);
@@ -6233,7 +6570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'wiki.do.test/Nutch-1.4 (Nutch testing; http://crawler_test_amazon.com; me@crawler_test_amazon.com)');
+    $dl[] = array(311674,311783,198102,514493, 'wiki.do.test/Nutch-1.4 (Nutch testing; http://crawler_test_amazon.com; me@crawler_test_amazon.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'Crawler'), 1 => array(0 => 'Kavande Crawler 1.0/Nutch-1.4 (Iranian National Web Crawler)')), $ls);
@@ -6241,7 +6578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Kavande Crawler 1.0/Nutch-1.4 (Iranian National Web Crawler)');
+    $dl[] = array(311674,311783,198102,514493, 'Kavande Crawler 1.0/Nutch-1.4 (Iranian National Web Crawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://KeywordSearchTool.co/robot)'), 1 => array(0 => 'KeywordSearchTool.co/Nutch-1.4 (http://KeywordSearchTool.co/robot)')), $ls);
@@ -6249,7 +6586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'KeywordSearchTool.co/Nutch-1.4 (http://KeywordSearchTool.co/robot)');
+    $dl[] = array(311674,311783,198102,514493, 'KeywordSearchTool.co/Nutch-1.4 (http://KeywordSearchTool.co/robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'WocBot/Nutch-1.4', 1 => 'Crawler', 2 => 'crawler'), 1 => array(0 => 'WocBot/Nutch-1.4 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)')), $ls);
@@ -6257,7 +6594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'WocBot/Nutch-1.4 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)');
+    $dl[] = array(311674,311783,198102,514493, 'WocBot/Nutch-1.4 (Wocodi Web Crawler 1.0; http://www.wocodi.com/; crawler@wocodi.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => 'crawler'), 1 => array(0 => 'michigan tweets crawler/Nutch-1.2 (Michigan papers crawler for research project; www.eecs.umich.edu/~chenzhe/crawl.html; avishay [at] umich dot edu)')), $ls);
@@ -6265,7 +6602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'michigan tweets crawler/Nutch-1.2 (Michigan papers crawler for research project; www.eecs.umich.edu/~chenzhe/crawl.html; avishay [at] umich dot edu)');
+    $dl[] = array(311674,311783,198102,514493, 'michigan tweets crawler/Nutch-1.2 (Michigan papers crawler for research project; www.eecs.umich.edu/~chenzhe/crawl.html; avishay [at] umich dot edu)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MaxPointCrawler/Nutch-1.1', 1 => '(MaxPoint.Crawler@maxpointinteractive.com)'), 1 => array(0 => 'MaxPointCrawler/Nutch-1.1 (MaxPoint.Crawler@maxpointinteractive.com)')), $ls);
@@ -6273,7 +6610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'MaxPointCrawler/Nutch-1.1 (MaxPoint.Crawler@maxpointinteractive.com)');
+    $dl[] = array(311674,311783,198102,514493, 'MaxPointCrawler/Nutch-1.1 (MaxPoint.Crawler@maxpointinteractive.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'SoftNet Nutch Spider/Nutch-1.4')), $ls);
@@ -6281,7 +6618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'SoftNet Nutch Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'SoftNet Nutch Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MaxPointCrawler/Nutch-1.1', 1 => '(maxpoint.crawler'), 1 => array(0 => 'MaxPointCrawler/Nutch-1.1 (maxpoint.crawler at maxpointinteractive dot com)')), $ls);
@@ -6289,7 +6626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'MaxPointCrawler/Nutch-1.1 (maxpoint.crawler at maxpointinteractive dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'MaxPointCrawler/Nutch-1.1 (maxpoint.crawler at maxpointinteractive dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'HAZY.SPIDER/Nutch-1.4'), 1 => array(0 => 'HAZY.SPIDER/Nutch-1.4')), $ls);
@@ -6297,7 +6634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'HAZY.SPIDER/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'HAZY.SPIDER/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.5-SNAPSHOT')), $ls);
@@ -6305,7 +6642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.5-SNAPSHOT');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.5-SNAPSHOT');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'rmatie.com spider/Nutch-1.4')), $ls);
@@ -6313,7 +6650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'rmatie.com spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'rmatie.com spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr; kvavliak at issel dot ee dot auth dot gr)')), $ls);
@@ -6321,7 +6658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr; kvavliak at issel dot ee dot auth dot gr)');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr; kvavliak at issel dot ee dot auth dot gr)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexDeepSpider/Nutch-1.5-dev;', 1 => '+http://www.openindex.io/en/webmasters/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)')), $ls);
@@ -6329,7 +6666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SemrushBot/Nutch-1.5-SNAPSHOT'), 1 => array(0 => 'SemrushBot/Nutch-1.5-SNAPSHOT')), $ls);
@@ -6337,7 +6674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'SemrushBot/Nutch-1.5-SNAPSHOT');
+    $dl[] = array(311674,311783,198102,514493, 'SemrushBot/Nutch-1.5-SNAPSHOT');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexShallowSpider/Nutch-1.5-dev;', 1 => '+http://www.openindex.io/en/webmasters/spider.html;'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)')), $ls);
@@ -6345,7 +6682,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html; systemsATopenindexDOTio)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => '(Crawler', 2 => 'crawler'), 1 => array(0 => 'Nutch test crawler/Nutch-1.4-dev (Crawler testing; crawler/a/t/luminouslabs.com)')), $ls);
@@ -6353,7 +6690,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch test crawler/Nutch-1.4-dev (Crawler testing; crawler/a/t/luminouslabs.com)');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch test crawler/Nutch-1.4-dev (Crawler testing; crawler/a/t/luminouslabs.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'SocialVest Spider/Nutch-1.4')), $ls);
@@ -6361,7 +6698,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'SocialVest Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'SocialVest Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lb-spider/Nutch-1.4', 1 => '(lb-spider;', 2 => 'bot'), 1 => array(0 => 'lb-spider/Nutch-1.4 (lb-spider; http://www.lb.de; bot@lb.de)')), $ls);
@@ -6369,7 +6706,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'lb-spider/Nutch-1.4 (lb-spider; http://www.lb.de; bot@lb.de)');
+    $dl[] = array(311674,311783,198102,514493, 'lb-spider/Nutch-1.4 (lb-spider; http://www.lb.de; bot@lb.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spider 0.1/Nutch-1.4')), $ls);
@@ -6377,7 +6714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'spider 0.1/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'spider 0.1/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexDeepSpider/Nutch-1.5-dev;', 1 => '+http://www.openindex.io/en/webmasters/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)')), $ls);
@@ -6385,7 +6722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexDeepSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.netluchs.de/bot.html;'), 1 => array(0 => 'Netluchs/Nutch-1.0 ( ; http://www.netluchs.de/bot.html; _do_not_spam_me___humans_please_use_info_at_netluchs.de_without_the_dash)')), $ls);
@@ -6393,7 +6730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Netluchs/Nutch-1.0 ( ; http://www.netluchs.de/bot.html; _do_not_spam_me___humans_please_use_info_at_netluchs.de_without_the_dash)');
+    $dl[] = array(311674,311783,198102,514493, 'Netluchs/Nutch-1.0 ( ; http://www.netluchs.de/bot.html; _do_not_spam_me___humans_please_use_info_at_netluchs.de_without_the_dash)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bldbCrawler/Nutch-1.4'), 1 => array(0 => 'bldbCrawler/Nutch-1.4')), $ls);
@@ -6401,7 +6738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'bldbCrawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'bldbCrawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'spotinfluence/Nutch-1.4 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)')), $ls);
@@ -6409,7 +6746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'spotinfluence/Nutch-1.4 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'spotinfluence/Nutch-1.4 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Applied-Technologies-Inc-Spider/Nutch-1.4'), 1 => array(0 => 'Applied-Technologies-Inc-Spider/Nutch-1.4')), $ls);
@@ -6417,7 +6754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Applied-Technologies-Inc-Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'Applied-Technologies-Inc-Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://lucene.apache.org/nutch/bot.html;'), 1 => array(0 => 'NutchCVS/0.7.2 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)')), $ls);
@@ -6425,7 +6762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'NutchCVS/0.7.2 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)');
+    $dl[] = array(311674,311783,198102,514493, 'NutchCVS/0.7.2 (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RADaR-Bot/Nutch-1.4', 1 => '(http://radar-bot.com/)'), 1 => array(0 => 'RADaR-Bot/Nutch-1.4 (http://radar-bot.com/)')), $ls);
@@ -6433,7 +6770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'RADaR-Bot/Nutch-1.4 (http://radar-bot.com/)');
+    $dl[] = array(311674,311783,198102,514493, 'RADaR-Bot/Nutch-1.4 (http://radar-bot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'googlebot/Nutch-1.4'), 1 => array(0 => 'googlebot/Nutch-1.4')), $ls);
@@ -6441,7 +6778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'googlebot/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'googlebot/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Crawler'), 1 => array(0 => 'wttsearch/Nutch-1.0 (Crawler for SIFE (WTT); http://wtt.beecom.ch/wttsearch.html; wtt@beecom.ch)')), $ls);
@@ -6449,7 +6786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'wttsearch/Nutch-1.0 (Crawler for SIFE (WTT); http://wtt.beecom.ch/wttsearch.html; wtt@beecom.ch)');
+    $dl[] = array(311674,311783,198102,514493, 'wttsearch/Nutch-1.0 (Crawler for SIFE (WTT); http://wtt.beecom.ch/wttsearch.html; wtt@beecom.ch)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'LinexBot/Nutch-1.0'), 1 => array(0 => 'LinexBot/Nutch-1.0 (www.linexlegal.com; support at linexlegal dot com)')), $ls);
@@ -6457,7 +6794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'LinexBot/Nutch-1.0 (www.linexlegal.com; support at linexlegal dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'LinexBot/Nutch-1.0 (www.linexlegal.com; support at linexlegal dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lmspider/Nutch-0.9-dev', 1 => 'lmspider@nuance.com)'), 1 => array(0 => 'lmspider/Nutch-0.9-dev (For research purposes.; www.nuance.com; lmspider@nuance.com)')), $ls);
@@ -6465,7 +6802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'lmspider/Nutch-0.9-dev (For research purposes.; www.nuance.com; lmspider@nuance.com)');
+    $dl[] = array(311674,311783,198102,514493, 'lmspider/Nutch-0.9-dev (For research purposes.; www.nuance.com; lmspider@nuance.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'emBot-GalaBuzz/Nutch-1.0'), 1 => array(0 => 'emBot-GalaBuzz/Nutch-1.0 (http://emining.jp/; em@galabuzz.jp)')), $ls);
@@ -6473,7 +6810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'emBot-GalaBuzz/Nutch-1.0 (http://emining.jp/; em@galabuzz.jp)');
+    $dl[] = array(311674,311783,198102,514493, 'emBot-GalaBuzz/Nutch-1.0 (http://emining.jp/; em@galabuzz.jp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'lmspider/Nutch-0.9', 1 => 'lmspider@nuance.com)'), 1 => array(0 => 'lmspider/Nutch-0.9 (For research purposes.; www.nuance.com; lmspider@nuance.com)')), $ls);
@@ -6481,7 +6818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'lmspider/Nutch-0.9 (For research purposes.; www.nuance.com; lmspider@nuance.com)');
+    $dl[] = array(311674,311783,198102,514493, 'lmspider/Nutch-0.9 (For research purposes.; www.nuance.com; lmspider@nuance.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'Crawler'), 1 => array(0 => 'Code Search Crawler/Nutch-1.2 (Code Search Crawler; www.iai.uni-bonn.de)')), $ls);
@@ -6489,7 +6826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Code Search Crawler/Nutch-1.2 (Code Search Crawler; www.iai.uni-bonn.de)');
+    $dl[] = array(311674,311783,198102,514493, 'Code Search Crawler/Nutch-1.2 (Code Search Crawler; www.iai.uni-bonn.de)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.2')), $ls);
@@ -6497,7 +6834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.2');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.2');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Test/Nutch-1.0 (Nutch spiderman; http://www.testsite.com ; MyEmail)')), $ls);
@@ -6505,7 +6842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Test/Nutch-1.0 (Nutch spiderman; http://www.testsite.com ; MyEmail)');
+    $dl[] = array(311674,311783,198102,514493, 'Test/Nutch-1.0 (Nutch spiderman; http://www.testsite.com ; MyEmail)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Primo Web Spider/Nutch-1.4')), $ls);
@@ -6513,7 +6850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Primo Web Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'Primo Web Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(crawler;'), 1 => array(0 => 'kapooha/Nutch-1.4 (crawler; http://www.kapooha.com; aeroganic@gmail.com)')), $ls);
@@ -6521,7 +6858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'kapooha/Nutch-1.4 (crawler; http://www.kapooha.com; aeroganic@gmail.com)');
+    $dl[] = array(311674,311783,198102,514493, 'kapooha/Nutch-1.4 (crawler; http://www.kapooha.com; aeroganic@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr/doku.php/research; kvavliak at issel dot ee dot auth dot gr)')), $ls);
@@ -6529,7 +6866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr/doku.php/research; kvavliak at issel dot ee dot auth dot gr)');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch/Nutch-1.4 (A semantic crawler for a PhD thesis; http://issel.ee.auth.gr/doku.php/research; kvavliak at issel dot ee dot auth dot gr)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'ExactSeek Crawler (http://www.exactseek.com/)/Nutch-1.4')), $ls);
@@ -6537,7 +6874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ExactSeek Crawler (http://www.exactseek.com/)/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'ExactSeek Crawler (http://www.exactseek.com/)/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'RADaR-Bot/Nutch-1.3', 1 => '(http://radar-bot.com/)'), 1 => array(0 => 'RADaR-Bot/Nutch-1.3 (http://radar-bot.com/)')), $ls);
@@ -6545,7 +6882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'RADaR-Bot/Nutch-1.3 (http://radar-bot.com/)');
+    $dl[] = array(311674,311783,198102,514493, 'RADaR-Bot/Nutch-1.3 (http://radar-bot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'ExactSeek Crawler (nutch 1.4)/Nutch-1.4')), $ls);
@@ -6553,7 +6890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ExactSeek Crawler (nutch 1.4)/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'ExactSeek Crawler (nutch 1.4)/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Kiodia Spider/Nutch-1.4')), $ls);
@@ -6561,7 +6898,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Kiodia Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'Kiodia Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'ZZF Nutch Spider/Nutch-1.4')), $ls);
@@ -6569,7 +6906,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ZZF Nutch Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'ZZF Nutch Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'BI-Crawler/0.1'), 1 => array(0 => 'HPI BI-Crawler/0.1 (+http://www.hpi.uni-potsdam.de/meinel/forschung/web_30/blog_intelligence.html)/Nutch-2.0-dev')), $ls);
@@ -6577,7 +6914,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'HPI BI-Crawler/0.1 (+http://www.hpi.uni-potsdam.de/meinel/forschung/web_30/blog_intelligence.html)/Nutch-2.0-dev');
+    $dl[] = array(311674,311783,198102,514493, 'HPI BI-Crawler/0.1 (+http://www.hpi.uni-potsdam.de/meinel/forschung/web_30/blog_intelligence.html)/Nutch-2.0-dev');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MyNutchCrawler/Nutch-1.4'), 1 => array(0 => 'MyNutchCrawler/Nutch-1.4')), $ls);
@@ -6585,7 +6922,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'MyNutchCrawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'MyNutchCrawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider', 1 => '(spider;'), 1 => array(0 => 'spider/Nutch-1.3 (spider; http://www.xxx.com)')), $ls);
@@ -6593,7 +6930,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'spider/Nutch-1.3 (spider; http://www.xxx.com)');
+    $dl[] = array(311674,311783,198102,514493, 'spider/Nutch-1.3 (spider; http://www.xxx.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'nutch-solr-integration-test/Nutch-1.2 (MoonValley Web Crawler using Nutch 1.2; http://www.moonvalley.com/; cwoolum@moonvalley.com)')), $ls);
@@ -6601,7 +6938,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'nutch-solr-integration-test/Nutch-1.2 (MoonValley Web Crawler using Nutch 1.2; http://www.moonvalley.com/; cwoolum@moonvalley.com)');
+    $dl[] = array(311674,311783,198102,514493, 'nutch-solr-integration-test/Nutch-1.2 (MoonValley Web Crawler using Nutch 1.2; http://www.moonvalley.com/; cwoolum@moonvalley.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://scholaruniverse.com/bot.jsp;'), 1 => array(0 => 'ScholarUniverse/0.8 (Nutch; http://scholaruniverse.com/bot.jsp; fetch-agent@scholaruniverse.com)')), $ls);
@@ -6609,7 +6946,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ScholarUniverse/0.8 (Nutch; http://scholaruniverse.com/bot.jsp; fetch-agent@scholaruniverse.com)');
+    $dl[] = array(311674,311783,198102,514493, 'ScholarUniverse/0.8 (Nutch; http://scholaruniverse.com/bot.jsp; fetch-agent@scholaruniverse.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'ICM Registry crawler/Nutch-1.3')), $ls);
@@ -6617,7 +6954,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ICM Registry crawler/Nutch-1.3');
+    $dl[] = array(311674,311783,198102,514493, 'ICM Registry crawler/Nutch-1.3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexShallowSpider/Nutch-1.5-dev;', 1 => '+http://www.openindex.io/en/webmasters/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)')), $ls);
@@ -6625,7 +6962,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexShallowSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'Crawler'), 1 => array(0 => 'Kavande Crawler 1.0/Nutch-1.4 (     Iranian National Web Crawler   ; kh3rad@gmail.com)')), $ls);
@@ -6633,7 +6970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Kavande Crawler 1.0/Nutch-1.4 (     Iranian National Web Crawler   ; kh3rad@gmail.com)');
+    $dl[] = array(311674,311783,198102,514493, 'Kavande Crawler 1.0/Nutch-1.4 (     Iranian National Web Crawler   ; kh3rad@gmail.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'merocrawl/Nutch-1.4 (merobase crawler; www.merobase.com; info@merobase.com)')), $ls);
@@ -6641,7 +6978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'merocrawl/Nutch-1.4 (merobase crawler; www.merobase.com; info@merobase.com)');
+    $dl[] = array(311674,311783,198102,514493, 'merocrawl/Nutch-1.4 (merobase crawler; www.merobase.com; info@merobase.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Nutch Experimental Crawler/Nutch-1.4')), $ls);
@@ -6649,7 +6986,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch Experimental Crawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch Experimental Crawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Spider/Nutch-1.4')), $ls);
@@ -6657,7 +6994,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'My Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'searchdnabot/Nutch-1.0', 1 => 'bot'), 1 => array(0 => 'searchdnabot/Nutch-1.0 (SearchDNA bot; http://searchenginedna.com; crawl at searchenginedna dot com)')), $ls);
@@ -6665,7 +7002,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'searchdnabot/Nutch-1.0 (SearchDNA bot; http://searchenginedna.com; crawl at searchenginedna dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'searchdnabot/Nutch-1.0 (SearchDNA bot; http://searchenginedna.com; crawl at searchenginedna dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.5')), $ls);
@@ -6673,7 +7010,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.5');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ESCrawler/Nutch-1.4'), 1 => array(0 => 'ESCrawler/Nutch-1.4')), $ls);
@@ -6681,7 +7018,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ESCrawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'ESCrawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'WikiDo/Nutch-1.4 (http://wikido.com; crawler@wikido.com)')), $ls);
@@ -6689,7 +7026,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'WikiDo/Nutch-1.4 (http://wikido.com; crawler@wikido.com)');
+    $dl[] = array(311674,311783,198102,514493, 'WikiDo/Nutch-1.4 (http://wikido.com; crawler@wikido.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler', 1 => 'http://lucene.apache.org/nutch/bot.html;'), 1 => array(0 => 'Nutch/Nutch-1.0-dev (A Nutch-based crawler.; http://lucene.apache.org/nutch/bot.html; nutch-agent AT lucene.apache.org)')), $ls);
@@ -6697,7 +7034,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch/Nutch-1.0-dev (A Nutch-based crawler.; http://lucene.apache.org/nutch/bot.html; nutch-agent AT lucene.apache.org)');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch/Nutch-1.0-dev (A Nutch-based crawler.; http://lucene.apache.org/nutch/bot.html; nutch-agent AT lucene.apache.org)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'crawler/Nutch-1.4')), $ls);
@@ -6705,7 +7042,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'crawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'crawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'ESCrawler/Nutch-1.5'), 1 => array(0 => 'ESCrawler/Nutch-1.5')), $ls);
@@ -6713,7 +7050,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'ESCrawler/Nutch-1.5');
+    $dl[] = array(311674,311783,198102,514493, 'ESCrawler/Nutch-1.5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'SU Nutch Spider/Nutch-1.4')), $ls);
@@ -6721,7 +7058,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'SU Nutch Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'SU Nutch Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TosCrawler/Nutch-1.4', 1 => '\'Rdc-crawler'), 1 => array(0 => 'TosCrawler/Nutch-1.4 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')')), $ls);
@@ -6729,7 +7066,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'TosCrawler/Nutch-1.4 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')');
+    $dl[] = array(311674,311783,198102,514493, 'TosCrawler/Nutch-1.4 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MABot/Nutch-1.5'), 1 => array(0 => 'MABot/Nutch-1.5')), $ls);
@@ -6737,7 +7074,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'MABot/Nutch-1.5');
+    $dl[] = array(311674,311783,198102,514493, 'MABot/Nutch-1.5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OpenindexSpider/Nutch-1.5-dev;', 1 => '+http://www.openindex.io/en/webmasters/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)')), $ls);
@@ -6745,7 +7082,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
+    $dl[] = array(311674,311783,198102,514493, 'Mozilla/5.0 (compatible; OpenindexSpider/Nutch-1.5-dev; +http://www.openindex.io/en/webmasters/spider.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Nutch Experimental Crawler/Nutch-2.0-dev')), $ls);
@@ -6753,7 +7090,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch Experimental Crawler/Nutch-2.0-dev');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch Experimental Crawler/Nutch-2.0-dev');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'spotinfluence/Nutch-1.2 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)')), $ls);
@@ -6761,7 +7098,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'spotinfluence/Nutch-1.2 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'spotinfluence/Nutch-1.2 (Spot Influence crawler; http://spotinfluence.com; hello at spotinfluence dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'KinglandSystemsCorp/Nutch-1.2 (Web crawler run by Kingland Systems Corp; http://www.kingland.com; kyle dot hansen at Kingland dot com)')), $ls);
@@ -6769,7 +7106,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'KinglandSystemsCorp/Nutch-1.2 (Web crawler run by Kingland Systems Corp; http://www.kingland.com; kyle dot hansen at Kingland dot com)');
+    $dl[] = array(311674,311783,198102,514493, 'KinglandSystemsCorp/Nutch-1.2 (Web crawler run by Kingland Systems Corp; http://www.kingland.com; kyle dot hansen at Kingland dot com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'My Crawler/Nutch-1.4')), $ls);
@@ -6777,7 +7114,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Crawler/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'My Crawler/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'CKC Spider/Nutch-1.4')), $ls);
@@ -6785,7 +7122,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'CKC Spider/Nutch-1.4');
+    $dl[] = array(311674,311783,198102,514493, 'CKC Spider/Nutch-1.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'My Nutch Spider/Nutch-1.5.1')), $ls);
@@ -6793,7 +7130,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'My Nutch Spider/Nutch-1.5.1');
+    $dl[] = array(311674,311783,198102,514493, 'My Nutch Spider/Nutch-1.5.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Nutch Crawler/Nutch-1.5.1')), $ls);
@@ -6801,7 +7138,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch Crawler/Nutch-1.5.1');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch Crawler/Nutch-1.5.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'spider', 1 => '(spider;'), 1 => array(0 => 'spider/Nutch-1.5.1 (spider; http://www.xxx.com)')), $ls);
@@ -6809,7 +7146,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'spider/Nutch-1.5.1 (spider; http://www.xxx.com)');
+    $dl[] = array(311674,311783,198102,514493, 'spider/Nutch-1.5.1 (spider; http://www.xxx.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http.boto.agent/Nutch-1.5'), 1 => array(0 => 'http.boto.agent/Nutch-1.5')), $ls);
@@ -6817,7 +7154,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'http.boto.agent/Nutch-1.5');
+    $dl[] = array(311674,311783,198102,514493, 'http.boto.agent/Nutch-1.5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NexiSpider/Nutch-1.5.1'), 1 => array(0 => 'NexiSpider/Nutch-1.5.1')), $ls);
@@ -6825,7 +7162,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'NexiSpider/Nutch-1.5.1');
+    $dl[] = array(311674,311783,198102,514493, 'NexiSpider/Nutch-1.5.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'TosCrawler/Nutch-1.5.1', 1 => '\'Rdc-crawler'), 1 => array(0 => 'TosCrawler/Nutch-1.5.1 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')')), $ls);
@@ -6833,7 +7170,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'TosCrawler/Nutch-1.5.1 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')');
+    $dl[] = array(311674,311783,198102,514493, 'TosCrawler/Nutch-1.5.1 (http://www.toshiba.co.jp/rdc/about/crawl_info.htm; \'Rdc-crawler at ml dot toshiba dot co dot jp\')');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Nutch/Nutch-2.0 (Nutch Crawler)')), $ls);
@@ -6841,7 +7178,111 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,454144, 'Nutch/Nutch-2.0 (Nutch Crawler)');
+    $dl[] = array(311674,311783,198102,514493, 'Nutch/Nutch-2.0 (Nutch Crawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSNBot/Nutch-1.5.1'), 1 => array(0 => 'MSNBot/Nutch-1.5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'MSNBot/Nutch-1.5.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'NSIDC Libre Crawler/Nutch-1.5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'NSIDC Libre Crawler/Nutch-1.5.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://lucene.apache.org/nutch/bot.html;'), 1 => array(0 => 'NutchCVS (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'NutchCVS (Nutch; http://lucene.apache.org/nutch/bot.html; nutch-agent@lucene.apache.org)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Spiderman/Nutch-1.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'Spiderman/Nutch-1.5');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'vik-robot/Nutch-1.0', 1 => '(vikspider;', 2 => 'vikspider@163.com'), 1 => array(0 => 'vik-robot/Nutch-1.0 (vikspider; http://vik.com; vikspider@163.com )')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'vik-robot/Nutch-1.0 (vikspider; http://vik.com; vikspider@163.com )');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Parveen Nutch Spider/Nutch-1.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'Parveen Nutch Spider/Nutch-1.5');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'WebDataCommonsCrawler/Nutch-1.5.1'), 1 => array(0 => 'WebDataCommonsCrawler/Nutch-1.5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'WebDataCommonsCrawler/Nutch-1.5.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Mu Nutch Spider/Nutch-1.5.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'Mu Nutch Spider/Nutch-1.5.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AstuteSocialCrawler/Nutch-1.4'), 1 => array(0 => 'AstuteSocialCrawler/Nutch-1.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'AstuteSocialCrawler/Nutch-1.4');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'MetricAlerts/Nutch-2.0 (Media monitoring; http://socialartisan.co.uk; crawler@socialartisan.co.uk)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'MetricAlerts/Nutch-2.0 (Media monitoring; http://socialartisan.co.uk; crawler@socialartisan.co.uk)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'spider/Nutch-2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'spider/Nutch-2.0');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Matt_Crawler/Nutch-1.5.1', 1 => 'research_crawler'), 1 => array(0 => 'Matt_Crawler/Nutch-1.5.1 (Academic test crawl; research_crawler at yahoo)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'Matt_Crawler/Nutch-1.5.1 (Academic test crawl; research_crawler at yahoo)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'Affectv Robot v1.0/Nutch-2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,514493, 'Affectv Robot v1.0/Nutch-2.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)')), $ls);
@@ -6849,7 +7290,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -6857,7 +7298,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'googlebot'), 1 => array(0 => 'googlebot')), $ls);
@@ -6865,7 +7306,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'googlebot');
+    $dl[] = array(311674,311783,198102,199038, 'googlebot');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1;  http://www.google.com/bot.html)')), $ls);
@@ -6873,7 +7314,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1;  http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1;  http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => '(+http://www.google.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1 (+http://www.google.com/bot.html)')), $ls);
@@ -6881,7 +7322,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 (+http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 (+http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Image/1.0'), 1 => array(0 => 'Googlebot-Image/1.0')), $ls);
@@ -6889,7 +7330,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Image/1.0');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Image/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html)')), $ls);
@@ -6897,7 +7338,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => '(+http://www.googlebot.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)')), $ls);
@@ -6905,7 +7346,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => '(http://www.googlebot.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1 (http://www.googlebot.com/bot.html)')), $ls);
@@ -6913,7 +7354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 (http://www.googlebot.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 (http://www.googlebot.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Image/1.0,gzip(gfe)'), 1 => array(0 => 'Googlebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -6921,7 +7362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; gallery_203.nasl; Googlebot)')), $ls);
@@ -6929,7 +7370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/4.0 (compatible; gallery_203.nasl; Googlebot)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/4.0 (compatible; gallery_203.nasl; Googlebot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -6937,7 +7378,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Video/1.0'), 1 => array(0 => 'Googlebot-Video/1.0')), $ls);
@@ -6945,7 +7386,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Video/1.0');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Video/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-richsnippets'), 1 => array(0 => 'Googlebot-richsnippets')), $ls);
@@ -6953,7 +7394,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-richsnippets');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-richsnippets');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b5')), $ls);
@@ -6961,7 +7402,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b5');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Image/1.0', 1 => 'CoralWebPrxGooglebot-Image/1.0,gzip(gfe)'), 1 => array(0 => 'Googlebot-Image/1.0 AppEngine CirruxCache CoralWebPrxGooglebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -6969,7 +7410,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Image/1.0 AppEngine CirruxCache CoralWebPrxGooglebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Image/1.0 AppEngine CirruxCache CoralWebPrxGooglebot-Image/1.0,gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'Googlebot/2.0;', 2 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; compatible; Googlebot/2.0; +http://www.google.com/bot.html)')), $ls);
@@ -6977,7 +7418,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; compatible; Googlebot/2.0; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; compatible; Googlebot/2.0; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1'), 1 => array(0 => 'Googlebot/2.1')), $ls);
@@ -6985,7 +7426,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via translate.google.com)')), $ls);
@@ -6993,7 +7434,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via translate.google.com)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via translate.google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)', 2 => 'Googlebot/2.1;', 3 => '+http://www.google.com/bot.html),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -7001,7 +7442,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/Nutch-0.9-dev'), 1 => array(0 => 'Googlebot/Nutch-0.9-dev')), $ls);
@@ -7009,7 +7450,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/Nutch-0.9-dev');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/Nutch-0.9-dev');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-News'), 1 => array(0 => 'Googlebot-News')), $ls);
@@ -7017,7 +7458,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-News');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-News');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => '???Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -7025,7 +7466,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, '???Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, '???Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/Googlebot-1.0'), 1 => array(0 => 'Googlebot/Googlebot-1.0')), $ls);
@@ -7033,7 +7474,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/Googlebot-1.0');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/Googlebot-1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => '?Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -7041,7 +7482,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, '?Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, '?Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b4')), $ls);
@@ -7049,7 +7490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b4');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/Googlebot', 1 => '(GoogleBot;'), 1 => array(0 => 'Googlebot/Googlebot 1.0 (GoogleBot; www.google.com; admin@google.com)')), $ls);
@@ -7057,7 +7498,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/Googlebot 1.0 (GoogleBot; www.google.com; admin@google.com)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/Googlebot 1.0 (GoogleBot; www.google.com; admin@google.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => 'http://www.googlebot.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1 ( http://www.googlebot.com/bot.html)')), $ls);
@@ -7065,7 +7506,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 ( http://www.googlebot.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 ( http://www.googlebot.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) [UsableNet Lift Mobile]')), $ls);
@@ -7073,7 +7514,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) [UsableNet Lift Mobile]');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) [UsableNet Lift Mobile]');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Image/1.0', 1 => 'http://www.googlebot.com/bot.html)'), 1 => array(0 => 'Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)')), $ls);
@@ -7081,7 +7522,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Image/1.0 ( http://www.googlebot.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'HideMe.mobi Browser Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -7089,7 +7530,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'HideMe.mobi Browser Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'HideMe.mobi Browser Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html')), $ls);
@@ -7097,7 +7538,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1+(+http://www.google.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1+(+http://www.google.com/bot.html)')), $ls);
@@ -7105,7 +7546,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1+(+http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1+(+http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1 ( http://www.google.com/bot.html)')), $ls);
@@ -7113,7 +7554,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 ( http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 ( http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.googlebot.com/bot.html'), 1 => array(0 => 'http://www.googlebot.com/bot.html')), $ls);
@@ -7121,7 +7562,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'http://www.googlebot.com/bot.html');
+    $dl[] = array(311674,311783,198102,199038, 'http://www.googlebot.com/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.0;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.0; +http://www.google.com/bot.html)')), $ls);
@@ -7129,7 +7570,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.0; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.0; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'googlebot/2.1;'), 1 => array(0 => 'Mozilla/5.0 (compatible; googlebot/2.1;')), $ls);
@@ -7137,7 +7578,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; googlebot/2.1;');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; googlebot/2.1;');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'GoogleBot', 1 => 'Googlebot/2.1;', 2 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'xC: Checking Link Existance (http://www.mediacet.com - Requesting HEAD ONLY) - Impersonating GoogleBot Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -7145,7 +7586,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'xC: Checking Link Existance (http://www.mediacet.com - Requesting HEAD ONLY) - Impersonating GoogleBot Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'xC: Checking Link Existance (http://www.mediacet.com - Requesting HEAD ONLY) - Impersonating GoogleBot Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b3')), $ls);
@@ -7153,7 +7594,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b3');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) ASProxy/5.5b3');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; ScanAlert; Googlebot)')), $ls);
@@ -7161,7 +7602,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/4.0 (compatible; ScanAlert; Googlebot)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/4.0 (compatible; ScanAlert; Googlebot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/1.0', 1 => '(googlebot@googlebot.com', 2 => 'http://googlebot.com/)'), 1 => array(0 => 'Googlebot/1.0 (googlebot@googlebot.com http://googlebot.com/)')), $ls);
@@ -7169,7 +7610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/1.0 (googlebot@googlebot.com http://googlebot.com/)');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/1.0 (googlebot@googlebot.com http://googlebot.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot'), 1 => array(0 => 'Googlebot 1.0')), $ls);
@@ -7177,7 +7618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot 1.0');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot 1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Image/1.0'), 1 => array(0 => 'Googlebot-Image/1.0 ASProxy/5.5b5')), $ls);
@@ -7185,7 +7626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot-Image/1.0 ASProxy/5.5b5');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot-Image/1.0 ASProxy/5.5b5');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Locubot', 1 => 'Googlebot;', 2 => 'msnbot)'), 1 => array(0 => 'Locubot (compatible; Googlebot; msnbot)')), $ls);
@@ -7193,7 +7634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Locubot (compatible; Googlebot; msnbot)');
+    $dl[] = array(311674,311783,198102,199038, 'Locubot (compatible; Googlebot; msnbot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot'), 1 => array(0 => 'Googlebot 2.1')), $ls);
@@ -7201,7 +7642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot 2.1');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot 2.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.sycara.com/SpiderInfo.php)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1; Sycara +http://www.sycara.com/SpiderInfo.php)')), $ls);
@@ -7209,7 +7650,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1; Sycara +http://www.sycara.com/SpiderInfo.php)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1; Sycara +http://www.sycara.com/SpiderInfo.php)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1', 1 => '(+http://www.google.com/bot.html'), 1 => array(0 => 'Googlebot/2.1 (+http://www.google.com/bot.html')), $ls);
@@ -7217,7 +7658,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Googlebot/2.1 (+http://www.google.com/bot.html');
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1 (+http://www.google.com/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1;http://www.google.com/bot.html)')), $ls);
@@ -7225,7 +7666,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/5.0 (compatible; Googlebot/2.1;http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1;http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Mediapartners-Googlebot/2.1;(+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla (compatible; Mediapartners-Googlebot/2.1;(+http://www.google.com/bot.html)')), $ls);
@@ -7233,7 +7674,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla (compatible; Mediapartners-Googlebot/2.1;(+http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla (compatible; Mediapartners-Googlebot/2.1;(+http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '+Baiduspider/2.0;++http://www.baidu.com/search/spider.html', 1 => '+Googlebot/2.1;++http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (compatible; +Baiduspider/2.0;++http://www.baidu.com/search/spider.html +Googlebot/2.1;++http://www.google.com/bot.html)')), $ls);
@@ -7241,7 +7682,31 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,180752, 'Mozilla/4.0 (compatible; +Baiduspider/2.0;++http://www.baidu.com/search/spider.html +Googlebot/2.1;++http://www.google.com/bot.html)');
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/4.0 (compatible; +Baiduspider/2.0;++http://www.baidu.com/search/spider.html +Googlebot/2.1;++http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Googlebot/2.1;+http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,199038, 'Mozilla/5.0 (compatible; Googlebot/2.1;+http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozila/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,199038, 'Mozila/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1(+http://www.googlebot.com/bot.html)'), 1 => array(0 => 'Googlebot/2.1(+http://www.googlebot.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,199038, 'Googlebot/2.1(+http://www.googlebot.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0 +http://www.bing.com/bingbot.htm)')), $ls);
@@ -7249,7 +7714,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0 +http://www.bing.com/bingbot.htm)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0 +http://www.bing.com/bingbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)')), $ls);
@@ -7257,7 +7722,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(compatible;bingbot/2.0;+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible;bingbot/2.0;+http://www.bing.com/bingbot.htm)')), $ls);
@@ -7265,7 +7730,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible;bingbot/2.0;+http://www.bing.com/bingbot.htm)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible;bingbot/2.0;+http://www.bing.com/bingbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: flyproxy0)')), $ls);
@@ -7273,7 +7738,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: flyproxy0)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: flyproxy0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxy2fly4)')), $ls);
@@ -7281,7 +7746,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxy2fly4)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxy2fly4)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -7289,7 +7754,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)', 2 => 'bingbot/2.0;', 3 => '+http://www.bing.com/bingbot.htm),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -7297,7 +7762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine CirruxCache CoralWebPrxMozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxydisk9)')), $ls);
@@ -7305,63 +7770,23 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,475961, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxydisk9)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: proxydisk9)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'AcoonWap Robot v1.00 (www.acoon.de)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: buttonses)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,422453, 'AcoonWap Robot v1.00 (www.acoon.de)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) AppEngine-Google; (+http://code.google.com/appengine; appid: buttonses)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.5'), 1 => array(0 => 'AcoonBot/4.10.5 (+http://www.acoon.de)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'bingbot/2.0;', 1 => '+http://www.bing.com/bingbot.htm)'), 1 => array(0 => 'Mozilla/5.0 (seoanalyzer; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,422453, 'AcoonBot/4.10.5 (+http://www.acoon.de)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.6;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.6; +http://www.acoon.de/robot.asp)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,422453, 'Mozilla/5.0 (compatible; AcoonBot/4.10.6; +http://www.acoon.de/robot.asp)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.7;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.7; +http://www.acoon.de/robot.asp)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,422453, 'Mozilla/5.0 (compatible; AcoonBot/4.10.7; +http://www.acoon.de/robot.asp)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.8;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.8; +http://www.acoon.de/robot.asp)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,422453, 'Mozilla/5.0 (compatible; AcoonBot/4.10.8; +http://www.acoon.de/robot.asp)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.11.0;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.11.0; +http://www.acoon.de/robot.asp)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,422453, 'Mozilla/5.0 (compatible; AcoonBot/4.11.0; +http://www.acoon.de/robot.asp)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.11.1;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.11.1; +http://www.acoon.de/robot.asp)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,422453, 'Mozilla/5.0 (compatible; AcoonBot/4.11.1; +http://www.acoon.de/robot.asp)');
+    $dl[] = array(311674,311783,198102,537279, 'Mozilla/5.0 (seoanalyzer; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7369,7 +7794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7377,7 +7802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => ';http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp;http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7385,7 +7810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp;http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp;http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 ; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7393,7 +7818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 ; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 ; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 Asia; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7401,7 +7826,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 Asia; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0 Asia; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! DE Slurp; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7409,7 +7834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! DE Slurp; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! DE Slurp; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp Asia; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7417,7 +7842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp Asia; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp Asia; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Slurp/si;', 1 => 'slurp', 2 => 'http://www.inktomi.com/slurp.html)'), 1 => array(0 => 'Mozilla/5.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)')), $ls);
@@ -7425,7 +7850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Slurp/cat;', 1 => 'slurp', 2 => 'http://www.inktomi.com/slurp.html)'), 1 => array(0 => 'Mozilla/5.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)')), $ls);
@@ -7433,7 +7858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://help.yahoo.com/help/us/ysearch/slurp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Nano; http://help.yahoo.com/help/us/ysearch/slurp)')), $ls);
@@ -7441,7 +7866,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Nano; http://help.yahoo.com/help/us/ysearch/slurp)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Nano; http://help.yahoo.com/help/us/ysearch/slurp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe) (via docs.google.com/viewer)')), $ls);
@@ -7449,7 +7874,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe) (via docs.google.com/viewer)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe) (via docs.google.com/viewer)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Slurp.so/Goo;', 1 => 'slurp', 2 => 'http://www.inktomi.com/slurp.html)'), 1 => array(0 => 'Mozilla/3.0 (Slurp.so/Goo; slurp@inktomi.com; http://www.inktomi.com/slurp.html)')), $ls);
@@ -7457,7 +7882,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/3.0 (Slurp.so/Goo; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/3.0 (Slurp.so/Goo; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Slurp/si;', 1 => 'slurp', 2 => 'http://www.inktomi.com/slurp.html)'), 1 => array(0 => 'Mozilla/3.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)')), $ls);
@@ -7465,7 +7890,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/3.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/3.0 (Slurp/si; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(Slurp/cat;', 1 => 'slurp', 2 => 'http://www.inktomi.com/slurp.html)'), 1 => array(0 => 'Mozilla/3.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)')), $ls);
@@ -7473,7 +7898,71 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,464013, 'Mozilla/3.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/3.0 (Slurp/cat; slurp@inktomi.com; http://www.inktomi.com/slurp.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Slurp', 1 => 'http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe) (via docs.google.com/viewer)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,524376, 'Mozilla/5.0 (compatible; Yahoo! Slurp/3.0; http://help.yahoo.com/help/us/ysearch/slurp),gzip(gfe) (via docs.google.com/viewer)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Robot'), 1 => array(0 => 'AcoonWap Robot v1.00 (www.acoon.de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'AcoonWap Robot v1.00 (www.acoon.de)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.5'), 1 => array(0 => 'AcoonBot/4.10.5 (+http://www.acoon.de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'AcoonBot/4.10.5 (+http://www.acoon.de)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.6;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.6; +http://www.acoon.de/robot.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'Mozilla/5.0 (compatible; AcoonBot/4.10.6; +http://www.acoon.de/robot.asp)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.7;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.7; +http://www.acoon.de/robot.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'Mozilla/5.0 (compatible; AcoonBot/4.10.7; +http://www.acoon.de/robot.asp)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.10.8;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.10.8; +http://www.acoon.de/robot.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'Mozilla/5.0 (compatible; AcoonBot/4.10.8; +http://www.acoon.de/robot.asp)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.11.0;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.11.0; +http://www.acoon.de/robot.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'Mozilla/5.0 (compatible; AcoonBot/4.11.0; +http://www.acoon.de/robot.asp)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AcoonBot/4.11.1;', 1 => '+http://www.acoon.de/robot.asp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; AcoonBot/4.11.1; +http://www.acoon.de/robot.asp)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,479247, 'Mozilla/5.0 (compatible; AcoonBot/4.11.1; +http://www.acoon.de/robot.asp)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => 'http://wordpress.com/crawler/'), 1 => array(0 => 'Automattic Analytics Crawler/0.1; http://wordpress.com/crawler/')), $ls);
@@ -7481,423 +7970,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,459398, 'Automattic Analytics Crawler/0.1; http://wordpress.com/crawler/');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'SurveyBot/2.3'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,181263,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Diffbot/0.1;', 1 => '+http://www.diffbot.com)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,181263,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; acc=jocker; acc=; acc=none; FunWebProducts; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; acc=jocker; acc=; acc=none; FunWebProducts; .NET CLR 1.1.4322; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; SpamBlockerUtility 4.8.4; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; SpamBlockerUtility 4.8.4; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; IEMB3; (R1 1.5); MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; IEMB3; (R1 1.5); MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SpamBlockerUtility 4.8.4; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SpamBlockerUtility 4.8.4; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; NN4.1.0.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; NN4.1.0.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SIMBAR={D96099EE-3F2D-4254-88CE-6854C6CE8459}; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SIMBAR={D96099EE-3F2D-4254-88CE-6854C6CE8459}; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; InfoPath.1; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; InfoPath.1; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; PeoplePal 3.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; PeoplePal 3.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.1; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.1; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QX; GTB7.2; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QX; GTB7.2; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; BTRSX; SIMBAR={4E002F50-0FCD-11E1-AEB6-000AE69B492F}; SV1; AskTbSTC-US/5.13.1.18107; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; BTRSX; SIMBAR={4E002F50-0FCD-11E1-AEB6-000AE69B492F}; SV1; AskTbSTC-US/5.13.1.18107; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; GTB7.3; .NET CLR 1.1.4322; ibrytetoolbar_playbryte; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FunWebProducts; AskTbPGL/5.14.1.20007; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; GTB7.3; .NET CLR 1.1.4322; ibrytetoolbar_playbryte; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FunWebProducts; AskTbPGL/5.14.1.20007; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.5; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.5; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {73D5DF9F-E500-BB8D-C9C1-7F04A4EB0838}; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {73D5DF9F-E500-BB8D-C9C1-7F04A4EB0838}; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; Ant.com Toolbar 1.6; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; Ant.com Toolbar 1.6; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.6; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.6; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; EasyBits GO v1.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; EasyBits GO v1.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Embedded Web Browser from: http://bsalsa.com/; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Embedded Web Browser from: http://bsalsa.com/; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crayon Crawler; snprtz|TX; (R1 1.5))')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crayon Crawler; snprtz|TX; (R1 1.5))');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 2.8; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 2.8; MSIECrawler)');
+    $dl[] = array(311674,311783,198102,519754, 'Automattic Analytics Crawler/0.1; http://wordpress.com/crawler/');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -7905,311 +7978,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,273256,140391,180752, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'magpie-crawler/1.1'), 1 => array(0 => 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '(Exabot-Thumbnails)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'magpie-crawler/1.1'), 1 => array(0 => 'magpie-crawler/1.1 (U; Linux i386; en-GB; +http://www.brandwatch.net)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'magpie-crawler/1.1 (U; Linux i386; en-GB; +http://www.brandwatch.net)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Stellenangebote'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/X iCjobs/3.2.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/X iCjobs/3.2.3');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Socialradarbot/2.0;', 1 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; bot@infegy.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; bot@infegy.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'ThumbShotsBot'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; de-DE; rv:1.9.0.19) Gecko/X ThumbShotsBot (KFSW 3.0.6-3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (X11; U; Linux x86_64; de-DE; rv:1.9.0.19) Gecko/X ThumbShotsBot (KFSW 3.0.6-3)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-xen-686; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-xen-686; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal-global; i386 Linux 2.6.32-32-generic-pae; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (webportal-global; i386 Linux 2.6.32-32-generic-pae; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38.7-smp; java 1.6.0_29; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.38.7-smp; java 1.6.0_29; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686-bigmem; java 1.6.0_26; Etc/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686-bigmem; java 1.6.0_26; Etc/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_20; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_20; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-13-generic; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.0.0-13-generic; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686; java 1.6.0_18; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686; java 1.6.0_18; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.35-31-generic-pae; java 1.6.0_20; Europe/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.35-31-generic-pae; java 1.6.0_20; Europe/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_24; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_24; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1.2-default; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.1.0-1.2-default; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.37.6-0.5-desktop; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.37.6-0.5-desktop; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://tailrank.com/robot)'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Tailrank; http://tailrank.com/robot) Gecko/X')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Tailrank; http://tailrank.com/robot) Gecko/X');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'eyeVerifyBot'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) eyeVerifyBot (Linux x86_64) Webkit/Apple Safari/1.5 Safari/534.34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) eyeVerifyBot (Linux x86_64) Webkit/Apple Safari/1.5 Safari/534.34');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'focused_crawler'), 1 => array(0 => 'focused_crawler (infpc71; Linux i686; http://ivia.ucr.edu/user_agents.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'focused_crawler (infpc71; Linux i686; http://ivia.ucr.edu/user_agents.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'nxsCrawler-09'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.8) nxsCrawler-09 http://null32.de')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.8) nxsCrawler-09 http://null32.de');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => ',Robot,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; i686; Bot,Robot,Spider,Crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'WIRE/0.22 (Linux; i686; Bot,Robot,Spider,Crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.7.0_02; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.7.0_02; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-15-generic-pae; java 1.6.0_23; America/fr) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'yacybot (freeworld/global; i386 Linux 3.0.0-15-generic-pae; java 1.6.0_23; America/fr) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'streaming,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; i686; Trystero, 47, W.A.S.T.E streaming,Spider,Crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'WIRE/0.22 (Linux; i686; Trystero, 47, W.A.S.T.E streaming,Spider,Crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => ',Robot,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; x86_64; Bot,Robot,Spider,Crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'WIRE/0.22 (Linux; x86_64; Bot,Robot,Spider,Crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Socialradarbot/2.0;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; crawler@infegy.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,179816,277597, 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; crawler@infegy.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html),gzip(gfe)'), 1 => array(0 => 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html),gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: 244hours)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(43419,16998,18086,180752, 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html),gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: 244hours)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(43419,16998,18086,180752, 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(106891,307058,152216,199038, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_1 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6531.22.7 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -8217,47 +7986,775 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(432705,276668,275731,180752, 'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(490937,309889,309896,199038, 'DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows XP 5.1; java 1.6.0_29; America/en) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html),gzip(gfe)'), 1 => array(0 => 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html),gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: 244hours)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,179816,277597, 'yacybot (freeworld/global; x86 Windows XP 5.1; java 1.6.0_29; America/en) http://yacy.net/bot.html');
+    $dl[] = array(44846,17184,18306,199038, 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html),gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: 244hours)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows XP)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,179816,277597, 'SuperBot/4.7.0.74 (Windows XP)');
+    $dl[] = array(44846,17184,18306,199038, 'SAMSUNG-SGH-E250/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/3.0 (Content Parser; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'magpie-crawler/1.1'), 1 => array(0 => 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,179816,277597, 'Mozilla/3.0 (Content Parser; Windows NT 5.1; infobot.4942@yahoo.com)');
+    $dl[] = array(311674,145607,198102,311776, 'magpie-crawler/1.1 (U; Linux amd64; en-GB; +http://www.brandwatch.net)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/4.0 (Add Catalog; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '(Exabot-Thumbnails)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,179816,277597, 'Mozilla/4.0 (Add Catalog; Windows NT 5.1; infobot.4942@yahoo.com)');
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (compatible; Konqueror/3.5; Linux) KHTML/3.5.5 (like Gecko) (Exabot-Thumbnails)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/5.0 (Admin Catalog; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'magpie-crawler/1.1'), 1 => array(0 => 'magpie-crawler/1.1 (U; Linux i386; en-GB; +http://www.brandwatch.net)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,179816,277597, 'Mozilla/5.0 (Admin Catalog; Windows NT 5.1; infobot.4942@yahoo.com)');
+    $dl[] = array(311674,145607,198102,311776, 'magpie-crawler/1.1 (U; Linux i386; en-GB; +http://www.brandwatch.net)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Stellenangebote'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/X iCjobs/3.2.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (X11; U; Linux i686; de; rv:1.9.0.1; compatible; iCjobs Stellenangebote Jobs; http://www.icjobs.de) Gecko/X iCjobs/3.2.3');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Socialradarbot/2.0;', 1 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; bot@infegy.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; bot@infegy.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'ThumbShotsBot'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; de-DE; rv:1.9.0.19) Gecko/X ThumbShotsBot (KFSW 3.0.6-3)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (X11; U; Linux x86_64; de-DE; rv:1.9.0.19) Gecko/X ThumbShotsBot (KFSW 3.0.6-3)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-xen-686; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-xen-686; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal-global; i386 Linux 2.6.32-32-generic-pae; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (webportal-global; i386 Linux 2.6.32-32-generic-pae; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38.7-smp; java 1.6.0_29; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.38.7-smp; java 1.6.0_29; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686-bigmem; java 1.6.0_26; Etc/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686-bigmem; java 1.6.0_26; Etc/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_20; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_20; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-13-generic; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.0.0-13-generic; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686; java 1.6.0_18; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-5-686; java 1.6.0_18; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.35-31-generic-pae; java 1.6.0_20; Europe/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.35-31-generic-pae; java 1.6.0_20; Europe/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_24; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.1.0-1-686-pae; java 1.6.0_24; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.1.0-1.2-default; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.1.0-1.2-default; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.32-37-generic-pae; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.37.6-0.5-desktop; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.37.6-0.5-desktop; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://tailrank.com/robot)'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Tailrank; http://tailrank.com/robot) Gecko/X')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.2.1; aggregator:Tailrank; http://tailrank.com/robot) Gecko/X');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'eyeVerifyBot'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) eyeVerifyBot (Linux x86_64) Webkit/Apple Safari/1.5 Safari/534.34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) eyeVerifyBot (Linux x86_64) Webkit/Apple Safari/1.5 Safari/534.34');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'focused_crawler'), 1 => array(0 => 'focused_crawler (infpc71; Linux i686; http://ivia.ucr.edu/user_agents.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'focused_crawler (infpc71; Linux i686; http://ivia.ucr.edu/user_agents.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'nxsCrawler-09'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.8) nxsCrawler-09 http://null32.de')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.8) nxsCrawler-09 http://null32.de');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => ',Robot,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; i686; Bot,Robot,Spider,Crawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'WIRE/0.22 (Linux; i686; Bot,Robot,Spider,Crawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 2.6.18-028stab091.2; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.7.0_02; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.0.0-12-generic-pae; java 1.7.0_02; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; i386 Linux 3.0.0-15-generic-pae; java 1.6.0_23; America/fr) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'yacybot (freeworld/global; i386 Linux 3.0.0-15-generic-pae; java 1.6.0_23; America/fr) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'streaming,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; i686; Trystero, 47, W.A.S.T.E streaming,Spider,Crawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'WIRE/0.22 (Linux; i686; Trystero, 47, W.A.S.T.E streaming,Spider,Crawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot', 1 => ',Robot,Spider,Crawler)'), 1 => array(0 => 'WIRE/0.22 (Linux; x86_64; Bot,Robot,Spider,Crawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'WIRE/0.22 (Linux; x86_64; Bot,Robot,Spider,Crawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Socialradarbot/2.0;', 1 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; crawler@infegy.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,198102,311776, 'Mozilla/5.0 (compatible; Linux; Socialradarbot/2.0; en-US; crawler@infegy.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; acc=jocker; acc=; acc=none; FunWebProducts; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; acc=jocker; acc=; acc=none; FunWebProducts; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; SpamBlockerUtility 4.8.4; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.1.4322; SpamBlockerUtility 4.8.4; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; IEMB3; (R1 1.5); MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; IEMB3; (R1 1.5); MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SpamBlockerUtility 4.8.4; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SpamBlockerUtility 4.8.4; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; NN4.1.0.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; NN4.1.0.0; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SIMBAR={D96099EE-3F2D-4254-88CE-6854C6CE8459}; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; SIMBAR={D96099EE-3F2D-4254-88CE-6854C6CE8459}; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; InfoPath.1; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; InfoPath.1; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; PeoplePal 3.0; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; PeoplePal 3.0; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.1; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.1; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QX; GTB7.2; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QX; GTB7.2; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; BTRSX; SIMBAR={4E002F50-0FCD-11E1-AEB6-000AE69B492F}; SV1; AskTbSTC-US/5.13.1.18107; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; BTRSX; SIMBAR={4E002F50-0FCD-11E1-AEB6-000AE69B492F}; SV1; AskTbSTC-US/5.13.1.18107; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.1; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; InfoPath.2; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; GTB7.3; .NET CLR 1.1.4322; ibrytetoolbar_playbryte; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FunWebProducts; AskTbPGL/5.14.1.20007; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; GTB7.3; .NET CLR 1.1.4322; ibrytetoolbar_playbryte; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; FunWebProducts; AskTbPGL/5.14.1.20007; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.5; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.5; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {73D5DF9F-E500-BB8D-C9C1-7F04A4EB0838}; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; {73D5DF9F-E500-BB8D-C9C1-7F04A4EB0838}; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 4.0; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; Ant.com Toolbar 1.6; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; Ant.com Toolbar 1.6; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; FunWebProducts; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.6; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6.6; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; EasyBits GO v1.0; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; EasyBits GO v1.0; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Embedded Web Browser from: http://bsalsa.com/; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; Embedded Web Browser from: http://bsalsa.com/; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crayon Crawler; snprtz|TX; (R1 1.5))')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Crayon Crawler; snprtz|TX; (R1 1.5))');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 2.8; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB7.3; .NET CLR 1.0.3705; .NET CLR 1.1.4322; Media Center PC 2.8; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; ezPeer+ v1.0 Beta (0.4.1.98); ezPeer+ v1.0 (0.5.0.00); .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; FunWebProducts; ezPeer+ v1.0 Beta (0.4.1.98); ezPeer+ v1.0 (0.5.0.00); .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; BTRSX; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; BTRSX; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 708; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; QQDownload 708; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; qdesk 2.3.1186.202; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; qdesk 2.3.1186.202; MSIECrawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'VoilaBot', 1 => '(support.voilabot@orange-ftgroup.com)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1) VoilaBot BETA 1.2 (support.voilabot@orange-ftgroup.com)')), $ls);
@@ -8265,7 +8762,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1) VoilaBot BETA 1.2 (support.voilabot@orange-ftgroup.com)');
+    $dl[] = array(20443,46332,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; fr; rv:1.8.1) VoilaBot BETA 1.2 (support.voilabot@orange-ftgroup.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Spider', 1 => '(http://www.entireweb.com/about/search_tech/speedy_spider/)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)')), $ls);
@@ -8273,7 +8770,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)');
+    $dl[] = array(20443,46332,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) Speedy Spider (http://www.entireweb.com/about/search_tech/speedy_spider/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'VoilaBotCollector'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1;fr;rv:1.8.1) VoilaBotCollector BETA 0.1  (http://www.voila.com/)')), $ls);
@@ -8281,7 +8778,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1;fr;rv:1.8.1) VoilaBotCollector BETA 0.1  (http://www.voila.com/)');
+    $dl[] = array(20443,46332,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1;fr;rv:1.8.1) VoilaBotCollector BETA 0.1  (http://www.voila.com/)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'maxamine.com-robot)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; maxamine.com-robot) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Safari/533.4')), $ls);
@@ -8289,695 +8786,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; maxamine.com-robot) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Safari/533.4');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible;', 1 => 'http://www.huaweisymantec.com/en/IRL/spider)'), 1 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/en/IRL/spider)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,63592,277597, 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/en/IRL/spider)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible;', 1 => 'http://www.huaweisymantec.com/cn/IRL/spider)'), 1 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/cn/IRL/spider)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,63592,277597, 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/cn/IRL/spider)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yolinkBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) yolinkBot')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) yolinkBot');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'SNK Screenshot Bot/0.20 ( abuse at savenkeep dot_com ) (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,63592,277597, 'SNK Screenshot Bot/0.20 ( abuse at savenkeep dot_com ) (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld-global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld-global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld-global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-28-generic; java 1.6.0_23; Etc/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-28-generic; java 1.6.0_23; Etc/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.3-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.3-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.39-2-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.39-2-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.6.0_25; GMT/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.6.0_25; GMT/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (allip/any; amd64 Linux 2.6.32-274.3.1.el5.028stab094.3; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (allip/any; amd64 Linux 2.6.32-274.3.1.el5.028stab094.3; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.36.4-vs2.3.0.36.39-netcup; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.36.4-vs2.3.0.36.39-netcup; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-xen-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-xen-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.1-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.1-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.36.2-desktop-2mnb; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.36.2-desktop-2mnb; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.26-2-xen-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.26-2-xen-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.4-hardened-r4; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.4-hardened-r4; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4; java 1.6.0_22; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.4; java 1.6.0_22; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.0-4.dmz.1-liquorix-amd64; java 1.7.0_147-icedtea; Asia/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.0-4.dmz.1-liquorix-amd64; java 1.7.0_147-icedtea; Asia/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld-global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-33-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-33-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.2-1.fc16.x86_64; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.2-1.fc16.x86_64; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-12-generic; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.38-12-generic; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.6.0_18; Europe/fr) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.6.0_18; Europe/fr) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.6.0_22; US/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.6.0_22; US/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-1-amd64; java 1.6.0_24; Europe/it) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-1-amd64; java 1.6.0_24; Europe/it) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-6-pve; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-6-pve; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.5-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.5-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.18-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_23; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_23; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.5; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.5; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal/global; amd64 Linux 2.6.32-100.34.1.el6uek.x86_64; java 1.6.0_20; US/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (webportal/global; amd64 Linux 2.6.32-100.34.1.el6uek.x86_64; java 1.6.0_20; US/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.8-vs2.3.1-nc; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.8-vs2.3.1-nc; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.0; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.1-gentoo-r2; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.1-gentoo-r2; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.9-1.4-desktop; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.9-1.4-desktop; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (sciencenet/any; amd64 Linux 2.6.32-26-generic; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (sciencenet/any; amd64 Linux 2.6.32-26-generic; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-8-server; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.38-8-server; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '(http://solfo.com/linkbot.html)'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1 solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1 solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.16.46-0.12-smp; java 1.6.0_15; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.16.46-0.12-smp; java 1.6.0_15; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.0-1-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.0-1-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.7.0; GMT/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.7.0; GMT/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-9-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.0-9-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-10-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.0-10-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (webportal/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.2-1-ARCH; java 1.7.0_147-icedtea; Europe/fr) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.2-1-ARCH; java 1.7.0_147-icedtea; Europe/fr) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32.36-228-scalaxy; java 1.6.0_18; Etc/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32.36-228-scalaxy; java 1.6.0_18; Etc/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-17-generic; java 1.7.0_03-icedtea; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.2.0-17-generic; java 1.7.0_03-icedtea; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-16-server; java 1.6.0_23; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.0.0-16-server; java 1.6.0_23; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-40-server; java 1.6.0_20; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 2.6.32-40-server; java 1.6.0_20; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.10-1.9-default; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,179816,277597, 'yacybot (freeworld/global; amd64 Linux 3.1.10-1.9-default; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
+    $dl[] = array(20443,46332,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; maxamine.com-robot) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.127 Safari/533.4');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Slurp'), 1 => array(0 => 'Yahoo! Slurp China')), $ls);
@@ -8985,7 +8794,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,15136,464013, 'Yahoo! Slurp China');
+    $dl[] = array(311674,311783,16335,524376, 'Yahoo! Slurp China');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Blekkobot;', 1 => '+http://blekko.com/about/blekkobot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)')), $ls);
@@ -8993,191 +8802,39 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,550262, 'Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)');
+    $dl[] = array(311674,311783,198102,617677, 'Mozilla/5.0 (compatible; Blekkobot; ScoutJet; +http://blekko.com/about/blekkobot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'http://www.changedetection.com/bot.html'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1;  http://www.changedetection.com/bot.html )')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible;', 1 => 'http://www.huaweisymantec.com/en/IRL/spider)'), 1 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/en/IRL/spider)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1;  http://www.changedetection.com/bot.html )');
+    $dl[] = array(20443,46332,66311,311776, 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/en/IRL/spider)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'qihoobot@qihoo.net)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible;', 1 => 'http://www.huaweisymantec.com/cn/IRL/spider)'), 1 => array(0 => 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/cn/IRL/spider)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)');
+    $dl[] = array(20443,46332,66311,311776, 'HuaweiSymantecSpider/1.0+DSE-support@huaweisymantec.com+(compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR ; http://www.huaweisymantec.com/cn/IRL/spider)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'CrystalSemanticsBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'yolinkBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) yolinkBot')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)');
+    $dl[] = array(20443,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727) yolinkBot');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'QihooBot', 1 => 'qihoobot@qihoo.net)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QihooBot 1.0 qihoobot@qihoo.net)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'SNK Screenshot Bot/0.20 ( abuse at savenkeep dot_com ) (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QihooBot 1.0 qihoobot@qihoo.net)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET Robot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET Robot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'robot)'), 1 => array(0 => 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET; robot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET; robot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'maxamine.com-robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; maxamine.com-robot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; maxamine.com-robot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'baiduspider)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50215; baiduspider)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50215; baiduspider)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.0-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/3.1.0-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'cdlwas_bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; cdlwas_bot; heritrix/1.14.1 +http://webarchives.cdlib.org/p/webmasters)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; cdlwas_bot; heritrix/1.14.1 +http://webarchives.cdlib.org/p/webmasters)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'webcrawler (compatible; heritrix/1.14.4 ++http://www.onb.ac.at/about/webarchivierung.htm)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'webcrawler (compatible; heritrix/1.14.4 ++http://www.onb.ac.at/about/webarchivierung.htm)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://www.archive.org/details/archive.org_bot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://www.archive.org/details/archive.org_bot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Arquivo-web-crawler'), 1 => array(0 => 'Arquivo-web-crawler  (compatible; heritrix/1.14.3 +http://arquivo.pt/faq-crawling)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Arquivo-web-crawler  (compatible; heritrix/1.14.3 +http://arquivo.pt/faq-crawling)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.accelobot.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.14.3 +http://www.accelobot.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/1.14.3 +http://www.accelobot.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://vefsafn.is/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.0-RC1 +http://vefsafn.is/crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/3.1.0-RC1 +http://vefsafn.is/crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://netarkivet.dk/webcrawler/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.14.4 +http://netarkivet.dk/webcrawler/)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/1.14.4 +http://netarkivet.dk/webcrawler/)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '(compatible;archive.org_bot/heritrix-1.9.0-X'), 1 => array(0 => 'Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-X +http://pandora.nla.gov.au/crawl.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-X +http://pandora.nla.gov.au/crawl.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.accelobot.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.x.x +http://www.accelobot.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/1.x.x +http://www.accelobot.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; worio bot heritrix/1.10.0 +http://worio.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; worio bot heritrix/1.10.0 +http://worio.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://archive.crawler.org)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.3.0 http://archive.crawler.org)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,471933, 'Mozilla/5.0 (compatible; heritrix/1.3.0 http://archive.crawler.org)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AdsBot-Google-Mobile', 1 => '(+http://www.google.com/mobile/adsbot.html)'), 1 => array(0 => 'AdsBot-Google-Mobile (+http://www.google.com/mobile/adsbot.html) Mozilla (iPhone; U; CPU iPhone OS 3 0 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile Safari')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(100555,273263,179816,277597, 'AdsBot-Google-Mobile (+http://www.google.com/mobile/adsbot.html) Mozilla (iPhone; U; CPU iPhone OS 3 0 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile Safari');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '360spider'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Gecko/X Firefox/1.5.0.11; 360spider')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,273500,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Gecko/X Firefox/1.5.0.11; 360spider');
+    $dl[] = array(20443,46332,66311,311776, 'SNK Screenshot Bot/0.20 ( abuse at savenkeep dot_com ) (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'ichiro/4.0 (http://help.goo.ne.jp/door/crawler.html)')), $ls);
@@ -9185,7 +8842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,338051, 'ichiro/4.0 (http://help.goo.ne.jp/door/crawler.html)');
+    $dl[] = array(311674,311783,198102,382573, 'ichiro/4.0 (http://help.goo.ne.jp/door/crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'ichiro/5.0 (http://help.goo.ne.jp/door/crawler.html)')), $ls);
@@ -9193,7 +8850,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,338051, 'ichiro/5.0 (http://help.goo.ne.jp/door/crawler.html)');
+    $dl[] = array(311674,311783,198102,382573, 'ichiro/5.0 (http://help.goo.ne.jp/door/crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'ichiro/3.0 (http://help.goo.ne.jp/door/crawler.html)')), $ls);
@@ -9201,7 +8858,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,338051, 'ichiro/3.0 (http://help.goo.ne.jp/door/crawler.html)');
+    $dl[] = array(311674,311783,198102,382573, 'ichiro/3.0 (http://help.goo.ne.jp/door/crawler.html)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'ichiro/6.0 (http://help.goo.ne.jp/door/crawler.html)')), $ls);
@@ -9209,7 +8866,743 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,338051, 'ichiro/6.0 (http://help.goo.ne.jp/door/crawler.html)');
+    $dl[] = array(311674,311783,198102,382573, 'ichiro/6.0 (http://help.goo.ne.jp/door/crawler.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://www.changedetection.com/bot.html'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1;  http://www.changedetection.com/bot.html )')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1;  http://www.changedetection.com/bot.html )');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'qihoobot@qihoo.net)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; CollapsarWEB qihoobot@qihoo.net)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'CrystalSemanticsBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; CrystalSemanticsBot http://www.crystalsemantics.com/service-navigation/imprint/useragent/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'QihooBot', 1 => 'qihoobot@qihoo.net)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QihooBot 1.0 qihoobot@qihoo.net)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; QihooBot 1.0 qihoobot@qihoo.net)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET Robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET Robot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'robot)'), 1 => array(0 => 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET; robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/6.0 (MSIE 6.0; Windows NT 5.1; Searcharoo.NET; robot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'maxamine.com-robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; maxamine.com-robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; maxamine.com-robot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'baiduspider)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50215; baiduspider)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50215; baiduspider)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld-global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld-global; amd64 Linux 2.6.32-34-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-35-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld-global; amd64 Linux 2.6.32-custom; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-28-generic; java 1.6.0_23; Etc/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-28-generic; java 1.6.0_23; Etc/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.3-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.3-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.39-2-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.39-2-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.6.0_25; GMT/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.6.0_25; GMT/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (allip/any; amd64 Linux 2.6.32-274.3.1.el5.028stab094.3; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (allip/any; amd64 Linux 2.6.32-274.3.1.el5.028stab094.3; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.36.4-vs2.3.0.36.39-netcup; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.36.4-vs2.3.0.36.39-netcup; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-13-generic; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-xen-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-xen-amd64; java 1.6.0_18; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.1-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.1-1-ARCH; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.36.2-desktop-2mnb; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.36.2-desktop-2mnb; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.26-2-xen-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.26-2-xen-amd64; java 1.6.0_26; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.4-hardened-r4; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.4-hardened-r4; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.38-13-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4; java 1.6.0_22; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.4; java 1.6.0_22; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.0-4.dmz.1-liquorix-amd64; java 1.7.0_147-icedtea; Asia/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.0-4.dmz.1-liquorix-amd64; java 1.7.0_147-icedtea; Asia/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld-global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld-global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-33-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-33-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.2-1.fc16.x86_64; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.2-1.fc16.x86_64; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.4-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-12-generic; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.38-12-generic; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.6.0_18; Europe/fr) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-openvz-amd64; java 1.6.0_18; Europe/fr) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-generic; java 1.6.0_20; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-36-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.6.0_22; US/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.6-gentoo; java 1.6.0_22; US/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; Europe/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-1-amd64; java 1.6.0_24; Europe/it) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-1-amd64; java 1.6.0_24; Europe/it) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-6-pve; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-6-pve; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-server; java 1.6.0_23; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.5-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.5-1-ARCH; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.18-028stab092.1; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-generic; java 1.6.0_26; Europe/sv) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_23; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-generic; java 1.6.0_23; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-14-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.5; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.5; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal/global; amd64 Linux 2.6.32-100.34.1.el6uek.x86_64; java 1.6.0_20; US/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (webportal/global; amd64 Linux 2.6.32-100.34.1.el6uek.x86_64; java 1.6.0_20; US/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.8-vs2.3.1-nc; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.8-vs2.3.1-nc; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-34-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.0; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.6-gentoo; java 1.7.0_147-icedtea; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-15-server; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.1-gentoo-r2; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.1-gentoo-r2; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-12-generic; java 1.6.0_23; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.9-1.4-desktop; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.9-1.4-desktop; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (sciencenet/any; amd64 Linux 2.6.32-26-generic; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (sciencenet/any; amd64 Linux 2.6.32-26-generic; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_26; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.38-8-server; java 1.6.0_22; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.38-8-server; java 1.6.0_22; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '(http://solfo.com/linkbot.html)'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1 solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1 solfo-linkchecker/1.0 (http://solfo.com/linkbot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.16.46-0.12-smp; java 1.6.0_15; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.16.46-0.12-smp; java 1.6.0_15; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.0-1-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.0-1-amd64; java 1.7.0_147-icedtea; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-37-server; java 1.6.0_20; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.7.0; GMT/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.18-274.12.1.el5; java 1.7.0; GMT/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-9-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.0-9-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-10-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.0-10-generic; java 1.7.0_147-icedtea; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (webportal/global; amd64 Linux 2.6.32-5-amd64; java 1.6.0_18; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-38-server; java 1.6.0_26; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.2-1-ARCH; java 1.7.0_147-icedtea; Europe/fr) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.2-1-ARCH; java 1.7.0_147-icedtea; Europe/fr) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32.36-228-scalaxy; java 1.6.0_18; Etc/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32.36-228-scalaxy; java 1.6.0_18; Etc/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.2.0-17-generic; java 1.7.0_03-icedtea; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.2.0-17-generic; java 1.7.0_03-icedtea; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.0.0-16-server; java 1.6.0_23; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.0.0-16-server; java 1.6.0_23; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 2.6.32-40-server; java 1.6.0_20; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 2.6.32-40-server; java 1.6.0_20; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Linux 3.1.10-1.9-default; java 1.6.0_24; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,198102,311776, 'yacybot (freeworld/global; amd64 Linux 3.1.10-1.9-default; java 1.6.0_24; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AdsBot-Google-Mobile', 1 => '(+http://www.google.com/mobile/adsbot.html)'), 1 => array(0 => 'AdsBot-Google-Mobile (+http://www.google.com/mobile/adsbot.html) Mozilla (iPhone; U; CPU iPhone OS 3 0 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile Safari')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106891,307065,198102,311776, 'AdsBot-Google-Mobile (+http://www.google.com/mobile/adsbot.html) Mozilla (iPhone; U; CPU iPhone OS 3 0 like Mac OS X) AppleWebKit (KHTML, like Gecko) Mobile Safari');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '360spider'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Gecko/X Firefox/1.5.0.11; 360spider')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,307356,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.8.0.11) Gecko/X Firefox/1.5.0.11; 360spider');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'KomodiaBot/1.0'), 1 => array(0 => 'KomodiaBot/1.0 (compatible; MSIE 8.0; Windows NT 5.1)')), $ls);
@@ -9217,7 +9610,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'KomodiaBot/1.0 (compatible; MSIE 8.0; Windows NT 5.1)');
+    $dl[] = array(20443,46332,127094,311776, 'KomodiaBot/1.0 (compatible; MSIE 8.0; Windows NT 5.1)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'KomodiaBot/1.0'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1) KomodiaBot/1.0')), $ls);
@@ -9225,7 +9618,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1) KomodiaBot/1.0');
+    $dl[] = array(20443,46332,127094,311776, 'Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1) KomodiaBot/1.0');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Caboto', 1 => 'Caboto'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1; Banca Caboto s.p.a.)')), $ls);
@@ -9233,7 +9626,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1; Banca Caboto s.p.a.)');
+    $dl[] = array(20443,46332,127094,311776, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1; Banca Caboto s.p.a.)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Caboto'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; Banca Caboto s.p.a.)')), $ls);
@@ -9241,7 +9634,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; Banca Caboto s.p.a.)');
+    $dl[] = array(20443,46332,127094,311776, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.1; Banca Caboto s.p.a.)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Caboto'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; InfoPath.1; Banca Caboto s.p.a.)')), $ls);
@@ -9249,7 +9642,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; InfoPath.1; Banca Caboto s.p.a.)');
+    $dl[] = array(20443,46332,127094,311776, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; InfoPath.1; Banca Caboto s.p.a.)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Caboto'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1)')), $ls);
@@ -9257,119 +9650,159 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,118306,277597, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1)');
+    $dl[] = array(20443,46332,127094,311776, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; Banca Caboto s.p.a.; InfoPath.1)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'SkimBot/1.0'), 1 => array(0 => 'SkimBot/1.0 (www.skimlinks.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows XP 5.1; java 1.6.0_29; America/en) http://yacy.net/bot.html')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,512903, 'SkimBot/1.0 (www.skimlinks.com)');
+    $dl[] = array(311674,46332,198102,311776, 'yacybot (freeworld/global; x86 Windows XP 5.1; java 1.6.0_29; America/en) http://yacy.net/bot.html');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'SkimBot/1.0'), 1 => array(0 => 'SkimBot/1.0 (www.skimlinks.com <dev@skimlinks.com>)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows XP)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,512903, 'SkimBot/1.0 (www.skimlinks.com <dev@skimlinks.com>)');
+    $dl[] = array(311674,46332,198102,311776, 'SuperBot/4.7.0.74 (Windows XP)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 5.0 Robot)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/3.0 (Content Parser; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,273163,462141,277597, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 5.0 Robot)');
+    $dl[] = array(311674,46332,198102,311776, 'Mozilla/3.0 (Content Parser; Windows NT 5.1; infobot.4942@yahoo.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/5.0 (Admin Catalog; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,273163,462141,277597, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)');
+    $dl[] = array(311674,46332,198102,311776, 'Mozilla/5.0 (Admin Catalog; Windows NT 5.1; infobot.4942@yahoo.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows 95; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.0-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,338684,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows 95; MSIECrawler)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/3.1.0-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://help.naver.com/robots/)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'cdlwas_bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; cdlwas_bot; heritrix/1.14.1 +http://webarchives.cdlib.org/p/webmasters)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,302956,179816,277597, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; cdlwas_bot; heritrix/1.14.1 +http://webarchives.cdlib.org/p/webmasters)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://help.naver.com/robots/)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'webcrawler'), 1 => array(0 => 'webcrawler (compatible; heritrix/1.14.4 ++http://www.onb.ac.at/about/webarchivierung.htm)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,302956,179816,277597, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)');
+    $dl[] = array(311674,311783,198102,533199, 'webcrawler (compatible; heritrix/1.14.4 ++http://www.onb.ac.at/about/webarchivierung.htm)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'RexyoBot/2.1.24;'), 1 => array(0 => 'Mozilla/5.0 (compatible; RexyoBot/2.1.24; +http://www.rexyo.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,21180,179816,277597, 'Mozilla/5.0 (compatible; RexyoBot/2.1.24; +http://www.rexyo.com)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.4) Gecko/X http://ow.ly web crawler (.NET CLR 3.5.30729)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://www.archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://www.archive.org/details/archive.org_bot)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,63585,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.4) Gecko/X http://ow.ly web crawler (.NET CLR 3.5.30729)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/3.1.1-SNAPSHOT-X.X +http://www.archive.org/details/archive.org_bot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows Vista)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Arquivo-web-crawler'), 1 => array(0 => 'Arquivo-web-crawler  (compatible; heritrix/1.14.3 +http://arquivo.pt/faq-crawling)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,63585,179816,277597, 'SuperBot/4.7.0.74 (Windows Vista)');
+    $dl[] = array(311674,311783,198102,533199, 'Arquivo-web-crawler  (compatible; heritrix/1.14.3 +http://arquivo.pt/faq-crawling)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows Vista 6.0; java 1.7.0_02; Europe/de) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://www.accelobot.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.14.3 +http://www.accelobot.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,63585,179816,277597, 'yacybot (freeworld/global; x86 Windows Vista 6.0; java 1.7.0_02; Europe/de) http://yacy.net/bot.html');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/1.14.3 +http://www.accelobot.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'http://spinn3r.com/robot)'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/X Firefox/3.0.19')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://vefsafn.is/crawler)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.0-RC1 +http://vefsafn.is/crawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,62651,277597, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/X Firefox/3.0.19');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/3.1.0-RC1 +http://vefsafn.is/crawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.5) Gecko/X Gentoo Firefox/3.0.5 (Dot TK - spider 3.0)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://netarkivet.dk/webcrawler/)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.14.4 +http://netarkivet.dk/webcrawler/)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,62651,277597, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.5) Gecko/X Gentoo Firefox/3.0.5 (Dot TK - spider 3.0)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/1.14.4 +http://netarkivet.dk/webcrawler/)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Huaweisymantecspider'), 1 => array(0 => 'Huaweisymantecspider (compatible; MSIE 8.0; DSE-support@huaweisymantec.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '(compatible;archive.org_bot/heritrix-1.9.0-X'), 1 => array(0 => 'Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-X +http://pandora.nla.gov.au/crawl.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,118306,277597, 'Huaweisymantecspider (compatible; MSIE 8.0; DSE-support@huaweisymantec.com)');
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible;archive.org_bot/heritrix-1.9.0-X +http://pandora.nla.gov.au/crawl.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://www.accelobot.com)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.x.x +http://www.accelobot.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/1.x.x +http://www.accelobot.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; worio bot heritrix/1.10.0 +http://worio.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; worio bot heritrix/1.10.0 +http://worio.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://archive.crawler.org)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/1.3.0 http://archive.crawler.org)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/1.3.0 http://archive.crawler.org)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://archive.org/details/archive.org_bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; heritrix/3.1.2-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,533199, 'Mozilla/5.0 (compatible; heritrix/3.1.2-SNAPSHOT-X.X +http://archive.org/details/archive.org_bot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'HopperBot/1.1'), 1 => array(0 => 'HopperBot/1.1 (compatible; heritrix/3.1.0 +http://www.hopper.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,198102,533199, 'HopperBot/1.1 (compatible; heritrix/3.1.0 +http://www.hopper.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Pixray-Seeker/1.1 (Pixray-Seeker; crawler@pixray.com)')), $ls);
@@ -9377,7 +9810,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,510879, 'Pixray-Seeker/1.1 (Pixray-Seeker; crawler@pixray.com)');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/1.1 (Pixray-Seeker; crawler@pixray.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.pixray.com/pixraybot;', 1 => 'crawler'), 1 => array(0 => 'Pixray-Seeker/1.1 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)')), $ls);
@@ -9385,7 +9818,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,510879, 'Pixray-Seeker/1.1 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/1.1 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'http://www.pixray.com/pixraybot;', 1 => 'crawler'), 1 => array(0 => 'Pixray-Seeker/2.0 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)')), $ls);
@@ -9393,303 +9826,79 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,179816,510879, 'Pixray-Seeker/2.0 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/2.0 (Pixray-Seeker; http://www.pixray.com/pixraybot; crawler@pixray.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1 (compatible; +http://www.baidu.com/search/spider.html)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://www.pixray.com/pixraybot;', 1 => '+crawler@pixray.com)'), 1 => array(0 => 'Pixray-Seeker/2.0 (Pixray-Seeker; +http://www.pixray.com/pixraybot; +crawler@pixray.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337395,105376,105382,277597, 'Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1 (compatible; +http://www.baidu.com/search/spider.html)');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/2.0 (Pixray-Seeker; +http://www.pixray.com/pixraybot; +crawler@pixray.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Birubot/1.0)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Birubot/1.0) Gecko/X Firefox/3.0.8')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '(http://www.pixray.com/pixraybot;', 1 => 'crawler'), 1 => array(0 => 'Pixray-Seeker/2.0 (http://www.pixray.com/pixraybot; crawler@pixray.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,277604,62651,277597, 'Mozilla/5.0 (compatible; Birubot/1.0) Gecko/X Firefox/3.0.8');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/2.0 (http://www.pixray.com/pixraybot; crawler@pixray.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://thumbshots.ru/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Thumbshots.ru; +http://thumbshots.ru/bot) Firefox/3')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '(http://www.pixray.com/pixraybot;', 1 => '+crawler@pixray.com)'), 1 => array(0 => 'Pixray-Seeker/2.0 (http://www.pixray.com/pixraybot; +crawler@pixray.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,277604,62651,277597, 'Mozilla/5.0 (compatible; Thumbshots.ru; +http://thumbshots.ru/bot) Firefox/3');
+    $dl[] = array(311674,311783,198102,574677, 'Pixray-Seeker/2.0 (http://www.pixray.com/pixraybot; +crawler@pixray.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows 95; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)');
+    $dl[] = array(311674,383259,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows 95; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)/V1'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)/V1')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'SkimBot/1.0'), 1 => array(0 => 'SkimBot/1.0 (www.skimlinks.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)/V1');
+    $dl[] = array(311674,311783,198102,576738, 'SkimBot/1.0 (www.skimlinks.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFinder-2.0; http://bloggz.se/crawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'SkimBot/1.0'), 1 => array(0 => 'SkimBot/1.0 (www.skimlinks.com <dev@skimlinks.com>)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFinder-2.0; http://bloggz.se/crawler)');
+    $dl[] = array(311674,311783,198102,576738, 'SkimBot/1.0 (www.skimlinks.com <dev@skimlinks.com>)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'BlogCrawler-Fetchy;', 1 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; BlogCrawler-Fetchy; http://bloggz.se/crawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'infobot.4942@yahoo.com)'), 1 => array(0 => 'Mozilla/4.0 (Add Catalog; Windows NT 5.1; infobot.4942@yahoo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; BlogCrawler-Fetchy; http://bloggz.se/crawler)');
+    $dl[] = array(311674,46332,16335,311776, 'Mozilla/4.0 (Add Catalog; Windows NT 5.1; infobot.4942@yahoo.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 5.0 Robot)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; MSIECrawler)');
+    $dl[] = array(311674,306950,522504,311776, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 5.0 Robot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; YComp 5.0.2.6; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; YComp 5.0.2.6; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://domaindb.com/crawler/)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; DomainDB-1.2; http://domaindb.com/crawler/)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; DomainDB-1.2; http://domaindb.com/crawler/)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFetcher-2.0; http://bloggz.se/crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFetcher-2.0; http://bloggz.se/crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'NewzCrawler/1.9', 1 => 'Crawler', 2 => 'http://www.newzcrawler.com/'), 1 => array(0 => 'NewzCrawler/1.9 (compatible; MSIE 6.00; Newz Crawler 1.9; http://www.newzcrawler.com/ )')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'NewzCrawler/1.9 (compatible; MSIE 6.00; Newz Crawler 1.9; http://www.newzcrawler.com/ )');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AugustBot/augstbot@163.com)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augstbot@163.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augstbot@163.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AugustBot/augustbot@163.com)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augustbot@163.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augustbot@163.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Sitekit.net Linkchecker Bot;')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Sitekit.net Linkchecker Bot;');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'WormlyBot;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0) WormlyBot; (+http://wormly.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0) WormlyBot; (+http://wormly.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 6.0; Podtech Network; crawler_admin@podtech.net)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/5.0 (compatible; MSIE 6.0; Podtech Network; crawler_admin@podtech.net)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '+http://www.singingfish.com/help/spider.html;', 2 => 'Spider'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Asterias Crawler v4; +http://www.singingfish.com/help/spider.html; webmaster@singingfish.com); SpiderThread Revision: 3.10')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Asterias Crawler v4; +http://www.singingfish.com/help/spider.html; webmaster@singingfish.com); SpiderThread Revision: 3.10');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'iaskspider/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; iaskspider/1.0; MSIE 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,33546,277597, 'Mozilla/5.0 (compatible; iaskspider/1.0; MSIE 6.0)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'DapperBot/0.6'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.12) Gecko/X Firefox/3.0.12 (.NET CLR 3.5.30729) DapperBot/0.6 (http://dev.dapper.net/control-access.php)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,62651,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.12) Gecko/X Firefox/3.0.12 (.NET CLR 3.5.30729) DapperBot/0.6 (http://dev.dapper.net/control-access.php)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'trendictionbot0.4.5;', 1 => 'http://www.trendiction.de/bot;'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.4.5; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,62651,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.4.5; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'trendictionbot0.5.0;', 1 => 'http://www.trendiction.de/bot;'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,62651,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; Crawler; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,63592,277597, 'Mozilla/4.0 (compatible; Crawler; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1) (TARGUSinfo Web Crawler www.targusinfo.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1) (TARGUSinfo Web Crawler www.targusinfo.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,44721,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '(SnapPreviewBot)'), 1 => array(0 => 'Mozilla/5.0 (SnapPreviewBot) Gecko/X Firefox/1.5.0.9')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,273500,277597, 'Mozilla/5.0 (SnapPreviewBot) Gecko/X Firefox/1.5.0.9');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'SnapPreviewBot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; SnapPreviewBot; en-US; rv:1.8.0.9) Gecko/X Firefox/1.5.0.9')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,273500,277597, 'Mozilla/5.0 (compatible; SnapPreviewBot; en-US; rv:1.8.0.9) Gecko/X Firefox/1.5.0.9');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/5.0 (Windows; Crawler; U; Windows NT 6.0; en-US; rv:1.9.0.7) Gecko/X Firefox/3.0.7 (.NET CLR 3.5.30729)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,63585,62651,277597, 'Mozilla/5.0 (Windows; Crawler; U; Windows NT 6.0; en-US; rv:1.9.0.7) Gecko/X Firefox/3.0.7 (.NET CLR 3.5.30729)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'lb-spider/Mozilla/5.0', 1 => '(lb-spider;', 2 => 'http://www.linkbutler.de/spider;', 3 => 'spider'), 1 => array(0 => 'lb-spider/Mozilla/5.0 Gecko/X Firefox/10.0.2 (lb-spider; http://www.linkbutler.de/spider; spider@linkbutler.de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,455003,277597, 'lb-spider/Mozilla/5.0 Gecko/X Firefox/10.0.2 (lb-spider; http://www.linkbutler.de/spider; spider@linkbutler.de)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Moreoverbot/5.1 (+http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,474933, 'Moreoverbot/5.1 (+http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com) Mozilla/5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,474933, 'Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com) Mozilla/5.0');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Mozilla/5.0 Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,179816,474933, 'Mozilla/5.0 Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'VocusBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; aggregator VocusBot 0.4; +http://www.vocus.com/vnhs.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; aggregator VocusBot 0.4; +http://www.vocus.com/vnhs.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'NicheBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) Jayde NicheBot')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) Jayde NicheBot');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows Vista 6.1; java 1.6.0_13; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,179816,277597, 'yacybot (freeworld/global; amd64 Windows Vista 6.1; java 1.6.0_13; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AddSugarSpiderBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com');
+    $dl[] = array(311674,306950,522504,311776, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows NT; MS Search 6.0 Robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.0;.NET CLR 1.0.3705; ContextAd Bot 1.0)')), $ls);
@@ -9697,215 +9906,47 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,64445,391615,277597, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.0;.NET CLR 1.0.3705; ContextAd Bot 1.0)');
+    $dl[] = array(20443,68106,445491,311776, 'Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.0;.NET CLR 1.0.3705; ContextAd Bot 1.0)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://help.naver.com/robots/)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,232594,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322; MSIECrawler)');
+    $dl[] = array(106891,341819,198102,311776, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://help.naver.com/robots/)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,232594,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; .NET CLR 1.1.4322; MSIECrawler)');
+    $dl[] = array(106891,341819,198102,311776, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 5_0_1 like Mac OS X) (compatible; Yeti-Mobile/0.1; +http://help.naver.com/robots/)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'RexyoBot/2.1.24;'), 1 => array(0 => 'Mozilla/5.0 (compatible; RexyoBot/2.1.24; +http://www.rexyo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,232594,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; MSIECrawler)');
+    $dl[] = array(311674,20547,198102,311776, 'Mozilla/5.0 (compatible; RexyoBot/2.1.24; +http://www.rexyo.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; MSIECrawler)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1 (compatible; +http://www.baidu.com/search/spider.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,232594,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; MSIECrawler)');
+    $dl[] = array(381670,112475,112481,311776, 'Mozilla/5.0 (Linux;u;Android 2.3.7;zh-cn;) AppleWebKit/533.1 (KHTML,like Gecko) Version/4.0 Mobile Safari/533.1 (compatible; +http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'DoCoMo/2.0 P901i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/5.0 (Windows; Crawler; U; Windows NT 6.0; en-US; rv:1.9.0.7) Gecko/X Firefox/3.0.7 (.NET CLR 3.5.30729)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,276668,179816,338051, 'DoCoMo/2.0 P901i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'goo;+http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'DoCoMo/2.0 P900i(c100;TB;W24H11)(compatible; ichiro/mobile goo;+http://help.goo.ne.jp/door/crawler.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,276668,179816,338051, 'DoCoMo/2.0 P900i(c100;TB;W24H11)(compatible; ichiro/mobile goo;+http://help.goo.ne.jp/door/crawler.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; fr_crawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; fr_crawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; FunWebProducts; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; FunWebProducts; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 2.0.50727; MSIECrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_25; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_25; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_01; Europe/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_01; Europe/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_23; Europe/fi) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_23; Europe/fi) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_02; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_02; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_26; Europe/fr) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_26; Europe/fr) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/no) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/no) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_31; America/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,179816,277597, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_31; America/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; MSIECrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,232594,144811,277597, 'Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; MSIECrawler)');
+    $dl[] = array(311674,67164,65377,311776, 'Mozilla/5.0 (Windows; Crawler; U; Windows NT 6.0; en-US; rv:1.9.0.7) Gecko/X Firefox/3.0.7 (.NET CLR 3.5.30729)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MSIECrawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; FDM; MSIECrawler; Media Center PC 5.0)')), $ls);
@@ -9913,583 +9954,183 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,110069,391615,277597, 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; FDM; MSIECrawler; Media Center PC 5.0)');
+    $dl[] = array(311674,118535,445491,311776, 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; FDM; MSIECrawler; Media Center PC 5.0)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; MSIECrawler; Windows 95)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,338684,462141,277597, 'Mozilla/4.0 (compatible; MSIE 4.01; MSIECrawler; Windows 95)');
+    $dl[] = array(311674,118535,445491,311776, 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.0; MSIECrawler; Windows 95)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Moreoverbot/5.1 (+http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,338684,462141,277597, 'Mozilla/4.0 (compatible; MSIE 4.0; MSIECrawler; Windows 95)');
+    $dl[] = array(311674,311783,198102,536233, 'Moreoverbot/5.1 (+http://w.moreover.com; webmaster@moreover.com) Mozilla/5.0');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'YRSpider;', 1 => '+http://www.yunrang.com/yrspider.html)'), 1 => array(0 => 'Mozilla/5.0 (Android 3.0; YRSpider; +http://www.yunrang.com/yrspider.html)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com) Mozilla/5.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,206110,206116,277597, 'Mozilla/5.0 (Android 3.0; YRSpider; +http://www.yunrang.com/yrspider.html)');
+    $dl[] = array(311674,311783,198102,536233, 'Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com) Mozilla/5.0');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (HackerTarget.com Spider)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Moreoverbot/5.1'), 1 => array(0 => 'Mozilla/5.0 Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273283,273276,127353,277597, 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (HackerTarget.com Spider)');
+    $dl[] = array(311674,311783,198102,536233, 'Mozilla/5.0 Moreoverbot/5.1 (+http://www.moreover.com; webmaster@moreover.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Girafabot;', 1 => 'girafabot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Girafabot; girafabot at girafa dot com; http://www.girafa.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,273163,335508,277597, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Girafabot; girafabot at girafa dot com; http://www.girafa.com)');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Tobot/Nutch-1.4', 1 => '(\'tobot'), 1 => array(0 => 'Tobot/Nutch-1.4 (\'tobot at eel dot rdc dot toshiba dot co dot jp\')')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)/V1'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)/V1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,277604,179816,454144, 'Tobot/Nutch-1.4 (\'tobot at eel dot rdc dot toshiba dot co dot jp\')');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; fr_crawler)/V1');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'obot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; obot)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFinder-2.0; http://bloggz.se/crawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,335501,144811,277597, 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; obot)');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFinder-2.0; http://bloggz.se/crawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'LitlrBot', 1 => '(http://litlr.me/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 LitlrBot (http://litlr.me/bot.html)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'BlogCrawler-Fetchy;', 1 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; BlogCrawler-Fetchy; http://bloggz.se/crawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,302956,302963,277597, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 LitlrBot (http://litlr.me/bot.html)');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; BlogCrawler-Fetchy; http://bloggz.se/crawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'maxamine.com-robot)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1; maxamine.com-robot) Gecko/X Firefox/2.0')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,71451,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1; maxamine.com-robot) Gecko/X Firefox/2.0');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; YComp 5.0.2.6; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,15136,277597, 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0)');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; YComp 5.0.2.6; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'EtaoSpider/1.0;', 1 => 'http://open.etao.com/dev/EtaoSpider)'), 1 => array(0 => 'Mozilla/5.0 (compatible; EtaoSpider/1.0; http://open.etao.com/dev/EtaoSpider)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'http://domaindb.com/crawler/)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; DomainDB-1.2; http://domaindb.com/crawler/)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,15136,277597, 'Mozilla/5.0 (compatible; EtaoSpider/1.0; http://open.etao.com/dev/EtaoSpider)');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; DomainDB-1.2; http://domaindb.com/crawler/)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'http://bloggz.se/crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFetcher-2.0; http://bloggz.se/crawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,517563,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $dl[] = array(311674,68106,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.01; Windows NT 5.0; FeedFetcher-2.0; http://bloggz.se/crawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; Crawler; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,517563,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; Crawler; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,517563,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1) (TARGUSinfo Web Crawler www.targusinfo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,530802,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.1) (TARGUSinfo Web Crawler www.targusinfo.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,530802,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,530802,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,530802,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $dl[] = array(311674,46332,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; MSIECrawler)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Huaweisymantecspider'), 1 => array(0 => 'Huaweisymantecspider (compatible; MSIE 8.0; DSE-support@huaweisymantec.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,530802,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $dl[] = array(311674,311783,127094,311776, 'Huaweisymantecspider (compatible; MSIE 8.0; DSE-support@huaweisymantec.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'VocusBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; aggregator VocusBot 0.4; +http://www.vocus.com/vnhs.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,541774,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $dl[] = array(20443,67164,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; aggregator VocusBot 0.4; +http://www.vocus.com/vnhs.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'NicheBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) Jayde NicheBot')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,541774,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $dl[] = array(20443,67164,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) Jayde NicheBot');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows Vista 6.1; java 1.6.0_13; Europe/en) http://yacy.net/bot.html')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,541774,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows 7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'SuperBot/4.7.0.74 (Windows 7)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_23; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_23; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_26; Australia/en) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_26; Australia/en) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'WEBTRENDSPAGEINFOBOT)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko; WEBTRENDSPAGEINFOBOT) Version/5.0.3 Safari/533.19.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,110069,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko; WEBTRENDSPAGEINFOBOT) Version/5.0.3 Safari/533.19.4');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455821,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/X Firefox/11.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455821,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455821,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455003,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455003,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455003,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455003,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/X Firefox/10.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,455003,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/X Firefox/10.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.scanalert.com/bot.jsp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; ScanAlert; +http://www.scanalert.com/bot.jsp) Firefox/2.0.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,71451,277597, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; ScanAlert; +http://www.scanalert.com/bot.jsp) Firefox/2.0.0.3');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; Site Scanner Bot; +http://www.websiteprotection.com) Firefox/2.0.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,71451,277597, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; Site Scanner Bot; +http://www.websiteprotection.com) Firefox/2.0.0.3');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,456637,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/X Firefox/8.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,456637,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,456637,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,456637,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,456637,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '(compatible;archive.org_bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible;archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html) Firefox/0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,277604,15136,277597, 'Mozilla/5.0 (compatible;archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html) Firefox/0.0');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://repskan.com/bots.repskan'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,382089,277597, 'Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'http://repskan.com/bots.repskan'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux i686; rv:7.0.2) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,134842,382089,277597, 'Mozilla/5.0 (X11; Linux i686; rv:7.0.2) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yolinkBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.17) Gecko/X Firefox/2.0.0.17 yolinkBot')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,71451,277597, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.17) Gecko/X Firefox/2.0.0.17 yolinkBot');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,457586,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,457586,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,457586,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455003,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0) Gecko/X Firefox/10.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455003,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0) Gecko/X Firefox/10.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455003,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455003,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,273163,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,517563,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,517563,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,456637,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,456637,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,456637,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,382089,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,382089,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,382089,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,541774,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,541774,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.baidu.jp/spider/)'), 1 => array(0 => 'DoCoMo/2.0 P05A(c100;TB;W24H15) (compatible; BaiduMobaider/1.0; +http://www.baidu.jp/spider/)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(434505,276668,179816,277597, 'DoCoMo/2.0 P05A(c100;TB;W24H15) (compatible; BaiduMobaider/1.0; +http://www.baidu.jp/spider/)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455821,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,455821,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,354340,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/X Firefox/6.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,354340,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/X Firefox/6.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,354340,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,354340,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $dl[] = array(20443,67164,198102,311776, 'yacybot (freeworld/global; amd64 Windows Vista 6.1; java 1.6.0_13; Europe/en) http://yacy.net/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Claritybot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0 ; Claritybot)')), $ls);
@@ -10497,23 +10138,351 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,118306,277597, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0 ; Claritybot)');
+    $dl[] = array(20443,67164,127094,311776, 'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0 ; Claritybot)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'lb-spider/Mozilla/5.0', 1 => '(lb-spider;', 2 => 'http://www.linkbutler.de/spider;', 3 => 'spider'), 1 => array(0 => 'lb-spider/Mozilla/5.0 Gecko/X Firefox/10.0.2 (lb-spider; http://www.linkbutler.de/spider; spider@linkbutler.de)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,530802,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $dl[] = array(20443,311783,516168,311776, 'lb-spider/Mozilla/5.0 Gecko/X Firefox/10.0.2 (lb-spider; http://www.linkbutler.de/spider; spider@linkbutler.de)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'NewzCrawler/1.9', 1 => 'Crawler', 2 => 'http://www.newzcrawler.com/'), 1 => array(0 => 'NewzCrawler/1.9 (compatible; MSIE 6.00; Newz Crawler 1.9; http://www.newzcrawler.com/ )')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,530802,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $dl[] = array(311674,311783,34362,311776, 'NewzCrawler/1.9 (compatible; MSIE 6.00; Newz Crawler 1.9; http://www.newzcrawler.com/ )');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AugustBot/augstbot@163.com)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augstbot@163.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augstbot@163.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AugustBot/augustbot@163.com)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augustbot@163.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; AugustBot/augustbot@163.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Sitekit.net Linkchecker Bot;')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Sitekit.net Linkchecker Bot;');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'WormlyBot;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0) WormlyBot; (+http://wormly.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0) WormlyBot; (+http://wormly.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 6.0; Podtech Network; crawler_admin@podtech.net)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/5.0 (compatible; MSIE 6.0; Podtech Network; crawler_admin@podtech.net)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Crawler', 1 => '+http://www.singingfish.com/help/spider.html;', 2 => 'Spider'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Asterias Crawler v4; +http://www.singingfish.com/help/spider.html; webmaster@singingfish.com); SpiderThread Revision: 3.10')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0 compatible; Asterias Crawler v4; +http://www.singingfish.com/help/spider.html; webmaster@singingfish.com); SpiderThread Revision: 3.10');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'iaskspider/1.0;'), 1 => array(0 => 'Mozilla/5.0 (compatible; iaskspider/1.0; MSIE 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,311776, 'Mozilla/5.0 (compatible; iaskspider/1.0; MSIE 6.0)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; MSIECrawler; Windows 95)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,383259,522504,311776, 'Mozilla/4.0 (compatible; MSIE 4.01; MSIECrawler; Windows 95)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler;'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.0; MSIECrawler; Windows 95)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,383259,522504,311776, 'Mozilla/4.0 (compatible; MSIE 4.0; MSIECrawler; Windows 95)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'fr_crawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; fr_crawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; fr_crawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; FunWebProducts; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; FunWebProducts; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MindQuizSearchToolbar 1.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; MindQuizSearchToolbar 1.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Birubot/1.0)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Birubot/1.0) Gecko/X Firefox/3.0.8')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,65377,311776, 'Mozilla/5.0 (compatible; Birubot/1.0) Gecko/X Firefox/3.0.8');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://thumbshots.ru/bot)'), 1 => array(0 => 'Mozilla/5.0 (compatible; Thumbshots.ru; +http://thumbshots.ru/bot) Firefox/3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,65377,311776, 'Mozilla/5.0 (compatible; Thumbshots.ru; +http://thumbshots.ru/bot) Firefox/3');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AddSugarSpiderBot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0) AddSugarSpiderBot www.idealobserver.com');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,258919,157316,311776, 'Mozilla/4.0 (compatible; MSIE 5.5; Windows 98; Win 9x 4.90; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,258919,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; .NET CLR 1.1.4322; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,258919,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; .NET CLR 1.1.4322; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,258919,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; MSIECrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,258919,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_25; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_25; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_27; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_01; Europe/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_01; Europe/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_23; Europe/fi) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_23; Europe/fi) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_02; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0_02; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_26; Europe/fr) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_26; Europe/fr) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/no) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_29; Europe/no) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_31; America/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,198102,311776, 'yacybot (freeworld/global; amd64 Windows 7 6.1; java 1.6.0_31; America/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Girafabot;', 1 => 'girafabot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Girafabot; girafabot at girafa dot com; http://www.girafa.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,306950,379470,311776, 'Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; Girafabot; girafabot at girafa dot com; http://www.girafa.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'YRSpider;', 1 => '+http://www.yunrang.com/yrspider.html)'), 1 => array(0 => 'Mozilla/5.0 (Android 3.0; YRSpider; +http://www.yunrang.com/yrspider.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(91375,229177,228336,311776, 'Mozilla/5.0 (Android 3.0; YRSpider; +http://www.yunrang.com/yrspider.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Spider'), 1 => array(0 => 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (HackerTarget.com Spider)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(307085,307078,137280,311776, 'Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us) AppleWebKit/531.21.10 (HackerTarget.com Spider)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Tobot/Nutch-1.4', 1 => '(\'tobot'), 1 => array(0 => 'Tobot/Nutch-1.4 (\'tobot at eel dot rdc dot toshiba dot co dot jp\')')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,198102,514493, 'Tobot/Nutch-1.4 (\'tobot at eel dot rdc dot toshiba dot co dot jp\')');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0 slurp')), $ls);
@@ -10521,7 +10490,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,551409,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0 slurp');
+    $dl[] = array(20443,118535,618966,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp')), $ls);
@@ -10529,127 +10498,303 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,551409,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
+    $dl[] = array(20443,118535,618966,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 28)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,277604,144811,277597, 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 28)');
+    $dl[] = array(20443,118535,618966,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,457586,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
+    $dl[] = array(20443,118535,618966,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/X Firefox/15.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,457586,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp');
+    $dl[] = array(20443,118535,618966,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:15.0) Gecko/X Firefox/15.0 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.mcafeesecure.com/bot.jsp'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; DoCoMo; Nokia; SymbianOS; NetFront; XENIUM; PPC; ScanAlert; +http://www.mcafeesecure.com/bot.jsp )')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'LitlrBot', 1 => '(http://litlr.me/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 LitlrBot (http://litlr.me/bot.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,276668,275731,277597, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; DoCoMo; Nokia; SymbianOS; NetFront; XENIUM; PPC; ScanAlert; +http://www.mcafeesecure.com/bot.jsp )');
+    $dl[] = array(106891,341819,340980,311776, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3 LitlrBot (http://litlr.me/bot.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,21180,179816,277597, 'yacybot (freeworld/global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
+    $dl[] = array(311674,311783,16335,311776, 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal-global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/pt) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'EtaoSpider/1.0;', 1 => 'http://open.etao.com/dev/EtaoSpider)'), 1 => array(0 => 'Mozilla/5.0 (compatible; EtaoSpider/1.0; http://open.etao.com/dev/EtaoSpider)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,21180,179816,277597, 'yacybot (webportal-global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/pt) http://yacy.net/bot.html');
+    $dl[] = array(311674,311783,16335,311776, 'Mozilla/5.0 (compatible; EtaoSpider/1.0; http://open.etao.com/dev/EtaoSpider)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; Bottle of Smoke Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,206110,179816,277597, 'Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; Bottle of Smoke Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
+    $dl[] = array(20443,118535,639191,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Logos/0.9.4 (Linux; U; Android 3.0.1; en_US; Bottle of Smoke Build/Gtablet_BOS_a60)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/X Firefox/16.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,206110,179816,277597, 'Logos/0.9.4 (Linux; U; Android 3.0.1; en_US; Bottle of Smoke Build/Gtablet_BOS_a60)');
+    $dl[] = array(20443,118535,639191,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:16.0) Gecko/X Firefox/16.0 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'SEOChat::Bot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,64445,33546,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1');
+    $dl[] = array(20443,118535,639191,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,541774,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $dl[] = array(20443,118535,608141,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,541774,464013, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $dl[] = array(20443,118535,608141,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,382089,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $dl[] = array(20443,118535,608141,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,382089,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp');
+    $dl[] = array(20443,118535,582434,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:12.0) Gecko/X Firefox/12.0 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,287074,464013, 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/X Firefox/5.0 slurp');
+    $dl[] = array(20443,118535,582434,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,287074,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/X Firefox/5.0 slurp');
+    $dl[] = array(20443,118535,582434,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://www.scanalert.com/bot.jsp)'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; ScanAlert; +http://www.scanalert.com/bot.jsp) Firefox/2.0.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,74522,311776, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; ScanAlert; +http://www.scanalert.com/bot.jsp) Firefox/2.0.0.3');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; Site Scanner Bot; +http://www.websiteprotection.com) Firefox/2.0.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,74522,311776, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; Site Scanner Bot; +http://www.websiteprotection.com) Firefox/2.0.0.3');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,596661,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,596661,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,596661,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,596661,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,596661,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'obot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; obot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,379463,157316,311776, 'Mozilla/4.0 (compatible; MSIE 5.5; Windows NT 4.0; obot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,515352,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:11.0) Gecko/X Firefox/11.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,515352,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,515352,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows 7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'SuperBot/4.7.0.74 (Windows 7)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_23; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_23; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_26; Australia/en) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.6.0_26; Australia/en) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'yacybot (freeworld/global; x86 Windows 7 6.1; java 1.7.0; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'WEBTRENDSPAGEINFOBOT)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko; WEBTRENDSPAGEINFOBOT) Version/5.0.3 Safari/533.19.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,118535,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko; WEBTRENDSPAGEINFOBOT) Version/5.0.3 Safari/533.19.4');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516986,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:8.0) Gecko/X Firefox/8.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516986,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516986,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516986,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:8.0) Gecko/X Firefox/8.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516986,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0 slurp')), $ls);
@@ -10657,7 +10802,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,551409,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0 slurp');
+    $dl[] = array(20443,46332,618966,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp')), $ls);
@@ -10665,143 +10810,15 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,551409,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
+    $dl[] = array(20443,46332,618966,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'maxamine.com--robot)'), 1 => array(0 => 'Mozilla/4.74 [en] (Windows NT 5.0; U; maxamine.com--robot)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,64445,179816,277597, 'Mozilla/4.74 [en] (Windows NT 5.0; U; maxamine.com--robot)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,110075,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:2.0) Gecko/X Firefox/4.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,110075,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:2.0) Gecko/X Firefox/4.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'dotmobibot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16 (compatible; dotmobibot/1.0; +http://www.dotmobi.mobi)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(100555,273263,140391,277597, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16 (compatible; dotmobibot/1.0; +http://www.dotmobi.mobi)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,455821,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:11.0) Gecko/X Firefox/11.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,455821,464013, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'AdometryBot'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.24) Gecko/X Ubuntu/10.04 (lucid) Firefox/3.6.24 AdometryBot')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,464027,109250,277597, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.24) Gecko/X Ubuntu/10.04 (lucid) Firefox/3.6.24 AdometryBot');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Europe/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(59266,183350,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Europe/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Asia/ru) http://yacy.net/bot.html')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(59266,183350,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Asia/ru) http://yacy.net/bot.html');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,287074,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/X Firefox/5.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,110075,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/X Firefox/4.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,110069,110075,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/X Firefox/4.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'baiduspider;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Nokia6681/1.0 (2.30.0) Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; baiduspider; +http://www.baidu.com/search/spider.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(49047,30509,179816,277597, 'Nokia6681/1.0 (2.30.0) Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; baiduspider; +http://www.baidu.com/search/spider.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,354340,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:6.0) Gecko/X Firefox/6.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,44721,354340,464013, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0) Gecko/X Firefox/6.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; http://www.google.com/bot.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,414739,180752, 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,277604,414739,180752, 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
+    $dl[] = array(20443,46332,618966,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X Firefox/15.0.1 slurp slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'DynoBot/0.8.2528'), 1 => array(0 => 'Mozilla/4.0 (UNIX; I; amd64) DynoBot/0.8.2528')), $ls);
@@ -10809,23 +10826,439 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,277604,179816,277597, 'Mozilla/4.0 (UNIX; I; amd64) DynoBot/0.8.2528');
+    $dl[] = array(20443,311783,198102,311776, 'Mozilla/4.0 (UNIX; I; amd64) DynoBot/0.8.2528');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30729) (TARGUSinfo Web Crawler www.targusinfo.com)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,63585,63592,277597, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30729) (TARGUSinfo Web Crawler www.targusinfo.com)');
+    $dl[] = array(20443,46332,516168,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0) Gecko/X Firefox/10.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,517563,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $dl[] = array(20443,46332,516168,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0) Gecko/X Firefox/10.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,516168,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,516168,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,582434,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,582434,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X Firefox/12.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,596661,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,596661,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,596661,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,596661,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X Firefox/13.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,608141,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,608141,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X Firefox/14.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Robot)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,306950,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:16.0) Gecko/X Firefox/16.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,639191,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:16.0) Gecko/X Firefox/16.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:16.0) Gecko/X Firefox/16.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,639191,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:16.0) Gecko/X Firefox/16.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,515352,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,515352,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X Firefox/11.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://www.mcafeesecure.com/bot.jsp'), 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; DoCoMo; Nokia; SymbianOS; NetFront; XENIUM; PPC; ScanAlert; +http://www.mcafeesecure.com/bot.jsp )')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,309889,309896,311776, 'Mozilla/5.0 (compatible; MSIE 7.0; MSIE 6.0; DoCoMo; Nokia; SymbianOS; NetFront; XENIUM; PPC; ScanAlert; +http://www.mcafeesecure.com/bot.jsp )');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,516986,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,516986,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/X Firefox/8.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,516986,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0) Gecko/X Firefox/8.0 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,402359,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/X Firefox/6.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,402359,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/X Firefox/6.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,402359,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,402359,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516168,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516168,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.1) Gecko/X Firefox/10.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516168,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516168,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/X Firefox/10.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,516168,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0) Gecko/X Firefox/10.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,20547,198102,311776, 'yacybot (freeworld/global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (webportal-global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/pt) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,20547,198102,311776, 'yacybot (webportal-global; amd64 Windows Server 2008 R2 6.1; java 1.6.0_29; Europe/pt) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,517942,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,517942,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,608141,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,608141,524376, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,470582,199038, 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 FAKE (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,470582,199038, 'Mozilla/4.0 (MobilePhone SCP-5500/US/1.0) NetFront/3.0 MMP/2.0 (compatible; Googlebot/2.1; http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,640202,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.79 Safari/537.4 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,640202,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,640202,524376, 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Europe/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(61820,202025,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Europe/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Asia/ru) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(61820,202025,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.6.8; java 1.6.0_29; Asia/ru) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,322649,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:5.0) Gecko/X Firefox/5.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,322649,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:5.0) Gecko/X Firefox/5.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'SEOChat::Bot'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,68106,34362,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0) SEOChat::Bot v1.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://www.baidu.jp/spider/)'), 1 => array(0 => 'DoCoMo/2.0 P05A(c100;TB;W24H15) (compatible; BaiduMobaider/1.0; +http://www.baidu.jp/spider/)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(492966,309889,198102,311776, 'DoCoMo/2.0 P05A(c100;TB;W24H15) (compatible; BaiduMobaider/1.0; +http://www.baidu.jp/spider/)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '+http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'DoCoMo/2.0 P901i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,309889,198102,382573, 'DoCoMo/2.0 P901i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/door/crawler.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'goo;+http://help.goo.ne.jp/door/crawler.html)'), 1 => array(0 => 'DoCoMo/2.0 P900i(c100;TB;W24H11)(compatible; ichiro/mobile goo;+http://help.goo.ne.jp/door/crawler.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,309889,198102,382573, 'DoCoMo/2.0 P900i(c100;TB;W24H11)(compatible; ichiro/mobile goo;+http://help.goo.ne.jp/door/crawler.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:15.0) Gecko/X Firefox/15.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,618966,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,618966,524376, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:15.0) Gecko/X Firefox/15.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:16.0) Gecko/X Firefox/16.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,639191,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:16.0) Gecko/X Firefox/16.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,639191,524376, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:16.0) Gecko/X Firefox/16.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'maxamine.com--robot)'), 1 => array(0 => 'Mozilla/4.74 [en] (Windows NT 5.0; U; maxamine.com--robot)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,68106,198102,311776, 'Mozilla/4.74 [en] (Windows NT 5.0; U; maxamine.com--robot)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'SnapPreviewBot'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/X Firefox/1.5.0.7 SnapPreviewBot')), $ls);
@@ -10833,23 +11266,87 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,273500,277597, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/X Firefox/1.5.0.7 SnapPreviewBot');
+    $dl[] = array(20443,145607,307356,311776, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/X Firefox/1.5.0.7 SnapPreviewBot');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 FreeBSD 8.2-STABLE; java 1.6.0_03-p4; Europe/de) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,464034,179816,277597, 'yacybot (freeworld/global; amd64 FreeBSD 8.2-STABLE; java 1.6.0_03-p4; Europe/de) http://yacy.net/bot.html');
+    $dl[] = array(20443,46332,117688,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 FreeBSD 7.1-STABLE; java 1.6.0_07; Europe/en) http://yacy.net/bot.html')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:2.0) Gecko/X Firefox/4.0 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,464034,179816,277597, 'yacybot (freeworld/global; amd64 FreeBSD 7.1-STABLE; java 1.6.0_07; Europe/en) http://yacy.net/bot.html');
+    $dl[] = array(20443,46332,117688,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:2.0) Gecko/X Firefox/4.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,515352,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:11.0) Gecko/X Firefox/11.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,515352,524376, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:11.0) Gecko/X Firefox/11.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,582434,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,582434,524376, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:12.0) Gecko/X Firefox/12.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/X Firefox/5.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,322649,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/X Firefox/5.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; Bottle of Smoke Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,229177,198102,311776, 'Mozilla/5.0 (Linux; U; Android 3.0.1; en-us; Bottle of Smoke Build/HRI66) AppleWebKit/534.13 (KHTML, like Gecko) Version/4.0 Safari/534.13');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,117688,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/X Firefox/4.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,117688,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0) Gecko/X Firefox/4.0 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/nl) http://yacy.net/bot.html')), $ls);
@@ -10857,7 +11354,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,350663,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/nl) http://yacy.net/bot.html');
+    $dl[] = array(61820,397809,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/nl) http://yacy.net/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Asia/en) http://yacy.net/bot.html')), $ls);
@@ -10865,7 +11362,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,350663,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Asia/en) http://yacy.net/bot.html');
+    $dl[] = array(61820,397809,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Asia/en) http://yacy.net/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/it) http://yacy.net/bot.html')), $ls);
@@ -10873,7 +11370,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,350663,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/it) http://yacy.net/bot.html');
+    $dl[] = array(61820,397809,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.2; java 1.6.0_29; Europe/it) http://yacy.net/bot.html');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.3; java 1.6.0_29; Europe/de) http://yacy.net/bot.html')), $ls);
@@ -10881,79 +11378,39 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,350663,179816,277597, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.3; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
+    $dl[] = array(61820,397809,198102,311776, 'yacybot (freeworld/global; x86_64 Mac OS X 10.7.3; java 1.6.0_29; Europe/de) http://yacy.net/bot.html');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 ( .NET CLR 3.5.30729; .NET4.0C) slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,109250,464013, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 ( .NET CLR 3.5.30729; .NET4.0C) slurp');
+    $dl[] = array(20443,118535,517942,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.17) Gecko/X Firefox/3.6.17 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,109250,464013, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.17) Gecko/X Firefox/3.6.17 slurp');
+    $dl[] = array(20443,118535,517942,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,109250,464013, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 slurp');
+    $dl[] = array(20443,118535,517942,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'flipboard.com/crawler'), 1 => array(0 => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.8; flipboard.com/crawler rv:0.0.5) Gecko Firefox')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'Crawler'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30729) (TARGUSinfo Web Crawler www.targusinfo.com)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(59266,183350,154985,277597, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.8; flipboard.com/crawler rv:0.0.5) Gecko Firefox');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(173249,36707,179816,277597, 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'turbotabbee/TSV2.0/1.02Q;'), 1 => array(0 => 'Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,49191,277597, 'Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2.1');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,456637,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:8.0) Gecko/X Firefox/8.0 slurp');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'Newscrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.0; Linux; Hapax Newscrawler)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(277516,134842,15136,277597, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux; Hapax Newscrawler)');
-    $ls = $ns;
-  }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,63585,455003,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
+    $dl[] = array(311674,67164,66311,311776, 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/4.0; SLCC1; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.5.21022; .NET CLR 3.5.30729; .NET CLR 3.0.30729) (TARGUSinfo Web Crawler www.targusinfo.com)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => '(ITABot;', 1 => 'robot@itasoftware.com)'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2) Gecko Firefox/3.5 (ITABot; robot@itasoftware.com)')), $ls);
@@ -10961,39 +11418,103 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,134842,181263,277597, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2) Gecko Firefox/3.5 (ITABot; robot@itasoftware.com)');
+    $dl[] = array(20443,145607,199667,311776, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2) Gecko Firefox/3.5 (ITABot; robot@itasoftware.com)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 FreeBSD 8.2-STABLE; java 1.6.0_03-p4; Europe/de) http://yacy.net/bot.html')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,530802,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $dl[] = array(20443,524397,198102,311776, 'yacybot (freeworld/global; amd64 FreeBSD 8.2-STABLE; java 1.6.0_03-p4; Europe/de) http://yacy.net/bot.html');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; amd64 FreeBSD 7.1-STABLE; java 1.6.0_07; Europe/en) http://yacy.net/bot.html')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,457586,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
+    $dl[] = array(20443,524397,198102,311776, 'yacybot (freeworld/global; amd64 FreeBSD 7.1-STABLE; java 1.6.0_07; Europe/en) http://yacy.net/bot.html');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'baiduspider;', 1 => '+http://www.baidu.com/search/spider.html)'), 1 => array(0 => 'Nokia6681/1.0 (2.30.0) Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; baiduspider; +http://www.baidu.com/search/spider.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,382089,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $dl[] = array(50943,31272,198102,311776, 'Nokia6681/1.0 (2.30.0) Series60/2.6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; baiduspider; +http://www.baidu.com/search/spider.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11 slurp')), $ls);
+  $ns = E27($segments, array(0 => array(0 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,544365,464013, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11 slurp');
+    $dl[] = array(190406,38567,198102,311776, 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 ( .NET CLR 3.5.30729; .NET4.0C) slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,116869,524376, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 ( .NET CLR 3.5.30729; .NET4.0C) slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.17) Gecko/X Firefox/3.6.17 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,116869,524376, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.17) Gecko/X Firefox/3.6.17 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,116869,524376, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Firefox/3.6.13 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.4) Gecko/X http://ow.ly web crawler (.NET CLR 3.5.30729)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,67164,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.4) Gecko/X http://ow.ly web crawler (.NET CLR 3.5.30729)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'SuperBot/4.7.0.74'), 1 => array(0 => 'SuperBot/4.7.0.74 (Windows Vista)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,67164,198102,311776, 'SuperBot/4.7.0.74 (Windows Vista)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yacybot', 1 => 'http://yacy.net/bot.html'), 1 => array(0 => 'yacybot (freeworld/global; x86 Windows Vista 6.0; java 1.7.0_02; Europe/de) http://yacy.net/bot.html')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,67164,198102,311776, 'yacybot (freeworld/global; x86 Windows Vista 6.0; java 1.7.0_02; Europe/de) http://yacy.net/bot.html');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'turbotabbee/TSV2.0/1.02Q;'), 1 => array(0 => 'Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,51124,311776, 'Opera/9.70 (Linux armv7l ; U; turbotabbee/TSV2.0/1.02Q; fr) Presto/2.2.1');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:8.0) Gecko/X Firefox/8.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,516986,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:8.0) Gecko/X Firefox/8.0 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'NimbleCrawler', 1 => 'NimbleCrawler', 2 => 'crawler'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.7) NimbleCrawler 1.11 obeys UserAgent NimbleCrawler For problems contact: crawler_at_dataalchemy.com')), $ls);
@@ -11001,7 +11522,87 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,64445,179816,277597, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.7) NimbleCrawler 1.11 obeys UserAgent NimbleCrawler For problems contact: crawler_at_dataalchemy.com');
+    $dl[] = array(311674,68106,198102,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.7) NimbleCrawler 1.11 obeys UserAgent NimbleCrawler For problems contact: crawler_at_dataalchemy.com');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,516168,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:10.0.2) Gecko/X Firefox/10.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,644322,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:13.0) Gecko/X Firefox/13.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,596661,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:13.0) Gecko/X Firefox/13.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,517942,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:9.0.1) Gecko/X Firefox/9.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(163047,0,105,199038, 'Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD62) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '(compatible;archive.org_bot;'), 1 => array(0 => 'Mozilla/5.0 (compatible;archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html) Firefox/0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,16335,311776, 'Mozilla/5.0 (compatible;archive.org_bot; Archive-It; +http://archive-it.org/files/site-owners.html) Firefox/0.0');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,625194,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/21.0.1180.89 Safari/537.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,610731,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,402359,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:6.0) Gecko/X Firefox/6.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,402359,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0) Gecko/X Firefox/6.0 slurp');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp')), $ls);
@@ -11009,7 +11610,55 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,63585,354340,464013, 'Mozilla/5.0 (Windows NT 6.0; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $dl[] = array(20443,67164,402359,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:6.0.2) Gecko/X Firefox/6.0.2 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Googlebot/2.1; +http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,34362,199038, 'Mozilla/4.0 (compatible; MSIE 6.0; Googlebot/2.1; +http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,643288,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/17.0 Firefox/17.0 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'crawler'), 1 => array(0 => 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 28)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,311783,157316,311776, 'Y!J-BRO/YFSJ crawler (compatible; Mozilla 4.0; MSIE 5.5; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-15.html; YahooFeedSeekerJp/2.0; users 0; views 28)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,117688,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:2.0.1) Gecko/X Firefox/4.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:14.0) Gecko/X Firefox/14.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(61820,202025,608141,524376, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:14.0) Gecko/X Firefox/14.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Newscrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 5.0; Linux; Hapax Newscrawler)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,145607,16335,311776, 'Mozilla/4.0 (compatible; MSIE 5.0; Linux; Hapax Newscrawler)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'MSIECrawler)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/18.0.1025.142; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)')), $ls);
@@ -11017,7 +11666,23 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(277516,44721,454151,277597, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/18.0.1025.142; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)');
+    $dl[] = array(311674,46332,514500,311776, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; chromeframe/18.0.1025.142; .NET CLR 1.1.4322; InfoPath.2; MSIECrawler)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '(Crawler;'), 1 => array(0 => 'Mozilla/5.0 (Windows; N; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)/Nutch-1.1 (Crawler; lucene.apache.org/nutch/; a@b.net)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,46332,34362,514493, 'Mozilla/5.0 (Windows; N; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727)/Nutch-1.1 (Crawler; lucene.apache.org/nutch/; a@b.net)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'dotmobibot/1.0;'), 1 => array(0 => 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16 (compatible; dotmobibot/1.0; +http://www.dotmobi.mobi)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106891,307065,152216,311776, 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_0 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7A341 Safari/528.16 (compatible; dotmobibot/1.0; +http://www.dotmobi.mobi)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
@@ -11025,15 +11690,143 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,302956,302963,180752, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(106891,341819,340980,199038, 'Mozilla/5.0 (iPhone; CPU iPhone OS 5_0_1 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A405 Safari/7534.48.3 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
     $ls = $ns;
   }
-  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
+  $ns = E27($segments, array(0 => array(0 => 'DapperBot/0.6'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.12) Gecko/X Firefox/3.0.12 (.NET CLR 3.5.30729) DapperBot/0.6 (http://dev.dapper.net/control-access.php)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(173249,36707,36713,180752, 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $dl[] = array(20443,67164,65377,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.12) Gecko/X Firefox/3.0.12 (.NET CLR 3.5.30729) DapperBot/0.6 (http://dev.dapper.net/control-access.php)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'trendictionbot0.4.5;', 1 => 'http://www.trendiction.de/bot;'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.4.5; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,65377,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.4.5; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'trendictionbot0.5.0;', 1 => 'http://www.trendiction.de/bot;'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,65377,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-GB; rv:1.0; trendictionbot0.5.0; trendiction search; http://www.trendiction.de/bot; please let us know of any problems; web at trendiction.com) Gecko/X Firefox/3.0.0.11');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,435208,524376, 'Mozilla/5.0 (Windows NT 6.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,435208,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,118535,435208,524376, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'SurveyBot/2.3'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,199667,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en; rv:1.9.0.13) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729) SurveyBot/2.3 (DomainTools)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Diffbot/0.1;', 1 => '+http://www.diffbot.com)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,199667,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.2) Gecko/X Firefox/3.5.2 (.NET CLR 3.5.30729; Diffbot/0.1; +http://www.diffbot.com)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => '(SnapPreviewBot)'), 1 => array(0 => 'Mozilla/5.0 (SnapPreviewBot) Gecko/X Firefox/1.5.0.9')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,307356,311776, 'Mozilla/5.0 (SnapPreviewBot) Gecko/X Firefox/1.5.0.9');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'SnapPreviewBot;'), 1 => array(0 => 'Mozilla/5.0 (compatible; SnapPreviewBot; en-US; rv:1.8.0.9) Gecko/X Firefox/1.5.0.9')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,311783,307356,311776, 'Mozilla/5.0 (compatible; SnapPreviewBot; en-US; rv:1.8.0.9) Gecko/X Firefox/1.5.0.9');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://spinn3r.com/robot)'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/X Firefox/3.0.19')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,65377,311776, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.19; aggregator:Spinn3r (Spinn3r 3.1); http://spinn3r.com/robot) Gecko/X Firefox/3.0.19');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'spider'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.5) Gecko/X Gentoo Firefox/3.0.5 (Dot TK - spider 3.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,65377,311776, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.5) Gecko/X Gentoo Firefox/3.0.5 (Dot TK - spider 3.0)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,435208,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp', 1 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,435208,524376, 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://repskan.com/bots.repskan'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,435208,311776, 'Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'http://repskan.com/bots.repskan'), 1 => array(0 => 'Mozilla/5.0 (X11; Linux i686; rv:7.0.2) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,145607,435208,311776, 'Mozilla/5.0 (X11; Linux i686; rv:7.0.2) Gecko/X Firefox/7.0.1 http://repskan.com/bots.repskan');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Bot'), 1 => array(0 => 'Logos/0.9.4 (Linux; U; Android 3.0.1; en_US; Bottle of Smoke Build/Gtablet_BOS_a60)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(91375,229177,198102,311776, 'Logos/0.9.4 (Linux; U; Android 3.0.1; en_US; Bottle of Smoke Build/Gtablet_BOS_a60)');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Googlebot 2.1')), $ls);
@@ -11041,7 +11834,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,110069,179816,180752, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Googlebot 2.1');
+    $dl[] = array(20443,118535,198102,199038, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8) Gecko/20100722 Googlebot 2.1');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'Googlebot/2.1;', 1 => 'http://www.google.com/bot.html;'), 1 => array(0 => 'Nokia5200/2.0 (07.20) Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/5.0 (iPhone; U; CPU iPhone 0S 3.0 like Mac 0S X; en-us; compatible; Googlebot/2.1; http://www.google.com/bot.html; AppleWebKit/528.18(KHTML,like Gecko) Version/4.0 Mobile/7A341 Safari/52')), $ls);
@@ -11049,7 +11842,7 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(100555,16057,16063,180752, 'Nokia5200/2.0 (07.20) Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/5.0 (iPhone; U; CPU iPhone 0S 3.0 like Mac 0S X; en-us; compatible; Googlebot/2.1; http://www.google.com/bot.html; AppleWebKit/528.18(KHTML,like Gecko) Version/4.0 Mobile/7A341 Safari/52');
+    $dl[] = array(20443,15388,15394,199038, 'Nokia5200/2.0 (07.20) Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/5.0 (iPhone; U; CPU iPhone 0S 3.0 like Mac 0S X; en-us; compatible; Googlebot/2.1; http://www.google.com/bot.html; AppleWebKit/528.18(KHTML,like Gecko) Version/4.0 Mobile/7A341 Safari/52');
     $ls = $ns;
   }
   $ns = E27($segments, array(0 => array(0 => 'OMObot'), 1 => array(0 => 'SonyEricssonT610 - OMObot [Orange WAP service monitoring]')), $ls);
@@ -11057,7 +11850,55 @@ function _H27($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,22205,179816,277597, 'SonyEricssonT610 - OMObot [Orange WAP service monitoring]');
+    $dl[] = array(20443,21576,198102,311776, 'SonyEricssonT610 - OMObot [Orange WAP service monitoring]');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'maxamine.com-robot)'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1; maxamine.com-robot) Gecko/X Firefox/2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,46332,74522,311776, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1; maxamine.com-robot) Gecko/X Firefox/2.0');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'slurp'), 1 => array(0 => 'Mozilla/5.0 (Windows NT 6.0; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,435208,524376, 'Mozilla/5.0 (Windows NT 6.0; rv:7.0.1) Gecko/X Firefox/7.0.1 slurp');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'yolinkBot'), 1 => array(0 => 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.17) Gecko/X Firefox/2.0.0.17 yolinkBot')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,67164,74522,311776, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.17) Gecko/X Firefox/2.0.0.17 yolinkBot');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'AdometryBot'), 1 => array(0 => 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.24) Gecko/X Ubuntu/10.04 (lucid) Firefox/3.6.24 AdometryBot')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(20443,524390,116869,311776, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.24) Gecko/X Ubuntu/10.04 (lucid) Firefox/3.6.24 AdometryBot');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'Googlebot-Mobile/2.1;', 1 => '+http://www.google.com/bot.html)'), 1 => array(0 => 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(190406,38567,37632,199038, 'Nokia6820/2.0 (4.83) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)');
+    $ls = $ns;
+  }
+  $ns = E27($segments, array(0 => array(0 => 'flipboard.com/crawler'), 1 => array(0 => 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.8; flipboard.com/crawler rv:0.0.5) Gecko Firefox')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311674,202025,169160,311776, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.8; flipboard.com/crawler rv:0.0.5) Gecko Firefox');
     $ls = $ns;
   }
   return $dl;

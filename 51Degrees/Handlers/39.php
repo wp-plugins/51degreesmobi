@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY-MX330/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY-SX300/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1 FLY-SX300/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY-SX310/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly-SX100/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -87,7 +80,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY-MX300/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -96,7 +89,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY-SL399e/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -105,7 +98,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly MC100/S120 Release/2008.02.26 Profile/MIDP2.0 Configuration/CLDC1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -114,7 +107,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly-LX610/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -123,7 +116,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly-SX200/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -132,7 +125,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly-LX600/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -141,7 +134,16 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
+  }
+  $ua = 'Fly V100/2007.10.22 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'FLY M130 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -150,16 +152,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
-  }
-  $ua = 'Fly-SX315/Profile/MIDP.2.0Configuration/CLDC.1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly-E105/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -168,16 +161,16 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
-  $ua = 'Fly-DS500/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ua = 'Fly_E146/WapBrowser2.0/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,15136,6, $ua);
+    $dl[] = array(20443,20547,16335,6, $ua);
   }
   $ua = 'Fly_E190 Wi-Fi    Opera/9.80 (MTK; Nucleus; U; ru-RU) Presto/2.4.18 Version/10.00';
   $ns = E39($useragent, $ua, $ls);
@@ -186,7 +179,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,221066,6, $ua);
+    $dl[] = array(20443,20547,245270,6, $ua);
   }
   $ua = 'FLY-MP500/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -195,7 +188,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,20173,6, $ua);
+    $dl[] = array(20443,20547,20641,6, $ua);
   }
   $ua = 'FLY-MX200i/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -204,7 +197,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,20173,6, $ua);
+    $dl[] = array(20443,20547,20641,6, $ua);
   }
   $ua = 'FLY-SL500m/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -213,7 +206,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,20173,6, $ua);
+    $dl[] = array(20443,20547,20641,6, $ua);
   }
   $ua = 'FLY-SL300m/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -222,7 +215,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,20173,6, $ua);
+    $dl[] = array(20443,20547,20641,6, $ua);
   }
   $ua = 'FLY-SX205/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -231,7 +224,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(21187,21180,20173,6, $ua);
+    $dl[] = array(20443,20547,20641,6, $ua);
   }
   $ua = 'Fly DS160, Fly DS160';
   $ns = E39($useragent, $ua, $ls);
@@ -240,7 +233,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75581,21180,15136,6, $ua);
+    $dl[] = array(79122,20547,16335,6, $ua);
   }
   $ua = 'Fly DS160';
   $ns = E39($useragent, $ua, $ls);
@@ -249,7 +242,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75581,21180,15136,6, $ua);
+    $dl[] = array(79122,20547,16335,6, $ua);
   }
   $ua = 'Fly_DS160/Configuration/WapBrowser2.0 Novarra-Vision/8.0';
   $ns = E39($useragent, $ua, $ls);
@@ -258,7 +251,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75581,21180,15136,6, $ua);
+    $dl[] = array(79122,20547,16335,6, $ua);
   }
   $ua = 'Fly_DS170 Configuration/WAP2.0/Browser';
   $ns = E39($useragent, $ua, $ls);
@@ -267,34 +260,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(75581,21180,15136,6, $ua);
-  }
-  $ua = 'Fly_E135/MAUIBrowser/Configuration/WAP2.0 Novarra-Vision/8.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(216739,21180,212214,6, $ua);
-  }
-  $ua = 'Fly_E135/MAUIBrowser/Configuration/WAP2.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(216739,21180,212214,6, $ua);
-  }
-  $ua = 'Fly_Q400/WapBrowserprofile/WIFIprofile/MIDP2.0Configuration/CLDC1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(248777,21180,15136,6, $ua);
+    $dl[] = array(79122,20547,16335,6, $ua);
   }
   $ua = 'Fly_E140_India/WAPBrowser2.0Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -303,7 +269,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315641,21180,15136,6, $ua);
+    $dl[] = array(355812,20547,16335,6, $ua);
   }
   $ua = 'Fly_E140/WAPBrowser2.0Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -312,7 +278,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315641,21180,15136,6, $ua);
+    $dl[] = array(355812,20547,16335,6, $ua);
   }
   $ua = 'Fly_E140/WAPBrowser2.0Profile/MIDP-2.0 Configuration/CLDC-1.1, Fly_E140/WAPBrowser2.0Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -321,7 +287,34 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(315641,21180,15136,6, $ua);
+    $dl[] = array(355812,20547,16335,6, $ua);
+  }
+  $ua = 'Fly_Q400/WapBrowserprofile/WIFIprofile/MIDP2.0Configuration/CLDC1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(278840,20547,16335,6, $ua);
+  }
+  $ua = 'Fly_E135/MAUIBrowser/Configuration/WAP2.0 Novarra-Vision/8.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(240165,20547,235225,6, $ua);
+  }
+  $ua = 'Fly_E135/MAUIBrowser/Configuration/WAP2.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(240165,20547,235225,6, $ua);
   }
   $ua = 'FLY-SX210/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -330,7 +323,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(163159,21180,15136,6, $ua);
+    $dl[] = array(178212,20547,16335,6, $ua);
   }
   $ua = 'FLY-SX210/Profile/MIDP.2.0Configuration/CLDC.1.0, FLY-SX210/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -339,7 +332,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(163159,21180,15136,6, $ua);
+    $dl[] = array(178212,20547,16335,6, $ua);
   }
   $ua = 'FLY-SX210/Profile/MIDP.2.0Configuration/CLDC.1.0 FLY-SX210/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -348,7 +341,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(163159,21180,15136,6, $ua);
+    $dl[] = array(178212,20547,16335,6, $ua);
   }
   $ua = 'Fly_DS150/MAUIBrowser/Configuration/WAP2.0, Fly_DS150/MAUIBrowser/Configuration/WAP2.0';
   $ns = E39($useragent, $ua, $ls);
@@ -357,7 +350,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(329433,21180,212214,6, $ua);
+    $dl[] = array(372072,20547,235225,6, $ua);
   }
   $ua = 'Fly_DS150/MAUIBrowser/Configuration/WAP2.0';
   $ns = E39($useragent, $ua, $ls);
@@ -366,178 +359,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(329433,21180,212214,6, $ua);
-  }
-  $ua = 'Fly_DS100/WAP2.0Configuration/Browser';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(343169,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-SL600/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(345761,21180,20173,6, $ua);
-  }
-  $ua = 'FLY-SL600/BSI AU.Browser/2.0 QO3C1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(345761,21180,20173,6, $ua);
-  }
-  $ua = 'FLY_SL400m/(06.11.27)Ver01.06/WAP2.0, FLY_SL400m/(06.11.27)Ver01.06/WAP2.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(86955,21180,15136,6, $ua);
-  }
-  $ua = 'FLY_SL400m/(07.05.14)Ver00.06/WAP2.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(86955,21180,15136,6, $ua);
-  }
-  $ua = 'Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0, Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(225537,21180,15136,6, $ua);
-  }
-  $ua = 'Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(225537,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1, FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(229707,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(229707,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-2040L/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(343961,21180,20173,6, $ua);
-  }
-  $ua = 'FLY-2040i/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(343961,21180,20173,6, $ua);
-  }
-  $ua = 'Fly_DS185/WAP2.0Configuration/Browser';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(180903,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1, FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(235054,21180,15136,6, $ua);
-  }
-  $ua = 'FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(235054,21180,15136,6, $ua);
-  }
-  $ua = 'Fly-HT2_i08 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(369488,21180,15136,6, $ua);
-  }
-  $ua = 'Fly V180 DS/2.0 (5.0614.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(165031,30509,30587,6, $ua);
-  }
-  $ua = 'Fly-SX225/Profile/MIDP.2.0Configuration/CLDC.1.0';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(257545,21180,15136,6, $ua);
-  }
-  $ua = 'Fly_DS210 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(313984,21180,15136,6, $ua);
-  }
-  $ua = 'Fly_MC150ds/WAP2.0Configuration/Browser';
-  $ns = E39($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(324602,21180,15136,6, $ua);
+    $dl[] = array(372072,20547,235225,6, $ua);
   }
   $ua = 'Fly-B400/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -546,16 +368,106 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334341,21180,15136,6, $ua);
+    $dl[] = array(378131,20547,16335,6, $ua);
   }
-  $ua = 'FLY-SL500i/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
+  $ua = 'FLY_SL400m/(06.11.27)Ver01.06/WAP2.0, FLY_SL400m/(06.11.27)Ver01.06/WAP2.0';
   $ns = E39($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(345689,21180,20173,6, $ua);
+    $dl[] = array(91476,20547,16335,6, $ua);
+  }
+  $ua = 'FLY_SL400m/(07.05.14)Ver00.06/WAP2.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(91476,20547,16335,6, $ua);
+  }
+  $ua = 'Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0, Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(251170,20547,16335,6, $ua);
+  }
+  $ua = 'Fly-E300/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(251170,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1, FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(255373,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SX390/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(255373,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-2040L/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(389525,20547,20641,6, $ua);
+  }
+  $ua = 'FLY-2040i/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(389525,20547,20641,6, $ua);
+  }
+  $ua = 'Fly_DS100/WAP2.0Configuration/Browser';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(388735,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SL600/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(391815,20547,20641,6, $ua);
+  }
+  $ua = 'FLY-SL600/BSI AU.Browser/2.0 QO3C1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(391815,20547,20641,6, $ua);
   }
   $ua = 'Fly-V130/Profile/MIDP.2.0Configuration/CLDC.1.0';
   $ns = E39($useragent, $ua, $ls);
@@ -564,16 +476,70 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(346193,21180,15136,6, $ua);
+    $dl[] = array(392345,20547,16335,6, $ua);
   }
-  $ua = 'Fly_2040';
+  $ua = 'Fly-HT2_i08 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(343961,21180,15136,6, $ua);
+    $dl[] = array(420405,20547,16335,6, $ua);
+  }
+  $ua = 'Fly V180 DS/2.0 (5.0614.0) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0Configuration/CLDC-1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(180625,31272,31369,6, $ua);
+  }
+  $ua = 'Fly_DS185/WAP2.0Configuration/Browser';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(199225,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1, FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(261957,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SX305/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(261957,20547,16335,6, $ua);
+  }
+  $ua = 'Fly-SX225/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(289460,20547,16335,6, $ua);
+  }
+  $ua = 'Fly_DS210 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(353766,20547,16335,6, $ua);
   }
   $ua = 'FLY-2040/2.0 (03.15) Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -582,7 +548,16 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(343961,21180,15136,6, $ua);
+    $dl[] = array(389525,20547,16335,6, $ua);
+  }
+  $ua = 'Fly_2040';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(389525,20547,16335,6, $ua);
   }
   $ua = 'FLY B700 WAP Browser';
   $ns = E39($useragent, $ua, $ls);
@@ -591,7 +566,25 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(429262,21180,15136,6, $ua);
+    $dl[] = array(487128,20547,16335,6, $ua);
+  }
+  $ua = 'Fly_MC150ds/WAP2.0Configuration/Browser';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(366329,20547,16335,6, $ua);
+  }
+  $ua = 'FLY-SL500i/BSI AU.Browser/2.0 QO3C1 MMP/1.0';
+  $ns = E39($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(391728,20547,20641,6, $ua);
   }
   $ua = 'FLY-SL600';
   $ns = E39($useragent, $ua, $ls);
@@ -600,7 +593,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(345761,21180,15136,6, $ua);
+    $dl[] = array(391815,20547,16335,6, $ua);
   }
   $ua = 'Fly_SL500i';
   $ns = E39($useragent, $ua, $ls);
@@ -609,7 +602,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(345689,21180,15136,6, $ua);
+    $dl[] = array(391728,20547,16335,6, $ua);
   }
   $ua = 'Fly SX240/Teleca/Q03C1.22 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E39($useragent, $ua, $ls);
@@ -618,7 +611,7 @@ function _H39($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(422674,21180,112938,6, $ua);
+    $dl[] = array(479514,20547,121058,6, $ua);
   }
   return $dl;
 }

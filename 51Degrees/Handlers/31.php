@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -65,7 +58,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(103301,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.600 Mobile Safari/534.8+');
+    $dl[] = array(110093,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.600 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9780'), 1 => array(0 => '6.0.0')), $ls);
@@ -73,7 +66,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147260,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9780; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
+    $dl[] = array(159905,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9780; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9300'), 1 => array(0 => '6.0.0')), $ls);
@@ -81,15 +74,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(112506,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9300; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9700'), 1 => array(0 => '6.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(74212,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9700; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
+    $dl[] = array(120523,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9300; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9900'), 1 => array(0 => '7.0.0')), $ls);
@@ -97,15 +82,15 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(223801,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $dl[] = array(248420,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.585 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9810'), 1 => array(0 => '7.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9700'), 1 => array(0 => '6.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(201069,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $dl[] = array(77554,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9700; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.448 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9900'), 1 => array(0 => '7.1.0')), $ls);
@@ -113,7 +98,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(223801,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.284 Mobile Safari/534.11+');
+    $dl[] = array(248420,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.284 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9360'), 1 => array(0 => '7.0.0')), $ls);
@@ -121,47 +106,15 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(236422,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.319 Mobile Safari/534.11+');
+    $dl[] = array(263635,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.319 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9650', 1 => ' 9650'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9810'), 1 => array(0 => '7.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(102077,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.524 Mobile Safari/534.8+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.524 Mobile Safari/53');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9650'), 1 => array(0 => '6.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(102077,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.719 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9330', 1 => ' 9330'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149206,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.415 Mobile Safari/534.1+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.415 Mobile Safari/53');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9330'), 1 => array(0 => '6.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149206,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.719 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9860'), 1 => array(0 => '7.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(224745,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $dl[] = array(222211,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9790'), 1 => array(0 => '7.0.0')), $ls);
@@ -169,7 +122,31 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(329217,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9790; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.528 Mobile Safari/534.11+');
+    $dl[] = array(371800,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9790; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.528 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9860'), 1 => array(0 => '7.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(249669,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9650', 1 => ' 9650'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(108466,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.524 Mobile Safari/534.8+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.524 Mobile Safari/53');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9650'), 1 => array(0 => '6.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(108466,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9650; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.719 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9810'), 1 => array(0 => '7.1.0')), $ls);
@@ -177,39 +154,23 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(201069,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.267 Mobile Safari/534.11+');
+    $dl[] = array(222211,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.267 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9670', 1 => ' 9670'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9330', 1 => ' 9330'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166550,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.407 Mobile Safari/534.1+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.407 Mobile Safari/53');
+    $dl[] = array(162329,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.415 Mobile Safari/534.1+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.415 Mobile Safari/53');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9670'), 1 => array(0 => '6.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9330'), 1 => array(0 => '6.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(166550,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.706 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9930'), 1 => array(0 => '7.1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(228771,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.163 Mobile Safari/534.11+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9930'), 1 => array(0 => '7.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(228771,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.254 Mobile Safari/534.11+');
+    $dl[] = array(162329,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9330; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.719 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9360'), 1 => array(0 => '7.1.0')), $ls);
@@ -217,31 +178,31 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(236422,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.336 Mobile Safari/534.11+');
+    $dl[] = array(263635,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.336 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9380'), 1 => array(0 => '7.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9930'), 1 => array(0 => '7.1.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(290497,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9380; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.482 Mobile Safari/534.11+');
+    $dl[] = array(254313,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.163 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '7.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9670', 1 => ' 9670'), 1 => array(0 => '6.0.0', 1 => '6.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(214591,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $dl[] = array(182521,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.407 Mobile Safari/534.1+, Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.407 Mobile Safari/53');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '7.1.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9670'), 1 => array(0 => '6.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(214591,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.163 Mobile Safari/534.11+');
+    $dl[] = array(182521,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.706 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9320'), 1 => array(0 => '7.1.0')), $ls);
@@ -249,15 +210,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9320; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.398 Mobile Safari/534.11+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9310'), 1 => array(0 => '7.1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(21187,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9310; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.477 Mobile Safari/534.11+');
+    $dl[] = array(632910,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9320; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.398 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9860'), 1 => array(0 => '7.1.0')), $ls);
@@ -265,39 +218,31 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(224745,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.267 Mobile Safari/534.11+');
+    $dl[] = array(249669,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.342 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9105'), 1 => array(0 => '6.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9380'), 1 => array(0 => '7.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(122190,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9105; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.668 Mobile Safari/534.8+');
+    $dl[] = array(326680,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9380; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.482 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '7.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9930'), 1 => array(0 => '7.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(316217,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $dl[] = array(254313,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.254 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9100'), 1 => array(0 => '6.0.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '7.1.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(133311,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9100; es) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.534 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '7.1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(316217,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.267 Mobile Safari/534.11+');
+    $dl[] = array(237928,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.163 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9790'), 1 => array(0 => '7.1.0')), $ls);
@@ -305,15 +250,31 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(329217,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9790; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.523 Mobile Safari/534.11+');
+    $dl[] = array(371800,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9790; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.523 Mobile Safari/534.11+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9220'), 1 => array(0 => '7.1.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '7.0.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(540147,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9220; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.337 Mobile Safari/534.11+');
+    $dl[] = array(237928,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '7.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356532,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.261 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9105'), 1 => array(0 => '6.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(131264,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9105; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.668 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9380'), 1 => array(0 => '7.1.0')), $ls);
@@ -321,7 +282,39 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(290497,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9380; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.336 Mobile Safari/534.11+');
+    $dl[] = array(326680,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9380; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.336 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9220'), 1 => array(0 => '7.1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(606306,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9220; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.337 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '7.1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356532,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.267 Mobile Safari/534.11+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9100'), 1 => array(0 => '6.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(144033,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9100; es) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.534 Mobile Safari/534.8+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9310'), 1 => array(0 => '7.1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(644204,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9310; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.477 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9370'), 1 => array(0 => '7.0.0')), $ls);
@@ -329,7 +322,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(243945,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.374 Mobile Safari/534.11+');
+    $dl[] = array(272890,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.374 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9981'), 1 => array(0 => '7.0.0')), $ls);
@@ -337,7 +330,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(386665,284657,284663,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9981; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.579 Mobile Safari/534.11+');
+    $dl[] = array(440034,320997,320155,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9981; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.0.0.579 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9981'), 1 => array(0 => '7.1.0')), $ls);
@@ -345,7 +338,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(386665,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9981; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.342 Mobile Safari/534.11+');
+    $dl[] = array(440034,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9981; en-GB) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.342 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9370'), 1 => array(0 => '7.1.0')), $ls);
@@ -353,7 +346,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(243945,294371,293525,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.580 Mobile Safari/534.11+');
+    $dl[] = array(272890,331225,330380,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.580 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9810'), 1 => array(0 => '6.1.0')), $ls);
@@ -361,7 +354,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(201069,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.50 Mobile Safari/534.11+');
+    $dl[] = array(222211,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.50 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9788'), 1 => array(0 => '6.0.0')), $ls);
@@ -369,7 +362,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(241970,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9788; zh-CN) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.673 Mobile Safari/534.8+');
+    $dl[] = array(270464,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9788; zh-CN) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.673 Mobile Safari/534.8+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9860'), 1 => array(0 => '6.1.0')), $ls);
@@ -377,15 +370,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(224745,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.60 Mobile Safari/534.11+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9900'), 1 => array(0 => '6.1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(223801,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.74 Mobile Safari/534.11+');
+    $dl[] = array(249669,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9860; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.60 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9570'), 1 => array(0 => '6.0.0')), $ls);
@@ -393,31 +378,15 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(190462,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9570; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.250 Mobile Safari/534.1+');
+    $dl[] = array(209742,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9570; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.231 Mobile Safari/534.1+');
     $ls = $ns;
   }
-  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '6.1.0')), $ls);
+  $ns = E31($segments, array(0 => array(0 => ' 9900'), 1 => array(0 => '6.1.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(316217,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.1.0.32 Mobile Safari/534.8+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '6.1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(214591,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.73 Mobile Safari/534.11+');
-    $ls = $ns;
-  }
-  $ns = E31($segments, array(0 => array(0 => ' 8980'), 1 => array(0 => '6.0.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(217531,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 8980; en) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.401 Mobile Safari/534.8+');
+    $dl[] = array(248420,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.50 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 8520'), 1 => array(0 => '6.0.0')), $ls);
@@ -425,7 +394,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106227,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 8520; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.141 Mobile Safari/534.1+');
+    $dl[] = array(113326,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 8520; en-US) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.141 Mobile Safari/534.1+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9810'), 1 => array(0 => '6.0.0')), $ls);
@@ -433,7 +402,31 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(201069,103373,103379,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0 Mobile Safari/534.8+');
+    $dl[] = array(222211,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9810; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0 Mobile Safari/534.8+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9850'), 1 => array(0 => '6.1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(237928,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9850; en-US) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.1.0.31 Mobile Safari/534.8+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 8980'), 1 => array(0 => '6.0.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(241147,110185,110191,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 8980; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.401 Mobile Safari/534.8+');
+    $ls = $ns;
+  }
+  $ns = E31($segments, array(0 => array(0 => ' 9350'), 1 => array(0 => '6.1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356532,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9350; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.74 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9930'), 1 => array(0 => '6.1.0')), $ls);
@@ -441,7 +434,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(228771,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.46 Mobile Safari/534.11+');
+    $dl[] = array(254313,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9930; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.46 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9360'), 1 => array(0 => '6.1.0')), $ls);
@@ -449,7 +442,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(236422,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.52 Mobile Safari/534.11+');
+    $dl[] = array(263635,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9360; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0.52 Mobile Safari/534.11+');
     $ls = $ns;
   }
   $ns = E31($segments, array(0 => array(0 => ' 9370'), 1 => array(0 => '6.1.0')), $ls);
@@ -457,7 +450,7 @@ function _H31($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(243945,214663,214669,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0 Mobile Safari/534.11+');
+    $dl[] = array(272890,238954,238019,6, 'Mozilla/5.0 (BlackBerry; U; BlackBerry 9370; en-US) AppleWebKit/534.11+ (KHTML, like Gecko) Version/6.1.0 Mobile Safari/534.11+');
     $ls = $ns;
   }
   return $dl;

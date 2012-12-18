@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -44,15 +37,6 @@ function E66($target, $test, $ls) {
 function _H66($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Panasonic-X800/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E66($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(414667,30509,30587,6, $ua);
-  }
   $ua = 'Panasonic-X701/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
   $ns = E66($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -60,7 +44,16 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(414667,30509,30587,6, $ua);
+    $dl[] = array(470493,31272,31369,6, $ua);
+  }
+  $ua = 'Panasonic-X800/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E66($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(470493,31272,31369,6, $ua);
   }
   $ua = 'Panasonic-G50/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(247913,21180,187005,6, $ua);
+    $dl[] = array(277780,20547,206127,6, $ua);
   }
   $ua = 'Panasonic-A210/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0';
   $ns = E66($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H66($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(224017,21180,187005,6, $ua);
+    $dl[] = array(248776,20547,206127,6, $ua);
   }
   return $dl;
 }

@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -113,14 +106,14 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     NULL,
     $useragent,
     NULL)) {
-    $h[88] = 10;
+    $h[89] = 10;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#Silk-Accelerated#' => NULL),
     NULL,
     $useragent,
     array('#(?<=Silk/)\\d+\\.\\d+#'))) {
-    $h[96] = 10;
+    $h[97] = 10;
   }
   if (count($h) > 0) {
     return $h;
@@ -343,7 +336,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=CrMo/)\\d+#',
       '#(?<=Chrome/)\\d+#',
       '#(?<=AppleWebKit/)[\\d\\.\\+]+#',
-      '#(?<=Mobile Safari/)[\\d\\.]+#'))) {
+      '#(?<=Mobile Safari/)[\\d\\.]+#',
+      '#(?<=CyanogenMod-)\\d#'))) {
     $h[17] = 9;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -354,7 +348,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=\\(|;|,)[^\\);]+#',
       '#(?<=RockMelt/)\\d+\\.\\d+#',
       '#Ubuntu/\\d+\\.\\d+#',
-      '#Sleipnir/\\d+\\.\\d+#'))) {
+      '#Sleipnir/\\d+\\.\\d+#',
+      '#Nutch-\\d+\\.\\d+#'))) {
     $h[35] = 9;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -366,7 +361,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=Version/)\\d+\\.\\d+#',
       '#(?<=\\()[^;]+#',
       '#(?<=Opera/\\d\\.\\d \\()[^;\\)]+#',
-      '#Linux Mint#'))) {
+      '#Linux Mint#',
+      '#Ubuntu;#'))) {
     $h[62] = 9;
   }
   if (count($h) > 0) {
@@ -561,12 +557,16 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=CrMo/)\\d+#',
       '#Chrome/\\d+#',
       '#(?<=AppleWebKit/)[\\d\\.\\+]+#',
-      '#(?<=Mobile Safari/)[\\d\\.]+#'))) {
+      '#(?<=Mobile Safari/)[\\d\\.]+#',
+      '#(?<=Flipboard/)\\d+\\.\\d+#'))) {
     $h[20] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#\\((iPhone|iPad|iPod)#' => NULL),
-    array('#Flipboard#' => NULL),
+    array('#Flipboard#' => NULL,
+      '#Nokia|nokia#' => NULL,
+      '#Android#' => NULL,
+      '#webOS|hpwOS#' => NULL),
     $useragent,
     array('#(?<=\\()iPhone|iPad|iPod#',
       '#(?<=Version/)[\\d\\.]+#',
@@ -600,11 +600,12 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#\\w(U|u)buntu/\\d+\\.\\d+#',
       '#X Ubuntu/\\d+\\.\\d+#',
       '#(?<=\\((U|u)buntu-)[^\\)]+#',
-      '#(?<=Firefox)[^\\d]+#'))) {
+      '#(?<=Firefox)[^\\d]+#',
+      '#(?<=Win)[^;]+#'))) {
     $h[37] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
-    array('#Fennec/#' => NULL),
+    array('#Firefox/#' => array('#Fennec/|\\(Mobile; rv#' => NULL)),
     NULL,
     $useragent,
     array('#(?<=Mozilla/)[\\d\\.]+#',
@@ -612,7 +613,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#Fennec#',
       '#(?<=\\()[^\\)]+#',
       '#(?<=Gecko/)[\\d]+#',
-      '#(?<=Firefox/)[\\d\\.]+#'))) {
+      '#(?<=Firefox/)[\\d\\.]+#',
+      '#(?<=;\\sAndroid)[\\d\\s][^;\\)]+#'))) {
     $h[38] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -626,6 +628,7 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?i)LG-|LG_|SC-|Toshiba|XV\\d+|Nokia|LGE|PalmOS|POLARIS|PalmSource|Nutch|NetFront|Samsung|HTC#' => NULL),
     $useragent,
     array('#(?<=MSIE\\s)[\\d\\.]+#',
+      '#(?<=Outlook )[\\d\\.]+#',
       '#(?<=Mozilla/)\\d\\.\\d#',
       '#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#',
       '#(?<=Windows)[\\s\\w\\d\\.]+#',
@@ -633,9 +636,11 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#chromeframe#',
       '#Media Center PC#',
       '#(?<=Sleipnir/)[\\d\\.]+#',
+      '#Linux#',
       '#Zune#',
       '#ARM#',
-      '#Touch#'))) {
+      '#Touch#',
+      '#(?<=heritrix/)[\\d\\.]+#'))) {
     $h[55] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -675,7 +680,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#',
       '#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11#',
       '#(?<=Version/)\\d\\.\\d#',
-      '#(?<=Mac OS X 10_\\d_\\d;)[^;\\)]+#'))) {
+      '#(?<=Mac OS X 10_\\d_\\d;)[^;\\)]+#',
+      '#(?<=PhantomJS/)\\d\\.\\d#'))) {
     $h[72] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
@@ -694,14 +700,14 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     array('#Windows NT#' => NULL),
     $useragent,
     NULL)) {
-    $h[90] = 8;
+    $h[91] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#^WordPress/#' => NULL),
     NULL,
     $useragent,
     array('#(?<=http://)\\w+#'))) {
-    $h[91] = 8;
+    $h[92] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#Thunderbird#' => array('#\\(Macintosh;|\\(Windows|\\(X11;#' => NULL)),
@@ -712,15 +718,16 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#',
       '#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11#',
       '#(?<=(Fedora)/)\\d+\\.\\d+#'))) {
-    $h[95] = 8;
+    $h[96] = 8;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#Darwin#' => array('#CFNetwork#' => NULL)),
     array('#iPhone#' => NULL),
     $useragent,
     array('#^[^/]+#',
-      '#(i)?Mac([^\\d]+)?#'))) {
-    $h[97] = 8;
+      '#(i)?Mac([^\\d]+)?#',
+      '#(?<=Darwin/)\\d+\\.\\d+#'))) {
+    $h[98] = 8;
   }
   if (count($h) > 0) {
     return $h;
@@ -956,7 +963,7 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     array('#(?i)nokia#' => NULL),
     array('#Series(40|60)#' => NULL),
     $useragent,
-    array('#(?<=Nokia)[^/]+#',
+    array('#(?i)(?<=Nokia)[^/\\)]+#',
       '#(?<=U(C|P)\\.Browser/)\\d+\\.\\d+#',
       '#(?<=UC Browser)\\d+\\.\\d+#',
       '#(?<=UCWEB)\\d+\\.\\d+|(?<=UCWEB/)\\d+\\.\\d+#',
@@ -1025,7 +1032,8 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     array('#Series60/#' => array('#Samsung/#' => NULL),
       '#SAMSUNG-GT-#' => NULL),
     $useragent,
-    array('#(?i)(?<=SAMSUNG-|SEC-|SCH-)[^/]+#',
+    array('#(?i)(?<=SAMSUNG)-?[^/]+#',
+      '#(?i)(?<=SEC|SCH)-?[^/]+#',
       '#(?<=Bada/)\\d+\\.\\d+#',
       '#(?<=Dolfin/)\\d+\\.\\d+#',
       '#(?<=Jasmine/)\\d+\\.\\d+#',
@@ -1117,47 +1125,54 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     $h[83] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
+    array('#Spice#' => NULL),
+    NULL,
+    $useragent,
+    NULL)) {
+    $h[84] = 7;
+  }
+  if (fiftyone_degrees_CheckHandler(
     array('#^TIANYU-KTOUCH#' => NULL),
     NULL,
     $useragent,
     array('#(?<=TIANYU-KTOUCH/)[^/]+#',
       '#.+#'))) {
-    $h[84] = 7;
+    $h[85] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#Toshiba#' => NULL),
     NULL,
     $useragent,
     NULL)) {
-    $h[85] = 7;
+    $h[86] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#^Vodafone#' => NULL),
     NULL,
     $useragent,
     NULL)) {
-    $h[86] = 7;
+    $h[87] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#webOS#' => NULL),
     NULL,
     $useragent,
     NULL)) {
-    $h[87] = 7;
+    $h[88] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#^Mozilla/#' => array('#Windows CE#' => NULL)),
     array('#HTC#' => NULL),
     $useragent,
     array('#(?<=\\(|;|\\))[^;\\)]+#'))) {
-    $h[89] = 7;
+    $h[90] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#^ZTE#' => NULL),
     NULL,
     $useragent,
     NULL)) {
-    $h[92] = 7;
+    $h[93] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#^Mozilla#' => array('#(?i)Webkit#' => array('#Windows|Macintosh|X11#' => NULL))),
@@ -1167,7 +1182,7 @@ function fiftyone_degrees_DetectHandlers($useragent) {
       '#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#',
       '#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11#',
       '#(?<=\\(KHTML, like Gecko\\))[^\\(\\)]+#'))) {
-    $h[93] = 7;
+    $h[94] = 7;
   }
   if (fiftyone_degrees_CheckHandler(
     array('#Gecko#' => array('#\\(Macintosh;|\\(Windows|\\(X11;#' => NULL)),
@@ -1175,8 +1190,9 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     $useragent,
     array('#(?<=Mozilla/)\\d\\.\\d#',
       '#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#',
-      '#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11|Linux i686#'))) {
-    $h[94] = 7;
+      '#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11|Linux i686#',
+      '#Win\\d(\\d|x)#'))) {
+    $h[95] = 7;
   }
   if (count($h) > 0) {
     return $h;
@@ -1198,7 +1214,7 @@ function fiftyone_degrees_DetectHandlers($useragent) {
     array('#(?<=Opera Mini/att/)\\d(/|\\.)\\d#',
       '#^[^;]+#',
       '#(?<=Opera Mini/)\\d(/|\\.)\\d#',
-      '#(?<= /d/d/dX/d/d/d).+#'))) {
+      '#(?<= \\d\\d\\dX\\d\\d\\d).+#'))) {
     $h[63] = 6;
   }
   if (fiftyone_degrees_CheckHandler(

@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -55,6 +48,13 @@ function _H43($useragent) {
   // Calculate the segments for the useragent.
   $segments = array(
     0 => fiftyone_degrees_preg_match_all('#KDDI-\\w+#', $useragent));
-
+  $ns = E43($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(659686,311783,18306,6, 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~google.com:mobile-checker)');
+    $ls = $ns;
+  }
   return $dl;
 }

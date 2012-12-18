@@ -7,18 +7,11 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -27,20 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E91($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -48,1348 +35,3022 @@ function E91($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H91($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=http://)\\w+#', $useragent));
-  $ns = E91($segments, array(0 => array(0 => 'h2savecom')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; SeaRay)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://h2savecom.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'theasianenergyexchange')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://theasianenergyexchange.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yoliesmortgageupdate')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://yoliesmortgageupdate.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'consolidatingcollegeloanspersonal')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 800)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0; http://consolidatingcollegeloanspersonal.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalvelcraft')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; 800 BOUYGUES)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://politicalvelcraft.org');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'political')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.2; http://political-news-live.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holidaytravelinsurance')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; SFR)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://holidaytravelinsurance.co.cc');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'shoutinggorilla')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://shoutinggorilla.com/pop-und-politik');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'howtolights')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 800C)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://howtolights.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => '063oliver')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Meteor)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://063oliver.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holiday')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 800)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.4; http://holiday.envirorides.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'portugalholidaysalgarve')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Optimus)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.3; http://portugalholidaysalgarve.co.uk');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holidayhomecontentsinsurance')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; 800 BOUYGUES)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://holidayhomecontentsinsurance.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'health')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; 800C)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.3; http://health.coolishgroup.com');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'foreignpolicyblogs')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Lumia800)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.4; http://foreignpolicyblogs.com/wpsingle');
-    $ls = $ns;
+    $dl[] = array(510814,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'lotsapolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 710)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.3; http://lotsapolitics.com');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.3; http://politics.zonkeyblog.co.uk');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'publicpolicy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.1; http://publicpolicy.pepperdine.edu/davenport-institute/bigsocietywatch');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'actualtraffic')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://actualtraffic.net/Politics');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'isaveholidays')), $ls);
+  $ua = 'MQQBrowser/1.6/Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia710)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://isaveholidays.co.uk');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holidayhomeinsurance')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0; http://holidayhomeinsurance.bestdealsonline.org.uk');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalfundconsultant')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0;Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://politicalfundconsultant.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'polinlawoffice')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Meteor)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://polinlawoffice.shikshik.org');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicsandfunds')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 710)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://politicsandfunds.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalcampaignexpert')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Optimus)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://politicalcampaignexpert.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(510722,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'getpoliticalfund')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://getpoliticalfund.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalparades')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar 4G)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://politicalparades.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holidays')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://holidays.only-the-news.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'molicyber')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.01.161.03)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://molicyber.shikshik.org');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'maltesemarriedcatholicpriest')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.05.172.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://maltesemarriedcatholicpriest.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'fixhealthcarepolicy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.4; http://fixhealthcarepolicy.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'truthinreligionandpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.05.161.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://truthinreligionandpolitics.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalfundusa')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.164.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://politicalfundusa.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'catholiclane')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.01.164.03)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://catholiclane.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'gasoline')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.161.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://gasoline.fuelspace.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'solutionfocusedpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.172.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://solutionfocusedpolitics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'blogs')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.166.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.4; http://blogs.lse.ac.uk/politicsandpolicy');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'pienpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.164.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://pienpolitics.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'southcarolinanewspress')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.172.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://southcarolinanewspress.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holidayinsurance')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.161.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://holidayinsurance.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(559551,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'help')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://help-with-tax-debt.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'smithpolitical')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T9296)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://smithpolitical.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'insurancepolicies')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7 T9292)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://insurancepolicies.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'abcnews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Touch-IT HD7)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://abcnews.go.com/blogs/politics');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'irs')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mersad HD7 T9292)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://irs-debt-help.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'tax')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7 Infinity)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://tax-debt-solutions.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(399417,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicsontoast')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://politicsontoast.com');
-    $ls = $ns;
+    $dl[] = array(424442,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'cancun')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917.)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.8.6; http://cancun.mexicanholidayguide.com');
-    $ls = $ns;
+    $dl[] = array(424442,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'consolidationdebt')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; CETUS)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://consolidationdebt.biz');
-    $ls = $ns;
+    $dl[] = array(424442,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politiseeds')), $ls);
+  $ua = 'Mozilla/5.0 (compatible: MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://politiseeds.com');
-    $ls = $ns;
+    $dl[] = array(424442,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'joelfinnigan')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://joelfinnigan.com/police');
-    $ls = $ns;
+    $dl[] = array(598477,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'memoliochallenge')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://memoliochallenge.com');
-    $ls = $ns;
+    $dl[] = array(598477,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'lifeinsurancepolicy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://lifeinsurancepolicy.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(598477,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'antioligarch')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://antioligarch.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(598477,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yovia')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://yovia.com/blogs/cooljobsfromcolin');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'economicenergypolicy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.01.161.04)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://economicenergypolicy.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicalscrapbook')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.161.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://politicalscrapbook.net');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'surfingholidayscostarica')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PI39100)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.1; http://surfingholidayscostarica.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'darkpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.161.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://darkpolitics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'segmentpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.165.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://segmentpolitics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politector')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.165.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://politector.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'pulse')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; X310e)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://pulse.ncpolicywatch.org');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'hawaiishopaholics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.162.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://hawaiishopaholics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'fraseropolis')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.162.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://fraseropolis.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'nacholindsay')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.01.162.04)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://nacholindsay.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'politicsrus')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.162.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://politicsrus.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'boydpolitics')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.163.03)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://boydpolitics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'okobojiville')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.165.02)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://okobojiville.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'eskobo')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.161.01)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://eskobo.com');
-    $ls = $ns;
+    $dl[] = array(562186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'umblock')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://umblock.info');
-    $ls = $ns;
+    $dl[] = array(399148,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'businessdevelopmentonline')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart T8698)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://businessdevelopmentonline.info');
-    $ls = $ns;
+    $dl[] = array(399148,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'lewrockwell')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://lewrockwell.local');
-    $ls = $ns;
+    $dl[] = array(399148,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'news')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T8697)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://news.only-the-news.com');
-    $ls = $ns;
+    $dl[] = array(399148,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'spinnernews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mersad 7 Mozart T8698)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://spinnernews.com');
-    $ls = $ns;
+    $dl[] = array(399148,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'adesignpro')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://adesignpro.allergiesaid.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'terryhaines')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 610)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://terryhaines.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'donnapeach')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://donnapeach.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'cogitoergosumworld')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; 610 BOUYGUES)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://cogitoergosumworld.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'sidileak')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://sidileak.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'pausethepress')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610 NFC)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://pausethepress.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'coupon')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Meteor)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://coupon-wizards.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'mortgage')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; NRJMobile)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://mortgage.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'sfluxe')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; SFR)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://sfluxe.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'insurance')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610 NFC; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://insurance.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(598982,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'credit')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://credit.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(424442,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'theolotech')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917.)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://theolotech.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(424442,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'rjkeating')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i917';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://rjkeating.me');
-    $ls = $ns;
+    $dl[] = array(424442,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'uk')), $ls);
+  $ua = 'Mozilla/4.0 (compatible: MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://uk.iwooho.com');
-    $ls = $ns;
+    $dl[] = array(424442,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'grist')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; CETUS)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.4-alpha-19672; http://grist.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(424442,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'X')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://X.com');
-    $ls = $ns;
+    $dl[] = array(397993,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'tubeshaker')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900k)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://tubeshaker.com');
-    $ls = $ns;
+    $dl[] = array(397993,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'fuknus')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900B)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://fuknus.chrisdamitio.com');
-    $ls = $ns;
+    $dl[] = array(397993,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aceflyer')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://aceflyer.shikshik.org');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'admiralflynn')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900h)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://admiralflynn.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'skipflycompsec')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://skipflycompsec.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'rodolfoflynn')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG E-900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.2; http://rodolfoflynn.123free.org');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'x')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; TESCO)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://x.X.com');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'loan')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; O2UK)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.1; http://loan-e.com');
-    $ls = $ns;
+    $dl[] = array(399326,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'manufactured')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i677)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.9.2; http://manufactured-home-loans.com/blog');
-    $ls = $ns;
+    $dl[] = array(615988,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'testwp')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD7 T9292)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.4; http://testwp.co.uk/canvas');
-    $ls = $ns;
+    $dl[] = array(399417,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'northbenz')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD7)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.5; http://northbenz.com');
-    $ls = $ns;
+    $dl[] = array(399417,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'chartroose')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T9296)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/MU; http://chartroose.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(399417,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'freecarinsurancequoteguide')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; OMNIA7)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.1; http://freecarinsurancequoteguide.com');
-    $ls = $ns;
+    $dl[] = array(398348,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'lookyoungertomorrow')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; OMNIA7; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.3; http://lookyoungertomorrow.com/lookbettertoday');
-    $ls = $ns;
+    $dl[] = array(398348,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aospuk')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8700)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.3; http://aospuk.co.uk');
-    $ls = $ns;
+    $dl[] = array(398348,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'immunesystemsupercharge')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; MWP6985)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2; http://immunesystemsupercharge.com/livebetter');
-    $ls = $ns;
+    $dl[] = array(425871,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'pokeramericacruises')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Trophy T8686)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.8.6; http://pokeramericacruises.com');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'thefirsttimebuyerclub')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Trophy)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://thefirsttimebuyerclub.com');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'topicshotnews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Spark)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://topicshotnews.com');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'microinsurancenews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC40100)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://microinsurancenews.com');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'raiseababy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Touch-IT Trophy)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://raiseababy.net');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'holdyourfuture')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Trophy)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://holdyourfuture.com');
-    $ls = $ns;
+    $dl[] = array(400132,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'gpcnews')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900B)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://gpcnews.com');
-    $ls = $ns;
+    $dl[] = array(397993,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'michaeljacksonsthisisit')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://michaeljacksonsthisisit-movie.com');
-    $ls = $ns;
+    $dl[] = array(397993,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'screwcable')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900k)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://screwcable.com');
-    $ls = $ns;
+    $dl[] = array(397993,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'bluemeanie')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i937)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://bluemeanie.me');
-    $ls = $ns;
+    $dl[] = array(555951,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'bluemeanieme')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T7575)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://bluemeanieme.com');
-    $ls = $ns;
+    $dl[] = array(545892,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'overnightsatellite')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T8788)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://overnightsatellite.com');
-    $ls = $ns;
+    $dl[] = array(398969,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'inteliseek')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Surround)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://inteliseek.rapichat.com');
-    $ls = $ns;
+    $dl[] = array(398969,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'localhost')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Surround)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://localhost/wordpress');
-    $ls = $ns;
+    $dl[] = array(398969,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'namibia')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mondrian T8788)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://namibia.iwooho.com');
-    $ls = $ns;
+    $dl[] = array(398969,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'zimbabwe')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3; http://zimbabwe.iwooho.com');
-    $ls = $ns;
+    $dl[] = array(399148,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'techcrunch')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T8697)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.4-alpha-19904; http://techcrunch.com');
-    $ls = $ns;
+    $dl[] = array(399148,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'thefresnonews')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart T8698)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://thefresnonews.com');
-    $ls = $ns;
+    $dl[] = array(399148,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'wikiblog')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://wikiblog.hk');
-    $ls = $ns;
+    $dl[] = array(399148,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'dizzy')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Pro T7576)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.4-beta1; http://dizzy.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(428006,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'paidcontent')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; USCCHTC-PC93100; USC-US)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.4-beta1; http://paidcontent.org');
-    $ls = $ns;
+    $dl[] = array(428006,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'horsesdolphins')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC93100)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://horsesdolphins.x10.mx');
-    $ls = $ns;
+    $dl[] = array(428006,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'meetminidolphin')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; DELL; Venue Pro)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2.1; http://meetminidolphin.com');
-    $ls = $ns;
+    $dl[] = array(538453,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'miamidolphins')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8350)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.3; http://miamidolphins.thefootballfanstore.info');
-    $ls = $ns;
+    $dl[] = array(598891,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'dolphin278')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8350T)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://dolphin278.net');
-    $ls = $ns;
+    $dl[] = array(598891,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'articledolphin')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PI86100)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1.4; http://articledolphin.info');
-    $ls = $ns;
+    $dl[] = array(613860,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'www')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radiant)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.1; http://www.insurancewebs.info');
-    $ls = $ns;
+    $dl[] = array(613860,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'ismysiteindexed')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.4; http://ismysiteindexed.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'xindxr')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ASUS; E600)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.2; http://xindxr.info');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'blog')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mondrian)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/2.8.2; http://blog.adcause.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'prestononlinenews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Omnia W; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.3; http://prestononlinenews.co.uk');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'celebritynews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Ultimate)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.3.1; http://celebritynews.fansite.biz');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'flyingcuttlefish')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mozart)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.5-alpha; http://flyingcuttlefish.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yellowfield')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E906)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.1; http://yellowfield.net');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'blackpoolonlinenews')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; Windows Phone - Internet 7; SFR)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.0.3; http://blackpoolonlinenews.co.uk');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'ipowerrichmond')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Gold)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.5-alpha-21535; http://ipowerrichmond.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'hiphopnc')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC40200)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.5-alpha-21535; http://hiphopnc.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'praiserichmond')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Champagne)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.5-alpha-21535; http://praiserichmond.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'thelightnc')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Haden)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(277516,277604,179816,459398, 'WordPress/3.5-alpha-21535; http://thelightnc.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'bestandroidapps')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Monument)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://bestandroidapps.nl');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidphonegeeks')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; USCCN859; USC-US)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidphonegeeks.com');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'theandroidphones')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HTC6990LVW)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://theandroidphones.info');
-    $ls = $ns;
+    $dl[] = array(20443,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'bestandroidgeeks')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i667)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://bestandroidgeeks.com');
-    $ls = $ns;
+    $dl[] = array(634553,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aboutandroidgeeks')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T9295)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://aboutandroidgeeks.info');
-    $ls = $ns;
+    $dl[] = array(428186,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'www')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/2889; http://www.bestandroidphoneapps.com');
-    $ls = $ns;
+    $dl[] = array(398348,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'bestaandroidphones')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://bestaandroidphones.info');
-    $ls = $ns;
+    $dl[] = array(398348,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aandroidphonestoday')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-i8700)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://aandroidphonestoday.info');
-    $ls = $ns;
+    $dl[] = array(398348,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aandroidphonesblog')), $ls);
+  $ua = 'ozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-i8700)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://aandroidphonesblog.info');
-    $ls = $ns;
+    $dl[] = array(398348,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yourandroidcellular')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T8788)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://yourandroidcellular.net');
-    $ls = $ns;
+    $dl[] = array(398969,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidgeeksnow')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Surround)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidgeeksnow.info');
-    $ls = $ns;
+    $dl[] = array(398969,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'myandroidgeek')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://myandroidgeek.com');
-    $ls = $ns;
+    $dl[] = array(399326,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidgeeksblog')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900; Orange)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidgeeksblog.com');
-    $ls = $ns;
+    $dl[] = array(399326,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yourandroidmobile')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900h)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://yourandroidmobile.net');
-    $ls = $ns;
+    $dl[] = array(399326,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidgeeksstore')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) LG;LG-E900';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidgeeksstore.info');
-    $ls = $ns;
+    $dl[] = array(399326,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'yourandroidcall')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; XDeviceEmulator)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://yourandroidcall.com');
-    $ls = $ns;
+    $dl[] = array(505728,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'aandroidphonesshop')), $ls);
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; CEPC)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://aandroidphonesshop.info');
-    $ls = $ns;
+    $dl[] = array(505728,429681,429778,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidmobilegeeks')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidmobilegeeks.info');
-    $ls = $ns;
+    $dl[] = array(400132,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'androidcellphone')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy T8686)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.3.1; http://androidcellphone.info');
-    $ls = $ns;
+    $dl[] = array(400132,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'motorola')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) HTC;Spark';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.0.5; http://motorola-xoom-info.com');
-    $ls = $ns;
+    $dl[] = array(400132,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'newmotorolaxoom')), $ls);
+  $ua = 'Mozilla/4.0 (compatible: MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,21180,179816,459398, 'WordPress/3.1.3; http://newmotorolaxoom.info');
-    $ls = $ns;
+    $dl[] = array(400132,136328,13423,6, $ua);
   }
-  $ns = E91($segments, array(0 => array(0 => 'htc')), $ls);
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PC40100)';
+  $ns = E91($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(21187,86948,179816,459398, 'WordPress/3.2.1; http://htc-apple-iphone-sony.ppsfoxyyou.tw');
-    $ls = $ns;
+    $dl[] = array(400132,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Spark)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400132,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917R)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398879,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T7575)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(545892,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; MWP6985)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(425871,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T9295)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428186,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Pro T7576)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428006,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; USCCHTC-PC93100; USC-US)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428006,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 8.0; Trident/6.0; IEMobile/10.0; Qualcomm; Fluid)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,593806,593813,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; MWP6885)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(433601,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; 0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 0000)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; 0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; <manufacturer>; <model> [;<operator])';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Xbox)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 8.0; Trident/6.0; IEMobile/10.0; Microsoft; Virtual)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(36506,593806,593813,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2 T8585)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; LEO)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2 LEO)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917R)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398879,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; DELL; Venue Pro)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(538453,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; 800 BOUYGUES)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; SFR)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800) Microsoft.Consulting.Phone.SkySportsNews.App';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-S7530)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645312,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-S7530E)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645312,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mazaa)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(429688,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro; bouygues)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro) [UsableNet Lift Mobile]';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; Tania)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(606397,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 920)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645490,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Juggernaut; Alpha)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645490,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 900)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598477,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar C110e)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar 4G)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(574215,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; FujitsuToshibaMobileCommun; IS12T)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(574215,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Asus;Galaxy6)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(179103,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Schubert)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400758,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; XDeviceEmulator)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(505728,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft Corporation; XDeviceEmulator)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(505728,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; MWP6885)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(433601,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; SFR)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Meteor)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Nokia 800)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; 800 BOUYGUES)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510814,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i677)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(615988,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PI39100)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(562186,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; TITAN X310e)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(562186,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; T-Mobile)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Meteor)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(510722,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD2)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0;  ; LEO70)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(5726,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Microsoft;FuturePhone';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Ultimate)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Gold)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Nokia;N70)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; ASUS; E600)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Mozart)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Mondrian)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) AdMob;Octagon';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PD67100)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HTC6990LVW)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Asus;Galaxy6';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(179103,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar 4G)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 1.08.161.01)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 1.08.164.02)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 2.01.164.03)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(559551,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i937)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(555951,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 920)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645490,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Juggernaut; Alpha)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645490,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; HD7 T9292)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399417,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; HD7)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399417,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T9296)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399417,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart T8698)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399148,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399148,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399148,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T8697)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399148,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(424442,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917.)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(424442,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598982,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610; Vodafone)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598982,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Schubert)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400758,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399326,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900h)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399326,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399326,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 900)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598477,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598891,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350T)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598891,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598982,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; TITAN X310e)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(562186,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; PI39100)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(562186,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398348,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398348,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400132,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy T8686)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400132,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i667)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(634553,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; 0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Nokia; 0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Juggernaut; 0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(128030,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PI86100)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(613860,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(397993,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900k)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(397993,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900B)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(397993,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i677)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(615988,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T8788)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398969,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Surround)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398969,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598891,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350T)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(598891,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E740h)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645402,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E740)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(645402,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radiant)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(613860,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; PI86100)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(613860,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; DELL; Venue Pro)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(538453,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Acer; Allegro)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Acer; Allegro; bouygues)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Ultimate)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; ZTE; Windows Phone - Internet 7; SFR)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; Omnia W; Orange)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(20443,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; mwp6985)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(425871,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; GW910)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(387502,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) LGE;GW910';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(387502,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; Virtual)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(36506,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; Taylor)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399060,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; USCCHTC-PC93100; USC-US)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428006,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Pro T7576)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428006,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i937)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(555951,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(574215,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917R)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398879,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T9295)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428186,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(574215,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T7575)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(545892,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; P4301)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(627086,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i667)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(634553,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; MWP6885)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(433601,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; GW910)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(387502,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Schubert)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400758,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; ZTE; Tania)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(606397,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 fake; compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(106891,152209,429778,6, $ua);
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Taylor)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399060,429681,429778,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; P4301)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(627086,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Microsoft; XDeviceEmulator)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(505728,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Mazaa)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(429688,429681,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Acer; Allegro; bouygues)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Acer; Allegro)';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(631986,136328,13423,6, $ua);
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i707';
+  $ns = E91($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(494648,136328,13423,6, $ua);
   }
   return $dl;
 }

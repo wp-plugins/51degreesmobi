@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -60,7 +53,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.800) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.800) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.690')), $ls);
@@ -68,7 +61,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.690) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.690) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.702')), $ls);
@@ -76,7 +69,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.702) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.702) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.802')), $ls);
@@ -84,7 +77,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.802) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.802) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.671')), $ls);
@@ -92,7 +85,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.671) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.671) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.612')), $ls);
@@ -100,7 +93,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,305142,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.612) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
+    $dl[] = array(20443,46332,343286,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.612) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '1.600')), $ls);
@@ -108,7 +101,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,122982,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
+    $dl[] = array(20443,46332,132257,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
     $ls = $ns;
   }
   $ns = E26($segments, array(0 => array(0 => '2.340')), $ls);
@@ -116,7 +109,7 @@ function _H26($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(21187,44721,122982,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
+    $dl[] = array(20443,46332,132257,6, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17');
     $ls = $ns;
   }
   return $dl;

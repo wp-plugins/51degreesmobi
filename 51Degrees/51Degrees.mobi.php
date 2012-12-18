@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 $_51d = fiftyone_degrees_Detect();
@@ -32,7 +25,7 @@ $_51d = fiftyone_degrees_Detect();
  *  Array of properties and values.
  */
 function fiftyone_degrees_Detect($input = NULL) {
-  if (!session_id() || !$_SESSION['51D']) {
+  if (!isset($_SESSION) || !isset($_SESSION['51D'])) {
 
     // Record the start time of the matching process.
     $time = microtime();
@@ -121,7 +114,7 @@ function fiftyone_degrees_Detect($input = NULL) {
     }
 
     // If there is a session record the results for future requests.
-    if (session_id()) {
+    if (isset($_SESSION)) {
       $_SESSION['51D'] = $_51d;
     }
   }

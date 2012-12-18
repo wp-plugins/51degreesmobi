@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -85,7 +78,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVIDEIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVIDEIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910-ORANGE'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -93,7 +86,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910;; Profile'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; Series60/5.0 Samsung/I8910;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -101,15 +94,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Samsung/I8910;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'I8910; Profile'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML; like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML; like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 Samsung/I8910;; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910-ORANGE'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIF3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -117,7 +102,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIF3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIF3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910-ORANGE'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAII1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -125,7 +110,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAII1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAII1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'I8910; Profile'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML; like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML; like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910-ORANGE'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -133,7 +126,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910; Profile'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -141,7 +134,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8910-ORANGE'), 1 => array(0 => '5.0'), 2 => array(0 => '9.4'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1')), $ls);
@@ -149,375 +142,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(147476,12258,12336,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DFHB5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DFHB5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Samsung/SGH-i450/DBHD2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JAGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JAGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JCGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JCGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHA2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHA2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGK5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGK5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JDGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JDGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/MBHC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/MBHC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CTGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CTGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/BGGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/BGGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/JBJG5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/JBJG5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHD3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHD3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUGJ6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUGJ6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(46238,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(160176,12479,12485,6, 'Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHHa; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -525,7 +150,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHHa; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHHa; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHHb; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -533,7 +158,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHHb; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHHb; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH7; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -541,7 +166,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH7; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH7; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -549,7 +174,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/OXXHG3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -557,7 +182,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/OXXHG3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/OXXHG3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -565,7 +190,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510; Profile'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -573,15 +198,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -589,7 +206,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -597,15 +214,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH9; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -613,7 +230,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH9; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH9; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -621,7 +238,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHJ1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -629,15 +254,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/CBHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/CBHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -645,23 +262,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
-  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHG5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/CBHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHG5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/CBHK1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -669,7 +278,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHJ4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -677,7 +294,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHG5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHG5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -685,7 +310,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHL2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -693,7 +318,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ5; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHH5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -701,7 +326,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHH5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHH5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -709,7 +334,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XEHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -717,7 +342,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510L'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510L/UBHL3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -725,7 +350,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510L/UBHL3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510L/UBHL3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -733,7 +358,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHI2; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHL1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -741,7 +366,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHL1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHL1; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -749,7 +374,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ3; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -757,7 +382,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/DJHK4; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP -2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -765,7 +390,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP -2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHH6 Profile/MIDP -2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -773,7 +398,375 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(71307,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(74432,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510/XXHJ2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XBHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGJ1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DFHB5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DFHB5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Samsung/SGH-i450/DBHD2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JAGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JAGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JCGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JCGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHA2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHA2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGK5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGK5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXGK6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JDGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JDGL4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XXHB1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/MBHC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/MBHC3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CTGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/CTGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/BGGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/BGGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUHC2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/JBJG5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/JBJG5 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHD3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/AIHD3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/JVHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/XEGL1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUGJ6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450V/BUGJ6 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i450'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(47902,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i450/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -781,7 +774,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -789,7 +782,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGK4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -797,7 +790,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JTHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -805,7 +798,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JTHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JTHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -813,7 +806,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -821,7 +814,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -829,7 +822,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DCGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XBHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -837,15 +830,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XBHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPHH2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPHH2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XBHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -853,7 +838,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DZHF1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -861,7 +846,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHB4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPHH2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPHH2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -869,7 +862,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -877,7 +870,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -885,7 +878,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -893,7 +886,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -901,7 +894,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XEGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/NPGJ2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -909,7 +902,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/NPGJ2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/NPGJ2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -917,7 +910,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/PMHE3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -925,7 +918,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/PMHE3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/PMHE3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -933,7 +926,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGK3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -941,15 +934,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AKHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -957,7 +942,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -965,7 +950,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/AIGI4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVGJ4 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -973,7 +966,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/XXGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -981,7 +974,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JPGL3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -989,7 +982,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DDHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -997,7 +990,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/DBHD1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVHB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1005,7 +998,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVHB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550/JVHB2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550')), $ls);
@@ -1013,7 +1006,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like  Gecko')), $ls);
@@ -1021,7 +1014,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like  Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like  Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i550V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1029,7 +1022,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(106875,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(114139,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i550V/BUGL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1037,7 +1030,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JVHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1045,7 +1038,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JVHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JVHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DUHF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1053,7 +1046,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DUHF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DUHF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JCHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1061,7 +1054,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JCHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JCHE2 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JPHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1069,7 +1062,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JPHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JPHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DZHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1077,7 +1070,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DZHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DZHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JXHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1085,7 +1078,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JXHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/JXHE1 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1093,7 +1086,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DBHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1101,7 +1094,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DBHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; Series60/3.1 Samsung/SGH-G810/DBHD4 Profile/MIDP-2.0 Configuration/CLDC-1.1 U; ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-G810'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1109,7 +1102,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(132015,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(142508,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-G810/XEHA3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK7 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1117,7 +1110,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK7 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK7 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1125,7 +1118,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1133,15 +1126,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/DJHK5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHJ8 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1149,7 +1134,15 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHJ8 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHJ8 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1157,7 +1150,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHK1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1165,7 +1158,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHK1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XNHK1 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1173,7 +1166,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI5 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I7110'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1181,7 +1174,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(134849,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(145826,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I7110/XXHI3 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-L870'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1189,7 +1182,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(370784,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(421999,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-L870-ORANGE'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'KHTML, like Gecko')), $ls);
@@ -1197,7 +1190,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(370784,24384,24390,6, 'Mozilla/5.0 SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870-ORANGE/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1  AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(421999,25611,24671,6, 'Mozilla/5.0 SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870-ORANGE/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1  AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-L870-ORANGE'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870-ORANGE/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1205,7 +1198,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(370784,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870-ORANGE/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(421999,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/SGH-L870-ORANGE/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510M'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1213,7 +1206,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(280497,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(315039,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M/UBHL2 Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'I8510M Profile'), 1 => array(0 => '3.2'), 2 => array(0 => '9.3'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1221,7 +1214,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(280497,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(315039,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 Samsung/I8510M Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i458B'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1229,7 +1222,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(186645,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(205770,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHB3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i458B'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1237,7 +1230,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(186645,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(205770,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ZTHC1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i458B'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1245,39 +1238,7 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(186645,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD9 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(242576,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD9 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i520'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520/XEGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(242576,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520/XEGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(242576,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
-    $ls = $ns;
-  }
-  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD7 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(242576,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD7 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(205770,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i458B/ Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   $ns = E76($segments, array(0 => array(0 => 'SGH-i455'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i455/UMHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
@@ -1285,7 +1246,39 @@ function _H76($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(326691,24384,24390,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i455/UMHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $dl[] = array(368990,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i455/UMHA3 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD9 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(271291,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD9 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i520'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520/XEGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(271291,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520/XEGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(271291,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGH1 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
+    $ls = $ns;
+  }
+  $ns = E76($segments, array(0 => array(0 => 'SGH-i520V'), 1 => array(0 => '3.1'), 2 => array(0 => '9.2'), 3 => NULL, 4 => NULL, 5 => array(0 => 'SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD7 Profile/MIDP-2.0 Configuration/CLDC-1.1 ', 1 => 'KHTML, like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(271291,25611,24671,6, 'Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 Samsung/SGH-i520V/BUGD7 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413');
     $ls = $ns;
   }
   return $dl;

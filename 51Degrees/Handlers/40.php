@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H40($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(36555,15130,80981,6, $ua);
+    $dl[] = array(36506,16329,85073,6, $ua);
   }
   $ua = 'Grundig GR980/1.30.152 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 640X480)';
   $ns = E40($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H40($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(36555,15130,80981,6, $ua);
+    $dl[] = array(36506,16329,85073,6, $ua);
   }
   return $dl;
 }

@@ -7,14 +7,7 @@
  */
 
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
+ * See LICENSE.TXT for terms of use and copyright.
  */
 
 /**
@@ -51,7 +44,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(199261,21180,15136,6, $ua);
+    $dl[] = array(219986,20547,16335,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
   $ns = E23($useragent, $ua, $ls);
@@ -60,7 +53,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,15130,80981,6, $ua);
+    $dl[] = array(457011,16329,85073,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
   $ns = E23($useragent, $ua, $ls);
@@ -69,7 +62,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,15130,80981,6, $ua);
+    $dl[] = array(457011,16329,85073,6, $ua);
   }
   $ua = 'AUDIOVOX-SMT5600';
   $ns = E23($useragent, $ua, $ls);
@@ -78,7 +71,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403295,21180,15136,6, $ua);
+    $dl[] = array(457011,20547,16335,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT/T120SP0T17 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
@@ -87,7 +80,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403367,21180,18086,6, $ua);
+    $dl[] = array(457099,20547,18306,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT/T120SP0T12 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0';
   $ns = E23($useragent, $ua, $ls);
@@ -96,7 +89,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403367,21180,18086,6, $ua);
+    $dl[] = array(457099,20547,18306,6, $ua);
   }
   $ua = 'AUDIOVOX-PM8920KIT';
   $ns = E23($useragent, $ua, $ls);
@@ -105,7 +98,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403367,21180,15136,6, $ua);
+    $dl[] = array(457099,20547,16335,6, $ua);
   }
   $ua = 'AUDIOVOX-9155GPX';
   $ns = E23($useragent, $ua, $ls);
@@ -114,7 +107,7 @@ function _H23($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403223,21180,15136,6, $ua);
+    $dl[] = array(457803,20547,16335,6, $ua);
   }
   return $dl;
 }
