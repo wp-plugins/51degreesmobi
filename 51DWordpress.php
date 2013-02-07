@@ -166,13 +166,13 @@ function _51d_print_javascript() {
 		if(adv_prop.style.display != 'none')
 		{
 			adv_prop.style.display = 'none';
-			adv_toggle.innerHTML = '+';
+			adv_toggle.value = 'Show';
 		}
 		else
 		{
 			adv_prop.style.display = 'block';
-			adv_toggle.innerHTML = '-';
-		}
+			adv_toggle.value = 'Hide';
+		}return false;
 	}
 
 	// toggles if a rows is active in the advanced property section.
@@ -315,6 +315,8 @@ function _51d_print_admin_panel() {
 					_51d_print_filters();
 					echo '</form>';
 					echo '<br/>';
+          _51d_print_documentation();
+          echo '<br />';
 					_51d_print_settings();
 					echo '<br />';
 					_51d_print_license_section();
@@ -516,6 +518,7 @@ function _51d_print_filter_tab($index, $filters) {
 					</td>
 					<td>
 						<h3>Basic Properties</h3>
+            <p>A device that matches any one of these rules will be actioned upon.<p>
 						<?php _51d_print_basic_properties($filter); ?>
 					</td>
 				</tr>
@@ -524,8 +527,13 @@ function _51d_print_filter_tab($index, $filters) {
 						Or has all of the selected features:
 					</td>
 					<td>
-						<h3>Advanced Properties <a id="adv_toggle" onclick="toggleAdvanced()">+</a></h3>
+						<div>
+              <h3 style="float: left" >Advanced Properties </h3>
+              <!-- hellooo -->
+               <input id="adv_toggle" class="button-primary" type="button" onclick="toggleAdvanced()" value="Show" style="margin: 0.8em; margin-bottom: 1em;" />
+            </div>
 						<div id="advanced_properties" style="display:none">
+            <p>A device must match all of the values selected here to redirected.<p>
 
 							<div id="advanced_properties_table" style="height:400px; border-color: #000000; border: 1px solid; overflow-y:scroll; background-color:#ffffff;">
 								<!-- makes the property values appear more presentable -->
@@ -551,7 +559,7 @@ function _51d_print_filter_tab($index, $filters) {
 												$toggle = !$toggle;
 
 												echo '<td><input id="check_'.$dataKey.'" type="checkbox" onclick="toggleRow(event)"/></td>';
-												echo '<td title="'.$data['Description'].'">'.$dataKey.'</td>';
+												echo '<td>'.$dataKey.' <img title="'.$data['Description'].'" src="'.plugin_dir_url( $file ).'51degreesmobi/help.png" /></td>';
 												echo '<td>';
 													echo '<select id="51d_cond_'.$dataKey.'" class="maxWidth" disabled="disabled">';
 														foreach ($data['Values'] as $valueKey => $value) {
@@ -580,6 +588,8 @@ function _51d_print_filter_tab($index, $filters) {
 				<tr>
 					<td>Then change theme to</td>
 					<td>
+            <p>Choose what action to use when a device has been matched. A device can be redirected to
+            any webpage (even beyond this site) or served any theme you have installed.<p>
 						<select id="theme_list" name="_51D_Theme" style="width:40%" onclick="checkRedirectText()">
 							<?php
 								// sort themes alphabetically
@@ -640,6 +650,10 @@ function _51d_print_filters() {
 		else
 			$selectedTab = $keys[0];
 	?>
+    <p>
+    Use this screen to create rules that control if devices are sent to another page or served a different theme based
+    on what kind of devices they are. Multiple rules can be created to do different things with different devices.
+    </p>
     <div class="nav-tabs-nav" style="margin-top: 0px; margin-right: 20px; margin-bottom: 0px; margin-left: 20px;">
 		<div style="nav-tabs-wrapper" style="padding: 0px; margin-right: -268px; margin-left: 0px; ">
 
@@ -676,9 +690,6 @@ function _51d_print_filters() {
 			}
 			echo '<div class="tab_spacers" style="width:5px; display:inline-block" ondragover="dragOver(event)"></div>';
 		}
-		// echo '<a href="'.add_query_arg('_51D_NewFilter', 'true').'" class="nav-tab menu-add-new">';
-		// echo '<abbr title="Add Filter">+</abbr>';
-		// echo '</a>';
 
 		echo '</div>';
 		echo '</div>';//end of tabs
@@ -695,7 +706,7 @@ function _51d_print_settings() {
 
         <div id="_51DGlobalSettings" style="margin-left: 12px" >
 			<h3>Global Settings</h3>
-			<p>These settings control 51Degrees.mobi Detection on all pages in the site.</p>
+			<p>These settings control 51Degrees.mobi Device Detection on all pages in the site.</p>
 			<form id="_51DGlobalSettingsMenu" method="post">
 
 				<p>
@@ -708,6 +719,17 @@ function _51d_print_settings() {
 			</form>
 		</div>
 	<?php
+}
+
+function _51d_print_documentation() {
+  ?>
+    <div style="margin-left: 12px" >
+    <h3>Documentation</h3>
+    <p>For assistance, refer to help tab at the top of this page. You can also use the tooltips, or see
+    our <a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx">user guide</a> and 
+    <a href="http://51degrees.mobi/Support/Forum.aspx">support forum</a>.</p>
+    </div>
+    <?php
 }
 
 function _51d_add_admin_menu() {
