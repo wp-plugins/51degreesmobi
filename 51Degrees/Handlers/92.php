@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,20 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E92($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -41,1452 +35,475 @@ function E92($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H92($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=http://)\\w+#', $useragent));
-  $ns = E92($segments, array(0 => array(0 => 'h2savecom')), $ls);
+  $ua = 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; Spice_Mi-351) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://h2savecom.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(53173,142808,711577,913, $ua, '15364-18110-18326-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'theasianenergyexchange')), $ls);
+  $ua = 'Browser/Opera Spice M6868n Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://theasianenergyexchange.com');
-    $ls = $ns;
+    $dl[] = array(53173,22118,161812,913, $ua, '15364-17017-18373-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'yoliesmortgageupdate')), $ls);
+  $ua = 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://yoliesmortgageupdate.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(53173,22118,486184,913, $ua, '15364-17017-18272-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'consolidatingcollegeloanspersonal')), $ls);
+  $ua = 'Spice M6800 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0; http://consolidatingcollegeloanspersonal.com');
-    $ls = $ns;
+    $dl[] = array(347364,22118,347436,913, $ua, '12715-17017-4812-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicalvelcraft')), $ls);
+  $ua = 'Spice M6800  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://politicalvelcraft.org');
-    $ls = $ns;
+    $dl[] = array(347364,22118,347436,913, $ua, '12715-17017-4812-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'political')), $ls);
+  $ua = 'Spice M6900 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.2; http://political-news-live.com');
-    $ls = $ns;
+    $dl[] = array(420690,22118,347436,913, $ua, '16696-17017-4812-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holidaytravelinsurance')), $ls);
+  $ua = 'Spice M6900  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://holidaytravelinsurance.co.cc');
-    $ls = $ns;
+    $dl[] = array(420690,22118,347436,913, $ua, '16696-17017-4812-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'shoutinggorilla')), $ls);
+  $ua = 'SpiceM5600/MTK Release/01.01.2012 Browser/wap2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://shoutinggorilla.com/pop-und-politik');
-    $ls = $ns;
+    $dl[] = array(905443,22118,16074,913, $ua, '20247-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'howtolights')), $ls);
+  $ua = 'Spice S707/2008.07.09 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://howtolights.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => '063oliver')), $ls);
+  $ua = 'Spice S707/2008.09.26 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://063oliver.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holiday')), $ls);
+  $ua = 'Spice S707/2008.05.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.4; http://holiday.envirorides.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'portugalholidaysalgarve')), $ls);
+  $ua = 'Spice S707/2008.05.16 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.3; http://portugalholidaysalgarve.co.uk');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holidayhomecontentsinsurance')), $ls);
+  $ua = 'Spice S707/2009.03.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://holidayhomecontentsinsurance.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'health')), $ls);
+  $ua = 'Spice S707/2009.04.28 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.3; http://health.coolishgroup.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'lotsapolitics')), $ls);
+  $ua = 'Spice S707/2009.05.31 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.3; http://lotsapolitics.com');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politics')), $ls);
+  $ua = 'Spice S707/2008.08.20 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.3; http://politics.zonkeyblog.co.uk');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'publicpolicy')), $ls);
+  $ua = 'Spice S707/2009.07.15 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.1; http://publicpolicy.pepperdine.edu/davenport-institute/bigsocietywatch');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'actualtraffic')), $ls);
+  $ua = 'Spice S707/2009.06.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://actualtraffic.net/Politics');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'isaveholidays')), $ls);
+  $ua = 'Spice S707/2009.04.10 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://isaveholidays.co.uk');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holidayhomeinsurance')), $ls);
+  $ua = 'Spice S707/2008.09.27 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0; http://holidayhomeinsurance.bestdealsonline.org.uk');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicalfundconsultant')), $ls);
+  $ua = 'Spice S707/2008.12.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://politicalfundconsultant.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'polinlawoffice')), $ls);
+  $ua = 'Spice S707/2008.09.02 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://polinlawoffice.shikshik.org');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicsandfunds')), $ls);
+  $ua = 'Spice S707/2009.03.25 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://politicsandfunds.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicalcampaignexpert')), $ls);
+  $ua = 'Spice M5445';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://politicalcampaignexpert.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(319269,22118,16074,913, $ua, '16858-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'getpoliticalfund')), $ls);
+  $ua = 'Spice M5700';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://getpoliticalfund.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(267700,22118,16074,913, $ua, '15621-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicalparades')), $ls);
+  $ua = 'Spice M5700 Novarra-Vision/8.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://politicalparades.com');
-    $ls = $ns;
+    $dl[] = array(267700,22118,16074,913, $ua, '15621-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holidays')), $ls);
+  $ua = 'Spice M5252';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://holidays.only-the-news.com');
-    $ls = $ns;
+    $dl[] = array(475911,22118,16074,913, $ua, '16933-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'maltesemarriedcatholicpriest')), $ls);
+  $ua = 'Spice M5170';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://maltesemarriedcatholicpriest.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(264557,22118,16074,913, $ua, '15591-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'molicyber')), $ls);
+  $ua = 'Spice M5170 Novarra-Vision/8.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://molicyber.shikshik.org');
-    $ls = $ns;
+    $dl[] = array(264557,22118,16074,913, $ua, '15591-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'fixhealthcarepolicy')), $ls);
+  $ua = 'Spice M5570';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.4; http://fixhealthcarepolicy.com');
-    $ls = $ns;
+    $dl[] = array(276708,22118,16074,913, $ua, '15581-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'truthinreligionandpolitics')), $ls);
+  $ua = 'Spice M5570 Novarra-Vision/8.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://truthinreligionandpolitics.com');
-    $ls = $ns;
+    $dl[] = array(276708,22118,16074,913, $ua, '15581-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicalfundusa')), $ls);
+  $ua = 'Spice QT68';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://politicalfundusa.com/wordpress');
-    $ls = $ns;
+    $dl[] = array(264341,22118,16074,913, $ua, '15589-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'foreignpolicyblogs')), $ls);
+  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1, Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://foreignpolicyblogs.com');
-    $ls = $ns;
+    $dl[] = array(202700,22118,16074,913, $ua, '16905-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'catholiclane')), $ls);
+  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://catholiclane.com');
-    $ls = $ns;
+    $dl[] = array(202700,22118,16074,913, $ua, '16905-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'gasoline')), $ls);
+  $ua = 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; Spice_MI-352) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://gasoline.fuelspace.com');
-    $ls = $ns;
+    $dl[] = array(1039209,142808,711577,913, $ua, '21851-18110-18326-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'solutionfocusedpolitics')), $ls);
+  $ua = 'Spice M5750';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://solutionfocusedpolitics.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(274692,22118,16074,913, $ua, '15711-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'blogs')), $ls);
+  $ua = 'UP.Browser/5.0/Spice G6550';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.4; http://blogs.lse.ac.uk/politicsandpolicy');
-    $ls = $ns;
+    $dl[] = array(53173,22118,50841,913, $ua, '15364-17017-4948-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'pienpolitics')), $ls);
+  $ua = 'Spice QT-57/(2010.06.22) S005/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://pienpolitics.com');
-    $ls = $ns;
+    $dl[] = array(397735,22118,16074,913, $ua, '16856-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'southcarolinanewspress')), $ls);
+  $ua = 'Spice S580';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://southcarolinanewspress.com');
-    $ls = $ns;
+    $dl[] = array(469704,22118,16074,913, $ua, '16995-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'holidayinsurance')), $ls);
+  $ua = 'Spice_M6400/WapBrowserConfiguration2.0/MIDP2.0/CLDC1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://holidayinsurance.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(309907,22118,16074,913, $ua, '12791-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'help')), $ls);
+  $ua = 'Spice S5420';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://help-with-tax-debt.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(476632,22118,16074,913, $ua, '16924-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'smithpolitical')), $ls);
+  $ua = 'Spice S950 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://smithpolitical.wordpress.com');
-    $ls = $ns;
+    $dl[] = array(376813,22118,36475,913, $ua, '14298-17017-3601-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'insurancepolicies')), $ls);
+  $ua = 'Spice S650/KAA736_0.90.626 Nucleus/1.0 MTK/6223 Release/06.26.2007 Browser/Teleca_obigo Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://insurancepolicies.heftyresource.com');
-    $ls = $ns;
+    $dl[] = array(469201,22118,16074,913, $ua, '17061-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'abcnews')), $ls);
+  $ua = 'Spice S820';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://abcnews.go.com/blogs/politics');
-    $ls = $ns;
+    $dl[] = array(475839,22118,16074,913, $ua, '17068-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'irs')), $ls);
+  $ua = 'Spice S5330';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://irs-debt-help.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(476127,22118,16074,913, $ua, '16986-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'tax')), $ls);
+  $ua = 'Spice/1.0/QT-68/Obigo Browser/Q03C Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://tax-debt-solutions.debt-consolidation-helps.info');
-    $ls = $ns;
+    $dl[] = array(264341,22118,119194,913, $ua, '15589-17017-3807-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politicsontoast')), $ls);
+  $ua = 'Spice S710';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://politicsontoast.com');
-    $ls = $ns;
+    $dl[] = array(471371,22118,16074,913, $ua, '16989-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'cancun')), $ls);
+  $ua = 'Spice S705';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.8.6; http://cancun.mexicanholidayguide.com');
-    $ls = $ns;
+    $dl[] = array(477861,22118,16074,913, $ua, '16912-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'consolidationdebt')), $ls);
+  $ua = 'Spice-S1000/1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://consolidationdebt.biz');
-    $ls = $ns;
+    $dl[] = array(293762,16068,85332,913, $ua, '12283-5448-4578-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'politiseeds')), $ls);
+  $ua = 'Spice M-6Sports/(2009.12.17) S001/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Novarra-Vision/8.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://politiseeds.com');
-    $ls = $ns;
+    $dl[] = array(322582,22118,16074,913, $ua, '16142-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'joelfinnigan')), $ls);
+  $ua = 'Spice M6700 Novarra-Vision/8.0';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://joelfinnigan.com/police');
-    $ls = $ns;
+    $dl[] = array(412103,22118,16074,913, $ua, '16725-17017-17470-18092');
   }
-  $ns = E92($segments, array(0 => array(0 => 'memoliochallenge')), $ls);
+  $ua = 'Spice D88';
+  $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://memoliochallenge.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'lifeinsurancepolicy')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://lifeinsurancepolicy.heftyresource.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'antioligarch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://antioligarch.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'yovia')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://yovia.com/blogs/cooljobsfromcolin');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'economicenergypolicy')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://economicenergypolicy.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'politicalscrapbook')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://politicalscrapbook.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'surfingholidayscostarica')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.1; http://surfingholidayscostarica.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'darkpolitics')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://darkpolitics.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'segmentpolitics')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://segmentpolitics.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'politector')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://politector.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'pulse')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://pulse.ncpolicywatch.org');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'hawaiishopaholics')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://hawaiishopaholics.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'fraseropolis')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://fraseropolis.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'nacholindsay')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://nacholindsay.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'politicsrus')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://politicsrus.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'boydpolitics')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://boydpolitics.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'okobojiville')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://okobojiville.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'eskobo')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://eskobo.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'umblock')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://umblock.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'businessdevelopmentonline')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://businessdevelopmentonline.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'lewrockwell')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://lewrockwell.local');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'X')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://X.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'spinnernews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://spinnernews.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'adesignpro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://adesignpro.allergiesaid.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'terryhaines')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://terryhaines.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'donnapeach')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://donnapeach.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'cogitoergosumworld')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://cogitoergosumworld.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'sidileak')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://sidileak.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'pausethepress')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://pausethepress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'coupon')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://coupon-wizards.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'mortgage')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://mortgage.heftyresource.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'sfluxe')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://sfluxe.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'insurance')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://insurance.heftyresource.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'credit')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://credit.heftyresource.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'theolotech')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://theolotech.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'rjkeating')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://rjkeating.me');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'uk')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://uk.iwooho.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'grist')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.4-alpha-19672; http://grist.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'tubeshaker')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://tubeshaker.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'fuknus')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://fuknus.chrisdamitio.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aceflyer')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://aceflyer.shikshik.org');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'admiralflynn')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://admiralflynn.com/wordpress');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'skipflycompsec')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://skipflycompsec.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'rodolfoflynn')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.2; http://rodolfoflynn.123free.org');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'x')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://x.X.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'loan')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.1; http://loan-e.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'manufactured')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.9.2; http://manufactured-home-loans.com/blog');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'testwp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.4; http://testwp.co.uk/canvas');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'northbenz')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.5; http://northbenz.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'chartroose')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/MU; http://chartroose.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'freecarinsurancequoteguide')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.1; http://freecarinsurancequoteguide.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'lookyoungertomorrow')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.3; http://lookyoungertomorrow.com/lookbettertoday');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aospuk')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.3; http://aospuk.co.uk');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'immunesystemsupercharge')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2; http://immunesystemsupercharge.com/livebetter');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'pokeramericacruises')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.8.6; http://pokeramericacruises.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'thefirsttimebuyerclub')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://thefirsttimebuyerclub.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'topicshotnews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://topicshotnews.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'microinsurancenews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://microinsurancenews.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'raiseababy')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://raiseababy.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'holdyourfuture')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://holdyourfuture.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'gpcnews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://gpcnews.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'michaeljacksonsthisisit')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://michaeljacksonsthisisit-movie.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'screwcable')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://screwcable.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'bluemeanie')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://bluemeanie.me');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'bluemeanieme')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://bluemeanieme.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'overnightsatellite')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://overnightsatellite.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'inteliseek')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://inteliseek.rapichat.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'localhost')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://localhost/wordpress');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'namibia')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://namibia.iwooho.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'zimbabwe')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3; http://zimbabwe.iwooho.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'techcrunch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.4-alpha-19904; http://techcrunch.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'thefresnonews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://thefresnonews.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'wikiblog')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://wikiblog.hk');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'dizzy')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.4-beta1; http://dizzy.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'paidcontent')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.4-beta1; http://paidcontent.org');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'horsesdolphins')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://horsesdolphins.x10.mx');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'meetminidolphin')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://meetminidolphin.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'miamidolphins')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.3; http://miamidolphins.thefootballfanstore.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'dolphin278')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://dolphin278.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'articledolphin')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1.4; http://articledolphin.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'ismysiteindexed')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.4; http://ismysiteindexed.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'xindxr')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2; http://xindxr.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'blog')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/2.8.2; http://blog.adcause.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'prestononlinenews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.3; http://prestononlinenews.co.uk');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'celebritynews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.3.1; http://celebritynews.fansite.biz');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'flyingcuttlefish')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha; http://flyingcuttlefish.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'yellowfield')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.1; http://yellowfield.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'blackpoolonlinenews')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.0.3; http://blackpoolonlinenews.co.uk');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'ipowerrichmond')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://ipowerrichmond.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'hegivesfavour')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://hegivesfavour.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'thefashionloverblogging')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://thefashionloverblogging.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'philosophynowncad')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://philosophynowncad.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'myfavoritelooks')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://myfavoritelooks.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'apps2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://apps2.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'p2wp')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://p2wp.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'www')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.4.2; http://www.isitwp.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'thelightnc')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://thelightnc.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'hiphopnc')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://hiphopnc.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'news')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://news.stylecaster.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'praiserichmond')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://praiserichmond.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'satellite')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.2.1; http://satellite-internetbroadband.com/wordpress');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'jackontheweb')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha; http://jackontheweb.radio.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => '9to5mac')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21304; http://9to5mac.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'wordpress')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'lastnightidrank')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://lastnightidrank.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'kymx')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21535; http://kymx.cbslocal.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'annaleonie')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(311674,311783,198102,519754, 'WordPress/3.5-alpha-21989; http://annaleonie.wordpress.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'bestandroidapps')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://bestandroidapps.nl');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidphonegeeks')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidphonegeeks.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'theandroidphones')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://theandroidphones.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'bestandroidgeeks')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://bestandroidgeeks.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aboutandroidgeeks')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://aboutandroidgeeks.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'www')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/2889; http://www.bestandroidphoneapps.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'bestaandroidphones')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://bestaandroidphones.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aandroidphonestoday')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://aandroidphonestoday.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aandroidphonesblog')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://aandroidphonesblog.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'yourandroidcellular')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://yourandroidcellular.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidgeeksnow')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidgeeksnow.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'myandroidgeek')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://myandroidgeek.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidgeeksblog')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidgeeksblog.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'yourandroidmobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://yourandroidmobile.net');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidgeeksstore')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidgeeksstore.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'yourandroidcall')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://yourandroidcall.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'aandroidphonesshop')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://aandroidphonesshop.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidmobilegeeks')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidmobilegeeks.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'androidcellphone')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.3.1; http://androidcellphone.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'motorola')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.0.5; http://motorola-xoom-info.com');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'newmotorolaxoom')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,20547,198102,519754, 'WordPress/3.1.3; http://newmotorolaxoom.info');
-    $ls = $ns;
-  }
-  $ns = E92($segments, array(0 => array(0 => 'htc')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,91563,198102,519754, 'WordPress/3.2.1; http://htc-apple-iphone-sony.ppsfoxyyou.tw');
-    $ls = $ns;
+    $dl[] = array(462578,22118,16074,913, $ua, '17118-17017-17470-18092');
   }
   return $dl;
 }

@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,20 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E97($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -41,164 +35,52 @@ function E97($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H97($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=Silk/)\\d+\\.\\d+#', $useragent));
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
+  $ua = 'W3C_Validator/1.1';
+  $ns = E97($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(480650,112475,586730,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.0.22.79_X) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=true');
-    $ls = $ns;
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
-  $ns = E97($segments, array(0 => array(0 => '1.1')), $ls);
+  $ua = 'W3C_Validator/1.432.2.22';
+  $ns = E97($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(480650,112475,575620,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.1.0-84) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=false');
-    $ls = $ns;
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
+  $ua = 'W3C_Validator/1.2';
+  $ns = E97($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(480650,112475,575620,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.0.22.79_X) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=false');
-    $ls = $ns;
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
-  $ns = E97($segments, array(0 => array(0 => '2.2')), $ls);
+  $ua = 'W3C_Validator/1.3';
+  $ns = E97($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(654711,145607,657991,6, 'Mozilla/5.0 (Linux; U; en-us; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.2 Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
+  $ua = 'W3C_Validator/1.3 http://validator.w3.org/services';
+  $ns = E97($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(61820,20547,575620,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.0.22.79_X) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=false');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(61820,202025,586730,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.0.13.328_X) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(654711,145607,655747,6, 'Mozilla/5.0 (Linux; U; en-us; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.1 Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(547493,112475,586730,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.1.0-84) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(547493,112475,586730,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.0.22.79_X) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=true,gzip(gfe) (via translate.google.com)');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(593714,145607,657991,6, 'Mozilla/5.0 (Linux; U; en-us; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.2 Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(61820,202025,575620,6, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us; Silk/1.0.13.328_X) AppleWebKit/533.16 (KHTML, like Gecko) Version/5.0 Safari/533.16 Silk-Accelerated=false');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(547493,112475,575620,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.1.0-80) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=false');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '1.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(547493,112475,575620,6, 'Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Silk/1.0.13.328_X) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 Silk-Accelerated=false');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(593714,145607,655747,6, 'Mozilla/5.0 (Linux; U; en-us; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.1 Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(654711,565186,657991,6, 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.2 Mobile Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(654711,565186,655747,6, 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFTT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.1 Mobile Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(593714,565186,657991,6, 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.2 Mobile Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(593714,565186,655747,6, 'Mozilla/5.0 (Linux; U; Android 4.0.3; en-us; KFOT Build/IML74K) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.1 Mobile Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
-  }
-  $ns = E97($segments, array(0 => array(0 => '2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(20443,145607,657991,6, 'Mozilla/5.0 (Linux; U; en-us; KFJWI Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Silk/2.2 Safari/535.19 Silk-Accelerated=true');
-    $ls = $ns;
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
   return $dl;
 }

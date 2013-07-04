@@ -37,6 +37,23 @@ function E50($target, $test, $ls) {
 function _H50($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-
+  $ua = 'Grundig GR660/2.22.5.102 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ns = E50($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(37484,16068,85332,913, $ua, '18088-5448-4578-18092');
+  }
+  $ua = 'Grundig GR980/1.30.152 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 640X480)';
+  $ns = E50($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(37484,16068,85332,913, $ua, '18088-5448-4578-18092');
+  }
   return $dl;
 }

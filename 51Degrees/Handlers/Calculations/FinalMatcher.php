@@ -3,24 +3,41 @@
  * See LICENSE.TXT for terms of use and copyright.
  */
 /**
+ * See LICENSE.TXT for terms of use and copyright.
+ */
+/**
+ * See LICENSE.TXT for terms of use and copyright.
+ */
+/**
  * Todo.
  */
 function fiftyone_degrees_finalMatcher(&$user_agent, &$results) {
   $results = fiftyone_degrees_sort_results($results);
   $highest_position = 0;
+  $pos = 0;
   $subset = array();
+  $ualength = strlen($user_agent);
   foreach ($results as $result) {
     $resultua = $result[4];
-    $pos = strspn($user_agent ^ $resultua, "\0");
+    $length = $ualength;
+    if($length > strlen($resultua))
+      $length = strlen($resultua);
+
+    for($pos = 0; $pos < $length; $pos++) {
+      if($user_agent[$pos] != $resultua[$pos])
+        break;
+    }
+
     if ($pos > $highest_position) {
       $highest_position = $pos;
       unset($subset);
-      $subset[] = $result;
+      $subset = array($result);
     }
     elseif ($pos == $highest_position) {
       $subset[] = $result;
     }
   }
+
   if (count($subset) == 1) {
     return $subset[0];
   }
@@ -88,17 +105,11 @@ function fiftyone_degrees_ends_with($full_string, $find) {
  * Todo.
  */
 function fiftyone_degrees_sort_results($results) {
-  $to_sort = array();
-  $di = 0;
+  $deviceIds = array();
   foreach ($results as $device) {
-    $to_sort[] = $device[0] . '-' . $device[1] . '-' . $device[2] . '-' . $device[3] . '-' . $di;
-    $di++;
+    $deviceIds[] = $device[5];
   }
-  sort($to_sort);
-  $returning = array();
-  foreach ($to_sort as $sorted) {
-    $res = explode('-', $sorted);
-    $returning[] = $results[$res[4]];
-  }
-  return $returning;
+
+  array_multisort($deviceIds, SORT_STRING, $results);
+  return $results;
 }

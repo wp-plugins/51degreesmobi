@@ -96,6 +96,11 @@ The FAQ section will be updated as relevant questions are asked of us.
 Screenshots comming soon
 
 == Changelog ==
+= 2.1.15.1 =
+* Descriptions have been added to the plugin screens.
+* Changed 'Show Advanced Properties' to be more visible.
+* Added a section linking to documentation.
+
 = 2.1.14.3 =
 * Descriptions have been added to the plugin screens.
 * Changed 'Show Advanced Properties' to be more visible.

@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the edit distance between the two strings.
+ * Calculates the matching score between the two strings for this handler.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,14 +20,44 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The edit distance between the two strings.
+ *   The score between the two strings.
  */
 function E57($target, $test, $ls) {
-  return fiftyone_degrees_edit_distance($target, $test, $ls);
+  $score = 0;
+  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 10, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 10, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 10, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[4], $test[4], $ls, 10, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[5], $test[5], $ls, 10, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[6], $test[6], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  return $score;
 }
 
 /**
- * Returns the details of the devices that are closest to the useragent string provided.
+ * Returns the details of the devices that are closest to the
+ * useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -35,1015 +65,658 @@ function E57($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H57($useragent) {
+
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'NEXIAN Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E57($useragent, $ua, $ls);
+
+  // Calculate the segments for the useragent.
+  $segments = array(
+    0 => fiftyone_degrees_preg_match_all('#(?<=^LG/)[\\w\\d]+#', $useragent),
+    1 => fiftyone_degrees_preg_match_all('#(?<=^LG(-|/))[^\\s/]+#', $useragent),
+    2 => fiftyone_degrees_preg_match_all('#(?<=NovarraVision)\\d\\.\\d#', $useragent),
+    3 => fiftyone_degrees_preg_match_all('#(?<=Browser/Teleca-)[^\\s]+#', $useragent),
+    4 => fiftyone_degrees_preg_match_all('#(?<=UCBrowser)\\d\\.\\d#', $useragent),
+    5 => fiftyone_degrees_preg_match_all('#(?<=Browser/Obigo-)[^/]+/[\\d\\.]+#', $useragent),
+    6 => fiftyone_degrees_preg_match_all('#(?<=Opera Mini/)[^\\);]+#', $useragent));
+  $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990-Orange'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,16335,6, $ua);
+    $dl[] = array(103051,4620,102116,913, 'LG/KU990-Orange/v10ci Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G857/MTK Release/10.1.2009 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(103051,4620,102116,913, 'LG/KU990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G506/MTK Release/01.01.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8120'), 1 => array(0 => 'U8120'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(254945,4620,41748,913, 'LG/U8120/v1.0', '15498-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G253/MTK Release/01.01.2010 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8120C'), 1 => array(0 => 'U8120C'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(254945,4620,41748,913, 'LG/U8120C/v1.0', '15498-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G252/MTK Release/01.01.2010 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i-Orange'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(115499,4620,102116,913, 'LG/KU990i-Orange/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G315/MTK Release/10.1.2009 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(115499,4620,102116,913, 'LG/KU990i/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G256/MTK Release/01.01.2010 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i-Bouygues'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(115499,4620,102116,913, 'LG/KU990i-Bouygues/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G236/MTK Release/01.01.2010 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KC910'), 1 => array(0 => 'KC910'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(151922,4620,40813,913, 'LG/KC910/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G265/MTK Release/15.02.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KC910e'), 1 => array(0 => 'KC910e'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(151922,4620,40813,913, 'LG/KC910e/V10c Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G268/MTK Release/15.02.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT505e'), 1 => array(0 => 'GT505e'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(40741,4620,40813,913, 'LG/GT505e/v10b Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G262/MTK Release/19.04.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT505'), 1 => array(0 => 'GT505'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(40741,4620,40813,913, 'LG/GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G311/MTK Release/30.05.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'BL40g'), 1 => array(0 => 'BL40g'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(89176,4620,88241,913, 'LG/BL40g/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G225/MTK Release/02.18.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'BL40'), 1 => array(0 => 'BL40'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(89176,4620,88241,913, 'LG/BL40/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian G263/MTK Release/01.01.2012 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8138'), 1 => array(0 => 'U8138'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(268564,4620,41748,913, 'LG/U8138/v1.0', '15631-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G332/MTK Release/22.11.2007 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'BL20'), 1 => array(0 => 'BL20'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(143109,4620,88241,913, 'LG/BL20/v10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12435-17483-3459-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNXG311T/MTK Release/20.09.2011 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF750'), 1 => array(0 => 'KF750'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,235225,6, $ua);
+    $dl[] = array(149569,4620,114492,913, 'LG/KF750/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G967/MTK  Release/01.01.2011/MAUI Browser/Opera Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; U; id-ID) Presto/2.5.28 Version/10.10';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GD580'), 1 => array(0 => 'GD580'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,167488,6, $ua);
+    $dl[] = array(272319,4620,41748,913, 'LG/GD580/v1.0', '14755-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G963/MTK Release/01.01.2011/MAUI Browser/Opera Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; U; id-ID) Presto/2.5.28 Version/10.10';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,167488,6, $ua);
+    $dl[] = array(182606,4620,40813,913, 'LG/GT500/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G963/MTK  Release/01.01.2011/MAUI Browser/Opera Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500-Bouygues'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,167488,6, $ua);
+    $dl[] = array(182606,4620,40813,913, 'LG/GT500-Bouygues/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G963/MTK  Release/01.01.2011/MAUI Browser/Opera Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; U; id-ID) Presto/2.5.28 Version/10.10';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,167488,6, $ua);
+    $dl[] = array(103051,4620,41748,913, 'LG/KU990/v1.0', '11656-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G967/MTK  Release/01.01.2011/MAUI Browser/Opera Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U990'), 1 => array(0 => 'U990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,167488,6, $ua);
+    $dl[] = array(103051,4620,41748,913, 'LG/U990/v1.0', '11656-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-T911/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U990'), 1 => array(0 => 'U990.v1.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(103051,4620,41748,913, 'LG/U990.v1.0', '11656-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-T922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT405'), 1 => array(0 => 'GT405'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(149353,4620,41748,913, 'LG/GT405/v1.0', '13537-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-D980/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KC910i'), 1 => array(0 => 'KC910i-Bouygues'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(210280,4620,40813,913, 'LG/KC910i-Bouygues/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-T905/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KC910i'), 1 => array(0 => 'KC910i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(210280,4620,40813,913, 'LG/KC910i/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G915/MTK Release/27.11.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(115499,4620,41748,913, 'LG/KU990i/v1.0', '12115-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian-NXG777/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700-O2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(118107,4620,114492,913, 'LG/KF700-O2/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-D981/MTK Release/23.3.2010 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(118107,4620,114492,913, 'LG/KF700/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-A725/MTK Release/12.07.2011 Browser/MAUI Profile/MIDP2.0Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KE990'), 1 => array(0 => 'KE990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(265925,4620,102116,913, 'LG/KE990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15610-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-T901/MTK Release/19.04.2011 Browser/MAUI Profile/MIDP2.0Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KC910'), 1 => array(0 => 'KC910'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(151922,4620,41748,913, 'LG/KC910/v1.0', '11765-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G925/MTK Release/01.01.2010 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU380'), 1 => array(0 => 'KU380'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(209776,4620,41748,913, 'LG/KU380/v10c Profile/MIDP-2.0 Configuration/CLDC-1.1', '13891-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-T908/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU250'), 1 => array(0 => 'KU250'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(43195,4620,41748,913, 'LG/KU250/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14590-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G269/MTK Release/01.01.2012 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF310'), 1 => array(0 => 'KF310'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(155811,4620,41748,913, 'LG/KF310/v2.0', '14531-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-T910/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'HB620T'), 1 => array(0 => 'HB620T'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(181021,4620,114492,913, 'LG/HB620T/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13762-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G855/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'BL42'), 1 => array(0 => 'BL42'), 2 => NULL, 3 => array(0 => 'Q7.3'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(285679,4620,88241,913, 'LG/BL42/v10a Browser/Teleca-Q7.3 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13637-17483-3459-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G967/MTK Release/01.01.2011/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF755'), 1 => array(0 => 'KF755'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,244334,6, $ua);
+    $dl[] = array(274404,4620,41748,913, 'LG/KF755/v1.0', '12197-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KT520'), 1 => array(0 => 'KT520'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(433958,20547,244334,6, $ua);
+    $dl[] = array(232596,4620,114492,913, 'LG/KT520/v10c Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15174-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U900'), 1 => array(0 => 'U900'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(433958,20547,244334,6, $ua);
+    $dl[] = array(460469,4620,41748,913, 'LG/U900/v1.0', '16274-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.ml; profile=http://www.wapforuml; profile=http://www.wapforum.org/xhtml, application/vnd.wwap.wmlc, application/vnd.wap.wap.wmlc, application/vnd.wap.wmlscriptc, text/vn';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U890'), 1 => array(0 => 'U890'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(433958,20547,244334,6, $ua);
+    $dl[] = array(240519,4620,41748,913, 'LG/U890/v1.0', '15326-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G868/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU970'), 1 => array(0 => 'KU970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(284482,20547,244334,6, $ua);
+    $dl[] = array(272605,4620,41748,913, 'LG/KU970/v10b Profile/MIDP-2.0 Configuration/CLDC-1.1', '12157-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G868/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U830'), 1 => array(0 => 'U830'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(284482,20547,244334,6, $ua);
+    $dl[] = array(237285,4620,41748,913, 'LG/U830/v1.0', '15296-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G868T/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U880'), 1 => array(0 => 'U880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(284482,20547,244334,6, $ua);
+    $dl[] = array(252491,4620,41748,913, 'LG/U880/v1.0', '15472-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G965/MTK Release/21.04.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U960'), 1 => array(0 => 'U960'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(360956,20547,361045,6, $ua);
+    $dl[] = array(276492,4620,41748,913, 'LG/U960/v1.0', '15734-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G965/MTK Release/21.04.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; Nucleus; U; id-ID) Presto/2.4.18 Version/10.00';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8330'), 1 => array(0 => 'U8330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(360956,20547,361045,6, $ua);
+    $dl[] = array(322222,4620,41748,913, 'LG/U8330/v1.0', '13680-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G965/MTK Release/21.04.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U250'), 1 => array(0 => 'U250'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(360956,20547,361045,6, $ua);
+    $dl[] = array(445424,4620,41748,913, 'LG/U250/v1.0', '16249-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G965/MTK Release/21.04.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1  Opera/9.80 (MTK; Nucleus; U; id-ID) Presto/2.4.18 Version/10.00';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U970'), 1 => array(0 => 'U970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(360956,20547,361045,6, $ua);
+    $dl[] = array(319773,4620,41748,913, 'LG/U970/v1.0', '14461-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G869/MTK Release/01.01.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KS500Q'), 1 => array(0 => 'KS500Q'), 2 => NULL, 3 => array(0 => 'Q7.1/3.12'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(335031,20547,244334,6, $ua);
+    $dl[] = array(394856,4620,40813,913, 'LG/KS500Q/v10a Browser/Teleca-Q7.1/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14416-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G869/MTK Release/01.01.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8360'), 1 => array(0 => 'U8360'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(335031,20547,244334,6, $ua);
+    $dl[] = array(254369,4620,41748,913, 'LG/U8360/v1.0', '15494-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G508/MTK Release/10.01.2009 Browser/MAUI profile/No Java';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U400'), 1 => array(0 => 'U400'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(260089,20547,216588,6, $ua);
+    $dl[] = array(393993,4620,41748,913, 'LG/U400/v1.0', '14385-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G508/MTK Release/10.01.2009 Browser/MAUI profile/No Java Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U300'), 1 => array(0 => 'U300'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(260089,20547,216588,6, $ua);
+    $dl[] = array(396008,4620,41748,913, 'LG/U300/v1.0', '14481-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G353/MTK Release/01.01.2010 Browser/MAUI Profile Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU580'), 1 => array(0 => 'KU580'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A1/2.16'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(236162,20547,235225,6, $ua);
+    $dl[] = array(268931,4620,218981,913, 'LG/KU580/V10a Browser/Obigo-Q05A1/2.16 MMS/LG-MMS-V1.0/1.2 Java/LGVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-V-Profile/VSCL-2.0.0', '12637-17483-3857-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G353/MTK Release/01.01.2010 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KB770'), 1 => array(0 => 'KB770'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(236162,20547,235225,6, $ua);
+    $dl[] = array(123165,4620,40813,913, 'LG/KB770/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15081-17483-3728-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G507/MTK Release/10.01.2009 Browser';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8180'), 1 => array(0 => 'U8180'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(216499,20547,16335,6, $ua);
+    $dl[] = array(275412,4620,41748,913, 'LG/U8180/v1.0', '12240-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G507/MTK Release/10.01.2009 Browser Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8180F'), 1 => array(0 => 'U8180F'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(216499,20547,16335,6, $ua);
+    $dl[] = array(275412,4620,41748,913, 'LG/U8180F', '12240-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G821/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU385'), 1 => array(0 => 'KU385'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(402092,20547,244334,6, $ua);
+    $dl[] = array(370976,4620,41748,913, 'LG/KU385/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14061-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G821/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U310'), 1 => array(0 => 'U310'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(402092,20547,244334,6, $ua);
+    $dl[] = array(252347,4620,41748,913, 'LG/U310/v1.0', '15467-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian-NXG821/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KE990d'), 1 => array(0 => 'KE990d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(402092,20547,244334,6, $ua);
+    $dl[] = array(275340,4620,102116,913, 'LG/KE990d/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15716-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian-NXG821/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU950'), 1 => array(0 => 'KU950'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(402092,20547,244334,6, $ua);
+    $dl[] = array(327595,4620,41748,913, 'LG/KU950/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13697-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G801/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8110'), 1 => array(0 => 'U8110'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(494114,20547,244334,6, $ua);
+    $dl[] = array(337536,4620,41748,913, 'LG/U8110/v2.0', '16572-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G801/MTK Release/5.12.2011 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'L600V'), 1 => array(0 => 'L600V'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(494114,20547,244334,6, $ua);
+    $dl[] = array(157469,4620,41748,913, 'LG/L600V/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14910-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G801/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU800'), 1 => array(0 => 'KU800'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(494114,20547,244334,6, $ua);
+    $dl[] = array(349451,4620,41748,913, 'LG/KU800/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13925-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G912/MTK Release/27.11.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U450'), 1 => array(0 => 'U450'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(494026,20547,244334,6, $ua);
+    $dl[] = array(255233,4620,41748,913, 'LG/U450/v1.0', '15502-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G912/MTK Release/27.11.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8550'), 1 => array(0 => 'U8550'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(494026,20547,244334,6, $ua);
+    $dl[] = array(257464,4620,41748,913, 'LG/U8550/v1.0', '15516-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G509/MTK Release/10.01.2009 Browser/MAUI Profile Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(260089,20547,235225,6, $ua);
+    $dl[] = array(118107,4620,41748,913, 'LG/KF700/v2.0', '14432-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G509/MTK Release/10.01.2009 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8130'), 1 => array(0 => 'U8130'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(260089,20547,235225,6, $ua);
+    $dl[] = array(387074,4620,41748,913, 'LG/U8130/v1.0', '12639-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-NXT901/MTKRelease/11-20-2010Browser/MAUIProfile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF750'), 1 => array(0 => 'KF750'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(278396,20547,235225,6, $ua);
+    $dl[] = array(149569,4620,41748,913, 'LG/KF750/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-NXT901/MTKRelease/11-20-2010Browser/MAUIProfile Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U370'), 1 => array(0 => 'U370'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(278396,20547,235225,6, $ua);
+    $dl[] = array(334512,4620,41748,913, 'LG/U370/v1.0', '13773-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-W755/MTK Release/01.01.2011 Browser/MAUI Profile/MIDP2.0Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8380'), 1 => array(0 => 'U8380'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(374574,20547,244334,6, $ua);
+    $dl[] = array(246798,4620,41748,913, 'LG/U8380/v1.0', '15392-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G505/MTK Release/10.1.2009 browser/MAUI Profile/MIDP-2.0 configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF390Q'), 1 => array(0 => 'KF390Q'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(216499,20547,244334,6, $ua);
+    $dl[] = array(186576,4620,41748,913, 'LG/KF390Q/v1.0', '14965-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G505/MTK Release/10.1.2009 browser/MAUI Profile/MIDP-2.0 configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KT525'), 1 => array(0 => 'KT525'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(216499,20547,244334,6, $ua);
+    $dl[] = array(263469,4620,41748,913, 'LG/KT525/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15583-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G920/MTK Release/01.01.2010 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KE990c'), 1 => array(0 => 'KE990c'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(291674,20547,244334,6, $ua);
+    $dl[] = array(263037,4620,102116,913, 'LG/KE990c/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15577-17483-4848-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G331/MTK Release/02.09.2009 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KP330'), 1 => array(0 => 'KP330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(319979,20547,235225,6, $ua);
+    $dl[] = array(346860,4620,41748,913, 'LG/KP330/v1.0', '12976-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G331/MTK Release/02.09.2009 Browser/MAUI Profile Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GD880'), 1 => array(0 => 'GD880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(319979,20547,235225,6, $ua);
+    $dl[] = array(137170,4620,41748,913, 'LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12290-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G733/MTK Release/10.01.2009/Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KB620'), 1 => array(0 => 'KB620'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(377059,20547,235225,6, $ua);
+    $dl[] = array(259727,4620,41748,913, 'LG/KB620/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15546-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'Nexian NX-G733/MTK Release/10.01.2009 Browser/MAUI Profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF690'), 1 => array(0 => 'KF690'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(377059,20547,235225,6, $ua);
+    $dl[] = array(221498,4620,114492,913, 'LG/KF690/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15092-17483-3534-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-W750/MTK Release/01.01.2010 Browser/MAUI Profile/MIDP2.0 Configuration/CLCD-1';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU450'), 1 => array(0 => 'KU450'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(289812,20547,244334,6, $ua);
+    $dl[] = array(276276,4620,41748,913, 'LG/KU450/v10a Profile/MIDP-2.0 Configuration/CLDC-1.1', '15731-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G889/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8290'), 1 => array(0 => 'U8290'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(290077,20547,244334,6, $ua);
+    $dl[] = array(316027,4620,41748,913, 'LG/U8290/v1.0', '12862-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G889/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU830'), 1 => array(0 => 'KU830'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(290077,20547,244334,6, $ua);
+    $dl[] = array(403494,4620,41748,913, 'LG/KU830/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Profile/MIDP-2.0 Configuration/CLDC-1.0', '14844-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G235/MTK Release/10.01.2010 Browser/MAUI profile Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8100'), 1 => array(0 => 'U8100'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(372519,20547,235225,6, $ua);
+    $dl[] = array(445496,4620,41748,913, 'LG/U8100', '16258-17483-17660-18092');
+    $ls = $ns;
   }
-  $ua = 'NexianNX-G235/MTK Release/10.01.2010 Browser/MAUI profile';
-  $ns = E57($useragent, $ua, $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(372519,20547,235225,6, $ua);
-  }
-  $ua = 'NexianNX-T780/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(340715,20547,244334,6, $ua);
-  }
-  $ua = 'NEXIAN NX-G911';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(489211,20547,16335,6, $ua);
-  }
-  $ua = 'Nexian NX-T909/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(287327,20547,244334,6, $ua);
-  }
-  $ua = 'Nexian NX-T909/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(287327,20547,244334,6, $ua);
-  }
-  $ua = 'Nexian NX-G733/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(377059,20547,244334,6, $ua);
-  }
-  $ua = 'Nexian NX-G733/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(377059,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G238/MTK Release/22.11.2007 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(378747,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-NXT901U/MTK Release/11-20-2010 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(278396,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G901/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(278396,20547,244334,6, $ua);
-  }
-  $ua = 'Nexian NX-G505/MTK Release/10.01.2009 Browser/MAUI Profile/No Java';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(216499,20547,216588,6, $ua);
-  }
-  $ua = 'NexianNX-G730/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288482,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G730/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1 Novarra-Vision/8.0';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288482,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G780/MTK Release/01.01.2011 Browser/MAUI Profile/MIDP2.0Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(335829,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G272/MTK Release/01.01.2011 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(336536,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNXG798/MTK Release/10.1.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(336624,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G755/SPR Release/01.03.2011 Browser/Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(372607,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G988/MTK Release/10.01.2009 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(272802,20547,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G933/MTK Release/01.01.2010 Browser/MAUI Profile/MIDP2.0 Configuration/CLDC-1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(289724,20547,244334,6, $ua);
-  }
-  $ua = 'Nexian NX-G509';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(260089,20547,16335,6, $ua);
-  }
-  $ua = 'Nexian NX-G508';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(260089,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-T780/MTK Profile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(340715,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-W750';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(289812,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G933';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(289724,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G868';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(284482,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G889';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(290077,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G730';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288482,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-NXT901';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(278396,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G353';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(236162,20547,16335,6, $ua);
-  }
-  $ua = 'Nexian NX-T909';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(287327,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G988';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(272802,20547,16335,6, $ua);
-  }
-  $ua = 'NexianNX-G922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0,gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: wap-proxy)';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(433958,311783,244334,6, $ua);
-  }
-  $ua = 'NexianNX-G922/MTK Release/7.15.2009 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0,gzip(gfe) AppEngine-Google; (+http://code.google.com/appengine; appid: 244hours)';
-  $ns = E57($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(433958,311783,244334,6, $ua);
+    $dl[] = array(182606,4620,41748,913, 'LG/GT500', '11760-17483-17660-18092');
+    $ls = $ns;
   }
   return $dl;
 }

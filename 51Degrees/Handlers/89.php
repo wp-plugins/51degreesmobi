@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the edit distance between the two strings.
+ * Calculates the matching score between the two strings for this handler.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,14 +20,36 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The edit distance between the two strings.
+ *   The score between the two strings.
  */
 function E89($target, $test, $ls) {
-  return fiftyone_degrees_edit_distance($target, $test, $ls);
+  $score = 0;
+  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 1, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 1, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 5, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 5, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[4], $test[4], $ls, 5, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  return $score;
 }
 
 /**
- * Returns the details of the devices that are closest to the useragent string provided.
+ * Returns the details of the devices that are closest to the
+ * useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -35,43 +57,48 @@ function E89($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H89($useragent) {
+
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'W3C_Validator/1.1';
-  $ns = E89($useragent, $ua, $ls);
+
+  // Calculate the segments for the useragent.
+  $segments = array(
+    0 => fiftyone_degrees_preg_match_all('#(?<=Mozilla/)[\\d\\.]+#', $useragent),
+    1 => fiftyone_degrees_preg_match_all('#(?<=Skyfire/)[\\d\\.]+#', $useragent),
+    2 => fiftyone_degrees_preg_match_all('#(?<=AppleWebKit/)[\\d\\.]+#', $useragent),
+    3 => fiftyone_degrees_preg_match_all('#(?<=Safari/)[\\d\\.]+#', $useragent),
+    4 => fiftyone_degrees_preg_match_all('#(?<=Version/)[\\d\\.]+#', $useragent));
+  $ns = E89($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,16335,6, $ua);
+    $dl[] = array(37484,63372,90477,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7;en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0', '18088-17295-18325-18092');
+    $ls = $ns;
   }
-  $ua = 'W3C_Validator/1.432.2.22';
-  $ns = E89($useragent, $ua, $ls);
+  $ns = E89($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,16335,6, $ua);
+    $dl[] = array(37484,63372,90477,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0', '18088-17295-18325-18092');
+    $ls = $ns;
   }
-  $ua = 'W3C_Validator/1.2';
-  $ns = E89($useragent, $ua, $ls);
+  $ns = E89($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.17'), 3 => array(0 => '530.17'), 4 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,16335,6, $ua);
+    $dl[] = array(37484,63372,90477,913, 'Mozilla/5.0(Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Safari/530.17 Skyfire/2.0', '18088-17295-18325-18092');
+    $ls = $ns;
   }
-  $ua = 'W3C_Validator/1.3';
-  $ns = E89($useragent, $ua, $ls);
+  $ns = E89($segments, array(0 => array(0 => '5.0'), 1 => array(0 => '2.0'), 2 => array(0 => '530.18'), 3 => array(0 => '528.17'), 4 => array(0 => '4.0')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
-      $ls = $ns;
     }
-    $dl[] = array(20443,20547,16335,6, $ua);
+    $dl[] = array(37484,63372,90477,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/530.18 (KHTML, like Gecko) Version/4.0 Safari/528.17 Skyfire/2.0', '18088-17295-18325-18092');
+    $ls = $ns;
   }
   return $dl;
 }

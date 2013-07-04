@@ -42,62 +42,65 @@ function fiftyone_degrees_Detect($input = NULL) {
     include_once "Handlers/Calculations/RegexSegment.php";
     include_once "Handlers/DetectHandler.php";
 
-    // Get the useragent string to be processed.
-    if (!is_array($input)) {
-      if (is_string($input)) {
-        $useragent = $input;
-      }
-      else {
-        $useragent = fiftyone_degrees_GetUserAgent();
-      }
+    // Get the useragents to be processed.
+
+    // $useragents must be an array, with each element also being an array
+    // with the useragent and component ids it supports.
+    // Refer to the fiftyone_degrees_FillUserAgentArray function.
+    if (is_array($input) && array_key_exists('UserAgent', $input)) {
+      $useragents = array();
+      $useragents[] = fiftyone_degrees_FillUserAgentArray($input['UserAgent']);
+    }
+    else if (is_string($input)) {
+      $useragents = array();
+      $useragents[] = fiftyone_degrees_FillUserAgentArray($input);
     }
     else {
-      $useragent = $input['UserAgent'];
+      $useragents = fiftyone_degrees_GetUserAgents();
     }
 
-    // Get a list of handlers which are suitable for detecting
-    // this device.
-    $handlers = fiftyone_degrees_DetectHandlers($useragent);
+    $final = array();
 
-    // Request each handler to provide matching devices, if any.
-    foreach ($handlers as $handler_number => $confidence) {
-      include_once "Handlers/" . $handler_number . ".php";
-      $device = call_user_func("_H" . $handler_number, $useragent);
-      if ($device != NULL) {
-        $devices[] = $device;
-      }
-    }
+    // to be used later to show matched UAs to the user
+    $matchedUseragents = array();
 
-    // If devices have been found reduce them to a single device.
-    if (isset($devices[0])) {
+    foreach($useragents as $useragent) {
+      // each $useragent is an array. ['value'] has the useragent string
+      // and ['coms'] is an array of ints of which component ids the useragent
+      // should be used with
+      $matchedUseragents[] = $useragent['value'];
 
-      // Produce an array of final devices.
-      $final_devices = array();
-      foreach ($devices as $device) {
-        foreach ($device as $fin) {
-          $final_devices[] = $fin;
+      // Get a list of handlers which are suitable for detecting
+      // this device.
+      $handlers = fiftyone_degrees_DetectHandlers($useragent['value']);
+
+      // Get a list of offsets to find the device profiles
+      $offsets = fiftyone_degrees_GetOffsets($useragent['value'], $handlers);
+
+      // only save profile offsets that this useragent can identify.
+      foreach($useragent['coms'] as $comId) {
+        // do not overwrite previously found profile offsets.
+        // Refer to the fiftyone_degrees_GetUserAgents function
+        if(array_key_exists($comId, $final) == FALSE) {
+          $final[$comId] = $offsets[$comId];
         }
       }
 
-      if (count($final_devices) == 1) {
-        // If there is only one device found then use this one.
-        $final = $final_devices[0];
-      }
-      else {
-        // If more than one device has been found then use the
-        // final matcher to reduce to a single device.
-        include_once "Handlers/Calculations/FinalMatcher.php";
-        $final = fiftyone_degrees_finalMatcher($useragent, $final_devices);
-      }
     }
+
+    // store first found useragent (for legacy)
+    $final[4] = $matchedUseragents[0];
+
+    // store all used useragents
+    $final[5] = $matchedUseragents;
 
     // If a final single device is found then read property data and
     // add performance measures to the output.
-    if (isset($final)) {
+    if (count($final) > 0) {
 
-	  // Populate the resultset with the profile data and get an array
-	  // of profile ids.
-	  $profileIds = fiftyone_degrees_readProfiles($base_location, $_51d, $final);
+      // Populate the resultset with the profile data and get an array
+      // of profile ids.
+      $profileIds = fiftyone_degrees_readProfiles($base_location, $_51d, $final);
 
       // Record the time the matching process took to complete.
       $time = explode(' ', microtime());
@@ -109,8 +112,11 @@ function fiftyone_degrees_Detect($input = NULL) {
       // Set the device ID based on the 4 profile ids provided.
       $_51d['DeviceID'] = $profileIds[0] . '-' . $profileIds[1] . '-' . $profileIds[2] . '-' . $profileIds[3];
 
-      // Record the user agent of the device matched against.
+      // Record the first user agent of the device matched against.
       $_51d['MatchedUserAgent'] = $final[4];
+
+      // Record all the user agent of the device matched against.
+      $_51d['MatchedUserAgents'] = $final[5];
     }
 
     // If there is a session record the results for future requests.
@@ -130,45 +136,133 @@ function fiftyone_degrees_Detect($input = NULL) {
   return $_51d;
 }
 
-/**
- * Gets the useragent associated with the current request.
- *
- * Checks other header fields for the presence of original
- * user agent values and returns the most appropriate one.
- *
- * return string
- *  The most relevent UserAgent string for the current request.
- */
-function fiftyone_degrees_GetUserAgent() {
-  if (function_exists('getallheaders')) {
-    $input = getallheaders();
-    $header_ua = "User-Agent";
-    $transcoder_ua = array(
-      "x-Device-User-Agent",
-      "X-Device-User-Agent",
-      "X-OperaMini-Phone-UA"
-    );
-    if (isset($input[$header_ua])) {
-      return trim($input[$header_ua]);
+function fiftyone_degrees_GetOffsets($useragent, $handlers)
+{
+  // Request each handler to provide matching devices, if any.
+  foreach ($handlers as $handler_number => $confidence) {
+    include_once "Handlers/" . $handler_number . ".php";
+    $device = call_user_func("_H" . $handler_number, $useragent);
+    if ($device != NULL) {
+      $devices[] = $device;
     }
-    else {
-      foreach ($transcoder_ua as $trans_ua) {
-        if (isset($input[$trans_ua])) {
-          return trim($input[$trans_ua]);
-        }
+  }
+
+  // If devices have been found reduce them to a single device.
+  if (isset($devices[0])) {
+
+    // Produce an array of final devices.
+    $final_devices = array();
+    foreach ($devices as $device) {
+      foreach ($device as $fin) {
+        $final_devices[] = $fin;
       }
     }
-    return "";
-  }
-  else {
-    if (isset($_SERVER['HTTP_X_DEVICE_USER_AGENT'])) {
-      return $_SERVER['HTTP_X_DEVICE_USER_AGENT'];
+
+    if (count($final_devices) == 1) {
+      // If there is only one device found then use this one.
+      $final = $final_devices[0];
     }
-    if (isset($_SERVER['HTTP_X_OPERAMINI_PHONE_UA'])) {
-      return $_SERVER['HTTP_X_OPERAMINI_PHONE_UA'];
+    else {
+      // If more than one device has been found then use the
+      // final matcher to reduce to a single device.
+      include_once "Handlers/Calculations/FinalMatcher.php";
+      $final = fiftyone_degrees_finalMatcher($useragent, $final_devices);
     }
-    return $_SERVER['HTTP_USER_AGENT'];
+
+    return $final;
   }
+  return null;
+}
+
+/**
+ * Gets the useragents associated with the current request.
+ *
+ * Checks other header fields for the presence of original
+ * user agent values and returns useful headers and the
+ * components they relate to.
+ *
+ * return array
+ *  Each element has a 'value', the useragent string, and
+ * 'coms', and array of ints that show which components
+ * that useragent can be used with.
+ * element [] ->
+ *      'value' (string) -> the useragent string
+ *      'coms' (array (int)) -> a list of component ids the UA
+ * supports.
+ */
+function fiftyone_degrees_GetUserAgents() {
+  $results = array();
+
+  $headers = array();
+
+  // the order that the $headers array gets populated in is very
+  // important. The first array has the most priority.
+
+  // 'coms' is short for component id. These refer to what components there
+  // headers are able to identify. Some browsers, such as Opera Mobi, have
+  // a UA header only that identifies browser, and another UA header that is the
+  // stock UA for identifying hardware and software. These need to be
+  // processed seperately.
+  // com ids:
+  //    1 - hardware
+  //    2 - software
+  //    3 - browser
+  //    4 - crawler
+  $headers[] = array(
+    'coms' => array(0,1),
+    'HTTP_DEVICE_STOCK_UA',
+    'HTTP_X_DEVICE_USER_AGENT',
+    'HTTP_X_OPERAMINI_PHONE_UA'
+  );
+
+  $headers[] = array(
+    'coms' => array(0,1,2,3),
+    'HTTP_USER_AGENT'
+  );
+
+  // goes thorugh each set of headers looking for one that has been
+  // populated in $_SERVER
+  foreach($headers as $header) {
+    foreach($header as $UA) {
+      if(is_array($UA)) // ignore array, as array will be 'coms'
+        continue;
+
+      if (array_key_exists($UA, $_SERVER)) {
+        // match found, add to $results
+        $results[] = fiftyone_degrees_FillUserAgentArray($_SERVER[$UA], $header['coms']);
+      }
+    }
+  }
+  return $results;
+}
+
+/**
+ * Gets an array with a useragent and an aray of int showing which
+ * components the UA supports.
+ *
+ * $UA (string) - the useragent to fill the array with.
+ *
+ * $coms (array (int)) - an array of component ids the useragent supports.
+ * If null, or not an array, the useragent will be assumed to support all
+ * component ids.
+ *
+ * return (array)
+ * An associative array of the useragent and the components it supports.
+ * element ->
+ *      'value' (string) -> the useragent string
+ *      'coms' (array (int)) -> a list of component ids the UA
+ * supports.
+ */
+function fiftyone_degrees_FillUserAgentArray($UA, $coms = null) {
+  if(is_array($coms) == FALSE)
+    $coms = array(0,1,2,3);
+
+  $result = array(
+    'value' => $UA,
+    'coms' =>   $coms
+  );
+
+  return $result;
 }
 
 /**
@@ -190,6 +284,7 @@ function fiftyone_degrees_readProfiles($base_location, &$resultset, $final) {
 
   $profileIds = array();
   if (($handle = fopen($base_location . "Profiles.dat", "r")) !== FALSE) {
+
     foreach (array_slice($final, 0, 4) as $offset) {
 
       // Move to the position in the profiles file.
@@ -200,7 +295,7 @@ function fiftyone_degrees_readProfiles($base_location, &$resultset, $final) {
       $profileIds[] = trim(fgets($handle));
 
       // Read the profile values and add to the resultset.
-      while (($data = fgetcsv($handle, 28, "|")) !== FALSE && $data[0] != NULL) {
+      while (($data = fgetcsv($handle, 2777, "|")) !== FALSE && $data[0] != NULL) {
         switch ($data[1]) {
           // This is a single value property.
           case "0":

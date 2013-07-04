@@ -37,194 +37,293 @@ function E86($target, $test, $ls) {
 function _H86($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Toshiba/X01T';
+  $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6780';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(20443,6753,14359,6, $ua);
+    $dl[] = array(333648,268780,17936,913, $ua, '13723-22283-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/02/ PPC; 480x800';
+  $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6780';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(333648,268780,17936,913, $ua, '13723-22283-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760 Novarra-Vision/8.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800 Novarra-Vision/8.0';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760 Novarra-Vision/8.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/ PPC; 480x800';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760, Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 01/ PPC; 480x800';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-6760';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,5817,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/X02T; Windows Phone 6.5)';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sanyo  SCP-6760';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(20443,7696,6759,6, $ua);
+    $dl[] = array(117459,108321,17936,913, $ua, '12321-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/TG01/02; Windows Phone 6.5)';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,7696,6759,6, $ua);
+    $dl[] = array(295345,108321,168272,913, $ua, '12297-5208-4628-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba_TG01; Windows Phone 6.5)';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Boost SCP-2700 Novarra-Vision/8.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,7696,6759,6, $ua);
+    $dl[] = array(295345,108321,168272,913, $ua, '12297-5208-4628-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 02; Windows Phone 6.5)';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,7696,6759,6, $ua);
+    $dl[] = array(295345,108321,168272,913, $ua, '12297-5208-4628-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081018_092ES2_61';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) Sprint SCP-2700 Novarra-Vision/8.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(295345,108321,168272,913, $ua, '12297-5208-4628-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810 Novarra-Vision/8.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(300195,108321,17936,913, $ua, '12370-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081105_093ES2_61';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(300195,108321,17936,913, $ua, '12370-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810, Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP3810';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(300195,108321,17936,913, $ua, '12370-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810/ ver RL1_20090425_096IL1_61/ Windows CE; IE Mobile 7.11; Mozilla/4.0';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-3810';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(300195,108321,17936,913, $ua, '12370-5208-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_080825_083ES2_61';
+  $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint SCP-3820';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,13423,6, $ua);
+    $dl[] = array(294985,268780,17936,913, $ua, '13663-22283-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Toshiba G910_G920';
+  $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sanyo  SCP-3820';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403617,6753,13423,6, $ua);
+    $dl[] = array(294985,268780,17936,913, $ua, '13663-22283-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Toshiba_TG01 PPC; 480x800';
+  $ua = 'Mozilla/4.0 (Brew MP 1.0.2; U; en-us; Sanyo; NetFront/3.5.1/AMB) Sprint E4100';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161520,6753,13423,6, $ua);
+    $dl[] = array(268787,268780,17936,913, $ua, '15634-22283-4223-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65 [en] Toshiba G910_G920';
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) PL2700';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403617,16329,45126,6, $ua);
+    $dl[] = array(395144,108321,168272,913, $ua, '12590-5208-4628-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)  PPC; 240x320; Toshiba  G810';
+  $ua = 'Mozilla/4.0 (MobilePhone SCP-3100/CA/1.0) NetFront/3.1 MMP/2.0';
   $ns = E86($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(133728,6753,5817,6, $ua);
+    $dl[] = array(388874,121281,241959,913, $ua, '12651-6476-4977-18092');
+  }
+  $ua = 'Mozilla/4.0 (MobilePhone SCP-3100/US/1.0) NetFront/3.1 MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(388874,121281,241959,913, $ua, '12651-6476-4977-18092');
+  }
+  $ua = 'Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) PL3810';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(277356,108321,17936,913, $ua, '15751-5208-4223-18092');
+  }
+  $ua = 'Mozilla/4.0 (MobilePhone SCP-8400/US/1.0) NetFront/3.3 MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(399103,121281,36475,913, $ua, '14702-6476-3601-18092');
+  }
+  $ua = 'Sanyo-SCP6600CA NetFront/3.1 MMP/2.0 Mozilla/4.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(383690,22118,241959,913, $ua, '15312-17017-4977-18092');
+  }
+  $ua = 'KDDI-AM01 UP.Browser/ KJ/ Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(389890,378044,22204,913, $ua, '12676-19941-3976-18092');
+  }
+  $ua = 'SANYO-S750/2.130 UP.Browser/7.0.2.1.sn.1.222 (GUI) MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(244271,22118,64676,913, $ua, '12015-17017-4222-18092');
+  }
+  $ua = 'SANYO-S750/1.810 UP.Browser/7.0.2.1.sn.1.159 (GUI) MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(244271,22118,64676,913, $ua, '12015-17017-4222-18092');
+  }
+  $ua = 'SANYO-S750/1.720 UP.Browser/7.0.2.1.sn.1.159 (GUI) MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(244271,22118,64676,913, $ua, '12015-17017-4222-18092');
+  }
+  $ua = 'SANYO-S750/2.280 UP.Browser/7.0.2.1.sn.1.222.a (GUI) MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(244271,22118,64676,913, $ua, '12015-17017-4222-18092');
+  }
+  $ua = 'SANYO-S103/1.803 UP.Browser/7.0.2.1.sn.1.289 (GUI) MMP/2.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(293065,22118,64676,913, $ua, '12261-17017-4222-18092');
+  }
+  $ua = 'Sanyo-SCP7000CA NetFront/3.1 MMP/2.0 Mozilla/4.0';
+  $ns = E86($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(294985,22118,241959,913, $ua, '13663-17017-4977-18092');
   }
   return $dl;
 }
