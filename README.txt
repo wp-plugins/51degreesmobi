@@ -4,7 +4,7 @@ Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 2.1.15.1
+Stable tag: 2.1.15.2
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -96,6 +96,9 @@ The FAQ section will be updated as relevant questions are asked of us.
 Screenshots comming soon
 
 == Changelog ==
+= 2.1.15.2 =
+* Updated data 10.10.2013
+
 = 2.1.15.1 =
 * Descriptions have been added to the plugin screens.
 * Changed 'Show Advanced Properties' to be more visible.

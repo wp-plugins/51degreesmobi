@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E53($target, $test, $ls) {
+function E53(&$target, $test, &$ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 1, $score);
   if ($score == PHP_INT_MAX) {
@@ -53,7 +53,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS39 UP.Browser/6.2.0.11.2 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS39 UP.Browser/6.2.0.11.2 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-KC46')), $ls);
@@ -61,7 +61,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-KC46 UP.Browser/6.2_7.2.7.1.K.7.108 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-KC46 UP.Browser/6.2_7.2.7.1.K.7.108 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3B')), $ls);
@@ -69,7 +69,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SA3B UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SA3B UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SH35')), $ls);
@@ -77,7 +77,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SH35 UP.Browser/6.2_7.2.7.1.K.2.207 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SH35 UP.Browser/6.2_7.2.7.1.K.2.207 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3C')), $ls);
@@ -85,7 +85,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SN3C UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SN3C UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-HI38')), $ls);
@@ -93,7 +93,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-HI38 UP.Browser/6.2.0.11.1.3.110 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-HI38 UP.Browser/6.2.0.11.1.3.110 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3K')), $ls);
@@ -101,7 +101,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3K UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3K UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3A')), $ls);
@@ -109,7 +109,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3A UP.Browser/6.2.0.11.2.1e (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3A UP.Browser/6.2.0.11.2.1e (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3C')), $ls);
@@ -117,7 +117,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SH3C UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SH3C UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3B')), $ls);
@@ -125,7 +125,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-CA3B UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-CA3B UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3Y')), $ls);
@@ -133,7 +133,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3Y UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3Y UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3Z')), $ls);
@@ -141,7 +141,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3Z UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3Z UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3F')), $ls);
@@ -149,7 +149,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-HI3F UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-HI3F UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3U')), $ls);
@@ -157,7 +157,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SN3U UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SN3U UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SH37')), $ls);
@@ -165,7 +165,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SH37 UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SH37 UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3G')), $ls);
@@ -173,7 +173,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-HI3G UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-HI3G UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3K')), $ls);
@@ -181,7 +181,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-CA3K UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-CA3K UP.Browser/6.2_7.2.7.1.K.7.112 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3M')), $ls);
@@ -189,7 +189,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3M UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3M UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3D')), $ls);
@@ -197,7 +197,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SA3D UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SA3D UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3E')), $ls);
@@ -205,7 +205,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SA3E UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SA3E UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3D')), $ls);
@@ -213,7 +213,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-CA3D UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-CA3D UP.Browser/6.2_7.2.7.1.K.3.354 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-FJ31')), $ls);
@@ -221,7 +221,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-FJ31 UP.Browser/6.2_7.2.7.1.K.8.160 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-FJ31 UP.Browser/6.2_7.2.7.1.K.8.160 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3V')), $ls);
@@ -229,7 +229,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-SN3V UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-SN3V UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3L')), $ls);
@@ -237,7 +237,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-TS3L UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-TS3L UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-KC38')), $ls);
@@ -245,7 +245,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-KC38 UP.Browser/6.2.0.11.1.2.2e (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-KC38 UP.Browser/6.2.0.11.1.2.2e (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-KC4A')), $ls);
@@ -253,7 +253,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-KC4A UP.Browser/6.2_7.2.7.1.K.7.1.104 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-KC4A UP.Browser/6.2_7.2.7.1.K.7.1.104 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-PT37')), $ls);
@@ -261,7 +261,15 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,378044,18952,913, 'KDDI-PT37 UP.Browser/6.2.0.17.2.4.1.2 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $dl[] = array(44218,357572,12619,913, 'KDDI-PT37 UP.Browser/6.2.0.17.2.4.1.2 (GUI) MMP/2.0', '15364-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC45')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,357572,12619,913, 'KDDI-KC45 UP.Browser/6.2.0.17.2 (GUI) MMP/2.0', '15364-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA31')), $ls);
@@ -269,7 +277,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(378051,378044,18952,363230, 'KDDI-CA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0 (compatible; ichiro/mobile goo;+http://search.goo.ne.jp/option/use/sub4/sub4-1/)', '14628-19941-3625-18168');
+    $dl[] = array(914724,357572,12619,341407, 'KDDI-CA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0 (compatible; ichiro/mobile goo;+http://search.goo.ne.jp/option/use/sub4/sub4-1/)', '14628-19941-3625-18168');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3S')), $ls);
@@ -277,7 +285,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(499453,378044,18952,913, 'KDDI-SN3S UP.Browser/6.2_7.2.7.1.K.6.211 (GUI) MMP/2.0', '17579-19941-3625-18092');
+    $dl[] = array(460417,357572,12619,913, 'KDDI-SN3S UP.Browser/6.2_7.2.7.1.K.6.212 (GUI) MMP/2.0', '17579-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3J')), $ls);
@@ -285,23 +293,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(486040,378044,18952,913, 'KDDI-SH3J UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17581-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3Q')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497709,378044,18952,913, 'KDDI-SN3Q UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17582-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3F')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481570,378044,18952,913, 'KDDI-CA3F UP.Browser/6.2_7.2.7.1.K.4.310 (GUI) MMP/2.0', '17509-19941-3625-18092');
+    $dl[] = array(451104,357572,12619,913, 'KDDI-SH3J UP.Browser/6.2_7.2.7.1.K.5.212 (GUI) MMP/2.0', '17581-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3I')), $ls);
@@ -309,39 +301,15 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(498357,378044,18952,913, 'KDDI-CA3I UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17512-19941-3625-18092');
+    $dl[] = array(458733,357572,12619,913, 'KDDI-CA3I UP.Browser/6.2_7.2.7.1.K.5.214 (GUI) MMP/2.0', '17512-19941-3625-18092');
     $ls = $ns;
   }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3T')), $ls);
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3Q')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(503830,378044,18952,913, 'KDDI-SN3T UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17643-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481498,378044,18952,913, 'KDDI-SH3E UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17569-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3F')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482434,378044,18952,913, 'KDDI-SH3F UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17568-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3R')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(486112,378044,18952,913, 'KDDI-SN3R UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17637-19941-3625-18092');
+    $dl[] = array(522775,357572,12619,913, 'KDDI-SN3Q UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17582-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3J')), $ls);
@@ -349,15 +317,31 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(499309,378044,18952,913, 'KDDI-CA3J UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17516-19941-3625-18092');
+    $dl[] = array(460345,357572,12619,913, 'KDDI-CA3J UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17516-19941-3625-18092');
     $ls = $ns;
   }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3J')), $ls);
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3F')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(378987,378044,18952,913, 'KDDI-SN3J UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17570-19941-3625-18092');
+    $dl[] = array(446761,357572,12619,913, 'KDDI-CA3F UP.Browser/6.2_7.2.7.1.K.4.310 (GUI) MMP/2.0', '17509-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3F')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(447409,357572,12619,913, 'KDDI-SH3F UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17568-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3T')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(463802,357572,12619,913, 'KDDI-SN3T UP.Browser/6.2_7.2.7.1.K.6.1.102 (GUI) MMP/2.0', '17643-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3R')), $ls);
@@ -365,7 +349,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(402127,378044,18952,913, 'KDDI-TS3R UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '14787-19941-3625-18092');
+    $dl[] = array(386449,357572,12619,913, 'KDDI-TS3R UP.Browser/6.2_7.2.7.1.K.4.1.203 (GUI) MMP/2.0', '14787-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3H')), $ls);
@@ -373,15 +357,31 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(483802,378044,18952,913, 'KDDI-CA3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17580-19941-3625-18092');
+    $dl[] = array(448273,357572,12619,913, 'KDDI-CA3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17580-19941-3625-18092');
     $ls = $ns;
   }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3O')), $ls);
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3J')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(483874,378044,18952,913, 'KDDI-SN3O UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17699-19941-3625-18092');
+    $dl[] = array(357500,357572,12619,913, 'KDDI-SN3J UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17570-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3E')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446617,357572,12619,913, 'KDDI-SH3E UP.Browser/6.2_7.2.7.1.K.3.358 (GUI) MMP/2.0', '17569-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3R')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(593842,357572,12619,913, 'KDDI-SN3R UP.Browser/6.2_7.2.7.1.K.6.1.103 (GUI) MMP/2.0', '17637-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3N')), $ls);
@@ -389,23 +389,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(482506,378044,18952,913, 'KDDI-SN3N UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17572-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3S')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485242,378044,18952,913, 'KDDI-TS3S UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17577-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3V')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497637,378044,18952,913, 'KDDI-TS3V UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17588-19941-3625-18092');
+    $dl[] = array(447337,357572,12619,913, 'KDDI-SN3N UP.Browser/6.2_7.2.7.1.K.4.1.204 (GUI) MMP/2.0', '17572-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3H')), $ls);
@@ -413,39 +397,23 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(408431,378044,18952,913, 'KDDI-HI3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17578-19941-3625-18092');
+    $dl[] = array(394730,357572,12619,913, 'KDDI-HI3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17578-19941-3625-18092');
     $ls = $ns;
   }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3P')), $ls);
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3S')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(484162,378044,18952,913, 'KDDI-SN3P UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17574-19941-3625-18092');
+    $dl[] = array(542007,357572,12619,913, 'KDDI-TS3S UP.Browser/6.2_7.2.7.1.K.5.212 (GUI) MMP/2.0', '17577-19941-3625-18092');
     $ls = $ns;
   }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3K')), $ls);
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3V')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(497781,378044,18952,913, 'KDDI-SH3K UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17639-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3O')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480129,378044,18952,913, 'KDDI-KC3O UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17537-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3X')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(483946,378044,18952,913, 'KDDI-KC3X UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17594-19941-3625-18092');
+    $dl[] = array(458157,357572,12619,913, 'KDDI-TS3V UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17588-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-SH38')), $ls);
@@ -453,1319 +421,7 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(475335,378044,18952,913, 'KDDI-SH38 UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17576-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3X')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(501813,378044,18952,913, 'KDDI-TS3X UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0', '17587-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3W')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(498069,378044,18952,913, 'KDDI-TS3W UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17876-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Z')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485817,378044,18952,913, 'KDDI-KC3Z UP.Browser/6.2.0.16.1 (GUI) MMP/2.0', '17591-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472451,378044,18952,913, 'KDDI-CA3C UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17505-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379707,378044,18952,913, 'KDDI-SH3D UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17567-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(409583,378044,18952,913, 'KDDI-SH3B UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17573-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3G')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481642,378044,18952,913, 'KDDI-CA3G UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17511-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3I')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484378,378044,18952,913, 'KDDI-SH3I UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17566-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3L')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(499597,378044,18952,913, 'KDDI-SH3L UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17590-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3L')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481138,378044,18952,913, 'KDDI-SN3L UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17635-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480345,378044,18952,913, 'KDDI-CA3E UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17507-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3I')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475263,378044,18952,913, 'KDDI-SN3I UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17571-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3U')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485314,378044,18952,913, 'KDDI-TS3U UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17875-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3G')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482794,378044,18952,913, 'KDDI-SH3G UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17634-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463010,378044,18952,913, 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17504-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3G')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472235,378044,18952,913, 'KDDI-SN3G UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17575-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472163,378044,18952,913, 'KDDI-HI3E UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17626-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3F')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401983,378044,18952,913, 'KDDI-SN3F UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '14783-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3R')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481282,378044,18952,913, 'KDDI-KC3R UP.Browser/6.2_7.2.7.1.K.4.310 (GUI) MMP/2.0', '17543-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC42')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(499525,378044,18952,913, 'KDDI-KC42 UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17638-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3H')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484522,378044,18952,913, 'KDDI-SH3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17867-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA39')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462434,378044,18952,913, 'KDDI-CA39 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17503-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3Q')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480273,378044,18952,913, 'KDDI-TS3Q UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17873-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3K')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(476848,378044,18952,913, 'KDDI-SN3K UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17565-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462722,378044,18952,913, 'KDDI-HI3D UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17877-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(471443,378044,18952,913, 'KDDI-SH36 UP.Browser/6.2.0.14.2 (GUI) MMP/2.0', '17633-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(501957,378044,18952,913, 'KDDI-PT36 UP.Browser/6.2.0.17.2.4 (GUI) MMP/2.0', '17628-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465314,378044,18952,913, 'KDDI-SN3E UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17589-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466826,378044,18952,913, 'KDDI-MA33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17555-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3M')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481210,378044,18952,913, 'KDDI-SN3M UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17636-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3O')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(476776,378044,18952,913, 'KDDI-TS3O UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17703-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463514,378044,18952,913, 'KDDI-HI3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17525-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463946,378044,18952,913, 'KDDI-SN3B UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17641-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3N')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475551,378044,18952,913, 'KDDI-TS3N UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17702-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3I')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466322,378044,18952,913, 'KDDI-TS3I UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17878-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462794,378044,18952,913, 'KDDI-SH33 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17631-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3P')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(478947,378044,18952,913, 'KDDI-TS3P UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17584-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465890,378044,18952,913, 'KDDI-SH34 UP.Browser/6.2.0.13.4 (GUI) MMP/2.0', '17632-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462866,378044,18952,913, 'KDDI-SA3A UP.Browser/6.2.0.13.1.4 (GUI) MMP/2.0', '17630-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3H')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401911,378044,18952,913, 'KDDI-TS3H UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '14770-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464450,378044,18952,913, 'KDDI-TS3D UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17593-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475479,378044,18952,913, 'KDDI-MA35 UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '17855-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464018,378044,18952,913, 'KDDI-KC3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17528-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464378,378044,18952,913, 'KDDI-ST33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17645-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3I')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472307,378044,18952,913, 'KDDI-KC3I UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17534-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3S')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481354,378044,18952,913, 'KDDI-KC3S UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17535-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3V')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482722,378044,18952,913, 'KDDI-KC3V UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17549-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA38')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465818,378044,18952,913, 'KDDI-CA38 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17501-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463010,298022,18952,913, 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~google.com:mobile-checker)', '17504-7480-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462506,378044,18952,913, 'KDDI-SN3D UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17883-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463874,378044,18952,913, 'KDDI-SN3A UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17592-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463658,378044,18952,913, 'KDDI-KC3D UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17530-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466538,378044,18952,913, 'KDDI-ST34 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17647-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Q')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480201,378044,18952,913, 'KDDI-KC3Q UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17541-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3G')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465530,378044,18952,913, 'KDDI-TS3G UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17642-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3H')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464162,378044,18952,913, 'KDDI-KC3H UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17533-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3N')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475767,378044,18952,913, 'KDDI-KC3N UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17536-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465170,378044,18952,913, 'KDDI-HI3C UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17527-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464810,378044,18952,913, 'KDDI-TS3E UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17862-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Y')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484810,378044,18952,913, 'KDDI-KC3Y UP.Browser/6.2.0.17.1.1 (GUI) MMP/2.0', '17627-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472379,378044,18952,913, 'KDDI-MA34 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17556-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466034,378044,18952,913, 'KDDI-SA3C UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17583-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3P')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497565,378044,18952,913, 'KDDI-KC3P UP.Browser/6.2.0.15.2 (GUI) MMP/2.0', '17538-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464522,378044,18952,913, 'KDDI-HI3A UP.Browser/6.2.0.13.1.4 (GUI) MMP/2.0', '17523-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(468265,378044,18952,913, 'KDDI-PT34 UP.Browser/6.2.0.14.3.1 (GUI) MMP/2.0', '17857-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465602,378044,18952,913, 'KDDI-PT33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17705-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3G')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465746,378044,18952,913, 'KDDI-KC3G UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17704-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3T')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482650,378044,18952,913, 'KDDI-TS3T UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17874-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-AM01')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(389890,378044,22204,913, 'KDDI-AM01 UP.Browser/ KJ/ Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)', '12676-19941-3976-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3K')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479985,378044,18952,913, 'KDDI-KC3K UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17853-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3U')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482578,378044,18952,913, 'KDDI-KC3U UP.Browser/6.2.0.15.2 (GUI) MMP/2.0', '17547-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3T')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481426,378044,18952,913, 'KDDI-KC3T UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17545-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475623,378044,18952,913, 'KDDI-PT35 UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17858-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS21')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480057,378044,448442,913, 'KDDI-TS21 UP.Browser/6.0.2.273 (GUI) MMP/1.1', '17700-19941-20422-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464882,378044,18952,913, 'KDDI-CA34 UP.Browser/6.2.0.10.3.3 (GUI) MMP/2.0', '17495-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463370,378044,18952,913, 'KDDI-CA37 UP.Browser/6.2.0.12.1.3 (GUI) MMP/2.0', '17499-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463730,378044,18952,913, 'KDDI-CA35 UP.Browser/6.2.0.11.1.2 (GUI) MMP/2.0', '17498-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466466,378044,18952,913, 'KDDI-ST32 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17644-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA39')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463442,378044,18952,913, 'KDDI-SA39 UP.Browser/6.2.0.12.1.4 (GUI) MMP/2.0', '17864-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449523,378044,18952,913, 'KDDI-CA33 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0', '17494-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462938,378044,18952,913, 'KDDI-MA32 UP.Browser/6.2.0.12.1.4 (GUI) MMP/2.0', '17550-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC28')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463298,378044,18952,913, 'KDDI-KC28 UP.Browser/6.2.0.10.1 (GUI) MMP/2.0', '17850-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465098,378044,18952,913, 'KDDI-CA36 UP.Browser/6.2.0.10.3.3 (GUI) MMP/2.0', '17847-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465242,378044,18952,913, 'KDDI-HI37 UP.Browser/6.2.0.10.3.3 (GUI) MMP/2.0', '17520-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA31')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466970,378044,18952,913, 'KDDI-MA31 UP.Browser/6.2.0.11.1.4 (GUI) MMP/2.0', '17854-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA21')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449379,378044,448442,913, 'KDDI-CA21 UP.Browser/6.0.7.1 (GUI) MMP/1.1', '17845-19941-20422-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI39')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463154,378044,18952,913, 'KDDI-HI39 UP.Browser/6.2.0.12.1.3 (GUI) MMP/2.0', '17522-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463226,378044,18952,913, 'KDDI-SH32 UP.Browser/6.2.0.11.2.1 (GUI) MMP/2.0', '17865-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463586,378044,18952,913, 'KDDI-HI34 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0', '17848-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST27')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463802,378044,18952,913, 'KDDI-ST27 UP.Browser/6.2.0.9 (GUI) MMP/2.0', '17869-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3J')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464234,378044,18952,913, 'KDDI-TS3J UP.Browser/6.2_7.2.7.1.K.2.179 (GUI) MMP/2.0', '17872-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464954,378044,18952,913, 'KDDI-KC3E UP.Browser/6.2.0.11.1.2.2e (GUI) MMP/2.0', '17532-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465026,378044,18952,913, 'KDDI-SN36 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0', '17640-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466394,378044,18952,913, 'KDDI-HI36 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0', '17517-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST28')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466610,378044,18952,913, 'KDDI-ST28 UP.Browser/6.2.0.10.1 (GUI) MMP/2.0', '17646-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC39')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466682,378044,18952,913, 'KDDI-KC39 UP.Browser/6.2.0.12.1.3 (GUI) MMP/2.0', '17881-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464090,378044,18952,913, 'KDDI-SA35 UP.Browser/6.2.0.9.1 (GUI) MMP/2.0', '17861-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA23')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449451,378044,16074,913, 'KDDI-CA23', '17846-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA23')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449451,378044,18952,913, 'KDDI-CA23 UP.Browser/6.2.0.5.136 (GUI) MMP/2.0', '17846-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA27')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449595,378044,18952,913, 'KDDI-SA27 UP.Browser/6.2.0.6.3 (GUI) MMP/2.0', '17859-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS25')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449667,378044,16074,913, 'KDDI-TS25', '17701-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS25')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(449667,378044,448442,913, 'KDDI-TS25 UP.Browser/6.0.8.3 (GUI) MMP/1.1', '17701-19941-20422-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463082,378044,18952,913, 'KDDI-KC35 UP.Browser/6.2.0.10.2.2 (GUI) MMP/2.0', '17880-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA31')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378051,378044,16074,913, 'KDDI-CA31', '14628-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464018,378044,16074,913, 'KDDI-KC3B', '17528-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464090,378044,16074,913, 'KDDI-SA35', '17861-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC2A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464306,378044,18952,913, 'KDDI-KC2A UP.Browser/6.2.0.13.3 (GUI) MMP/2.0', '17879-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464378,378044,16074,913, 'KDDI-ST33', '17645-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464594,378044,18952,913, 'KDDI-KC36 UP.Browser/6.2.0.10.2.2 (GUI) MMP/2.0', '17852-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA29')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464666,378044,18952,913, 'KDDI-SA29 UP.Browser/6.2.0.10.1 (GUI) MMP/2.0', '17882-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464738,378044,18952,913, 'KDDI-HI35 UP.Browser/6.2.0.9.2 (GUI) MMP/2.0', '17849-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464882,378044,16074,913, 'KDDI-CA34', '17495-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA2A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465386,378044,18952,913, 'KDDI-SA2A UP.Browser/6.2.0.10.1 (GUI) MMP/2.0', '17860-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465458,378044,16074,913, 'KDDI-KC33', '17851-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA31')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465674,378044,18952,913, 'KDDI-SA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0', '17629-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST25')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(353562,378044,18952,913, 'KDDI-ST25 UP.Browser/6.2.0.8 (GUI) MMP/2.0', '17625-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465962,378044,18952,913, 'KDDI-SN34 UP.Browser/6.2.0.10.4 (GUI) MMP/2.0', '17868-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT22')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466106,378044,18952,913, 'KDDI-PT22 UP.Browser/6.2.0.10.1 (GUI) MMP/2.0', '17856-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466178,378044,16074,913, 'KDDI-TS37', '17871-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466250,378044,18952,913, 'KDDI-TS32 UP.Browser/6.2.0.9.1 (GUI) MMP/2.0', '17023-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466754,378044,18952,913, 'KDDI-TS34 UP.Browser/6.2.0.10.2.1 (GUI) MMP/2.0', '17870-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST26')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466898,378044,18952,913, 'KDDI-ST26 UP.Browser/6.2.0.8 (GUI) MMP/2.0', '18448-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464810,378044,16074,913, 'KDDI-TS3E', '17862-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464450,378044,16074,913, 'KDDI-TS3D', '17593-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466538,378044,16074,913, 'KDDI-ST34', '17647-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST27')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463802,378044,16074,913, 'KDDI-ST27', '17869-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3F')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401983,378044,16074,913, 'KDDI-SN3F', '14783-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST25')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(353562,378044,16074,913, 'KDDI-ST25', '17625-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465314,378044,16074,913, 'KDDI-SN3E', '17589-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463946,378044,16074,913, 'KDDI-SN3B', '17641-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463874,378044,16074,913, 'KDDI-SN3A', '17592-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465026,378044,16074,913, 'KDDI-SN36', '17640-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465962,378044,16074,913, 'KDDI-SN34', '17868-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465890,378044,16074,913, 'KDDI-SH34', '17632-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462794,378044,16074,913, 'KDDI-SH33', '17631-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463226,378044,16074,913, 'KDDI-SH32', '17865-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462866,378044,16074,913, 'KDDI-SA3A', '17630-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA2A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465386,378044,16074,913, 'KDDI-SA2A', '17860-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465602,378044,16074,913, 'KDDI-PT33', '17705-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT22')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466106,378044,16074,913, 'KDDI-PT22', '17856-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3H')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464162,378044,16074,913, 'KDDI-KC3H', '17533-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA32')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462938,378044,16074,913, 'KDDI-MA32', '17550-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463658,378044,16074,913, 'KDDI-KC3D', '17530-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464594,378044,16074,913, 'KDDI-KC36', '17852-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463514,378044,16074,913, 'KDDI-HI3B', '17525-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462722,378044,16074,913, 'KDDI-HI3D', '17877-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463082,378044,16074,913, 'KDDI-KC35', '17880-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464522,378044,16074,913, 'KDDI-HI3A', '17523-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI39')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463154,378044,16074,913, 'KDDI-HI39', '17522-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465242,378044,16074,913, 'KDDI-HI37', '17520-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI35')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464738,378044,16074,913, 'KDDI-HI35', '17849-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI36')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466394,378044,16074,913, 'KDDI-HI36', '17517-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463010,378044,16074,913, 'KDDI-CA3A', '17504-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA38')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465818,378044,16074,913, 'KDDI-CA38', '17501-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463370,378044,16074,913, 'KDDI-CA37', '17499-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA29')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(464666,378044,16074,913, 'KDDI-SA29', '17882-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA31')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378051,378044,18952,913, 'KDDI-CA31 UP.Browser/6.2.0.7.3.129 (GUI) MMP/2.0', '14628-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465170,378044,16074,913, 'KDDI-HI3C', '17527-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS37')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(466178,378044,18952,913, 'KDDI-TS37 UP.Browser/6.2.0.10.3.3.1 (GUI) MMP/2.0', '17871-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI34')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(463586,378044,16074,913, 'KDDI-HI34', '17848-19941-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC33')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(465458,378044,18952,913, 'KDDI-KC33 UP.Browser/6.2.0.9 (GUI) MMP/2.0', '17851-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST21')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479841,378044,448442,913, 'KDDI-ST21 UP.Browser/6.0.8.3 (GUI) MMP/1.1', '15989-19941-20422-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST23')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479913,378044,18952,913, 'KDDI-ST23 UP.Browser/6.2.0.5 (GUI) MMP/2.0', '18450-19941-3625-18092');
-    $ls = $ns;
-  }
-  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472163,378044,16074,913, 'KDDI-HI3E', '17626-19941-17470-18092');
+    $dl[] = array(440008,357572,12619,913, 'KDDI-SH38 UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17576-19941-3625-18092');
     $ls = $ns;
   }
   $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3O')), $ls);
@@ -1773,7 +429,679 @@ function _H53($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(480129,378044,16074,913, 'KDDI-KC3O', '17537-19941-17470-18092');
+    $dl[] = array(446113,357572,12619,913, 'KDDI-KC3O UP.Browser/6.2.0.15.1.1.1.2 (GUI) MMP/2.0', '17537-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3P')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(533007,357572,12619,913, 'KDDI-SN3P UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17574-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3O')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(448345,357572,12619,913, 'KDDI-SN3O UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17699-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Z')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(450744,357572,12619,913, 'KDDI-KC3Z UP.Browser/6.2.0.16.1 (GUI) MMP/2.0', '17591-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3K')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(458085,357572,12619,913, 'KDDI-SH3K UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17639-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3W')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(457940,357572,12619,913, 'KDDI-TS3W UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17876-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3X')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(448417,357572,12619,913, 'KDDI-KC3X UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17594-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3B')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(395902,357572,12619,913, 'KDDI-SH3B UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17573-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(560637,357572,12619,913, 'KDDI-CA3C UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17505-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3X')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(461982,357572,12619,913, 'KDDI-TS3X UP.Browser/6.2_7.2.7.1.K.7.113 (GUI) MMP/2.0', '17587-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3G')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446689,357572,12619,913, 'KDDI-CA3G UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17511-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3E')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(513244,357572,12619,913, 'KDDI-CA3E UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17507-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3L')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(460561,357572,12619,913, 'KDDI-SH3L UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17590-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3L')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(591030,357572,12619,913, 'KDDI-SN3L UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17635-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3D')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(358227,357572,12619,913, 'KDDI-SH3D UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17567-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3U')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(450453,357572,12619,913, 'KDDI-TS3U UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17875-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3I')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(515307,357572,12619,913, 'KDDI-SN3I UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17571-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3I')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(594210,357572,12619,913, 'KDDI-SH3I UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17566-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC42')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(460489,357572,12619,913, 'KDDI-KC42 UP.Browser/6.2_7.2.7.1.K.6.210 (GUI) MMP/2.0', '17638-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3G')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(434498,357572,12619,913, 'KDDI-SN3G UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17575-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428652,357572,12619,913, 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17504-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3H')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(448921,357572,12619,913, 'KDDI-SH3H UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17867-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA39')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428148,357572,12619,913, 'KDDI-CA39 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17503-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH3G')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(594138,357572,12619,913, 'KDDI-SH3G UP.Browser/6.2_7.2.7.1.K.5.207 (GUI) MMP/2.0', '17634-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3F')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(386377,357572,12619,913, 'KDDI-SN3F UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '14783-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3E')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(434354,357572,12619,913, 'KDDI-HI3E UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17626-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3O')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(590958,357572,12619,913, 'KDDI-TS3O UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17703-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(462270,357572,12619,913, 'KDDI-PT36 UP.Browser/6.2.0.17.2.4 (GUI) MMP/2.0', '17628-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3D')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428436,357572,12619,913, 'KDDI-HI3D UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17877-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3Q')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446257,357572,12619,913, 'KDDI-TS3Q UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17873-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433490,357572,12619,913, 'KDDI-SH36 UP.Browser/6.2.0.14.2 (GUI) MMP/2.0', '17633-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3B')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428940,357572,12619,913, 'KDDI-HI3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17525-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3E')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429516,357572,12619,913, 'KDDI-SN3E UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17589-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3R')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446401,357572,12619,913, 'KDDI-KC3R UP.Browser/6.2_7.2.7.1.K.4.310 (GUI) MMP/2.0', '17543-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH33')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428580,357572,12619,913, 'KDDI-SH33 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17631-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3M')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446329,357572,12619,913, 'KDDI-SN3M UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17636-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3K')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(507923,357572,12619,913, 'KDDI-SN3K UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17565-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3I')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429948,357572,12619,913, 'KDDI-TS3I UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17878-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA33')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(430092,357572,12619,913, 'KDDI-MA33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17555-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SH34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429804,357572,12619,913, 'KDDI-SH34 UP.Browser/6.2.0.13.4 (GUI) MMP/2.0', '17632-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3B')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429084,357572,12619,913, 'KDDI-SN3B UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17641-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428508,357572,12619,913, 'KDDI-SA3A UP.Browser/6.2.0.13.1.4 (GUI) MMP/2.0', '17630-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3D')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429372,357572,12619,913, 'KDDI-TS3D UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17593-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3B')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433778,357572,12619,913, 'KDDI-KC3B UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17528-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3N')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(440224,357572,12619,913, 'KDDI-TS3N UP.Browser/6.2_7.2.7.1.K.3.352 (GUI) MMP/2.0', '17702-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3P')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(510058,357572,12619,913, 'KDDI-TS3P UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17584-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428652,272292,12619,913, 'KDDI-CA3A UP.Browser/6.2.0.13.2 (GUI) MMP/2.0 AppEngine-Google; (+http://code.google.com/appengine; appid: s~google.com:mobile-checker)', '17504-7480-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3I')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(434642,357572,12619,913, 'KDDI-KC3I UP.Browser/6.2.0.14.1.2 (GUI) MMP/2.0', '17534-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3H')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(386233,357572,12619,913, 'KDDI-TS3H UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '14770-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST33')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433418,357572,12619,913, 'KDDI-ST33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17645-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA38')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429876,357572,12619,913, 'KDDI-CA38 UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17501-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3S')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446473,357572,12619,913, 'KDDI-KC3S UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17535-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-ST34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(430020,357572,12619,913, 'KDDI-ST34 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17647-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3V')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(447625,357572,12619,913, 'KDDI-KC3V UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17549-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3N')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(440440,357572,12619,913, 'KDDI-KC3N UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17536-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429012,357572,12619,913, 'KDDI-SN3A UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17592-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3H')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429156,357572,12619,913, 'KDDI-KC3H UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17533-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SN3D')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(760272,357572,12619,913, 'KDDI-SN3D UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17883-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3J')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1472905,357572,12619,913, 'KDDI-TS3J UP.Browser/6.2_7.2.7.1.K.2.234 (GUI) MMP/2.0', '17872-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3D')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428796,357572,12619,913, 'KDDI-KC3D UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17530-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(434570,357572,12619,913, 'KDDI-MA34 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17556-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-MA35')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(440152,357572,12619,913, 'KDDI-MA35 UP.Browser/6.2_7.2.7.1.K.2.232 (GUI) MMP/2.0', '17855-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429444,357572,12619,913, 'KDDI-HI3C UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17527-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3E')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429300,357572,12619,913, 'KDDI-TS3E UP.Browser/6.2.0.13.1.5 (GUI) MMP/2.0', '17862-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Q')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446185,357572,12619,913, 'KDDI-KC3Q UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17541-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3G')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429588,357572,12619,913, 'KDDI-TS3G UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17642-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3U')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(447481,357572,12619,913, 'KDDI-KC3U UP.Browser/6.2.0.15.2 (GUI) MMP/2.0', '17547-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(431324,357572,12619,913, 'KDDI-PT34 UP.Browser/6.2.0.14.3.1 (GUI) MMP/2.0', '17857-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-HI3A')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429228,357572,12619,913, 'KDDI-HI3A UP.Browser/6.2.0.13.1.4 (GUI) MMP/2.0', '17523-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3T')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(446545,357572,12619,913, 'KDDI-KC3T UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17545-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA3C')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(755621,357572,12619,913, 'KDDI-SA3C UP.Browser/6.2_7.2.7.1.K.1.5.1.120 (GUI) MMP/2.0', '17583-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT33')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429732,357572,12619,913, 'KDDI-PT33 UP.Browser/6.2.0.13.2 (GUI) MMP/2.0', '17705-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3Y')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(449065,357572,12619,913, 'KDDI-KC3Y UP.Browser/6.2.0.17.1.1 (GUI) MMP/2.0', '17627-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3P')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(456913,357572,12619,913, 'KDDI-KC3P UP.Browser/6.2.0.15.2 (GUI) MMP/2.0', '17538-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3G')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(429660,357572,12619,913, 'KDDI-KC3G UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17704-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS3T')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(447553,357572,12619,913, 'KDDI-TS3T UP.Browser/6.2_7.2.7.1.K.4.306 (GUI) MMP/2.0', '17874-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-TS21')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(445084,357572,445156,913, 'KDDI-TS21 UP.Browser/6.0.2.273 (GUI) MMP/1.1', '17700-19941-20422-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-PT35')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(440296,357572,12619,913, 'KDDI-PT35 UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0', '17858-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-KC3K')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(445012,357572,12619,913, 'KDDI-KC3K UP.Browser/6.2.0.14.1 (GUI) MMP/2.0', '17853-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-AM01')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(368775,357572,15775,913, 'KDDI-AM01 UP.Browser/ KJ/ Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)', '12676-19941-3976-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA37')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428724,357572,12619,913, 'KDDI-CA37 UP.Browser/6.2.0.12.1.3 (GUI) MMP/2.0', '17499-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA23')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(418748,357572,12619,913, 'KDDI-CA23 UP.Browser/6.2.0.5.136 (GUI) MMP/2.0', '17846-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA35')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(428868,357572,12619,913, 'KDDI-CA35 UP.Browser/6.2.0.11.1.2 (GUI) MMP/2.0', '17498-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-SA39')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433634,357572,12619,913, 'KDDI-SA39 UP.Browser/6.2.0.12.1.4 (GUI) MMP/2.0', '17864-19941-3625-18092');
+    $ls = $ns;
+  }
+  $ns = E53($segments, array(0 => array(0 => 'KDDI-CA34')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433706,357572,12619,913, 'KDDI-CA34 UP.Browser/6.2.0.10.3.3 (GUI) MMP/2.0', '17495-19941-3625-18092');
     $ls = $ns;
   }
   return $dl;

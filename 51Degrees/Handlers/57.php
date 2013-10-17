@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E57($target, $test, $ls) {
+function E57(&$target, $test, &$ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
   if ($score == PHP_INT_MAX) {
@@ -78,12 +78,20 @@ function _H57($useragent) {
     4 => fiftyone_degrees_preg_match_all('#(?<=UCBrowser)\\d\\.\\d#', $useragent),
     5 => fiftyone_degrees_preg_match_all('#(?<=Browser/Obigo-)[^/]+/[\\d\\.]+#', $useragent),
     6 => fiftyone_degrees_preg_match_all('#(?<=Opera Mini/)[^\\);]+#', $useragent));
+  $ns = E57($segments, array(0 => array(0 => 'U8120'), 1 => array(0 => 'U8120'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(230011,4712,72970,913, 'LG/U8120/v1.0', '15498-17483-17660-18092');
+    $ls = $ns;
+  }
   $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990-Orange'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(103051,4620,102116,913, 'LG/KU990-Orange/v10ci Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
+    $dl[] = array(82758,4712,81803,913, 'LG/KU990-Orange/v10ci Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -91,23 +99,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(103051,4620,102116,913, 'LG/KU990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U8120'), 1 => array(0 => 'U8120'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(254945,4620,41748,913, 'LG/U8120/v1.0', '15498-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U8120C'), 1 => array(0 => 'U8120C'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(254945,4620,41748,913, 'LG/U8120C/v1.0', '15498-17483-17660-18092');
+    $dl[] = array(82758,4712,81803,913, 'LG/KU990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11656-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i-Orange'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -115,7 +107,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(115499,4620,102116,913, 'LG/KU990i-Orange/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $dl[] = array(375845,4712,81803,913, 'LG/KU990i-Orange/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -123,7 +115,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(115499,4620,102116,913, 'LG/KU990i/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $dl[] = array(375845,4712,81803,913, 'LG/KU990i/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i-Bouygues'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -131,7 +123,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(115499,4620,102116,913, 'LG/KU990i-Bouygues/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
+    $dl[] = array(375845,4712,81803,913, 'LG/KU990i-Bouygues/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12115-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KC910'), 1 => array(0 => 'KC910'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -139,7 +131,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(151922,4620,40813,913, 'LG/KC910/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
+    $dl[] = array(133021,4712,71943,913, 'LG/KC910/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KC910e'), 1 => array(0 => 'KC910e'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -147,15 +139,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(151922,4620,40813,913, 'LG/KC910e/V10c Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'GT505e'), 1 => array(0 => 'GT505e'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(40741,4620,40813,913, 'LG/GT505e/v10b Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
+    $dl[] = array(133021,4712,71943,913, 'LG/KC910e/V10c Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11765-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'GT505'), 1 => array(0 => 'GT505'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -163,7 +147,15 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(40741,4620,40813,913, 'LG/GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
+    $dl[] = array(167277,4712,71943,913, 'LG/GT505/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'GT505e'), 1 => array(0 => 'GT505e'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167277,4712,71943,913, 'LG/GT505e/v10c Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11811-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'BL40g'), 1 => array(0 => 'BL40g'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -171,7 +163,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89176,4620,88241,913, 'LG/BL40g/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
+    $dl[] = array(180321,4712,89207,913, 'LG/BL40g/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'BL40'), 1 => array(0 => 'BL40'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -179,7 +171,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(89176,4620,88241,913, 'LG/BL40/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
+    $dl[] = array(180321,4712,89207,913, 'LG/BL40/V10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11985-17483-3459-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U8138'), 1 => array(0 => 'U8138'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -187,7 +179,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(268564,4620,41748,913, 'LG/U8138/v1.0', '15631-17483-17660-18092');
+    $dl[] = array(244578,4712,72970,913, 'LG/U8138/v1.0', '15631-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'BL20'), 1 => array(0 => 'BL20'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -195,7 +187,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(143109,4620,88241,913, 'LG/BL20/v10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12435-17483-3459-18092');
+    $dl[] = array(191771,4712,89207,913, 'LG/BL20/v10a Browser/Obigo-Q7.3 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12435-17483-3459-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KF750'), 1 => array(0 => 'KF750'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
@@ -203,7 +195,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(149569,4620,114492,913, 'LG/KF750/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-3534-18092');
+    $dl[] = array(131581,4712,97064,913, 'LG/KF750/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-3534-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'GD580'), 1 => array(0 => 'GD580'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -211,7 +203,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(272319,4620,41748,913, 'LG/GD580/v1.0', '14755-17483-17660-18092');
+    $dl[] = array(249576,4712,72970,913, 'LG/GD580/v1.0', '14755-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -219,7 +211,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182606,4620,40813,913, 'LG/GT500/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
+    $dl[] = array(163198,4712,71943,913, 'LG/GT500/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500-Bouygues'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -227,15 +219,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182606,4620,40813,913, 'LG/GT500-Bouygues/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KU990'), 1 => array(0 => 'KU990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(103051,4620,41748,913, 'LG/KU990/v1.0', '11656-17483-17660-18092');
+    $dl[] = array(163198,4712,71943,913, 'LG/GT500-Bouygues/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11760-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U990'), 1 => array(0 => 'U990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -243,15 +227,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(103051,4620,41748,913, 'LG/U990/v1.0', '11656-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U990'), 1 => array(0 => 'U990.v1.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(103051,4620,41748,913, 'LG/U990.v1.0', '11656-17483-17660-18092');
+    $dl[] = array(82758,4712,72970,913, 'LG/U990/v1.0', '11656-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'GT405'), 1 => array(0 => 'GT405'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -259,7 +235,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(149353,4620,41748,913, 'LG/GT405/v1.0', '13537-17483-17660-18092');
+    $dl[] = array(172929,4712,72970,913, 'LG/GT405/v1.0', '13537-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KC910i'), 1 => array(0 => 'KC910i-Bouygues'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -267,7 +243,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(210280,4620,40813,913, 'LG/KC910i-Bouygues/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
+    $dl[] = array(190475,4712,71943,913, 'LG/KC910i-Bouygues/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KC910i'), 1 => array(0 => 'KC910i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -275,7 +251,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(210280,4620,40813,913, 'LG/KC910i/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
+    $dl[] = array(190475,4712,71943,913, 'LG/KC910i/V10a Browser/Obigo-Q7.1 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '11935-17483-3728-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU990i'), 1 => array(0 => 'KU990i'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -283,7 +259,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(115499,4620,41748,913, 'LG/KU990i/v1.0', '12115-17483-17660-18092');
+    $dl[] = array(375845,4712,72970,913, 'LG/KU990i/v1.0', '12115-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700-O2'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
@@ -291,7 +267,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(118107,4620,114492,913, 'LG/KF700-O2/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
+    $dl[] = array(98019,4712,97064,913, 'LG/KF700-O2/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
@@ -299,7 +275,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(118107,4620,114492,913, 'LG/KF700/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
+    $dl[] = array(98019,4712,97064,913, 'LG/KF700/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14432-17483-3534-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KE990'), 1 => array(0 => 'KE990'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -307,7 +283,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(265925,4620,102116,913, 'LG/KE990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15610-17483-4848-18092');
+    $dl[] = array(242082,4712,81803,913, 'LG/KE990/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15610-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KC910'), 1 => array(0 => 'KC910'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -315,23 +291,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(151922,4620,41748,913, 'LG/KC910/v1.0', '11765-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KU380'), 1 => array(0 => 'KU380'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(209776,4620,41748,913, 'LG/KU380/v10c Profile/MIDP-2.0 Configuration/CLDC-1.1', '13891-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KU250'), 1 => array(0 => 'KU250'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(43195,4620,41748,913, 'LG/KU250/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14590-17483-17660-18092');
+    $dl[] = array(133021,4712,72970,913, 'LG/KC910/v1.0', '11765-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KF310'), 1 => array(0 => 'KF310'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -339,7 +299,23 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(155811,4620,41748,913, 'LG/KF310/v2.0', '14531-17483-17660-18092');
+    $dl[] = array(137576,4712,72970,913, 'LG/KF310/v2.0', '14531-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'KU380'), 1 => array(0 => 'KU380'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(189015,4712,72970,913, 'LG/KU380/v10c Profile/MIDP-2.0 Configuration/CLDC-1.1', '13891-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'KU250'), 1 => array(0 => 'KU250'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(364859,4712,72970,913, 'LG/KU250/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14590-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'HB620T'), 1 => array(0 => 'HB620T'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
@@ -347,15 +323,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(181021,4620,114492,913, 'LG/HB620T/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13762-17483-3534-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'BL42'), 1 => array(0 => 'BL42'), 2 => NULL, 3 => array(0 => 'Q7.3'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(285679,4620,88241,913, 'LG/BL42/v10a Browser/Teleca-Q7.3 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13637-17483-3459-18092');
+    $dl[] = array(161613,4712,97064,913, 'LG/HB620T/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13762-17483-3534-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KF755'), 1 => array(0 => 'KF755'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -363,15 +331,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(274404,4620,41748,913, 'LG/KF755/v1.0', '12197-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KT520'), 1 => array(0 => 'KT520'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(232596,4620,114492,913, 'LG/KT520/v10c Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15174-17483-3534-18092');
+    $dl[] = array(251517,4712,72970,913, 'LG/KF755/v1.0', '12197-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U900'), 1 => array(0 => 'U900'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -379,39 +339,23 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(460469,4620,41748,913, 'LG/U900/v1.0', '16274-17483-17660-18092');
+    $dl[] = array(430164,4712,72970,913, 'LG/U900/v1.0', '16274-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U890'), 1 => array(0 => 'U890'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KT520'), 1 => array(0 => 'KT520'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(240519,4620,41748,913, 'LG/U890/v1.0', '15326-17483-17660-18092');
+    $dl[] = array(208611,4712,97064,913, 'LG/KT520/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15174-17483-3534-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KU970'), 1 => array(0 => 'KU970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'BL42'), 1 => array(0 => 'BL42'), 2 => NULL, 3 => array(0 => 'Q7.3'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(272605,4620,41748,913, 'LG/KU970/v10b Profile/MIDP-2.0 Configuration/CLDC-1.1', '12157-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U830'), 1 => array(0 => 'U830'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(237285,4620,41748,913, 'LG/U830/v1.0', '15296-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U880'), 1 => array(0 => 'U880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(252491,4620,41748,913, 'LG/U880/v1.0', '15472-17483-17660-18092');
+    $dl[] = array(261920,4712,89207,913, 'LG/BL42/v10a Browser/Teleca-Q7.3 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13637-17483-3459-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U960'), 1 => array(0 => 'U960'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -419,15 +363,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(276492,4620,41748,913, 'LG/U960/v1.0', '15734-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U8330'), 1 => array(0 => 'U8330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(322222,4620,41748,913, 'LG/U8330/v1.0', '13680-17483-17660-18092');
+    $dl[] = array(253981,4712,72970,913, 'LG/U960/v1.0', '15734-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U250'), 1 => array(0 => 'U250'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -435,31 +371,39 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(445424,4620,41748,913, 'LG/U250/v1.0', '16249-17483-17660-18092');
+    $dl[] = array(486465,4712,72970,913, 'LG/U250/v1.0', '16249-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U970'), 1 => array(0 => 'U970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U890'), 1 => array(0 => 'U890'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(319773,4620,41748,913, 'LG/U970/v1.0', '14461-17483-17660-18092');
+    $dl[] = array(216675,4712,72970,913, 'LG/U890/v1.0', '15326-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KS500Q'), 1 => array(0 => 'KS500Q'), 2 => NULL, 3 => array(0 => 'Q7.1/3.12'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU970'), 1 => array(0 => 'KU970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(394856,4620,40813,913, 'LG/KS500Q/v10a Browser/Teleca-Q7.1/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '14416-17483-3728-18092');
+    $dl[] = array(249790,4712,72970,913, 'LG/KU970/v10a Profile/MIDP-2.0 Configuration/CLDC-1.1', '12157-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U8360'), 1 => array(0 => 'U8360'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U830'), 1 => array(0 => 'U830'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(254369,4620,41748,913, 'LG/U8360/v1.0', '15494-17483-17660-18092');
+    $dl[] = array(254629,4712,72970,913, 'LG/U830/v1.0', '15296-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'U8330'), 1 => array(0 => 'U8330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(299613,4712,72970,913, 'LG/U8330/v1.0', '13680-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U400'), 1 => array(0 => 'U400'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -467,47 +411,31 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(393993,4620,41748,913, 'LG/U400/v1.0', '14385-17483-17660-18092');
+    $dl[] = array(373536,4712,72970,913, 'LG/U400/v1.0', '14385-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U300'), 1 => array(0 => 'U300'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U880'), 1 => array(0 => 'U880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(396008,4620,41748,913, 'LG/U300/v1.0', '14481-17483-17660-18092');
+    $dl[] = array(227701,4712,72970,913, 'LG/U880/v1.0', '15472-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KU580'), 1 => array(0 => 'KU580'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A1/2.16'), 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U970'), 1 => array(0 => 'U970'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(268931,4620,218981,913, 'LG/KU580/V10a Browser/Obigo-Q05A1/2.16 MMS/LG-MMS-V1.0/1.2 Java/LGVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-V-Profile/VSCL-2.0.0', '12637-17483-3857-18092');
+    $dl[] = array(376493,4712,72970,913, 'LG/U970/v1.0', '14461-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KB770'), 1 => array(0 => 'KB770'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8360'), 1 => array(0 => 'U8360'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(123165,4620,40813,913, 'LG/KB770/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15081-17483-3728-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U8180'), 1 => array(0 => 'U8180'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(275412,4620,41748,913, 'LG/U8180/v1.0', '12240-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U8180F'), 1 => array(0 => 'U8180F'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(275412,4620,41748,913, 'LG/U8180F', '12240-17483-17660-18092');
+    $dl[] = array(229291,4712,72970,913, 'LG/U8360/v1.0', '15494-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU385'), 1 => array(0 => 'KU385'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -515,15 +443,15 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(370976,4620,41748,913, 'LG/KU385/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14061-17483-17660-18092');
+    $dl[] = array(348126,4712,72970,913, 'LG/KU385/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14061-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U310'), 1 => array(0 => 'U310'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U300'), 1 => array(0 => 'U300'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(252347,4620,41748,913, 'LG/U310/v1.0', '15467-17483-17660-18092');
+    $dl[] = array(377141,4712,72970,913, 'LG/U300/v1.0', '14481-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KE990d'), 1 => array(0 => 'KE990d'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
@@ -531,15 +459,15 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(275340,4620,102116,913, 'LG/KE990d/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15716-17483-4848-18092');
+    $dl[] = array(252606,4712,81803,913, 'LG/KE990d/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15716-17483-4848-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KU950'), 1 => array(0 => 'KU950'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU580'), 1 => array(0 => 'KU580'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A1/2.16'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(327595,4620,41748,913, 'LG/KU950/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13697-17483-17660-18092');
+    $dl[] = array(245900,4712,244945,913, 'LG/KU580/V10a Browser/Obigo-Q05A1/2.16 MMS/LG-MMS-V1.0/1.2 Java/LGVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-V-Profile/VSCL-2.0.0', '12637-17483-3857-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U8110'), 1 => array(0 => 'U8110'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -547,47 +475,39 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(337536,4620,41748,913, 'LG/U8110/v2.0', '16572-17483-17660-18092');
+    $dl[] = array(316521,4712,72970,913, 'LG/U8110/v2.0', '16572-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'L600V'), 1 => array(0 => 'L600V'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U8180'), 1 => array(0 => 'U8180'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(157469,4620,41748,913, 'LG/L600V/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14910-17483-17660-18092');
+    $dl[] = array(252750,4712,72970,913, 'LG/U8180/v1.0', '12240-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KU800'), 1 => array(0 => 'KU800'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'U310'), 1 => array(0 => 'U310'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(349451,4620,41748,913, 'LG/KU800/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13925-17483-17660-18092');
+    $dl[] = array(227557,4712,72970,913, 'LG/U310/v1.0', '15467-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U450'), 1 => array(0 => 'U450'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KB770'), 1 => array(0 => 'KB770'), 2 => NULL, 3 => array(0 => 'Q7.1'), 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(255233,4620,41748,913, 'LG/U450/v1.0', '15502-17483-17660-18092');
+    $dl[] = array(102097,4712,71943,913, 'LG/KB770/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15081-17483-3728-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U8550'), 1 => array(0 => 'U8550'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU950'), 1 => array(0 => 'KU950'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(257464,4620,41748,913, 'LG/U8550/v1.0', '15516-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(118107,4620,41748,913, 'LG/KF700/v2.0', '14432-17483-17660-18092');
+    $dl[] = array(304842,4712,72970,913, 'LG/KU950/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13697-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U8130'), 1 => array(0 => 'U8130'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -595,23 +515,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(387074,4620,41748,913, 'LG/U8130/v1.0', '12639-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KF750'), 1 => array(0 => 'KF750'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(149569,4620,41748,913, 'LG/KF750/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'U370'), 1 => array(0 => 'U370'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(334512,4620,41748,913, 'LG/U370/v1.0', '13773-17483-17660-18092');
+    $dl[] = array(366155,4712,72970,913, 'LG/U8130/v1.0', '12639-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'U8380'), 1 => array(0 => 'U8380'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -619,15 +523,63 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(246798,4620,41748,913, 'LG/U8380/v1.0', '15392-17483-17660-18092');
+    $dl[] = array(222727,4712,72970,913, 'LG/U8380/v1.0', '15392-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KF390Q'), 1 => array(0 => 'KF390Q'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KU800'), 1 => array(0 => 'KU800'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(186576,4620,41748,913, 'LG/KF390Q/v1.0', '14965-17483-17660-18092');
+    $dl[] = array(327990,4712,72970,913, 'LG/KU800/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13925-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'U370'), 1 => array(0 => 'U370'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(311075,4712,72970,913, 'LG/U370/v1.0', '13773-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'KF700'), 1 => array(0 => 'KF700'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(98019,4712,72970,913, 'LG/KF700/v2.0', '14432-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'L600V'), 1 => array(0 => 'L600V'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(295019,4712,72970,913, 'LG/L600V/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '14910-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'KF750'), 1 => array(0 => 'KF750'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(131581,4712,72970,913, 'LG/KF750/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '13361-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'U450'), 1 => array(0 => 'U450'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(230155,4712,72970,913, 'LG/U450/v1.0', '15502-17483-17660-18092');
+    $ls = $ns;
+  }
+  $ns = E57($segments, array(0 => array(0 => 'U8550'), 1 => array(0 => 'U8550'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(232120,4712,72970,913, 'LG/U8550/v1.0', '15516-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KT525'), 1 => array(0 => 'KT525'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -635,31 +587,7 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(263469,4620,41748,913, 'LG/KT525/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15583-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KE990c'), 1 => array(0 => 'KE990c'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(263037,4620,102116,913, 'LG/KE990c/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15577-17483-4848-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'KP330'), 1 => array(0 => 'KP330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(346860,4620,41748,913, 'LG/KP330/v1.0', '12976-17483-17660-18092');
-    $ls = $ns;
-  }
-  $ns = E57($segments, array(0 => array(0 => 'GD880'), 1 => array(0 => 'GD880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137170,4620,41748,913, 'LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12290-17483-17660-18092');
+    $dl[] = array(239914,4712,72970,913, 'LG/KT525/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15583-17483-17660-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KB620'), 1 => array(0 => 'KB620'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -667,15 +595,15 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(259727,4620,41748,913, 'LG/KB620/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15546-17483-17660-18092');
+    $dl[] = array(236574,4712,72970,913, 'LG/KB620/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15546-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KF690'), 1 => array(0 => 'KF690'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KE990c'), 1 => array(0 => 'KE990c'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.6'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(221498,4620,114492,913, 'LG/KF690/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15092-17483-3534-18092');
+    $dl[] = array(239482,4712,81803,913, 'LG/KE990c/v10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15577-17483-4848-18092');
     $ls = $ns;
   }
   $ns = E57($segments, array(0 => array(0 => 'KU450'), 1 => array(0 => 'KU450'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
@@ -683,39 +611,39 @@ function _H57($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(276276,4620,41748,913, 'LG/KU450/v10a Profile/MIDP-2.0 Configuration/CLDC-1.1', '15731-17483-17660-18092');
+    $dl[] = array(253693,4712,72970,913, 'LG/KU450/v10a Profile/MIDP-2.0 Configuration/CLDC-1.1', '15731-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U8290'), 1 => array(0 => 'U8290'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF390Q'), 1 => array(0 => 'KF390Q'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(316027,4620,41748,913, 'LG/U8290/v1.0', '12862-17483-17660-18092');
+    $dl[] = array(376277,4712,72970,913, 'LG/KF390Q/v1.0', '14965-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'KU830'), 1 => array(0 => 'KU830'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'GD880'), 1 => array(0 => 'GD880'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(403494,4620,41748,913, 'LG/KU830/v1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Profile/MIDP-2.0 Configuration/CLDC-1.0', '14844-17483-17660-18092');
+    $dl[] = array(121138,4712,72970,913, 'LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '12290-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'U8100'), 1 => array(0 => 'U8100'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KP330'), 1 => array(0 => 'KP330'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(445496,4620,41748,913, 'LG/U8100', '16258-17483-17660-18092');
+    $dl[] = array(325595,4712,72970,913, 'LG/KP330/v1.0', '12976-17483-17660-18092');
     $ls = $ns;
   }
-  $ns = E57($segments, array(0 => array(0 => 'GT500'), 1 => array(0 => 'GT500'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL), $ls);
+  $ns = E57($segments, array(0 => array(0 => 'KF690'), 1 => array(0 => 'KF690'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => array(0 => 'Q05A/3.12'), 6 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(182606,4620,41748,913, 'LG/GT500', '11760-17483-17660-18092');
+    $dl[] = array(200701,4712,97064,913, 'LG/KF690/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1', '15092-17483-3534-18092');
     $ls = $ns;
   }
   return $dl;

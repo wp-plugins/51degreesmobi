@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E51($target, $test, $ls) {
+function E51(&$target, $test, &$ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
   if ($score == PHP_INT_MAX) {
@@ -51,14 +51,30 @@ function _H51($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=\\sHTC[\\s_])[^;\\s]+#', $useragent),
+    0 => fiftyone_degrees_preg_match_all('#(?<=\\sHTC[\\s|_])[^;\\s]+#', $useragent),
     1 => fiftyone_degrees_preg_match_all('#.+#', $useragent));
-  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'Grindr/1.1.6(HTC HTC Desire S/Android 2.3.3)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.0.3;dev=holiday;devm=HTC PH39100;man=HTC;brw=Android;shwd=540x960;shwa=540x923;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(159196,112542,111697,913, 'Grindr/1.1.6(HTC HTC Desire S/Android 2.3.3)', '14969-5629-15760-18092');
+    $dl[] = array(44218,576960,576120,913, 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.0.3;dev=holiday;devm=HTC PH39100;man=HTC;brw=Android;shwd=540x960;shwa=540x923;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;', '15364-18066-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.0.4;dev=evita;devm=HTC One X;man=HTC;brw=Android;shwd=720x1280;shwa=720x1230;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,576960,576120,913, 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.0.4;dev=evita;devm=HTC One X;man=HTC;brw=Android;shwd=720x1280;shwa=720x1230;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;', '18295-18066-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.2;dev=m7;devm=HTC One;man=HTC;brw=Android;shwd=1080x1920;shwa=1080x1845;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,610861,610868,913, 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.2;dev=m7;devm=HTC One;man=HTC;brw=Android;shwd=1080x1920;shwa=1080x1845;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;', '15364-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
@@ -66,7 +82,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
@@ -74,7 +90,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
@@ -82,7 +98,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31')), $ls);
@@ -90,7 +106,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IML74K) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31')), $ls);
@@ -98,7 +114,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IML74K) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IML74K) UC AppleWebKit/534.31 (KHTML like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
@@ -106,7 +122,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.5; zh-cn; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31')), $ls);
@@ -114,7 +130,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; zh-cn; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; zh-cn; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
@@ -122,47 +138,55 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(734317,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; en-us; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'HTC', 1 => 'Sensation'), 1 => array(0 => 'Android/2.3.5; HTC HTC Sensation 4G; 2.2.0')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.5; zh-cn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(248892,112542,111697,913, 'Android/2.3.5; HTC HTC Sensation 4G; 2.2.0', '15201-5629-15760-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; zh-cn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'BBC News (AndroidApp; 1.01; 2) HTC Desire (Android 2.3.3, SDK 10) flash:none')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(110689,112542,111697,913, 'BBC News (AndroidApp; 1.01; 2) HTC Desire (Android 2.3.3, SDK 10) flash:none', '11747-5629-15760-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC One X Build/IMM76D) UC AppleWebKit/534.31 (KHTML, like Gecko) Mobile Safari/534.31', '18295-18111-18112-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'ADR6400L'), 1 => array(0 => 'Android/2.3.4; HTC ADR6400L; 2.2.0')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(202988,112542,111697,913, 'Android/2.3.4; HTC ADR6400L; 2.2.0', '13991-5629-15760-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.5; en-us; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'ADR6300'), 1 => array(0 => 'Android/2.3.4; HTC ADR6300; 2.2.0')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; vi-vn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131639,112542,111697,913, 'Android/2.3.4; HTC ADR6300; 2.2.0', '12216-5629-15760-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; vi-vn; HTC One X Build/IMM76D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; vi-vn; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord)', '18502-18148-18263-18092');
+    $dl[] = array(679814,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; vi-vn; HTC One X Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '18295-18111-18112-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.1;dev=evita;devm=HTC One X;man=HTC;brw=Android;shwd=720x1280;shwa=720x1230;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,610868,913, 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.1;dev=evita;devm=HTC One X;man=HTC;brw=Android;shwd=720x1280;shwa=720x1230;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;', '18295-18111-18112-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC)')), $ls);
@@ -170,15 +194,15 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC)', '18502-18148-18263-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord; Orange)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord; Orange)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Accord)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; PM23300)')), $ls);
@@ -186,7 +210,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; PM23300)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; PM23300)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.183.02)')), $ls);
@@ -194,7 +218,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.183.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.183.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; Orange)')), $ls);
@@ -202,7 +226,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; Orange)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; Orange)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.166.02)')), $ls);
@@ -210,7 +234,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.166.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.166.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.01)')), $ls);
@@ -218,7 +242,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.01)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.01)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.01)')), $ls);
@@ -226,7 +250,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.01)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.01)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.02)')), $ls);
@@ -234,7 +258,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.02)')), $ls);
@@ -242,7 +266,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.162.02)')), $ls);
@@ -250,7 +274,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.162.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.162.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.163.03)')), $ls);
@@ -258,7 +282,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.163.03)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.163.03)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.02)')), $ls);
@@ -266,7 +290,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.161.02)')), $ls);
@@ -274,7 +298,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.161.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.161.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.01)')), $ls);
@@ -282,7 +306,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.01)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.01)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.02)')), $ls);
@@ -290,7 +314,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.02)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.04)')), $ls);
@@ -298,7 +322,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.04)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.163.04)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.04)')), $ls);
@@ -306,7 +330,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.04)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.161.04)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.04)')), $ls);
@@ -314,7 +338,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.04)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.04)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.04)')), $ls);
@@ -322,7 +346,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.04)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.166.04)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.04)')), $ls);
@@ -330,7 +354,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.04)', '18502-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.04)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.164.02)')), $ls);
@@ -338,2415 +362,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.164.02)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.172.02)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.172.02)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.01)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.04)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.04)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.163.00)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.163.00)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.161.00)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.161.00)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.166.00)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.166.00)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.01)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.172.00)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.172.00)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.162.00)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.162.00)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.164.02)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.164.02)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(905145,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.01)', '18502-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(734317,673268,735452,913, 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19', '18295-18111-18338-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.5; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(734317,673268,735452,913, 'Mozilla/5.0 (Linux; Android 4.1.5; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19', '18295-18111-18338-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620b)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620b)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620e)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620e)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; Orange)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; Orange)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620m)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620m)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.163.03)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.163.03)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.161.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.161.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.166.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.166.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.165.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.165.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.169.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.169.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.162.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.162.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.172.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.172.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.161.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.161.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.183.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.183.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.165.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.165.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.166.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.166.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.163.02)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.163.02)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.169.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.169.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.01)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.01)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620t; CMCC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620t; CMCC)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.02)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.02)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.02)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(978252,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.02)', '18503-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTC6990LVW)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(928969,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTC6990LVW)', '20273-18148-18263-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585-Orange; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585-Orange; Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.172.3 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.172.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.162.6 (70494); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.162.6 (70494); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; T-Mobile_LEO; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; T-Mobile_LEO; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.49.164.2 (71528); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.49.164.2 (71528); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.172.0 (82124); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.172.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.172.7 (70494); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.172.7 (70494); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.163.3 (70494); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.163.3 (70494); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.164.4 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.164.4 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.72.841.0 (82124); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.72.841.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5 HTC_HD2/1.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5 HTC_HD2/1.0)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.163.3 (04666); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.163.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.49.841.1 (71528); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.49.841.1 (71528); Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; T-Mobile_LEO; HTC_HD2_T8585; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; T-Mobile_LEO; HTC_HD2_T8585; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585_SOD'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585_SOD; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585_SOD; Windows Phone 6.5)', '13999-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS720t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,644525,913, 'HTCS720t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15364-17979-18062-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)sgh-i900')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)sgh-i900', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; de)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; ru)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; da)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; el)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; el)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; de)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; pt)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1;U;en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1;U;en)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nb)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; it)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6649,52209,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_Touch_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 OperaOpera/9.7 (WindowsMobile; PPC; Opera Mobi/35267; U; en; Presto/2.1.1)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HD2_T8585 OperaOpera/9.7 (WindowsMobile; PPC; Opera Mobi/35267; U; en; Presto/2.1.1)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; pl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; pl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_Opera/9.7 (Windows NT 5.1; U;it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2_Opera/9.7 (Windows NT 5.1; U;it)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.49.841.1 (71528)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.49.841.1 (71528)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.72.841.0 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.72.841.0 (82124)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; cz)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; cz)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731 Opera/9.7 (Windows NT 5.1; U;fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731 Opera/9.7 (Windows NT 5.1; U;fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.44.163.3 (70493)  Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'HTC_HD2/1.44.163.3 (70493)  Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC-HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1;U;fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC-HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1;U;fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,52209,913, 'Vodafone/1.0/HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)sgh-i900')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)sgh-i900', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 94.119.2.733 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 94.119.2.733 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7379'), 1 => array(0 => 'Opera/9.5(Microsoft Windows; PPC; Opera Mobi/16643; U; en) HTC_Touch_Pro2_T7379')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Opera/9.5(Microsoft Windows; PPC; Opera Mobi/16643; U; en) HTC_Touch_Pro2_T7379', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; de)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.19.841.3 (51489)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.19.841.3 (51489)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.93.841.0 (81210)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.93.841.0 (81210)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731 Opera/9.5 (Microsoft Windows 6.5; Opera Mobi/17518; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731 Opera/9.5 (Microsoft Windows 6.5; Opera Mobi/17518; U; fr)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)sgh-i900')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)sgh-i900', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; de)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nl)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nb)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; it)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,20176,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; fr)', '16177-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.1.612', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.2.732')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.2.732', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.49.164.2 (71528)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.49.164.2 (71528)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.161.3 (04666)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.161.3 (04666)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.163.3 (04666)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.163.3 (04666)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.2.733')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.2.733', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585/480x800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_HD2_T8585/480x800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_HD2_T8585/480x800', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.172.0 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.172.0 (82124)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.163.3 (70494)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.163.3 (70494)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.172.7 (70494)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.172.7 (70494)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.161.3 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.161.3 (82124)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.162.0 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.162.0 (82124)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.164.4 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.164.4 (82124)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.172.3 (04666)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.172.3 (04666)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.49.841.1 (71528)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.49.841.1 (71528)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.72.841.0 (82124)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.72.841.0 (82124)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla\\4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T8585 Mozilla\\4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.164.4 (04666)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.164.4 (04666)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.162.5 (04666)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.162.5 (04666)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.1.612', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585/1.64.621.6 (77873) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'HTC_HD2_T8585/1.64.621.6 (77873) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.47.164.0 (70975)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.47.164.0 (70975)', '13999-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; es-ES)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; el)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; el)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; pt)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; fr)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nl)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; ru)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; de)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; it)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nb)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; sv)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; da)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; da)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3333'), 1 => array(0 => 'XMLHTTP/1.0, HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'XMLHTTP/1.0, HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch3G_T3333 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'HTC_Touch3G_T3333 Opera/9.50 (Windows NT 5.1; U; en)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,20176,913, 'Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)', '11978-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/1.14.163.2 (28253) Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282/1.14.163.2 (28253) Opera/9.50 (Windows NT 5.1; U; fr)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; pt)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nl)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; fr)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; es-ES)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/1.14.163.3 (32434) Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282/1.14.163.3 (32434) Opera/9.50 (Windows NT 5.1; U; fr)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; en)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; it)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; ru)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,20176,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nb)', '14845-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'HTC_Touch_HD_T8282/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.159.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.159.1.612', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282-orange/PPC; 480x800 OpVer 34.119.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'HTC_Touch_HD_T8282-orange/PPC; 480x800 OpVer 34.119.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.10.701')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.10.701', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.3 (32434)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.3 (32434)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/1.21.621.2 (38850) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'HTC_Touch_HD_T8282/1.21.621.2 (38850) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282-orange/PPC; 480x800; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'HTC_Touch_HD_T8282-orange/PPC; 480x800; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.2 (28253)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.2 (28253)', '14845-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nl)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; de)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; da)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; ru)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nb)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.70 (Windows NT 5.1; U; en)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; it)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.70 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.70 (Windows NT 5.1; U; nl)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; pt)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)sgh-i900')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)sgh-i900', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; es-ES)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; sv)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,52209,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; fr)', '16177-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; nl)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; ru)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond/1.93.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond/1.93.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Diamond')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Diamond', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond/1.37.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond/1.37.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; de)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720/V2.07.841.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720/V2.07.841.2', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Diamond/1.93.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'Vodafone/1.0/HTC_Diamond/1.93.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nb)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; sv)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; da)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; da)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543) Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en-GB)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en-GB)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nl)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; pt)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; fr)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; it)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; de)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,20176,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '13374-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7720)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7740)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8107)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7720)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7720)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7740)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8773)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7740)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;8107)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8773)', '15851-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; en)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2/2.16.163.3 (67041) Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2/2.16.163.3 (67041) Opera/9.50 (Windows NT 5.1; U; fr)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.2.732 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.2.732 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-cn)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-cn)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; pt)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2/1.40.163.3 (49069) Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2/1.40.163.3 (49069) Opera/9.50 (Windows NT 5.1; U; fr)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2/1.40.164.3 (49069) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2/1.40.164.3 (49069) Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; sv)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nl)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; ru)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nb)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; de)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; fr)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; el)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,20176,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; el)', '12192-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.164.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.164.2', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.172.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.172.1', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.1', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.08.161.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.08.161.0', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.172.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.172.2', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.2', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN_II'), 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_TyTN_II Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_TyTN_II Mozilla/4.0', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550/TYTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'HTC_P4550/TYTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.181.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.181.1.612', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; Msie 6.0; Windows Ce; Iemobile 7.6) Vodafone/1.0/htc_kaiser/1.56.172.3 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,13185,913, 'Mozilla/4.0 (compatible; Msie 6.0; Windows Ce; Iemobile 7.6) Vodafone/1.0/htc_kaiser/1.56.172.3 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1', '11734-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,53254,52209,913, 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '13999-5690-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Opera/9.7 (Windows NT 5.1; Opera Mobi/35267; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,53254,52209,913, 'HD2_T8585 Opera/9.7 (Windows NT 5.1; Opera Mobi/35267; U; en)', '13999-5690-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,53254,52209,913, 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5690-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5)', '16177-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5.3.5)', '16177-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.93.841.0 (81210); Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6649,6655,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.93.841.0 (81210); Windows Phone 6.5)', '16177-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; HD2_T8585; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; HD2_T8585; Windows Phone 6.5)', '16177-5222-17183-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.164.02)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620e)')), $ls);
@@ -2754,7 +370,23 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620e)', '15364-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620e)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.172.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.172.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.162.01)', '18502-18148-18263-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620t; CMCC)')), $ls);
@@ -2762,7 +394,815 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,704127,704134,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620t; CMCC)', '15364-18148-18263-18092');
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620t; CMCC)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.04)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.04)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.163.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.163.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.161.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.161.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.166.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.166.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.172.01)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.172.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.172.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.162.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.162.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.164.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 1.00.164.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.183.01)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.164.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.164.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.183.00)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.01.183.00)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620d; ChinaTelecom)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; C620d; ChinaTelecom)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.164.04)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 2.00.164.04)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.161.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.161.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.162.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.162.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.166.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.166.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.163.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.163.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.164.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8X by HTC; 3.41.164.02)', '18502-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ADR6300'), 1 => array(0 => 'Android/2.3.4; HTC ADR6300; 2.2.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113186,90522,90528,913, 'Android/2.3.4; HTC ADR6300; 2.2.0', '12216-5629-15760-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620b)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620b)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620e)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620e)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; Orange)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; Orange)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620m)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620m)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.163.03)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.163.03)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.161.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.161.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.166.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.166.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.165.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.165.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.169.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.169.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.162.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.162.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.172.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.172.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.161.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.161.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.183.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 1.04.183.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.165.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.165.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.166.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.166.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.163.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.163.02)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.169.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.169.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620t; CMCC)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620t; CMCC)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.162.02)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.02)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.172.02)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.183.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 2.00.183.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620d; ChinaTelecom)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; A620d; ChinaTelecom)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.163.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.163.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.161.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.161.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.166.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.166.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.162.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.162.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.172.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.172.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.169.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.169.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.165.01)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; Windows Phone 8S by HTC; 3.29.165.01)', '18503-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,735517,913, 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19', '18295-18111-18338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.5; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,735517,913, 'Mozilla/5.0 (Linux; Android 4.1.5; HTC One X Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19', '18295-18111-18338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,1444589,913, 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '18295-18111-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS720t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,576120,913, 'HTCS720t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15364-17979-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTC6990LVW)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1116940,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTC6990LVW)', '20273-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,1373315,913, 'Mozilla/5.0 (Linux; Android 4.1.9; HTC One X Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36', '18295-18111-22234-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585-Orange; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585-Orange; Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.162.6 (70494); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.162.6 (70494); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.172.3 (04666); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.172.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; T-Mobile_LEO; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; T-Mobile_LEO; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585; Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.49.164.2 (71528); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.49.164.2 (71528); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.172.0 (82124); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.172.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.162.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.72.161.3 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.162.5 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.164.4 (04666); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.164.4 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.163.3 (70494); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/1.44.163.3 (70494); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.72.841.0 (82124); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.72.841.0 (82124); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0; Windows Phone 6.5.3.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.161.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.163.3 (04666); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD2/3.14.163.3 (04666); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.49.841.1 (71528); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.49.841.1 (71528); Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2; Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585_SOD'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585_SOD; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD2_T8585_SOD; Windows Phone 6.5)', '13999-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.40 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.40 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.55 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.55 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.49 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.49 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '20705-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; de)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; ru)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; da)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; de)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; el)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; el)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; pt)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; nb)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; it)', '13999-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,7631,40387,913, 'HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5222-4626-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102)')), $ls);
@@ -2770,7 +1210,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7379'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Pro2_T7379')), $ls);
@@ -2778,7 +1218,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Pro2_T7379', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Pro2_T7379', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_S200')), $ls);
@@ -2786,7 +1226,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_S200', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) acer_S200', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207)')), $ls);
@@ -2794,7 +1234,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207)')), $ls);
@@ -2802,7 +1242,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102)')), $ls);
@@ -2810,7 +1250,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
@@ -2818,7 +1258,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381/V1.19.841.3 (51489) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
@@ -2826,15 +1266,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7381/V1.19.841.3 (51489) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint T7380')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint T7380', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7381/V1.19.841.3 (51489) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
@@ -2842,7 +1274,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7373/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7373/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.1.610')), $ls);
@@ -2850,7 +1282,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.1.610', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.1.610', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
@@ -2858,7 +1290,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7373/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7373/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
@@ -2866,7 +1298,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.93.841.0 (81210)')), $ls);
@@ -2874,7 +1306,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.93.841.0 (81210)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.93.841.0 (81210)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.166.1 (67102)')), $ls);
@@ -2882,7 +1314,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.166.1 (67102)', '16177-6742-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.166.1 (67102)', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731')), $ls);
@@ -2890,5783 +1322,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731', '16177-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_Touch2/1.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_Touch2/1.0)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Mega'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Mega; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Mega; Windows Phone 6.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE6.0; WindowsNT5.1; HTC_Touch2_T333; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE6.0; WindowsNT5.1; HTC_Touch2_T333; Windows Phone 6.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch3G_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch3G_T3333; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch3G_T3333; Windows Phone 6.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2/1.0; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2/1.0; Windows Phone 6.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5.3.5)', '11978-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,53548,5635,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,16068,52209,913, 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '15526-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,16068,52209,913, 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)', '15526-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nb)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; fr)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; sv)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nl)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; da)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; de)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; ru)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; it)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.70 (Windows NT 5.1; U; en)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; es-ES)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; pt)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; el)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; el)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,52209,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; en)', '12192-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) USCCHTC6850')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) USCCHTC6850', '15364-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,6643,13185,913, 'HTC_Touch_3G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15364-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.2', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.3', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player o2_uk / 1.0 / htc_saga / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player o2_uk / 1.0 / htc_saga / 2.3.3', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_saga / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_saga / 2.3.5', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.3.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.5', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / ville / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / ville / 4.0.3', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_blissc / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_blissc / 2.3.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.0.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.0.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.3', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.1.1', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_primou / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_primou / 4.0.3', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / ville / 4.0.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / ville / 4.0.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / dlx / 4.1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / dlx / 4.1.1', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / fireball / 4.0.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / fireball / 4.0.4', '15364-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD_mini_T5555'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini_T5555; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini_T5555; Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD_mini-orange-LS'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini-orange-LS; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini-orange-LS; Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904); Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,13185,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.193.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,13185,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.193.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,13185,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/%ROM_VERSION%')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/%ROM_VERSION%', '13374-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.164.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.164.2', '13374-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.162.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.162.5', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.1.612', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.182.5.711')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.182.5.711', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.9.693')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.9.693', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN_II'), 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC_TyTN_II Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC_TyTN_II Mozilla/4.0', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.8.683')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.8.683', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.172.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.172.3', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.161.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.161.4', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P4550/1.83.621.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,14194,913, 'HTC P4550/1.83.621.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.172.2 (87652)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.172.2 (87652)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.166.1 (87652)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.166.1 (87652)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.164.1 (10904)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.164.1 (10904)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.00.164.1 (80896)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.00.164.1 (80896)', '15526-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(132432,6643,5635,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12243-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-Ten/PPC; 240x320; OpVer 23.227.2.792 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'HTC-P3450-Ten/PPC; 240x320; OpVer 23.227.2.792 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.1.611')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.1.611', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.15.751')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.15.751', '12530-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7720)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8107)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;8107)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7740)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7720)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8773)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9296;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9296;7.10;8107)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378555,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7740)', '13868-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5)', '12192-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TD2_T5353'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TD2_T5353; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TD2_T5353; Windows Phone 6.5.3.5)', '12192-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5360'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5360; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5360; Windows Phone 6.5)', '12192-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5.3.5)', '12192-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,6643,13185,913, 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13670-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.174.1.611')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.174.1.611', '13670-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.1.612', '13670-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_S740/1.14.166.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_S740/1.14.166.0', '13670-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.2.732')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.2.732', '13670-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,6643,13185,913, 'HTC_Touch_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14168-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,6643,13185,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14168-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Viva_T2223'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_Viva_T2223; OpVer 86.157.15.753')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_Viva_T2223; OpVer 86.157.15.753', '14168-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6875')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6875', '15364-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.172.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.172.2', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM BMC')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM BMC', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272-orange/PPC; 480x640; OpVer 31.190.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'HTC_Touch_Pro_T7272-orange/PPC; 480x640; OpVer 31.190.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.172.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.172.4', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.11.162.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.11.162.1', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.161.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.161.5', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_diamond/1.37.163.4/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.172.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'HTC_diamond/1.37.163.4/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.172.2', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_Touch_Pro/1.90.166.6')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_Touch_Pro/1.90.166.6', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'HTC_Touch_Pro Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/%ROM_VERSION%')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/%ROM_VERSION%', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.161.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.161.1', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.162.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.162.5', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/', '12226-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,16068,287695,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '16177-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player twm_tw / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player twm_tw / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_fr / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_fr / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player o2_de / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player o2_de / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_uk / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player tmo_uk / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_de / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player tmo_de / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_ace / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player hutch_aus / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player hutch_aus / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,20176,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; en)', '14168-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_T2223 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,20176,913, 'HTC_Touch_T2223 Opera/9.50 (Windows NT 5.1; U; pt)', '14168-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,20176,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; ru)', '14168-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,20176,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; es-ES)', '14168-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,20176,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; it)', '14168-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-PPC6850 BM BMC')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-PPC6850 BM BMC', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; nl)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro/ Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'Swisscom/1.0/HTC_Touch_Pro/ Opera/9.50 (Windows NT 5.1; U; de)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; pt)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; de)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nl)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; it)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,16068,20176,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nb)', '12226-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Jade/1.40.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Jade/1.40.164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; de)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; en)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Jade/1.06.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'Vodafone/1.0/HTC_Jade/1.06.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; pt)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Jade/1.40. 164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'Vodafone/1.0/HTC_Jade/1.40. 164.2 Opera/9.50 (Windows NT 5.1; U; es-ES)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; nl)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,16068,20176,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; ru)', '12292-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Hero'), 1 => array(0 => 'QQBrowser (Linux; U; zh-cn; HTC Hero Build/FRF91)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(101060,142808,16074,913, 'QQBrowser (Linux; U; zh-cn; HTC Hero Build/FRF91)', '14784-18110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Advantage/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_Advantage/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_Advantage/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '15364-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,53548,5635,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Mega-T3333-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.5.713')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,53548,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.5.713', '11978-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,6643,5635,913, 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '17330-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,6643,5635,913, 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '17330-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7740)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;7720)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7720)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8107)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;7740)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8107)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8773)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378339,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8773)', '14738-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT328t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(854078,101053,644525,913, 'HTCT328t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '21021-17979-18062-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,14194,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3650'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3650; OpVer 28.129.15.751')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3650; OpVer 28.129.15.751', '12558-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,14194,913, 'HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,14194,913, 'HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3650/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12558-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.15.752')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.15.752', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.3.634')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.3.634', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-orange/PPC; 240x320; OpVer 23.114.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'HTC-P3450-orange/PPC; 240x320; OpVer 23.114.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611 Novarra-Vision/8.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611 Novarra-Vision/8.0', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.102.2.741')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.102.2.741', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.1.611')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.1.611', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12530-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/%ROM_VERSION% Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,16068,52209,913, 'HTC-ST7377/%ROM_VERSION% Opera/9.70 (Windows NT 5.1; U; en)', '17330-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,16068,52209,913, 'HTC-ST7377/2.10.502.4 (93577) Opera/9.7 (Windows NT 5.1; U; en)', '17330-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.00 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,16068,52209,913, 'HTC-ST7377/1.00 Opera/9.7 (Windows NT 5.1; U; en)', '17330-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(402055,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;7720)', '14781-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(402055,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8107)', '14781-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(402055,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8773)', '14781-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_pyramid / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player orange_uk / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_pyramid / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_pyramid / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_fr / 1.0 / htc_pyramid / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player vodafone_fr / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_pyramid / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248820,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(202988,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)', '13991-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(202988,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)', '13991-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Maple_S520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(398239,53548,5635,913, 'HTC_Maple_S520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14570-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Glacier'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.0.5; en-us; HTC Glacier Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(171869,644518,644525,913, 'Mozilla/5.0 (Linux; U; Android 4.0.5; en-us; HTC Glacier Build/IMM76I) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '15539-18066-18062-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,16068,20176,913, 'HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)', '12194-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3330 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,16068,20176,913, 'HTC_Touch2_T3330 Opera/9.50 (Windows NT 5.1; U; en)', '12194-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC6175')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(212304,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC6175', '20279-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6175')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(212304,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6175', '20279-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI39100;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(636397,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI39100;7.10;7720)', '15842-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(636397,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7720)', '15842-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(636397,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7740)', '15842-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(636397,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)', '15842-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8773)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(636397,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8773)', '15842-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Diamond2_T5353 Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Diamond2_T5353 Mozilla/4.0', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.164.2 (49069)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.164.2 (49069)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.162.3 (49069)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.162.3 (49069)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.3 (67041)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.3 (67041)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.172.1 (67041)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.172.1 (67041)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.162.2 (49069)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.40.162.2 (49069)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.163.3 (67041)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.163.3 (67041)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.29.164.1 (44865)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.29.164.1 (44865)', '12192-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,287695,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13999-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,287695,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13999-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'SAMSUNG-SGH-i900/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(112764,6643,13185,913, 'SAMSUNG-SGH-i900/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM', '12274-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,53548,13185,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12292-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.172.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.172.3', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.172.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.172.4', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.164.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.164.3', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC Touch Diamond')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC Touch Diamond', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/2.03.168.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/2.03.168.3', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.163.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.163.4', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3700'), 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P3700 Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P3700 Mozilla/4.0', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer %ORANGE_OP_VERSION% (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC-P3700-orange/PPC; 480x640; OpVer %ORANGE_OP_VERSION% (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.204.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.204.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond/V2.07.841.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC_Diamond/V2.07.841.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.161.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.161.4', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.163.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.163.4', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.162.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.162.4', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/1.26.161.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/1.26.161.1', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543)', '13374-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108177,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.3', '13644-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108177,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.2', '13644-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108177,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.5', '13644-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,6643,14194,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '15207-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(295489,6643,13185,913, 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/5.11.502.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(295489,6643,13185,913, 'HTC-P4600/5.11.502.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(295489,6643,13185,913, 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V1.22.841.5 (53520) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(175332,6643,5635,913, 'HTC_Snap_S523/V1.22.841.5 (53520) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(175332,6643,5635,913, 'HTC_Snap_S523 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(175332,6643,5635,913, 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS620;Smartphone;320x240')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS620;Smartphone;320x240', '11870-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12871-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12871-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,287695,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '14168-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,16068,287695,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12530-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,16068,287695,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '15207-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(352913,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.3.4', '13054-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(352913,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.2.1', '13054-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(352913,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 2.3.4', '13054-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(352913,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 4.0.3', '13054-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.8.0.87/31/999')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,287695,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.8.0.87/31/999', '14845-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,287695,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '14845-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Snap'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Alltel HTC Snap')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Alltel HTC Snap', '12277-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,5635,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12277-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S522 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,5635,913, 'HTC_Snap_S522 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12277-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Snap'), 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,5635,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap Mozilla/4.0', '12277-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,53548,13185,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320', '13100-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,5635,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player htc_tur / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player orange_uk / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(243256,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player o2_de / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player o2_de / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player orange_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_uk / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player tmo_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_es / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player orange_es / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telus_wwe / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player telus_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player virgin_mobile / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player virgin_mobile / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.3.3', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_bravo / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,101053,130486,913, 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,15131,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12096-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1', '12096-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,15131,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12096-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; SPV M3100; OpVer 12')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,15131,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; SPV M3100; OpVer 12', '12096-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN\\\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1', '12096-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player optus_au / 1.0 / htc_vivo / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204793,101053,130486,913, 'HTC Streaming Player optus_au / 1.0 / htc_vivo / 2.3.3', '14046-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vivo / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204793,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vivo / 2.3.3', '14046-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204793,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.3', '14046-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204793,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.4', '14046-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,16068,144556,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '15207-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(412175,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15798-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_Touch2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_Touch2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Mega/1.28.621.4 (66092) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'HTC_Mega/1.28.621.4 (66092) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Mega-T3333-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.10.702')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.10.702', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024)', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Mega-T3333-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.2.733')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.2.733', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch3G_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'HTC_Touch3G_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,6643,5635,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0', '11978-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13815-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(173381,53548,82738,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,6643,15131,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11870-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTCS620;Smartphone;320x240')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTCS620;Smartphone;320x240', '11870-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Excalibur Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,6643,15131,913, 'HTC-Excalibur Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11870-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST6356/2.31.502.4 (66023) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(165845,16068,20176,913, 'HTC-ST6356/2.31.502.4 (66023) Opera/9.50 (Windows NT 5.1; U; en)', '16444-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(203850,6643,14194,913, 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '14020-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/5.11.502.2 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(295489,16068,20176,913, 'HTC-P4600/5.11.502.2 Opera/9.50 (Windows NT 5.1; U; en)', '12300-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(295489,16068,20176,913, 'HTC-P4600/1.2 Opera/9.50 (Windows NT 5.1; U; en)', '12300-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch Cruise Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,13185,913, 'HTC_Touch Cruise Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3650-orange/PPC; 240x320; OpVer 28.319.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,13185,913, 'HTC-P3650-orange/PPC; 240x320; OpVer 28.319.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3650/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12558-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,13185,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,144556,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '14168-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,16068,85332,913, 'HTC_P3400-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '15207-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCZ710t_TD/1.0 Android/2.3 release/6.1.2011 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(800619,112542,111697,913, 'HTCZ710t_TD/1.0 Android/2.3 release/6.1.2011 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '22133-5629-15760-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT329t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1015578,101053,644525,913, 'HTCT329t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '18612-17979-18062-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,287695,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12192-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,16068,144556,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12530-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3320'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3320; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3320; Windows Phone 6.5)', '12194-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3330'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3330; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3330; Windows Phone 6.5)', '12194-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_fr / 1.0 / htc_shooteru / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390970,101053,130486,913, 'HTC Streaming Player vodafone_fr / 1.0 / htc_shooteru / 2.3.4', '12697-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_shooter / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390970,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_shooter / 2.3.4', '12697-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player Sprint / 1.0 / htc_shooter / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390970,101053,130486,913, 'HTC Streaming Player Sprint / 1.0 / htc_shooter / 4.0.3', '12697-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player virgin_mobile / 1.0 / htc_shooter / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390970,101053,130486,913, 'HTC Streaming Player virgin_mobile / 1.0 / htc_shooter / 4.0.3', '12697-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,13185,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12530-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,13185,913, 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12530-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(171869,101053,130486,913, 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.2.1', '15539-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(171869,101053,130486,913, 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.3.4', '15539-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,287695,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '11978-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.22.172.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.22.172.3', '13100-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.25.163.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.25.163.1', '13100-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2', '13100-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4550-orange/PPC; 240x320; OpVer 24.181.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,14194,913, 'HTC-P4550-orange/PPC; 240x320; OpVer 24.181.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,14194,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.3.635')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.3.635', '11734-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.165.5')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.165.5', '11734-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162748,53548,13185,913, 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13421-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/%ROM_VERSION% Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,16068,20176,913, 'HTC-ST7377/%ROM_VERSION% Opera/9.50 (Windows NT 5.1; U; en)', '17330-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,16068,20176,913, 'HTC-ST7377/1.59.502.3 (67150) Opera/9.50 (Windows NT 5.1; U; en)', '17330-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3335 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(159052,16068,20176,913, 'HTC_Touch2_T3335 Opera/9.50 (Windows NT 5.1; U; en)', '13502-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_india / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_asia_india / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_dan / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player h3g_dan / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telefonica / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player telefonica / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_es / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player orange_es / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_de_1und1 / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player vodafone_de_1und1 / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_ita / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player h3g_ita / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player tmo_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe_tesco / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_wwe_tesco / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_fra_bouygues / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_fra_bouygues / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_spa / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player vodafone_spa / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_fr / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player vodafone_fr / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_de / 1.0 / htc_buzz / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131423,101053,130486,913, 'HTC Streaming Player vodafone_de / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(597198,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;7720)', '17669-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(854438,101053,130486,913, 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.3', '21719-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc / 1.0 / jewel / 4.1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(854438,101053,130486,913, 'HTC Streaming Player htc / 1.0 / jewel / 4.1.1', '21719-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(854438,101053,130486,913, 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.4', '21719-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,6643,15131,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12097-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,6655,913, 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13999-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,6655,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13999-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13999-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) T-Mobile_LEO')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,6655,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) T-Mobile_LEO', '13999-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,144556,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13999-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,144556,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13999-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Rezound'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC Rezound Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(895396,673268,673275,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC Rezound Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', '21489-18111-18112-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_HD_A9191) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_HD_A9191) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '14225-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(178644,53548,14194,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16392-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6116')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6116', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232'), 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_Touch_3G_T3232 Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_Touch_3G_T3232 Mozilla/4.0', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.40.164.2 (21259)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.40.164.2 (21259)', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6112')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6112', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.2.7311')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.2.7311', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.06.164.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.06.164.1', '12292-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(420906,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 4.0.3', '15805-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(420906,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 2.3.4', '15805-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,287695,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13374-5448-4779-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(153867,16068,152930,913, 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)', '11716-5448-22303-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_kingdom / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(310995,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_kingdom / 2.3.4', '12657-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_kingdom / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(310995,101053,130486,913, 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_kingdom / 2.3.4', '12657-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player boost / 1.0 / htc_kingdom / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(310995,101053,130486,913, 'HTC Streaming Player boost / 1.0 / htc_kingdom / 4.0.3', '12657-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.172.16')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162748,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.172.16', '13421-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162748,6643,14194,913, 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '13421-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610', '11734-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P4550 Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,53548,13185,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P4550 Mozilla/4.0', '11734-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378195,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;7720)', '14632-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,6643,5635,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12194-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3330 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,6643,5635,913, 'HTC_Touch2_T3330 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12194-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; en)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; it)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242_2 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'HTC_Touch_Cruise_T4242_2 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3650'), 1 => array(0 => 'Opera/9.51 Beta (Microsoft Windows; PPC; 240x320; HTC_P3650; Opera Mobi/1718; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'Opera/9.51 Beta (Microsoft Windows; PPC; 240x320; HTC_P3650; Opera Mobi/1718; U; en)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,20176,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; nb)', '12558-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI86100;7.10;8112)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(748558,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI86100;7.10;8112)', '18309-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST6356/2.31.502.4 (66023) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(165845,6643,5635,913, 'HTC-ST6356/2.31.502.4 (66023) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16444-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(203490,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.2', '15995-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(203490,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.3', '15995-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(203490,101053,130486,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.4', '15995-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,6643,13185,913, 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13277-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P6500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P6500; OpVer 27.157.1.614')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P6500; OpVer 27.157.1.614', '13277-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,5635,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14845-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379203,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8107)', '14651-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379203,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8107)', '14651-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379203,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7720)', '14651-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7740)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379203,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7740)', '14651-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'One_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(734390,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18296-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Snap_S510'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap_S510')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124606,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap_S510', '13322-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [fr]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [fr]', '13798-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '13798-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [nl]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [nl]', '13798-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [sv]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [sv]', '13798-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(215613,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM', '15639-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S526 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(336456,6643,5635,913, 'HTC_Snap_S526 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13848-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,144556,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '11978-5448-4777-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P5500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.1.6109')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.1.6109', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P5500-orange/PPC; 240x320; OpVer 25.131.2.7309 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'HTC-P5500-orange/PPC; 240x320; OpVer 25.131.2.7309 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P5500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.5.7209')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.5.7209', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P5500-orange/PPC; 240x320; OpVer 25.122.2.7302 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'HTC-P5500-orange/PPC; 240x320; OpVer 25.122.2.7302 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,14194,913, 'HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'HTC_Trinity_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'HTC_Trinity_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'HTC P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,13185,913, 'HTC_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16054-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253427,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15483-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,14194,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11980-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,6643,15131,913, 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '13798-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13798-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire_C)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(805462,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18382-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(412175,142808,1071164,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '15798-18110-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(174533,16068,20176,913, 'HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)', '15293-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3450 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,16068,20176,913, 'HTC_P3450 Opera/9.50 (Windows NT 5.1; U; en)', '12530-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT327t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1058048,101053,644525,913, 'HTCT327t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '21998-17979-18062-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'PPC'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC PPC; i-mate K-JAM PPC; 240x320; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(208405,16068,85332,913, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC PPC; i-mate K-JAM PPC; 240x320; PPC; 240x320)', '15177-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,15131,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11980-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS620-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,16068,85332,913, 'HTCS620-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '11870-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,208477,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12096-7238-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(404215,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;7720)', '18073-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(404215,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8107)', '18073-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_ruby / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(627430,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_ruby / 2.3.4', '15802-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_ruby / 4.0.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(627430,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_ruby / 4.0.3', '15802-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(132432,6643,13185,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12243-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600i'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i', '16054-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3335'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3335; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(159052,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3335; Windows Phone 6.5)', '13502-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_doubleshot / 2.3.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(227902,101053,130486,913, 'HTC Streaming Player tmous / 1.0 / htc_doubleshot / 2.3.4', '15139-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253283,6649,52209,913, 'Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7', '14030-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253283,6649,52209,913, 'Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7', '14030-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,16068,85332,913, 'HTC_P4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '12097-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,16068,85332,913, 'HTCP4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '12097-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,52209,913, 'HTC_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,52209,913, 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '14845-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,52209,913, 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,52209,913, 'HTC_Touch_HD_T8282 Opera/9.70 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93760,6643,14194,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12018-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3451/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3451/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(249612,6643,14194,913, 'PPC; 240x320; HTC_P3451/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '15429-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(265565,6643,13185,913, 'HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16031-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,16068,85332,913, 'HTCP3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,16068,85332,913, 'HTC_P3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3300/1.35.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,16068,85332,913, 'HTC P3300/1.35.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3300/1.28.621.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,16068,85332,913, 'HTC P3300/1.28.621.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,16068,85332,913, 'HTC_P3300/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'One_X)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(734317,673268,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18295-18111-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S621 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(323951,6643,15131,913, 'HTC_S621 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '14686-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS621-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(323951,6643,15131,913, 'HTCS621-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '14686-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Incredible_S)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Incredible_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204721,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Incredible_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13042-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900-MR1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(215613,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900-MR1', '15639-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(215613,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900', '15639-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire_X)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Desire_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(896626,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Desire_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18462-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2.1', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_vision / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_vision / 2.2.1', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_vision / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_tur / 1.0 / htc_vision / 2.2.1', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player bellmobility_wwe / 1.0 / htc_vision / 2.2.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player bellmobility_wwe / 1.0 / htc_vision / 2.2.1', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_vision / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_india / 1.0 / htc_vision / 2.3.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131711,101053,130486,913, 'HTC Streaming Player htc_asia_india / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (WindowsMobile; PPC; Opera Mobi/35267; U; zh-CN; Presto/2.1.1)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(369176,6649,52209,913, 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (WindowsMobile; PPC; Opera Mobi/35267; U; zh-CN; Presto/2.1.1)', '13988-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(369176,6649,52209,913, 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13988-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(369176,6649,52209,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Windows Phone 6.5.3.5)', '13988-5222-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6643,5635,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13374-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93760,16068,152930,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)', '12018-5448-22303-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(734390,142808,1071164,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '18296-18110-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;7720)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403999,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;7720)', '14886-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403999,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;8107)', '14886-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8107)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(403999,406624,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8107)', '14886-15924-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,13185,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11980-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_Z710e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(248892,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_Z710e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15201-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire_S)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(159196,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '14969-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,6643,13185,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11870-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110689,142808,1071164,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '11747-18110-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,5635,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11734-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113772,6643,5635,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11734-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6643,6655,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '14845-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Glacier'), 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(171869,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)', '15539-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Glacier'), 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Messenger; 1.6.0) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(171869,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Messenger; 1.6.0) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)', '15539-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Incredible'), 1 => array(0 => 'MQQBrowser/3.5/Adr (Linux; U; 2.3.5; zh-cn; HTC Incredible S Build/GRJ90;480*800)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(204721,142808,841212,913, 'MQQBrowser/3.5/Adr (Linux; U; 2.3.5; zh-cn; HTC Incredible S Build/GRJ90;480*800)', '13042-18110-20786-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Sensation_XE_with_Beats_Audio_Z715e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XE_with_Beats_Audio_Z715e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(360206,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XE_with_Beats_Audio_Z715e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13157-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(173381,6643,13185,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13578-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(805462,142808,1071164,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '18382-18110-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93760,6643,84395,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)', '12018-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,16068,29926,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '15207-5448-4759-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'T328w'), 1 => array(0 => 'MQQBrowser/3.7/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(803217,142808,921584,913, 'MQQBrowser/3.7/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)', '19859-18110-20788-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-MP6950 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(22125,16068,20176,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-MP6950 BM', '20254-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5362 Opera/9.50 (Windows NT 5.1; U; en) V2.31.841.6 (64646)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(109407,16068,20176,913, 'HTC_Touch_Diamond2_T5362 Opera/9.50 (Windows NT 5.1; U; en) V2.31.841.6 (64646)', '13297-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,6643,14194,913, 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '13277-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P6500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P6500; OpVer 27.110.1.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P6500; OpVer 27.110.1.612', '13277-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P5500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P5500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P5500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11851-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50553,6643,13185,913, 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11851-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD/2.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD/2.0; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD/2.0; Windows Phone 6.5)', '14845-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5)', '14845-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5.3.5)', '14845-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(309109,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3', '12780-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(370400,16068,152930,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)', '12703-5448-22303-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320) (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(370400,16068,152930,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320) (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '12703-5448-22303-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(153867,16068,16074,913, 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)', '11716-5448-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'A810e'), 1 => array(0 => 'MQQBrowser/20 (Linux; U; 2.3.4; zh-cn; HTC A810e Build/GRJ22;480*320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253427,142808,288631,913, 'MQQBrowser/20 (Linux; U; 2.3.4; zh-cn; HTC A810e Build/GRJ22;480*320)', '15483-18110-20771-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Sensation_XL_with_Beats_Audio_X315e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XL_with_Beats_Audio_X315e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(410159,142808,711577,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XL_with_Beats_Audio_X315e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15794-18110-18326-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6643,6655,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '16177-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800; XV6875; Window Mobile 6.1 Professional;')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6643,6655,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) 480x800; XV6875; Window Mobile 6.1 Professional;', '16177-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,29926,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '11978-5448-4759-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,52209,913, 'HTC_Diamond Opera/9.70 (Windows NT 5.1; U; en)', '13374-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,16068,52209,913, 'HTC_P3700 Opera/9.7 (Windows NT 5.1; U; fr)', '13374-5448-4626-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC-T9199/1.09.706.2;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0 MSIE/6.0; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253283,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC-T9199/1.09.706.2;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0 MSIE/6.0; Windows Phone 6.5.3.5)', '14030-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253283,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)', '14030-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(253283,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)', '14030-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,16068,29926,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '12530-5448-4759-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3335 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(159052,6643,5635,913, 'HTC_Touch2_T3335 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13502-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(323951,16068,85332,913, 'HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '14686-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,29926,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '13999-5448-4759-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3490 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390178,16068,20176,913, 'HTC_P3490 Opera/9.50 (Windows NT 5.1; U; en)', '12682-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3470-orange/PPC; 240x320; OpVer 29.115.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(173381,6643,82738,913, 'HTC-P3470-orange/PPC; 240x320; OpVer 29.115.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3470-orange/PPC; 240x320; OpVer 29.113.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(173381,6643,82738,913, 'HTC-P3470-orange/PPC; 240x320; OpVer 29.113.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(185352,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13798-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S710 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,6643,13185,913, 'HTC_S710 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13100-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,6643,14194,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12097-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(390178,53548,13185,913, 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12682-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,9450,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '13999-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P6300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(262677,208477,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16047-7238-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (ace; HTC; Desire HD; 2.3.3/GRI40)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (ace; HTC; Desire HD; 2.3.3/GRI40)', '14225-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (ace; HTC; Desire HD; 2.3.3/GRI40)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(131567,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (ace; HTC; Desire HD; 2.3.3/GRI40)', '14225-17979-18154-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Snap_S521'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Snap_S521; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(132432,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Snap_S521; Windows Phone 6.5)', '12243-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,16068,85332,913, 'HTCP3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16054-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,16068,85332,913, 'HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16054-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(332640,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2', '17488-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.18.161.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(332640,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.18.161.4', '17488-6742-15792-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(87881,16068,9450,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '11978-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(22125,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM', '20254-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_legend / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(114276,101053,130486,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_legend / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(114276,101053,130486,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_legend / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(114276,101053,130486,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,82738,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12530-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,6655,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12226-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,82738,913, 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12096-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,53548,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652)', '15526-5049-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,53548,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904)', '15526-5049-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.167.1 (87652)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(128686,53548,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.167.1 (87652)', '15526-5049-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5362/V2.31.841.6 (64646) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(109407,6643,5635,913, 'HTC_Touch_Diamond2_T5362/V2.31.841.6 (64646) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13297-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(332640,16068,85332,913, 'HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '17488-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(332640,16068,85332,913, 'Vodafone/1.0/HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '17488-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S630/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 320x240; HTC_S630/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(236853,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 320x240; HTC_S630/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15285-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S630\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 320x240; HTC_S630\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(236853,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 320x240; HTC_S630\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1', '15285-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,16068,9450,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '14168-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,16068,9450,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '12192-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-orange/PPC; 240x320; OpVer 23.221.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,53548,14194,913, 'HTC-P3450-orange/PPC; 240x320; OpVer 23.221.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(175332,6649,6655,913, 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)', '13623-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P6500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [es-es]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [es-es]', '13277-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P6500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(104279,16068,45428,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '13277-5448-3772-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(152858,6643,13185,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16381-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_lexikon / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(271743,101053,130486,913, 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_lexikon / 2.2', '17947-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_lexikon / 2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(271743,101053,130486,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_lexikon / 2.2', '17947-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(82234,16068,9450,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '14845-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(137242,6643,5635,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12292-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50697,6643,13185,913, 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '17489-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,5635,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12226-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Iusacell:PPC6800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(110617,6643,5635,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Iusacell:PPC6800', '12226-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3350/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3350/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(461115,6643,14194,913, 'PPC; 240x320; HTC_P3350/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16048-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'PPC6800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC PPC6800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(473907,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC PPC6800', '14418-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4351/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(114060,6643,14194,913, 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16169-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,6643,5635,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '15207-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/5.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,6643,5635,913, 'HTC_P3400i-Mozilla/5.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '15207-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_MAX Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(174533,6643,13185,913, 'HTC_MAX Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15293-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(174533,6643,13185,913, 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15293-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Mercury/3.54.162.4')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(332640,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Mercury/3.54.162.4', '17488-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122949,16068,9450,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '12194-5448-4715-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN\\1.0'), 1 => array(0 => 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Dopod838Pro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Dopod838Pro', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC TyTN')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC TyTN', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN\\\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1', '12096-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,82738,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(84323,6643,82738,913, 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '16054-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; en)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,16068,158117,913, 'HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; en)', '13999-5448-4536-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-P5310 BM')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(236637,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-P5310 BM', '15282-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S743 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(374077,6643,13185,913, 'HTC_S743 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14193-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,5635,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12558-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,6643,5635,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12558-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,6643,13185,913, 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '17330-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(156676,6643,13185,913, 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '17330-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(126809,6643,5635,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12530-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94198,16068,16074,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650)', '12558-5448-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,6643,13185,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12097-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-S620/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(97222,16068,10386,913, 'HTC-S620/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51', '11870-5448-4737-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5530 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162748,53548,82738,913, 'HTC_P5530 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13421-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_liberty / 2.2.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(130198,101053,130486,913, 'HTC Streaming Player cingular_us / 1.0 / htc_liberty / 2.2.2', '13349-17979-17617-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,53548,82738,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '11980-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(88025,53548,82738,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'P4351/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(114060,6643,15131,913, 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16169-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,53548,82738,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12096-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; SPV M3100; OpVer 12')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,53548,82738,913, 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; SPV M3100; OpVer 12', '12096-5049-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(350892,16068,20176,913, 'HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13030-5448-3430-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) O2MTouchC Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6;HTC_P5500; tmn PortalBliss 1.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(215181,6643,14194,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) O2MTouchC Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6;HTC_P5500; tmn PortalBliss 1.0)', '15809-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT', '15364-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(210864,6643,5635,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14168-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(181453,6643,13185,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15207-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,53548,6655,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13374-5049-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,53548,6655,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12192-5049-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,13185,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13999-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,13185,913, 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13999-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2/1.44.163.3 (70493) (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_HD2/1.44.163.3 (70493)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,13185,913, 'HTC_HD2/1.44.163.3 (70493) (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_HD2/1.44.163.3 (70493)', '13999-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585/480x800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_HD2_T8585/480x800')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(6571,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_HD2_T8585/480x800', '13999-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(152858,6643,82738,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '16381-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(113988,6643,82738,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12097-6742-22272-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(174533,6643,5635,913, 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '15293-6742-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,6655,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12277-6742-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3701/1.37.621.2 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(350892,6643,13185,913, 'HTC_P3701/1.37.621.2 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13030-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(350892,6643,13185,913, 'HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13030-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_S740/1.14.172.1')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,53548,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_S740/1.14.172.1', '13670-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_S740 Mozilla/4.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(268348,53548,13185,913, 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_S740 Mozilla/4.0', '13670-5049-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(152858,16068,85332,913, 'Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16381-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (passion;HTC;Nexus One;2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(157973,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (passion;HTC;Nexus One;2.3.4/GRJ22)', '16036-17979-18334-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.8) (passion;HTC;Nexus One;2.3.4/GRJ22)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(157973,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.8) (passion;HTC;Nexus One;2.3.4/GRJ22)', '16036-17979-18334-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.8) (passion;HTC;Nexus One;2.3.6/GRK39F)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(157973,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.8) (passion;HTC;Nexus One;2.3.6/GRK39F)', '16036-17979-18334-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.6) (passion;HTC;Nexus One;2.3.6/GRK39F)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(157973,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.6) (passion;HTC;Nexus One;2.3.6/GRK39F)', '16036-17979-18334-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.10) (passion;HTC;Nexus One;2.3.7/GRK39F)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(157973,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.10) (passion;HTC;Nexus One;2.3.7/GRK39F)', '16036-17979-18334-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,14194,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12096-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,14194,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12096-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Dopod838Pro')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(14122,6643,14194,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Dopod838Pro', '12096-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(178644,6643,13185,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16392-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6643,13185,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16177-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint T7380')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,6643,13185,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Sprint T7380', '16177-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Polaris Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(292921,6643,187799,913, 'HTC_Polaris Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12027-6742-4643-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 1.0/HTC_Polaris')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(292921,6643,187799,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) 1.0/HTC_Polaris', '12027-6742-4643-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)/UC Browser7.2.2.51')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(205376,16068,10386,913, 'SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)/UC Browser7.2.2.51', '13100-5448-4737-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,53548,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752', '12192-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.1 (67041)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,53548,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.1 (67041)', '12192-5049-4808-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.163.09')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(162748,53548,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.163.09', '13421-5049-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8862)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8862)', '15851-21697-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8862)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(629491,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8862)', '15851-21697-18418-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(50697,6643,14194,913, 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '17489-6742-22271-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93760,6643,15131,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12018-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(122805,6643,13185,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12192-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(152858,6643,15131,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16381-6742-17173-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => array(0 => 'TOUCH_DIAMOND2/2.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TOUCH_DIAMOND2/2.0; Windows Phone 6.5)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(108543,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TOUCH_DIAMOND2/2.0; Windows Phone 6.5)', '13374-5222-17183-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S630 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(236853,6643,13185,913, 'HTC_S630 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15285-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(93760,6643,13185,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12018-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(324167,16068,85332,913, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320)', '16453-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(124678,6643,13185,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12277-6742-22270-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(370400,16068,85332,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)', '12703-5448-4578-18092');
-    $ls = $ns;
-  }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.170.0 (67102)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(94342,53548,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.170.0 (67102)', '16177-5049-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731', '16177-5448-4808-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.167.2 (67102)')), $ls);
@@ -8674,7 +1330,3255 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,53548,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.167.2 (67102)', '16177-5049-4808-18092');
+    $dl[] = array(77002,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Swisscom/1.0/HTC Touch Pro2/1.86.167.2 (67102)', '16177-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6875')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6875', '15364-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'HTC_HD_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.49.841.1 (71528)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.49.841.1 (71528)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.72.841.0 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'HTC_HD2_T9193 Opera/9.7 (Windows NT 5.1; U; en) V1.72.841.0 (82124)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731 Opera/9.7 (Windows NT 5.1; U;fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731 Opera/9.7 (Windows NT 5.1; U;fr)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'HTC_Touch_HD2_T8585 Opera/9.70 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,40387,913, 'Vodafone/1.0/HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)', '13999-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTCPO881; SPRINT)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; HTCPO881; SPRINT)', '15364-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; RIO_U)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,841900,841050,913, 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone 8.0; Trident/6.0; IEMobile/10.0; ARM; Touch; HTC; RIO_U)', '15364-18148-18263-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.143.2.731', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.1.612', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.2.732')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.2.732', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.49.164.2 (71528)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.49.164.2 (71528)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.161.3 (04666)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.161.3 (04666)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.163.3 (04666)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.163.3 (04666)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.2.733')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 114.172.2.733', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T8585/480x800 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585/480x800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_HD2_T8585/480x800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_HD2_T8585/480x800', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.172.0 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.172.0 (82124)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.163.3 (70494)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.163.3 (70494)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.172.7 (70494)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.44.172.7 (70494)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.161.3 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.161.3 (82124)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.162.0 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.162.0 (82124)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.164.4 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/1.72.164.4 (82124)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.172.3 (04666)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.172.3 (04666)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.49.841.1 (71528)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.49.841.1 (71528)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.72.841.0 (82124)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) V1.72.841.0 (82124)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla\\4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T8585 Mozilla\\4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T9193 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.164.4 (04666)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.164.4 (04666)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.162.5 (04666)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_HD2/3.14.162.5 (04666)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_HD2_T8585-Orange; OpVer 156.314.1.612', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585/1.64.621.6 (77873) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T8585/1.64.621.6 (77873) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,5675,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13999-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) USCCHTC6850')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) USCCHTC6850', '15364-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,13791,913, 'HTC_Touch_3G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15364-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.166.1 (87652)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.166.1 (87652)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.164.1 (10904)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.41.164.1 (10904)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.41.166.1 (10904)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.167.1 (87652)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Swisscom/1.0/HTC_HD_mini/1.11.167.1 (87652)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.00.164.1 (80896)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) Vodafone/1.0/HTC_HD_mini/1.00.164.1 (80896)', '15526-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One Build/JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One Build/JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Dalvik/1.6.0 (Linux; U; Android 4.3; HTC One Build/JWR66V.H10)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Dalvik/1.6.0 (Linux; U; Android 4.3; HTC One Build/JWR66V.H10)', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Dalvik/1.6.0 (Linux; U; Android 4.3; HTC One Build/JSS15J)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Dalvik/1.6.0 (Linux; U; Android 4.3; HTC One Build/JSS15J)', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; de-de; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/BlackJelly 1.1 JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/BlackJelly 1.1 JWR66V.H10) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-au; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-au; HTC One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; nl-nl; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; nl-nl; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JWR66Y.H1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One Build/JWR66Y.H1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'PN071'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC_PN071 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC_PN071 Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-au; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-au; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-ca; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-ca; HTC_One Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30', '20705-21637-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1444589,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '20705-21637-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1444589,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '20705-21637-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_prophet/2.15.3.113/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,67830,913, 'Vodafone/1.0/HTC_prophet/2.15.3.113/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '15364-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; es-ES)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; pt)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; el)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; el)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; fr)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; en)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nl)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; ru)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; it)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; de)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; nb)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; sv)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; da)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch2_T3333 Opera/9.50 (Windows NT 5.1; U; da)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch3G_T3333 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'HTC_Touch3G_T3333 Opera/9.50 (Windows NT 5.1; U; en)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,14748,913, 'Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)', '11978-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 94.119.2.733 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 94.119.2.733 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7379'), 1 => array(0 => 'Opera/9.5(Microsoft Windows; PPC; Opera Mobi/16643; U; en) HTC_Touch_Pro2_T7379')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Opera/9.5(Microsoft Windows; PPC; Opera Mobi/16643; U; en) HTC_Touch_Pro2_T7379', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; de)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.19.841.3 (51489)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.19.841.3 (51489)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.93.841.0 (81210)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7381 Opera/9.50 (Windows NT 5.1; U; en) V1.93.841.0 (81210)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7385-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731 Opera/9.5 (Microsoft Windows 6.5; Opera Mobi/17518; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'PPC; 480x800; HTC_Touch_Pro2_T7385-Orange; OpVer 122.190.2.731 Opera/9.5 (Microsoft Windows 6.5; Opera Mobi/17518; U; fr)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Swisscom/1.0/HTC_Touch_Pro2/ Opera/9.50 (Windows NT 5.1; U; de)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nl)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; nb)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; it)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,14748,913, 'HTC_Touch_Pro2_T7373 Opera/9.50 (Windows NT 5.1; U; fr)', '16177-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; pt)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nl)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; fr)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; es-ES)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; en)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; it)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; ru)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,14748,913, 'HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; nb)', '14845-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'HTC_Touch_HD_T8282/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.159.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.159.1.612', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282-orange/PPC; 480x800 OpVer 34.119.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'HTC_Touch_HD_T8282-orange/PPC; 480x800 OpVer 34.119.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.3 (32434)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.3 (32434)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282/1.21.621.2 (38850) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'HTC_Touch_HD_T8282/1.21.621.2 (38850) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.2 (28253)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_HD_T8282/1.14.163.2 (28253)', '14845-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'USCCHTC6875 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,277626,913, 'USCCHTC6875 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '15364-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; ru)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Diamond')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) Alltel HTC Touch Diamond', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720/V2.07.841.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720/V2.07.841.2', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; sv)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; da)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; da)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nb)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en-GB)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; en-GB)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; nl)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; pt)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; fr)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; it)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; de)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'HTC_P3700 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,14748,913, 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)', '13374-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7720)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;7740)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8107)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7720)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7720)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;7740)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8773)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8107)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;7740)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar;7.10;8107)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8773)', '15851-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / inc / 2.2', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player o2_uk / 1.0 / htc_saga / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player o2_uk / 1.0 / htc_saga / 2.3.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_saga / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_saga / 2.3.5', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_saga / 2.3.5', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / ville / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / ville / 4.0.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_blissc / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_blissc / 2.3.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / evita / 4.0.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / endeavoru / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_primou / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_primou / 4.0.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / ville / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / ville / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / dlx / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / dlx / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / fireball / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / fireball / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / endeavoru / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / endeavoru / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_primou / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_primou / 4.0.3', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / ville / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / ville / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / enrc2b / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / enrc2b / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc / 1.0 / m7wls / 4.1.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc / 1.0 / m7wls / 4.1.2', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / m7 / 4.1.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / m7 / 4.1.2', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / protou / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / protou / 4.0.4', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / evita / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / evita / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / m7 / 4.1.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / m7 / 4.1.2', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / ville / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / ville / 4.1.1', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / m7 / 4.1.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / m7 / 4.1.2', '15364-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nl)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; da)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; de)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; ru)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; nb)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; it)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; pt)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; es-ES)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; en)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; sv)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,40387,913, 'HTC_Touch_Pro2_T7373 Opera/9.7 (Windows NT 5.1; U; fr)', '16177-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.161.1', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.08.161.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.08.161.0', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Kaiser/3.28.162.2', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN_II'), 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_TyTN_II Mozilla/4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_TyTN_II Mozilla/4.0', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550/TYTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'HTC_P4550/TYTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.181.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.181.1.612', '11734-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.164.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.164.3', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.172.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.172.3', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC Touch Diamond')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC Touch Diamond', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/2.03.168.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/2.03.168.3', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.163.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.163.4', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3700'), 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P3700 Mozilla/4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_P3700 Mozilla/4.0', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.204.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.204.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond/V2.07.841.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC_Diamond/V2.07.841.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.161.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.161.4', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.163.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.97.163.4', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.126.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3700-orange/PPC; 480x640; OpVer 30.193.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'HTC-P3700-orange/PPC; 480x640; OpVer 30.193.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/%ROM_VERSION%')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/%ROM_VERSION%', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.164.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.164.2', '13374-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,49474,40387,913, 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '13999-5690-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,49474,40387,913, 'HD2_T8585 Opera/9.7 (Windows NT 5.1; U; en)', '13999-5690-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_Touch2/1.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_Touch2/1.0)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Mega'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Mega; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Mega; Windows Phone 6.5)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch3G_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch3G_T3333; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch3G_T3333; Windows Phone 6.5)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2/1.0; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2/1.0; Windows Phone 6.5)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3333'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3333; Windows Phone 6.5.3.5)', '11978-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; en)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353-Orange'), 1 => array(0 => 'PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.2.732 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.2.732 Opera/9.5 (Microsoft Windows 6.1; Opera Mobi/16071; U; fr)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-cn)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-cn)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; pt)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; sv)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nl)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; ru)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; nb)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; de)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; fr)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; el)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,14748,913, 'HTC_Touch_Diamond2_T5353 Opera/9.50 (Windows NT 5.1; U; el)', '12192-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.3.103/139/800', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.1.100/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.1.100/139/800', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_A510e; 320*480) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_A510e; 320*480) UCWEB7.9.3.103/139/800', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.3.103/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.3.103/139/999', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/352', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/352', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/444', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/355', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.4.145/139/800', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/444', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_A510e; 320*480) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_A510e; 320*480) UCWEB7.9.4.145/139/800', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/351')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/139/351', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/140/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Wildfire_S_A510e; 320*480) UCWEB7.9.0.94/140/444', '12871-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '15798-5629-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '15798-5629-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5)', '16177-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; Windows Phone 6.5.3.5)', '16177-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.93.841.0 (81210); Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,7631,7637,913, 'HTC_Touch_Pro2_T7381 Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; V1.93.841.0 (81210); Windows Phone 6.5)', '16177-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Pro2_T7373'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; HD2_T8585; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Pro2_T7373; HD2_T8585; Windows Phone 6.5)', '16177-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'USCCHTC6875 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,297486,913, 'USCCHTC6875 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '15364-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.162.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.162.5', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.1.612', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.9.693')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.9.693', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.8.683')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P4550; OpVer 24.181.8.683', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.161.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.161.4', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.172.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.172.3', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P4550/1.83.621.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'HTC P4550/1.83.621.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4550-orange/PPC; 240x320; OpVer 24.181.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'HTC-P4550-orange/PPC; 240x320; OpVer 24.181.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.165.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_Kaiser/1.56.165.5', '11734-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile', '15798-5629-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '15798-5629-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.3.103/139/800', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.3.103/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.3.103/139/999', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.4.145/139/800', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/352', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/444', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/351')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/351', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_HD_A9191; 480*800) UCWEB7.9.0.94/139/355', '14225-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '18382-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '18382-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114862,6631,5675,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12243-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nb)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; fr)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; fr)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; sv)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; sv)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; nl)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; ru)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; de)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; da)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; da)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; it)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.70 (Windows NT 5.1; U; en)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; pt)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; es-ES)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; el)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; el)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,40387,913, 'HTC_Touch_Diamond2_T5353 Opera/9.7 (Windows NT 5.1; U; en)', '12192-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_HD_mini/Opera 9.7/1.11.170.1 (87652) (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Swisscom/1.0/HTC_HD_mini/Opera 9.7/1.11.170.1 (87652) (Windows NT 5.1; U; en)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; zh-tw)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'HTC_HD_mini_T5555 Opera/9.7 (Windows NT 5.1; U; en)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.164.1 (87733)/(Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.164.1 (87733)/(Windows NT 5.1; U; es-ES)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.10.161.1 (86611)/(Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.10.161.1 (86611)/(Windows NT 5.1; U; en)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.161.1 (10904)/(Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.161.1 (10904)/(Windows NT 5.1; U; en)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.162.1 (87652)/(Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.162.1 (87652)/(Windows NT 5.1; U; de)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.162.1 (10904)/(Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.162.1 (10904)/(Windows NT 5.1; U; de)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.36.184.2 (94538)/(Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,40387,913, 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.36.184.2 (94538)/(Windows NT 5.1; U; en)', '15526-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile', '12871-5629-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '12871-5629-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.17 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.17 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.24 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.24 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.24 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.24 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.30 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66V.H10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.30 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.30 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.30 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.38 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1174199,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.38 Mobile Safari/537.36', '20705-21637-24154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_Touch2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; HTC_Touch2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Mega/1.28.621.4 (66092) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'HTC_Mega/1.28.621.4 (66092) Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Mega-T3333-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.10.702')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.10.702', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024)', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Mega-T3333-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.2.733')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_Mega-T3333-Orange; OpVer 113.128.2.733', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch3G_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'HTC_Touch3G_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,5675,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11978-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '12871-5629-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '12871-5629-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '15798-5629-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile', '15798-5629-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-Ten/PPC; 240x320; OpVer 23.227.2.792 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'HTC-P3450-Ten/PPC; 240x320; OpVer 23.227.2.792 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.1.611')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.1.611', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-orange/PPC; 240x320; OpVer 23.221.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'HTC-P3450-orange/PPC; 240x320; OpVer 23.221.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.15.751')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450; OpVer 23.221.15.751', '12530-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD_mini_T5555'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini_T5555; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini_T5555; Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.162.1 (10904); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.164.1 (87733); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.11.162.1 (87652); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD_mini-orange-LS'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini-orange-LS; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_HD_mini-orange-LS; Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.10.161.1 (86611); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.36.184.2 (94538); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904); Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Vodafone/1.0/HTC_HD_mini/1.41.161.1 (10904); Windows Phone 6.5.3.5)', '15526-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '11747-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '11747-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Hero'), 1 => array(0 => 'QQBrowser (Linux; U; zh-cn; HTC Hero Build/FRF91)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(79910,124734,54471,913, 'QQBrowser (Linux; U; zh-cn; HTC Hero Build/FRF91)', '14784-18110-17470-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/352', '15798-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/444', '15798-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Explorer_A310e; 320*480) UCWEB7.9.0.94/139/355', '15798-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'HTC_S740 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.1.612')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.1.612', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.174.1.611')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.174.1.611', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_S740/1.14.166.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_S740/1.14.166.0', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.2.732')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Smartphone; 240x320; HTC S740; OpVer 32.117.2.732', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_S740/1.14.172.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(244434,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_S740/1.14.172.1', '13670-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12871-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12871-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,277626,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '16177-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.3.103/139/800', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.3.103/140/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.3.103/140/999', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/352', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/444', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/355', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/352', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.2.1; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.4.145/139/800', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,124734,303588,913, 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Wildfire; 240*320) UCWEB7.9.0.94/139/444', '13815-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,13791,913, 'HTC_Touch_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14168-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,13791,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14168-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Viva_T2223'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_Viva_T2223; OpVer 86.157.15.753')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_Viva_T2223; OpVer 86.157.15.753', '14168-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7720)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8107)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;8107)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7740)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;7720)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8773)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9296;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9296;7.10;8107)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356924,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7;7.10;7740)', '13868-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '18295-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '18295-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '18295-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC Sensation Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC Sensation Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid', '15438-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC Sensation Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC Sensation Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid', '15438-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC Sensation Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC Sensation Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid', '15438-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC Sensation Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC Sensation Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/pyramid', '15438-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC One X) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC One X) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '18295-18111-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM BMC')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-PPC6850 BM BMC', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272-orange/PPC; 480x640; OpVer 31.190.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'HTC_Touch_Pro_T7272-orange/PPC; 480x640; OpVer 31.190.2.734 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.172.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.172.4', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.161.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/1.90.161.5', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.11.162.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.11.162.1', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_Touch_Pro/1.90.166.6')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Swisscom/1.0/HTC_Touch_Pro/1.90.166.6', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'HTC_Touch_Pro Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/%ROM_VERSION%')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/%ROM_VERSION%', '12226-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.161.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Touch_Pro/5.10.161.1', '12226-5448-22270-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7276 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
@@ -8682,231 +4586,4063 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(110617,53548,13185,913, 'HTC_Touch_Pro_T7276 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-5049-22270-18092');
+    $dl[] = array(88559,6631,13791,913, 'HTC_Touch_Pro_T7276 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12226-5448-22270-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCTyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT328t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,16068,85332,913, 'HTCTyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '12096-5448-4578-18092');
+    $dl[] = array(995439,79982,576120,913, 'HTCT328t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '21021-17979-18062-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC TyTN; PPC; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player twm_tw / 1.0 / htc_ace / 2.2.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,16068,85332,913, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC TyTN; PPC; 240x320)', '12096-5448-4578-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player twm_tw / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN2)'), 1 => array(0 => 'HTC_TyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC TyTN2)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,16068,85332,913, 'HTC_TyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC TyTN2)', '12096-5448-4578-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_VPACompactIV/4.14.162.2')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(371912,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_VPACompactIV/4.14.162.2', '14105-6742-17173-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Opera/9.51 Beta (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/1718; U; en)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(185352,16068,20176,913, 'Opera/9.51 Beta (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/1718; U; en)', '13798-5448-3430-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/2745; U; en)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(185352,16068,20176,913, 'Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/2745; U; en)', '13798-5448-3430-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_P4550; Windows Phone 6.5)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113772,6649,6655,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_P4550; Windows Phone 6.5)', '11734-5222-17183-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_de / 1.0 / htc_ace / 2.2.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(6571,16068,20176,913, 'HTC_Touch_HD2_T8585 Opera/9.50 (Windows NT 5.1; U; en)', '13999-5448-3430-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player tmo_de / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_ace / 2.2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84323,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-4808-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_ace / 2.2', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.2.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113988,6643,5635,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12097-6742-4808-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.2.1', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113772,6643,82738,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '11734-6742-22272-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(295489,6643,6655,913, 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12300-6742-17183-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_tur / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_VPACompactIV/1.10.172.5/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player hutch_aus / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(371912,16068,85332,913, 'HTC_VPACompactIV/1.10.172.5/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '14105-5448-4578-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player hutch_aus / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_VPACompactIV/5.4.172.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(371912,16068,85332,913, 'Vodafone/1.0/HTC_VPACompactIV/5.4.172.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '14105-5448-4578-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player orange_uk / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.3')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113772,16068,9450,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '11734-5448-4715-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.3', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S310-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.3.5')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(410087,16068,85332,913, 'HTC_S310-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)', '16055-5448-4578-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4550-orange/PPC; 240x320; OpVer 24.103.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.5')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113772,6643,15131,913, 'HTC-P4550-orange/PPC; 240x320; OpVer 24.103.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11734-6742-17173-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.5')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(113772,6643,15131,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11734-6742-17173-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P5500-orange/PPC; 240x320; OpVer 25.109.2.7305 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.5')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(50553,53548,14194,913, 'HTC-P5500-orange/PPC; 240x320; OpVer 25.109.2.7305 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-5049-22271-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P5500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P5500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telus_wwe / 1.0 / htc_ace / 2.3.5')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(50553,53548,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P5500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11851-5049-22271-18092');
+    $dl[] = array(113114,79982,112157,913, 'HTC Streaming Player telus_wwe / 1.0 / htc_ace / 2.3.5', '14225-17979-17617-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(84323,6643,14194,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-6742-22271-18092');
+    $dl[] = array(679887,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '18296-18066-24055-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(467977,6643,82738,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT', '16483-6742-22272-18092');
+    $dl[] = array(679887,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile', '18296-18066-24055-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (ace;HTC;Desire HD;2.3.3/GRI40)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131567,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (ace;HTC;Desire HD;2.3.3/GRI40)', '14225-17979-18334-18092');
+    $dl[] = array(910759,576960,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '18382-18066-18527-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (shooter; HTC; PG86100; 2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273900,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (shooter; HTC; PG86100; 2.3.4/GRJ22)', '12788-17979-18154-18092');
+    $dl[] = array(910759,576960,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile', '18382-18066-18527-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (bravo;HTC;HTC Desire;2.2.2/FRG83G)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(110689,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (bravo;HTC;HTC Desire;2.2.2/FRG83G)', '11747-17979-18334-18092');
+    $dl[] = array(191195,6631,14748,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; en)', '14168-5448-3430-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (inc; HTC; ADR6300; 2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_T2223 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131639,101053,697262,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.3.9) (inc; HTC; ADR6300; 2.3.4/GRJ22)', '12216-17979-18154-18092');
+    $dl[] = array(191195,6631,14748,913, 'HTC_Touch_T2223 Opera/9.50 (Windows NT 5.1; U; pt)', '14168-5448-3430-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Evernote Android/AndroidMarket_43x_58 (en_CA); Android/3.1; HTC-P715a/12;')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(742654,101053,226701,913, 'Evernote Android/AndroidMarket_43x_58 (en_CA); Android/3.1; HTC-P715a/12;', '20249-17979-4459-18092');
+    $dl[] = array(191195,6631,14748,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; ru)', '14168-5448-3430-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'HTC-P715a'), 1 => array(0 => 'Android/3.1; HTC HTC-P715a; 2.3.0')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(742654,101053,226701,913, 'Android/3.1; HTC HTC-P715a; 2.3.0', '20249-17979-4459-18092');
+    $dl[] = array(191195,6631,14748,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; es-ES)', '14168-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,14748,913, 'HTC_Touch_Viva_T2223 Opera/9.50 (Windows NT 5.1; U; it)', '14168-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '18296-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '18296-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT528t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1205584,79982,576120,913, 'HTCT528t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '20292-17979-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/800', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/999', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.3.7; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/800', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.4.145/139/800', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/1002')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.3.103/139/1002', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.1.100/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.1.100/139/800', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.0.94/139/352', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/355', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/444', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_V; 480*800) UCWEB7.9.0.94/139/352', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Desire; 480*800) UCWEB7.9.0.94/139/444', '11747-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,576960,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '18296-18066-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/999', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.1.100/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.1.100/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/32160')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.3.103/139/32160', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/352', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/444', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 4.0.4; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.4.145/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Incredible_S; 480*800) UCWEB7.9.0.94/139/800', '13042-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15798-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '18382-18066-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile', '18382-18066-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,5675,913, 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '17330-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,5675,913, 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '17330-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; de)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; en)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; pt)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; nl)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,14748,913, 'HTC_Touch_3G_T3232 Opera/9.50 (Windows NT 5.1; U; ru)', '12292-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6116')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6116', '12292-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.40.164.2 (21259)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Jade/1.40.164.2 (21259)', '12292-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6112')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.1.6112', '12292-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_3G_T3232-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.2.7311')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_Touch_3G_T3232-Orange; OpVer 33.171.2.7311', '12292-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,13791,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12292-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,14748,913, 'HTC-ST7377/1.59.502.3 (67150) Opera/9.50 (Windows NT 5.1; U; en)', '17330-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-PPC6850 BM BMC')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-PPC6850 BM BMC', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Swisscom/1.0/HTC_Touch_Pro/ Opera/9.50 (Windows NT 5.1; U; de)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'Swisscom/1.0/HTC_Touch_Pro/ Opera/9.50 (Windows NT 5.1; U; de)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; pt)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; pt)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nl)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nl)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; it)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,14748,913, 'HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; nb)', '12226-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5)', '12192-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5360'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5360; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5360; Windows Phone 6.5)', '12192-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_Diamond2_T5353; Windows Phone 6.5.3.5)', '12192-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Maple_S520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(380741,6631,5675,913, 'HTC_Maple_S520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14570-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch Cruise Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,13791,913, 'HTC_Touch Cruise Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3650-orange/PPC; 240x320; OpVer 28.319.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,13791,913, 'HTC-P3650-orange/PPC; 240x320; OpVer 28.319.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12558-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,13791,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,13791,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12558-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,277626,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13999-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,277626,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13999-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,277626,913, 'PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13999-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Advantage/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_Advantage/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_Advantage/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '15364-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT329t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1258551,79982,576120,913, 'HTCT329t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '18612-17979-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire C) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '18382-18066-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,39070,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3650; OpVer 28.129.15.751')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3650; OpVer 28.129.15.751', '12558-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,39070,913, 'HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,39070,913, 'HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12558-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3650/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12558-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,920,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.6.0.276 U2/1.0.0 Mobile', '13815-5096-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,920,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '13815-5096-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7740)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;7720)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;7720)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8107)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart;7.10;8107)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;7740)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8107)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8697;7.10;8773)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356708,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8773)', '14738-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,920,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13815-5096-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Explorer A310e) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '15798-5629-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_pyramid / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player orange_uk / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_pyramid / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_pyramid / 2.3.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_pyramid / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 2.3.4', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_pyramid / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224605,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_pyramid / 4.0.3', '14919-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/1002')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/1002', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.3.103/139/999', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.1.100/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.1.100/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.4.145/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.4.145/139/800', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/352', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Desire_S; 480*800) UCWEB7.9.0.94/139/444', '14969-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,297486,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '16177-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(386305,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;7720)', '14781-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(386305,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8107)', '14781-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(386305,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;mwp6985;7.10;8773)', '14781-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,576960,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC One V) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '18296-18066-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.15.752')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.15.752', '12530-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,11662,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12530-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.3.634')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.114.3.634', '12530-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3450-orange/PPC; 240x320; OpVer 23.114.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,11662,913, 'HTC-P3450-orange/PPC; 240x320; OpVer 23.114.2.741 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12530-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.116.1.611', '12530-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353'), 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Diamond2_T5353 Mozilla/4.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Touch_Diamond2_T5353 Mozilla/4.0', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.3 (67041)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.162.3 (67041)', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.163.3 (67041)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.163.3 (67041)', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041)', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch_Diamond2_T5353-Orange'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752', '12192-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '11747-18066-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.2.3.324 U2/1.0.0 Mobile', '11747-18066-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT', '15364-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,40387,913, 'HTC-ST7377/2.10.502.4 (93577) Opera/9.7 (Windows NT 5.1; U; en)', '17330-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,14748,913, 'HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)', '12194-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3330 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,14748,913, 'HTC_Touch2_T3330 Opera/9.50 (Windows NT 5.1; U; en)', '12194-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/352', '18382-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/355', '18382-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Desire_C; 320*480) UCWEB7.9.0.94/139/444', '18382-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(368991,6631,13791,913, 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12682-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,277626,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '15207-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400-Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,277626,913, 'HTC_P3400-Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '15207-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(182789,79982,637572,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (mecha; HTC; ADR6400L; 2.3.4/GRJ22)', '13991-17979-18154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_HD_A9191)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_HD_A9191) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_HD_A9191) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '14225-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,610861,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '18462-18111-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI39100;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(568728,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI39100;7.10;7720)', '15842-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(568728,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7720)', '15842-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(568728,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;7740)', '15842-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(568728,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8107)', '15842-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(568728,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8773)', '15842-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V1.22.841.5 (53520) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(156142,6631,5675,913, 'HTC_Snap_S523/V1.22.841.5 (53520) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(156142,6631,5675,913, 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(156142,6631,5675,913, 'HTC_Snap_S523 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13623-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86125,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.3', '13644-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86125,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.2', '13644-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86125,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_supersonic / 2.3.5', '13644-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,39070,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '15207-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '18462-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,576960,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.0.2.299 U2/1.0.0 Mobile', '18462-18066-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(330366,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.3.4', '13054-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(330366,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 2.2.1', '13054-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(330366,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 2.3.4', '13054-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(330366,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vigor / 4.0.3', '13054-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(330366,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_mecha / 4.0.4', '13054-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,13791,913, 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/5.11.502.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,13791,913, 'HTC-P4600/5.11.502.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,13791,913, 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '12871-5629-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS620;Smartphone;320x240')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS620;Smartphone;320x240', '11870-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,297486,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '15207-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400-Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,297486,913, 'HTC_P3400-Mozilla/4.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '15207-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.3.103/139/800', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.3.103/139/800', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/352', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/352', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.0.94/139/444', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Sensation_Z710e; 540*960) UCWEB7.9.4.145/139/800', '15201-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/352', '18296-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/355', '18296-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_V'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_V; 480*800) UCWEB7.9.0.94/139/444', '18296-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,90522,1510306,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC Wildfire S A510e) U2/1.0.0 UCBrowser/9.2.0.308 U2/1.0.0 Mobile', '12871-5629-24055-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One X Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/endeavoru')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-gb; HTC One X Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/endeavoru', '18295-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One X Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/endeavoru')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC One X Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/endeavoru', '18295-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC Wildfire) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,920,1390243,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC Wildfire) U2/1.0.0 UCBrowser/9.0.1.275 U2/1.0.0 Mobile', '13815-5096-22261-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.8.0.87/31/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,277626,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.8.0.87/31/999', '14845-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,277626,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '14845-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,277626,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '14168-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC6175')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(192354,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC6175', '20279-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6175')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(192354,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) USCCHTC6175', '20279-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_tur / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player htc_tur / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player orange_uk / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.3', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player htc_europe / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.5')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_marvel / 2.3.5', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => '/'), 1 => array(0 => 'HTC Streaming Player HTC / 1.0 / marvelc / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,79982,112157,913, 'HTC Streaming Player HTC / 1.0 / marvelc / 2.3.4', '12871-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3470-orange/PPC; 240x320; OpVer 29.115.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(153383,6631,68786,913, 'HTC-P3470-orange/PPC; 240x320; OpVer 29.115.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3470-orange/PPC; 240x320; OpVer 29.113.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(153383,6631,68786,913, 'HTC-P3470-orange/PPC; 240x320; OpVer 29.113.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(153383,6631,68786,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13578-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire V) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '11747-18066-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Android/1.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(862577,79982,338012,913, 'HTC-Android/1.0', '21797-17979-21556-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15483-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15483-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '11747-18066-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,277626,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12530-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '15438-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '15438-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '15438-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.0.4; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,124734,303588,913, 'JUC (Linux; U; 4.0.4; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352', '18295-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352', '18295-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.0.4; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,124734,303588,913, 'JUC (Linux; U; 4.0.4; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444', '18295-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444', '18295-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XE_with_Beats_Audio_Z715e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336472,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.0.94/139/352', '13157-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XE_with_Beats_Audio_Z715e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336472,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.0.94/139/444', '13157-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XE_with_Beats_Audio_Z715e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336472,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XE_with_Beats_Audio_Z715e; 540*960) UCWEB7.9.4.145/139/800', '13157-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,277626,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12192-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95/31/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,277626,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95/31/352', '12192-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.3.103/139/800', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/352', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/444', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.4.145/139/800', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/355')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/355', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_EVO_3D_X515m; 540*960) UCWEB7.9.0.94/139/352', '12657-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Snap'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Alltel HTC Snap')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103630,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Alltel HTC Snap', '12277-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103630,6631,5675,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12277-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S522 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103630,6631,5675,913, 'HTC_Snap_S522 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12277-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320', '13100-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,11662,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12096-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_TyTN\\1.0 Profile\\MIDP-2.0 Configuration\\CLDC-1.1', '12096-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,11662,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12096-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player optus_au / 1.0 / htc_vivo / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184227,79982,112157,913, 'HTC Streaming Player optus_au / 1.0 / htc_vivo / 2.3.3', '14046-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vivo / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184227,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vivo / 2.3.3', '14046-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184227,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.3', '14046-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184227,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_vivow / 2.3.4', '14046-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679887,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_One_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18296-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_VC)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_VC) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_VC) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/352', '15483-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/444', '15483-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_ChaCha_A810e; 320*480) UCWEB7.9.0.94/139/352', '15483-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT327t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1336935,79982,576120,913, 'HTCT327t_TD/1.0 Android/4.0 release/2012 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '21998-17979-18062-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [sv]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [sv]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [en]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [pt]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [pt]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [ru]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [ru]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [nl]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [nl]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [es-es]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [es-es]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [de]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [de]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [zh-tw]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [zh-tw]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [it]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650) Opera 8.65 [it]', '12558-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(109382,6631,277626,913, 'HTC_HD_mini_T5555 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '15526-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player o2_de / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player o2_de / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_uk / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player orange_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_uk / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player tmo_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player orange_es / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player orange_es / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telus_wwe / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player telus_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player virgin_mobile / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player virgin_mobile / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.3.3', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_bravo / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_bravo / 2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player vodafone_tr / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_bravo / 2.2.2', '11747-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(183651,6631,39070,913, 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '14020-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_shooter / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(464236,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_shooter / 2.3.4', '12697-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player Sprint / 1.0 / htc_shooter / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(464236,79982,112157,913, 'HTC Streaming Player Sprint / 1.0 / htc_shooter / 4.0.3', '12697-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player virgin_mobile / 1.0 / htc_shooter / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(464236,79982,112157,913, 'HTC Streaming Player virgin_mobile / 1.0 / htc_shooter / 4.0.3', '12697-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc / 1.0 / htc_shooter / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(464236,79982,112157,913, 'HTC Streaming Player htc / 1.0 / htc_shooter / 4.0.3', '12697-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,297486,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13999-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,297486,913, 'HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13999-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585/480x800 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,297486,913, 'HTC_HD2_T8585/480x800 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13999-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(910759,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18382-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,297486,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '14168-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3320'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3320; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3320; Windows Phone 6.5)', '12194-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3330'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3330; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3330; Windows Phone 6.5)', '12194-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XL_with_Beats_Audio_X315e'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(396699,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/352', '15794-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XL_with_Beats_Audio_X315e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(396699,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/352', '15794-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XL_with_Beats_Audio_X315e'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(396699,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_Sensation_XL_with_Beats_Audio_X315e; 480*800) UCWEB7.9.0.94/139/444', '15794-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.22.172.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.22.172.3', '13100-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.25.163.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.25.163.1', '13100-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2', '13100-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,277626,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '11978-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,11662,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11870-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTCS620;Smartphone;320x240')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTCS620;Smartphone;320x240', '11870-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Excalibur Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,11662,913, 'HTC-Excalibur Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11870-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,67830,913, 'HTC_P3400-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '15207-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCZ710t_TD/1.0 Android/2.3 release/6.1.2011 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(900054,90522,90528,913, 'HTCZ710t_TD/1.0 Android/2.3 release/6.1.2011 Browser/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '22133-5629-15760-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,13791,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12530-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,13791,913, 'HTC-Touch/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12530-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(995799,79982,112157,913, 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.3', '21719-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc / 1.0 / jewel / 4.1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(995799,79982,112157,913, 'HTC Streaming Player htc / 1.0 / jewel / 4.1.1', '21719-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(995799,79982,112157,913, 'HTC Streaming Player sprint_wwe / 1.0 / jewel / 4.0.4', '21719-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST6356/2.31.502.4 (66023) Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(149221,6631,14748,913, 'HTC-ST6356/2.31.502.4 (66023) Opera/9.50 (Windows NT 5.1; U; en)', '16444-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,920,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-5096-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,920,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.2; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-5096-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/5.11.502.2 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,14748,913, 'HTC-P4600/5.11.502.2 Opera/9.50 (Windows NT 5.1; U; en)', '12300-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,14748,913, 'HTC-P4600/1.2 Opera/9.50 (Windows NT 5.1; U; en)', '12300-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,297486,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12530-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(151943,79982,112157,913, 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.2.1', '15539-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(151943,79982,112157,913, 'HTC Streaming Player tmobile / 1.0 / htc_glacier / 2.3.4', '15539-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,277626,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '11734-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,277626,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '11734-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145000,6631,13791,913, 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13421-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Rezound'), 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC Rezound Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1060280,610861,610868,913, 'Mozilla/5.0 (Linux; U; Android 4.1.9; zh-cn; HTC Rezound Build/GRK39F) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', '21489-18111-18112-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.3;zh_cn;HTC C510e;320*480;)UCWEB7.6.0.75/139/32317')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308254,124734,31663,913, 'JUC(Linux; U;2.3.3;zh_cn;HTC C510e;320*480;)UCWEB7.6.0.75/139/32317', '15106-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.5;zh_cn;HTC C510e;320*480;)UCWEB7.6.0.75/139/32317')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308254,124734,31663,913, 'JUC(Linux; U;2.3.5;zh_cn;HTC C510e;320*480;)UCWEB7.6.0.75/139/32317', '15106-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,277626,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13374-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,297486,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '14845-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,297486,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '11734-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(403276,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 4.0.3', '15805-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(403276,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_holiday / 2.3.4', '15805-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Explorer_A310e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(397707,90522,1033046,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Explorer_A310e) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile', '15798-5629-18529-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,576960,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '18462-18066-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,11662,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12097-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI86100;7.10;8112)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(730477,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;PI86100;7.10;8112)', '18309-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.1.1; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,303588,913, 'JUC (Linux; U; 4.1.1; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/444', '18295-18111-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X'), 1 => array(0 => 'JUC (Linux; U; 4.1.1; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,303588,913, 'JUC (Linux; U; 4.1.1; zh-cn; HTC_One_X; 720*1184) UCWEB7.9.0.94/139/352', '18295-18111-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC6435LVW Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/dlx')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1081095,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC6435LVW Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/dlx', '20289-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC6435LVW Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/dlx')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1081095,1520596,1434731,913, 'Mozilla/5.0 (Linux; U; Android 4.3; en-us; HTC6435LVW Build/JSS15Q) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30 CyanogenMod/10.2/dlx', '20289-24162-23997-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,610861,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC Desire X) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '18462-18111-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3335 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(140050,6631,14748,913, 'HTC_Touch2_T3335 Opera/9.50 (Windows NT 5.1; U; en)', '13502-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(535964,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;7720)', '17669-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1081095,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.59 Mobile Safari/537.36', '20289-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1081095,1420900,1485322,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15Q) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.72 Mobile Safari/537.36', '20289-21637-24192-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.172.16')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145000,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.172.16', '13421-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145000,6631,39070,913, 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '13421-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.163.09')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145000,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/HTC_TouchDual/1.31.163.09', '13421-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_india / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player htc_asia_india / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player telstra_wwe / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player telstra_wwe / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_dan / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player h3g_dan / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_de_1und1 / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player vodafone_de_1und1 / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmo_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player tmo_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player h3g_uk / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player h3g_uk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe_tesco / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player htc_wwe_tesco / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_spa / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player vodafone_spa / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player htc_wwe-afk / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_fr / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player vodafone_fr / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_de / 1.0 / htc_buzz / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,79982,112157,913, 'HTC Streaming Player vodafone_de / 1.0 / htc_buzz / 2.2.1', '13815-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'ChaCha_A810e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228493,90522,1016432,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_ChaCha_A810e) U2/1.0.0 UCBrowser/8.6.0.318 U2/1.0.0 Mobile', '15483-5629-18527-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,277626,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12292-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356492,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;7720)', '14632-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,297486,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13374-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_kingdom / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_kingdom / 2.3.4', '12657-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_kingdom / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,79982,112157,913, 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_kingdom / 2.3.4', '12657-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player boost / 1.0 / htc_kingdom / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,79982,112157,913, 'HTC Streaming Player boost / 1.0 / htc_kingdom / 4.0.3', '12657-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,610861,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.1.1; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18295-18111-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,277626,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12194-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire U dual sim) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1256564,576960,1464974,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC Desire U dual sim) U2/1.0.0 UCBrowser/9.1.0.297 U2/1.0.0 Mobile', '19792-18066-22881-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(158898,6631,39070,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16392-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_S)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Desire_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '14969-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.2.2.51')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114862,6631,22090,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.2.2.51', '12243-5448-4737-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,277626,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12226-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,5675,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12194-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3330 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,5675,913, 'HTC_Touch2_T3330 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12194-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,7637,913, 'HTC_Leo Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13999-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,7637,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13999-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) PPC; HTC_HD2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13999-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(183219,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.2', '15995-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(183219,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.3', '15995-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(183219,79982,112157,913, 'HTC Streaming Player sprint / 1.0 / htc_speedy / 2.3.4', '15995-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,277626,913, 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '17330-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,277626,913, 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '17330-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'UCWEB/2.0 (Windows; U; wds 8.0; en-US; HTC;  8S by HTC) U2/1.0.0 UCBrowser/3.0.0.285 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,1447234,913, 'UCWEB/2.0 (Windows; U; wds 8.0; en-US; HTC;  8S by HTC) U2/1.0.0 UCBrowser/3.0.0.285 U2/1.0.0 Mobile', '18503-18148-22827-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'UCWEB/2.0 (Windows; U; wds 8.0; en-US; HTC;  8S by HTC) U2/1.0.0 UCBrowser/3.0.1.302 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1198081,841900,1447234,913, 'UCWEB/2.0 (Windows; U; wds 8.0; en-US; HTC;  8S by HTC) U2/1.0.0 UCBrowser/3.0.1.302 U2/1.0.0 Mobile', '18503-18148-22827-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133957,6631,134029,913, 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; PPC; 240x320)', '11716-5448-22303-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,297486,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12192-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire_X)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Desire_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1062022,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Desire_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18462-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(196220,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM', '15639-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,39070,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11980-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(83934,6631,13791,913, 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13277-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P6500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P6500; OpVer 27.157.1.614')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(83934,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P6500; OpVer 27.157.1.614', '13277-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,5675,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14845-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(73927,6631,297486,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '11978-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Vision'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Vision; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Vision; 480*800) UCWEB7.9.0.94/139/352', '15759-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Vision'), 1 => array(0 => 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Vision; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,124734,303588,913, 'JUC (Linux; U; 2.3.3; zh-cn; HTC_Vision; 480*800) UCWEB7.9.0.94/139/444', '15759-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible_S)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Incredible_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_Incredible_S) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13042-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3450 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,14748,913, 'HTC_P3450 Opera/9.50 (Windows NT 5.1; U; en)', '12530-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76642,6631,39070,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12018-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,14748,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; en)', '12558-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; zh-tw)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,14748,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; zh-tw)', '12558-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; it)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,14748,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; it)', '12558-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; nb)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,14748,913, 'HTC_Touch_Cruise_T4242 Opera/9.50 (Windows NT 5.1; U; nb)', '12558-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,31663,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/800', '14969-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/32154')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,31663,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/32154', '14969-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.5;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/32154')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,31663,913, 'JUC(Linux;U;2.3.5;Zh_cn;HTC Desire S;480*800;)UCWEB7.6.0.75/139/32154', '14969-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,297486,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12292-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'JUC (Linux; U; 2.3.7; zh-cn; HTC_HD2; 480*800) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,124734,303588,913, 'JUC (Linux; U; 2.3.7; zh-cn; HTC_HD2; 480*800) UCWEB7.9.3.103/139/800', '13999-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_HD2; 480*800) UCWEB7.9.0.94/139/352')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_HD2; 480*800) UCWEB7.9.0.94/139/352', '13999-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_HD2; 480*800) UCWEB7.9.0.94/139/444')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_HD2; 480*800) UCWEB7.9.0.94/139/444', '13999-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Touch2_T3335'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3335; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(140050,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch2_T3335; Windows Phone 6.5)', '13502-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,11662,913, 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '13798-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13798-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XE_with_Beats_Audio_Z715e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XE_with_Beats_Audio_Z715e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(336472,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XE_with_Beats_Audio_Z715e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13157-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_XL_with_Beats_Audio_X315e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XL_with_Beats_Audio_X315e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(396699,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_XL_with_Beats_Audio_X315e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15794-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Snap_S510'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap_S510')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103558,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) HTC_Snap_S510', '13322-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST6356/2.31.502.4 (66023) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(149221,6631,5675,913, 'HTC-ST6356/2.31.502.4 (66023) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '16444-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(155494,6631,14748,913, 'HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)', '15293-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'HTC_Trinity_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,13791,913, 'HTC_Trinity_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,13791,913, 'HTC_Trinity Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16054-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,13791,913, 'HTC_P3600 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16054-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,297486,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12194-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [fr]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [fr]', '13798-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '13798-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [nl]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [nl]', '13798-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900-MR1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(196220,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900-MR1', '15639-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(196220,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTC-6900', '15639-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,1420900,1444589,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One X Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '18295-21637-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114862,6631,13791,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12243-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S526 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(313379,6631,5675,913, 'HTC_Snap_S526 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13848-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '12096-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388394,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;7720)', '18073-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388394,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8107)', '18073-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation_Z710e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_Z710e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Sensation_Z710e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15201-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Glacier)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.4; en-US; HTC_Glacier) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(151943,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.4; en-US; HTC_Glacier) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15539-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,5675,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13374-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(241650,6631,13791,913, 'HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16031-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388178,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;7720)', '14886-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388178,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;USCCHTC-PC93100;7.10;8107)', '14886-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388178,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8107)', '14886-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8773)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(388178,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Pro T7576;7.10;8773)', '14886-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(357651,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8107)', '14651-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8107)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(357651,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8107)', '14651-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7720)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(357651,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7720)', '14651-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7740)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(357651,391894,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;7740)', '14651-15924-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(112085,920,1033046,913, 'UCWEB/2.0 (Linux; U; Adr 2.2.1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile', '13815-5096-18529-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P5500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.1.6109')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38998,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P5500; OpVer 25.131.1.6109', '11851-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P5500-orange/PPC; 240x320; OpVer 25.131.2.7309 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38998,6631,39070,913, 'HTC-P5500-orange/PPC; 240x320; OpVer 25.131.2.7309 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38998,6631,39070,913, 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(38998,6631,39070,913, 'HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '11851-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2.1;Zh_cn;HTC Incredible S;480*800;)UCWEB7.6.0.75/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,31663,913, 'JUC(Linux;U;2.2.1;Zh_cn;HTC Incredible S;480*800;)UCWEB7.6.0.75/139/800', '13042-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.5;zh_cn;HTC Incredible S;480*800;)UCWEB7.6.0.75/139/32485')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,31663,913, 'JUC(Linux; U;2.3.5;zh_cn;HTC Incredible S;480*800;)UCWEB7.6.0.75/139/32485', '13042-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)/UC'), 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC_P3650)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,277626,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC_P3650)/UC Browser7.8.0.95', '12558-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,277626,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12558-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,297486,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '12226-5448-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'EVO_3D_X515m)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_EVO_3D_X515m) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(287868,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_EVO_3D_X515m) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12657-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Legend)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Legend) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92597,920,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.2; en-US; HTC_Legend) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '12110-5096-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,277626,913, 'PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '11980-5448-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_doubleshot / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(896521,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_doubleshot / 2.3.4', '15139-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8862)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar C110e;7.10;8862)', '15851-21697-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8862)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(563608,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;Radar 4G;7.10;8862)', '15851-21697-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Salsa_C510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Salsa_C510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308254,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Salsa_C510e) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15106-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3451/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3451/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225181,6631,39070,913, 'PPC; 240x320; HTC_P3451/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '15429-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.4;zh_cn;HTC S610d;480*800;)UCWEB7.6.0.75/139/32449')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(986031,124734,31663,913, 'JUC(Linux; U;2.3.4;zh_cn;HTC S610d;480*800;)UCWEB7.6.0.75/139/32449', '20295-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_ruby / 2.3.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(561561,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_ruby / 2.3.4', '15802-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player tmous / 1.0 / htc_ruby / 4.0.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(561561,79982,112157,913, 'HTC Streaming Player tmous / 1.0 / htc_ruby / 4.0.3', '15802-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1081095,1420900,1444589,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC6435LVW Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '20289-21637-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228349,7631,40387,913, 'Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7', '14030-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228349,7631,40387,913, 'Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0) Opera/9.7', '14030-5222-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'T328w'), 1 => array(0 => 'MQQBrowser/3.7/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(904609,124734,1101641,913, 'MQQBrowser/3.7/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)', '19859-18110-20788-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2.1', '15759-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.2', '15759-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_vision / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,79982,112157,913, 'HTC Streaming Player htc_asia_wwe / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_asia_india / 1.0 / htc_vision / 2.3.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113258,79982,112157,913, 'HTC Streaming Player htc_asia_india / 1.0 / htc_vision / 2.3.3', '15759-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(347622,6631,134029,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)', '12703-5448-22303-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320) (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(347622,6631,134029,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320) (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '12703-5448-22303-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,31663,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '14168-5448-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,67830,913, 'HTC_P4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '12097-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,67830,913, 'HTCP4350-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)', '12097-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,7637,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '14845-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S621 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(300045,6631,11662,913, 'HTC_S621 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '14686-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS621-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(300045,6631,11662,913, 'HTCS621-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '14686-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Sensation'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(225829,1420900,1444589,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC Sensation Build/JSS15J) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36', '15438-21637-24343-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.9.0.94/31/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,303588,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB7.9.0.94/31/800', '12192-5448-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; *HTC/X05HT*) Opera 9.50')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,6631,14748,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; *HTC/X05HT*) Opera 9.50', '15364-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,13791,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11980-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One_X)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(679814,576960,645789,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.4; en-US; HTC_One_X) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '18295-18066-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Hero)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.1-update1; en-US; HTC_Hero) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(79910,835,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.1-update1; en-US; HTC_Hero) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '14784-5477-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.5;zh_cn;HTC S510b;480*800;)UCWEB7.6.0.75/139/32500')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(299973,124734,31663,913, 'JUC(Linux; U;2.3.5;zh_cn;HTC S510b;480*800;)UCWEB7.6.0.75/139/32500', '15809-18110-4759-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8862)')), $ls);
@@ -8914,31 +8650,135 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(378555,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8862)', '13868-21697-18418-18092');
+    $dl[] = array(356924,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;HD7 T9292;7.10;8862)', '13868-21697-18418-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;8862)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Rhyme_S510b)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Rhyme_S510b) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(378195,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;8862)', '14632-21697-18418-18092');
+    $dl[] = array(299973,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Rhyme_S510b) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15809-5629-18326-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8862)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(379203,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8862)', '14651-21697-18418-18092');
+    $dl[] = array(145000,6631,277626,913, 'HTC_TouchDual Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13421-5448-4779-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8862)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(379203,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8862)', '14651-21697-18418-18092');
+    $dl[] = array(65793,6631,40387,913, 'HTC_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,40387,913, 'HTC_Touch_HD_T8282 Opera/9.7 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,40387,913, 'HTC_Touch_HD_T8282 Opera/9.70 (Windows NT 5.1; U; en)', '14845-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,67830,913, 'HTCP3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,67830,913, 'HTC_P3300-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC P3300/1.35.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,67830,913, 'HTC P3300/1.35.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '11980-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Snap_S521'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Snap_S521; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114862,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Snap_S521; Windows Phone 6.5)', '12243-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC A510c;320*480;)UCWEB7.6.0.75/139/32125')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(292148,124734,31663,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC A510c;320*480;)UCWEB7.6.0.75/139/32125', '12710-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'T328w'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC_T328w; 480*800) UCWEB7.9.4.145/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(904609,124734,303588,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC_T328w; 480*800) UCWEB7.9.4.145/139/800', '19859-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.3; en-US; HTC_Desire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '11747-5629-18326-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS620-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,67830,913, 'HTCS620-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '11870-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76642,6631,66729,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)', '12018-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(286212,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3', '12780-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,277626,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12097-5448-4779-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8862)')), $ls);
@@ -8946,375 +8786,471 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(378339,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8862)', '14738-21697-18418-18092');
+    $dl[] = array(356708,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Mozart T8698;7.10;8862)', '14738-21697-18418-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,16068,16074,913, 'HTC_TyTN-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC)', '12096-5448-17470-18092');
+    $dl[] = array(138153,6631,297486,913, 'HTC-ST7377/1.59.502.3 (67150) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '17330-5448-4777-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'S610d'), 1 => array(0 => 'JUC (Linux; U; 2.3.4; zh-cn; HTC_S610d; 480*800) UCWEB7.9.4.145/139/32449')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(97222,6643,5635,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11870-6742-4808-18092');
+    $dl[] = array(986031,124734,303588,913, 'JUC (Linux; U; 2.3.4; zh-cn; HTC_S610d; 480*800) UCWEB7.9.4.145/139/32449', '20295-18110-17338-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-S411-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(228982,16068,85332,913, 'HTC-S411-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)', '11966-5448-4578-18092');
+    $dl[] = array(153383,6631,297486,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '13578-5448-4777-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Desire_C)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(88025,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-6742-4808-18092');
+    $dl[] = array(910759,576960,1033046,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_C) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile', '18382-18066-18529-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3651 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(244487,6643,13185,913, 'HTC_P3651 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16353-6742-22270-18092');
+    $dl[] = array(92237,6631,5675,913, 'HTC_P4550 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11734-5448-4808-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'P6300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;  HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(262677,6643,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;  HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16047-6742-15792-18092');
+    $dl[] = array(92237,6631,5675,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11734-5448-4808-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4351-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(114060,16068,16074,913, 'HTC_P4351-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC)', '16169-5448-17470-18092');
+    $dl[] = array(78370,6631,13791,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11870-5448-22270-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (WindowsMobile; PPC; Opera Mobi/35267; U; zh-CN; Presto/2.1.1)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94198,6643,6655,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12558-6742-17183-18092');
+    $dl[] = array(346110,7631,40387,913, 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (WindowsMobile; PPC; Opera Mobi/35267; U; zh-CN; Presto/2.1.1)', '13988-5222-4626-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'Quartz)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC Quartz)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Windows Phone 6.5.3.5)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(284671,16068,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC Quartz)', '13606-5448-4808-18092');
+    $dl[] = array(346110,7631,40387,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Windows Phone 6.5.3.5)', '13988-5222-4626-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Wildfire S A510e;320*480;)UCWEB7.8.1.96/139/800')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(152858,6643,14194,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16381-6742-22271-18092');
+    $dl[] = array(218568,124734,277626,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Wildfire S A510e;320*480;)UCWEB7.8.1.96/139/800', '12871-18110-4779-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.8.1.96/139/800')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(152858,6643,6655,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '16381-6742-17183-18092');
+    $dl[] = array(186708,124734,277626,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Desire S;480*800;)UCWEB7.8.1.96/139/800', '14969-18110-4779-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Dual_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(50553,6643,5635,913, 'HTC_Touch_Dual_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11851-6742-4808-18092');
+    $dl[] = array(153383,6631,277626,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '13578-5448-4779-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'S740'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Smartphone; 240x320; HTC S740; OpVer 1.00.0.000')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'T328d'), 1 => array(0 => 'JUC (Linux; U; 4.0.3; zh-cn; HTC T328d; 480*800) UCWEB8.1.1.122/145/33021')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(268348,6643,5635,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Smartphone; 240x320; HTC S740; OpVer 1.00.0.000', '13670-6742-4808-18092');
+    $dl[] = array(991925,124734,567771,913, 'JUC (Linux; U; 4.0.3; zh-cn; HTC T328d; 480*800) UCWEB8.1.1.122/145/33021', '20251-18110-18327-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'S510b'), 1 => array(0 => 'JUC (Linux; U; 2.3.5; zh-cn; HTC_S510b; 480*800) UCWEB7.9.4.145/139/32500')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(295489,6643,5635,913, 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12300-6742-4808-18092');
+    $dl[] = array(299973,124734,303588,913, 'JUC (Linux; U; 2.3.5; zh-cn; HTC_S510b; 480*800) UCWEB7.9.4.145/139/32500', '15809-18110-17338-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'Desire)'), 1 => array(0 => 'Layar/3.6 Android/2.2 (htc_wwe HTC Desire)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.5) (inc; HTC; ADR6300; 2.3.4/GRJ22)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(110689,101053,920,913, 'Layar/3.6 Android/2.2 (htc_wwe HTC Desire)', '11747-17979-3508-18092');
+    $dl[] = array(113186,79982,637572,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.5) (inc; HTC; ADR6300; 2.3.4/GRJ22)', '12216-17979-18154-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_TouchDual/2.12.172.3')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Desire_V)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(162748,6643,13185,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_TouchDual/2.12.172.3', '13421-6742-22270-18092');
+    $dl[] = array(88631,576960,1033046,913, 'UCWEB/2.0 (Linux; U; Adr 4.0.3; en-US; HTC_Desire_V) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile', '11747-18066-18529-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(203850,6643,13185,913, 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14020-6742-22270-18092');
+    $dl[] = array(162189,6631,31663,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '15207-5448-4759-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S710-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; Smartphone)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.4;Zh_cn;HTC Z710e;540*960;)UCWEB7.6.0.75/139/32035')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(205376,16068,16074,913, 'HTC_S710-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320; Smartphone)', '13100-5448-17470-18092');
+    $dl[] = array(224677,124734,31663,913, 'JUC(Linux;U;2.3.4;Zh_cn;HTC Z710e;540*960;)UCWEB7.6.0.75/139/32035', '15201-18110-4759-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(185352,6643,82738,913, 'HTC_X7500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13798-6742-22272-18092');
+    $dl[] = array(74143,6631,297486,913, 'PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.7.1.88', '11980-5448-4777-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire_S_A510e)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(137242,16068,52209,913, 'HTC_Touch_3G_T3232 Opera/9.70 (Windows NT 5.1; U; en)', '12292-5448-4626-18092');
+    $dl[] = array(218568,90522,1033046,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Wildfire_S_A510e) U2/1.0.0 UCBrowser/8.7.0.315 U2/1.0.0 Mobile', '12871-5629-18529-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(181453,16068,9450,913, 'HTC-P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '15207-5448-4715-18092');
+    $dl[] = array(153383,6631,13791,913, 'HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13578-5448-22270-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 opera/9.7 (windows NT 5.1;U;')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(6571,6649,53144,913, 'HTC_HD2_T8585 opera/9.7 (windows NT 5.1;U;', '13999-5222-18407-18092');
+    $dl[] = array(11590,6631,68786,913, 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12096-5448-22272-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(82234,53548,13185,913, 'HTC_Touch_HD_T8282 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14845-5049-22270-18092');
+    $dl[] = array(11590,6631,68786,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12096-5448-22272-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/5.08.502.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(295489,53548,13185,913, 'HTC-P4600/5.08.502.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12300-5049-22270-18092');
+    $dl[] = array(368991,6631,277626,913, 'HTC_P3490 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.8.0.95', '12682-5448-4779-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) USCCHTC6875')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'A810e'), 1 => array(0 => 'MQQBrowser/20 (Linux; U; 2.3.4; zh-cn; HTC A810e Build/GRJ22;480*320)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94342,53548,6655,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5) USCCHTC6875', '16177-5049-17183-18092');
+    $dl[] = array(228493,124734,333052,913, 'MQQBrowser/20 (Linux; U; 2.3.4; zh-cn; HTC A810e Build/GRJ22;480*320)', '15483-18110-20771-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS410')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Wildfire)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.1-update1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(434789,163401,208843,913, 'HTCS410', '16433-18588-18589-18092');
+    $dl[] = array(112085,835,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.1-update1; en-US; HTC_Wildfire) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '13815-5477-18326-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'UCWEB/2.0 (Windows; U; wds 7.10; en-US; HTC; Radar C110e) U2/1.0.0 UCBrowser/3.0.0.285 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(178644,6643,15131,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16392-6742-17173-18092');
+    $dl[] = array(563608,268705,1447234,913, 'UCWEB/2.0 (Windows; U; wds 7.10; en-US; HTC; Radar C110e) U2/1.0.0 UCBrowser/3.0.0.285 U2/1.0.0 Mobile', '15851-17350-22827-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P6500-orange/PPC; 240x320; OpVer 27.107.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(104279,53548,14194,913, 'HTC-P6500-orange/PPC; 240x320; OpVer 27.107.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '13277-5049-22271-18092');
+    $dl[] = array(83934,6631,39070,913, 'HTC_P6500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '13277-5448-22271-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'P6500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P6500; OpVer 27.110.1.612')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(94198,53548,82738,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12558-5049-22272-18092');
+    $dl[] = array(83934,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P6500; OpVer 27.110.1.612', '13277-5448-22271-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(461115,53548,14194,913, 'HTC_P3350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16048-5049-22271-18092');
+    $dl[] = array(38998,6631,13791,913, 'HTC_P5500 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '11851-5448-22270-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320) (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Touch_HD/2.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD/2.0; Windows Phone 6.5)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(324167,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320) (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC/X01HT; PPC; 240x320)', '16453-6742-17173-18092');
+    $dl[] = array(65793,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD/2.0; Windows Phone 6.5)', '14845-5222-17183-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; SPV M3100; OpVer 12')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,53548,13185,913, 'HTC_Hermes Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; SPV M3100; OpVer 12', '12096-5049-22270-18092');
+    $dl[] = array(65793,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5)', '14845-5222-17183-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) HTCS620')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Touch_HD_T8282'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5.3.5)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(97222,208477,84395,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) HTCS620', '11870-7238-15792-18092');
+    $dl[] = array(65793,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_Touch_HD_T8282; Windows Phone 6.5.3.5)', '14845-5222-17183-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'TyTN\\\\1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(14122,6643,232812,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) PPC; 240x320; HTC_TyTN\\\\1.0 Profile\\\\MIDP-2.0 Configuration\\\\CLDC-1.1', '12096-6742-22371-18092');
+    $dl[] = array(73927,6631,21134,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '11978-5448-4715-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_T8290 Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(284671,16068,20176,913, 'HTC_T8290 Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)', '13606-5448-3430-18092');
+    $dl[] = array(6637,6631,31663,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '13999-5448-4759-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_T8290 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(284671,6643,5635,913, 'HTC_T8290 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13606-6742-4808-18092');
+    $dl[] = array(73927,6631,31663,913, 'HTC_Touch2_T3333 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '11978-5448-4759-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3651 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(244487,6643,14194,913, 'HTC_P3651 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16353-6742-22271-18092');
+    $dl[] = array(106606,6631,21134,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '12530-5448-4715-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_T8290 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'Status)'), 1 => array(0 => 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Status) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(284671,6643,13185,913, 'HTC_T8290 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13606-6742-22270-18092');
+    $dl[] = array(290845,90522,645789,913, 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; HTC_Status) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile', '15865-5629-18326-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC-SMT5800')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3335 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(474051,6643,15131,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC-SMT5800', '20271-6742-17173-18092');
+    $dl[] = array(140050,6631,5675,913, 'HTC_Touch2_T3335 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13502-5448-4808-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (pyramid;HTC;HTC Sensation 4G;2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Diamond Opera/9.70 (Windows NT 5.1; U; en)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(248892,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (pyramid;HTC;HTC Sensation 4G;2.3.4/GRJ22)', '15201-17979-18334-18092');
+    $dl[] = array(86413,6631,40387,913, 'HTC_Diamond Opera/9.70 (Windows NT 5.1; U; en)', '13374-5448-4626-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (vision;HTC;T-Mobile G2;2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => array(0 => 'P6300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131711,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (vision;HTC;T-Mobile G2;2.3.4/GRJ22)', '15759-17979-18334-18092');
+    $dl[] = array(427837,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P6300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16047-5448-15792-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (inc;HTC;ADR6300;2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8862)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(131639,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (inc;HTC;ADR6300;2.3.4/GRJ22)', '12216-17979-18334-18092');
+    $dl[] = array(357651,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy T8686;7.10;8862)', '14651-21697-18418-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (shooter;HTC;PG86100;2.3.4/GRJ22)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8862)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273900,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.9) (shooter;HTC;PG86100;2.3.4/GRJ22)', '12788-17979-18334-18092');
+    $dl[] = array(357651,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;7 Trophy;7.10;8862)', '14651-21697-18418-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMail/1.0 (Android Mail; 1.3.6) (leo;unknown;HTC HD2;2.3.3/MIUI)')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5362 Opera/9.50 (Windows NT 5.1; U; en) V2.31.841.6 (64646)')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(6571,101053,696151,913, 'YahooMobileMail/1.0 (Android Mail; 1.3.6) (leo;unknown;HTC HD2;2.3.3/MIUI)', '13999-17979-18334-18092');
+    $dl[] = array(87421,6631,14748,913, 'HTC_Touch_Diamond2_T5362 Opera/9.50 (Windows NT 5.1; U; en) V2.31.841.6 (64646)', '13297-5448-3430-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => array(0 => 'HTC-P715a'), 1 => array(0 => 'Android OS/3.1 HTC_HTC-P715a')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(742654,101053,100242,913, 'Android OS/3.1 HTC_HTC-P715a', '20249-17979-20428-18092');
+    $dl[] = array(162189,6631,21134,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '15207-5448-4715-18092');
     $ls = $ns;
   }
-  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Rdio.Net; Android/2.4.9; Android/3.1; DM=HTC; DN=HTC-P715a; DC=rogers_wwe; DF=rogers_wwe/htc_puccinilte/puccinilte:3.1/HMJ15/X.4:user/release-keys; DH=verdilte')), $ls);
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTCPO881; X) like Gecko')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(742654,112542,226701,913, 'Rdio.Net; Android/2.4.9; Android/3.1; DM=HTC; DN=HTC-P715a; DC=rogers_wwe; DF=rogers_wwe/htc_puccinilte/puccinilte:3.1/HMJ15/X.4:user/release-keys; DH=verdilte', '20249-5629-4459-18092');
+    $dl[] = array(44218,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTCPO881; X) like Gecko', '15364-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; HTCPO881; Chameleon) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(44218,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; HTCPO881; Chameleon) like Gecko', '15364-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,7637,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '16177-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13798-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(300045,6631,67830,913, 'HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)', '14686-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,21134,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '14168-5448-4715-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.6.0.75/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,31663,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.6.0.75/139/800', '11747-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.6.0.75/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,31663,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.6.0.75/139/999', '11747-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Incredible'), 1 => array(0 => 'MQQBrowser/3.5/Adr (Linux; U; 2.3.5; zh-cn; HTC Incredible S Build/GRJ90;480*800)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,968094,913, 'MQQBrowser/3.5/Adr (Linux; U; 2.3.5; zh-cn; HTC Incredible S Build/GRJ90;480*800)', '13042-18110-20786-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,5675,913, 'HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12558-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3650)'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P3650)', '12558-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76930,6631,5675,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12558-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308398,6631,67830,913, 'Vodafone/1.0/HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '17488-5448-4578-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8862)')), $ls);
@@ -9322,7 +9258,799 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(636397,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8862)', '15842-21697-18418-18092');
+    $dl[] = array(568728,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;TITAN X310e;7.10;8862)', '15842-21697-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-S620/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,22090,913, 'HTC-S620/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51', '11870-5448-4737-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,22090,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)/UC Browser7.2.2.51', '11870-5448-4737-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133957,6631,5675,913, 'HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)', '11716-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(65793,6631,21134,913, 'HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '14845-5448-4715-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.8.1.96/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,277626,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.8.1.96/139/800', '11747-18110-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.8.1.96/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,277626,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.8.1.96/139/999', '11747-18110-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux; U;2.3.4;zh_cn;HTC S710d;480*800;)UCWEB7.6.0.75/139/7701')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(324207,124734,31663,913, 'JUC(Linux; U;2.3.4;zh_cn;HTC S710d;480*800;)UCWEB7.6.0.75/139/7701', '12964-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,39070,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12097-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,68786,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12530-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,21134,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '13999-5448-4715-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3490 Opera/9.50 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(368991,6631,14748,913, 'HTC_P3490 Opera/9.50 (Windows NT 5.1; U; en)', '12682-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(156142,7631,7637,913, 'HTC_Snap_S523/V2.03.841.1 (65854) Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5)', '13623-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '13100-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S710 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,13791,913, 'HTC_S710 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13100-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,31663,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.6.1.82', '12530-5448-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.5.0.66/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,23046,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.5.0.66/139/800', '11747-18110-4742-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Incredible S;480*800;)UCWEB7.8.1.96/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184155,124734,277626,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Incredible S;480*800;)UCWEB7.8.1.96/139/800', '13042-18110-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCP3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,67830,913, 'HTCP3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16054-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,67830,913, 'HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16054-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5362/V2.31.841.6 (64646) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(87421,6631,5675,913, 'HTC_Touch_Diamond2_T5362/V2.31.841.6 (64646) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '13297-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player htc_wwe / 1.0 / htc_legend / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92597,79982,112157,913, 'HTC Streaming Player htc_wwe / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_au / 1.0 / htc_legend / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92597,79982,112157,913, 'HTC Streaming Player vodafone_au / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player vodafone_uk / 1.0 / htc_legend / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92597,79982,112157,913, 'HTC Streaming Player vodafone_uk / 1.0 / htc_legend / 2.2', '12110-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(77002,6631,13791,913, 'HTC_Touch_Pro2_T7373 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16177-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228349,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.08.706.1;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)', '14030-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(228349,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Mozilla/5.0 (HTC-T9199/1.18.1401.8;U;Windows Mobile/6.5;Profile/MIDP-2.0 Configuration/CLDC-1.1;480*800;CTC/2.0)MSIE/6.0; Windows Phone 6.5.3.5)', '14030-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3350/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3350/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(433562,6631,39070,913, 'PPC; 240x320; HTC_P3350/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16048-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Wildfire S A510e;320*480;)UCWEB7.7.0.85/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(218568,124734,297486,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Wildfire S A510e;320*480;)UCWEB7.7.0.85/139/800', '12871-18110-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'T328w'), 1 => array(0 => 'MQQBrowser/3.5/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(904609,124734,968094,913, 'MQQBrowser/3.5/Adr (Linux; U; 4.0.3; zh-cn; HTC T328w Build/IML74K;480*800)', '19859-18110-20786-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Desire'), 1 => array(0 => 'MQQBrowser/3.5/Adr (Linux; U; 2.3.3; zh-cn; HTC Desire S Build/GRI40;480*800)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(186708,124734,968094,913, 'MQQBrowser/3.5/Adr (Linux; U; 2.3.3; zh-cn; HTC Desire S Build/GRI40;480*800)', '14969-18110-20786-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_MAX Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(155494,6631,13791,913, 'HTC_MAX Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15293-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(155494,6631,13791,913, 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15293-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,7637,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12226-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308398,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2', '17488-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.18.161.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308398,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.18.161.4', '17488-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(102025,6631,21134,913, 'HTC_Touch2_T3320 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '12194-5448-4715-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-MP6950 BM')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15703,6631,14748,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Opera/9.5) HTC-MP6950 BM', '20254-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(121216,6631,5675,913, 'HTC_Touch_3G_T3232 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12292-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S630/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 320x240; HTC_S630/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(213268,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SP; 320x240; HTC_S630/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15285-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.7.0.85/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,297486,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.7.0.85/139/800', '11747-18110-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.7.0.85/139/999')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88631,124734,297486,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Desire;480*800;)UCWEB7.7.0.85/139/999', '11747-18110-4777-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Glacier'), 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(151943,79982,637572,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.4) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)', '15539-17979-18154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Glacier'), 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Messenger; 1.6.0) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(151943,79982,637572,913, 'YahooMobileMessenger/1.0 (Android Messenger; 1.6.0) (glacier; HTC; HTC Glacier; 2.3.4/GRJ22)', '15539-17979-18154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTC6990LVW) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1116940,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTC6990LVW) like Gecko', '20273-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4351/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92381,6631,39070,913, 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '16169-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(88559,6631,5675,913, 'HTC_Touch_Pro_T7272 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12226-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-3100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(304545,6631,134029,913, 'HTC-3100/1.2 Mozilla/4.0 (compatible; MSIE 5.5; Windows CE; Smartphone; 240x320)', '20272-5448-22303-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Mercury/3.54.162.4')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(308398,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_Mercury/3.54.162.4', '17488-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P6500'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC P6500; OpVer 27.110.1.612) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(83934,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC P6500; OpVer 27.110.1.612) Opera 8.65 [en]', '13277-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P6500/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(83934,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC_P6500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1) Opera 8.65 [en]', '13277-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(40027,6631,13791,913, 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '17489-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,68786,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '12097-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5530 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(145000,6631,68786,913, 'HTC_P5530 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '13421-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,68786,913, 'HTC_P3300 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '11980-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3300/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(74143,6631,68786,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3300/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11980-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(329070,6631,14748,913, 'HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)', '13030-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(15703,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-MP6950 BM', '20254-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4351/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92381,6631,11662,913, 'PPC; 240x320; HTC_P4351/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16169-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(191195,6631,5675,913, 'HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '14168-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/31/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,567771,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UCWEB8.1.0.104/31/800', '12192-5448-18327-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'Aria_A6380'), 1 => array(0 => 'JUC (Linux; U; 2.2; zh-cn; HTC_Aria_A6380; 320*480) UCWEB7.9.3.103/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(111797,124734,303588,913, 'JUC (Linux; U; 2.2; zh-cn; HTC_Aria_A6380; 320*480) UCWEB7.9.3.103/139/800', '13349-18110-17338-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; Windows Phone 8X by HTC) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; Windows Phone 8X by HTC) like Gecko', '18502-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; PM23300) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; PM23300) like Gecko', '18502-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; PM23300) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; PM23300) like Gecko', '18502-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; Windows Phone 8X by HTC) like Gecko')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; Windows Phone 8X by HTC) like Gecko', '18502-18148-22782-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,5675,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '15207-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_lexikon / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(248640,79982,112157,913, 'HTC Streaming Player us_cellular_wwe / 1.0 / htc_lexikon / 2.2', '17947-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player verizon_wwe / 1.0 / htc_lexikon / 2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(248640,79982,112157,913, 'HTC Streaming Player verizon_wwe / 1.0 / htc_lexikon / 2.2', '17947-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S743 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(350869,6631,13791,913, 'HTC_S743 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14193-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,21134,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)/UC Browser7.4.0.65', '12192-5448-4715-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'S710/1.0'), 1 => array(0 => 'SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)/UC Browser7.2.2.51')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(184744,6631,22090,913, 'SP; 240x320; HTC_S710/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)/UC Browser7.2.2.51', '13100-5448-4737-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC Streaming Player cingular_us / 1.0 / htc_liberty / 2.2.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(111797,79982,112157,913, 'HTC Streaming Player cingular_us / 1.0 / htc_liberty / 2.2.2', '13349-17979-17617-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'PPC6800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC PPC6800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(436046,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel HTC PPC6800', '14418-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,13791,913, 'HTC_HD2_T8585 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13999-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HD2_T8585/480x800'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_HD2_T8585/480x800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC_HD2_T8585/480x800', '13999-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,68786,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133885,6631,13791,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16381-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133885,6631,68786,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '16381-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(138153,6631,13791,913, 'HTC-ST7377/2.10.502.4 (93577) Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '17330-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3450/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(106606,6631,5675,913, 'PPC; 240x320; HTC_P3450/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12530-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,13791,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12097-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103630,6631,7637,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12277-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(162189,6631,13791,913, 'HTC_P3400i-Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15207-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.3.3;Zh_cn;HTC Sensation Z710e;540*960;)UCWEB7.8.1.96/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(224677,124734,277626,913, 'JUC(Linux;U;2.3.3;Zh_cn;HTC Sensation Z710e;540*960;)UCWEB7.8.1.96/139/800', '15201-18110-4779-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(155494,6631,5675,913, 'HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '15293-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) O2MTouchC Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6;HTC_P5500; tmn PortalBliss 1.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(299973,6631,39070,913, 'HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) O2MTouchC Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6;HTC_P5500; tmn PortalBliss 1.0)', '15809-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; HTC-P5310 BM ) Opera 8.65 [en]')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(212096,6631,33935,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; HTC-P5310 BM ) Opera 8.65 [en]', '15282-5448-3772-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Dopod838Pro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,13791,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Dopod838Pro', '12096-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(346110,6631,40387,913, 'HTCT9188_TD/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.3 Opera/9.7 WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13988-5448-4626-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S310-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(396483,6631,67830,913, 'HTC_S310-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)', '16055-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (ace; HTC; Desire HD; 2.3.3/GRI40)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(113114,79982,637572,913, 'YahooMobileMessenger/1.0 (Android Mail; 1.4.2) (ace; HTC; Desire HD; 2.3.3/GRI40)', '14225-17979-18154-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TOUCH_DIAMOND2/2.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TOUCH_DIAMOND2/2.0; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_TOUCH_DIAMOND2/2.0; Windows Phone 6.5)', '13374-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,5675,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 240x320; HTC_P3600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-P5310 BM')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(212096,6631,13791,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-P5310 BM', '15282-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Polaris Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(268273,6631,212240,913, 'HTC_Polaris Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12027-5448-4643-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133885,6631,67830,913, 'Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)', '16381-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P3600i/1.0'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(67686,6631,39070,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC_P3600i/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1', '16054-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_VPACompactIV/4.14.162.2')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(430524,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_VPACompactIV/4.14.162.2', '14105-5448-17173-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;8862)')), $ls);
@@ -9330,7 +10058,7 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(597198,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;8862)', '17669-21697-18418-18092');
+    $dl[] = array(535964,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T7575;7.10;8862)', '17669-21697-18418-18092');
     $ls = $ns;
   }
   $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8862)')), $ls);
@@ -9338,7 +10066,327 @@ function _H51($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(404215,1027476,545177,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8862)', '18073-21697-18418-18092');
+    $dl[] = array(388394,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T9295;7.10;8862)', '18073-21697-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(40027,6631,39070,913, 'HTC_P5520 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '17489-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(76642,6631,11662,913, 'HTC-8500/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '12018-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'WIZARD/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(133885,6631,11662,913, 'PPC; 240x320; HTC_WIZARD/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16381-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(158898,6631,13791,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '16392-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(6637,6631,139095,913, 'HTC_Touch_HD2_T8585 Opera/10.00 (Windows NT 5.1; U; en)', '13999-5448-4536-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S630 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(213268,6631,13791,913, 'HTC_S630 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '15285-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,39070,913, 'HTC_TyTN Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)', '12096-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'TyTN/1.0'), 1 => array(0 => 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Dopod838Pro')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(11590,6631,39070,913, 'PPC; 240x320; HTC_TyTN/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Dopod838Pro', '12096-5448-22271-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(103630,6631,13791,913, 'HTC_Snap Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12277-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3701/1.37.621.2 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(329070,6631,13791,913, 'HTC_P3701/1.37.621.2 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13030-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(329070,6631,13791,913, 'HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '13030-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(183651,6631,13791,913, 'HTC_S730 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '14020-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(347622,6631,67830,913, 'HTC-2125/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)', '12703-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(86413,6631,7637,913, 'HTC_P3700 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '13374-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(114862,6631,67830,913, 'HTC_Snap_S521 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)', '12243-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'P4550'), 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_P4550; Windows Phone 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,7631,7637,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HTC_P4550; Windows Phone 6.5)', '11734-5222-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'JUC(Linux;U;2.2;Zh_cn;HTC Legend;320*480;)UCWEB7.6.0.75/139/800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92597,124734,31663,913, 'JUC(Linux;U;2.2;Zh_cn;HTC Legend;320*480;)UCWEB7.6.0.75/139/800', '12110-18110-4759-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Evernote Android/AndroidMarket_43x_58 (en_CA); Android/3.1; HTC-P715a/12;')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(708213,79982,283672,913, 'Evernote Android/AndroidMarket_43x_58 (en_CA); Android/3.1; HTC-P715a/12;', '20249-17979-4459-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HTC-P715a'), 1 => array(0 => 'Android/3.1; HTC HTC-P715a; 2.3.0')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(708213,79982,283672,913, 'Android/3.1; HTC HTC-P715a; 2.3.0', '20249-17979-4459-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;8862)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(356492,1276146,464452,913, 'Windows Phone Search (Windows Phone OS 7.10;HTC;T8788;7.10;8862)', '14632-21697-18418-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1616.0 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1531895,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1616.0 Mobile Safari/537.36', '20705-21637-24394-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'One'), 1 => array(0 => 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1612.0 Mobile Safari/537.36')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(1214727,1420900,1531895,913, 'Mozilla/5.0 (Linux; Android 4.3; HTC One Build/JWR66Y.H1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1612.0 Mobile Safari/537.36', '20705-21637-24394-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,13791,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)', '12192-5448-22270-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,5675,913, 'HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '11870-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-S411-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(205272,6631,67830,913, 'HTC-S411-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)', '11966-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92309,6631,5675,913, 'HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12097-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,68786,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)', '11734-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,7637,913, 'HTC-P4600/%ROM_VERSION% Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12300-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-3100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(304545,6631,66729,913, 'HTC-3100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8)', '20272-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(269624,6631,5675,913, 'HTC-P4600/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)', '12300-5448-4808-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(101881,6631,7637,913, 'HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)', '12192-5448-17183-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(158898,6631,11662,913, 'HTC-8900/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '16392-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(92237,6631,11662,913, 'HTC_TyTN_II Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)', '11734-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) HTCS620')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(78370,6631,66729,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) HTCS620', '11870-5448-15792-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Vodafone/1.0/HTC_VPACompactIV/5.4.172.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(430524,6631,67830,913, 'Vodafone/1.0/HTC_VPACompactIV/5.4.172.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)', '14105-5448-4578-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(431108,6631,68786,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT', '16483-5448-22272-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC-SMT5800')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(437913,6631,11662,913, 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC-SMT5800', '20271-5448-17173-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'X7500/1.0'), 1 => array(0 => 'Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/2745; U; en)')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(167493,6631,14748,913, 'Opera/9.5 (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/2745; U; en)', '13798-5448-3430-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => array(0 => 'HTC-P715a'), 1 => array(0 => 'Android OS/3.1 HTC_HTC-P715a')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(708213,79982,79989,913, 'Android OS/3.1 HTC_HTC-P715a', '20249-17979-20428-18092');
+    $ls = $ns;
+  }
+  $ns = E51($segments, array(0 => NULL, 1 => array(0 => 'Rdio.Net; Android/2.4.9; Android/3.1; DM=HTC; DN=HTC-P715a; DC=rogers_wwe; DF=rogers_wwe/htc_puccinilte/puccinilte:3.1/HMJ15/X.4:user/release-keys; DH=verdilte')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(708213,90522,283672,913, 'Rdio.Net; Android/2.4.9; Android/3.1; DM=HTC; DN=HTC-P715a; DC=rogers_wwe; DF=rogers_wwe/htc_puccinilte/puccinilte:3.1/HMJ15/X.4:user/release-keys; DH=verdilte', '20249-5629-4459-18092');
     $ls = $ns;
   }
   return $dl;

@@ -37,23 +37,20 @@ function fiftyone_degrees_preg_match_all($pattern, $useragent) {
  * $score integer
  *   The current score for the calculation across all segments.
  */
-function fiftyone_degrees_calculate_segment_score($target, $test, $ls, $weight, &$score) {
+function fiftyone_degrees_calculate_segment_score(&$target, &$test, &$ls, $weight, &$score) {
   // If both arrays are empty no need to check anything.
   $count_target = count($target);
-  if ($test == NULL && $count_target == 0) {
-    return;
-  }
-
-  // If the test array is null add an empty string.
   if ($test == NULL) {
+    if($count_target == 0) {
+      return;
+    }
+    // If the test array is null add an empty string.
     $test = array(0 => '');
   }
-
-  // If the target array is empty, set it to
-  // an empty string.
-  if ($count_target == 0) {
+  // If the target array is empty, set it to an empty string.
+  else if ($count_target == 0) {
     $target = array(0 => '');
-    $count_target++;
+    $count_target = 1;
   }
 
   // If the segment counts aren't equal there's no point

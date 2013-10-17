@@ -44,7 +44,7 @@ function _H55($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(209560,22118,16074,913, $ua, '15341-17017-17470-18092');
+    $dl[] = array(188871,27598,54471,913, $ua, '15341-17017-17470-18092');
   }
   $ua = 'LCT_X880B_01/1.0 Nucleus/1.13.21 MTK6225/07A Release/5.1.2008 Browser/TelecaQ03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E55($useragent, $ua, $ls);
@@ -53,7 +53,7 @@ function _H55($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
+    $dl[] = array(44218,321377,98811,913, $ua, '15364-22857-3807-18092');
   }
   $ua = 'LCT_D800B_01/1.0 Nucleus/1.13.21 MTK6225/07A Release/5.1.2008 Browser/TelecaQ03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E55($useragent, $ua, $ls);
@@ -62,7 +62,7 @@ function _H55($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
+    $dl[] = array(44218,321377,98811,913, $ua, '15364-22857-3807-18092');
   }
   $ua = 'LCTW660 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E55($useragent, $ua, $ls);
@@ -71,7 +71,7 @@ function _H55($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(394425,22118,22204,913, $ua, '14542-17017-3976-18092');
+    $dl[] = array(374112,27598,15775,913, $ua, '14542-17017-3976-18092');
   }
   return $dl;
 }

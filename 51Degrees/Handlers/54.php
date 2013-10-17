@@ -37,33 +37,6 @@ function E54($target, $test, $ls) {
 function _H54($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'KWC-KX2';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(161500,22118,208843,913, $ua, '18587-17017-18589-18092');
-  }
-  $ua = 'KWC-KX5';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(161500,22118,208843,913, $ua, '18587-17017-18589-18092');
-  }
-  $ua = 'KWC-KX9';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(161500,22118,208843,913, $ua, '18587-17017-18589-18092');
-  }
   $ua = 'KWC-S1310-A/1004 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
   if ($ns <= $ls) {
@@ -71,25 +44,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-A/1004 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-A/1003 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-S1310-A/1003 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -98,16 +53,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-A/1002 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-S1310-A/1002 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -116,7 +62,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-S1310-A/1103 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -125,25 +71,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-A/1103 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-A/1102 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-S1310-A/1105 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -152,7 +80,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-S1310-A/1110 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -161,16 +89,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(185712,22118,23213,913, $ua, '13804-17017-3487-18092');
-  }
-  $ua = 'KWC-Buckle/ UP.Browser/7.2.7.2.549 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(167565,27598,16811,913, $ua, '13804-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ UP.Browser/7.2.7.2.541 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -179,7 +98,16 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
+  }
+  $ua = 'KWC-Buckle/ UP.Browser/7.2.7.2.549 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ABN1004 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -188,25 +116,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
-  }
-  $ua = 'KWC-Buckle/ UP.Browser/7.2.7.2.549 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
-  }
-  $ua = 'KWC-Buckle/ UP.Browser/7.2.7.2.541 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ABO1008 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -215,7 +125,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ABO1102 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -224,7 +134,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ABO1107 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -233,16 +143,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
-  }
-  $ua = 'KWC-Buckle/ABO1008 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-Buckle/ABN1104 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -251,16 +152,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189245,22118,23213,913, $ua, '13513-17017-3487-18092');
-  }
-  $ua = 'KWC-S2300/ABU1001 UP.Browser/7.2.7.2.552 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(170248,27598,16811,913, $ua, '13513-17017-3487-18092');
   }
   $ua = 'KWC-S2300/ABR1003 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -269,7 +161,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300-C/ACF1002 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -278,25 +170,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
-  }
-  $ua = 'KWC-S2300/ABR1001 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
-  }
-  $ua = 'KWC-S2300/ABQ1000 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300/ABQ1000 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -305,16 +179,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
-  }
-  $ua = 'KWC-S2300/ABQ1103 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300/ABQ1103 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -323,16 +188,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
-  }
-  $ua = 'KWC-S2300-C/ACF1002 UP.Browser/7.2.7.2.549 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300/ABU1001 UP.Browser/7.2.7.2.552 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -341,7 +197,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300/ABR1001 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -350,16 +206,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
-  }
-  $ua = 'KWC-S2300/ABR1003 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-S2300/ABR1004 UP.Browser/7.2.7.2.551 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -368,7 +215,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(188951,189023,23213,913, $ua, '15089-5214-3487-18092');
+    $dl[] = array(197234,196868,16811,913, $ua, '15089-5214-3487-18092');
   }
   $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -377,16 +224,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(284887,22118,23213,913, $ua, '13616-17017-3487-18092');
-  }
-  $ua = 'KWC-Torino/ UP.Browser/7.2.7.2.561 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(284887,22118,23213,913, $ua, '13616-17017-3487-18092');
+    $dl[] = array(261128,27598,16811,913, $ua, '13616-17017-3487-18092');
   }
   $ua = 'KWC-Rio/ACI1005 UP.Browser/7.2.7.2.563 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -395,7 +233,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
+    $dl[] = array(249000,196868,16811,913, $ua, '15675-5214-3487-18092');
   }
   $ua = 'KWC-Rio/ACI1003 UP.Browser/7.2.7.2.563 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -404,7 +242,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
+    $dl[] = array(249000,196868,16811,913, $ua, '15675-5214-3487-18092');
   }
   $ua = 'KWC-Rio/ACJ1005 UP.Browser/7.2.7.2.562 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -413,7 +251,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
+    $dl[] = array(249000,196868,16811,913, $ua, '15675-5214-3487-18092');
   }
   $ua = 'KWC-Rio/ABY1009 UP.Browser/7.2.7.2.562 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -422,16 +260,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
-  }
-  $ua = 'KWC-Rio/ABY1009 UP.Browser/7.2.7.2.562 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
+    $dl[] = array(249000,196868,16811,913, $ua, '15675-5214-3487-18092');
   }
   $ua = 'KWC-Rio/ACK10006 UP.Browser/7.2.7.2.563 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -440,7 +269,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(271815,189023,23213,913, $ua, '15675-5214-3487-18092');
+    $dl[] = array(249000,196868,16811,913, $ua, '15675-5214-3487-18092');
   }
   $ua = 'KWC-KX18/10073 UP.Browser/6.2.3.9 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -449,7 +278,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,18952,913, $ua, '15364-17017-3625-18092');
+    $dl[] = array(44218,27598,12619,913, $ua, '15364-17017-3625-18092');
   }
   $ua = 'KWC-S1300/ UP.Browser/7.2.6.1.839 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -458,16 +287,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/ UP.Browser/7.2.6.1.838 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/1007 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -476,25 +296,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/1002 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/1007 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/1002 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -503,7 +305,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/1001 UP.Browser/7.2.6.1.841 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -512,7 +314,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/ UP.Browser/7.2.6.1.838 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -521,25 +323,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/ UP.Browser/7.2.6.1.839 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/0320 UP.Browser/7.2.6.1.714 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/1009 UP.Browser/7.2.6.1.839 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -548,7 +332,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/10081 UP.Browser/7.2.6.1.839 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -557,7 +341,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-S1300/1007 UP.Browser/7.2.6.1.839 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -566,25 +350,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-S1300/1009 UP.Browser/7.2.6.1.839 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176772,22118,23213,913, $ua, '11731-17017-3487-18092');
-  }
-  $ua = 'KWC-Glide/ UP.Browser/7.2.7.2.541 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(299259,22118,23213,913, $ua, '12343-17017-3487-18092');
+    $dl[] = array(157006,27598,16811,913, $ua, '11731-17017-3487-18092');
   }
   $ua = 'KWC-Glide/ UP.Browser/7.2.7.2.541 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -593,16 +359,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(299259,22118,23213,913, $ua, '12343-17017-3487-18092');
-  }
-  $ua = 'KWC-Glide/ABJ0305 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(299259,22118,23213,913, $ua, '12343-17017-3487-18092');
+    $dl[] = array(274674,27598,16811,913, $ua, '12343-17017-3487-18092');
   }
   $ua = 'KWC-Lightpipe/ UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -611,16 +368,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(299403,22118,23213,913, $ua, '14497-17017-3487-18092');
-  }
-  $ua = 'KWC-Lightpipe/ UP.Browser/7.2.7.2.531 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(299403,22118,23213,913, $ua, '14497-17017-3487-18092');
+    $dl[] = array(274746,27598,16811,913, $ua, '14497-17017-3487-18092');
   }
   $ua = 'KWC-Lightpipe/1002 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -629,7 +377,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(299403,22118,23213,913, $ua, '14497-17017-3487-18092');
+    $dl[] = array(274746,27598,16811,913, $ua, '14497-17017-3487-18092');
   }
   $ua = 'KWC-Lightpipe/1003 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -638,16 +386,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(299403,22118,23213,913, $ua, '14497-17017-3487-18092');
-  }
-  $ua = 'KWC-Lightpipe/10013 UP.Browser/7.2.7.2.510 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(299403,22118,23213,913, $ua, '14497-17017-3487-18092');
+    $dl[] = array(274746,27598,16811,913, $ua, '14497-17017-3487-18092');
   }
   $ua = 'KWC-E1000/1.0.12 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -656,16 +395,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,23213,913, $ua, '15364-17017-3487-18092');
-  }
-  $ua = 'KWC-M2000/ZQ1003 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
+    $dl[] = array(44218,27598,16811,913, $ua, '15364-17017-3487-18092');
   }
   $ua = 'KWC-M2000/AAN1004 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -674,16 +404,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
-  }
-  $ua = 'KWC-M2000/AAN1004 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
+    $dl[] = array(276042,27598,16811,913, $ua, '12393-17017-3487-18092');
   }
   $ua = 'KWC-M2000/AAN1002 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -692,16 +413,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
-  }
-  $ua = 'KWC-M2000/AAN1002 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
+    $dl[] = array(276042,27598,16811,913, $ua, '12393-17017-3487-18092');
   }
   $ua = 'KWC-M2000/ZQ1000 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -710,7 +422,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
+    $dl[] = array(276042,27598,16811,913, $ua, '12393-17017-3487-18092');
   }
   $ua = 'KWC-M2000/ZQ1003 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -719,52 +431,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
-  }
-  $ua = 'KWC-M2000/AAN0314 UP.Browser/7.2.7.2.528 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(269867,22118,23213,913, $ua, '12393-17017-3487-18092');
-  }
-  $ua = 'KWC-laylo/AAR10044 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(374941,22118,23213,913, $ua, '14226-17017-3487-18092');
-  }
-  $ua = 'KWC-M1400/AAZ10043 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(374941,22118,23213,913, $ua, '14226-17017-3487-18092');
-  }
-  $ua = 'KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(374941,22118,23213,913, $ua, '14226-17017-3487-18092');
-  }
-  $ua = 'KWC-M1400/AAR10042 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(374941,22118,23213,913, $ua, '14226-17017-3487-18092');
+    $dl[] = array(276042,27598,16811,913, $ua, '12393-17017-3487-18092');
   }
   $ua = 'KWC-S4000/ UP.Browser/7.2.6.1.794 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -773,16 +440,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(300267,22118,23213,913, $ua, '12373-17017-3487-18092');
-  }
-  $ua = 'KWC-S4000/ UP.Browser/7.2.6.1.794 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(300267,22118,23213,913, $ua, '12373-17017-3487-18092');
+    $dl[] = array(275538,27598,16811,913, $ua, '12373-17017-3487-18092');
   }
   $ua = 'KWC-S4000/10033 UP.Browser/7.2.6.1.644 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -791,7 +449,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(300267,22118,23213,913, $ua, '12373-17017-3487-18092');
+    $dl[] = array(275538,27598,16811,913, $ua, '12373-17017-3487-18092');
   }
   $ua = 'KWC-S4000/10022 UP.Browser/7.2.6.1.838 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -800,88 +458,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(300267,22118,23213,913, $ua, '12373-17017-3487-18092');
-  }
-  $ua = 'KWC-S4000/10019 UP.Browser/7.2.6.1.803 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(300267,22118,23213,913, $ua, '12373-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1013 UP.Browser/7.2.6.1.567 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1022 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1011 UP.Browser/7.2.6.1.567 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/10086 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1017 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1016 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-E2000/1003 UP.Browser/7.2.6.1.475 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(215037,22118,23213,913, $ua, '12383-17017-3487-18092');
-  }
-  $ua = 'KWC-S1310-V/1001 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(285535,22118,23213,913, $ua, '13635-17017-3487-18092');
+    $dl[] = array(275538,27598,16811,913, $ua, '12373-17017-3487-18092');
   }
   $ua = 'KWC-S1310-V/1001 UP.Browser/7.2.6.1.840 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -890,25 +467,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(285535,22118,23213,913, $ua, '13635-17017-3487-18092');
-  }
-  $ua = 'KWC-M1000/1.0.01 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(148770,22118,18952,913, $ua, '12510-17017-3625-18092');
-  }
-  $ua = 'KWC-M1000/1.1.00 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(148770,22118,18952,913, $ua, '12510-17017-3625-18092');
+    $dl[] = array(261776,27598,16811,913, $ua, '13635-17017-3487-18092');
   }
   $ua = 'KWC-M1000/1.0.07 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -917,16 +476,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148770,22118,18952,913, $ua, '12510-17017-3625-18092');
-  }
-  $ua = 'KWC-M1000/1.0.07 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(148770,22118,18952,913, $ua, '12510-17017-3625-18092');
+    $dl[] = array(280655,27598,12619,913, $ua, '12510-17017-3625-18092');
   }
   $ua = 'KWC-M1000/1.0.06 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -935,16 +485,88 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148770,22118,18952,913, $ua, '12510-17017-3625-18092');
+    $dl[] = array(280655,27598,12619,913, $ua, '12510-17017-3625-18092');
   }
-  $ua = 'KWC-K127/1204 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0 Novarra-Vision/8.0';
+  $ua = 'KWC-laylo/AAR10044 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(328675,22118,18952,913, $ua, '15674-17017-3625-18092');
+    $dl[] = array(352021,27598,16811,913, $ua, '14226-17017-3487-18092');
+  }
+  $ua = 'KWC-M1400/AAZ10043 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(352021,27598,16811,913, $ua, '14226-17017-3487-18092');
+  }
+  $ua = 'KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(352021,27598,16811,913, $ua, '14226-17017-3487-18092');
+  }
+  $ua = 'KWC-M1400/AAR10042 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(352021,27598,16811,913, $ua, '14226-17017-3487-18092');
+  }
+  $ua = 'KWC-E2000/1013 UP.Browser/7.2.6.1.567 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(195781,27598,16811,913, $ua, '12383-17017-3487-18092');
+  }
+  $ua = 'KWC-E2000/1022 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(195781,27598,16811,913, $ua, '12383-17017-3487-18092');
+  }
+  $ua = 'KWC-E2000/10086 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(195781,27598,16811,913, $ua, '12383-17017-3487-18092');
+  }
+  $ua = 'KWC-E2000/1017 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(195781,27598,16811,913, $ua, '12383-17017-3487-18092');
+  }
+  $ua = 'KWC-E2000/1016 UP.Browser/7.2.6.1.537 (GUI) MMP/2.0';
+  $ns = E54($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(195781,27598,16811,913, $ua, '12383-17017-3487-18092');
   }
   $ua = 'KWC-K127/1204 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -953,7 +575,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(328675,22118,18952,913, $ua, '15674-17017-3625-18092');
+    $dl[] = array(311003,27598,12619,913, $ua, '15674-17017-3625-18092');
   }
   $ua = 'KWC-K127/11031 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -962,7 +584,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(328675,22118,18952,913, $ua, '15674-17017-3625-18092');
+    $dl[] = array(311003,27598,12619,913, $ua, '15674-17017-3625-18092');
   }
   $ua = 'KWC-K127/1002 UP.Browser/6.2.3.9.g.1.110 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -971,7 +593,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(328675,22118,18952,913, $ua, '15674-17017-3625-18092');
+    $dl[] = array(311003,27598,12619,913, $ua, '15674-17017-3625-18092');
   }
   $ua = 'KWC-K325/1.1.00 UP.Browser/6.2.3.9.g.1.107 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -980,16 +602,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161581,22118,18952,913, $ua, '13419-17017-3625-18092');
-  }
-  $ua = 'KWC-K325/1.1.00 UP.Browser/6.2.3.9.g.1.107 (GUI) MMP/2.0 Novarra-Vision/8.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(161581,22118,18952,913, $ua, '13419-17017-3625-18092');
+    $dl[] = array(143813,27598,12619,913, $ua, '13419-17017-3625-18092');
   }
   $ua = 'KWC-K325/1.0.04 UP.Browser/6.2.3.9.g.1.107 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -998,7 +611,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161581,22118,18952,913, $ua, '13419-17017-3625-18092');
+    $dl[] = array(143813,27598,12619,913, $ua, '13419-17017-3625-18092');
   }
   $ua = 'KWC-K24/1.0.06 UP.Browser/6.2.3.9.g.1.109 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -1007,7 +620,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334080,22118,18952,913, $ua, '13743-17017-3625-18092');
+    $dl[] = array(310499,27598,12619,913, $ua, '13743-17017-3625-18092');
   }
   $ua = 'KWC-K24/1.0.07 UP.Browser/6.2.3.9.g.1.109 (GUI) MMP/2.0';
   $ns = E54($useragent, $ua, $ls);
@@ -1016,25 +629,7 @@ function _H54($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334080,22118,18952,913, $ua, '13743-17017-3625-18092');
-  }
-  $ua = 'KWC-E1100/1002 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(412680,22118,23213,913, $ua, '12345-17017-3487-18092');
-  }
-  $ua = 'KWC-K127';
-  $ns = E54($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(328675,22118,16074,913, $ua, '15674-17017-17470-18092');
+    $dl[] = array(310499,27598,12619,913, $ua, '13743-17017-3625-18092');
   }
   return $dl;
 }

@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,24 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E93($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 2, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -45,493 +35,1159 @@ function E93($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H93($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=TIANYU-KTOUCH/)[^/]+#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#.+#', $useragent));
-  $ns = E93($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/0Vodafone543/W08.40.SP1.V32.F3 Browser/Opera Mini/v4.2.0099-2010-04-14(0)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(394640,58384,57375,913, 'TIANYU-KTOUCH/A930/Screen-240X320', '17899-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(28561,27598,141706,913, $ua, '18088-17017-4732-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930/Screen-240X320 Novarra-Vision/8.0')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300i/BUKA1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(394640,58384,57375,913, 'TIANYU-KTOUCH/A930/Screen-240X320 Novarra-Vision/8.0', '17899-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A930'), 1 => array(0 => 'TIANYU-KTOUCH/A930')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/BUJG4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(394640,58384,57375,913, 'TIANYU-KTOUCH/A930', '17899-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D772'), 1 => array(0 => 'TIANYU-KTOUCH/D772/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/BUJH1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/D772/Screen-176X220', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'DT200'), 1 => array(0 => 'TIANYU-KTOUCH/DT200/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/BUJG6 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/DT200/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A610'), 1 => array(0 => 'TIANYU-KTOUCH/A610/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/BUJK1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A610/Screen-176X220', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D159'), 1 => array(0 => 'TIANYU-KTOUCH/D159/Screen-128X128')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/BUJI1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/D159/Screen-128X128', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D175'), 1 => array(0 => 'TIANYU-KTOUCH/D175/Screen-128X160')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/PIJI1 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/D175/Screen-128X160', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'X90'), 1 => array(0 => 'TIANYU-KTOUCH/X90/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-C3300K/AEJG4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/X90/MIDP2.0/CLDC1.1/Screen-320X240', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(102313,11583,10554,913, $ua, '14218-17484-4223-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A927'), 1 => array(0 => 'TIANYU-KTOUCH/A927/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250V/BUGB2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A927/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'FT05'), 1 => array(0 => 'TIANYU-KTOUCH/FT05/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250i/BAIC2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/FT05/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B858'), 1 => array(0 => 'TIANYU-KTOUCH/B858/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250V/DBUHC1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/B858/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V320'), 1 => array(0 => 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250V/DBUGK1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/V320/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B922'), 1 => array(0 => 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250V/BUGD1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/B922/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'C350'), 1 => array(0 => 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-E250V/AMGC1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/C350/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(33863,11583,12619,913, $ua, '11628-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B2012'), 1 => array(0 => 'TIANYU-KTOUCH/B2012/Screen-128X128')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-E2550/XXJF5 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/B2012/Screen-128X128', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(126712,11583,12619,913, $ua, '12457-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B2016'), 1 => array(0 => 'TIANYU-KTOUCH/B2016/Screen-128X128')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-E2550/XXJI1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/B2016/Screen-128X128', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(126712,11583,12619,913, $ua, '12457-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D172'), 1 => array(0 => 'TIANYU-KTOUCH/D172/Screen-128x160')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-E2550/XXJH3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/D172/Screen-128x160', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(126712,11583,12619,913, $ua, '12457-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A660'), 1 => array(0 => 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-E2550/XXJL2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A660/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(126712,11583,12619,913, $ua, '12457-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUIC6 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H711'), 1 => array(0 => 'TIANYU-KTOUCH/H711/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUII1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/H711/Screen-176X220', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A662'), 1 => array(0 => 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUJI1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A662/MIDP2.0/CLDC1.1/Screen-240X400', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A168'), 1 => array(0 => 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUIJ1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A168/MIDP2.0/CLDC1.1/Screen-320X430', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V760'), 1 => array(0 => 'TIANYU-KTOUCH/V760/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUKC1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/V760/MIDP2.0/CLDC1.1/Screen-240X400', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'DT28'), 1 => array(0 => 'TIANYU-KTOUCH/DT28/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUIG1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/DT28/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'W990'), 1 => array(0 => 'TIANYU-KTOUCH/W990/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUJK1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/W990/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A995'), 1 => array(0 => 'TIANYU-KTOUCH/A995/MIDP2.0/CLDC1.1/Screen-320x430')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUIF3 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A995/MIDP2.0/CLDC1.1/Screen-320x430', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D173'), 1 => array(0 => 'TIANYU-KTOUCH/D173/Screen-128x160')), $ls);
+  $ua = 'Vodafone/1.0/SamsungC3050/C3050BUID2 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/D173/Screen-128x160', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(24146,11583,12619,913, $ua, '11795-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A903'), 1 => array(0 => 'TIANYU-KTOUCH/A903/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/LG-KP500/V10b/Teleca/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/A903/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(162838,4712,4719,913, $ua, '11751-17483-17602-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'C800'), 1 => array(0 => 'TIANYU-KTOUCH/C800/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.49.164.2 (71528) Opera/9.7 (Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/C800/MIDP2.0/CLDC1.1/Screen-240x320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H800'), 1 => array(0 => 'TIANYU-KTOUCH/H800/MIDP2.0/CLDC1.1/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.72.162.0 (82124) Opera/9.7 (Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/H800/MIDP2.0/CLDC1.1/Screen-176X220', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'Q981'), 1 => array(0 => 'TIANYU-KTOUCH/Q981/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.72.172.0 (82124) Opera/9.7 (Windows NT 5.1; U; nl)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/Q981/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'M600'), 1 => array(0 => 'TIANYU-KTOUCH/M600/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.72.161.3 (82124) Opera/9.7 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(53173,58384,57375,913, 'TIANYU-KTOUCH/M600/MIDP2.0/CLDC1.1/Screen-240X320', '15364-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H699'), 1 => array(0 => 'TIANYU-KTOUCH/H699')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.44.163.3 (70494) Opera/9.7 (Windows NT 5.1; U; fr)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504118,58384,57375,913, 'TIANYU-KTOUCH/H699', '17891-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H699'), 1 => array(0 => 'TIANYU-KTOUCH/H699/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/3.14.162.5 (04666) Opera/9.7 (Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504118,58384,57375,913, 'TIANYU-KTOUCH/H699/Screen-176X220', '17891-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'X260'), 1 => array(0 => 'TIANYU-KTOUCH/X260')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/3.14.161.3 (04666) Opera/9.7 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504190,58384,57375,913, 'TIANYU-KTOUCH/X260', '17884-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'X260'), 1 => array(0 => 'TIANYU-KTOUCH/X260/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/3.14.163.3 (04666) Opera/9.7 (Windows NT 5.1; U; fr)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504190,58384,57375,913, 'TIANYU-KTOUCH/X260/Screen-176X220', '17884-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/3.14.172.3 (04666) Opera/9.7 (Windows NT 5.1; U; nl)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98597,58384,57375,913, 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320 Profile/MIDP-2.0 Configuration/CLDC-1.1', '17885-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.72.164.4 (82124) Opera/9.7 (Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98597,58384,57375,913, 'TIANYU-KTOUCH/V908', '17885-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V908|V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908|V908/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.44.172.7 (70494) Opera/9.7 (Windows NT 5.1; U; nl)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98597,58384,57375,913, 'TIANYU-KTOUCH/V908|V908/MIDP2.0/CLDC1.1/Screen-240x320', '17885-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V908'), 1 => array(0 => 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/1.44.162.6 (70494) Opera/9.7 (Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98597,58384,57375,913, 'TIANYU-KTOUCH/V908/MIDP2.0/CLDC1.1/Screen-240x320', '17885-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H999'), 1 => array(0 => 'TIANYU-KTOUCH/H999')), $ls);
+  $ua = 'Vodafone/1.0/HTC_HD2/3.14.164.4 (04666) Opera/9.7 (Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504046,58384,57375,913, 'TIANYU-KTOUCH/H999', '17888-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(6637,6631,40387,913, $ua, '13999-5448-4626-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H999'), 1 => array(0 => 'TIANYU-KTOUCH/H999/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(504046,58384,57375,913, 'TIANYU-KTOUCH/H999/MIDP2.0/CLDC1.1/Screen-320X240', '17888-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H688'), 1 => array(0 => 'TIANYU-KTOUCH/H688/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10i Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(572621,58384,57375,913, 'TIANYU-KTOUCH/H688/Screen-176X220', '17892-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H677'), 1 => array(0 => 'TIANYU-KTOUCH/H677/Screen-176X220')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10h Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(557232,58384,57375,913, 'TIANYU-KTOUCH/H677/Screen-176X220', '17893-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10c Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(264053,58384,57375,913, 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1', '17889-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/v10b Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(264053,58384,57375,913, 'TIANYU-KTOUCH/H877', '17889-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H877'), 1 => array(0 => 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10j Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(264053,58384,57375,913, 'TIANYU-KTOUCH/H877/MIDP2.0/CLDC1.1/Screen-320X240', '17889-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'E62'), 1 => array(0 => 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10f Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(97870,58384,57375,913, 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400 Profile/MIDP-2.0 Configuration/CLDC-1.1', '17901-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'E62'), 1 => array(0 => 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990/V10g Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(97870,58384,57375,913, 'TIANYU-KTOUCH/E62/MIDP2.0/CLDC1.1/Screen-240X400', '17901-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(82758,4712,81803,913, $ua, '11656-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B832'), 1 => array(0 => 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-B2100/BUIC6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(99101,58384,57375,913, 'TIANYU-KTOUCH/B832/MIDP2.0/CLDC1.1/Screen-240x320', '17897-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(101737,11583,12619,913, $ua, '14603-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'V388'), 1 => array(0 => 'TIANYU-KTOUCH/V388/MIDP2.0/CLDC1.1/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-B2100/BUJA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(569007,58384,57375,913, 'TIANYU-KTOUCH/V388/MIDP2.0/CLDC1.1/Screen-240X320', '17886-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(101737,11583,12619,913, $ua, '14603-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A7726'), 1 => array(0 => 'TIANYU-KTOUCH/A7726/MIDP2.0/CLDC1.1/Screen-240x320')), $ls);
+  $ua = 'Vodafone/1.0/SAMSUNG-B2100/BUIF2 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(545105,58384,57375,913, 'TIANYU-KTOUCH/A7726/MIDP2.0/CLDC1.1/Screen-240x320', '17900-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(101737,11583,12619,913, $ua, '14603-17484-3625-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'B2010'), 1 => array(0 => 'TIANYU-KTOUCH/B2010/Screen-128X128')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990i/V10a Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(573554,58384,57375,913, 'TIANYU-KTOUCH/B2010/Screen-128X128', '17898-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(375845,4712,81803,913, $ua, '12115-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H777'), 1 => array(0 => 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990i/V10c Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(259367,58384,57375,913, 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240 Profile/MIDP-2.1 Configuration/CLDC-1.1', '17890-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(375845,4712,81803,913, $ua, '12115-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'H777'), 1 => array(0 => 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990i/V10d Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(259367,58384,57375,913, 'TIANYU-KTOUCH/H777/MIDP2.0/CLDC1.1/Screen-320X240', '17890-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(375845,4712,81803,913, $ua, '12115-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'D6600'), 1 => array(0 => 'TIANYU-KTOUCH/D6600/Screen-240X432')), $ls);
+  $ua = 'Vodafone/1.0/LG-KU990i/V10b Browser/Obigo-Q05A/3.6 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(58312,58384,57375,913, 'TIANYU-KTOUCH/D6600/Screen-240X432', '17894-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(375845,4712,81803,913, $ua, '12115-17483-4848-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A665'), 1 => array(0 => 'TIANYU-KTOUCH/A665/MIDP2.0/CLDC1.1/Screen-240X320 Profile/MIDP-2.0 Configuration/CLDC-1.1')), $ls);
+  $ua = 'Vodafone/1.0/HTC_prophet/2.15.3.113/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98957,58384,57375,913, 'TIANYU-KTOUCH/A665/MIDP2.0/CLDC1.1/Screen-240X320 Profile/MIDP-2.0 Configuration/CLDC-1.1', '17902-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(44218,6631,67830,913, $ua, '15364-5448-4578-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'A665'), 1 => array(0 => 'TIANYU-KTOUCH/A665')), $ls);
+  $ua = 'Vodafone/1.0/HTC_Touch2/1.29.176.2 (67024) Opera/9.50 (Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(98957,58384,57375,913, 'TIANYU-KTOUCH/A665', '17902-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(73927,6631,14748,913, $ua, '11978-5448-3430-18092');
   }
-  $ns = E93($segments, array(0 => array(0 => 'L65'), 1 => array(0 => 'TIANYU-KTOUCH/L65/Screen-240X320')), $ls);
+  $ua = 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.1 (67102) Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(58391,58384,57375,913, 'TIANYU-KTOUCH/L65/Screen-240X320', '17887-17895-17896-18092');
-    $ls = $ns;
+    $dl[] = array(77002,6631,14748,913, $ua, '16177-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Pro2/1.86.161.0 (67102) Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(77002,6631,14748,913, $ua, '16177-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.6 (50207) Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(77002,6631,14748,913, $ua, '16177-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Pro2/1.14.161.5 (50207) Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(77002,6631,14748,913, $ua, '16177-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SEX1i/R3AA Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) UP.Link/6.3.1.20.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152807,6631,13791,913, $ua, '13296-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/SEX1i/R1AA Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152807,6631,13791,913, $ua, '13296-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700i/BUIE2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(129557,11583,12619,913, $ua, '11681-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700i/JBID1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(129557,11583,12619,913, $ua, '11681-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700i/BUIC2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(129557,11583,12619,913, $ua, '11681-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(86413,6631,14748,913, $ua, '13374-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; fr)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(86413,6631,14748,913, $ua, '13374-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungC6625/BUIF2 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380309,6631,13791,913, $ua, '13508-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungC6625/BUID1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380309,6631,13791,913, $ua, '13508-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungC6625/BUIE1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380309,6631,13791,913, $ua, '13508-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungC6625/BUIH4 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380309,6631,13791,913, $ua, '13508-5448-22270-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(101881,6631,14748,913, $ua, '12192-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Diamond2 Opera/9.50 (Windows NT 5.1; U; nl)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(101881,6631,14748,913, $ua, '12192-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Diamond2/2.16.164.1 (67041) Opera/9.50 (Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(101881,6631,14748,913, $ua, '12192-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungS3500/S3500BUIB3 Browser/NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(309053,11583,15775,913, $ua, '14124-17484-3976-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-M200/AMHI4/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(75622,11583,12619,913, $ua, '17078-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.164.1 (87733)/(Windows NT 5.1; U; es-ES)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.10.161.1 (86611)/(Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.161.1 (10904)/(Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.11.162.1 (87652)/(Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.41.162.1 (10904)/(Windows NT 5.1; U; de)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_HD_mini/Opera 9.7/1.36.184.2 (94538)/(Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(109382,6631,40387,913, $ua, '15526-5448-4626-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-B7350/BUJG5 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.5)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(139023,6631,7637,913, $ua, '13498-5448-17183-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK3 Browser/Opera/9.5 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(145295,11583,14748,913, $ua, '13398-17484-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-E1360B/ARID1/1.0 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114934,11583,12619,913, $ua, '12248-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/BUHA3/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/JBHC1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/BUHG1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/BUHB2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/BUHB1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/AMHB2/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-SGH-J700V/AEHE1/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(428292,11583,12619,913, $ua, '13394-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK3 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(145295,6631,5675,913, $ua, '13398-5448-4808-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIK1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(145295,6631,5675,913, $ua, '13398-5448-4808-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-GT-B7610/NBUIL1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(145295,6631,5675,913, $ua, '13398-5448-4808-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Touch_Pro Opera/9.50 (Windows NT 5.1; U; en)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(88559,6631,14748,913, $ua, '12226-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-E1310B/BUIE1/1.0 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(115006,11583,12619,913, $ua, '13639-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SAMSUNG-E1310B/AMIE1/1.0 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(115006,11583,12619,913, $ua, '13639-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/LG-HB620T/V10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(161613,4712,97064,913, $ua, '13762-17483-3534-18092');
+  }
+  $ua = 'Vodafone/1.0/LG-HB620T/V10b Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(161613,4712,97064,913, $ua, '13762-17483-3534-18092');
+  }
+  $ua = 'Vodafone/1.0/SEX1i/R3AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15431; U; DE) UP.Link/6.3.1.20.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152807,6631,14748,913, $ua, '13296-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SEX1i/R3AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/15431; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152807,6631,14748,913, $ua, '13296-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/SEX1i/R1AA Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/2141; U; UK)  Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152807,6631,14748,913, $ua, '13296-5448-3430-18092');
+  }
+  $ua = 'Vodafone/1.0/LG-KU380/V10a Browser/Obigo-Q05A1/2.16 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/2.0.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(189015,4712,244945,913, $ua, '13891-17483-3857-18092');
+  }
+  $ua = 'Vodafone/1.0/LG-KU580/V10a Browser/Obigo-Q05A1/2.16 MMS/LG-MMS-V1.0/1.2 Java/LGVM/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(245900,4712,244945,913, $ua, '12637-17483-3857-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHX680V/X680BUFG4 Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(427909,11583,36213,913, $ua, '15182-17484-4924-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_Mercury/1.20.161.6/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308398,6631,67830,913, $ua, '17488-5448-4578-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHM300V/M300BUGG2/Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(427549,11583,12619,913, $ua, '11842-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHM300V/M300JBGF3/Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(427549,11583,12619,913, $ua, '11842-17484-3625-18092');
+  }
+  $ua = 'Vodafone/SamsungSGHE860V/E860JBFA2/Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(149005,11583,36213,913, $ua, '13462-17484-4924-18092');
+  }
+  $ua = 'Vodafone/SamsungSGHE860V/E860AEFA2/Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(149005,11583,36213,913, $ua, '13462-17484-4924-18092');
+  }
+  $ua = 'Vodafone/SamsungSGHE860V/E860JBEH4/Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(149005,11583,36213,913, $ua, '13462-17484-4924-18092');
+  }
+  $ua = 'Vodafone/SamsungSGHE860V/E860AEEH6/Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(149005,11583,36213,913, $ua, '13462-17484-4924-18092');
+  }
+  $ua = 'Vodafone/SamsungSGHE860V/E860BUEH6/Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(149005,11583,36213,913, $ua, '13462-17484-4924-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHX660V/X660BUEK4/Browser/TSS/2.5 Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361547,11583,189375,913, $ua, '14443-17484-3816-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHX660V/X660JBEK2/Browser/TSS/2.5 Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361547,11583,189375,913, $ua, '14443-17484-3816-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHM310V/M310BUHF2 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(38782,11583,12619,913, $ua, '13902-17484-3625-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHJ600V/J600BUGH1 Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(304770,11583,36213,913, $ua, '13694-17484-4924-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHJ600V/J600DUHC1 Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(304770,11583,36213,913, $ua, '13694-17484-4924-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHE570V/E570BUGA3 Browser/NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(132445,11583,36213,913, $ua, '12154-17484-4924-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(133885,6631,67830,913, $ua, '16381-5448-4578-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHB520V/B520BUHI1 Browser/Openwave/6.2.3 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380885,11583,12619,913, $ua, '13199-17484-3625-18092');
+  }
+  $ua = 'Vodafone/Sharp902SH/SHG001/1.0 Browser/UP.Browser/7.0.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(208179,208173,180969,913, $ua, '17064-7227-4222-18092');
+  }
+  $ua = 'Vodafone/1.0/SamsungSGHX510V/X510BUFK3 Browser/Nokia/3.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(416295,11583,6715,913, $ua, '13926-17484-4030-18092');
+  }
+  $ua = 'Vodafone/1.0/HTC_VPACompactIV/5.4.172.1/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1; PPC; 240x320)';
+  $ns = E93($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(430524,6631,67830,913, $ua, '14105-5448-4578-18092');
   }
   return $dl;
 }

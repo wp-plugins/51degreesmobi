@@ -44,7 +44,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,18952,913, $ua, '15364-17017-3625-18092');
+    $dl[] = array(44218,27598,12619,913, $ua, '15364-17017-3625-18092');
   }
   $ua = 'Amoi 8512/R23.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -53,7 +53,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   $ua = 'Amoi 8512/R21.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -62,16 +62,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
-  }
-  $ua = 'Amoi 8512/R22.0 NF-Browser/3.3';
-  $ns = E1($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   $ua = 'Amoi 8512/R18.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -80,16 +71,16 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
-  $ua = 'Amoi 8512/R20.0 NF-Browser/3.3';
+  $ua = 'Amoi 8512/R22.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   $ua = 'Amoi 8512/R18.5 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -98,7 +89,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   $ua = 'Amoi 8512/R18.7 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -107,7 +98,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   $ua = 'Amoi 8512/R28.0 NF-Browser/3.3';
   $ns = E1($useragent, $ua, $ls);
@@ -116,34 +107,7 @@ function _H1($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
-  }
-  $ua = 'Amoi-V600/Plat-EMP/WAP2.0/MIDP2.0/CLDC1.0';
-  $ns = E1($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288733,22118,16074,913, $ua, '12200-17017-17470-18092');
-  }
-  $ua = 'Amoi-V600';
-  $ns = E1($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288733,22118,16074,913, $ua, '12200-17017-17470-18092');
-  }
-  $ua = 'Amoi-V100/Plat-EMP/WAP2.0/MIDP2.0/CLDC1.0';
-  $ns = E1($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(288805,22118,16074,913, $ua, '12202-17017-17470-18092');
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
   }
   return $dl;
 }

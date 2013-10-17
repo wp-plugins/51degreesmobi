@@ -37,473 +37,986 @@ function E92($target, $test, $ls) {
 function _H92($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; Spice_Mi-351) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile';
+  $ua = 'Toshiba';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,142808,711577,913, $ua, '15364-18110-18326-18092');
+    $dl[] = array(44218,145725,187068,913, $ua, '15364-18588-18589-18092');
   }
-  $ua = 'Browser/Opera Spice M6868n Opera/9.80 (MTK; Nucleus; Opera Mobi/4000; U; en-US) Presto/2.5.28 Version/10.10';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/02/ PPC; 480x800';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,161812,913, $ua, '15364-17017-18373-18092');
+    $dl[] = array(138225,6631,5675,913, $ua, '13684-5448-4808-18092');
   }
-  $ua = 'Spice M5885   Browser/Opera  Opera/9.80 (MTK; U; en-US) Presto/2.5.28 Version/10.10';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,486184,913, $ua, '15364-17017-18272-18092');
+    $dl[] = array(138225,6631,5675,913, $ua, '13684-5448-4808-18092');
   }
-  $ua = 'Spice M6800 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/ PPC; 480x800';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347364,22118,347436,913, $ua, '12715-17017-4812-18092');
+    $dl[] = array(138225,6631,5675,913, $ua, '13684-5448-4808-18092');
   }
-  $ua = 'Spice M6800  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 01/ PPC; 480x800';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347364,22118,347436,913, $ua, '12715-17017-4812-18092');
+    $dl[] = array(138225,6631,5675,913, $ua, '13684-5448-4808-18092');
   }
-  $ua = 'Spice M6900 Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420690,22118,347436,913, $ua, '16696-17017-4812-18092');
+    $dl[] = array(138225,6631,5675,913, $ua, '13684-5448-4808-18092');
   }
-  $ua = 'Spice M6900  Opera/9.80 (MTK; Nucleus; U; en-US) Presto/2.4.18 Version/10.00';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba_TG01; Windows Phone 6.5)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(420690,22118,347436,913, $ua, '16696-17017-4812-18092');
+    $dl[] = array(138225,7631,7637,913, $ua, '13684-5222-17183-18092');
   }
-  $ua = 'SpiceM5600/MTK Release/01.01.2012 Browser/wap2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/TG01/02; Windows Phone 6.5)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(905443,22118,16074,913, $ua, '20247-17017-17470-18092');
+    $dl[] = array(138225,7631,7637,913, $ua, '13684-5222-17183-18092');
   }
-  $ua = 'Spice S707/2008.07.09 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 02; Windows Phone 6.5)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(138225,7631,7637,913, $ua, '13684-5222-17183-18092');
   }
-  $ua = 'Spice S707/2008.09.26 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/X02T; Windows Phone 6.5)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,7631,7637,913, $ua, '15364-5222-17183-18092');
   }
-  $ua = 'Spice S707/2008.05.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 51.3.31.2; t12; ) ; ToshibaTP/1.2.0 (+DRM) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2008.05.16 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 55.4.02.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.03.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 53.2.17.1; t12; ) ; ToshibaTP/1.2.0 (+DRM) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.04.28 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 48.4.72.8; t12; ) ; ToshibaTP/1.1.0 () ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.05.31 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 55.4.02.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2008.08.20 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 55.4.02.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.07.15 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 73.0.51.8; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.06.29 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 51.3.31.2; t12; ) ; ToshibaTP/1.2.0 (+DRM) ; it) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2009.04.10 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 51.3.31.2; t12; ) ; ToshibaTP/1.2.0 (+DRM) ; pt) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2008.09.27 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL838; 85.3.88.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(44218,507916,594370,913, $ua, '15364-24094-24304-18092');
   }
-  $ua = 'Spice S707/2008.12.03 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081018_092ES2_61';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(113546,6631,13791,913, $ua, '12224-5448-22270-18092');
   }
-  $ua = 'Spice S707/2008.09.02 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(113546,6631,13791,913, $ua, '12224-5448-22270-18092');
   }
-  $ua = 'Spice S707/2009.03.25 LMP/SH Release Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081105_093ES2_61';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157325,22118,16074,913, $ua, '16862-17017-17470-18092');
+    $dl[] = array(113546,6631,13791,913, $ua, '12224-5448-22270-18092');
   }
-  $ua = 'Spice M5445';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(319269,22118,16074,913, $ua, '16858-17017-17470-18092');
+    $dl[] = array(113546,6631,13791,913, $ua, '12224-5448-22270-18092');
   }
-  $ua = 'Spice M5700';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810/ ver RL1_20090425_096IL1_61/ Windows CE; IE Mobile 7.11; Mozilla/4.0';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(267700,22118,16074,913, $ua, '15621-17017-17470-18092');
+    $dl[] = array(113546,6631,13791,913, $ua, '12224-5448-22270-18092');
   }
-  $ua = 'Spice M5700 Novarra-Vision/8.0';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Toshiba G910_G920';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(267700,22118,16074,913, $ua, '15621-17017-17470-18092');
+    $dl[] = array(361835,6631,68786,913, $ua, '16988-5448-22272-18092');
   }
-  $ua = 'Spice M5252';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 55.8.03.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(475911,22118,16074,913, $ua, '16933-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M5170';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 57.3.13.5; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(264557,22118,16074,913, $ua, '15591-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M5170 Novarra-Vision/8.0';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 57.0.96.2; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(264557,22118,16074,913, $ua, '15591-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M5570';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 64.4.08.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(276708,22118,16074,913, $ua, '15581-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M5570 Novarra-Vision/8.0';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 55.8.03.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; tr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(276708,22118,16074,913, $ua, '15581-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice QT68';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 67.2.73.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(264341,22118,16074,913, $ua, '15589-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1, Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 69.6.43.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(202700,22118,16074,913, $ua, '16905-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M-940 Gold/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 57.0.96.2; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; de) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(202700,22118,16074,913, $ua, '16905-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'UCWEB/2.0 (Linux; U; Adr 2.3.5; en-US; Spice_MI-352) U2/1.0.0 UCBrowser/8.2.0.242 U2/1.0.0 Mobile';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 67.2.73.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1039209,142808,711577,913, $ua, '21851-18110-18326-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice M5750';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 56.2.00.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(274692,22118,16074,913, $ua, '15711-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'UP.Browser/5.0/Spice G6550';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 82.3.59.9; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,50841,913, $ua, '15364-17017-4948-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice QT-57/(2010.06.22) S005/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 86.5.68.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(397735,22118,16074,913, $ua, '16856-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice S580';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL933; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(469704,22118,16074,913, $ua, '16995-17017-17470-18092');
+    $dl[] = array(1527840,507916,594370,913, $ua, '24283-24094-24304-18092');
   }
-  $ua = 'Spice_M6400/WapBrowserConfiguration2.0/MIDP2.0/CLDC1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(309907,22118,16074,913, $ua, '12791-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S5420';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(476632,22118,16074,913, $ua, '16924-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S950 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(376813,22118,36475,913, $ua, '14298-17017-3601-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S650/KAA736_0.90.626 Nucleus/1.0 MTK/6223 Release/06.26.2007 Browser/Teleca_obigo Profile/MIDP-1.0 Configuration/CLDC-1.0';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(469201,22118,16074,913, $ua, '17061-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S820';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(475839,22118,16074,913, $ua, '17068-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S5330';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(476127,22118,16074,913, $ua, '16986-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice/1.0/QT-68/Obigo Browser/Q03C Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ro) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(264341,22118,119194,913, $ua, '15589-17017-3807-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S710';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.19; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(471371,22118,16074,913, $ua, '16989-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice S705';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.13; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(477861,22118,16074,913, $ua, '16912-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice-S1000/1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(293762,16068,85332,913, $ua, '12283-5448-4578-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice M-6Sports/(2009.12.17) S001/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Novarra-Vision/8.0';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.19; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; de) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322582,22118,16074,913, $ua, '16142-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice M6700 Novarra-Vision/8.0';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.27.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(412103,22118,16074,913, $ua, '16725-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
   }
-  $ua = 'Spice D88';
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL938; 7.0.28.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
   $ns = E92($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(462578,22118,16074,913, $ua, '17118-17017-17470-18092');
+    $dl[] = array(1528065,507916,594370,913, $ua, '24290-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ro) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; ) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.27.13; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.27.13; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.21.6; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.24.5; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.27.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.27.19; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL938; 7.0.28.14; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528290,507916,594370,913, $ua, '24298-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 58.0.65.5; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 67.2.73.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 58.0.65.5; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; it) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 64.4.08.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 58.0.65.5; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; sr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 82.3.59.9; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 86.5.68.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; de) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 86.5.68.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 58.0.65.5; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; pt) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; sr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_VL963; 58.7.54.2; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527915,507916,594370,913, $ua, '24258-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 55.8.03.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 64.4.08.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 67.2.73.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 64.4.08.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 67.8.18.2; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; en) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 72.0.77.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL933; 86.5.68.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527765,507916,594370,913, $ua, '24280-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 64.4.08.7; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; de) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 74.8.30.4; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 64.6.47.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; ru) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 87.7.55.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; ru) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL963; 82.3.59.9; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+OFFLINEAPP+WEBSTORAGE) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528365,507916,594370,913, $ua, '24256-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.33.0.1.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; en) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.33.0.1.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.37.16.01.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; fr) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.37.16.01.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.45.08.01.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; fr) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.45.08.01.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.45.22.01.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; fr) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.45.22.01.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.56.12.01.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; fr) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.56.12.01.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_L4333; 7.1.68.00.01.1; a5; ) ; ToshibaTP/2.0.0 (+DRM) ; fr) AppleWebKit/537.4 (KHTML, like Gecko) TOSHIBA-DTV (DTV_L4333; 7.1.68.00.01.1; 2013A; EU)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528440,507916,594370,913, $ua, '24303-24094-24304-18092');
+  }
+  $ua = 'Windows Phone Search (Windows Phone OS 7.10;FujitsuToshibaMobileCommun;IS12T;7.10;8107)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(596281,391894,464452,913, $ua, '16968-15924-18418-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL838; 55.4.02.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527990,507916,594370,913, $ua, '24286-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL838; 48.4.72.8; t12; ) ; ToshibaTP/1.1.0 () ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527990,507916,594370,913, $ua, '24286-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL838; 55.4.02.0; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527990,507916,594370,913, $ua, '24286-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL838; 73.0.51.8; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527990,507916,594370,913, $ua, '24286-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_RL838; 85.3.88.6; t12; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1527990,507916,594370,913, $ua, '24286-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_WL968; 7.0.27.3; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528140,507916,594370,913, $ua, '24296-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_WL968; 7.0.27.8; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; pl) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528140,507916,594370,913, $ua, '24296-24094-24304-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_WL968; 7.0.27.13; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528140,507916,594370,913, $ua, '24296-24094-24304-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65 [en] Toshiba G910_G920';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361835,6631,33935,913, $ua, '16988-5448-3772-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Toshiba_TG01 PPC; 480x800';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(138225,6631,13791,913, $ua, '13684-5448-22270-18092');
+  }
+  $ua = 'Mozilla/5.0 (Linux mipsel; U; HbbTV/1.1.1 (; TOSHIBA; DTV_TL968; 7.0.27.3; a5; ) ; ToshibaTP/1.3.0 (+VIDEO_MP4+VIDEO_X_MS_ASF+AUDIO_MPEG+AUDIO_MP4+DRM+3D+NATIVELAUNCH+WEBSTORAGE+OFFLINEAPP+HAS_CMD_HTTP_SERVER) ; fr) AppleWebKit/534.1 (KHTML, like Gecko)';
+  $ns = E92($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1528215,507916,594370,913, $ua, '24293-24094-24304-18092');
   }
   return $dl;
 }

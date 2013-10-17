@@ -20,7 +20,7 @@ define("LEVENSHTEIN_MAX_LENGTH", 255);
  /**
  * Todo
  */
-function fiftyone_degrees_edit_distance($str1, $str2, $ls) {
+function fiftyone_degrees_edit_distance(&$str1, &$str2, &$ls) {
   // If the lowest score is zero then these strings must
   // match exactly to return the same score.
   if ($ls == 0) {

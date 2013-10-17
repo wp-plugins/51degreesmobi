@@ -37,185 +37,617 @@ function E94($target, $test, $ls) {
 function _H94($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/02/ PPC; 480x800';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.0; U; en-GB) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.54 Safari/534.6 Pre/3.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.3; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.54 Safari/534.6 Pre/3.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 02/ PPC; 480x800 Novarra-Vision/8.0';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.0; U; en-US) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.53 Safari/534.6 Pre/3.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01/ PPC; 480x800';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-GB) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba-TG01-orange/ 01/ PPC; 480x800';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-CA) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/1.2';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Toshiba/TG01';
+  $ua = 'Mozilla/5.0 (Linux; webOS/2.2.4; U; en-GB) AppleWebKit/534.6 (KHTML, like Gecko) webOSBrowser/221.56 Safari/534.6 Pre/3.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,5635,913, $ua, '13684-5448-4808-18092');
+    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/X02T; Windows Phone 6.5)';
+  $ua = 'Mozilla/5.0 (webOS/1.3.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,6649,6655,913, $ua, '15364-5222-17183-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba/TG01/02; Windows Phone 6.5)';
+  $ua = 'Mozilla/5.0 (webOS/1.3.5.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,6649,6655,913, $ua, '13684-5222-17183-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba_TG01; Windows Phone 6.5)';
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,6649,6655,913, $ua, '13684-5222-17183-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Toshiba-TG01-orange/ 02; Windows Phone 6.5)';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,6649,6655,913, $ua, '13684-5222-17183-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081018_092ES2_61';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_081105_093ES2_61';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba G810/ ver RL1_20090425_096IL1_61/ Windows CE; IE Mobile 7.11; Mozilla/4.0';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5.1; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; Toshiba  G810/RL1_080825_083ES2_61';
+  $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,13185,913, $ua, '12224-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Toshiba G910_G920';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.0';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(382394,16068,82738,913, $ua, '16988-5448-22272-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Windows Phone Search (Windows Phone OS 7.10;FujitsuToshibaMobileCommun;IS12T;7.10;8107)';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(664657,406624,545177,913, $ua, '16968-15924-18418-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Toshiba_TG01 PPC; 480x800';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(156748,16068,13185,913, $ua, '13684-5448-22270-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
   }
-  $ua = 'Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)  PPC; 240x320; Toshiba  G810';
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
   $ns = E94($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(132071,16068,5635,913, $ua, '12224-5448-4808-18092');
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.3; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.2.9.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pixi/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0(webOS/1.4.5.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pixi/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(443888,439929,439084,913, $ua, '16941-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.0; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.2; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.3.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.3.5; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-CA) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; fr-CA) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; es-MX) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.1.1; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.3.5.1; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; it-IT) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; es-MX) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; es-MX) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.1; U; en-CA) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-US) AppleWebKit/532.2 (KHTML	 like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(439012,439929,439084,913, $ua, '16940-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.1; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.3; U; en-US) AppleWebKit/525.27.1 (KHTML, like Gecko) Version/1.0 Safari/525.27.1 Desktop/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; en-IE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.5; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; de-DE) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.1; U; en-GB) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; es-ES) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.2; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.2; U; zh-CN) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160UNA/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/1.4.0; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.1; U; en-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 P160U/1.0';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
+  }
+  $ua = 'Mozilla/5.0 (webOS/2.1.0; U; es-US) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.2';
+  $ns = E94($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,439929,439084,913, $ua, '15364-18187-18175-18092');
   }
   return $dl;
 }

@@ -44,7 +44,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'NGM_Vanity /ObigoInternetBrowser/QO3C Profile/MIDP2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -53,7 +53,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'Duplii/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -62,7 +62,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'Beetel-TD590/S108 LMP/LML Release/2010.08.16 Profile/MIDP2.0 Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -71,16 +71,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
-  }
-  $ua = 'ofile/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'OGO-O78/Obigo WapBrowser 2.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -89,7 +80,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'TMN/1.0/G7002/SW1.0.0/WAP2.0/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -98,16 +89,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
-  }
-  $ua = 'Beetel GT415/2.0 (5.0614.0) NucleusOS/1.0 Profile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'Karbonn-K400/0.1 NXP/1.0 Release/08.10.2009 Browser/mBrowser4.0 Profile/MIDP-1.0 Configration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
@@ -116,7 +98,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)';
   $ns = E42($useragent, $ua, $ls);
@@ -125,7 +107,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'Profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -134,16 +116,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
-  }
-  $ua = 'Lava-A9/S016 LMP/LML Release/2010.03.04 Profile/MIDP2.0 Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'Profile/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -152,7 +125,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
   $ua = 'SJT_E861A/wap2.0Profile/MIDP-1.0/2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
@@ -161,16 +134,61 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'K-TouchT580_TD/1.0 Android/2.3 Release/02.01.2012 Browser/WAP2.0 appleWebkit/534.30';
+  $ua = 'K-TouchT789_TD/1.0 Android 4.0.3 Release/10.01.2012 Browser/WAP2.0 appleWebkit/534.30';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(44218,576960,576120,913, $ua, '15364-18066-18062-18092');
+  }
+  $ua = 'K-TouchT6_TD/1.0 Android 4.0.3 Release/10.01.2012 Browser/WAP2.0 appleWebkit/534.30';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,576960,576120,913, $ua, '15364-18066-18062-18092');
+  }
+  $ua = 'AppEngine-Google; (+http://code.google.com/appengine; appid: tmobile-internet)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,272292,272298,913, $ua, '15364-7480-18245-18092');
+  }
+  $ua = 'AppEngine-Google; (+http://code.google.com/appengine; appid: tmobile-w4z)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,272292,272298,913, $ua, '15364-7480-18245-18092');
+  }
+  $ua = 'AppEngine-Google; (+http://code.google.com/appengine; appid: vi-mobile)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,272292,272298,913, $ua, '15364-7480-18245-18092');
+  }
+  $ua = 'AppEngine-Google; (+http://code.google.com/appengine; appid: s~google.com:mobile-checker)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,272292,272298,913, $ua, '15364-7480-18245-18092');
   }
   $ua = 'MASTONE G3_TD/1.0 Android/2.3 Release/4.20.2012 Browser/AppleWebKit533.1 Profile/MIDP-2.0';
   $ns = E42($useragent, $ua, $ls);
@@ -179,16 +197,25 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
   }
-  $ua = 'TD110/Screen-240x320';
+  $ua = 'sprd-B.S-mobile/1.0 Linux/Apps_2.6.32.9-perf Android/2.3.9 Release/11.19.2012 Browser/AppleWebKit533.1 (KHTML, like Gecko) Mozilla/5.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(161500,163401,208843,913, $ua, '18587-18588-18589-18092');
+    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+  }
+  $ua = 'DESAY_TS908_CMCC_TD/1.0 Android/2.3.7 (LinuxOS 2.6.35.7) Release/04.13.2012 Browser/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
   }
   $ua = 'BEETmobile Hotspot/1.0.2 (Android 4.0.4, GT-P3100)';
   $ns = E42($useragent, $ua, $ls);
@@ -197,7 +224,16 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(748265,644518,644525,913, $ua, '15919-18066-18062-18092');
+    $dl[] = array(730184,576960,576120,913, $ua, '15919-18066-18062-18092');
+  }
+  $ua = 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.0.4;dev=l0;devm=LG-MS770;man=lge;brw=Android;shwd=320x480;shwa=320x455;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(941814,576960,576120,913, $ua, '18509-18066-18062-18092');
   }
   $ua = 'MAUI WAP Browser';
   $ns = E42($useragent, $ua, $ls);
@@ -206,7 +242,16 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
+  }
+  $ua = 'MAUI_WAP_Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'MAUI WAP Browser, MAUI WAP Browser';
   $ns = E42($useragent, $ua, $ls);
@@ -215,7 +260,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'MAUI WAP Browser/';
   $ns = E42($useragent, $ua, $ls);
@@ -224,7 +269,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'MAUI WAP Browser/WAP2.0 Profile/MT6253/QCIF';
   $ns = E42($useragent, $ua, $ls);
@@ -233,7 +278,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'MAUI WAP Browser/WAP2.0 Profile/MT6253/QVGA';
   $ns = E42($useragent, $ua, $ls);
@@ -242,7 +287,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'M70/Q03C MAUI-browser/MIDP2.0/CLDC1.1/Screen-240X400';
   $ns = E42($useragent, $ua, $ls);
@@ -251,7 +296,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'D66/Q03C MAUI-browser/Screen-240X320';
   $ns = E42($useragent, $ua, $ls);
@@ -260,70 +305,43 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'MQQBrowser/1.3 (MAUI WAP Browser)';
+  $ua = 'TELSDA55_11B_HW (MRE\\2.3.00(2048) resolution\\X chipset\\MT6255 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) G68_LS_F2_EN_X Release/2012.08.30 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mauie800) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'TELSDA55_11B_HW (MRE\\2.3.00(2048) resolution\\X chipset\\MT6255 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) G68_LS_WIFI_TV_EN_X Release/2012.08.16 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'TELSDA55_11B_HW (MRE\\2.3.00(2048) resolution\\X chipset\\MT6255 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) G68_LS_EN_X Release/2012.08.06 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'SYM_FT04i_MAUI WAP Browser';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mauie800) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
   $ua = 'CKT50_COSMOS_11B_HW (MRE\\2.5.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) SLT-S04A_UTL_L2EN_202_X Release/2013.01.06 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
@@ -332,718 +350,43 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,223089,913, $ua, '18088-17017-18246-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'MIO8390/R41 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
+  $ua = 'DEWAV50_COSMOS_SLIM_11B_HW (MRE/3.0.00(2500);MAUI/_DL32571_INTEX-PLAYER_L101;BDATE/2013/03/19 17:43;LCD/X;CHIP/MT6250;KEY/Reduced;TOUCH/1;CAMERA/0;SENSOR/0;DEV/DEWAV50_COSMOS_SLIM_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;) L3257_DL32571_INTEX-PLAYER_L101 Release/2013.03.19 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,16068,85332,913, $ua, '18088-5448-4578-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'jBrowser/SP/1.0 MIO8380/R44 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)';
+  $ua = 'CKT50_COSMOS_11B_HW (MRE\\2.5.00(3072) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) SLT-S04A_UTL_L2EN_206_X Release/2013.04.10 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,16068,85332,913, $ua, '18088-5448-4578-18092');
+    $dl[] = array(28561,27598,219871,913, $ua, '18088-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.2;dev=vanquish;devm=DROID RAZR HD;man=motorola;brw=Android;shwd=720x1184;shwa=720x1134;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
+    $dl[] = array(940094,610861,610868,913, $ua, '18472-18111-18112-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.1;dev=qinara;devm=MB886;man=motorola;brw=Android;shwd=720x1184;shwa=720x1134;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui browser) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar platform) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; mstar) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,1022024,913, $ua, '18088-17017-18693-18092');
-  }
-  $ua = 'MyphoneTW1DUO/MTKRelease/2011/02/25Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneTW8DUO/MTKRelease/2011/03/03Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneQW29 DUO/MTKRelease/MAY-27-2011Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneQP29Duo/MTKRelease/NOV-11-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneT18TV/MTKRelease/2011/09/19Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneQW29 DUO/MTKRelease/DEC-18-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneT23 Duo/MTKRelease/JULY-08-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'MyphoneTW28Duo/MTK Release/Feb-14-2012Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,231300,913, $ua, '15364-17017-4780-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,942813,913, $ua, '18088-17017-19807-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,942813,913, $ua, '18088-17017-19807-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mstar platform) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,942813,913, $ua, '18088-17017-19807-18092');
-  }
-  $ua = 'Techfaith Moffett/2.0 WAP2.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,16068,15131,913, $ua, '18088-5448-17173-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; j2me) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; j2me) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar platform) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar platform) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; mstar) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; mstar) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,876851,913, $ua, '18088-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; opera) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; spice) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; generic) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; opera) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; j2me) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; tcl-c616) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; spice) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mozilla) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sunmicro) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sunmicro) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; generic) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; karbonn) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jbed-fastbcc) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mozilla) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,876851,913, $ua, '15364-17017-18529-18092');
-  }
-  $ua = 'Mozilla/5.0 LG-GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(137170,4620,16074,913, $ua, '12290-17483-17470-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; tcl-c616) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; opera) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; karbonn) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile TRUSTED/1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zte-p107a20(propus)) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lava-a10) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8003) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,1022024,913, $ua, '15364-17017-18693-18092');
-  }
-  $ua = 'User-Agent:LG-LX600 Polaris/6.0 MMP/2.0 Profilie/MIDP-2.1 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(301635,4620,168272,913, $ua, '12417-17483-4628-18092');
-  }
-  $ua = 'N285/P130D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
-  }
-  $ua = 'ZMTFTV20/R01 Browser/Obigo/Q03C/WAP2.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
-  }
-  $ua = 'R228/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
-  }
-  $ua = 'Vega/P130D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,119194,913, $ua, '15364-17017-3807-18092');
-  }
-  $ua = 'POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP) MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1 Novarra-Vision/8.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(304498,108321,168272,913, $ua, '12514-5208-4628-18092');
-  }
-  $ua = 'POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP) MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(304498,108321,168272,913, $ua, '12514-5208-4628-18092');
-  }
-  $ua = 'POLARIS/6.01(BREW 3.1.5;U;en-us;LG;LX265;POLARIS/6.01/WAP;)MMP/2.0 profile/MIDP-201 Configuration /CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(304498,108321,168272,913, $ua, '12514-5208-4628-18092');
-  }
-  $ua = 'WinWAP/4.2 (Win32) WinWAP-X/4.2.0.290';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,293497,387794,913, $ua, '15364-17350-3692-18092');
-  }
-  $ua = 'WinWAP-SPBE/1.3 (1.3.0.2;Win32)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,293497,387794,913, $ua, '15364-17350-3692-18092');
-  }
-  $ua = 'WinWAP/3.x (3.x.x.xx; Win32) (Google WAP Proxy/1.0)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,293497,387794,913, $ua, '15364-17350-3692-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile TRUSTED/1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,223089,913, $ua, '15364-17017-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile /AJSC/1.5';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,223089,913, $ua, '15364-17017-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,223089,913, $ua, '15364-17017-18246-18092');
-  }
-  $ua = 'CoolPad8811_CMCC_TD/1.0 Android/2.2 Release/4.10.2011 Browser/WAP 2.0 (Apple Webkit/530.18)';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,101053,920,913, $ua, '15364-17979-3508-18092');
-  }
-  $ua = 'MAUI_WAP_Browser/UCWEB7.9.0.114/109/33068';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,323014,913, $ua, '18088-17017-17338-18092');
-  }
-  $ua = 'MAUI_WAP_Browser/UCWEB7.9.0.114/109/33224';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,22118,323014,913, $ua, '18088-17017-17338-18092');
+    $dl[] = array(959928,610861,610868,913, $ua, '18505-18111-18112-18092');
   }
   $ua = 'T23 WIFI Duo/MTKRelease/2011/07/01Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
@@ -1052,70 +395,421 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,231300,913, $ua, '18088-17017-4780-18092');
+    $dl[] = array(28561,27598,235474,913, $ua, '18088-17017-4780-18092');
   }
-  $ua = 'W186/Qualcom6246/X/NetFront/3.3Profile/MIDP-2.0Configuration/CLDC1.1';
+  $ua = 'label=ypmobapp;anv=YPmobile4.0.1;os=Android 4.1.2;dev=oscar;devm=PantechP8010;man=PANTECH;brw=Android;shwd=540x888;shwa=540x851;cs=yes;is=yes;as=yes;vs=yes;jss=yes;ls=DAM;';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,36475,913, $ua, '15364-17017-3601-18092');
+    $dl[] = array(1061001,610861,610868,913, $ua, '20399-18111-18112-18092');
   }
-  $ua = 'MicromaxX263/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; opera) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(712450,97942,223089,913, $ua, '20064-22784-18246-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
   }
-  $ua = 'MicromaxQ50/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(586137,97942,223089,913, $ua, '16591-22784-18246-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk770i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,876851,913, $ua, '15364-17485-18529-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk790i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; j2me) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,876851,913, $ua, '15364-17485-18529-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw880i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; spice) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,876851,913, $ua, '15364-17485-18529-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw350i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; generic) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,876851,913, $ua, '15364-17485-18529-18092');
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; opera) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mozilla) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mstar platform) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sunmicro) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sunmicro) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; generic) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; karbonn) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; bird) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jbed-fastbcc) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; 11a wbg3505a_0302) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; maui browser) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jbed) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1033046,913, $ua, '18088-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui browser) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar platform) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; mstar) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile /AJSC/1.5';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; karbonn) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile TRUSTED/1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile TRUSTED/1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile TRUSTED/1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile,';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; Pt-BR; mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui wap browser) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1267644,913, $ua, '18088-17017-18693-18092');
+  }
+  $ua = 'Techfaith Moffett/2.0 WAP2.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,6631,11662,913, $ua, '18088-5448-17173-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1124,7 +818,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1133,7 +827,16 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; maui) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1142,7 +845,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1151,7 +854,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1160,7 +863,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0';
   $ns = E42($useragent, $ua, $ls);
@@ -1169,16 +872,16 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mstar platform) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
   $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1187,709 +890,331 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,942813,913, $ua, '15364-17017-19807-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk770i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; maui browser) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,1022024,913, $ua, '15364-17485-18693-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw350i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; mstar) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,1022024,913, $ua, '15364-17485-18693-18092');
+    $dl[] = array(28561,27598,1138038,913, $ua, '18088-17017-19807-18092');
   }
-  $ua = 'MicromaxX210/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-cn; maui) U2/1.0.0 UCBrowser/8.6.1.237 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(707748,97942,223089,913, $ua, '20065-22784-18246-18092');
+    $dl[] = array(28561,27598,1016432,913, $ua, '18088-17017-18527-18092');
   }
-  $ua = 'MicromaxX210+/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 LG-GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(707748,97942,223089,913, $ua, '20065-22784-18246-18092');
+    $dl[] = array(121138,4712,54471,913, $ua, '12290-17483-17470-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233w) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = '/media/sandisk/af_mobile/user_agent/iphone';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,876851,913, $ua, '13602-17484-18529-18092');
+    $dl[] = array(44218,75464,54471,913, $ua, '15364-17779-17470-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233w) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneTW1DUO/MTKRelease/2011/02/25Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,876851,913, $ua, '13602-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneTW8DUO/MTKRelease/2011/03/03Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,876851,913, $ua, '13602-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'MyphoneQW29 DUO/MTKRelease/MAY-27-2011Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,876851,913, $ua, '13602-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'MicromaxX288/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'MyphoneQP29Duo/MTKRelease/NOV-11-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(786299,97942,223089,913, $ua, '20039-22784-18246-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'MicromaxX279/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
+  $ua = 'MyphoneT18TV/MTKRelease/2011/09/19Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(969028,97942,854048,913, $ua, '20051-22784-21795-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233a) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'MyphoneQW29 DUO/MTKRelease/DEC-18-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,876851,913, $ua, '16003-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233a) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneT23 Duo/MTKRelease/JULY-08-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,876851,913, $ua, '16003-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneTW28Duo/MTK Release/Feb-14-2012Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,876851,913, $ua, '16003-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'MyPhoneB12 Duo/MTKRelease/V2.0 MAY-14-2010Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,876851,913, $ua, '16003-17484-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'MicromaxX285/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'MyPhoneT28TVDuo/MTKRelease/2011/09/29Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(623723,97942,223089,913, $ua, '16530-22784-18246-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gx300) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneTW1Duo/MTKRelease/2011/11/24Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-lg900g) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneTW29TVDuo/MTK Release/Feb-20-2012Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-c310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyPhoneB16TV Duo/MTKRelease/V0.2 AUG-22-2011Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-a350) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyPhoneB16TV Duo/MTKRelease/V4 AUG-26-2011Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-lg800g) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MyphoneQW30Duo/MTKRelease/FEB-22-2011Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(44218,432044,235474,913, $ua, '15364-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-p520) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'BREW-Applet/0xX (BREW/3.1.5.20; DeviceId: 600; Lang: zhcn; Profile/MIDP-2.0_Configuration/CLDC-1.1) ucweb-squid';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,876851,913, $ua, '15364-17483-18529-18092');
+    $dl[] = array(28561,85975,54471,913, $ua, '18088-5208-17470-18092');
   }
-  $ua = 'MicromaxX600/MIDP2.0/CLDC1.1/Screen-240X400';
+  $ua = 'User-Agent:LG-LX600 Polaris/6.0 MMP/2.0 Profilie/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(485673,97942,16074,913, $ua, '16600-22784-17470-18092');
+    $dl[] = array(276978,4712,261992,913, $ua, '12417-17483-4628-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.95 (Android - 613a2bd8-2631-de07-5e7a-18beabe2b3e8) tmobile_wispr1';
+  $ua = '/media/sandisk/af_mobile/user_agent/ipad';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(302598,75464,187068,913, $ua, '15767-17779-18589-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - 5d50e2ea-4b02-7761-66f6-08cbe206b9f0) tmobile_wispr1';
+  $ua = 'POLARIS/6.01 (BREW 3.1.5; U; en-us; LG; LX265; POLARIS/6.01/WAP) MMP/2.0 profile/MIDP-2.1 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(280799,85975,261992,913, $ua, '12514-5208-4628-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - d33e4809-2b8a-b154-7b15-110d99206abe) tmobile_wispr1';
+  $ua = 'POLARIS/6.01(BREW 3.1.5;U;en-us;LG;LX265;POLARIS/6.01/WAP;)MMP/2.0 profile/MIDP-201 Configuration /CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(280799,85975,261992,913, $ua, '12514-5208-4628-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.130 (Android - 7fc7d92a-cbd4-6673-743d-491bbba26a4d) tmobile_wispr1';
+  $ua = 'WinWAP/4.2 (Win32) WinWAP-X/4.2.0.290';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,268705,366875,913, $ua, '15364-17350-3692-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.130 (Android - eeb78ca5-d1ea-1102-249c-4bb9e89b7acc) tmobile_wispr1';
+  $ua = 'WinWAP-SPBE/1.3 (1.3.0.2;Win32)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,268705,366875,913, $ua, '15364-17350-3692-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.130 (Android - f8f26e20-b4f4-fc6f-b49c-51d8d28a3a54) tmobile_wispr1';
+  $ua = 'WinWAP/3.x (3.x.x.xx; Win32) (Google WAP Proxy/1.0)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,268705,366875,913, $ua, '15364-17350-3692-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - 468f9693-1dd0-806e-1322-3d7a85b63d14) tmobile_wispr1';
+  $ua = 'CKT50_COSMOS_11B_HW (MRE\\2.5.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) RECTANGLE-S03A_FLY_L2EN_206_X Release/2012.10.26 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,219871,913, $ua, '15364-17017-18246-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - 9c11ad40-0a2f-5670-ddb4-ebd283e5cef2) tmobile_wispr1';
+  $ua = 'CKT50_COSMOS_11B_HW (MRE\\2.5.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) COCOA-S04A_FLY_L2EN_205_X Release/2012.10.15 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,219871,913, $ua, '15364-17017-18246-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - 5a9b0370-8d09-1585-0703-16db7111fdf8) tmobile_wispr1';
+  $ua = 'J2TECH50_FTE_6464_11B_HW (MRE\\3.0.00(3096) resolution\\X chipset\\MT6250 touch\\0 tpannel\\0 camera\\1 gsensor\\0 keyboard\\normal) Fly_MV264_V12 Release/2012.10.16 WAP Browser/MAUI (HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,219871,913, $ua, '15364-17017-18246-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.130 (Android - 000fd168-83cc-78da-346b-7c132cf5a1ae) tmobile_wispr1';
+  $ua = 'J2TECH50_FTE_6464_11B_HW (MRE\\3.0.00(3096) resolution\\X chipset\\MT6250 touch\\0 tpannel\\0 camera\\1 gsensor\\0 keyboard\\normal) Fly_MV264_V12 Release/2012.10.29 WAP Browser/MAUI (HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,219871,913, $ua, '15364-17017-18246-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.130 (Android - c65fd1ff-999d-a100-39d2-11c5139a049d) tmobile_wispr1';
+  $ua = 'N285/P130D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,98811,913, $ua, '15364-17017-3807-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.125_met (Android - 2ae10275-b74f-a7c5-ec52-ff0f89ed4818) tmobile_wispr1';
+  $ua = 'ZMTFTV20/R01 Browser/Obigo/Q03C/WAP2.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,98811,913, $ua, '15364-17017-3807-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - 671a80e2-00db-3dbe-39ec-c247c7ebcb1d) tmobile_wispr1';
+  $ua = 'R228/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
+    $dl[] = array(44218,27598,98811,913, $ua, '15364-17017-3807-18092');
   }
-  $ua = 'Devicescape-Agent/4.0.136 (Android - X-0000-0000-0000-X) tmobile_wispr1';
+  $ua = 'Vega/P130D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
-  }
-  $ua = 'Devicescape-Agent/4.0.137 (Android - X-0000-0000-0000-X) tmobile_wispr1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(37484,101053,16074,913, $ua, '18088-17979-17470-18092');
-  }
-  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Cherry_W7_T712V_M01_S10_X Release/2012.10.25 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(1000671,751860,223089,913, $ua, '22787-22791-18246-18092');
-  }
-  $ua = 'TECHAIN50_11B_HW (MRE/3.0.00(2500);MAUI/y_W7_T712V_M01_S13_X;BDATE/2013/01/30 15:29;LCD/X;CHIP/MT6250;KEY/Reduced;TOUCH/1;CAMERA/0;SENSOR/0;DEV/TECHAIN50_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/00) Cherry_W7_T712V_M01_S13_X Release/2013.01.30 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(1000671,751860,223089,913, $ua, '22787-22791-18246-18092');
-  }
-  $ua = 'MicromaxX292/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(931814,97942,854048,913, $ua, '20037-22784-21795-18092');
-  }
-  $ua = 'MicromaxX454/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(907534,97942,854048,913, $ua, '20030-22784-21795-18092');
-  }
-  $ua = 'MicromaxX276/MstarBrowser1.0/MIDP2.0Congiguration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(853976,97942,854048,913, $ua, '20031-22784-21795-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-lg900g) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,4620,1022024,913, $ua, '15364-17483-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,4620,1022024,913, $ua, '15364-17483-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-a350) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,4620,1022024,913, $ua, '15364-17483-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gx300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,4620,1022024,913, $ua, '15364-17483-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-p520) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,4620,1022024,913, $ua, '15364-17483-18693-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,876851,913, $ua, '11945-17484-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,876851,913, $ua, '11945-17484-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,876851,913, $ua, '11945-17484-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,876851,913, $ua, '11945-17484-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,876851,913, $ua, '11945-17484-18529-18092');
-  }
-  $ua = 'Panama-orange/Obigo Browser/Q05A Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,114492,913, $ua, '15364-17017-3534-18092');
-  }
-  $ua = 'LENOVO-P60/(2009.11.24) S004/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,58463,58470,913, $ua, '15364-17811-17810-18092');
-  }
-  $ua = 'LENOVO-A332/(2009.12.16) S003/WAP2.0 Profile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,58463,58470,913, $ua, '15364-17811-17810-18092');
-  }
-  $ua = 'LENOVO-A312/(2009.12.09) S002/WAP2.0 Profile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,58463,58470,913, $ua, '15364-17811-17810-18092');
-  }
-  $ua = 'LENOVO-P60/(2010.02.23) S005/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,58463,58470,913, $ua, '15364-17811-17810-18092');
-  }
-  $ua = 'Alex-uo/1.0 Qualcom/6290 Release/3.20.2010 Browser/Obigo Q7 Profile/MIDP-2.0 Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(53173,22118,61292,913, $ua, '15364-17017-3499-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(118323,22197,876851,913, $ua, '12142-17485-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(118323,22197,876851,913, $ua, '12142-17485-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(118323,22197,876851,913, $ua, '12142-17485-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330t) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(186360,4620,876851,913, $ua, '14545-17483-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(186360,4620,876851,913, $ua, '14545-17483-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330t) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(186360,4620,876851,913, $ua, '14545-17483-18529-18092');
-  }
-  $ua = 'MicromaxX265/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(503974,97942,223089,913, $ua, '16703-22784-18246-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(98885,18873,942813,913, $ua, '16003-17484-19807-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233a) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(98885,18873,942813,913, $ua, '16003-17484-19807-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176052,18873,1022024,913, $ua, '13602-17484-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(176052,18873,1022024,913, $ua, '13602-17484-18693-18092');
-  }
-  $ua = 'MicromaxX324/MstarBrowser1.0/MIDP2.0Congiguration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(987695,97942,854048,913, $ua, '20057-22784-21795-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t300) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(157613,4620,876851,913, $ua, '12856-17483-18529-18092');
-  }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t300) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(157613,4620,876851,913, $ua, '12856-17483-18529-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,1022024,913, $ua, '11945-17484-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,1022024,913, $ua, '11945-17484-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,1022024,913, $ua, '11945-17484-18693-18092');
-  }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(81730,18873,1071164,913, $ua, '11945-17484-22261-18092');
-  }
-  $ua = 'MicromaxX278/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(943706,97942,854048,913, $ua, '20038-22784-21795-18092');
-  }
-  $ua = 'R260/P107D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(306787,22118,119194,913, $ua, '12773-17017-3807-18092');
+    $dl[] = array(44218,27598,98811,913, $ua, '15364-17017-3807-18092');
   }
   $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1898,7 +1223,25 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,1071164,913, $ua, '15364-17017-22261-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
   $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1907,7 +1250,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,1071164,913, $ua, '15364-17017-22261-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
   $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
@@ -1916,538 +1259,637 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,1071164,913, $ua, '15364-17017-22261-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'MicromaxQ22/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(479451,97942,223089,913, $ua, '18490-22784-18246-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'MicromaxX266/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(504479,97942,223089,913, $ua, '16566-22784-18246-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,876851,913, $ua, '15302-17485-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,876851,913, $ua, '15302-17485-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,876851,913, $ua, '15302-17485-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromax) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/9.0.0.295 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,1022024,913, $ua, '15364-22784-18693-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq80) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,1022024,913, $ua, '15364-22784-18693-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx510) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; maui) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,1022024,913, $ua, '15364-22784-18693-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx510) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,876851,913, $ua, '15364-22784-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq55) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui browser) U2/1.0.0 UCBrowser/9.0.0.295 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,876851,913, $ua, '15364-22784-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromax) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,876851,913, $ua, '15364-22784-18529-18092');
+    $dl[] = array(28561,27598,1390243,913, $ua, '18088-17017-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq80) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mauie800) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,876851,913, $ua, '15364-22784-18529-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'MicromaxX274/Q03C MAUI-browser/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mauie800) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(856122,97942,223089,913, $ua, '20029-22784-18246-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq5) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; mauie800) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335880,97942,876851,913, $ua, '16871-22784-18529-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq5) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; mauie800) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335880,97942,876851,913, $ua, '16871-22784-18529-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'MicromaxQ7/MIDP2.0/CLDC1.1/Screen-320X240';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; mauie800) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97949,97942,16074,913, $ua, '16808-22784-17470-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; ar-sa; mauie800) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(205742,22197,876851,913, $ua, '14060-17485-18529-18092');
+    $dl[] = array(510130,27598,1033046,913, $ua, '23545-17017-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'BREW-Applet/0xX (BREW/3.1.5.20; DeviceId: Xe; Lang: hi; Profile/MIDP-2.0_Configuration/CLDC-1.1) ucweb-squid';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(205742,22197,876851,913, $ua, '14060-17485-18529-18092');
+    $dl[] = array(44218,85975,54471,913, $ua, '15364-5208-17470-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(205742,22197,876851,913, $ua, '14060-17485-18529-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(186360,4620,1022024,913, $ua, '14545-17483-18693-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(186360,4620,1022024,913, $ua, '14545-17483-18693-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'MicromaxX560/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(589315,97942,223089,913, $ua, '16593-22784-18246-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'MicromaxX550/MIDP2.0/CLDC1.1/Screen-240X400';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui browser) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(502606,97942,16074,913, $ua, '16609-22784-17470-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'Micromax X395/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mstar platform) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(602300,97942,223089,913, $ua, '16558-22784-18246-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; maui) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81730,18873,942813,913, $ua, '11945-17484-19807-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; maui) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81730,18873,942813,913, $ua, '11945-17484-19807-18092');
+    $dl[] = array(28561,27598,1464974,913, $ua, '18088-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81730,18873,942813,913, $ua, '11945-17484-19807-18092');
+    $dl[] = array(510130,27598,1267644,913, $ua, '23545-17017-18693-18092');
   }
-  $ua = 'MyPhoneTW26-3D DUO/MTKRelease/2012/02/15Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(906526,22118,231300,913, $ua, '22799-17017-4780-18092');
+    $dl[] = array(510130,27598,1267644,913, $ua, '23545-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq7) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97949,97942,876851,913, $ua, '16808-22784-18529-18092');
+    $dl[] = array(510130,27598,1267644,913, $ua, '23545-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq7) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97949,97942,876851,913, $ua, '16808-22784-18529-18092');
+    $dl[] = array(510130,27598,1267644,913, $ua, '23545-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; ar-SA; mauie800) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,1022024,913, $ua, '16003-17484-18693-18092');
+    $dl[] = array(510130,27598,1267644,913, $ua, '23545-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98885,18873,1022024,913, $ua, '16003-17484-18693-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'MicromaxX368/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(906382,97942,223089,913, $ua, '20033-22784-18246-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'V6202/WAP2.0 Novarra-Vision/8.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148042,22118,16074,913, $ua, '12491-17017-17470-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'V6202/WAP2.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(148042,22118,16074,913, $ua, '12491-17017-17470-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'MicromaxX259/Q03C MAUI-Browser Profile/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,231300,913, $ua, '15364-22784-4780-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,942813,913, $ua, '13602-17484-19807-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233w) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; karbonn) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,942813,913, $ua, '13602-17484-19807-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; opera) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile TRUSTED/1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335880,97942,1022024,913, $ua, '16871-22784-18693-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'MicromaxQ80/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; Pt-BR; mozilla) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(753868,97942,223089,913, $ua, '16545-22784-18246-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw580i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8000) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(93472,22197,876851,913, $ua, '11941-17485-18529-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw580i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile TRUSTED/1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(93472,22197,876851,913, $ua, '11941-17485-18529-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx600) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile TRUSTED/1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(485673,97942,876851,913, $ua, '16600-22784-18529-18092');
+    $dl[] = array(44218,27598,1510306,913, $ua, '15364-17017-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx600) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ua = 'CoolPad8811_CMCC_TD/1.0 Android/2.2 Release/4.10.2011 Browser/WAP 2.0 (Apple Webkit/530.18)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(485673,97942,876851,913, $ua, '16600-22784-18529-18092');
+    $dl[] = array(44218,79982,926,913, $ua, '15364-17979-3508-18092');
   }
-  $ua = 'Micromax X269/Q03C MAUI-Browser Profile/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Cherry_W7_T712V_M01_S10_X Release/2012.10.25 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1015434,97942,231300,913, $ua, '20059-22784-4780-18092');
+    $dl[] = array(1238036,773096,219871,913, $ua, '22787-22791-18246-18092');
   }
-  $ua = 'MicromaxQ1+/Q03C MAUI-browser/MIDP-2.0';
+  $ua = 'TECHAIN50_11B_HW (MRE/3.0.00(2500);MAUI/y_W7_T712V_M01_S13_X;BDATE/2013/01/30 15:29;LCD/X;CHIP/MT6250;KEY/Reduced;TOUCH/1;CAMERA/0;SENSOR/0;DEV/TECHAIN50_11B_HW;WAP Browser/MAUI (HTTP PGDL;HTTPS);GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/00) Cherry_W7_T712V_M01_S13_X Release/2013.01.30 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(483442,97942,223089,913, $ua, '16838-22784-18246-18092');
+    $dl[] = array(1238036,773096,219871,913, $ua, '22787-22791-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Cherry_W7_T712V_M01_S06_X Release/2012.09.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,1022024,913, $ua, '15302-17485-18693-18092');
+    $dl[] = array(1238036,773096,219871,913, $ua, '22787-22791-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t325) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'zte-N295/P107A20/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(379995,4620,876851,913, $ua, '14532-17483-18529-18092');
+    $dl[] = array(171417,101226,98811,913, $ua, '13518-22839-3807-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk530i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX263/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(78563,22197,876851,913, $ua, '13206-17485-18529-18092');
+    $dl[] = array(650336,291421,219871,913, $ua, '20064-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX292/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(586137,97942,1022024,913, $ua, '16591-22784-18693-18092');
+    $dl[] = array(1120964,291421,994482,913, $ua, '20037-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jblend) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ua = 'MicromaxX292i/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(985591,22118,876851,913, $ua, '22114-17017-18529-18092');
+    $dl[] = array(1120964,291421,994482,913, $ua, '20037-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jblend) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1, /HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ua = 'MicromaxX279/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(985591,22118,876851,913, $ua, '22114-17017-18529-18092');
+    $dl[] = array(1181597,291421,994482,913, $ua, '20051-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gu220) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(149857,4620,876851,913, $ua, '13365-17483-18529-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; generic) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(78563,22197,1022024,913, $ua, '13206-17485-18693-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'MicromaxQ5/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335880,97942,223089,913, $ua, '16871-22784-18246-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq50) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(586137,97942,876851,913, $ua, '16591-22784-18529-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'R236/P130D20/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(349956,22118,119194,913, $ua, '13016-17017-3807-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; Pt-BR; mozilla) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97949,97942,1022024,913, $ua, '16808-22784-18693-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; karbonn) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(379995,4620,1022024,913, $ua, '14532-17483-18693-18092');
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; maui) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile TRUSTED/1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; 11a h700tecno) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; bird) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,1464974,913, $ua, '15364-17017-22881-18092');
+  }
+  $ua = 'W186/Qualcom6246/X/NetFront/3.3Profile/MIDP-2.0Configuration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,37321,913, $ua, '15364-17017-3601-18092');
+  }
+  $ua = 'MicromaxQ50/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522270,291421,219871,913, $ua, '16591-22784-18246-18092');
+  }
+  $ua = 'MicromaxX324/MstarBrowser1.0/MIDP2.0Congiguration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1212461,291421,994482,913, $ua, '20057-22784-21795-18092');
+  }
+  $ua = 'Micromax X324i/MstarBrowser1.0/MIDP-2.0 Configuration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1212461,291421,994482,913, $ua, '20057-22784-21795-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65505,11583,1267644,913, $ua, '11945-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65505,11583,1267644,913, $ua, '11945-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65505,11583,1267644,913, $ua, '11945-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; ?en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65505,11583,1267644,913, $ua, '11945-17484-18693-18092');
   }
   $ua = 'G607_MAIN_V1.0 (MRE\\2.5.00(2072) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) INTEX_TURBO_3.5_V07_INDIAN Release/2013.01.04 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
@@ -2456,862 +1898,871 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1068676,22118,223089,913, $ua, '22792-17017-18246-18092');
+    $dl[] = array(1381194,27598,219871,913, $ua, '22792-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx78) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'G607_MAIN_V1.0 (MRE\\2.5.00(2072) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) INTEX_TURBO_3.5_V08_INDIAN Release/2013.03.08 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(993977,97942,876851,913, $ua, '20069-22784-18529-18092');
+    $dl[] = array(1381194,27598,219871,913, $ua, '22792-17017-18246-18092');
   }
-  $ua = 'MicromaxX283/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'G607_MAIN_V1.0 (MRE\\2.5.00(2072) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\reduced) INTEX_TURBO_3.5_V10_INDIAN Release/2013.04.26 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(982097,97942,223089,913, $ua, '20048-22784-18246-18092');
+    $dl[] = array(1381194,27598,219871,913, $ua, '22792-17017-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(485673,97942,1022024,913, $ua, '16600-22784-18693-18092');
+    $dl[] = array(130997,27598,1267644,913, $ua, '17968-17017-18693-18092');
   }
-  $ua = 'MicromaxX262/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(751571,97942,223089,913, $ua, '20317-22784-18246-18092');
+    $dl[] = array(130997,27598,1267644,913, $ua, '17968-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX210/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,942813,913, $ua, '15302-17485-19807-18092');
+    $dl[] = array(644457,291421,219871,913, $ua, '20065-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX210+/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(149857,4620,1022024,913, $ua, '13365-17483-18693-18092');
+    $dl[] = array(644457,291421,219871,913, $ua, '20065-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'KKT38_WAP_Browser';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273324,4620,1022024,913, $ua, '14568-17483-18693-18092');
+    $dl[] = array(1235193,518812,54471,913, $ua, '23024-22843-17470-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'LAVA50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) LAVA_DISCOVER135_S208_X Release/2012.12.18 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335880,97942,942813,913, $ua, '16871-22784-19807-18092');
+    $dl[] = array(28561,518812,219871,913, $ua, '18088-22843-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mot-ex223) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'LAVA50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) LAVA_DISCOVER132_S210_X Release/2012.12.14 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,24149,876851,913, $ua, '15364-17486-18529-18092');
+    $dl[] = array(28561,518812,219871,913, $ua, '18088-22843-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mot-ex128) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'VSUN50_FTE_11B_HW (MRE/3.0.00(512);MAUI/C11_S422_X;BDATE/2013/06/05 15:05;LCD/X;CHIP/MT6250;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/VSUN50_FTE_11B_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFUN/008;MT) LAVA_C11_S422_X Release/2013.06.05 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,24149,876851,913, $ua, '15364-17486-18529-18092');
+    $dl[] = array(28561,518812,219871,913, $ua, '18088-22843-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'VSUN50_FTE_11B_HW (MRE/3.0.00(512);MAUI/C11_S418_X;BDATE/2013/05/10 13:45;LCD/X;CHIP/MT6250;KEY/Normal;TOUCH/1;CAMERA/1;SENSOR/0;DEV/VSUN50_FTE_11B_HW;WAP Browser/MAUI ();GMOBI/001;MBOUNCE/002;MOMAGIC/003;INDEX/004;SPICEI2I/005;GAMELOFT/006;MOBIM/007;KKFUN/008;MT) LAVA_C11_S418_X Release/2013.05.10 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(186360,4620,942813,913, $ua, '14545-17483-19807-18092');
+    $dl[] = array(28561,518812,219871,913, $ua, '18088-22843-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sgh-f480) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'LAVA50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) LAVA_DISCOVER135_S214_X Release/2013.04.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96358,22118,1022024,913, $ua, '11653-17017-18693-18092');
+    $dl[] = array(28561,518812,219871,913, $ua, '18088-22843-18246-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX288/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(172733,4620,1022024,913, $ua, '12209-17483-18693-18092');
+    $dl[] = array(871612,291421,219871,913, $ua, '20039-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sgh-f480) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX285/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96358,22118,876851,913, $ua, '11653-17017-18529-18092');
+    $dl[] = array(558579,291421,219871,913, $ua, '16530-22784-18246-18092');
   }
-  $ua = 'MicromaxX410/MIDP2.0/CLDC1.1/Screen-240X320';
+  $ua = 'MicromaxX454/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(598189,97942,16074,913, $ua, '16555-22784-17470-18092');
+    $dl[] = array(1081314,291421,994482,913, $ua, '20030-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t310i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX276/MstarBrowser1.0/MIDP2.0Congiguration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(397231,4620,876851,913, $ua, '16024-17483-18529-18092');
+    $dl[] = array(994410,291421,994482,913, $ua, '20031-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-c105) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'MAUI_WAP_Browser/UCWEB7.9.0.114/109/33068';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273324,4620,876851,913, $ua, '14568-17483-18529-18092');
+    $dl[] = array(28561,27598,303588,913, $ua, '18088-17017-17338-18092');
   }
-  $ua = 'MicromaxX1i_R/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'MAUI_WAP_Browser/UCWEB7.9.0.114/109/33224';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(982025,97942,223089,913, $ua, '16886-22784-18246-18092');
+    $dl[] = array(28561,27598,303588,913, $ua, '18088-17017-17338-18092');
   }
-  $ua = 'MyPhoneQTW88TVDUO/MTKRelease/2012/04/17Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
+  $ua = 'Beetel GT415/2.0 (5.0614.0) NucleusOS/1.0 Profile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1006094,22118,231300,913, $ua, '22800-17017-4780-18092');
+    $dl[] = array(44218,321377,54471,913, $ua, '15364-22857-17470-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s365) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; spice) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(276348,4620,1022024,913, $ua, '15732-17483-18693-18092');
+    $dl[] = array(130997,27598,1033046,913, $ua, '17968-17017-18529-18092');
   }
-  $ua = 'dopodT8388/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 IE/6.0 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ua = 'FARSIGHTED50_6464_11B_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\normal) ZEN_P32_Software_V1.2 Release/2013.01.31 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(382250,6649,5635,913, $ua, '17770-5222-4808-18092');
+    $dl[] = array(1431456,1081016,219871,913, $ua, '22826-22828-18246-18092');
   }
-  $ua = 'dopodT8388/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 IE/6.0 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ua = 'FARSIGHTED50_6464_11B_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\normal) ZEN_P32_Software_V1.5 Release/2013.03.01 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(382250,6649,5635,913, $ua, '17770-5222-4808-18092');
+    $dl[] = array(1431456,1081016,219871,913, $ua, '22826-22828-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'FARSIGHTED50_6464_11B_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\normal) ZEN_P32_Software_V1.5 Release/2013.03.01 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 hi-IN';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(172733,4620,876851,913, $ua, '12209-17483-18529-18092');
+    $dl[] = array(1431456,1081016,219871,913, $ua, '22826-22828-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX278/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(78563,22197,942813,913, $ua, '13206-17485-19807-18092');
+    $dl[] = array(1139907,291421,994482,913, $ua, '20038-22784-21795-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonck15i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; j2me) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(243184,22197,1022024,913, $ua, '15875-17485-18693-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'LANIX-LX11/R01/MT53 Browser/2.0/Obigo/Q03C Profile/MIDP-2.0/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; 11a h700tecno) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,142808,119194,913, $ua, '15364-18110-3807-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; t23) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(149857,4620,942813,913, $ua, '13365-17483-19807-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'MicromaxQ55/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(662212,97942,223089,913, $ua, '16874-22784-18246-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-s310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; generic) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380139,4620,876851,913, $ua, '14471-17483-18529-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US;  mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(993977,97942,1022024,913, $ua, '20069-22784-18693-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw580i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8000) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(93472,22197,1022024,913, $ua, '11941-17485-18693-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx368) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; t50) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(906382,97942,1022024,913, $ua, '20033-22784-18693-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk810i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; beetel gd777) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81802,22197,876851,913, $ua, '13183-17485-18529-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonck15i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sjt_e861a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(243184,22197,876851,913, $ua, '15875-17485-18529-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-s365) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fr-FR; mozilla) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(276348,4620,876851,913, $ua, '15732-17483-18529-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fr-FR; generic) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(205742,22197,942813,913, $ua, '14060-17485-19807-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; bird) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(205742,22197,1022024,913, $ua, '14060-17485-18693-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'Q-mobile Q131';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zen-a60) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(558151,22118,16074,913, $ua, '17981-17017-17470-18092');
+    $dl[] = array(44218,27598,1267644,913, $ua, '15364-17017-18693-18092');
   }
-  $ua = 'MQQBrowser/2.0 (MAUI WAP Browser)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,288631,913, $ua, '18088-17017-20771-18092');
+    $dl[] = array(510130,27598,1464974,913, $ua, '23545-17017-22881-18092');
   }
-  $ua = 'MicromaxX333/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'Alex-uo/1.0 Qualcom/6290 Release/3.20.2010 Browser/Obigo Q7 Profile/MIDP-2.0 Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(850228,97942,223089,913, $ua, '18477-22784-18246-18092');
+    $dl[] = array(44218,27598,109454,913, $ua, '15364-17017-3499-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380139,4620,1022024,913, $ua, '14471-17483-18693-18092');
+    $dl[] = array(65505,11583,1033046,913, $ua, '11945-17484-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx368) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(906382,97942,876851,913, $ua, '20033-22784-18529-18092');
+    $dl[] = array(65505,11583,1033046,913, $ua, '11945-17484-18529-18092');
   }
-  $ua = 'dopod C720/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97366,16068,85332,913, $ua, '17925-5448-4578-18092');
+    $dl[] = array(65505,11583,1033046,913, $ua, '11945-17484-18529-18092');
   }
-  $ua = 'Coolpad-W702/BrewMP1.0.3/Qualcom6270/ObigoQ7/MIDP-2.1Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,268780,61292,913, $ua, '15364-22283-3499-18092');
+    $dl[] = array(65505,11583,1033046,913, $ua, '11945-17484-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk550i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233s) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(82018,22197,876851,913, $ua, '11948-17485-18529-18092');
+    $dl[] = array(65505,11583,1033046,913, $ua, '11945-17484-18529-18092');
   }
-  $ua = 'VIDEOCON V-1448/WAP2.0 Profile/MT6253/QVGA';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(387506,22118,16074,913, $ua, '12646-17017-17470-18092');
+    $dl[] = array(168357,4712,1267644,913, $ua, '14545-17483-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157613,4620,942813,913, $ua, '12856-17483-19807-18092');
+    $dl[] = array(168357,4712,1267644,913, $ua, '14545-17483-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330t) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(485673,97942,942813,913, $ua, '16600-22784-19807-18092');
+    $dl[] = array(168357,4712,1033046,913, $ua, '14545-17483-18529-18092');
   }
-  $ua = 'i-mobileIE3250';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(393057,22118,16074,913, $ua, '14331-17017-17470-18092');
+    $dl[] = array(168357,4712,1033046,913, $ua, '14545-17483-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk750i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-x330t) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(72757,22197,876851,913, $ua, '13216-17485-18529-18092');
+    $dl[] = array(168357,4712,1033046,913, $ua, '14545-17483-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk800i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(379995,4620,942813,913, $ua, '14532-17483-19807-18092');
+    $dl[] = array(61857,16804,1033046,913, $ua, '20126-17485-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk800i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273324,4620,942813,913, $ua, '14568-17483-19807-18092');
+    $dl[] = array(61857,16804,1033046,913, $ua, '20126-17485-18529-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk550i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonk800i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(82018,22197,1022024,913, $ua, '11948-17485-18693-18092');
+    $dl[] = array(61857,16804,1033046,913, $ua, '20126-17485-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonk800i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(586137,97942,942813,913, $ua, '16591-22784-19807-18092');
+    $dl[] = array(61857,16804,1033046,913, $ua, '20126-17485-18529-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t310i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'Panama-orange/Obigo Browser/Q05A Browser/Q03C MMS/1.0/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(397231,4620,1022024,913, $ua, '16024-17483-18693-18092');
+    $dl[] = array(44218,27598,97064,913, $ua, '15364-17017-3534-18092');
   }
-  $ua = 'Q-mobile M56';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(573670,22118,16074,913, $ua, '17982-17017-17470-18092');
+    $dl[] = array(65505,11583,1138038,913, $ua, '11945-17484-19807-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk770i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22197,942813,913, $ua, '15364-17485-19807-18092');
+    $dl[] = array(65505,11583,1138038,913, $ua, '11945-17484-19807-18092');
   }
-  $ua = 'MicromaxQ66/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233s) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1057616,97942,223089,913, $ua, '16573-22784-18246-18092');
+    $dl[] = array(65505,11583,1138038,913, $ua, '11945-17484-19807-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk810i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'R260/P107D10/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81802,22197,1022024,913, $ua, '13183-17485-18693-18092');
+    $dl[] = array(282247,27598,98811,913, $ua, '12773-17017-3807-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jblend) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(985591,22118,1022024,913, $ua, '22114-17017-18693-18092');
+    $dl[] = array(510130,27598,1390243,913, $ua, '23545-17017-22261-18092');
   }
-  $ua = 'CORAL 400/WAP2.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(189893,22118,16074,913, $ua, '13532-17017-17470-18092');
+    $dl[] = array(510130,27598,1390243,913, $ua, '23545-17017-22261-18092');
   }
-  $ua = 'LENOVO-A330/(2009.06.05) S007/WAP2.0';
+  $ua = 'ZEN P8 /Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(361228,58463,58470,913, $ua, '13180-17811-17810-18092');
+    $dl[] = array(28561,1081016,219871,913, $ua, '18088-22828-18246-18092');
   }
-  $ua = 'LENOVO-A330/(2009.08.26) S009/WAP2.0';
+  $ua = 'ZEN P8i /Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(361228,58463,58470,913, $ua, '13180-17811-17810-18092');
+    $dl[] = array(28561,1081016,219871,913, $ua, '18088-22828-18246-18092');
   }
-  $ua = 'LENOVO-A330/(2009.06.01) S006/WAP2.0';
+  $ua = 'MicromaxX265/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(361228,58463,58470,913, $ua, '13180-17811-17810-18092');
+    $dl[] = array(517467,291421,219871,913, $ua, '16703-22784-18246-18092');
   }
-  $ua = 'LENOVO-A330/(2009.08.26) S012/WAP2.0';
+  $ua = 'MicromaxX274/Q03C MAUI-browser/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(361228,58463,58470,913, $ua, '13180-17811-17810-18092');
+    $dl[] = array(999457,291421,219871,913, $ua, '20029-22784-18246-18092');
   }
-  $ua = 'Videocon_V1688(Twist)_WAP2.0_MIDP2.0_Configration/CLDC1.1';
+  $ua = 'MicromaxX600/MIDP2.0/CLDC1.1/Screen-240X400';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(398671,22118,16074,913, $ua, '14595-17017-17470-18092');
+    $dl[] = array(450672,291421,54471,913, $ua, '16600-22784-17470-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMjAyNzI3';
+  $ua = 'MicromaxQ22/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(444104,291421,219871,913, $ua, '18490-22784-18246-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTI1MjI1';
+  $ua = 'LENOVO-P60/(2009.11.24) S004/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,147613,163558,913, $ua, '15364-17811-17810-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTQ4NDU4';
+  $ua = 'LENOVO-A332/(2009.12.16) S003/WAP2.0 Profile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,147613,163558,913, $ua, '15364-17811-17810-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MDAwMDAwMDAwMDAwMDAw';
+  $ua = 'LENOVO-A312/(2009.12.09) S002/WAP2.0 Profile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,147613,163558,913, $ua, '15364-17811-17810-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTUwNTc5';
+  $ua = 'LENOVO-P60/(2010.02.23) S005/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,147613,163558,913, $ua, '15364-17811-17810-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTM1MDI2';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; mauie800) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(510130,27598,1138038,913, $ua, '23545-17017-19807-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2NDU4MDAwNDg3ODg0';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; mauie800) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(510130,27598,1138038,913, $ua, '23545-17017-19807-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMjA2MDMz';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; 11a h700tecno) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTQ0OTUy';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; s8000) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMjA2NzI4';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; beetel gd777) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTQxNzM1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sjt_e861a) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTQzMjUx';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; 11a wbg3509a_0101) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTMyNjY4';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; 11a h700tecno) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMTA1ODk2';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; es-la; mozilla) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(44218,27598,1033046,913, $ua, '15364-17017-18529-18092');
   }
-  $ua = 'SGH-Z308 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1/*MzU2ODEzMDAwMDc0NjM5';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(122583,122655,16074,913, $ua, '12184-6110-17470-18092');
+    $dl[] = array(65505,11583,1390243,913, $ua, '11945-17484-22261-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk810i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.0.0.295 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(81802,22197,942813,913, $ua, '13183-17485-19807-18092');
+    $dl[] = array(65505,11583,1390243,913, $ua, '11945-17484-22261-18092');
   }
-  $ua = 'MIKI50_6464_11B_24MP_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\0 tpannel\\0 camera\\1 gsensor\\0 keyboard\\qwerty) RLG_G51TV_V01_X Release/2012.09.08 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,223089,913, $ua, '15364-17483-18246-18092');
+    $dl[] = array(65505,11583,1390243,913, $ua, '11945-17484-22261-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(237717,22197,1071164,913, $ua, '15302-17485-22261-18092');
+    $dl[] = array(65505,11583,1390243,913, $ua, '11945-17484-22261-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ua = 'MicromaxX266/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(176052,18873,1071164,913, $ua, '13602-17484-22261-18092');
+    $dl[] = array(463947,291421,219871,913, $ua, '16566-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx660) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq5) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(784560,97942,876851,913, $ua, '20058-22784-18529-18092');
+    $dl[] = array(447049,291421,1033046,913, $ua, '16871-22784-18529-18092');
   }
-  $ua = 'MicromaxX275/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq5) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,97942,854048,913, $ua, '15364-22784-21795-18092');
+    $dl[] = array(447049,291421,1033046,913, $ua, '16871-22784-18529-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'MicromaxQ7/MIDP2.0/CLDC1.1/Screen-320X240';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(157613,4620,1022024,913, $ua, '12856-17483-18693-18092');
+    $dl[] = array(448705,291421,54471,913, $ua, '16808-22784-17470-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssons312) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromax) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(80507,22197,1022024,913, $ua, '11939-17485-18693-18092');
+    $dl[] = array(1147375,291421,1033046,913, $ua, '23351-22784-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromax) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(172733,4620,942813,913, $ua, '12209-17483-19807-18092');
+    $dl[] = array(1147375,291421,1033046,913, $ua, '23351-22784-18529-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-lg900g) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,4620,942813,913, $ua, '15364-17483-19807-18092');
+    $dl[] = array(65505,11583,1464974,913, $ua, '11945-17484-22881-18092');
   }
-  $ua = 'SFR115/g9qA/EFS-SFR-R9SM-P109A17V1.0.4/R221 Obigo/Q03C WAP/2.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(396799,22118,119194,913, $ua, '17707-17017-3807-18092');
+    $dl[] = array(65505,11583,1464974,913, $ua, '11945-17484-22881-18092');
   }
-  $ua = 'HOSIN_M100/SW1.0.0/WAP2.0';
+  $ua = 'Micromax X450/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(553535,22118,16074,913, $ua, '18031-17017-17470-18092');
+    $dl[] = array(654676,291421,219871,913, $ua, '20318-22784-18246-18092');
   }
-  $ua = 'dopod S900_CMCC/52.1941/WAP2.0 Profile/MID2.0 Configuration/CLDC1.1 (compatible;MSIE 4.01;Windows CE;PPC)';
+  $ua = 'MicromaxX368/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(467402,16068,85332,913, $ua, '13837-5448-4578-18092');
+    $dl[] = array(1079864,291421,219871,913, $ua, '20033-22784-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssons500i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'Micromax X269/Q03C MAUI-Browser Profile/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(79067,22197,876851,913, $ua, '11924-17485-18529-18092');
+    $dl[] = array(1258182,291421,235474,913, $ua, '20059-22784-4780-18092');
+  }
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Masscom_P19i_T716V_M00_S03_X Release/2012.11.16 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 vi-VN';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1329781,1329853,219871,913, $ua, '22788-22831-18246-18092');
   }
   $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Masscom_P19i_T716V_M00_S03_X Release/2012.11.29 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 vi-VN';
   $ns = E42($useragent, $ua, $ls);
@@ -3320,448 +2771,1582 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1080845,22118,223089,913, $ua, '22788-17017-18246-18092');
+    $dl[] = array(1329781,1329853,219871,913, $ua, '22788-22831-18246-18092');
   }
-  $ua = 'Mozilla/5.0 (Java; U; en-in; jblend) UCBrowser8.3.0.154/69/444/UCWEB Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1,/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Masscom_P19i_T716V_M00_S04_X Release/2013.01.04 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 vi-VN';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(985591,22118,743017,913, $ua, '22114-17017-18516-18092');
+    $dl[] = array(1329781,1329853,219871,913, $ua, '22788-22831-18246-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'MyPhoneTW26-3D DUO/MTKRelease/2012/02/15Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(993977,97942,942813,913, $ua, '20069-22784-19807-18092');
+    $dl[] = array(1080008,432044,235474,913, $ua, '22799-22840-4780-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gx200) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233s) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(139837,4620,876851,913, $ua, '13863-17483-18529-18092');
+    $dl[] = array(65505,11583,1510306,913, $ua, '11945-17484-24055-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonw580i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233s) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(93472,22197,942813,913, $ua, '11941-17485-19807-18092');
+    $dl[] = array(65505,11583,1510306,913, $ua, '11945-17484-24055-18092');
   }
-  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(118323,22197,1022024,913, $ua, '12142-17485-18693-18092');
+    $dl[] = array(447049,291421,1267644,913, $ua, '16871-22784-18693-18092');
   }
-  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(97949,97942,942813,913, $ua, '16808-22784-19807-18092');
+    $dl[] = array(522270,291421,1267644,913, $ua, '16591-22784-18693-18092');
   }
-  $ua = 'Videocon_V1435/WAP2.0 Profile/MT6253/QCIF';
+  $ua = 'Micromax X395/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(395504,22118,16074,913, $ua, '14442-17017-17470-18092');
+    $dl[] = array(542230,291421,219871,913, $ua, '16558-22784-18246-18092');
   }
-  $ua = 'Videocon_V1435/WAP2.0 Profile/MT6253/QCIF, Videocon_V1435/WAP2.0 Profile/MT6253/QCIF';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jblend) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(395504,22118,16074,913, $ua, '14442-17017-17470-18092');
+    $dl[] = array(1209471,27598,1033046,913, $ua, '22114-17017-18529-18092');
   }
-  $ua = 'SH0037D Obigo/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jblend) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1, /HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,4627,913, $ua, '15364-17017-17602-18092');
+    $dl[] = array(1209471,27598,1033046,913, $ua, '22114-17017-18529-18092');
   }
-  $ua = 'LENOVO-A310/(2009.04.17) S010/WAP2.0';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; jblend) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1,/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(361084,58463,58470,913, $ua, '13177-17811-17810-18092');
+    $dl[] = array(1209471,27598,1033046,913, $ua, '22114-17017-18529-18092');
   }
-  $ua = 'i-mobileS281';
+  $ua = 'A352 WAP-Browser/1.0.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(373861,22118,16074,913, $ua, '14177-17017-17470-18092');
+    $dl[] = array(1310900,27598,54471,913, $ua, '23269-17017-17470-18092');
   }
-  $ua = 'New York/R3.0 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1 Novarra-Vision/8.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromax) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380569,22118,36475,913, $ua, '14680-17017-3601-18092');
+    $dl[] = array(1147375,291421,1267644,913, $ua, '23351-22784-18693-18092');
   }
-  $ua = 'New York/R3.0 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1';
+  $ua = 'MicromaxX259/Q03C MAUI-Browser Profile/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(380569,22118,36475,913, $ua, '14680-17017-3601-18092');
+    $dl[] = array(44218,291421,235474,913, $ua, '15364-22784-4780-18092');
   }
-  $ua = 'Bird.M19/L1, 901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ua = 'MicromaxQ80/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96430,22118,79139,913, $ua, '17229-17017-4893-18092');
+    $dl[] = array(782628,291421,219871,913, $ua, '16545-22784-18246-18092');
   }
-  $ua = 'Bird.M19/LO,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Masscom_P12_T738_M00_S03_X Release/2012.11.16 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 vi-VN';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96430,22118,79139,913, $ua, '17229-17017-4893-18092');
+    $dl[] = array(1329933,1329853,219871,913, $ua, '22789-22831-18246-18092');
   }
-  $ua = 'Bird.M19/LU,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ua = 'TECHAIN50_11B_HW (MRE\\3.0.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) Masscom_P12_T738_M00_S04_X Release/2013.01.11 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 vi-VN';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96430,22118,79139,913, $ua, '17229-17017-4893-18092');
+    $dl[] = array(1329933,1329853,219871,913, $ua, '22789-22831-18246-18092');
   }
-  $ua = 'Bird.M19/L1,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ua = 'V6202/WAP2.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96430,22118,79139,913, $ua, '17229-17017-4893-18092');
+    $dl[] = array(280223,27598,54471,913, $ua, '12491-17017-17470-18092');
   }
-  $ua = 'Videocon_V1535/WAP2.0 Profile/MT6253/QCIF';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(357453,22118,16074,913, $ua, '13112-17017-17470-18092');
+    $dl[] = array(98235,16804,1033046,913, $ua, '12142-17485-18529-18092');
   }
-  $ua = 'dopod D600_CMCC/5.1.422/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(181597,16068,85332,913, $ua, '17922-5448-4578-18092');
+    $dl[] = array(98235,16804,1033046,913, $ua, '12142-17485-18529-18092');
   }
-  $ua = 'V908/MIDP2.0/CLDC1.1/Screen-240x320';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonu5i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(98597,22118,16074,913, $ua, '17885-17017-17470-18092');
+    $dl[] = array(98235,16804,1033046,913, $ua, '12142-17485-18529-18092');
   }
-  $ua = 'Haier-1200P/1.0 iPanel/2.0 WAP2.0 (compatible; UP.Browser/6.2.2.4; UPG1; UP/4.0; Embedded) Novarra-Vision/8.0';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq7) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(159412,22118,18952,913, $ua, '17984-17017-3625-18092');
+    $dl[] = array(448705,291421,1033046,913, $ua, '16808-22784-18529-18092');
   }
-  $ua = 'Haier-1200P/1.0 iPanel/2.0 WAP2.0 (compatible; UP.Browser/6.2.2.4; UPG1; UP/4.0; Embedded)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq7) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(159412,22118,18952,913, $ua, '17984-17017-3625-18092');
+    $dl[] = array(448705,291421,1033046,913, $ua, '16808-22784-18529-18092');
   }
-  $ua = 'WELLCOM-W189 WAP Browser';
+  $ua = 'MicromaxX550/MIDP2.0/CLDC1.1/Screen-240X400';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334584,22118,16074,913, $ua, '17752-17017-17470-18092');
+    $dl[] = array(462631,291421,54471,913, $ua, '16609-22784-17470-18092');
   }
-  $ua = 'WELLCOM-W189_WAP_Browser';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw580i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334584,22118,16074,913, $ua, '17752-17017-17470-18092');
+    $dl[] = array(76348,16804,1033046,913, $ua, '11941-17485-18529-18092');
   }
-  $ua = 'AIKO 70W/WAP2.0';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw580i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(371552,22118,16074,913, $ua, '14092-17017-17470-18092');
+    $dl[] = array(76348,16804,1033046,913, $ua, '11941-17485-18529-18092');
   }
-  $ua = 'TCL-e300/w05.44.08/WAP-2.0/MIDP-2.0 Configuration/CLDC-1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jbed-fastbcc) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(183038,22118,16074,913, $ua, '13507-17017-17470-18092');
+    $dl[] = array(44218,27598,1390243,913, $ua, '15364-17017-22261-18092');
   }
-  $ua = 'MTC535/REF-RU-MTS-P103D2V1.0.1/2.0 Profile/MIDP-2.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; spice) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(285175,22118,16074,913, $ua, '13621-17017-17470-18092');
+    $dl[] = array(44218,27598,1390243,913, $ua, '15364-17017-22261-18092');
   }
-  $ua = 'WELLCOM/W920/MIDP2.0/CLDC1.1/Screen-240x320';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sunmicro) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(475983,22118,16074,913, $ua, '17749-17017-17470-18092');
+    $dl[] = array(44218,27598,1390243,913, $ua, '15364-17017-22261-18092');
   }
-  $ua = 'YuLong-Coolpad2938/1.0 iPanel/2.0 WAP2.0';
+  $ua = 'K-TouchT580_TD/1.0 Android/2.3 Release/02.01.2012 Browser/WAP2.0 appleWebkit/534.30';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(239943,22118,16074,913, $ua, '15320-17017-17470-18092');
+    $dl[] = array(1155553,90522,90528,913, $ua, '24023-5629-15760-18092');
   }
-  $ua = 'R830/2.0 Profile/MIDP-2.0';
+  $ua = 'MicromaxX560/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(368744,22118,16074,913, $ua, '13980-17017-17470-18092');
+    $dl[] = array(527845,291421,219871,913, $ua, '16593-22784-18246-18092');
   }
-  $ua = 'SPICE-S600/WAP Browser, SPICE-S600/WAP Browser';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(91450,22118,16074,913, $ua, '17006-17017-17470-18092');
+    $dl[] = array(79838,11583,1267644,913, $ua, '15518-17484-18693-18092');
   }
-  $ua = 'SPICE-S600/WAP Browser';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; ru; gt-s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(91450,22118,16074,913, $ua, '17006-17017-17470-18092');
+    $dl[] = array(79838,11583,1267644,913, $ua, '15518-17484-18693-18092');
   }
-  $ua = 'SPICE-S600/WAP Browser SPICE-S600/WAP Browser';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; gt-s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(91450,22118,16074,913, $ua, '17006-17017-17470-18092');
+    $dl[] = array(79838,11583,1267644,913, $ua, '15518-17484-18693-18092');
   }
-  $ua = 'WellcoM W929 WAP Browser';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; gt-s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(319845,22118,16074,913, $ua, '12906-17017-17470-18092');
+    $dl[] = array(79838,11583,1267644,913, $ua, '15518-17484-18693-18092');
   }
-  $ua = 'dopod S900_CMCC/5.2.1941/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(467402,16068,13185,913, $ua, '13837-5448-22270-18092');
+    $dl[] = array(79838,11583,1267644,913, $ua, '15518-17484-18693-18092');
   }
-  $ua = 'W3319 WAP Browser';
+  $ua = 'MicromaxQ5/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210496,22118,16074,913, $ua, '11940-17017-17470-18092');
+    $dl[] = array(447049,291421,219871,913, $ua, '16871-22784-18246-18092');
   }
-  $ua = 'dopod P660_CMCC/5.2.1941/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369032,16068,82738,913, $ua, '17919-5448-22272-18092');
+    $dl[] = array(62370,16804,1267644,913, $ua, '13206-17485-18693-18092');
   }
-  $ua = 'SFR114/g8eA/FES-FR-SFR-P103D1V1.0.1/R220/2.0 Profile/MIDP-2.0';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx600) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(382178,22118,16074,913, $ua, '17706-17017-17470-18092');
+    $dl[] = array(450672,291421,1033046,913, $ua, '16600-22784-18529-18092');
   }
-  $ua = 'Emegeton Enzo/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx600) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(394353,22118,16074,913, $ua, '14393-17017-17470-18092');
+    $dl[] = array(450672,291421,1033046,913, $ua, '16600-22784-18529-18092');
   }
-  $ua = 'dopod T2222_CMCC/5.2.19578/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'MicromaxX256/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(474123,16068,13185,913, $ua, '17772-5448-22270-18092');
+    $dl[] = array(986616,291421,219871,913, $ua, '20320-22784-18246-18092');
   }
-  $ua = 'LG600G Obigo/WAP2.0 MIDP-2.0/CLDC-1.1 Novarra-Vision/8.0';
+  $ua = 'MicromaxX270/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179797,4620,4627,913, $ua, '16580-17483-17602-18092');
+    $dl[] = array(793280,291421,219871,913, $ua, '20321-22784-18246-18092');
   }
-  $ua = 'LG600G Obigo/WAP2.0  MIDP-2.0/CLDC-1.1 Novarra-Vision/8.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179797,4620,4627,913, $ua, '16580-17483-17602-18092');
+    $dl[] = array(1222237,291421,1267644,913, $ua, '20069-22784-18693-18092');
   }
-  $ua = 'LG600G Obigo/WAP2.0  MIDP-2.0/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile TRUSTED/1.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179797,4620,4627,913, $ua, '16580-17483-17602-18092');
+    $dl[] = array(1222237,291421,1267644,913, $ua, '20069-22784-18693-18092');
   }
-  $ua = 'LG600G Obigo/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ua = 'Videocon_V1675_Wap MAUI WAP Browser2.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179797,4620,4627,913, $ua, '16580-17483-17602-18092');
+    $dl[] = array(28561,192347,219871,913, $ua, '18088-22832-18246-18092');
   }
-  $ua = 'LG600G[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Obigo/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ua = 'Videocon V1510 MAUI WAP Browser';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(179797,4620,4627,913, $ua, '16580-17483-17602-18092');
+    $dl[] = array(28561,192347,219871,913, $ua, '18088-22832-18246-18092');
   }
-  $ua = 'VIDEOCON_V1616/WAP2.0 Profile/MT6253/QVGA';
+  $ua = 'MicromaxQ1+/Q03C MAUI-browser/MIDP-2.0';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(226623,22118,16074,913, $ua, '15131-17017-17470-18092');
+    $dl[] = array(447913,291421,219871,913, $ua, '16838-22784-18246-18092');
   }
-  $ua = 'WinWAP-X/3.0 (Neonode N2; Smartphone; WCE; 176x220)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq50) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(388730,22118,387794,913, $ua, '12652-17017-3692-18092');
+    $dl[] = array(522270,291421,1033046,913, $ua, '16591-22784-18529-18092');
   }
-  $ua = 'Bleu.450x/LV,A01/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.160 (GUI)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(53173,22118,79139,913, $ua, '15364-17017-4893-18092');
+    $dl[] = array(448705,291421,1267644,913, $ua, '16808-22784-18693-18092');
   }
-  $ua = 'LENOVO-V800/(2006.10.17)Ver1.0.4/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jblend) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(461834,58463,58470,913, $ua, '17800-17811-17810-18092');
+    $dl[] = array(1209471,27598,1267644,913, $ua, '22114-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; jblend) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1,/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1209471,27598,1267644,913, $ua, '22114-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk530i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62370,16804,1033046,913, $ua, '13206-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk800i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61857,16804,1138038,913, $ua, '20126-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; sonyericssonk800i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61857,16804,1138038,913, $ua, '20126-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1267644,913, $ua, '16003-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1267644,913, $ua, '16003-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1267644,913, $ua, '16003-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk800i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61857,16804,1267644,913, $ua, '20126-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk770i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(38278,16804,1033046,913, $ua, '13220-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk770i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(38278,16804,1033046,913, $ua, '13220-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1267644,913, $ua, '12856-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; lg-t300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1267644,913, $ua, '12856-17483-18693-18092');
+  }
+  $ua = 'MicromaxX50/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,291421,219871,913, $ua, '15364-22784-18246-18092');
+  }
+  $ua = 'MicromaxQ56/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,291421,219871,913, $ua, '15364-22784-18246-18092');
+  }
+  $ua = 'MicromaxX490/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,291421,219871,913, $ua, '15364-22784-18246-18092');
+  }
+  $ua = 'MicromaxX283/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1204040,291421,219871,913, $ua, '20048-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1138038,913, $ua, '16003-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233a) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1138038,913, $ua, '16003-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1464974,913, $ua, '14545-17483-22881-18092');
+  }
+  $ua = 'MyPhoneQTW88TVDUO/MTKRelease/2012/04/17Browser/MAUIProfile/MIDP-2.0Configuration/CLDC-1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1244047,432044,235474,913, $ua, '22800-22840-4780-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw580i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(76348,16804,1267644,913, $ua, '11941-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1390243,913, $ua, '14545-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1390243,913, $ua, '14545-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1510306,913, $ua, '14545-17483-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-x330) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1510306,913, $ua, '14545-17483-24055-18092');
+  }
+  $ua = 'R236/P130D20/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(328278,27598,98811,913, $ua, '13016-17017-3807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1033046,913, $ua, '15302-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1033046,913, $ua, '15302-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1033046,913, $ua, '15302-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1033046,913, $ua, '15302-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(450672,291421,1267644,913, $ua, '16600-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk770i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(38278,16804,1267644,913, $ua, '13220-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(447049,291421,1464974,913, $ua, '16871-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gm360) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(131149,4712,1267644,913, $ua, '14372-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk810i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65577,16804,1033046,913, $ua, '13183-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk810i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65577,16804,1033046,913, $ua, '13183-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonck15i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(294659,16804,1267644,913, $ua, '15875-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522270,291421,1510306,913, $ua, '16591-22784-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromax) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1147375,291421,1464974,913, $ua, '23351-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-lg900g) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(984500,4712,1033046,913, $ua, '13847-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1267644,913, $ua, '13734-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk550i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65649,16804,1267644,913, $ua, '11948-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx78) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1222237,291421,1033046,913, $ua, '20069-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1267644,913, $ua, '14060-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; sonyericssonw150i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1267644,913, $ua, '14060-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx368) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1079864,291421,1267644,913, $ua, '20033-22784-18693-18092');
+  }
+  $ua = 'MIKI50_6464_11B_24MP_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\0 tpannel\\0 camera\\1 gsensor\\0 keyboard\\qwerty) RLG_G51TV_V01_X Release/2012.09.08 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,4712,219871,913, $ua, '15364-17483-18246-18092');
+  }
+  $ua = 'MIKI50_6464_11B_24MP_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\0 tpannel\\0 camera\\1 gsensor\\0 keyboard\\qwerty) RLG_G51TV_V01_X Release/2012.09.19 WAP Browser/MAUI Profile/  Q03C1-2.40 en-US';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,4712,219871,913, $ua, '15364-17483-18246-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1267644,913, $ua, '13602-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1267644,913, $ua, '13602-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fr-FR; gt-s5233w) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1267644,913, $ua, '13602-17484-18693-18092');
+  }
+  $ua = 'OneBrowser/3.1 (LG-KP500 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162838,4712,1183870,913, $ua, '11751-17483-21730-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(447049,291421,1510306,913, $ua, '16871-22784-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(448705,291421,1510306,913, $ua, '16808-22784-24055-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t300) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1033046,913, $ua, '12856-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t300) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1033046,913, $ua, '12856-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; lg-t300) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1033046,913, $ua, '12856-17483-18529-18092');
+  }
+  $ua = 'TINNO50_6464_W1224_11B_HW (MRE\\2.5.00(800) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\1 gsensor\\0 keyboard\\normal) F7013A_T28TV_X_V10 Release/2012.10.20 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,432044,219871,913, $ua, '18088-22840-18246-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-x330t) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(168357,4712,1138038,913, $ua, '14545-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62370,16804,1464974,913, $ua, '13206-17485-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lava-a10) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522414,518812,1267644,913, $ua, '23417-22843-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk800i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61857,16804,1464974,913, $ua, '20126-17485-22881-18092');
+  }
+  $ua = 'MicromaxX262/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(772865,291421,219871,913, $ua, '20317-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522270,291421,1464974,913, $ua, '16591-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(447049,291421,1138038,913, $ua, '16871-22784-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromax) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1147375,291421,1138038,913, $ua, '23351-22784-19807-18092');
+  }
+  $ua = 'CKT50_COSMOS_11B_HW (MRE\\2.5.00(2500) resolution\\X chipset\\MT6250 touch\\1 tpannel\\1 camera\\0 gsensor\\0 keyboard\\reduced) COCOA-S05A_FLY_L2EN_203_X Release/2012.12.28 WAP Browser/MAUI (HTTP PGDL; HTTPS) Profile/  Q03C1-2.40 en-US';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1260449,27598,219871,913, $ua, '20172-17017-18246-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw660i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,16804,1267644,913, $ua, '15364-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233a) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1033046,913, $ua, '16003-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233a) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1033046,913, $ua, '16003-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1033046,913, $ua, '16003-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5233a) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1033046,913, $ua, '16003-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5230) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; ru; gt-s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; es-la; gt-s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5230) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1033046,913, $ua, '15518-17484-18529-18092');
+  }
+  $ua = 'MicromaxX1i_R/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1203893,291421,219871,913, $ua, '16886-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152663,4712,1033046,913, $ua, '12209-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx510) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(592670,291421,1033046,913, $ua, '16620-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx510) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(592670,291421,1267644,913, $ua, '16620-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw350i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61938,16804,1267644,913, $ua, '13179-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62370,16804,1510306,913, $ua, '13206-17485-24055-18092');
+  }
+  $ua = 'MicromaxQ55/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(591607,291421,219871,913, $ua, '16874-22784-18246-18092');
+  }
+  $ua = 'MicromaxX410/MIDP2.0/CLDC1.1/Screen-240X320';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(536108,291421,54471,913, $ua, '16555-22784-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62370,16804,1138038,913, $ua, '13206-17485-19807-18092');
+  }
+  $ua = 'VIDEOCON V-1448/WAP2.0 Profile/MT6253/QVGA';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(366515,192347,54471,913, $ua, '12646-22832-17470-18092');
+  }
+  $ua = 'MicromaxX333/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(986400,291421,219871,913, $ua, '18477-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1267644,913, $ua, '15302-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1267644,913, $ua, '15302-17485-18693-18092');
+  }
+  $ua = 'MicromaxQ66/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1335313,291421,219871,913, $ua, '16573-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lava-a10) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522414,518812,1033046,913, $ua, '23417-22843-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1138038,913, $ua, '15518-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5230) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1138038,913, $ua, '15518-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk810i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65577,16804,1267644,913, $ua, '13183-17485-18693-18092');
+  }
+  $ua = 'ZEN M2s CODE/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1475033,1081016,219871,913, $ua, '23571-22828-18246-18092');
+  }
+  $ua = 'LANIX-LX11/R01/MT53 Browser/2.0/Obigo/Q03C Profile/MIDP-2.0/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,124734,98811,913, $ua, '15364-18110-3807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq80) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(782628,291421,1267644,913, $ua, '16545-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk790i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(129341,16804,1267644,913, $ua, '23010-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(448705,291421,1464974,913, $ua, '16808-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5603) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1033046,913, $ua, '13734-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5603) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1033046,913, $ua, '13734-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zte-f970) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(312443,101226,1267644,913, $ua, '13824-22839-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq5) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(447049,291421,1390243,913, $ua, '16871-22784-22261-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonck15i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(294659,16804,1033046,913, $ua, '15875-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1138038,913, $ua, '12856-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(450672,291421,1464974,913, $ua, '16600-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx368) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1079864,291421,1033046,913, $ua, '20033-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq80) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(782628,291421,1510306,913, $ua, '16545-22784-24055-18092');
+  }
+  $ua = 'Q-mobile Q131';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(499269,27598,54471,913, $ua, '17981-17017-17470-18092');
+  }
+  $ua = 'Devicescape-Agent/4.0.136 (Android - 5d50e2ea-4b02-7761-66f6-08cbe206b9f0) tmobile_wispr1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,79982,54471,913, $ua, '18088-17979-17470-18092');
+  }
+  $ua = 'Devicescape-Agent/4.0.136 (Android - 5a9b0370-8d09-1585-0703-16db7111fdf8) tmobile_wispr1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,79982,54471,913, $ua, '18088-17979-17470-18092');
+  }
+  $ua = 'Devicescape-Agent/4.0.136 (Android - 671a80e2-00db-3dbe-39ec-c247c7ebcb1d) tmobile_wispr1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,79982,54471,913, $ua, '18088-17979-17470-18092');
+  }
+  $ua = 'Devicescape-Agent/4.0.136 (Android - X-0000-0000-0000-X) tmobile_wispr1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,79982,54471,913, $ua, '18088-17979-17470-18092');
+  }
+  $ua = 'Devicescape-Agent/4.0.137 (Android - X-0000-0000-0000-X) tmobile_wispr1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,79982,54471,913, $ua, '18088-17979-17470-18092');
+  }
+  $ua = 'Coolpad-W702/BrewMP1.0.3/Qualcom6270/ObigoQ7/MIDP-2.1Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,244866,109454,913, $ua, '15364-22283-3499-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233w) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1033046,913, $ua, '13602-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5233w) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1033046,913, $ua, '13602-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1033046,913, $ua, '13602-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1033046,913, $ua, '13602-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5560) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1033046,913, $ua, '11996-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5560) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1033046,913, $ua, '11996-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; gt-s5560) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1033046,913, $ua, '11996-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq55) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(591607,291421,1033046,913, $ua, '16874-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(450672,291421,1138038,913, $ua, '16600-22784-19807-18092');
   }
   $ua = 'Videocon_V1603_SW_V10a/MAUI.09A.W09.52.MP.V4/wap2.0/OBIGO_Q03C/MIDP 1.0';
   $ns = E42($useragent, $ua, $ls);
@@ -3770,34 +4355,1438 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(37484,22118,119194,913, $ua, '18088-17017-3807-18092');
+    $dl[] = array(28561,192347,98811,913, $ua, '18088-22832-3807-18092');
   }
-  $ua = 'Mozilla/4.0(MTS/1.0/MTC547/VF_RU_RU_P107A4V1.2.1/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk790i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(119122,22118,119194,913, $ua, '13316-17017-3807-18092');
+    $dl[] = array(129341,16804,1033046,913, $ua, '23010-17485-18529-18092');
   }
-  $ua = 'imobileGM5220';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk550i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(384914,22118,16074,913, $ua, '12587-17017-17470-18092');
+    $dl[] = array(65649,16804,1033046,913, $ua, '11948-17485-18529-18092');
   }
-  $ua = 'Q-Mobile-F220/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx660) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(201908,22118,16074,913, $ua, '11917-17017-17470-18092');
+    $dl[] = array(866005,291421,1267644,913, $ua, '20058-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1464974,913, $ua, '15518-17484-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; gt-s5230) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1464974,913, $ua, '15518-17484-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; gt-s5230) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1464974,913, $ua, '15518-17484-22881-18092');
+  }
+  $ua = 'dopod C720/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(78442,6631,67830,913, $ua, '17925-5448-4578-18092');
+  }
+  $ua = 'Lava-A9/S016 LMP/LML Release/2010.03.04 Profile/MIDP2.0 Configuration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,518812,54471,913, $ua, '15364-22843-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1138038,913, $ua, '13602-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; gt-s5233w) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1138038,913, $ua, '13602-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw350i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61938,16804,1033046,913, $ua, '13179-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk770i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(38278,16804,1138038,913, $ua, '13220-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; vodafone_555_blue) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1377892,27598,1033046,913, $ua, '16985-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromax) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1147375,291421,1390243,913, $ua, '23351-22784-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1510306,913, $ua, '15302-17485-24055-18092');
+  }
+  $ua = 'MicromaxX275/MstarBrowser1.0/MIDP2.0Configuration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,291421,994482,913, $ua, '15364-22784-21795-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxq80) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(782628,291421,1033046,913, $ua, '16545-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonw580i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(76348,16804,1138038,913, $ua, '11941-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1222237,291421,1464974,913, $ua, '20069-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx368) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1079864,291421,1464974,913, $ua, '20033-22784-22881-18092');
+  }
+  $ua = 'i-mobileIE3250';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(372024,27598,54471,913, $ua, '14331-17017-17470-18092');
+  }
+  $ua = 'Videocon_V1688(Twist)_WAP2.0_MIDP2.0_Configration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381965,192347,54471,913, $ua, '14595-22832-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonk750i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(56348,16804,1033046,913, $ua, '13216-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; id; tcl-c616) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1196300,27598,1267644,913, $ua, '23532-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; tcl-c616) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1196300,27598,1267644,913, $ua, '23532-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq55) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(591607,291421,1267644,913, $ua, '16874-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1464974,913, $ua, '13602-17484-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1464974,913, $ua, '13602-17484-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(450672,291421,1510306,913, $ua, '16600-22784-24055-18092');
+  }
+  $ua = 'CORAL 400/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(172065,27598,54471,913, $ua, '13532-17017-17470-18092');
+  }
+  $ua = 'Q-mobile M56';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(511396,27598,54471,913, $ua, '17982-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522270,291421,1138038,913, $ua, '16591-22784-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gx200) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(313811,4712,1033046,913, $ua, '13863-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk800i) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61857,16804,1390243,913, $ua, '20126-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonck15i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(294659,16804,1510306,913, $ua, '15875-17485-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssons312) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(64334,16804,1267644,913, $ua, '11939-17485-18693-18092');
+  }
+  $ua = 'VG1515_Videocon/1.0 Qualcom/6240 Release/3.10.2011 Browser/Obigo Q7 Profile/MIDP-2.0 Configuration/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,192347,109454,913, $ua, '15364-22832-3499-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8003) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(143741,27598,1510306,913, $ua, '12516-17017-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx368) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1079864,291421,1510306,913, $ua, '20033-22784-24055-18092');
+  }
+  $ua = 'SFR115/g9qA/EFS-SFR-R9SM-P109A17V1.0.4/R221 Obigo/Q03C WAP/2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378653,27598,98811,913, $ua, '17707-17017-3807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw880i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(158538,16804,1033046,913, $ua, '14698-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx660) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(866005,291421,1033046,913, $ua, '20058-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonk810i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65577,16804,1138038,913, $ua, '13183-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1390243,913, $ua, '15302-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1390243,913, $ua, '15302-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx285) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(558579,291421,1267644,913, $ua, '16530-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1464974,913, $ua, '14060-17485-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq80) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(782628,291421,1464974,913, $ua, '16545-22784-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1510306,913, $ua, '15518-17484-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw580i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(76348,16804,1510306,913, $ua, '11941-17485-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lava-a10) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522414,518812,1510306,913, $ua, '23417-22843-24055-18092');
+  }
+  $ua = 'dopodT8388/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 IE/6.0 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361691,6631,5675,913, $ua, '17770-5448-4808-18092');
+  }
+  $ua = 'dopodT8388/1.0 WindowsMobile/6.5 CEOS/5.2 release/5.0 IE/6.0 WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361691,6631,5675,913, $ua, '17770-5448-4808-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1033046,913, $ua, '14060-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1033046,913, $ua, '14060-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; sonyericssonw150i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1033046,913, $ua, '14060-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381533,4712,1138038,913, $ua, '13365-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mot-ex223) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(331592,17839,1033046,913, $ua, '13088-17486-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5560) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1267644,913, $ua, '11996-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lemon) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,322256,1267644,913, $ua, '18088-22846-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mot-ex223) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(331592,17839,1267644,913, $ua, '13088-17486-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381533,4712,1390243,913, $ua, '13365-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; vi; q-mobile) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1474737,27598,1033046,913, $ua, '23411-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1464974,913, $ua, '15302-17485-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw350i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61938,16804,1464974,913, $ua, '13179-17485-22881-18092');
+  }
+  $ua = 'Videocon_V1435/WAP2.0 Profile/MT6253/QCIF';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(375917,192347,54471,913, $ua, '14442-22832-17470-18092');
+  }
+  $ua = 'Videocon_V1435/WAP2.0 Profile/MT6253/QCIF, Videocon_V1435/WAP2.0 Profile/MT6253/QCIF';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(375917,192347,54471,913, $ua, '14442-22832-17470-18092');
+  }
+  $ua = 'HOSIN_M100/SW1.0.0/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(496041,27598,54471,913, $ua, '18031-17017-17470-18092');
+  }
+  $ua = 'dopod S900_CMCC/52.1941/WAP2.0 Profile/MID2.0 Configuration/CLDC1.1 (compatible;MSIE 4.01;Windows CE;PPC)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(430596,6631,67830,913, $ua, '13837-5448-4578-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1138038,913, $ua, '13734-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mot-ex128) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,17839,1033046,913, $ua, '15364-17486-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lava-a9) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,518812,1033046,913, $ua, '15364-22843-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx600) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(450672,291421,1390243,913, $ua, '16600-22784-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq50) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(522270,291421,1390243,913, $ua, '16591-22784-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk810i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(65577,16804,1464974,913, $ua, '13183-17485-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,27598,1510306,913, $ua, '15518-17017-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1222237,291421,1510306,913, $ua, '20069-22784-24055-18092');
+  }
+  $ua = 'LENOVO-A330/(2009.06.05) S007/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(339217,147613,163558,913, $ua, '13180-17811-17810-18092');
+  }
+  $ua = 'LENOVO-A330/(2009.08.26) S009/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(339217,147613,163558,913, $ua, '13180-17811-17810-18092');
+  }
+  $ua = 'LENOVO-A330/(2009.08.26) S012/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(339217,147613,163558,913, $ua, '13180-17811-17810-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssons500i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62946,16804,1033046,913, $ua, '11924-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxx78) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1222237,291421,1138038,913, $ua, '20069-22784-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; micromaxq7) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(448705,291421,1138038,913, $ua, '16808-22784-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1390243,913, $ua, '12856-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1390243,913, $ua, '12856-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxq6) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,291421,1267644,913, $ua, '15364-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1510306,913, $ua, '12856-17483-24055-18092');
+  }
+  $ua = 'Mozilla/5.0 (Java; U; en-in; jblend) UCBrowser8.3.0.154/69/444/UCWEB Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1,/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1209471,27598,712167,913, $ua, '22114-17017-18516-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk530i) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(62370,16804,1390243,913, $ua, '13206-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonk790i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(129341,16804,1464974,913, $ua, '23010-17485-22881-18092');
+  }
+  $ua = 'MicromaxX291/Q03C MAUI-browser/MIDP-2.0Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1080080,291421,219871,913, $ua, '20032-22784-18246-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381101,4712,1267644,913, $ua, '17332-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s365) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(253837,4712,1267644,913, $ua, '15732-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1390243,913, $ua, '15518-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5230) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,11583,1390243,913, $ua, '15518-17484-22261-18092');
+  }
+  $ua = 'Mozilla/5.0 (Java; U; en-us; jblend) AppleWebKit/530.13 (KHTML, like Gecko) UCBrowser/8.6.0.199/69/444/UCWEB Mobile/HS-T39_TD/1.0 Release/03.03.2011 Threadx/4.0 Mocor/W10 Browser/NF4.0 Profile/MIDP-2.0 Config/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1209471,27598,1016432,913, $ua, '22114-17017-18527-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; micromaxx266) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(463947,291421,1033046,913, $ua, '16566-22784-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t300) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(246260,4712,1464974,913, $ua, '12856-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1510306,913, $ua, '14060-17485-24055-18092');
+  }
+  $ua = 'SH0037D Obigo/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,4719,913, $ua, '15364-17017-17602-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,27598,1138038,913, $ua, '15518-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1390243,913, $ua, '14060-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1390243,913, $ua, '14060-17485-22261-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sonyericssons312) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(64334,16804,1033046,913, $ua, '11939-17485-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; micromaxx266) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(463947,291421,1267644,913, $ua, '16566-22784-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380597,4712,1390243,913, $ua, '14568-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonck15i) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(294659,16804,1464974,913, $ua, '15875-17485-22881-18092');
+  }
+  $ua = 'MQQBrowser/2.0 (MAUI WAP Browser)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,27598,333052,913, $ua, '18088-17017-20771-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(376853,4712,1267644,913, $ua, '14471-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1464974,913, $ua, '13734-17484-22881-18092');
+  }
+  $ua = 'AIKO 70W/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(348630,27598,54471,913, $ua, '14092-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t310i) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379445,4712,1033046,913, $ua, '16024-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonck13i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(398736,16804,1267644,913, $ua, '12832-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t310i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379445,4712,1267644,913, $ua, '16024-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-lg800g) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(785927,4712,1267644,913, $ua, '12599-17483-18693-18092');
+  }
+  $ua = 'i-mobileS281';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(350653,27598,54471,913, $ua, '14177-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381533,4712,1267644,913, $ua, '13365-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-t310i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379445,4712,1138038,913, $ua, '16024-17483-19807-18092');
+  }
+  $ua = 'Videocon_V1535/WAP2.0 Profile/MT6253/QCIF';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(334728,192347,54471,913, $ua, '13112-22832-17470-18092');
+  }
+  $ua = 'LENOVO-A310/(2009.04.17) S010/WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(339073,147613,163558,913, $ua, '13177-17811-17810-18092');
+  }
+  $ua = 'New York/R3.0 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(382469,27598,37321,913, $ua, '14680-17017-3601-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; fa; sonyericssonu5i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(98235,16804,1267644,913, $ua, '12142-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sonyericssonu5i) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(98235,16804,1267644,913, $ua, '12142-17485-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonwt13i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(308477,16804,1138038,913, $ua, '15302-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1138038,913, $ua, '14532-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1267644,913, $ua, '14532-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1390243,913, $ua, '16003-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233a) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79766,11583,1390243,913, $ua, '16003-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1510306,913, $ua, '13602-17484-24055-18092');
+  }
+  $ua = 'WELLCOM-W189 WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(311147,27598,54471,913, $ua, '17752-17017-17470-18092');
+  }
+  $ua = 'WELLCOM-W189_WAP_Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(311147,27598,54471,913, $ua, '17752-17017-17470-18092');
+  }
+  $ua = 'V908/MIDP2.0/CLDC1.1/Screen-240x320';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(431540,27598,54471,913, $ua, '17885-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380597,4712,1267644,913, $ua, '14568-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5600) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(120994,11583,1267644,913, $ua, '12051-17484-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gx300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(372096,4712,1267644,913, $ua, '14330-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1510306,913, $ua, '13734-17484-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zte-p107a20(propus)) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1329629,101226,1267644,913, $ua, '23534-22839-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s365) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(253837,4712,1510306,913, $ua, '15732-17483-24055-18092');
+  }
+  $ua = 'R830/2.0 Profile/MIDP-2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(345678,27598,54471,913, $ua, '13980-17017-17470-18092');
+  }
+  $ua = 'dopod D600_CMCC/5.1.422/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(396555,6631,67830,913, $ua, '17922-5448-4578-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; sgh-f480) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(77650,27598,1267644,913, $ua, '11653-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1390243,913, $ua, '14532-17483-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1390243,913, $ua, '14532-17483-22261-18092');
+  }
+  $ua = 'MTC535/REF-RU-MTS-P103D2V1.0.1/2.0 Profile/MIDP-2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(261344,27598,54471,913, $ua, '13621-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; tcl-c616) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1196300,27598,1033046,913, $ua, '23532-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; id; tcl-c616) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1196300,27598,1033046,913, $ua, '23532-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-c310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381101,4712,1033046,913, $ua, '17332-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-lg900g) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(984500,4712,1267644,913, $ua, '13847-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5560) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1464974,913, $ua, '11996-17484-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gx300) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(372096,4712,1464974,913, $ua, '14330-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t310i) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379445,4712,1510306,913, $ua, '16024-17483-24055-18092');
+  }
+  $ua = 'Bird.M19/LO,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(312803,27598,63018,913, $ua, '17229-17017-4893-18092');
+  }
+  $ua = 'Bird.M19/LU,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(312803,27598,63018,913, $ua, '17229-17017-4893-18092');
+  }
+  $ua = 'Bird.M19/L1,901/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.144 (GUI)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(312803,27598,63018,913, $ua, '17229-17017-4893-18092');
+  }
+  $ua = 'SFR114/g8eA/FES-FR-SFR-P103D1V1.0.1/R220/2.0 Profile/MIDP-2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(361475,27598,54471,913, $ua, '17706-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; gt-s5560) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(114574,11583,1138038,913, $ua, '11996-17484-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152663,4712,1267644,913, $ua, '12209-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zte-p80aiii-f160) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(287004,101226,1267644,913, $ua, '14768-22839-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152663,4712,1464974,913, $ua, '12209-17483-22881-18092');
   }
   $ua = 'Haier-T10C/1.0 iPanel/2.0 WAP2.0 (compatible; UP.Browser/6.2.2.4; UPG1; UP/4.0; Embedded)';
   $ns = E42($useragent, $ua, $ls);
@@ -3806,7 +5795,502 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(248028,22118,18952,913, $ua, '15409-17017-3625-18092');
+    $dl[] = array(223813,27598,12619,913, $ua, '15409-17017-3625-18092');
+  }
+  $ua = 'WellcoM W929 WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(295091,27598,54471,913, $ua, '12906-17017-17470-18092');
+  }
+  $ua = 'imobileGM5220';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(364211,27598,54471,913, $ua, '12587-17017-17470-18092');
+  }
+  $ua = 'WELLCOM/W920/MIDP2.0/CLDC1.1/Screen-240x320';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(440656,27598,54471,913, $ua, '17749-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t325) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1033046,913, $ua, '14532-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-c105) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380597,4712,1033046,913, $ua, '14568-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-s365) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(253837,4712,1033046,913, $ua, '15732-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; opera) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(273254,27598,1267644,913, $ua, '18254-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-c310) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381101,4712,1138038,913, $ua, '17332-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; es-la; lg-t310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162261,4712,1033046,913, $ua, '13782-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-t310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162261,4712,1033046,913, $ua, '13782-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; fa; lg-t310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162261,4712,1033046,913, $ua, '13782-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1390243,913, $ua, '13734-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5603) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(310067,11583,1390243,913, $ua, '13734-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162261,4712,1267644,913, $ua, '13782-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; es-LA; lg-t310) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(162261,4712,1267644,913, $ua, '13782-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380597,4712,1464974,913, $ua, '14568-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,27598,1464974,913, $ua, '15518-17017-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s310) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(376853,4712,1464974,913, $ua, '14471-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1464974,913, $ua, '14532-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s310) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(376853,4712,1510306,913, $ua, '14471-17483-24055-18092');
+  }
+  $ua = 'W3319 WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(190691,27598,54471,913, $ua, '11940-17017-17470-18092');
+  }
+  $ua = 'YuLong-Coolpad2938/1.0 iPanel/2.0 WAP2.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(216243,27598,54471,913, $ua, '15320-17017-17470-18092');
+  }
+  $ua = 'Emegeton Enzo/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(373968,27598,54471,913, $ua, '14393-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; sonyericssonw150i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(185032,16804,1138038,913, $ua, '14060-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-c105) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(380597,4712,1138038,913, $ua, '14568-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-lg800g) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(785927,4712,1033046,913, $ua, '12599-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-a350) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1311554,4712,1267644,913, $ua, '22957-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152663,4712,1138038,913, $ua, '12209-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; lg-lg900g) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(984500,4712,1138038,913, $ua, '13847-17483-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; gt-s5600) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(120994,11583,1033046,913, $ua, '12051-17484-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1390243,913, $ua, '13602-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5233w) U2/1.0.0 UCBrowser/9.0.1.303 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1390243,913, $ua, '13602-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; gt-s5233w) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(260768,11583,1390243,913, $ua, '13602-17484-22261-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gt350) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(90162,4712,1267644,913, $ua, '13310-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; opera) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,1138038,913, $ua, '15364-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-US; 11a h700tecno) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,1138038,913, $ua, '15364-17017-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381533,4712,1464974,913, $ua, '13365-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-gu220) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381533,4712,1510306,913, $ua, '13365-17483-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-t325) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379373,4712,1510306,913, $ua, '14532-17483-24055-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-s365) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(253837,4712,1464974,913, $ua, '15732-17483-22881-18092');
+  }
+  $ua = 'SPICE-S600/WAP Browser, SPICE-S600/WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(75543,75615,54471,913, $ua, '17006-22835-17470-18092');
+  }
+  $ua = 'SPICE-S600/WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(75543,75615,54471,913, $ua, '17006-22835-17470-18092');
+  }
+  $ua = 'Mozilla/4.0(MTS/1.0/MTC547/VF_RU_RU_P107A4V1.2.1/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(99766,27598,98811,913, $ua, '13316-17017-3807-18092');
+  }
+  $ua = 'TCL-e300/w05.44.08/WAP-2.0/MIDP-2.0 Configuration/CLDC-1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(163414,27598,54471,913, $ua, '13507-17017-17470-18092');
+  }
+  $ua = 'VIDEOCON_V1616/WAP2.0 Profile/MT6253/QVGA';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(203760,192347,54471,913, $ua, '15131-22832-17470-18092');
+  }
+  $ua = 'WinWAP-X/3.0 (Neonode N2; Smartphone; WCE; 176x220)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(367831,27598,366875,913, $ua, '12652-17017-3692-18092');
+  }
+  $ua = 'Bleu.450x/LV,A01/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.160 (GUI)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,27598,63018,913, $ua, '15364-17017-4893-18092');
+  }
+  $ua = 'dopod T2222_CMCC/5.2.19578/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(437985,6631,13791,913, $ua, '17772-5448-22270-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gx300) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(372096,4712,1033046,913, $ua, '14330-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-s310) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(376853,4712,1033046,913, $ua, '14471-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-a350) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1311554,4712,1033046,913, $ua, '22957-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-p520) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(375413,4712,1267644,913, $ua, '14422-17483-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; zh-CN; sonyericssonu5i) U2/1.0.0 UCBrowser/8.8.1.252 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(98235,16804,1138038,913, $ua, '12142-17485-19807-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; mot-ex115) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(359097,17839,1267644,913, $ua, '14413-17486-18693-18092');
+  }
+  $ua = 'Haier-1200P/1.0 iPanel/2.0 WAP2.0 (compatible; UP.Browser/6.2.2.4; UPG1; UP/4.0; Embedded)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(140338,27598,12619,913, $ua, '17984-17017-3625-18092');
   }
   $ua = 'dopod T3238_CMCC/5.2.20257/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E42($useragent, $ua, $ls);
@@ -3815,133 +6299,88 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(295273,16068,13185,913, $ua, '17771-5448-22270-18092');
+    $dl[] = array(269408,6631,13791,913, $ua, '17771-5448-22270-18092');
   }
-  $ua = 'WELLCOM-W981_WAP_Browser';
+  $ua = 'dopod P660_CMCC/5.2.1941/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366282,22118,16074,913, $ua, '13934-17017-17470-18092');
+    $dl[] = array(346038,6631,68786,913, $ua, '17919-5448-22272-18092');
   }
-  $ua = 'WELLCOM_W819 WAP Browser';
+  $ua = 'dopod S900_CMCC/5.2.1941/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(476704,22118,16074,913, $ua, '17753-17017-17470-18092');
+    $dl[] = array(430596,6631,13791,913, $ua, '13837-5448-22270-18092');
   }
-  $ua = 'dopod D600_CMCC/5.1.422/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gu220) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(181597,16068,14194,913, $ua, '17922-5448-22271-18092');
+    $dl[] = array(381533,4712,1033046,913, $ua, '13365-17483-18529-18092');
   }
-  $ua = 'WELLCOM-W388_WAP_Browser';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; sgh-f480) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(210208,22118,16074,913, $ua, '11928-17017-17470-18092');
+    $dl[] = array(77650,27598,1033046,913, $ua, '11653-17017-18529-18092');
   }
-  $ua = 'dopod S700/5.2.19538/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lemon t99) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(229414,16068,13185,913, $ua, '17773-5448-22270-18092');
+    $dl[] = array(1181968,322256,1267644,913, $ua, '23343-22846-18693-18092');
   }
-  $ua = 'Bird.M29/LV,A01/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.160 (GUI)';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/9.0.0.260 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(255737,22118,79139,913, $ua, '17176-17017-4893-18092');
+    $dl[] = array(79838,27598,1390243,913, $ua, '15518-17017-22261-18092');
   }
-  $ua = 'Haier-A62/1.0 Release/11.11.2005 Browser/CMS1.5.58 Profile/MIDP-2.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-a230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273036,22118,16074,913, $ua, '17985-17017-17470-18092');
+    $dl[] = array(44218,4712,1267644,913, $ua, '15364-17483-18693-18092');
   }
-  $ua = 'uaweiU7519/B001%20Browser/ACCESS%20NetFront/3.5%20Profile/MIDP-2.0%20Configuration/CLDC-1.1/QTV-Player/5.3%20X-forwarded-for:41.190.2.167X-forwarded-for:41.190.2.167&cookie=__utma=13473828.759671561.1310979747.1310979747.1310979747.1;%20__utmb';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c300) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(324095,22118,17936,913, $ua, '14563-17017-4223-18092');
+    $dl[] = array(44218,4712,1267644,913, $ua, '15364-17483-18693-18092');
   }
-  $ua = 'uaweiU7519/B001%20Browser/ACCESS%20NetFront/3.5%20Profile/MIDP-2.0%20Configuration/CLDC-1.1/QTV-Player/5.3%20X-forwarded-for:10.96.40.163X-forwarded-for:10.96.40.163&cookie=__utmz=13473828.1310979747.1.1.utmcsr=google%7Cutmccn=(organic)%7Cutmc';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5560) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(324095,22118,17936,913, $ua, '14563-17017-4223-18092');
-  }
-  $ua = '903SH/SHG001 Browser/UP.Browser/7.0.2.1 Profile/MID@-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JCCL-1.2.2 Ext-V-@rofile/VSCL-2.0.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(368168,22118,64676,913, $ua, '13966-17017-4222-18092');
-  }
-  $ua = 'WELLCOM-W980 WAP Browser';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(368960,22118,16074,913, $ua, '13985-17017-17470-18092');
-  }
-  $ua = 'Bird.S889/JL3,BV/WAP2.0 UP.Browser/6.2.2.5.d.3 (GUI) MMP/1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(469931,22118,18952,913, $ua, '17406-17017-3625-18092');
-  }
-  $ua = 'Bird.S889/JL3,BW/WAP2.0 UP.Browser/6.2.2.5.d.3 (GUI) MMP/1.0';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(469931,22118,18952,913, $ua, '17406-17017-3625-18092');
-  }
-  $ua = 'MTC540/ V010 04A/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C';
-  $ns = E42($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(221858,22118,119194,913, $ua, '13551-17017-3807-18092');
+    $dl[] = array(114574,11583,1510306,913, $ua, '11996-17484-24055-18092');
   }
   $ua = 'dopod T8288_CMCC/5.2.19965/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
   $ns = E42($useragent, $ua, $ls);
@@ -3950,7 +6389,7 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(303924,16068,13185,913, $ua, '17913-5448-22270-18092');
+    $dl[] = array(280295,6631,13791,913, $ua, '17913-5448-22270-18092');
   }
   $ua = 'Debussy/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 176x220; HPiPAQ510/1.0)';
   $ns = E42($useragent, $ua, $ls);
@@ -3959,79 +6398,205 @@ function _H42($useragent) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(181309,16068,16074,913, $ua, '15944-5448-17470-18092');
+    $dl[] = array(161973,6631,5675,913, $ua, '15944-5448-4808-18092');
   }
-  $ua = 'Haier-HG-M217_CMCC/3.0 Release/12.1.2007 Browser/WAP2.0';
+  $ua = 'WELLCOM-W981_WAP_Browser';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370832,22118,16074,913, $ua, '14054-17017-17470-18092');
+    $dl[] = array(343368,27598,54471,913, $ua, '13934-17017-17470-18092');
   }
-  $ua = 'LENOVO A365/S008_080523/WAP2.0 Profile';
+  $ua = 'WELLCOM_W819 WAP Browser';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(403566,58463,58470,913, $ua, '14850-17811-17810-18092');
+    $dl[] = array(441593,27598,54471,913, $ua, '17753-17017-17470-18092');
   }
-  $ua = 'dopod P660_CMCC/5.2.1941/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; s8003) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369032,16068,5635,913, $ua, '17919-5448-4808-18092');
+    $dl[] = array(143741,27598,1033046,913, $ua, '12516-17017-18529-18092');
   }
-  $ua = 'LGE/U8200 MIC/WAP2.0 MIDP-2.0/CLDC-1.1';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s5230) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(445568,4620,16074,913, $ua, '16560-17483-17470-18092');
+    $dl[] = array(79838,27598,1267644,913, $ua, '15518-17017-18693-18092');
   }
-  $ua = 'Bird.SM10/KN3,LB/WAP1.2.1 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8003) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(450171,22118,197443,913, $ua, '17407-17017-4901-18092');
+    $dl[] = array(143741,27598,1267644,913, $ua, '12516-17017-18693-18092');
   }
-  $ua = 'WinWAP-X/3.0 (tvCompass Smart Remote)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-gt350) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366858,22118,387794,913, $ua, '20801-17017-3692-18092');
+    $dl[] = array(90162,4712,1033046,913, $ua, '13310-17483-18529-18092');
   }
-  $ua = 'dopod C730_CMCC/5.2.968/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)';
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; mot-ex115) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(468409,16068,15131,913, $ua, '17766-5448-17173-18092');
+    $dl[] = array(359097,17839,1033046,913, $ua, '14413-17486-18529-18092');
   }
-  $ua = 'mot-V3/OE.40.79R MIB/2.2.1 profile/MIDP-2.0 configuration/CLDC-1.0';
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; vi; q-mobile) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
   $ns = E42($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(96646,42973,33458,913, $ua, '13921-5338-4836-18092');
+    $dl[] = array(1474737,27598,1267644,913, $ua, '23411-17017-18693-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; zte-p80aiii-f160) U2/1.0.0 UCBrowser/8.7.0.218 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(287004,101226,1033046,913, $ua, '14768-22839-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-c310) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(381101,4712,1464974,913, $ua, '17332-17483-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; s8003) U2/1.0.0 UCBrowser/9.1.0.291 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(143741,27598,1464974,913, $ua, '12516-17017-22881-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; lg-ks360 teleca) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(152663,4712,1510306,913, $ua, '12209-17483-24055-18092');
+  }
+  $ua = 'Q-Mobile-F220/Profile/MIDP.2.0Configuration/CLDC.1.0';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(182141,27598,54471,913, $ua, '11917-17017-17470-18092');
+  }
+  $ua = 'WELLCOM-W388_WAP_Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(190403,27598,54471,913, $ua, '11928-17017-17470-18092');
+  }
+  $ua = 'dopod S700/5.2.19538/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(205704,6631,13791,913, $ua, '17773-5448-22270-18092');
+  }
+  $ua = 'Bird.M29/LV,A01/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.160 (GUI)';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(230659,27598,63018,913, $ua, '17176-17017-4893-18092');
+  }
+  $ua = 'WELLCOM-W980 WAP Browser';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(345966,27598,54471,913, $ua, '13985-17017-17470-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; s5230) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(79838,27598,1033046,913, $ua, '15518-17017-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; zte-p107a20(propus)) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1329629,101226,1033046,913, $ua, '23534-22839-18529-18092');
+  }
+  $ua = 'UCWEB/2.0(Java; U; MIDP-2.0; en-us; lg-p520) U2/1.0.0 UCBrowser/8.7.1.234 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(375413,4712,1033046,913, $ua, '14422-17483-18529-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; zte nova) U2/1.0.0 UCBrowser/8.9.0.251 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(44218,101226,1267644,913, $ua, '15364-22839-18693-18092');
+  }
+  $ua = 'UCWEB/2.0 (Java; U; MIDP-2.0; en-US; gt-s5600) U2/1.0.0 UCBrowser/9.2.0.311 U2/1.0.0 Mobile';
+  $ns = E42($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(120994,11583,1510306,913, $ua, '12051-17484-24055-18092');
   }
   return $dl;
 }

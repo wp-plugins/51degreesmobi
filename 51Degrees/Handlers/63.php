@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,24 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
 function E63($target, $test, $ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 1, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -45,21 +35,70 @@ function E63($target, $test, $ls) {
  *   An array of device details for the closest devices.
  */
 function _H63($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=^MOT-MOTOROLA )[^/]+#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#\\([^\\)]+\\)#', $useragent));
-  $ns = E63($segments, array(0 => array(0 => 'L6'), 1 => NULL), $ls);
+  $ua = 'NEC-N600/1.0 HopenOS/2.0';
+  $ns = E63($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(43555,34397,33458,913, 'MOT-MOTOROLA L6/0A.53.1AR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1', '11703-5521-4836-18092');
-    $ls = $ns;
+    $dl[] = array(28561,281519,54471,913, $ua, '18088-19949-17470-18092');
+  }
+  $ua = 'NEC-N6206/1.0 Release/06.15.2006 Browser/CMS2.0.0 Profile/MIDP-2.0';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(345246,281519,54471,913, $ua, '17544-19949-17470-18092');
+  }
+  $ua = 'NEC-e373/001.00 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1 Qtv/1.00';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(373248,281519,36213,913, $ua, '14374-19949-4924-18092');
+  }
+  $ua = 'NEC-e373/001.00 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.00';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(373248,281519,36213,913, $ua, '14374-19949-4924-18092');
+  }
+  $ua = 'NEC-e238/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2.g.1.106 (GUI) MMP/2.0';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(281447,281519,12619,913, $ua, '12757-19949-3625-18092');
+  }
+  $ua = 'NEC-e121/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,281519,12619,913, $ua, '18088-19949-3625-18092');
+  }
+  $ua = 'NEC-e353/001.00 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.0';
+  $ns = E63($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(28561,281519,36213,913, $ua, '18088-19949-4924-18092');
   }
   return $dl;
 }

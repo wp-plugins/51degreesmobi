@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E36($target, $test, $ls) {
+function E36(&$target, $test, &$ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 1, $score);
   if ($score == PHP_INT_MAX) {
@@ -53,23 +53,7 @@ function _H36($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.800) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
-    $ls = $ns;
-  }
-  $ns = E36($segments, array(0 => array(0 => '2.690')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.690) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
-    $ls = $ns;
-  }
-  $ns = E36($segments, array(0 => array(0 => '2.702')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.702) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
+    $dl[] = array(44218,49474,302671,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.800) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
     $ls = $ns;
   }
   $ns = E36($segments, array(0 => array(0 => '2.802')), $ls);
@@ -77,31 +61,7 @@ function _H36($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.802) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
-    $ls = $ns;
-  }
-  $ns = E36($segments, array(0 => array(0 => '2.671')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.671) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
-    $ls = $ns;
-  }
-  $ns = E36($segments, array(0 => array(0 => '2.612')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,53254,326534,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.612) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
-    $ls = $ns;
-  }
-  $ns = E36($segments, array(0 => array(0 => '1.600')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,53254,145492,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17', '15364-5690-17316-18092');
+    $dl[] = array(44218,49474,302671,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.802) AppleWebKit/534.6 (KHTML, like Gecko) Version/5.0 Safari/534.6.3', '15364-5690-17317-18092');
     $ls = $ns;
   }
   $ns = E36($segments, array(0 => array(0 => '2.340')), $ls);
@@ -109,7 +69,7 @@ function _H36($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,53254,145492,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17  3gpp-gba', '15364-5690-17316-18092');
+    $dl[] = array(44218,49474,128353,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/2.340) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17  3gpp-gba', '15364-5690-17316-18092');
     $ls = $ns;
   }
   $ns = E36($segments, array(0 => array(0 => '3.02')), $ls);
@@ -117,7 +77,7 @@ function _H36($useragent) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(361300,1764,920,913, 'Mozilla/5.0 (Linux;U; Android 2.2; en-us; sdk Build/FRF91) AppleWebKit/533.1 BOLT/3.02 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', '18061-5096-3508-18092');
+    $dl[] = array(339289,920,926,913, 'Mozilla/5.0 (Linux;U; Android 2.2; en-us; sdk Build/FRF91) AppleWebKit/533.1 BOLT/3.02 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1', '18061-5096-3508-18092');
     $ls = $ns;
   }
   return $dl;

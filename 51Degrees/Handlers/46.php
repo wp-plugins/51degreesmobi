@@ -22,13 +22,49 @@
  * return integer
  *   The score between the two strings.
  */
-function E46($target, $test, $ls) {
+function E46(&$target, $test, &$ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
   if ($score == PHP_INT_MAX) {
     return PHP_INT_MAX;
   }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 100000, $score);
+  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 2, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 100000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 100000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[4], $test[4], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[5], $test[5], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[6], $test[6], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[7], $test[7], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[8], $test[8], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[9], $test[9], $ls, 10000, $score);
+  if ($score == PHP_INT_MAX) {
+    return PHP_INT_MAX;
+  }
+  fiftyone_degrees_calculate_segment_score($target[10], $test[10], $ls, 10000, $score);
   if ($score == PHP_INT_MAX) {
     return PHP_INT_MAX;
   }
@@ -51,1526 +87,303 @@ function _H46($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=DoCoMo/)\\d+\\.\\d+#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#(?<=DoCoMo/\\d\\.\\d[\\s/])[\\w\\d]+#', $useragent));
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P900i')), $ls);
+    0 => fiftyone_degrees_preg_match_all('#(?<=Chrome/)\\d+\\.\\d+#', $useragent),
+    1 => fiftyone_degrees_preg_match_all('#(?<=\\(|;|,)[^\\);]+#', $useragent),
+    2 => fiftyone_degrees_preg_match_all('#(?<=RockMelt/)\\d+\\.\\d+#', $useragent),
+    3 => fiftyone_degrees_preg_match_all('#Ubuntu/\\d+\\.\\d+#', $useragent),
+    4 => fiftyone_degrees_preg_match_all('#Sleipnir/\\d+\\.\\d+#', $useragent),
+    5 => fiftyone_degrees_preg_match_all('#Nutch-\\d+\\.\\d+#', $useragent),
+    6 => fiftyone_degrees_preg_match_all('#Comodo_Dragon/\\d+\\.\\d+#', $useragent),
+    7 => fiftyone_degrees_preg_match_all('#Iron/\\d+\\.\\d#', $useragent),
+    8 => fiftyone_degrees_preg_match_all('#Maxthon/\\d+\\.\\d#', $useragent),
+    9 => fiftyone_degrees_preg_match_all('#Ubuntu Chromium#', $useragent),
+    10 => fiftyone_degrees_preg_match_all('#OPR/\\d+\\.\\d+#', $useragent));
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.1', 1 => ' WOW64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(363116,362677,190325,363230, 'DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo;+http://search.goo.ne.jp/option/use/sub4/sub4-1/)', '13209-17658-18245-18168');
+    $dl[] = array(44218,95563,1497422,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-7133-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F704i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.1', 1 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F704i(c100;TB;W23H12)', '15364-17658-17656-18092');
+    $dl[] = array(44218,95563,1497422,913, 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-7133-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L704i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.1', 1 => ' WOW64', 2 => 'KHTML, like Gecko', 3 => 'gzip(gfe'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L704i(c100;TB;W24H14)', '15364-17658-17656-18092');
+    $dl[] = array(44218,95563,1497422,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36,gzip(gfe)', '15364-7133-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L705iX')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.1', 1 => 'KHTML, like Gecko', 2 => 'gzip(gfe'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L705iX(c100;TB;W24H14)', '15364-17658-17656-18092');
+    $dl[] = array(44218,95563,1497422,913, 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36,gzip(gfe)', '15364-7133-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L852i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_0', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L852i(c100;TB;W24H14)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH04C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_2', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH04C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P03C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_4', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P03C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L03C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_3', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L03C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N03C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_1', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N03C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P705i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_8_5', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P705i(c100;TB;W24H15)', '15364-17658-17656-18092');
+    $dl[] = array(47863,607733,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.37 Safari/537.36', '17595-18207-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F04A')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.2', 1 => ' WOW64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F04A(c100;TB;W24H17)', '15364-17658-17656-18092');
+    $dl[] = array(44218,285367,1497422,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-16110-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L03B')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.2', 1 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L03B(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(44218,285367,1497422,913, 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-16110-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH903i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'X11', 1 => ' Linux i686', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH903i(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(44218,124734,1497422,913, 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1553.0 Safari/537.36 SUSE/30.0.1553.0', '15364-18110-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '1.0'), 1 => array(0 => 'N505i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'X11', 1 => ' Linux x86_64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/1.0/N505i/c20/TB/W24H12', '15364-17658-17656-18092');
+    $dl[] = array(44218,124734,1497422,913, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-18110-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N02B')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 5.2', 1 => ' WOW64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N02B(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(44218,49474,1497422,913, 'Mozilla/5.0 (Windows NT 5.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1568.2 Safari/537.36', '15364-5690-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH04B')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 5.1', 1 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH04B(c500;TB;W24H14)', '15364-17658-17656-18092');
+    $dl[] = array(44218,49474,1497422,913, 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-5690-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO906i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 5.2', 1 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SO906i(c100;TB;W24H18)', '15364-17658-17656-18092');
+    $dl[] = array(44218,49474,1497422,913, 'Mozilla/5.0 (Windows NT 5.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-5690-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P704i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 5.1', 1 => 'KHTML, like Gecko', 2 => ' (+http://code.google.com/appengine', 3 => ' appid: s~unalin001'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P704i(c100;TB;W24H12)', '15364-17658-17656-18092');
+    $dl[] = array(44218,49474,1497422,913, 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1568.2 Safari/537.36 AppEngine-Google; (+http://code.google.com/appengine; appid: s~unalin001)', '15364-5690-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'D705i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_7_4', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 D705i(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,355621,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17297-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'D903i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_7_3', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 D903i(c100;TB;W28H20) (compatible; Hatena-Mobile-Gateway/1.2; +http://mgw.hatena.ne.jp/help)', '15364-17658-17656-18092');
+    $dl[] = array(47863,355621,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17297-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F705i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_7_2', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F705i(c100;TB;W24H17)', '15364-17658-17656-18092');
+    $dl[] = array(47863,355621,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17297-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P706imyu')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_7_5', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P706imyu(c100;TB;W24H15)', '15364-17658-17656-18092');
+    $dl[] = array(47863,355621,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17297-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P06A')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_7_0', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P06A(c100;TB;W24H15)', '15364-17658-17656-18092');
+    $dl[] = array(47863,355621,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17297-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH05B')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.0', 1 => ' WOW64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH05B(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(44218,50333,1497422,913, 'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-17285-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L06A')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Windows NT 6.0', 1 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L06A(c100;TB;W24H15)', '15364-17658-17656-18092');
+    $dl[] = array(44218,50333,1497422,913, 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '15364-17285-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO706i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_8', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SO706i(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N01A')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_1', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N01A(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F904i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_3', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F904i(c100;TB;W24H17)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH904i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_6', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH904i(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N05A')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_0', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N05A(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.22 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH11C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_7', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH11C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.28 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO705i')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_4', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SO705i(c100;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.28 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH07A3')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_6_5', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH07A3(c500;TB;W24H14)', '15364-17658-17656-18092');
+    $dl[] = array(47863,176122,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.37 Safari/537.36', '17595-17296-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH10C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '30.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X 10_9_0', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH10C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(47863,1271593,1497422,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.14 Safari/537.36', '17595-21721-24143-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F10C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '32.0'), 1 => array(0 => 'Windows NT 6.2', 1 => ' Win64', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F10C(c500;TB;W24H16)', '15364-17658-17656-18092');
+    $dl[] = array(44218,285367,1185042,913, 'Mozilla/16.0 (Windows NT 6.2; Win64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/32.0.1297.0 Safari/8536.25', '15364-16110-24152-18092');
     $ls = $ns;
   }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F11C')), $ls);
+  $ns = E46($segments, array(0 => array(0 => '33.0'), 1 => array(0 => 'Macintosh', 1 => ' Intel Mac OS X', 2 => 'KHTML, like Gecko'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F11C(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P06C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P06C(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N05C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N05C(c500;TB;W30H20)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P904i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P904i(c100;TB;W24H15)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH02B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH02B(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N03B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N03B(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SO905i(c100;TB;W24H18)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N09A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N09A3(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N04A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N04A(c100;TB;W30H20)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F09C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F09C(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F906i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F906i(c100;TB;W24H17)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P09A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P09A3(c500;TB;W24H15)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P05C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P05C(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N904i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N904i(c100;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F706i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F706i(c100;TB;W24H17)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'CA01C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 CA01C(c500;TB;W30H20)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P04C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P04C(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F02D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F02D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N03D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N03D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P705imyu')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P705imyu(c100;TB;W24H15)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F04D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F04D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH706i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH706i(c100;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH05C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH05C(c500;TB;W30H15)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P03D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P03D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N02D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N02D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH703i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH703i(c100;TB;W24H12)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH705i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH705i(c100;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N703iD')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N703iD(c100;TB;W24H12)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH704i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH704i(c100;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L04A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 L04A(c100;TB;W24H15)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F07A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F07A(c100;TB;W20H08)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH03D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH03D(c500;TB;W30H20)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH05D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH05D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F06D')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F06D(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P01E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 P01E(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N01E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 N01E(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F01E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 F01E(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH03E')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(53173,362677,361740,913, 'DoCoMo/2.0 SH03E(c500;TB;W24H16)', '15364-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH902i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(366498,362677,361740,913, 'DoCoMo/2.0 SH902i (compatible; Y!J-SRD/1.0; http://help.yahoo.co.jp/help/jp/search/indexing/indexing-27.html)', '13293-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH902iSL')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(366498,362677,361740,913, 'DoCoMo/2.0 SH902iSL', '13293-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH902iS')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(366498,362677,361740,913, 'DoCoMo/2.0 SH902iS', '13293-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P900i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,363188,363230, 'DoCoMo/2.0 P900i(c100;TB;W24H11) (compatible; ichiro/mobile goo; +http://help.goo.ne.jp/help/article/1142/)', '13209-17658-18392-18168');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH01B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377756,362677,361740,913, 'DoCoMo/2.0 SH01B(c500;TB;W24H16)', '14617-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH01C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377756,362677,361740,913, 'DoCoMo/2.0 SH01C(c500;TB;W24H16)', '14617-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH01A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377756,362677,361740,913, 'DoCoMo/2.0 SH01A(c100;TB;W24H16)', '14617-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F01C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481786,362677,361740,913, 'DoCoMo/2.0 F01C(c500;TB;W24H16)', '17648-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F01B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481786,362677,361740,913, 'DoCoMo/2.0 F01B(c500;TB;W24H16)', '17648-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N02A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367362,362677,361740,913, 'DoCoMo/2.0 N02A(c100;TB;W24H16)', '13433-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N02C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367362,362677,361740,913, 'DoCoMo/2.0 N02C(c500;TB;W24H16)', '13433-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P07B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485745,362677,361740,913, 'DoCoMo/2.0 P07B(c500;TB;W24H16)', '17744-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH07B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(483730,362677,361740,913, 'DoCoMo/2.0 SH07B(c500;TB;W24H16)', '17748-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH06A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367880,362677,361740,913, 'DoCoMo/2.0 SH06A3(c500;TB;W24H14)', '14662-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P04B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(483658,362677,361740,913, 'DoCoMo/2.0 P04B(c500;TB;W24H16)', '17554-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH03B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367146,362677,361740,913, 'DoCoMo/2.0 SH03B(c500;TB;W30H18)', '13429-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P10A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480417,362677,361740,913, 'DoCoMo/2.0 P10A(c100;TB;W24H15)', '17745-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N04B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(483586,362677,361740,913, 'DoCoMo/2.0 N04B(c500;TB;W24H16)', '17734-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F01A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367290,362677,361740,913, 'DoCoMo/2.0 F01A(c100;TB;W24H17)', '13432-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N07A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379275,362677,361740,913, 'DoCoMo/2.0 N07A3(c500;TB;W24H16)', '14652-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P905iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(365706,362677,361740,913, 'DoCoMo/2.0 P905iTV', '17551-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(365706,362677,361740,913, 'DoCoMo/2.0 P905i(c100;TB;W24H15)', '17551-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH08B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479769,362677,361740,913, 'DoCoMo/2.0 SH08B(c500;TB;W24H16)', '16984-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH08C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479769,362677,361740,913, 'DoCoMo/2.0 SH08C(c500;TB;W24H14)', '16984-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH08A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(479769,362677,361740,913, 'DoCoMo/2.0 SH08A(c500;TB;W24H14)', '16984-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F09A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401551,362677,361740,913, 'DoCoMo/2.0 F09A3(c500;TB;W24H16)', '17755-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N07B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484234,362677,361740,913, 'DoCoMo/2.0 N07B(c500;TB;W24H16)', '17736-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N08A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(380425,362677,361740,913, 'DoCoMo/2.0 N08A3(c500;TB;W24H16)', '14722-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N906i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(400903,362677,361740,913, 'DoCoMo/2.0 N906i(c100;TB;W24H16)', '14805-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N906imyu')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(400903,362677,361740,913, 'DoCoMo/2.0 N906imyu(c100;TB;W24H16)', '14805-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N906iL')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(400903,362677,361740,913, 'DoCoMo/2.0 N906iL(c100;TB;W24H16)', '14805-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F06B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401263,362677,361740,913, 'DoCoMo/2.0 F06B(c500;TB;W24H16)', '14747-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH06B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379131,362677,361740,913, 'DoCoMo/2.0 SH06B(c500;TB;W24H16)', '17760-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P906i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(380353,362677,361740,913, 'DoCoMo/2.0 P906i(c100;TB;W24H15)', '14721-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P01A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(380497,362677,361740,913, 'DoCoMo/2.0 P01A(c100;TB;W24H15)', '14725-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P07A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480849,362677,361740,913, 'DoCoMo/2.0 P07A3(c500;TB;W24H15)', '17743-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N905iBiz')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(478875,362677,361740,913, 'DoCoMo/2.0 N905iBiz', '17737-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(478875,362677,361740,913, 'DoCoMo/2.0 N905i(c100;TB;W24H16)', '17737-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N905imyu')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(478875,362677,361740,913, 'DoCoMo/2.0 N905imyu(c100;TB;W24H16)', '17737-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P02B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(482290,362677,361740,913, 'DoCoMo/2.0 P02B(c500;TB;W24H16)', '17552-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH02A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(362900,362677,361740,913, 'DoCoMo/2.0 SH02A(c100;TB;W24H16)', '13202-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F02A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480633,362677,361740,913, 'DoCoMo/2.0 F02A(c100;TB;W24H17)', '17649-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P01B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481714,362677,361740,913, 'DoCoMo/2.0 P01B(c500;TB;W24H16)', '17738-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N01B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(481858,362677,361740,913, 'DoCoMo/2.0 N01B(c500;TB;W24H16)', '17719-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P03B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379059,362677,361740,913, 'DoCoMo/2.0 P03B(c500;TB;W24H16)', '14649-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH05A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(400975,362677,361740,913, 'DoCoMo/2.0 SH05A3(c500;TB;W24H14)', '14742-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P02A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378699,362677,361740,913, 'DoCoMo/2.0 P02A(c100;TB;W24H15)', '14644-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH906i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472019,362677,361740,913, 'DoCoMo/2.0 SH906i(c100;TB;W24H16)', '17747-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH906iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(472019,362677,361740,913, 'DoCoMo/2.0 SH906iTV(c100;TB;W24H16)', '17747-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N05B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484018,362677,361740,913, 'DoCoMo/2.0 N05B(c500;TB;W24H16)', '17759-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N06B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484090,362677,361740,913, 'DoCoMo/2.0 N06B(c100;TB;W24H16)', '17733-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P06B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484882,362677,361740,913, 'DoCoMo/2.0 P06B(c500;TB;W24H16)', '17742-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F03B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(400831,362677,361740,913, 'DoCoMo/2.0 F03B(c500;TB;W24H16)', '14803-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P08A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379347,362677,361740,913, 'DoCoMo/2.0 P08A3(c500;TB;W24H15)', '17758-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P03A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(402416,362677,361740,913, 'DoCoMo/2.0 P03A(c100;TB;W24H15)', '14797-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F02B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378843,362677,361740,913, 'DoCoMo/2.0 F02B(c500;TB;W24H16)', '14646-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N706i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379419,362677,361740,913, 'DoCoMo/2.0 N706i(c100;TB;W24H16)', '14762-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N706i2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379419,362677,361740,913, 'DoCoMo/2.0 N706i2(c100;TB;W24H16)', '14762-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N706ie')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379419,362677,361740,913, 'DoCoMo/2.0 N706ie', '14762-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F08B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484306,362677,361740,913, 'DoCoMo/2.0 F08B(c500;TB;W24H16)', '17727-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N06A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379491,362677,361740,913, 'DoCoMo/2.0 N06A3(c500;TB;W24H16)', '14655-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P05B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485098,362677,361740,913, 'DoCoMo/2.0 P05B(c500;TB;W24H16)', '17741-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F05C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(501885,362677,361740,913, 'DoCoMo/2.0 F05C(c500;TB;W30H20)', '17724-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F08A3')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(379851,362677,361740,913, 'DoCoMo/2.0 F08A3(c500;TB;W24H16)', '14700-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N01C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497925,362677,361740,913, 'DoCoMo/2.0 N01C(c500;TB;W24H16)', '17757-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367802,362677,361740,913, 'DoCoMo/2.0 F905i(c100;TB;W24H17)', '14600-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F905iBiz')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367802,362677,361740,913, 'DoCoMo/2.0 F905iBiz', '14600-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH02C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(498285,362677,361740,913, 'DoCoMo/2.0 SH02C(c500;TB;W24H16)', '17763-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F02C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(498141,362677,361740,913, 'DoCoMo/2.0 F02C(c500;TB;W24H16)', '17721-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH905iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377396,362677,361740,913, 'DoCoMo/2.0 SH905iTV(c100;TB;W24H16)', '14645-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377396,362677,361740,913, 'DoCoMo/2.0 SH905i(c100;TB;W24H16)', '14645-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N03A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378771,362677,361740,913, 'DoCoMo/2.0 N03A(c100;TB;W24H16)', '17720-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH04A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(362684,362677,361740,913, 'DoCoMo/2.0 SH04A(c100;TB;W24H16)', '13198-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N04A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480921,362677,361740,913, 'DoCoMo/2.0 N04A(c100;TB;W24H16)', '17731-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F07B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(483514,362677,361740,913, 'DoCoMo/2.0 F07B(c500;TB;W24H16)', '17726-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'D905i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367586,362677,361740,913, 'DoCoMo/2.0 D905i(c100;TB;W24H17)', '13434-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F03C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(498213,362677,361740,913, 'DoCoMo/2.0 F03C(c500;TB;W24H16)', '17722-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P02C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497853,362677,361740,913, 'DoCoMo/2.0 P02C(c500;TB;W24H16)', '17553-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N705i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401119,362677,361740,913, 'DoCoMo/2.0 N705i(c100;TB;W24H16)', '14746-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N705imyu')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401119,362677,361740,913, 'DoCoMo/2.0 N705imyu(c100;TB;W24H16)', '14746-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F03A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401695,362677,361740,913, 'DoCoMo/2.0 F03A(c100;TB;W24H17)', '14761-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F04B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401839,362677,361740,913, 'DoCoMo/2.0 F04B(c500;TB;W24H16)', '14766-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L03A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(401407,362677,361740,913, 'DoCoMo/2.0 L03A(c100;TB;W20H11)', '14752-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P903i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(364403,362677,361740,913, 'DoCoMo/2.0 P903i(c100;TB;W24H12)', '13259-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P903iX')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(364403,362677,361740,913, 'DoCoMo/2.0 P903iX', '13259-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P903iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(364403,362677,361740,913, 'DoCoMo/2.0 P903iTV', '13259-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH03A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(367514,362677,361740,913, 'DoCoMo/2.0 SH03A(c100;TB;W24H16)', '13435-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F04C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(499237,362677,361740,913, 'DoCoMo/2.0 F04C(c500;TB;W30H20)', '17723-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P04A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(402271,362677,361740,913, 'DoCoMo/2.0 P04A(c100;TB;W24H15)', '14793-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L04B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484738,362677,361740,913, 'DoCoMo/2.0 L04B(c100;TB;W24H12)', '17756-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P01C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(497997,362677,361740,913, 'DoCoMo/2.0 P01C(c500;TB;W24H16)', '17739-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F09B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(484954,362677,361740,913, 'DoCoMo/2.0 F09B(c100;TB;W20H09)', '17729-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N902iS')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377684,362677,361740,913, 'DoCoMo/2.0 N902iS(c100;TB;W24H12)', '14616-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N902i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377684,362677,361740,913, 'DoCoMo/2.0 N902i', '14616-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N902iL')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377684,362677,361740,913, 'DoCoMo/2.0 N902iL', '14616-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'N902iX')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(377684,362677,361740,913, 'DoCoMo/2.0 N902iX', '14616-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P906i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(380353,298022,361740,913, 'DoCoMo/2.0 P906i(c100;TB;W24H15) AppEngine-Google; (+http://code.google.com/appengine; appid: s~google.com:mobile-checker)', '14721-7480-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH09B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485026,362677,361740,913, 'DoCoMo/2.0 SH09B(c500;TB;W24H16)', '17761-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F08C')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(503902,362677,361740,913, 'DoCoMo/2.0 F08C(c100;TB;W20H09)', '17728-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P900iV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,363188,913, 'DoCoMo/2.0 P900iV(c100;TB;W20H09)', '13209-17658-18392-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P900i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,363188,913, 'DoCoMo/2.0 P900i(c100;TB;W24H11)', '13209-17658-18392-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO903i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378915,362677,361740,913, 'DoCoMo/2.0 SO903i(c100;TB;W24H18)', '14648-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SO903iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(378915,362677,361740,913, 'DoCoMo/2.0 SO903iTV', '14648-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH903iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(462267,362677,361740,913, 'DoCoMo/2.0 SH903iTV(c100;TB;W24H16)', '17762-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'L01A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(475119,362677,361740,913, 'DoCoMo/2.0 L01A(c100;TB;W24H17)', '17754-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F10B')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(485170,362677,361740,913, 'DoCoMo/2.0 F10B(c500;TB;W24H16)', '17746-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P700i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(454414,362677,361740,913, 'DoCoMo/2.0 P700i(c100;TB;W24H12)', '19997-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '1.0'), 1 => array(0 => 'SO505iS')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(454342,362677,361740,913, 'DoCoMo/1.0/SO505iS/c20/TB/W40H21', '16348-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P901iS')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,361740,913, 'DoCoMo/2.0 P901iS', '13209-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P901iTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,361740,913, 'DoCoMo/2.0 P901iTV', '13209-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P901i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(363116,362677,361740,913, 'DoCoMo/2.0 P901i', '13209-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH901iC')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(373070,362677,361740,913, 'DoCoMo/2.0 SH901iC', '14147-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'SH901iS')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(373070,362677,361740,913, 'DoCoMo/2.0 SH901iS', '14147-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'P05A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480489,362677,361740,913, 'DoCoMo/2.0 P05A', '17740-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '1.0'), 1 => array(0 => 'SO212i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480561,362677,361740,913, 'DoCoMo/1.0/SO212i', '16344-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '1.0'), 1 => array(0 => 'SO211i')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480705,362677,361740,913, 'DoCoMo/1.0/SO211i', '16341-17658-17656-18092');
-    $ls = $ns;
-  }
-  $ns = E46($segments, array(0 => array(0 => '2.0'), 1 => array(0 => 'F05A')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(480777,362677,361740,913, 'DoCoMo/2.0 F05A', '17650-17658-17656-18092');
+    $dl[] = array(47863,126201,1529744,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/907.0 (KHTML, like Gecko) Chrome/33.0.1.0.8321.0.15.0 Safari/907.0', '17595-18120-24153-18092');
     $ls = $ns;
   }
   return $dl;
