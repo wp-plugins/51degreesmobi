@@ -37,14 +37,131 @@ function E110($target, $test, $ls) {
 function _H110($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Wada.vn Vietnamese Search';
+  $ua = 'Tiny Tiny RSS/1.5.5 (http://tt-rss.org/)';
   $ns = E110($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.5.10 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.5.11 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.5.9 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.6.0 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.5.8.1 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.6.1 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.6.2 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.2 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.4 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.5 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.8 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.6 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
+  }
+  $ua = 'Tiny Tiny RSS/1.7.9 (http://tt-rss.org/)';
+  $ns = E110($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,298022,16074,913, $ua, '15364-7480-17470-18092');
   }
   return $dl;
 }

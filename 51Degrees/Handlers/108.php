@@ -37,149 +37,140 @@ function E108($target, $test, $ls) {
 function _H108($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Tiny Tiny RSS/1.9 (http://tt-rss.org/)';
+  $ua = 'iOS/5.1 (9B179) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,272292,54471,913, $ua, '15364-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.5.5 (http://tt-rss.org/)';
+  $ua = 'iOS/5.0.1 (9A405) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.5.10 (http://tt-rss.org/)';
+  $ua = 'iOS/5.1.1 (9B206) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.5.11 (http://tt-rss.org/)';
+  $ua = 'iOS/6.0 (10A403) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.5.9 (http://tt-rss.org/)';
+  $ua = 'iOS/6.0.1 (10A523) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.6.0 (http://tt-rss.org/)';
+  $ua = 'iOS/6.0 (10A405) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.5.8.1 (http://tt-rss.org/)';
+  $ua = 'iOS/6.0.1 (10A525) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.6.1 (http://tt-rss.org/)';
+  $ua = 'iOS/6.0.2 (10A551) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.6.2 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1 (10B143) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.2 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1 (10B142) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.4 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1 (10B141) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.5 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1 (10B144) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.8 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1.2 (10B146) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.6 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1.3 (10B329) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'Tiny Tiny RSS/1.7.9 (http://tt-rss.org/)';
+  $ua = 'iOS/6.1.4 (10B350) dataaccessd/1.0';
   $ns = E108($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
-  }
-  $ua = 'Tiny Tiny RSS/1.8 (http://tt-rss.org/)';
-  $ns = E108($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(273254,272292,54471,913, $ua, '18254-7480-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
   return $dl;
 }

@@ -37,113 +37,14 @@ function E111($target, $test, $ls) {
 function _H111($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'FeedDemon/3.1 (http://www.feeddemon.com/; Microsoft Windows)';
+  $ua = 'Amazon CloudFront';
   $ns = E111($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
-  }
-  $ua = 'FeedDemon/2.7 (http://www.newsgator.com/; Microsoft Windows)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
-  }
-  $ua = 'FeedDemon/3.1 (http://www.feeddemon.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/2.7 (http://www.newsgator.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/4.0 (http://www.feeddemon.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/3.0 (http://www.feeddemon.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/4.1 (http://www.feeddemon.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows XP)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,49474,54471,913, $ua, '15364-5690-17470-18092');
-  }
-  $ua = 'FeedDemon/4.0 (http://www.feeddemon.com/; Microsoft Windows)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
-  }
-  $ua = 'FeedDemon/3.0 (http://www.feeddemon.com/; Microsoft Windows)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
-  }
-  $ua = 'FeedDemon/4.1 (http://www.feeddemon.com/; Microsoft Windows)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
-  }
-  $ua = 'FeedDemon/4.5 (http://www.feeddemon.com/; Microsoft Windows)';
-  $ns = E111($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
   return $dl;
 }

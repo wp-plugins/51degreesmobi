@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E127(&$target, $test, &$ls) {
+function E127($target, $test, $ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 10000, $score);
   if ($score == PHP_INT_MAX) {
@@ -55,191 +55,239 @@ function _H127($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=Java/)\\d\\.\\d#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#Windows .+\\)#', $useragent),
-    2 => fiftyone_degrees_preg_match_all('#Max OS X \\d+\\.\\d#', $useragent));
-  $ns = E127($segments, array(0 => array(0 => '1.5'), 1 => NULL, 2 => NULL), $ls);
+    0 => fiftyone_degrees_preg_match_all('#Minefield/\\d\\.\\d#', $useragent),
+    1 => fiftyone_degrees_preg_match_all('#Windows NT \\d\\.\\d#', $useragent),
+    2 => fiftyone_degrees_preg_match_all('#Ubuntu/\\d\\.\\d#', $useragent));
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Java/1.5.0_10', '15364-17017-17470-18092');
+    $dl[] = array(53173,142808,568160,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9) Gecko Minefield/3.0', '15364-18110-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.4'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => array(0 => 'Windows NT 5.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Java/1.4.2_04', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,568160,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2 x64; en-US; rv:1.9a1) Gecko/X Minefield/3.0a1', '15364-5690-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.8'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Java/1.8.0-ea', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,568160,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9a8pre) Gecko/X Minefield/3.0a8pre', '15364-5690-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Java/1.6.0_35', '15364-17017-17470-18092');
+    $dl[] = array(53173,66762,568160,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9pre) Gecko/X Minefield/3.0.2pre', '15364-17285-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.7'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Java/1.7.0_09', '15364-17017-17470-18092');
+    $dl[] = array(53173,117309,557304,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.3a3pre) Gecko/X Minefield/3.7a3pre (.NET CLR 3.5.30729)', '15364-7133-21959-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.1'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/4.0 (Mac OS X 10.8.2) Java/1.7.0_09', '17595-18207-18108-18092');
+    $dl[] = array(53173,53254,926085,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1b1pre) Gecko/X Minefield/3.1b1pre', '15364-5690-21956-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => array(0 => 'Windows XP 5.1)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.1'), 1 => array(0 => 'Windows NT 5.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/4.0 (Windows XP 5.1) Java/1.6.0_24', '15364-5690-17470-18092');
+    $dl[] = array(53173,53254,926085,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1b2pre) Gecko/X Minefield/3.1b2pre', '15364-5690-21956-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.6'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'IBM-LC-Base-Notes_8.5.3.X_0921-Windows XP Java/1.6.0', '15364-5690-17470-18092');
+    $dl[] = array(53173,142808,662644,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-18110-21958-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => array(0 => 'Windows XP 5.1)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.7'), 1 => array(0 => 'Windows NT 5.2'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/4.0 (Windows XP 5.1) Java/1.7.0_07', '15364-5690-17470-18092');
+    $dl[] = array(53173,53254,557304,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; Win64; x64; en-US; rv:1.9.3a5pre) Gecko/X Minefield/3.7a5pre', '15364-5690-21959-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.7'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/4.0 (Mac OS X 10.7.4) Java/1.6.0_33', '17595-17297-18108-18092');
+    $dl[] = array(53173,53254,557304,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.3a5pre) Gecko/X Minefield/3.7a5pre', '15364-5690-21959-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.1'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/4.0 (Mac OS X 10.7.5) Java/1.7.0_09', '17595-17297-18108-18092');
+    $dl[] = array(53173,66762,926085,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9.1b2pre) Gecko/X Minefield/3.1b2pre', '15364-17285-21956-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/4.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/4.0 (Mac OS X 10.6.8) Java/1.6.0_51', '17595-17296-18108-18092');
+    $dl[] = array(53173,117309,553607,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0b4pre) Gecko/X Minefield/4.0b4pre', '15364-7133-21960-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => array(0 => 'Windows 7 6.1)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.7'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/4.0 (Windows 7 6.1) Java/1.6.0_31', '15364-7133-17470-18092');
+    $dl[] = array(53173,66762,557304,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.3a3pre) Gecko/X Minefield/3.7a3pre', '15364-17285-21959-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => array(0 => 'Windows 7 6.1 amd64; en_US)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/4.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Java 1.6.0_17; Windows 7 6.1 amd64; en_US) ICEbrowser/v6_0_2 Java/1.6.0_17', '15364-7133-17470-18092');
+    $dl[] = array(53173,53254,553607,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:2.0a1pre) Gecko/X Minefield/4.0a1pre', '15364-5690-21960-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.6'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'IBM-LC-Base-Notes_8.5.3.X_0921-Windows 7 Java/1.6.0', '15364-7133-17470-18092');
+    $dl[] = array(53173,66762,662644,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-17285-21958-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => array(0 => 'Windows 7 6.1)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/4.0 (Windows 7 6.1) Java/1.7.0_07', '15364-7133-17470-18092');
+    $dl[] = array(53173,68557,568160,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9b2pre) Gecko/X Minefield/3.0b2pre', '15364-7127-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.5'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/4.0 (Mac OS X 10.5.8) Java/1.5.0_30', '17595-17295-18108-18092');
+    $dl[] = array(53173,117309,568160,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1 x64; en-US; rv:1.9.0.10) Gecko/X Minefield/3.0.10', '15364-7133-21955-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/4.0'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,187068,913, 'Java/1.7.0_21', '15364-17017-18589-18092');
+    $dl[] = array(53173,142808,553607,913, 'Mozilla/5.0 (X11; Linux x86_64; en-US; rv:2.0b2pre) Gecko/X Minefield/4.0b2pre', '15364-18110-21960-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => array(0 => 'Windows Vista 6.0)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/4.0 (Windows Vista 6.0) Java/1.7.0_09', '15364-17285-17470-18092');
+    $dl[] = array(53173,117309,948622,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-7133-21957-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.6'), 1 => array(0 => 'Windows Vista 6.0)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/4.0 (Windows Vista 6.0) Java/1.6.0_37', '15364-17285-17470-18092');
+    $dl[] = array(53173,66762,948622,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-17285-21957-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.5'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.6'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/4.0 (Mac OS X 10.4.11) Java/1.5.0_19', '17595-17294-18108-18092');
+    $dl[] = array(53173,53254,662644,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-5690-21958-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.7'), 1 => array(0 => 'Windows 8 6.2)'), 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => array(0 => 'Windows NT 5.0'), 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/4.0 (Windows 8 6.2) Java/1.7.0_25', '15364-16110-17470-18092');
+    $dl[] = array(53173,68557,948622,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-7127-21957-18092');
     $ls = $ns;
   }
-  $ns = E127($segments, array(0 => array(0 => '1.0'), 1 => NULL, 2 => NULL), $ls);
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => NULL, 2 => NULL), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(382469,27598,37321,913, 'New York/R3.0 NF-Browser/3.3 Openwave-MMS/4.5 IA-Java/1.0 Profile/MIDP2.0/CLDC1.1', '14680-17017-3601-18092');
+    $dl[] = array(53173,16068,948622,913, 'Mozilla/5.0 (Windows; U; Windows CE 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-5448-21957-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,53254,948622,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-5690-21957-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.1'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,142808,926085,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b1pre) Gecko/X Minefield/3.1b1pre', '15364-18110-21956-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.7'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,142808,557304,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.3a1pre) Gecko/X Minefield/3.7a1pre', '15364-18110-21959-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.1'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,559158,926085,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b2) Gecko/X Fedora/3.1-0.4.beta2.fc11 Minefield/3.1b2', '15364-22202-21956-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.0'), 1 => NULL, 2 => array(0 => 'Ubuntu/8.1')), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,514531,568160,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.6) Gecko/X Ubuntu/8.10 (intrepid) Minefield/3.0 MEGAUPLOAD 2.0', '15364-17814-21955-18092');
+    $ls = $ns;
+  }
+  $ns = E127($segments, array(0 => array(0 => 'Minefield/3.2'), 1 => NULL, 2 => NULL), $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+    }
+    $dl[] = array(53173,142808,948622,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-18110-21957-18092');
     $ls = $ns;
   }
   return $dl;

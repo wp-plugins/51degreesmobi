@@ -37,365 +37,284 @@ function E114($target, $test, $ls) {
 function _H114($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'curl/7.15.5';
+  $ua = 'python-requests/0.8.1';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.19.7';
+  $ua = 'python-requests/0.10.6';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.18.0 (i586-pc-mingw32msvc) libcurl/7.18.0 zlib/1.2.3';
+  $ua = 'python-requests/0.10.8';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.24.0 (i686-pc-cygwin) libcurl/7.24.0 OpenSSL/1.0.1b zlib/1.2.5 libidn/1.22 libssh2/1.4.0';
+  $ua = 'python-requests/0.7.3';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.26.0';
+  $ua = 'python-requests/0.11.1';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, $ua, '15364-17017-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.15.5 (x86_64-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5';
+  $ua = 'python-requests/0.11.2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.15.5 (i686-redhat-linux-gnu) libcurl/7.15.5 OpenSSL/0.9.8b zlib/1.2.3 libidn/0.6.5';
+  $ua = 'python-requests/0.12.1';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.19.7 (x86_64-pc-linux-gnu) libcurl/7.19.7 OpenSSL/0.9.8k zlib/1.2.3.3 libidn/1.15';
+  $ua = 'python-requests/0.9.2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.19.7 (i486-pc-linux-gnu) libcurl/7.19.7 OpenSSL/0.9.8k zlib/1.2.3.3 libidn/1.15';
+  $ua = 'python-requests/0.12.0';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.21.2 (x86_64-unknown-linux-gnu) libcurl/7.21.2 OpenSSL/1.0.0c zlib/1.2.5 libidn/1.15 libssh2/1.2.7';
+  $ua = 'python-requests/0.10.2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.21.0 (x86_64-pc-linux-gnu) libcurl/7.21.0 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.15 libssh2/1.2.6';
+  $ua = 'python-requests/0.13.0';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.21.0 (i486-pc-linux-gnu) libcurl/7.21.0 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.15 libssh2/1.2.6';
+  $ua = 'python-requests/0.13.1';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.15.1 (x86_64-suse-linux) libcurl/7.15.1 OpenSSL/0.9.8a zlib/1.2.3 libidn/0.6.0';
+  $ua = 'python-requests/0.13.2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.19.7 (x86_64-unknown-linux-gnu) libcurl/7.19.7 NSS/3.12.6.2 zlib/1.2.3 libidn/1.18 libssh2/1.2.2';
+  $ua = 'python-requests/0.8.2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.13.1.0 zlib/1.2.3 libidn/1.18 libssh2/1.2.2';
+  $ua = 'python-requests/0.9.3';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,22118,16074,913, $ua, '15364-17017-17470-18092');
   }
-  $ua = 'curl/7.21.6 (x86_64-pc-linux-gnu) libcurl/7.21.6 OpenSSL/1.0.0e zlib/1.2.3.4 libidn/1.22 librtmp/2.3';
+  $ua = 'python-requests/0.13.8 CPython/2.7.3 Linux/3.2.21-1.32.6.amzn1.x86_64';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.22.0 (x86_64-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3';
+  $ua = 'python-requests/0.14.2 CPython/2.7.3 Linux/3.2.0-32-generic';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.22.0 (i686-pc-linux-gnu) libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23 librtmp/2.3';
+  $ua = 'python-requests/0.14.2 CPython/2.7.3 Linux/3.2.0-33-generic';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.19.4 (i386-redhat-linux-gnu) libcurl/7.19.4 NSS/3.12.2.0 zlib/1.2.3 libidn/0.6.14 libssh2/0.18';
+  $ua = 'python-requests/0.14.2 CPython/2.7.2+ Linux/3.0.0-16-generic-pae';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.19.7 (x86_64-redhat-linux-gnu) libcurl/7.19.7 NSS/3.14.0.0 zlib/1.2.3 libidn/1.18 libssh2/1.4.2';
+  $ua = 'python-requests/0.14.2 CPython/2.7.3 Linux/3.2.0-34-generic';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, $ua, '15364-18110-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.19.2 (i386-pc-win32) libcurl/7.19.2 OpenSSL/0.9.8i zlib/1.2.3';
+  $ua = 'python-requests/1.1.0 CPython/2.7.3 Linux/3.2.0-31-virtual';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.21.0 (amd64-pc-win32) libcurl/7.21.0 OpenSSL/0.9.8o zlib/1.2.3';
+  $ua = 'python-requests/1.1.0 CPython/2.7.3 Linux/3.2.0-36-virtual';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.21.6 (amd64-pc-win32) libcurl/7.21.6 OpenSSL/0.9.8r zlib/1.2.5';
+  $ua = 'python-requests/1.1.0 CPython/2.7.3 Linux/3.2.0-4-amd64';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.10.4 (win32) libcurl/7.10.4 zlib/1.1.4';
+  $ua = 'python-requests/1.1.0 CPython/2.7.3 Linux/3.2.0-34-generic';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.22.0 (i386-pc-win32) libcurl/7.22.0 zlib/1.2.5';
+  $ua = 'python-requests/1.2.0 CPython/2.6.6 Linux/2.6.32-279.el6.x86_64';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.21.1 (i386-pc-win32) libcurl/7.21.1 zlib/1.2.5';
+  $ua = 'python-requests/1.1.0 CPython/2.6.5 Linux/2.6.32-346-ec2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.10.8 (win32) libcurl/7.10.8 OpenSSL/0.9.7c';
+  $ua = 'python-requests/1.2.0 CPython/2.7.3 Linux/3.2.0-29-virtual';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.19.7 (i386-pc-win32) libcurl/7.19.7 zlib/1.2.3';
+  $ua = 'python-requests/1.0.4 CPython/2.7.3 Linux/3.2.37.1.amd64-smp';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.23.1 (x86_64-pc-win32) libcurl/7.23.1 OpenSSL/0.9.8r zlib/1.2.5';
+  $ua = 'python-requests/1.2.0 CPython/2.6.5 Linux/2.6.32-350-ec2';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.23.1 (x86_64-pc-win32) libcurl/7.23.1';
+  $ua = 'python-requests/1.2.0 CPython/2.7.4 Linux/3.8.0-21-generic';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
+    $dl[] = array(53173,142808,16074,913, $ua, '15364-18110-17470-18092');
   }
-  $ua = 'curl/7.12.1 (i386-pc-win32) libcurl/7.12.1 OpenSSL/0.9.7d';
+  $ua = 'python-requests/1.1.0 CPython/2.7.2 FreeBSD/9.0-RELEASE-p3';
   $ns = E114($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, $ua, '15364-17350-17470-18092');
-  }
-  $ua = 'curl/7.21.2 (x86_64-apple-darwin10.4.0) libcurl/7.21.2 OpenSSL/1.0.1c zlib/1.2.7 libidn/1.19';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,539990,54471,913, $ua, '15364-18575-17470-18092');
-  }
-  $ua = 'curl/7.18.2 (x86_64-pc-linux-gnu) libcurl/7.18.2 OpenSSL/0.9.8g zlib/1.2.3.3 libidn/1.8 (FlipboardProxy/1.1; +http://flipboard.com/browserproxy)';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(273254,124734,54471,913, $ua, '18254-18110-17470-18092');
-  }
-  $ua = 'curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8r zlib/1.2.5';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,968930,54471,913, $ua, '15364-18579-17470-18092');
-  }
-  $ua = 'curl/7.24.0 (x86_64-apple-darwin12.0) libcurl/7.24.0 OpenSSL/0.9.8x zlib/1.2.5';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,968930,54471,913, $ua, '15364-18579-17470-18092');
-  }
-  $ua = 'curl/7.16.4 (i386-apple-darwin9.0) libcurl/7.16.4 OpenSSL/0.9.7l zlib/1.2.3';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,876848,54471,913, $ua, '15364-22473-17470-18092');
-  }
-  $ua = 'curl/7.16.3 (powerpc-apple-darwin9.0) libcurl/7.16.3 OpenSSL/0.9.7l zlib/1.2.3';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,876848,54471,913, $ua, '15364-22473-17470-18092');
-  }
-  $ua = 'curl/7.16.3 (powerpc-apple-darwin8.0) libcurl/7.16.3 OpenSSL/0.9.7l zlib/1.2.3';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,1075775,54471,913, $ua, '15364-22471-17470-18092');
-  }
-  $ua = 'curl/7.13.1 (powerpc-apple-darwin8.0) libcurl/7.13.1 OpenSSL/0.9.7l zlib/1.2.3';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,1075775,54471,913, $ua, '15364-22471-17470-18092');
-  }
-  $ua = 'curl/7.7.2 (powerpc-apple-darwin6.0) libcurl 7.7.2 (OpenSSL 0.9.6b)';
-  $ns = E114($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,1153351,54471,913, $ua, '15364-23098-17470-18092');
+    $dl[] = array(53173,530516,16074,913, $ua, '15364-18145-17470-18092');
   }
   return $dl;
 }

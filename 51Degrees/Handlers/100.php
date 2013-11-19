@@ -22,21 +22,9 @@
  * return integer
  *   The score between the two strings.
  */
-function E100(&$target, $test, &$ls) {
+function E100($target, $test, $ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 10000, $score);
   if ($score == PHP_INT_MAX) {
     return PHP_INT_MAX;
   }
@@ -59,2272 +47,1725 @@ function _H100($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=Mozilla/)\\d\\.\\d#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#', $useragent),
-    2 => fiftyone_degrees_preg_match_all('#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11#', $useragent),
-    3 => fiftyone_degrees_preg_match_all('#(?<=\\(KHTML, like Gecko\\))[^\\(\\)]+#', $useragent));
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Version/5.0 WatchMouse/$Revision: 24072 $')), $ls);
+    0 => fiftyone_degrees_preg_match_all('#(?<=http://)\\w+#', $useragent));
+  $ns = E100($segments, array(0 => array(0 => 'h2savecom')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273254,272292,272298,425900, 'Mozilla/5.0 (X11; U; Linux x86_64; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 24072 $', '18254-7480-18245-18091');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://h2savecom.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Version/5.0 WatchMouse/$Revision: 24640 $')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theasianenergyexchange')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273254,272292,272298,425900, 'Mozilla/5.0 (X11; U; Linux x86_64; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 24640 $', '18254-7480-18245-18091');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://theasianenergyexchange.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Version/5.0 WatchMouse/$Revision: 25590 $')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yoliesmortgageupdate')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273254,272292,272298,425900, 'Mozilla/5.0 (X11; U; Linux x86_64; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 25590 $', '18254-7480-18245-18091');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://yoliesmortgageupdate.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Version/5.0 WatchMouse/$Revision: 26005 $')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'consolidatingcollegeloanspersonal')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(273254,272292,272298,425900, 'Mozilla/5.0 (X11; U; Linux x86_64; c) AppleWebKit/531.2+ (KHTML, like Gecko) Version/5.0 WatchMouse/$Revision: 26005 $', '18254-7480-18245-18091');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0; http://consolidatingcollegeloanspersonal.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalvelcraft')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/523.10.3 (KHTML, like Gecko)', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://politicalvelcraft.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'political')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.7', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.2; http://political-news-live.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holidaytravelinsurance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/419 (KHTML, like Gecko) NetNewsWire/3.0', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://holidaytravelinsurance.co.cc', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.7.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'shoutinggorilla')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.7.1', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://shoutinggorilla.com/pop-und-politik', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'howtolights')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.0', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://howtolights.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Pandora/2.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => '063oliver')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/412 (KHTML, like Gecko) Pandora/2.0', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://063oliver.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' HistoryHound/1.9')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalparades')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/417.9 (KHTML, like Gecko) HistoryHound/1.9', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0; http://politicalparades.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.5.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holiday')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.5.1', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.4; http://holiday.envirorides.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'portugalholidaysalgarve')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.6', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.3; http://portugalholidaysalgarve.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holidayhomecontentsinsurance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/526.9+ (KHTML, like Gecko) AdobeAIR/1.5.3', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://holidayhomecontentsinsurance.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.0.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'health')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.0.2', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.3; http://health.coolishgroup.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'foreignpolicyblogs')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.2', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.4; http://foreignpolicyblogs.com/wpsingle', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'lotsapolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.1', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.3; http://lotsapolitics.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Pandora/2.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/412 (KHTML, like Gecko) Pandora/2.3', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.3; http://politics.zonkeyblog.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Skyscraper/2.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'publicpolicy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/412 (KHTML, like Gecko) Skyscraper/2.0', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.1; http://publicpolicy.pepperdine.edu/davenport-institute/bigsocietywatch', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'actualtraffic')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.3', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://actualtraffic.net/Politics', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' SunriseBrowser/0.853')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'isaveholidays')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-us) AppleWebKit/125.5.7 (KHTML, like Gecko) SunriseBrowser/0.853', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://isaveholidays.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holidayhomeinsurance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.4', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0; http://holidayhomeinsurance.bestdealsonline.org.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' OmniWeb/v496')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalfundconsultant')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/85 (KHTML, like Gecko) OmniWeb/v496', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://politicalfundconsultant.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' OmniWeb/v558.48')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'polinlawoffice')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US) AppleWebKit/85 (KHTML, like Gecko) OmniWeb/v558.48', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://polinlawoffice.shikshik.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AppleWebKit/418.9 Cheshire/1.0.ALPHA')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicsandfunds')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en) AppleWebKit/418.9 (KHTML, like Gecko) AppleWebKit/418.9 Cheshire/1.0.ALPHA', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://politicsandfunds.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalcampaignexpert')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.5', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://politicalcampaignexpert.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'getpoliticalfund')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.6', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://getpoliticalfund.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holidays')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.7', '17595-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://holidays.only-the-news.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Boxee/1.0.1 bxapi/7.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'molicyber')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://molicyber.shikshik.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' AdobeAIR/2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'maltesemarriedcatholicpriest')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; undefined) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.7', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://maltesemarriedcatholicpriest.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' AdobeAIR/2.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'fixhealthcarepolicy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.6', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.4; http://fixhealthcarepolicy.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' AdobeAIR/3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'truthinreligionandpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; ) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.1', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://truthinreligionandpolitics.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' AdobeAIR/2.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalfundusa')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; undefined) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.5', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://politicalfundusa.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'catholiclane')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/532.4 (KHTML, like Gecko)', '15364-18110-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://catholiclane.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.53')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'gasoline')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8) AppleWebKit/536.25 (KHTML, like Gecko) Sparrow/1081.53', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://gasoline.fuelspace.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' QuickLook/4.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'solutionfocusedpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) QuickLook/4.0', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://solutionfocusedpolitics.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.52')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'blogs')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8) AppleWebKit/536.25 (KHTML, like Gecko) Sparrow/1081.52', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.4; http://blogs.lse.ac.uk/politicsandpolicy', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1178')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'pienpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1178', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://pienpolitics.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1164')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'southcarolinanewspress')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1164', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://southcarolinanewspress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1173')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holidayinsurance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1173', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://holidayinsurance.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1172')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'help')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1172', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://help-with-tax-debt.debt-consolidation-helps.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'smithpolitical')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.3', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://smithpolitical.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1176')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'insurancepolicies')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1176', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://insurancepolicies.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'abcnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.3.2', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://abcnews.go.com/blogs/politics', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.6.0.2601')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'irs')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Vienna/2.6.0.2601', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://irs-debt-help.debt-consolidation-helps.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Gruml/1.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'tax')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Gruml/1.2', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://tax-debt-solutions.debt-consolidation-helps.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicsontoast')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://politicsontoast.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/3.0b.2820')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'cancun')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Vienna/3.0b.2820', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.8.6; http://cancun.mexicanholidayguide.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Gruml/1.3.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'consolidationdebt')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Gruml/1.3.0', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://consolidationdebt.biz', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Shrook/2.85l')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politiseeds')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Shrook/2.85l', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://politiseeds.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sunrise')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'joelfinnigan')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sunrise', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://joelfinnigan.com/police', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1143.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'memoliochallenge')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1143.6', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://memoliochallenge.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'lifeinsurancepolicy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.3.1', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://lifeinsurancepolicy.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.1.1750')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yovia')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) RealPlayer/12.0.1.1750', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://yovia.com/blogs/cooljobsfromcolin', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' iWeb/304')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'antioligarch')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) iWeb/304', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://antioligarch.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.1.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'economicenergypolicy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.1.7', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://economicenergypolicy.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' TubeTV')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicalscrapbook')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) TubeTV', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://politicalscrapbook.net', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'surfingholidayscostarica')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1043.1', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.1; http://surfingholidayscostarica.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'darkpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://darkpolitics.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/904')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'segmentpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/904', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://segmentpolitics.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1134')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politector')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1134', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://politector.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.32')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'pulse')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1081.32', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://pulse.ncpolicywatch.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1144')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'hawaiishopaholics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1144', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://hawaiishopaholics.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'fraseropolis')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko)', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://fraseropolis.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Propane/1.2.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'nacholindsay')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Propane/1.2.5', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://nacholindsay.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'politicsrus')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/1043.2', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://politicsrus.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/4.0.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'boydpolitics')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko) NetNewsWire/4.0.0', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://boydpolitics.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/959.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'okobojiville')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.14 (KHTML, like Gecko) Sparrow/959.4', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://okobojiville.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ',gzip')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'eskobo')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko),gzip(gfe)', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://eskobo.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'umblock')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko) NetNewsWire', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://umblock.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Shrook/2.88l')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'businessdevelopmentonline')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/536.30.1 (KHTML, like Gecko) Shrook/2.88l', '17595-18207-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://businessdevelopmentonline.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => array(0 => ' Qt/4.8.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'lewrockwell')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,124734,651699,913, 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.34 (KHTML, like Gecko) Qt/4.8.2', '15364-18110-20806-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://lewrockwell.local', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'uk')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533+ (KHTML, like Gecko)', '15364-5690-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://uk.tube-news.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'X')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-5690-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://X.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'spinnernews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows NT 5.1; AppleWebKit/535.19 (KHTML, like Gecko; Windows NT 5.1)', '15364-5690-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://spinnernews.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'adesignpro')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7; en-us) AppleWebKit/534.20.8 (KHTML, like Gecko)', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://adesignpro.allergiesaid.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'terryhaines')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.53.11 (KHTML, like Gecko) Sparrow/1043', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://terryhaines.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Gruml/1.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'donnapeach')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Gruml/1.1', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://donnapeach.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.38')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'cogitoergosumworld')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Sparrow/1081.38', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://cogitoergosumworld.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.32')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'sidileak')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Sparrow/1081.32', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://sidileak.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7_3'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'pausethepress')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3; AppleWebKit/534.55.3 (KHTML, like Gecko)', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://pausethepress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.51')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'coupon')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Sparrow/1081.51', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://coupon-wizards.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1144')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'mortgage')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Sparrow/1144', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://mortgage.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1134')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'sfluxe')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) Sparrow/1134', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://sfluxe.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'insurance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://insurance.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'credit')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) NetNewsWire/3.3.1', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://credit.heftyresource.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theolotech')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko)', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://theolotech.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'rjkeating')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) NetNewsWire/3.3.2', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://rjkeating.me', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1176')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'grist')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1176', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4-alpha-19672; http://grist.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1172')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'tubeshaker')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1172', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://tubeshaker.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1178')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'fuknus')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1178', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://fuknus.chrisdamitio.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aceflyer')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) NetNewsWire/3.3', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://aceflyer.shikshik.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1173')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'admiralflynn')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1173', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://admiralflynn.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.11')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'skipflycompsec')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.56.5 (KHTML, like Gecko) NetNewsWire/3.2.11', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://skipflycompsec.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_7_2'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'rodolfoflynn')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.52.7 (KHTML	 like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7_2; en) AppleWebKit/534.52.7 (KHTML	 like Gecko) &quot;wKiosk for Mac&quot;', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.2; http://rodolfoflynn.123free.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.6.0.2601')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'x')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Vienna/2.6.0.2601', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://x.X.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1143.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'loan')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1143.6', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.1; http://loan-e.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'manufactured')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1043.1', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.9.2; http://manufactured-home-loans.com/blog', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/3.0b.2820')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'testwp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Vienna/3.0b.2820', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.4; http://testwp.co.uk/canvas', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'northbenz')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.5; http://northbenz.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.52')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'chartroose')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1081.52', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/MU; http://chartroose.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.1.1750')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'freecarinsurancequoteguide')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) RealPlayer/12.0.1.1750', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.1; http://freecarinsurancequoteguide.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sunrise')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'lookyoungertomorrow')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sunrise', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.3; http://lookyoungertomorrow.com/lookbettertoday', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Gruml/1.3.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aospuk')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Gruml/1.3.0', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.3; http://aospuk.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' iWeb/304')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'immunesystemsupercharge')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) iWeb/304', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2; http://immunesystemsupercharge.com/livebetter', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1164')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'pokeramericacruises')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1164', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.8.6; http://pokeramericacruises.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/904')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'thefirsttimebuyerclub')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/904', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://thefirsttimebuyerclub.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.0.1725')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'topicshotnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) RealPlayer/12.0.0.1725', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://topicshotnews.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.53')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'microinsurancenews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1081.53', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://microinsurancenews.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ',gzip')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'raiseababy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/536.26.17 (KHTML, like Gecko),gzip(gfe)', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://raiseababy.net', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/959.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'holdyourfuture')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/959.4', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://holdyourfuture.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/11.1.0.1116')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'gpcnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) RealPlayer/11.1.0.1116', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://gpcnews.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'michaeljacksonsthisisit')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1043.2', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://michaeljacksonsthisisit-movie.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' TubeTV')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'screwcable')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) TubeTV', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://screwcable.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.27')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bluemeanie')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) Sparrow/1081.27', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://bluemeanie.me', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.1.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bluemeanieme')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) NetNewsWire/3.1.7', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://bluemeanieme.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/4.0.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'overnightsatellite')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/534.57.7 (KHTML, like Gecko) NetNewsWire/4.0.0', '17595-17297-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://overnightsatellite.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'inteliseek')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.6', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://inteliseek.rapichat.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'zimbabwe')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.7', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://zimbabwe.iwooho.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.7.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'namibia')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.7.1', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3; http://namibia.iwooho.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'techcrunch')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.0', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4-alpha-19904; http://techcrunch.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'thefresnonews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/526.9+ (KHTML, like Gecko) AdobeAIR/1.5.3', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://thefresnonews.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.5.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'wikiblog')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.5.1', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://wikiblog.hk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.0.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'dizzy')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.0.2', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4-beta1; http://dizzy.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.0.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'paidcontent')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.0.3', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4-beta1; http://paidcontent.org', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'horsesdolphins')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.5', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://horsesdolphins.x10.mx', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5 Community Help Client 1.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'meetminidolphin')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/523+ (KHTML, like Gecko) AdobeAIR/1.5 Community Help Client 1.0', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://meetminidolphin.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'miamidolphins')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.1', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.3; http://miamidolphins.thefootballfanstore.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'dolphin278')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.2', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://dolphin278.net', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'articledolphin')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/526.9+ (KHTML, like Gecko) AdobeAIR/1.5', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1.4; http://articledolphin.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.2 X/Yammer')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'ismysiteindexed')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.2 X/Yammer', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.4; http://ismysiteindexed.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.0.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'xindxr')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.0.4', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2; http://xindxr.info', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/2.0')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'blog')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/531.9 (KHTML, like Gecko) AdobeAIR/2.0', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/2.8.2; http://blog.adcause.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'prestononlinenews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.3', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.3; http://prestononlinenews.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'celebritynews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/523+ (KHTML, like Gecko) AdobeAIR/1.1', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.3.1; http://celebritynews.fansite.biz', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'flyingcuttlefish')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/526.9+ (KHTML, like Gecko) AdobeAIR/1.5.2', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha; http://flyingcuttlefish.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yellowfield')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.4', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.1; http://yellowfield.net', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/1.5.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'blackpoolonlinenews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/526.9+ (KHTML, like Gecko) AdobeAIR/1.5.1', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.0.3; http://blackpoolonlinenews.co.uk', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.5')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'hegivesfavour')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.5', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://hegivesfavour.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'thefashionloverblogging')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.6', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://thefashionloverblogging.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' Iron')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'philosophynowncad')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U;) AppleWebKit/532.0 (KHTML, like Gecko) Iron', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://philosophynowncad.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'myfavoritelooks')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.7', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://myfavoritelooks.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => ' AdobeAIR/3.8')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'p2wp')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0 (Windows; U; en-US) AppleWebKit/533.19.4 (KHTML, like Gecko) AdobeAIR/3.8', '15364-17350-17470-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://p2wp.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_3'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'apps2')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/531.21.11 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://apps2.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'www')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6; en-us) AppleWebKit/531.9 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://www.isitwp.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_1'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'thelightnc')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_1; en-us) AppleWebKit/531.9 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://thelightnc.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_2'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'ipowerrichmond')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_2; en-us) AppleWebKit/531.9 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://ipowerrichmond.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_4'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'hiphopnc')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.18.1 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://hiphopnc.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_5'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'news')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://news.stylecaster.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_6'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'praiserichmond')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_6; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://praiserichmond.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_7'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'satellite')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.2.1; http://satellite-internetbroadband.com/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'jackontheweb')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha; http://jackontheweb.radio.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => '9to5mac')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/534.24 (KHTML, like Gecko)', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21304; http://9to5mac.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'localhost')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.52.7 (KHTML, like Gecko) Sparrow/1043', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://localhost/wordpress', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_4', 1 => 'Mac OS X 10_6_4'), 3 => array(0 => ' Mozilla/5.0 ', 1 => ' "wKiosk for Mac"')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'lastnightidrank')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en) AppleWebKit/533.17.8 (KHTML, like Gecko) "wKiosk for Mac"', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://lastnightidrank.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_7', 1 => 'Mac OS X 10_6_7'), 3 => array(0 => ' Mozilla/5.0 ', 1 => ' "wKiosk for Mac"')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'kymx')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; it-it) AppleWebKit/533.20.25 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en) AppleWebKit/533.20.25 (KHTML, like Gecko) "wKiosk for Mac"', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21535; http://kymx.cbslocal.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_3', 1 => 'Mac OS X 10_6_3'), 3 => array(0 => ' Mozilla/5.0 ', 1 => ' "wKiosk for Mac"')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'annaleonie')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/531.22.7 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en) AppleWebKit/531.22.7 (KHTML, like Gecko) "wKiosk for Mac"', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5-alpha-21989; http://annaleonie.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/959.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'infoegypt')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.51.22 (KHTML, like Gecko) Sparrow/959.1', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://infoegypt.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_7'), 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'goldblum')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.6-alpha-23334; http://goldblum.wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'wordpress')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1043.1', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.6-alpha-23334; http://wordpress.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'ppt')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5.1; http://ppt.4istudent.com,gzip(gfe) (via docs.google.com/viewer)', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8', 1 => 'Mac OS X 10_6_8'), 3 => array(0 => ' Mozilla/5.0 ', 1 => ' "wKiosk for Mac"')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'patrikaa')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en) AppleWebKit/533.21.1 (KHTML, like Gecko) "wKiosk for Mac"', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://patrikaa.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'newindianews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://newindianews.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'morenews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.3', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://morenews.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.6.0.2601')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indianreport')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Vienna/2.6.0.2601', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://indianreport.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theindiannews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://theindiannews.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.27')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiabusinessreport')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1081.27', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://indiabusinessreport.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.51')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiadailyreport')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1081.51', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://indiadailyreport.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.52')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiabusinessandfinance')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1081.52', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.4.2; http://indiabusinessandfinance.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1144')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'channelindia')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1144', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://channelindia.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_7'), 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'goodmorningindia')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://goodmorningindia.asia', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1043.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'elcidharth')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1043.2', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.6-alpha-23334; http://elcidharth.com', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bharatvaartaa')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-17296-18108-18092');
+    $dl[] = array(297934,298022,190325,520836, 'WordPress/3.5; http://bharatvaartaa.in', '18254-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sunrise')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'www')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sunrise', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.1; http://www.losangelesaldia.com', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1143.6')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'localhost')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1143.6', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://localhost', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.53')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiamedianews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1081.53', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://indiamedianews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1164')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indianbusinessnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1164', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indianbusinessnews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'mumbaicommercialnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.3.2', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://mumbaicommercialnews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1172')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indianewsfeed')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1172', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://indianewsfeed.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' Sparrow/1043.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indianmarketnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Sparrow/1043.1', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://indianmarketnews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1081.28')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiatoday')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1081.28', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://indiatoday.asia', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.0.1725')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiatechnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) RealPlayer/12.0.0.1725', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indiatechnews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.3.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theindianbusinessline')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.3.1', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://theindianbusinessline.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1173')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiaglobalnews')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1173', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indiaglobalnews.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1176')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiamarketreport')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1176', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indiamarketreport.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/904')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiainsider')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/904', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indiainsider.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.1.7')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'thepagesofindia')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.1.7', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://thepagesofindia.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1178')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theindianreporter')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/1178', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://theindianreporter.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' ')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'vaartaapatram')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) (null) FBSMTWB', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://vaartaapatram.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0', 1 => '5.0'), 1 => array(0 => 'Macintosh', 1 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' Mozilla/5.0 ', 1 => ' "wKiosk for Mac"')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'hindustandaily')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.51.22 (KHTML, like Gecko) Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en) AppleWebKit/533.21.1 (KHTML, like Gecko) "wKiosk for Mac"', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://hindustandaily.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.11')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theindiancommunicator')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) NetNewsWire/3.2.11', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://theindiancommunicator.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' iWeb/304')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theindiandaily')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) iWeb/304', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5; http://theindiandaily.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/11.1.0.1116')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'indiabroadcast')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) RealPlayer/11.1.0.1116', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.4.2; http://indiabroadcast.in', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.5.0.2501')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'e')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Vienna/2.5.0.2501', '17595-17296-18108-18092');
+    $dl[] = array(53173,298022,190325,520836, 'WordPress/3.5.1; http://e-books.4istudent.com,gzip(gfe) (via docs.google.com/viewer)', '15364-7480-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' TubeTV')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bestandroidapps')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) TubeTV', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://bestandroidapps.nl', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' KidZui K2')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidphonegeeks')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) KidZui K2', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidphonegeeks.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.1.1750')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'theandroidphones')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) RealPlayer/12.0.1.1750', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://theandroidphones.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.0.1569')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bestandroidgeeks')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) RealPlayer/12.0.0.1569', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://bestandroidgeeks.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' ')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aboutandroidgeeks')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) (null) FBSMTWB', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://aboutandroidgeeks.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Contact: feedback@getprismatic.com')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'www')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/534.24 (KHTML, like Gecko) Contact: feedback@getprismatic.com', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/2889; http://www.bestandroidphoneapps.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.5.1.2502')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'bestaandroidphones')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Vienna/2.5.1.2502', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://bestaandroidphones.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_6_8'), 3 => array(0 => ' Sparrow/1176')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aandroidphonestoday')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Sparrow/1176', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://aandroidphonestoday.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/959.4')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aandroidphonesblog')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.57.2 (KHTML, like Gecko) Sparrow/959.4', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://aandroidphonesblog.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Elluminate Live! Web Tour')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yourandroidcellular')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.59.8 (KHTML, like Gecko) Elluminate Live! Web Tour', '17595-17296-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://yourandroidcellular.net', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => array(0 => ' BingPreview/1.0b')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidgeeksnow')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) BingPreview/1.0b', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidgeeksnow.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'myandroidgeek')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN) AppleWebKit/533+ (KHTML, like Gecko)', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://myandroidgeek.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidgeeksblog')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidgeeksblog.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => NULL, 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yourandroidmobile')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://yourandroidmobile.net', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => array(0 => ' BingPreview/1.0b,gzip')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidgeeksstore')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) BingPreview/1.0b,gzip(gfe) (via docs.google.com/viewer)', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidgeeksstore.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => array(0 => ' Boxee/1.0.1 bxapi/7.1')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'yourandroidcall')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/533.9 (KHTML, like Gecko) Boxee/1.0.1 bxapi/7.1', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://yourandroidcall.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => array(0 => ' OpenWebKitSharp')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'aandroidphonesshop')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) OpenWebKitSharp', '15364-7133-17470-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://aandroidphonesshop.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' NOKIAE5-00')), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidmobilegeeks')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(126280,19728,18879,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) NOKIAE5-00', '12449-5890-3439-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidmobilegeeks.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_5'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'androidcellphone')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; en-us) AppleWebKit/525.18 (KHTML, like Gecko)', '17595-17295-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.3.1; http://androidcellphone.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_7'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'motorola')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; en-us) AppleWebKit/525.28.3 (KHTML, like Gecko)', '17595-17295-18108-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.0.5; http://motorola-xoom-info.com', '15364-17017-18245-18156');
     $ls = $ns;
   }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_2'), 3 => NULL), $ls);
+  $ns = E100($segments, array(0 => array(0 => 'newmotorolaxoom')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_2; en-us) AppleWebKit/525.18 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_4'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_4; en-us) AppleWebKit/525.18 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_6'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_6; en-us) AppleWebKit/525.27.1 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_8'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.15')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) NetNewsWire/3.2.15', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_8'), 3 => array(0 => ' ')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/533.19.4 (KHTML, like Gecko) (null) FBSMTWB', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.11')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) NetNewsWire/3.2.11', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.1.7')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) NetNewsWire/3.1.7', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_3'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_3; en-us) AppleWebKit/525.18 (KHTML, like Gecko)', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' ')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) (null) FBSMTWB', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/10.1.0.412')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/10.1.0.412', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sunrise')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) Sunrise', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/11.0.1.949')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/11.0.1.949', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2.7')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) NetNewsWire/3.2.7', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_5_5'), 3 => array(0 => ' TubeTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_5; en-us) AppleWebKit/525.18 (KHTML, like Gecko) TubeTV', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Vienna/2.5.0.2501')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) Vienna/2.5.0.2501', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' KidZui K2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) KidZui K2', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' NetNewsWire/3.2')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) NetNewsWire/3.2', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.0.1725')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/12.0.0.1725', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/11.1.0.1116')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/11.1.0.1116', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/10.1.0.503')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/10.1.0.503', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' TubeTV')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) TubeTV', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.1.1750')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/12.0.1.1750', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' RealPlayer/12.0.0.1569')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_8) AppleWebKit/534.50.2 (KHTML, like Gecko) RealPlayer/12.0.0.1569', '17595-17295-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-17285-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-17285-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_4_11'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; nl-nl) AppleWebKit/533.19.4 (KHTML, like Gecko)', '17595-17294-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_4_11'), 3 => array(0 => ' RealPlayer/12.0.0.1725')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/533.19.4 (KHTML, like Gecko) RealPlayer/12.0.0.1725', '17595-17294-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_4_11'), 3 => array(0 => ' RealPlayer/10.1.0.412')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_4_11; en) AppleWebKit/533.19.4 (KHTML, like Gecko) RealPlayer/10.1.0.412', '17595-17294-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_4_11'), 3 => array(0 => ' RealPlayer/10.1.0.503')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/533.19.4 (KHTML, like Gecko) RealPlayer/10.1.0.503', '17595-17294-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10_4_11'), 3 => array(0 => ' RealPlayer/10.0.0.331')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; en) AppleWebKit/533.19.4 (KHTML, like Gecko) RealPlayer/10.0.0.331', '17595-17294-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,1271593,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.43.7 (KHTML, like Gecko)', '17595-21721-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' QuickLook/5.0')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,1271593,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.51.3 (KHTML, like Gecko) QuickLook/5.0', '17595-21721-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Sparrow/1178')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,1271593,426483,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9) AppleWebKit/537.59 (KHTML, like Gecko) Sparrow/1178', '17595-21721-18108-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Version/5.1 Instapaper/4.0 ')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,54471,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Instapaper/4.0 (+http://www.instapaper.com/)', '17595-17296-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => array(0 => ' Version/5.2 ')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,872591,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.2.3 (KHTML, like Gecko) Version/5.2 (NewsBlur Feed Fetcher - 56 subscribers - http://www.newsblur.com)', '17595-17297-22921-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,554103,913, 'Mozilla/5.0 (X11; Linux) AppleWebKit/534.26+ Midori/0.4', '15364-18110-22525-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-16110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.2; en-US) AppleWebKit/533+ (KHTML, like Gecko)', '15364-16110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => NULL, 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/5.0 (Windows NT 6.2) AppleWebKit/534.57.2 (KHTML, like Gecko)', '15364-16110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1406296,913, 'Mozilla/5.0 (X11; Linux) AppleWebKit/537.6+ Midori/0.5', '15364-18110-22527-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.7 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => array(0 => '  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.7.2 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.2 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => array(0 => '  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net', '15364-5690-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.0.0.260')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1390243,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.0.0.260', '15364-17285-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.0.1.303')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1390243,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.0.1.303', '15364-17285-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.0.0.290')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1390243,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.0.0.290', '15364-17285-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.0.1.317')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1390243,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.0.1.317', '15364-17285-22261-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => '  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,268705,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT based; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.5 http://www.QtWeb.net', '15364-17350-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => '  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,268705,532157,913, 'Mozilla/5.0 (Windows; U; Windows NT based; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.7.3 http://www.QtWeb.net', '15364-17350-23729-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => ' QtWeb Internet Browser/1.2 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,981262,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko) QtWeb Internet Browser/1.2 http://www.QtWeb.net', '15364-5690-23735-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => ' QtWeb Internet Browser/1.7 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1076739,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko) QtWeb Internet Browser/1.7 http://www.QtWeb.net', '15364-5690-23738-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,592814,913, 'Mozilla/5.0 (X11; Linux) AppleWebKit/531.2+ Midori/0.3', '15364-18110-22520-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => ' QtWeb Internet Browser/1.5 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1375102,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko) QtWeb Internet Browser/1.5 http://www.QtWeb.net', '15364-5690-23737-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.1.0.291')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1464974,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.1.0.291', '15364-17285-22881-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' UCBrowser/9.1.0.319')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1464974,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) UCBrowser/9.1.0.319', '15364-17285-22881-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.0 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1151363,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko)  QtWeb Internet Browser/3.0 http://www.QtWeb.net', '15364-5690-23734-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => ' QtWeb Internet Browser/3.0 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1151363,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/527+ (KHTML, like Gecko) QtWeb Internet Browser/3.0 http://www.QtWeb.net', '15364-5690-23734-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' QtWeb Internet Browser/1.7 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1076739,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US) AppleWebKit/527+ (KHTML, like Gecko) QtWeb Internet Browser/1.7 http://www.QtWeb.net', '15364-17285-23738-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => '  QtWeb Internet Browser/3.8.4 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,268705,1483642,913, 'Mozilla/5.0 (Windows; U; Windows NT based; en-US) AppleWebKit/534.34 (KHTML, like Gecko)  QtWeb Internet Browser/3.8.4 http://www.QtWeb.net', '15364-17350-23733-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' NOKIA6120c')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(56859,19728,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) NOKIA6120c', '11905-5890-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.8.4 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1483642,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.34 (KHTML, like Gecko)  QtWeb Internet Browser/3.8.4 http://www.QtWeb.net', '15364-5690-23733-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.3 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,894652,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.4 (KHTML, like Gecko)  QtWeb Internet Browser/3.3 http://www.QtWeb.net', '15364-5690-23730-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => array(0 => ' NOKIAN95')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(125985,19728,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; Desktop) AppleWebKit/534.13 (KHTML, like Gecko) NOKIAN95', '12004-5890-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E100($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => array(0 => '  QtWeb Internet Browser/3.5 http://www.QtWeb.net')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1153440,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.3 (KHTML, like Gecko)  QtWeb Internet Browser/3.5 http://www.QtWeb.net', '15364-5690-23732-18092');
+    $dl[] = array(53173,22118,190325,520836, 'WordPress/3.1.3; http://newmotorolaxoom.info', '15364-17017-18245-18156');
     $ls = $ns;
   }
   return $dl;

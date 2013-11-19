@@ -22,21 +22,9 @@
  * return integer
  *   The score between the two strings.
  */
-function E119(&$target, $test, &$ls) {
+function E119($target, $test, $ls) {
   $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 10000, $score);
+  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 10000, $score);
   if ($score == PHP_INT_MAX) {
     return PHP_INT_MAX;
   }
@@ -59,152 +47,29 @@ function _H119($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=Opera/)[\\d+.]+#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#(?<=Version/)\\d+\\.\\d+#', $useragent),
-    2 => fiftyone_degrees_preg_match_all('#(?<=\\()[^;]+#', $useragent),
-    3 => fiftyone_degrees_preg_match_all('#(?<=Opera/\\d\\.\\d \\()[^;\\)]+#', $useragent));
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.02'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
+    0 => fiftyone_degrees_preg_match_all('#Windows|Macintosh#', $useragent));
+  $ns = E119($segments, array(0 => array(0 => 'Windows')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,50333,1028345,913, 'Opera/9.80 (Windows NT 6.1; WOW64; U; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.289 Version/12.02', '15364-17285-19961-18092');
+    $dl[] = array(53173,298022,16074,913, 'RSSOwl/2.1.6.X (Windows; U; en)', '15364-7480-17470-18092');
     $ls = $ns;
   }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.02'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
+  $ns = E119($segments, array(0 => array(0 => 'Macintosh')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,50333,1028345,913, 'Opera/9.80 (Windows NT 6.1; U; compatible; MSIE 7.0; Windows NT 6.0; bg) Presto/2.10.289 Version/12.02', '15364-17285-19961-18092');
+    $dl[] = array(62443,298022,297092,913, 'RSSOwl/2.1.4.X (Macintosh; U; en)', '17595-7480-18108-18092');
     $ls = $ns;
   }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.14'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
+  $ns = E119($segments, array(0 => array(0 => 'Macintosh')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,50333,1282091,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.14', '15364-17285-21172-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.14'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1282091,913, 'Opera/9.80 (Windows NT 6.1; compatible; MSIE 7.0; Windows NT 6.0) Presto/2.12.388 Version/12.14', '15364-17285-21172-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.15'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1333959,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.15', '15364-17285-22577-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.15'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1333959,913, 'Opera/9.80 (Windows NT 6.1; compatible; MSIE 7.0; Windows NT 6.0) Presto/2.12.388 Version/12.15', '15364-17285-22577-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.00'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,468957,913, 'Opera/9.80 (Windows NT 6.1; WOW64; U; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.289 Version/12.00', '15364-17285-17216-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.00'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,468957,913, 'Opera/9.80 (Windows NT 6.1; U; compatible; MSIE 7.0; Windows NT 6.0; bg) Presto/2.10.289 Version/12.00', '15364-17285-17216-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.01'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,468957,913, 'Opera/9.80 (Windows NT 6.1; U; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.289 Version/12.01', '15364-17285-17216-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.16'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1498334,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.16', '15364-17285-23820-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.12'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1187081,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.12', '15364-17285-20412-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.12'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1187081,913, 'Opera/9.80 (Windows NT 6.1; WOW64; compatible; MSIE 7.0; Windows NT 6.0) Presto/2.12.388 Version/12.12', '15364-17285-20412-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.10'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1071699,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.10', '15364-17285-21951-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.11'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1164865,913, 'Opera/9.80 (Windows NT 6.1; WOW64; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0)) Presto/2.12.388 Version/12.11', '15364-17285-21814-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '12.11'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1164865,913, 'Opera/9.80 (Windows NT 6.1; WOW64; compatible; MSIE 7.0; Windows NT 6.0) Presto/2.12.388 Version/12.11', '15364-17285-21814-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '11.64'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,832912,913, 'Opera/9.80 (Windows NT 6.1; U; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.229 Version/11.64', '15364-17285-18347-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '11.62'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,677862,913, 'Opera/9.80 (Windows NT 6.1; U; Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.229 Version/11.62', '15364-17285-18331-18092');
-    $ls = $ns;
-  }
-  $ns = E119($segments, array(0 => array(0 => '9.80'), 1 => array(0 => '11.61'), 2 => array(0 => 'Windows NT 6.1', 1 => 'compatible'), 3 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,622688,913, 'Opera/9.80 (Windows NT 6.1; U; &quot;Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0); en) Presto/2.10.229 Version/11.61', '15364-17285-3403-18092');
+    $dl[] = array(53173,298022,297092,913, 'RSSOwl/2.1.6.X (Macintosh; U; en)', '15364-7480-18108-18092');
     $ls = $ns;
   }
   return $dl;

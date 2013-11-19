@@ -22,7 +22,7 @@
  * return integer
  *   The score between the two strings.
  */
-function E124(&$target, $test, &$ls) {
+function E124($target, $test, $ls) {
   $score = 0;
   fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 10000, $score);
   if ($score == PHP_INT_MAX) {
@@ -47,669 +47,93 @@ function _H124($useragent) {
 
   // Calculate the segments for the useragent.
   $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#1.0.4; .+\\)$#', $useragent));
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 941SH)')), $ls);
+    0 => fiftyone_degrees_preg_match_all('#Mnenhy/\\d\\.\\d#', $useragent));
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.8')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 941SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,115571,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.2.4) Gecko/X Firefox/3.6.4 (.NET CLR 3.5.30729) Mnenhy/0.8.2', '15364-5690-17558-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 831SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 831SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,65828,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.8) Gecko/X Firefox/3.0.8 Mnenhy/0.7.6.0', '15364-5690-3409-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH01B)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH01B)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,74779,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.1) Gecko/X Firefox/2.0.0.1 Mnenhy/0.7.4.666', '15364-5690-17202-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F01C)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F01C)', '15364-17017-17470-18092');
+    $dl[] = array(53173,142808,74779,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.12) Gecko/X Firefox/2.0.0.12 Mnenhy/0.7.5.666', '15364-18110-17202-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F06B)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F06B)', '15364-17017-17470-18092');
+    $dl[] = array(62443,143397,74779,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.1.14) Gecko/X Firefox/2.0.0.14 Mnenhy/0.7.5.666', '17595-18120-17202-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH38)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH38)', '15364-17017-17470-18092');
+    $dl[] = array(53173,142808,293834,913, 'Mozilla/5.0 (X11; U; Linux i686; pl; rv:1.8.0.1) Gecko/X Firefox/1.5.0.1 (Swiftfox) Mnenhy/0.7.3.0', '15364-18110-17381-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 923SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.6')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 923SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,163408,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:x.xxx) Gecko/X Mnenhy/0.6.0.104', '15364-5690-18107-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 004SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.6')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 004SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,260302,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.6) Gecko/X Firefox/0.8 Mnenhy/0.6.0.103', '15364-5690-20918-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 940SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 940SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,53254,531465,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.23) Gecko/X Thunderbird/2.0.0.23 Mnenhy/0.7.6.666', '15364-5690-18199-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 920SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 920SH)', '15364-17017-17470-18092');
+    $dl[] = array(53173,562532,293834,913, 'Mozilla/5.0 (X11; U; Linux i686; pl-PL; rv:1.8.0.5) Gecko/X Ubuntu/dapper-security Firefox/1.5.0.5 Mnenhy/0.7.4.666', '15364-22418-17381-18092');
     $ls = $ns;
   }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 931SH)')), $ls);
+  $ns = E124($segments, array(0 => array(0 => 'Mnenhy/0.7')), $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 931SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 001SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 001SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P906i)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P906i)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P06B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P06B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N07B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N07B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 840P)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 840P)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P04B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P04B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH04A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH04A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P02B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P02B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 932SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 932SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F02B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F02B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH02A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH02A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 933SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 933SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N04B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N04B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 943SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 943SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N02C)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N02C)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N08A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N08A3)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH01C)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH01C)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH01A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH01A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 824SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 824SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 841SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 841SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 002SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 002SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 941P)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 941P)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH03B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH03B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 944SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 944SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P02A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P02A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH07B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH07B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N906imyu)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N906imyu)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N01B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N01B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F03B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F03B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F01B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F01B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N06B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N06B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 820SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 820SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH906i)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH906i)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 840SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 840SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 830CA)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 830CA)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P01A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P01A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P10A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P10A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P03C)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P03C)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F01A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F01A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 940SC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 940SC)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F09A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F09A3)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 930SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 930SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH08B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH08B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH02B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH02B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 832SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 832SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N02A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N02A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 830SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 830SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F08B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F08B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P905i)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P905i)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P03A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P03A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P01B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P01B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH03A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH03A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 936SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 936SH)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N905i)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N905i)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; P08A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; P08A3)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F02A)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F02A)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH05A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH05A3)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 831P)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 831P)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH06B)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH06B)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; N09A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; N09A3)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH905i)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH905i)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 942P)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 942P)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; F05C)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; F05C)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 001N)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 001N)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH10C)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH10C)', '15364-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SH06A3)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(345102,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SH06A3)', '14662-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 830P)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(913184,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 830P)', '17519-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 934SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(766159,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 934SH)', '17032-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 911SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(301251,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 911SH)', '17524-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; SN3O)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(448345,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; SN3O)', '17699-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 913SH)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(431684,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 913SH)', '17521-17017-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E124($segments, array(0 => array(0 => '1.0.4; 931SC)')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(365291,27598,54471,913, 'Mozilla/4.0 (jig browser web; 1.0.4; 931SC)', '12615-17017-17470-18092');
+    $dl[] = array(53173,142808,534203,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.8) Gecko/X Thunderbird/1.5.0.8 Mnenhy/0.7.4.666', '15364-18110-18201-18092');
     $ls = $ns;
   }
   return $dl;

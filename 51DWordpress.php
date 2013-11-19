@@ -134,9 +134,9 @@
  */
 /*
 	Plugin Name: 51Degrees.mobi Mobile Device Detector
-	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx
+	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx
 	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.12.1
+	Version: 2.1.15.3
 	Author: 51Degrees.mobi
 	Author URI: http://51Degrees.mobi
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
@@ -466,7 +466,7 @@ global $_51d_meta_data;
 		<p>You can also copy the licence key into the 
 		<a href="https://51degrees.mobi/Products/Downloads/Premium.aspx" target="_blank">51Degrees.mobi Downloads page</a>
 		and download an upgraded plugin preloaded with current device data. You must delete the currently installed version of this plugin before
-		uploading the upgraded one. <a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx" target="_blank">Learn More</a></p>
+		uploading the upgraded one. <a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Learn More</a></p>
 		<p>
         Data type: <i><?php echo $_51d_meta_data["DatasetName"]; ?></i> Published: <i><?php echo $_51d_meta_data["Date"]; ?></i>
         </p>
@@ -726,7 +726,7 @@ function _51d_print_documentation() {
     <div style="margin-left: 12px" >
     <h3>Documentation</h3>
     <p>For assistance, refer to help tab at the top of this page. You can also use the tooltips, or see
-    our <a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx">user guide</a> and 
+    our <a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx">user guide</a> and 
     <a href="http://51degrees.mobi/Support/Forum.aspx">support forum</a>.</p>
     </div>
     <?php
@@ -879,7 +879,7 @@ function _51d_admin_menu_preprocess() {
 		$screen->set_help_sidebar(
 			__('<strong>For more information:</strong> 
 			<p><a href="http://51degrees.mobi/Products/DeviceData.aspx" target="_blank">Overview</a></p>
-			<p><a href="http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx" target="_blank">Documentation</a></p>
+			<p><a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Documentation</a></p>
 			<p><a href="http://51degrees.mobi/Purchase/Wordpress.aspx" target="_blank">Upgrade Device Data</a></p>')
 		);
 

@@ -11,7 +11,7 @@
  */
 
 /**
- * Calculates the matching score between the two strings for this handler.
+ * Calculates the edit distance between the two strings.
  *
  * &$target string
  *   The string we're trying to find the closest value to.
@@ -20,108 +20,14 @@
  * $ls integer
  *   The lowest score we've found so far.
  * return integer
- *   The score between the two strings.
+ *   The edit distance between the two strings.
  */
-function E101(&$target, $test, &$ls) {
-  $score = 0;
-  fiftyone_degrees_calculate_segment_score($target[0], $test[0], $ls, 100000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[1], $test[1], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[2], $test[2], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[3], $test[3], $ls, 10000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[4], $test[4], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[5], $test[5], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[6], $test[6], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[7], $test[7], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[8], $test[8], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[9], $test[9], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[10], $test[10], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[11], $test[11], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[12], $test[12], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[13], $test[13], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[14], $test[14], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[15], $test[15], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[16], $test[16], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[17], $test[17], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[18], $test[18], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[19], $test[19], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[20], $test[20], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[21], $test[21], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  fiftyone_degrees_calculate_segment_score($target[22], $test[22], $ls, 1000, $score);
-  if ($score == PHP_INT_MAX) {
-    return PHP_INT_MAX;
-  }
-  return $score;
+function E101($target, $test, $ls) {
+  return fiftyone_degrees_edit_distance($target, $test, $ls);
 }
 
 /**
- * Returns the details of the devices that are closest to the
- * useragent string provided.
+ * Returns the details of the devices that are closest to the useragent string provided.
  *
  * $useragent string
  *   The useragent we're trying to find.
@@ -129,2730 +35,340 @@ function E101(&$target, $test, &$ls) {
  *   An array of device details for the closest devices.
  */
 function _H101($useragent) {
-
   $ls = PHP_INT_MAX;
   $dl = array();
-
-  // Calculate the segments for the useragent.
-  $segments = array(
-    0 => fiftyone_degrees_preg_match_all('#(?<=Mozilla/)\\d\\.\\d#', $useragent),
-    1 => fiftyone_degrees_preg_match_all('#(?<=Mozilla/\\d\\.\\d \\()[^;\\)]+#', $useragent),
-    2 => fiftyone_degrees_preg_match_all('#Windows NT \\d\\.\\d(?=;)|Mac OS X [^\\s]+(?=;)|Ubuntu|X11|Linux i686#', $useragent),
-    3 => fiftyone_degrees_preg_match_all('#Win\\d(\\d|x)#', $useragent),
-    4 => fiftyone_degrees_preg_match_all('#Fedora#', $useragent),
-    5 => fiftyone_degrees_preg_match_all('#(?<=StumbleUpon/)\\d\\.\\d#', $useragent),
-    6 => fiftyone_degrees_preg_match_all('#Postbox/\\d+\\.\\d#', $useragent),
-    7 => fiftyone_degrees_preg_match_all('#Minefield/\\d\\.\\d#', $useragent),
-    8 => fiftyone_degrees_preg_match_all('#Netscape(\\d|)/\\d\\.\\d#', $useragent),
-    9 => fiftyone_degrees_preg_match_all('#Camino/\\d+\\.\\d#', $useragent),
-    10 => fiftyone_degrees_preg_match_all('#lolifox/\\d+\\.\\d#', $useragent),
-    11 => fiftyone_degrees_preg_match_all('#Icedove/\\d+\\.\\d#', $useragent),
-    12 => fiftyone_degrees_preg_match_all('#Flock/\\d+\\.\\d#', $useragent),
-    13 => fiftyone_degrees_preg_match_all('#zdesktop/\\d+\\.\\d#', $useragent),
-    14 => fiftyone_degrees_preg_match_all('#Abrowser/\\d+\\.\\d#', $useragent),
-    15 => fiftyone_degrees_preg_match_all('#Mnenhy/\\d+\\.\\d#', $useragent),
-    16 => fiftyone_degrees_preg_match_all('#Konqueror/\\d+\\.\\d#', $useragent),
-    17 => fiftyone_degrees_preg_match_all('#Ubuntu/\\d+\\.\\d#', $useragent),
-    18 => fiftyone_degrees_preg_match_all('#Palemoon/\\d+\\.\\d#', $useragent),
-    19 => fiftyone_degrees_preg_match_all('#SeaMonkey(/\\d\\.\\d+|$)#', $useragent),
-    20 => fiftyone_degrees_preg_match_all('#GranParadiso/\\d\\.\\d#', $useragent),
-    21 => fiftyone_degrees_preg_match_all('#K9Browser/\\d+\\.\\d#', $useragent),
-    22 => fiftyone_degrees_preg_match_all('#Touch#', $useragent));
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-TU960s_TD/1.0 Linux/2.6.35 Android/2.3 Release/9.25.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,27598,54471,913, 'Mozilla/5.0 (X11; U; IRIX64 IP35; en-US; rv:1.4.3) Gecko/X', '15364-17017-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU880s_TD/1.0 Linux/2.6.35 Android/2.3 Release/2.10.2012 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,1398864,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0; chromeframe/28.0.1500.95) like Gecko', '15364-7133-22282-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU788_TD/1.0 Linux/2.6.35 Android/2.3 Release/12.25.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; pl-PL; rv:1.0.1) Gecko/X Chimera/0.6', '17595-18120-18108-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU885_TD/1.0 Linux/2.6.35 Android/2.3 Release/2.25.2012 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,126201,426483,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.5) Gecko/X Firebird/0.7', '17595-18120-18108-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => NULL, 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU880s2_TD/1.0 Linux/2.6.35 Android/2.3.5 Release/03.29.2012 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 Galeon/1.2.0 (X11; Linux i686; U;) Gecko/X', '15364-18110-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU960s2_TD/1.0 Linux/2.6.35 Android/2.3 Release/3.21.2012 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:7.0.1) Gecko/ /7.0.1,gzip(gfe) (via docs.google.com/viewer)', '15364-18110-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => NULL, 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-TU805_TD/1.0 Linux/2.6.35 Android/2.3 Release/10.08.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0+(X11;+U;+Linux+i686;+en-US;+rv:1.7.3)+Gecko/X', '15364-18110-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,112542,111697,913, $ua, '15364-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE U950_TD/1.0 Linux/3.1.10 Android/4.0 Release/8.1.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; zh-CN; rv:1.9.1.2) Gecko/X', '15364-18110-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,101053,644525,913, $ua, '15364-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.0'), 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU807_TD/1.0 Linux/3.0.13 Android/4.0 Release/10.15.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,49474,48520,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9a1) Gecko/X GranParadiso/3.0a1', '15364-5690-3409-18092');
-    $ls = $ns;
+    $dl[] = array(53173,101053,644525,913, $ua, '15364-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU880F1_TD/1.0 Linux/3.0.13 Android/4.0 Release/7.10.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,607733,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.8; en-US; rv:1.9.2.10) Gecko Expeditor 6.2.2.X-1115 Gecko/X-1115', '17595-18207-18108-18092');
-    $ls = $ns;
+    $dl[] = array(53173,101053,644525,913, $ua, '15364-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-TU812_TD/1.0 Linux/2.6.32 Android/2.2 Release/07.25.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.17pre) Gecko K-Meleon/1.6.0', '15364-5690-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,101053,920,913, $ua, '15364-17979-3508-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-TU802_TD/1.0 Linux/2.6.32 Android/2.2 Release/1.1.2011 Browser/AppleWebKit530.17 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows NT 5.1; en-US; rv:1.7.6) Gecko/X', '15364-5690-17470-18092');
-    $ls = $ns;
+    $dl[] = array(53173,101053,920,913, $ua, '15364-17979-3508-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T95 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T95 T03 Novarra-Vision/8.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,49474,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; EN; rv:1.9.0.6) Gecko/2', '15364-5690-17470-18092');
-    $ls = $ns;
+    $dl[] = array(356804,121281,17936,913, $ua, '13104-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T95 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T95 T03';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.2.10) Gecko Expeditor 6.2.2.X-1115 Gecko/X-1115', '17595-17297-18108-18092');
-    $ls = $ns;
+    $dl[] = array(356804,121281,17936,913, $ua, '13104-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0', 1 => '2.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-TU880_TD/1.0 Linux/2.6.32 Android/2.2 Release/5.25.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,355621,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.1.9) Gecko/X Mozilla/2.0', '17595-17297-18108-18092');
-    $ls = $ns;
+    $dl[] = array(352769,101053,920,913, $ua, '13051-17979-3508-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => NULL, 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-E520/1.0 SMIT-Browser/2.0.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,268705,54471,913, 'Mozilla/5.0(Windows; U) Gecko/X', '15364-17350-17470-18092');
-    $ls = $ns;
+    $dl[] = array(183336,183330,183408,913, $ua, '13510-5282-3579-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1', 1 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-E520/1.0 SMIT-Browser/2.0.0 Novarra-Vision/8.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,324567,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.13) Gecko/X Opera/9.80 (Windows NT 6.1; U; zh-tw) Presto/2.7.62 Version/11.01', '15364-7133-17217-18092');
-    $ls = $ns;
+    $dl[] = array(183336,183330,183408,913, $ua, '13510-5282-3579-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T54 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T54 T04';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,176122,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.10) Gecko Expeditor 6.2.2.X-1115 Gecko/X-1115', '17595-17296-18108-18092');
-    $ls = $ns;
+    $dl[] = array(389018,121281,17936,913, $ua, '12660-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.0'), 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T54 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T54 T04 Novarra-Vision/8.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,48520,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.11) Gecko GranParadiso/3.0.11', '15364-18110-3409-18092');
-    $ls = $ns;
+    $dl[] = array(389018,121281,17936,913, $ua, '12660-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.1'), 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTEU880E_TD/1.0 Linux/2.6.35 Android/2.3 Release/12.15.2011 Browser/AppleWebKit533.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,48520,913, 'Mozilla/5.0 (X11; U; Linux ppc; en-US; rv:1.9a8) Gecko/X GranParadiso/3.1', '15364-18110-3409-18092');
-    $ls = $ns;
+    $dl[] = array(891717,112542,111697,913, $ua, '21166-5629-15760-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.0'), 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE U930_TD/1.0 Linux/2.6.39 Android/4.0 Release/3.5.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,48520,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.8) Gecko/X GranParadiso/3.0.8', '15364-18110-3409-18092');
-    $ls = $ns;
+    $dl[] = array(945149,101053,644525,913, $ua, '21026-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T930 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T930 T06';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; rv:2.2) Gecko/20110201', '15364-7133-17470-18092');
-    $ls = $ns;
+    $dl[] = array(334656,121281,17936,913, $ua, '13774-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T870 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T870 T06';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/ /12.0', '15364-7133-17470-18092');
-    $ls = $ns;
+    $dl[] = array(335232,121281,17936,913, $ua, '13818-6476-4223-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE U970_TD/1.0 Linux/2.6.39 Android/4.0 Release/2.21.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1) Gecko/X', '15364-7133-17470-18092');
-    $ls = $ns;
+    $dl[] = array(866714,101053,644525,913, $ua, '20124-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE Bluebelt/v2/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,52327,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.5b) Gecko/X', '15364-7127-17470-18092');
-    $ls = $ns;
+    $dl[] = array(334008,16068,13185,913, $ua, '13742-5448-22270-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE Bluebelt/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; rv:11.0) like Gecko', '15364-21460-21461-18092');
-    $ls = $ns;
+    $dl[] = array(334008,16068,13185,913, $ua, '13742-5448-22270-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE U985_TD/1.0 Linux/3.1.10 Android/4.0 Release/8.1.2012 Browser/AppleWebKit534.30';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko', '15364-21460-21461-18092');
-    $ls = $ns;
+    $dl[] = array(1034982,101053,644525,913, $ua, '21433-17979-18062-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.5'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-C78/1.0 SMIT-Browser/2.0.0 Novarra-Vision/8.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(47863,47008,426483,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.2.10) Gecko Expeditor 6.2.2.X-1115 Gecko/X-1115', '17595-17295-18108-18092');
-    $ls = $ns;
+    $dl[] = array(228262,183330,183408,913, $ua, '13572-5282-3579-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.0'), 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-C78/1.0 SMIT-Browser/2.0.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,95563,48520,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9a8) Gecko/X GranParadiso/3.0a8', '15364-7133-3409-18092');
-    $ls = $ns;
+    $dl[] = array(228262,183330,183408,913, $ua, '13572-5282-3579-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => NULL, 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T165i/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Novarra-Vision/8.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,221476,54471,913, 'Mozilla/5.0(Windows;N;Win98;m18)Gecko/X', '15364-6704-17470-18092');
-    $ls = $ns;
+    $dl[] = array(212232,22118,22204,913, $ua, '14213-17017-3976-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T165i/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,221476,54471,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.5) Gecko/X K-Meleon/0.8.2', '15364-6704-17470-18092');
-    $ls = $ns;
+    $dl[] = array(212232,22118,22204,913, $ua, '14213-17017-3976-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '4.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE silverbelt/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,221476,54471,913, 'Mozilla/4.0 (Windows; U; Win98; en-US; rv:1.7.2) Gecko/X', '15364-6704-17470-18092');
-    $ls = $ns;
+    $dl[] = array(334296,16068,5635,913, $ua, '13754-5448-4808-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE Bluebelt II/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,221476,54471,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.7.5) Gecko/X K-Meleon/0.9', '15364-6704-17470-18092');
-    $ls = $ns;
+    $dl[] = array(334008,16068,5635,913, $ua, '13742-5448-4808-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
+  $ua = 'ZTE-C79/1.0 SMIT-Browser/2.0.0';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(908925,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko', '18436-21460-21461-18092');
-    $ls = $ns;
+    $dl[] = array(237069,183330,183408,913, $ua, '15292-5282-3579-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
+  $ua = 'ZTE-W X60/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(908925,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; rv:11.0) like Gecko', '18436-21460-21461-18092');
-    $ls = $ns;
+    $dl[] = array(312148,16068,5635,913, $ua, '12829-5448-4808-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => array(0 => 'Abrowser/16.0'), 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-W N61/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,941886,913, 'Mozilla/5.0 (X11; Linux i686; rv:16.0) Gecko/X Abrowser/16.0', '15364-18110-18428-18092');
-    $ls = $ns;
+    $dl[] = array(358973,16068,13185,913, $ua, '13134-5448-22270-18092');
   }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => array(0 => 'Abrowser/16.0'), 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
+  $ua = 'ZTE-T165i/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ns = E101($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
+      $ls = $ns;
     }
-    $dl[] = array(44218,124734,941886,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:16.0) Gecko/X Abrowser/16.0', '15364-18110-18428-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => array(0 => 'Mnenhy/0.6'), 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,145732,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.452) Gecko/X Mnenhy/0.6.0.104', '15364-5690-18107-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '3.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => array(0 => 'Mnenhy/0.6'), 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,145732,913, 'Mozilla/3.0 (Windows; U; Windows NT 5.1; en-US; rv:1.452) Gecko/X Mnenhy/0.6.0.104', '15364-5690-18107-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,689365,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.9) Gecko/X Mandriva/2.0.4-69.1mib2010.0 SeaMonkey/2.0.4', '15364-18110-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,689365,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.17) Gecko/X SeaMonkey/2.0.12', '15364-18110-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1079025,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; rv:11.0) Gecko/X', '15364-7133-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1079025,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko', '15364-7133-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1079025,913, 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; Trident/7.0; rv:11.0) like Gecko', '15364-7133-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1079025,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; Touch; Tablet PC 2.0; rv:11.0) like Gecko', '15364-7133-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.13'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1072546,913, 'Mozilla/5.0 (Windows NT 5.1; rv:16.0) Gecko/X SeaMonkey/2.13.1', '15364-5690-20761-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,506005,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9) Gecko Minefield/3.0', '15364-18110-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,506005,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.6) Gecko/X Minefield/3.0.6', '15364-18110-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => NULL, 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,506005,913, 'Mozilla/5.0(X11;U;Linuxi686;en-US;rv:1.9a1)Gecko/XMinefield/3.0a1', '15364-18110-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/5.0 (Windows NT 6.0; rv:12.0) Gecko/ /12.0', '15364-17285-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.0.11) Gecko/X', '15364-17285-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.17'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1236792,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:20.0) Gecko/X SeaMonkey/2.17.1', '15364-7133-22225-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.15'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1188080,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:18.0) Gecko/X SeaMonkey/2.15', '15364-7133-20456-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.16'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1159261,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:19.0) Gecko/X SeaMonkey/2.16', '15364-7133-21791-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.14'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1145576,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:17.0) Gecko/X SeaMonkey/2.14.1', '15364-7133-20457-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.13'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1072546,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:16.0) Gecko/X SeaMonkey/2.13.2', '15364-7133-20761-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,478171,54471,913, 'Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.2.1) Gecko/X', '15364-18146-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.17'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1236792,913, 'Mozilla/5.0 (Windows NT 5.1; rv:20.0) Gecko/X SeaMonkey/2.17.1', '15364-5690-22225-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.15'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1188080,913, 'Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/X SeaMonkey/2.15.2', '15364-5690-20456-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.16'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1159261,913, 'Mozilla/5.0 (Windows NT 5.1; rv:19.0) Gecko/X SeaMonkey/2.16.2', '15364-5690-21791-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.20'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1432836,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/X SeaMonkey/2.20', '15364-7133-24330-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(893820,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; Touch; rv:11.0) like Gecko', '18435-21460-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.3'), 2 => array(0 => 'Windows NT 6.3'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(893820,1271600,1079025,913, 'Mozilla/5.0 (Windows NT 6.3; ARM; Trident/7.0; rv:11.0) like Gecko', '18435-21460-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.19'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1479473,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/X SeaMonkey/2.19', '15364-7133-24329-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.14'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1145576,913, 'Mozilla/5.0 (Windows NT 5.1; rv:17.0) Gecko/X SeaMonkey/2.14.1', '15364-5690-20457-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,483576,54471,913, 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.5) Gecko/X', '15364-18145-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de-DE; rv:1.8.1.23) Gecko/X SeaMonkey/1.1.18', '15364-5690-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => array(0 => 'Mnenhy/0.7'), 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/X SeaMonkey/1.1 Mnenhy/0.7.4.10005', '15364-5690-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.8.1.19) Gecko/X SeaMonkey/1.1.14', '15364-5690-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/3.0'), 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,48520,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9a1) Gecko/X GranParadiso/3.0a1', '15364-7127-3409-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => array(0 => 'GranParadiso/2.0'), 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,48520,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9a3) Gecko/X GranParadiso/2.0.0.3', '15364-7127-3409-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.9'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1022734,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.9.5 (like Gecko) Konqueror/4.9', '15364-18110-19819-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.9'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1022734,913, 'Mozilla/5.0 (X11; Linux) KHTML/4.9.1 (like Gecko) Konqueror/4.9', '15364-18110-19819-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.8'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,718473,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.8.4 (like Gecko) Konqueror/4.8', '15364-18110-18565-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.8'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,718473,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.8.5 (like Gecko) Konqueror/4.8', '15364-18110-18565-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.12'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1019730,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:15.0) Gecko/X SeaMonkey/2.12', '15364-7133-20755-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.17'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1236792,913, 'Mozilla/5.0 (X11; Linux i686; rv:20.0) Gecko/X SeaMonkey/2.17.1', '15364-18110-22225-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.17'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1236792,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:20.0) Gecko/X SeaMonkey/2.17.1', '15364-18110-22225-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.12'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1019730,913, 'Mozilla/5.0 (Windows NT 5.1; rv:15.0) Gecko/X SeaMonkey/2.12.1', '15364-5690-20755-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.1'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1291696,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.10.5 (like Gecko) Konqueror/4.10', '15364-18110-21710-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.1'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1291696,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.10.5 (like Gecko) Konqueror/4.10', '15364-18110-21710-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.19'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1479473,913, 'Mozilla/5.0 (Windows NT 5.1; rv:22.0) Gecko/X SeaMonkey/2.19', '15364-5690-24329-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => array(0 => 'Palemoon/3.6'), 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,691289,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2) Gecko/X Palemoon/3.6.0.5', '15364-5690-22343-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => array(0 => 'Abrowser/6.0'), 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,360413,913, 'Mozilla/5.0 (X11; Linux i686; rv:6.0.2) Gecko/X Abrowser/6.0.2', '15364-18110-17208-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.15'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1188080,913, 'Mozilla/5.0 (X11; Linux i686; rv:18.0) Gecko/X SeaMonkey/2.15.1', '15364-18110-20456-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,1079025,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko', '15364-16110-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,1079025,913, 'Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; WebView/1.0; rv:11.0) like Gecko', '15364-16110-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.1.7) Gecko/X SeaMonkey/2.0.2', '15364-5690-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => array(0 => 'Mnenhy/0.8'), 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.13) Gecko/X Mnenhy/0.8.3 SeaMonkey/2.0.8', '15364-5690-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-CA; rv:1.9.1.11pre) Gecko/X SeaMonkey/2.0.6pre', '15364-5690-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '3.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,976556,913, 'Mozilla/3.0 (X11; U; Linux 2.4.2-2 i586; en-US; m18) Gecko/X Netscape6/6.01', '15364-18110-20905-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Ubuntu', 2 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,716673,54471,913, 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:15.0) Gecko/X', '15364-18118-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2 x64; en-US; rv:1.9.0.7) Gecko/X Minefield/3.0.7', '15364-5690-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9a8pre) Gecko/X Minefield/3.0a8pre', '15364-5690-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9a1) Gecko/X Minefield/3.0a1', '15364-5690-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.14'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1145576,913, 'Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/X SeaMonkey/2.14.1', '15364-18110-20457-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Ubuntu', 2 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => array(0 => 'Abrowser/10.0'), 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,716673,716680,913, 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:10.0) Gecko/X Abrowser/10.0', '15364-18118-18099-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,337572,54471,913, 'Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.2b) Gecko/X', '15364-17188-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1b3pre) Gecko/X SeaMonkey/2.0a3pre', '15364-7133-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.11'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,943787,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:14.0) Gecko/X SeaMonkey/2.11', '15364-7133-22316-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,736356,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.4) Gecko/X Camino/1.0.2', '17595-18120-22500-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,736356,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.8) Gecko/X Camino/1.0b1', '17595-18120-22500-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,751078,913, 'Mozilla/5.0 (Windows; U; Windows NT   5.1; en-US; rv:1.8) Gecko/X SeaMonkey/1.0b', '15364-5690-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,751078,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.4) Gecko/X SeaMonkey/1.0.2', '15364-5690-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => array(0 => 'Abrowser/7.0'), 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,704246,913, 'Mozilla/5.0 (X11; Linux i686; rv:7.0.1) Gecko/X Abrowser/7.0.1', '15364-18110-17209-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.2; en-US; rv:1.9.2.3) Gecko/X Namoroka/3.6.3', '15364-16110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,54471,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:12.0) Gecko/ /12.0', '15364-16110-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/8.1'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,694767,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.1pre) Gecko/X Ubuntu/8.10 (intrepid) Namoroka/3.6.1pre', '15364-17814-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,717518,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:7.0.1) Gecko/X Postbox/3.0.8', '15364-7133-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.11'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,943787,913, 'Mozilla/5.0 (Windows NT 5.1; rv:14.0) Gecko/X SeaMonkey/2.11', '15364-5690-22316-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.8.1.17) Gecko/X SeaMonkey/1.1.12', '15364-7127-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => array(0 => 'Mnenhy/0.7'), 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; de-AT; rv:1.8.1.21) Gecko/X SeaMonkey/1.1.15 Mnenhy/0.7.6.0', '15364-7127-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.9'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,713918,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:12.0) Gecko/X SeaMonkey/2.9.1', '15364-7133-21171-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.10'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,905852,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:13.0) Gecko/X SeaMonkey/2.10.1', '15364-7133-21170-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,607733,717518,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:7.0.1) Gecko/X Postbox/3.0.8', '17595-18207-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.17'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,1236792,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:20.0) Gecko/X SeaMonkey/2.17.1', '17595-17296-22225-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.10'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,905852,913, 'Mozilla/5.0 (Windows NT 5.1; rv:13.0) Gecko/X SeaMonkey/2.10.1', '15364-5690-21170-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(28561,6631,54471,913, 'Mozilla/5.0 (Windows; U; Windows CE 5.2; rv:1.8.1.4pre) Gecko/20070327 Minimo/0.020', '18088-5448-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,539983,54471,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.13) Gecko Fedora/1.9.2.13-3.el5', '15364-22190-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,539983,54471,913, 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.18) Gecko Fedora/1.9.2.18-1.fc14', '15364-22190-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.9'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,713918,913, 'Mozilla/5.0 (Windows NT 5.1; rv:12.0) Gecko/X SeaMonkey/2.9.1', '15364-5690-21171-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.6'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,699512,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en; rv:1.8.1.4pre) Gecko/X Camino/1.6pre', '17595-18120-22503-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9.0.3pre) Gecko/X Minefield/3.0.5pre', '15364-17285-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; fr; rv:1.9b3pre) Gecko/X Minefield/3.0b3pre', '15364-17285-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,751078,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.8.0.14eol) Gecko/X Red Hat/1.0.9-40.el4 SeaMonkey/1.0.9', '15364-18110-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,751078,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/X SeaMonkey/1.0.5', '15364-18110-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; de; rv:1.9.1.8) Gecko/X SeaMonkey/2.0.3', '15364-17285-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,502951,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.4) Gecko Netscape/7.1 (ax)', '15364-6704-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,502951,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.4) Gecko/X Netscape/7.1 (ax)', '15364-6704-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/9.0'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,589956,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.7) Gecko/X Ubuntu/9.04 (jaunty) Shiretoko/3.5.7', '15364-17815-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/9.0'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,589956,54471,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.1) Gecko/X Ubuntu/9.04 (jaunty) Shiretoko/3.5.1', '15364-17815-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,907167,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; it-IT; rv:1.7.5) Gecko/X Netscape/8.1', '15364-5690-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,686486,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.2pre) Gecko/X SeaMonkey/1.1', '15364-18110-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,686486,913, 'Mozilla/5.0 (X11; U; OpenVMS COMPAQ_Professional_Workstation; en-US; rv:1.8.1.17) Gecko/X SeaMonkey/1.1.12', '15364-18110-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,686486,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.8.1.24) Gecko/X SeaMonkey/1.1.19', '15364-6704-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,686486,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; en-GB; rv:1.8.1.6) Gecko/X SeaMonkey/1.1.4', '15364-6704-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1102668,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.2.2', '15364-7133-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1113808,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1b3pre) Gecko/X Minefield/3.1b3pre', '15364-5690-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1113808,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.9.1b2pre) Gecko/X Minefield/3.1b2pre', '15364-5690-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1078070,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0.12) Gecko/X conkeror/1.0pre (Debian-1.0~~pre+gitX-1)', '15364-18110-21970-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1078070,913, 'Mozilla/5.0 (X11; Linux i686; rv:10.0.12) Gecko/X conkeror/1.0pre (Debian-1.0~~pre+gitX-1)', '15364-18110-21970-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,717518,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:7.0.1) Gecko/X Postbox/3.0.7', '17595-17297-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1 x64; en-US; rv:1.9.3a1pre) Gecko/X Minefield/3.7a1pre', '15364-7133-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.3a4pre) Gecko/X Minefield/3.7a4pre', '15364-7133-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,483576,686486,913, 'Mozilla/5.0 (X11; U; FreeBSD amd64; en-US; rv:1.8.1.21) Gecko/X SeaMonkey/1.1.16', '15364-18145-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/10.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,996376,913, 'Mozilla/5.0 (X11; Linux i686; rv:10.0.12) Gecko/X Icedove/10.0.12', '15364-18110-21943-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/10.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,996376,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0.12) Gecko/X Icedove/10.0.12 Lightning/1.2b1', '15364-18110-21943-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.8.1.21) Gecko/X SeaMonkey/1.1.15', '15364-17285-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(41414,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; NOKIA; Nokia) like Gecko', '18182-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,686486,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1.13) Gecko/X SeaMonkey/1.1.9', '17595-18120-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,686486,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.1.21) Gecko/X SeaMonkey/1.1.15', '17595-18120-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.5'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/2.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,695736,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en; rv:1.9.0.8pre) Gecko/X Camino/2.0b3pre', '17595-17295-22504-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(28561,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; Microsoft; Virtual) like Gecko', '18088-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,591823,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:0.9.2) Gecko/X Netscape6/6.1', '15364-7127-20906-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; fr; rv:1.9b4pre) Gecko/X SeaMonkey/2.0a1pre', '15364-7127-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.5'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,891539,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; pl-PL; rv:1.9a1) Gecko/X SeaMonkey/1.5a', '15364-5690-22315-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,737311,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X; fr-FR; rv:1.0.2) Gecko/X Netscape/7.02', '17595-18120-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,737311,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.0.1) Gecko/X Netscape/7.0', '15364-5690-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '7.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,737311,913, 'Mozilla/7.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.2) Gecko/X Netscape/7.0', '15364-5690-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(893820,285367,1079025,913, 'Mozilla/5.0 (Windows NT 6.2; ARM; Trident/7.0; Touch; WebView/1.0; rv:11.0) like Gecko', '18435-16110-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,737311,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.0.2) Gecko/X Netscape/7.02', '15364-6704-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,737311,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; ja-JP; rv:1.0.1) Gecko/X Netscape/7.0', '15364-6704-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; Win64; x64; en-US; rv:1.9.3a5pre) Gecko/X Minefield/3.7a5pre', '15364-5690-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.3a5pre) Gecko/X Minefield/3.7a5pre', '15364-5690-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.5'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,754782,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en; rv:1.8.1.8) Gecko/X Camino/1.5.2', '17595-18120-22502-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.5'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,754782,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X Mach-O; en; rv:1.8.1.12) Gecko/X Camino/1.5.5', '17595-18120-22502-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,703205,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.3a4pre) Gecko/X SeaMonkey/2.1a1pre', '15364-18110-22306-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,751078,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.8.0.1) Gecko/X SeaMonkey/1.0', '15364-7127-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/0.8'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,741667,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.2) Gecko/X Camino/0.8.1', '17595-18120-22498-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9.3a4pre) Gecko/X Minefield/3.7a4pre', '15364-7127-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1113808,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0 x64; en-US; rv:1.9.1b2pre) Gecko/X Minefield/3.1b2pre', '15364-17285-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1113808,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.1b2pre) Gecko/X Minefield/3.1b2pre', '15364-17285-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.9'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,1146413,1022734,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.9.3 (like Gecko) Konqueror/4.9 Fedora/4.9.3-2.fc17', '15364-22189-19819-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.9'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,1146413,1022734,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.9.5 (like Gecko) Konqueror/4.9 Fedora/4.9.5-2.fc17', '15364-22189-19819-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,717518,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:7.0.1) Gecko/X Postbox/3.0.8', '15364-16110-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.8'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,814011,718473,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.8.3 (like Gecko) Konqueror/4.8 Fedora/4.8.3-1.fc17', '15364-22196-18565-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.8'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,814011,718473,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.8.3 (like Gecko) Konqueror/4.8 Fedora/4.8.3-1.fc17', '15364-22196-18565-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.5'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,689365,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/X SeaMonkey/2.0a2', '17595-17295-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,717518,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:7.0.1) Gecko/X Postbox/3.0.8', '17595-17296-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(908925,285367,1079025,913, 'Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; Touch; WebView/1.0; rv:11.0) like Gecko', '18436-16110-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.2'), 2 => array(0 => 'Windows NT 6.2'), 3 => array(0 => 'Win64'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(908925,285367,1079025,913, 'Mozilla/5.0 (Windows NT 6.2; Win64; x64; Trident/7.0; Touch; WebView/1.0; rv:11.0) like Gecko', '18436-16110-21461-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.0'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.9'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,713918,913, 'Mozilla/5.0 (Windows NT 6.0; WOW64; rv:12.0) Gecko/X SeaMonkey/2.9.1', '15364-17285-21171-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.4'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,273342,689365,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10.4; de; rv:1.9.1.19) Gecko/X SeaMonkey/2.0.14', '17595-17294-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,907167,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.5) Gecko/X Netscape/8.1.2', '15364-7127-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,478171,737311,913, 'Mozilla/5.0 (X11; U; SunOS sun4u; en-US; rv:1.0.1) Gecko/X Netscape/7.0', '15364-18146-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/3.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,989662,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.16) Gecko/X Icedove/3.0.11', '15364-18110-21940-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/3.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,989662,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.16) Gecko/X Icedove/3.0.11', '15364-18110-21940-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,716673,686486,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.21) Gecko/X SeaMonkey/1.1.15 (Ubuntu-1.1.15+nobinonly-0ubuntu2)', '15364-18118-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,686486,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.8.1.6) Gecko/X SeaMonkey/1.1.4', '15364-7133-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,743579,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.3a3pre) Gecko/X Minefield/3.7a3pre', '15364-17285-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,703205,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-CA; rv:1.9.3a3pre) Gecko/X SeaMonkey/2.1a1pre', '15364-5690-22306-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.7'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,595326,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.7.4 (like Gecko) Konqueror/4.7', '15364-18110-22643-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.7'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,595326,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.7.4 (like Gecko) Konqueror/4.7', '15364-18110-22643-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => array(0 => '1.9'), 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,272298,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; rv:1.7.3) Gecko/X Waterunicorn/0.10 StumbleUpon/1.998', '15364-5690-18245-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => array(0 => '1.6'), 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,272298,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4b) Gecko/X Mozilla Firebird/0.5+ StumbleUpon/1.63', '15364-5690-18245-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.7'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,800426,913, 'Mozilla/5.0 (X11; Linux i686; rv:10.0.2) Gecko/X SeaMonkey/2.7.2', '15364-18110-20460-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.7'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,800426,913, 'Mozilla/5.0 (Windows NT 5.1; rv:10.0.2) Gecko/X SeaMonkey/2.7.2', '15364-5690-20460-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,907167,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.7.5) Gecko/X Netscape/8.1.3', '15364-17285-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/0.7'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,756612,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.5b) Gecko/X Camino/0.7+', '17595-18120-22499-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,739858,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:2.0b2pre) Gecko/X Minefield/4.0b2pre', '15364-7133-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,739858,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0b4pre) Gecko/X Minefield/4.0b4pre', '15364-7133-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,738158,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; ja-JP; rv:1.7.5) Gecko/X Netscape/8.0.4', '15364-5690-20903-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/17.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1470054,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:17.0) Gecko/X Icedove/17.0.7', '15364-18110-23212-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/17.0'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1470054,913, 'Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/X Icedove/17.0.7', '15364-18110-23212-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.8'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,720455,913, 'Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/X SeaMonkey/2.8', '15364-5690-22314-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.6'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1148635,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-17285-21958-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,690327,689365,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.1.15) Gecko/X Fedora/2.0.10-1.fc12 SeaMonkey/2.0.10', '15364-22191-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,690327,689365,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.19) Gecko/X Fedora/2.0.14-1.fc14 SeaMonkey/2.0.14', '15364-22191-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => array(0 => 'Flock/0.5'), 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,888457,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8.0.1) Gecko/X Flock/0.5.13.2', '17595-18120-22490-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9a2pre) Gecko/X Minefield/3.0a2pre', '15364-7127-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.1'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,1393095,1291696,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.10.1 (like Gecko) Konqueror/4.10 Fedora/4.10.1-1.fc17', '15364-22276-21710-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,755693,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.4.1) Gecko/X Netscape6/6.2.2', '15364-5690-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,502951,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.4) Gecko/X Netscape/7.1 (ax; CDonDemand-Dom)', '15364-5690-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1102668,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.2.2', '15364-5690-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,591823,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; de-DE; rv:0.9.2) Gecko/X Netscape6/6.1', '15364-6704-20906-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1149489,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-17285-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,738158,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.7.5) Gecko/X Netscape/8.0.1', '15364-7127-20903-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,689365,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.15) Gecko/X SeaMonkey/2.0.10', '17595-17296-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.2'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,776166,913, 'Mozilla/5.0 (X11; Linux i686; rv:2.2a1pre) Gecko/X SeaMonkey/2.2a1pre', '15364-18110-22309-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,976556,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; m18) Gecko/X Netscape6/6.01', '15364-6704-20905-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,1102668,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.2; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.2.2', '15364-16110-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => array(0 => 'Flock/0.7'), 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,924228,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.9) Gecko/X Flock/0.7.9.1', '15364-5690-22483-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/1.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,757574,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.10) Gecko/X Postbox/1.0.1', '15364-7133-20797-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,607733,1102668,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.8; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.2.2', '17595-18207-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.7'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,800426,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:10.0.2) Gecko/X SeaMonkey/2.7.2', '15364-7133-20460-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win95'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,341998,762543,913, 'Mozilla/5.0 (Windows; U; Win95; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax)', '15364-6729-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1 x64; en-US; rv:1.9.0.10) Gecko/X Minefield/3.0.10', '15364-7133-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,506005,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9a4pre) Gecko/X Minefield/3.0a4pre', '15364-7133-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,755693,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-GB; rv:0.9.4.1) Gecko/X Netscape6/6.2.3', '15364-7127-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,717518,913, 'Mozilla/5.0 (Windows NT 5.1; rv:7.0.1) Gecko/X Postbox/3.0.8', '15364-5690-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.2'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.4'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,708359,913, 'Mozilla/5.0 (Windows NT 5.2; rv:7.0a1) Gecko/X SeaMonkey/2.4a1', '15364-5690-22313-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,1102668,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.2.1', '17595-17297-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,1149489,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-7133-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.6'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1148635,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-5690-21958-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,739858,913, 'Mozilla/5.0 (X11; Linux x86_64; en-US; rv:2.0b2pre) Gecko/X Minefield/4.0b2pre', '15364-18110-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,739858,913, 'Mozilla/5.0 (X11; Linux i686 (x86_64); rv:2.0b4pre) Gecko/X Minefield/4.0b4pre', '15364-18110-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 9.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,268705,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 9.0; en-US; rv:1.9.1.11) Gecko/X SeaMonkey/2.0.6', '15364-17350-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,784827,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.1.4', '15364-7133-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.3'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,783872,913, 'Mozilla/5.0 (Windows NT 5.1; rv:6.0.2) Gecko/X SeaMonkey/2.3.3', '15364-5690-22311-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,1149489,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-7127-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,751078,913, 'Mozilla/5.0 (Windows; U; Win 9x 4.90; en-US; rv:1.8.0.1) Gecko/X SeaMonkey/1.0', '15364-6704-22304-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,6631,1149489,913, 'Mozilla/5.0 (Windows; U; Windows CE 6.0; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-5448-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/10.0'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,507995,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.8pre) Gecko/X Ubuntu/10.04 (lucid) Namoroka/3.6.8pre', '15364-17816-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,856977,686486,913, 'Mozilla/5.0 (Windows; U; WinNT3.51; en-US; rv:1.8.1.8) Gecko/X SeaMonkey/1.1.5', '15364-22308-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,739858,913, 'Mozilla/5.0 (Windows NT 5.1; rv:2.0b5pre) Gecko/X Minefield/4.0b5pre', '15364-5690-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/4.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,739858,913, 'Mozilla/5.0 (Windows; Windows NT 5.1; en-US; rv:2.0b2pre) Gecko/X Minefield/4.0b2pre', '15364-5690-21960-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.5'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,891539,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; en-US; rv:1.9a1) Gecko/X SeaMonkey/1.5a', '15364-7127-22315-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.5'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,855653,913, 'Mozilla/5.0 (Windows NT 5.1; rv:8.0.1) Gecko/X SeaMonkey/2.5', '15364-5690-20458-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.6'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,795377,913, 'Mozilla/5.0 (Windows NT 5.1; rv:9.0.1) Gecko/X SeaMonkey/2.6.1', '15364-5690-20459-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1374147,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.8.1.8) Gecko/X SeaMonkey', '15364-5690-22319-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1149489,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-5690-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,502951,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; de-DE; rv:1.4) Gecko/X Netscape/7.1 (ax)', '15364-7133-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,755693,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:0.9.4) Gecko/X Netscape6/6.2.1', '15364-6704-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,1102668,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.2.1', '17595-17296-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,762543,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; ja-JP; rv:1.7.2) Gecko/X Netscape/7.2', '15364-5690-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,762543,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.2; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax)', '15364-5690-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/10.1'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,510281,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; ru; rv:1.9.2.15pre) Gecko/X Ubuntu/10.10 (maverick) Namoroka/3.6.15pre', '15364-17817-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => array(0 => 'K9Browser/19.0'), 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1326663,913, 'Mozilla/5.0 (X11; Linux x86_64; rv:19.0) Gecko/X K9Browser/19.0.0', '15364-18110-21777-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 5.1'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.2'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,776166,913, 'Mozilla/5.0 (Windows NT 5.1; rv:5.0) Gecko/X SeaMonkey/2.2', '15364-5690-22309-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,502951,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; de-DE; rv:1.4) Gecko/X Netscape/7.1 (ax)', '15364-17285-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,762543,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.2; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax)', '15364-16110-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,743579,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.3a1pre) Gecko/X Minefield/3.7a1pre', '15364-18110-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.7'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,743579,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.3a1pre) Gecko/X Minefield/3.7a1pre', '15364-18110-21959-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1102668,913, 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.9.2.15pre) Gecko/X Prism zdesktop/7.2.2', '15364-18110-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,755693,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:0.9.4) Gecko/X Netscape6/6.2', '15364-18110-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/3.1'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1146420,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.24) Gecko/X Icedove/3.1.16', '15364-18110-21942-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => array(0 => 'Icedove/3.1'), 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1146420,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.24) Gecko/X Icedove/3.1.16', '15364-18110-21942-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.2'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,1102668,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.2.2', '15364-17285-21808-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.7'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,886795,595326,913, 'Mozilla/5.0 (X11; Linux i686) KHTML/4.7.2 (like Gecko) Konqueror/4.7 Fedora/4.7.2-5.fc16', '15364-22195-22643-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.7'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,886795,595326,913, 'Mozilla/5.0 (X11; Linux x86_64) KHTML/4.7.2 (like Gecko) Konqueror/4.7 Fedora/4.7.2-5.fc16', '15364-22195-22643-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1113808,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b1pre) Gecko/X Minefield/3.1b1pre', '15364-18110-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,784827,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.1.4', '17595-17297-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/1.0'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,764242,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.0.1) Gecko/X Prism (zdesktop/1.0.4)', '15364-7133-21803-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.6'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1148635,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.6a1pre', '15364-18110-21958-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.9'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,483576,1022734,913, 'Mozilla/5.0 (X11; FreeBSD amd64) KHTML/4.9.3 (like Gecko) Konqueror/4.9', '15364-18145-19819-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1062530,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; NOKIA; Lumia 920) like Gecko', '18445-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,784827,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.1.4', '17595-17296-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,109454,913, 'TE1303 Mozilla/5.0 (Windows; U; Windows NT 5.1; en; like Gecko) Obigo/Q7 Profile/MIDP-2.0 Configuration/CLDC-1.1', '15364-5690-3499-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,762543,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax;nscd1)', '15364-7133-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,907167,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.7.5) Gecko/X Netscape/8.1.3', '15364-7133-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0', 1 => '4.0'), 1 => array(0 => 'X11', 1 => 'compatible'), 2 => array(0 => 'X11', 1 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/8.1'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,694767,51372,913, 'Mozilla/5.0 (X11; U; Linux x86_64; de; rv:1.9.0.6) Gecko/X Ubuntu/8.10 (intrepid) Mozilla/4.0 (compatible; MSIE 6.0; MSIE 5.5; Windows NT 5.1) Opera 7.03 [de]', '15364-17814-4810-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/9.1'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,665006,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.2pre) Gecko/X Ubuntu/9.10 (karmic) Namoroka/3.6.2pre', '15364-17838-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,478171,686486,913, 'Mozilla/5.0 (X11; U; SunOS i86pc; en-US; rv:1.8.1.12) Gecko/X SeaMonkey/1.1.8', '15364-18146-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.7'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,483576,595326,913, 'Mozilla/5.0 (X11; FreeBSD amd64) KHTML/4.7.3 (like Gecko) Konqueror/4.7', '15364-18145-22643-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,772937,686486,913, 'Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.13) Gecko/X Fedora/1.1.9-2.fc7 SeaMonkey/1.1.9', '15364-22205-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,737311,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; de-DE; rv:1.0.2) Gecko/X Netscape/7.01', '15364-7127-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,784827,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.1.4', '15364-5690-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => array(0 => 'Konqueror/4.8'), 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,483576,718473,913, 'Mozilla/5.0 (X11; FreeBSD amd64) KHTML/4.8.4 (like Gecko) Konqueror/4.8', '15364-18145-18565-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,737311,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.0.2) Gecko/X Netscape/7.02', '15364-7133-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.2'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,285367,689365,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.2; en-US; rv:1.9.1.19) Gecko/X SeaMonkey/2.0.14', '15364-16110-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,591823,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:0.9.2) Gecko/X Netscape6/6.1', '15364-5690-20906-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/2.5'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,707258,913, 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.0.1) Gecko/X Postbox/2.5.3', '15364-7133-20795-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/0.9'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,1150408,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.8b2) Gecko Camino/0.9+', '17595-18120-22508-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/3.0'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,978431,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; rv:1.9.2) Gecko/X Camino/3.0', '17595-18120-22509-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/2.1'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,897461,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.2.13) Gecko/X Postbox/2.1.4', '17595-17296-20796-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,907167,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/X Netscape/8.1.3', '15364-18110-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,755693,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:0.9.4.1) Gecko/X Netscape6/6.2.3', '15364-17285-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,737311,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.0.2) Gecko/X Netscape/7.01', '15364-18110-20900-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.2'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,124734,1149489,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2a1pre) Gecko/X Minefield/3.2a1pre', '15364-18110-21957-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.0'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/8.1'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,694767,506005,913, 'Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.0.6) Gecko/X Ubuntu/8.10 (intrepid) Minefield/3.0 MEGAUPLOAD 2.0', '15364-17814-21955-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686'), 3 => NULL, 4 => array(0 => 'Fedora'), 5 => NULL, 6 => NULL, 7 => array(0 => 'Minefield/3.1'), 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,771056,1113808,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b2) Gecko/X Fedora/3.1-0.4.beta2.fc11 Minefield/3.1b2', '15364-22202-21956-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/2.5'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,607733,707258,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:2.0.1) Gecko/X Postbox/2.5.3', '17595-18207-20795-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,337572,502951,913, 'Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:1.4) Gecko/X Netscape/7.1 (ax)', '15364-17188-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape6/6.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,337572,755693,913, 'Mozilla/5.0 (Windows; U; WinNT4.0; en-US; rv:0.9.4.1) Gecko/X Netscape6/6.2.2', '15364-17188-20907-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => array(0 => 'Camino/1.1'), 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,780716,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X; en-US; rv:1.8.1) Gecko/X Camino/1.1a1', '17595-18120-22507-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.0'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,689365,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.7; en-US; rv:1.9.1.19) Gecko/X SeaMonkey/2.0.14', '17595-17297-19773-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,762543,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax;nscd1)', '15364-17285-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.0'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,738158,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.7.5) Gecko/X Netscape/8.0.1', '15364-7133-20903-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.9'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/3.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,1271593,717518,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:7.0.1) Gecko/X Postbox/3.0.8', '17595-21721-20794-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X Mach-O'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.2'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,126201,762543,913, 'Mozilla/5.0 (Macintosh; U; PPC Mac OS X Mach-O; en-US; rv:1.7.2) Gecko/X Netscape/7.2 (ax)', '17595-18120-20902-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => array(0 => 'Ubuntu/8.0'), 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,218856,54471,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.18pre) Gecko/X Ubuntu/8.04 (hardy) Namoroka/3.6.18pre', '15364-17813-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,749096,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; chrome://navigator/locale/navigator.properties; rv:1.8.1.21) Gecko/X SecondLife/1.23.5.X (Second Life Release; default skin)', '15364-5690-23487-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'X11'), 2 => array(0 => 'X11', 1 => 'Linux i686', 2 => 'Ubuntu'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/1.1'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,218856,686486,913, 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.22) Gecko/X SeaMonkey/1.1.17 (Ubuntu-1.1.17+nobinonly-0ubuntu0.8.04.1)', '15364-17813-19772-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.5'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,47008,54471,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1b3pre) Gecko/X Shiretoko/3.1b3pre', '17595-17295-17470-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/2.5'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,707258,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/X Postbox/2.5.3', '17595-17296-20795-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,784827,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; en-US; rv:1.9.2.19pre) Gecko/X Prism zdesktop/7.1.4', '15364-17285-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => NULL, 3 => array(0 => 'Win98'), 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/8.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,221476,907167,913, 'Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.7.5) Gecko/X Netscape/8.1.3', '15364-6704-20904-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/1.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,757574,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.10) Gecko/X Postbox/1.0.1', '15364-5690-20797-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.7'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/2.5'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,355621,707258,913, 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:2.0.1) Gecko/X Postbox/2.5.2', '17595-17297-20795-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => array(0 => 'Palemoon/3.5'), 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,1471227,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.6) Gecko/X Palemoon/3.5.6.1', '15364-5690-23689-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.8'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/7.1'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,607733,784827,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.8; en-US; rv:1.9.2.16pre) Gecko/X Prism zdesktop/7.1.4', '17595-18207-21807-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTCPO881; X) like Gecko', '15364-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; HTCPO881; Chameleon) like Gecko', '15364-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/2.0'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,694781,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.8pre) Gecko/X Prism zdesktop/2.0', '15364-7133-21806-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/1.0'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,764242,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.0.1) Gecko/X Prism (zdesktop/1.0.4)', '17595-17296-21803-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => array(0 => 'zdesktop/2.0'), 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,49474,694781,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.2.8pre) Gecko/X Prism zdesktop/2.0', '15364-5690-21806-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 6.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,50333,749096,913, 'Mozilla/5.0 (Windows; U; Windows NT 6.0; chrome://navigator/locale/navigator.properties; rv:1.8.1.21) Gecko/X SecondLife/1.23.5.X (Second Life Release; default skin)', '15364-17285-23487-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Macintosh'), 2 => array(0 => 'Mac OS X 10.6'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => array(0 => 'Postbox/1.0'), 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(47863,176122,757574,913, 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.10) Gecko/X Postbox/1.0.1', '17595-17296-20797-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows NT 6.1'), 2 => array(0 => 'Windows NT 6.1'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => array(0 => 'SeaMonkey/2.6'), 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,95563,795377,913, 'Mozilla/5.0 (Windows NT 6.1; rv:9.0.1) Gecko/X SeaMonkey/2.6.1', '15364-7133-20459-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows'), 2 => array(0 => 'Windows NT 5.0'), 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => array(0 => 'Netscape/7.1'), 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => NULL), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(44218,52327,502951,913, 'Mozilla/5.0 (Windows; U; Windows NT 5.0; ja-JP; rv:1.4) Gecko/X Netscape/7.1 (ax)', '15364-7127-20901-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1116940,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; HTC6990LVW) like Gecko', '20273-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1295526,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; NOKIA; Lumia 928) like Gecko', '21407-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; Windows Phone 8X by HTC) like Gecko', '18502-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; HTC; PM23300) like Gecko', '18502-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; PM23300) like Gecko', '18502-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1075557,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; ARM; Trident/7.0; Touch; rv:11.0; IEMobile/11.0; HTC; Windows Phone 8X by HTC) like Gecko', '18502-18148-22782-18092');
-    $ls = $ns;
-  }
-  $ns = E101($segments, array(0 => array(0 => '5.0'), 1 => array(0 => 'Windows Phone 8.0'), 2 => NULL, 3 => NULL, 4 => NULL, 5 => NULL, 6 => NULL, 7 => NULL, 8 => NULL, 9 => NULL, 10 => NULL, 11 => NULL, 12 => NULL, 13 => NULL, 14 => NULL, 15 => NULL, 16 => NULL, 17 => NULL, 18 => NULL, 19 => NULL, 20 => NULL, 21 => NULL, 22 => array(0 => 'Touch')), $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-    }
-    $dl[] = array(1102596,841900,1421413,913, 'Mozilla/5.0 (Windows Phone 8.0; Trident/7.0; rv:11.0; IEMobile/11.0; ARM; Touch; NOKIA; Lumia 822) like Gecko', '18634-18148-22782-18092');
-    $ls = $ns;
+    $dl[] = array(212232,22118,47745,913, $ua, '14213-17017-4924-18092');
   }
   return $dl;
 }

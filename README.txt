@@ -4,7 +4,7 @@ Donate link: http://51Degrees.mobi
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
 Tested up to: 3.5.1
-Stable tag: 2.1.15.2
+Stable tag: 2.1.15.3
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -55,7 +55,7 @@ After installation, the plugin has several options you may wish to change:
 
 *  Select Settings > 51Degrees.mobi
 
-*  Create rules to handle different types of mobile device. [See user guide for details](http://51degrees.mobi/Support/Documentation/PHP/Wordpress.aspx "Wordpress User Guide").
+*  Create rules to handle different types of mobile device. [See user guide for details](http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx "Wordpress User Guide").
 
 
 **Theme Developers**
@@ -96,6 +96,9 @@ The FAQ section will be updated as relevant questions are asked of us.
 Screenshots comming soon
 
 == Changelog ==
+= 2.1.15.3 =
+* Removed a dead link from the plugin and documentation.
+
 = 2.1.15.2 =
 * Updated data 10.10.2013
 

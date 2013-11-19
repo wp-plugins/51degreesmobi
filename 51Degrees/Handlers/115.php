@@ -37,68 +37,14 @@ function E115($target, $test, $ls) {
 function _H115($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'Pulp/2.1.2 (Mac OS X; http://www.acrylicapps.com/pulp/)';
+  $ua = 'RSSInclude/1.0 (http://www.rssinclude.com/spyder)';
   $ns = E115($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.0.1 (Mac OS X; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.0 (Mac OS X; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.1 (Mac OS X; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.5.1 (Mac; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.5.3 (Mac; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(47863,126201,426483,913, $ua, '17595-18120-18108-18092');
-  }
-  $ua = 'Pulp/2.5.2 (Mac; http://www.acrylicapps.com/pulp/)';
-  $ns = E115($useragent, $ua, $ls);
-  if ($ns <= $ls) {
-    if ($ns < $ls) {
-      unset($dl);
-      $ls = $ns;
-    }
-    $dl[] = array(44218,126201,426483,913, $ua, '15364-18120-18108-18092');
+    $dl[] = array(297934,298022,190325,298015, $ua, '18254-7480-18245-18091');
   }
   return $dl;
 }

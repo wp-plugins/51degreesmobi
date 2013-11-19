@@ -37,1805 +37,3848 @@ function E99($target, $test, $ls) {
 function _H99($useragent) {
   $ls = PHP_INT_MAX;
   $dl = array();
-  $ua = 'ZTE-TU960s_TD/1.0 Linux/2.6.35 Android/2.3 Release/9.25.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; SeaRay)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU788_TD/1.0 Linux/2.6.35 Android/2.3 Release/12.25.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU885_TD/1.0 Linux/2.6.35 Android/2.3 Release/2.25.2012 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU960s2_TD/1.0 Linux/2.6.35 Android/2.3 Release/3.21.2012 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 800)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTE-TU805_TD/1.0 Linux/2.6.35 Android/2.3 Release/10.08.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; 800 BOUYGUES)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU793_TD/1.0 Linux/2.6.35 Android/2.3.5 Release/01.04.2013 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTE-Tu960_TD/1.0 Linux/2.6.35 Android/2.3 Release/8.25.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; SFR)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU887_TD/1.0 Linux/2.6.35.7 Android/2.3.5 Release/01.01.2012 Browser/AppleWebKit533.1 Mozilla/5.0 Mobile';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; T-Mobile)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,90522,90528,913, $ua, '15364-5629-15760-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU880F1_TD/1.0 Linux/3.0.13 Android/4.0 Release/7.10.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 800C)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,576120,913, $ua, '15364-17979-18062-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU817_TD/1.0 Linux/3.0.13 Android/4.0 Release/11.20.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Meteor)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,576120,913, $ua, '15364-17979-18062-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU960s3_TD/1.0 Linux/2.6.39 Android/4.0 Release/6.10.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 800)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,576120,913, $ua, '15364-17979-18062-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTE U880F_TD/1.0 Linux/2.6.39 Android/4.0 Release/5.24.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 800; Optimus)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,576120,913, $ua, '15364-17979-18062-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTE-Z431/1.4.0 NetFront/4.2 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; 800 BOUYGUES)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1038710,101226,319042,913, $ua, '20360-22839-17394-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTE-Z431/1.7.0 NetFront/4.2 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; 800C)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1038710,101226,319042,913, $ua, '20360-22839-17394-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU956_TD/1.0 Linux/3.4.0 Android/4.1 Release/1.18.2013 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Lumia800)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,610868,913, $ua, '15364-17979-18112-18092');
+    $dl[] = array(504768,406624,405773,913, $ua, '15775-15924-4702-18092');
   }
-  $ua = 'ZTEU819_TD/1.0 Linux/3.4.0 Android/4.1 Release/2.8.2013 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,610868,913, $ua, '15364-17979-18112-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160/1.3.0; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.20822; U; en-US) Opera 9.50';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,141706,913, $ua, '14768-22839-4732-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F555/1.0.0 NetFront/4.2 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; T-Mobile)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1273321,101226,319042,913, $ua, '23092-22839-17394-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160-Orange/4.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(Uganda)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'MQQBrowser/1.6/Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(Brazil_VIVO)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160/1.3.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0;Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(orange-20-branches)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Meteor)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(Venezuela_Movilnet)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160-Free/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710; Optimus)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(Rwanda_MTN)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia_blocked; Lumia 710)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,10554,913, $ua, '14768-22839-4223-18092');
+    $dl[] = array(504696,406624,405773,913, $ua, '15795-15924-4702-18092');
   }
-  $ua = 'ZTE-Jack 3G-Orange/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,10554,913, $ua, '13014-22839-4223-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-E821S/1.0 NetFront/3.5 QTV2.4 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar 4G)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,10554,913, $ua, '13014-22839-4223-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-Jack 3G(Telenor)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,10554,913, $ua, '13014-22839-4223-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-E821-South-Africa-Vodacom/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.01.161.03)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,10554,913, $ua, '13014-22839-4223-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-E821(Mexico_Iusacell)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.05.172.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,10554,913, $ua, '13014-22839-4223-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-Sydney-Orange/EFS-EE-ORG-P107A20V1.0.3 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(329214,101226,98811,913, $ua, '13033-22839-3807-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-Sydney-Orange/EFS-EE-ORG-P107A20V1.0.5 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.05.161.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(329214,101226,98811,913, $ua, '13033-22839-3807-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-TU812_TD/1.0 Linux/2.6.32 Android/2.2 Release/07.25.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.164.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,926,913, $ua, '15364-17979-3508-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-TU802_TD/1.0 Linux/2.6.32 Android/2.2 Release/1.1.2011 Browser/AppleWebKit530.17 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 2.01.164.03)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,79982,926,913, $ua, '15364-17979-3508-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-Me/Mobile';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.161.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(498098,101226,54471,913, $ua, '16305-22839-17470-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-N295-Sydney-Optimus/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 1.08.172.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(171417,101226,98811,913, $ua, '13518-22839-3807-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE/ZTE-G N295 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.164.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(171417,101226,98811,913, $ua, '13518-22839-3807-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE/N295 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.166.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(171417,101226,98811,913, $ua, '13518-22839-3807-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-F102 H3G/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.172.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(140482,101226,15775,913, $ua, '13354-22839-3976-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-F102i/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radar C110e; 4.06.161.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(140482,101226,15775,913, $ua, '13354-22839-3976-18092');
+    $dl[] = array(629491,406624,405773,913, $ua, '15851-15924-4702-18092');
   }
-  $ua = 'ZTE-F102/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(140482,101226,15775,913, $ua, '13354-22839-3976-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE-F102 H3G/2.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 610)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(140482,101226,15775,913, $ua, '13354-22839-3976-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE NOVA/G-R3100-Hollywood-Orange/R3100_V4_Z0_FR_D18GOUK104 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1148482,101226,98811,913, $ua, '20403-22839-3807-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE NOVA/G-R3100-Hollywood-Tmobile/R3100_V4_Z1_FR_D18GTMO101 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; 610 BOUYGUES)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1148482,101226,98811,913, $ua, '20403-22839-3807-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE NOVA/G-R3100-Hollywood-Orange/R3100_V7_Z3_ES_D18GOSP101 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1148482,101226,98811,913, $ua, '20403-22839-3807-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE-T95 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T95 T03';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610 NFC)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(334367,150518,10554,913, $ua, '13104-6476-4223-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTEU790_TD/1.0 Linux/2.6.35 Android/2.3 Release/7.5.2012 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; Meteor)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1257740,90522,90528,913, $ua, '20394-5629-15760-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE-TU880_TD/1.0 Linux/2.6.32 Android/2.2 Release/5.25.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; NRJMobile)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(329862,79982,926,913, $ua, '13051-17979-3508-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE-T50 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T50 T03';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610; SFR)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(644674,101226,10554,913, $ua, '20368-22839-4223-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTE U930_TD/1.0 Linux/2.6.39 Android/4.0 Release/3.5.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 610 NFC; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1141782,79982,576120,913, $ua, '21026-17979-18062-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTEU930HD_TD/1.0 Linux/3.0.8 Android/4.0 Release/10.18.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 610C)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1141782,79982,576120,913, $ua, '21026-17979-18062-18092');
+    $dl[] = array(720470,406624,405773,913, $ua, '18218-15924-4702-18092');
   }
-  $ua = 'ZTEU795_TD/1.0 Linux/2.6.39 Android/4.0 Release/6.10.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1192257,79982,576120,913, $ua, '20123-17979-18062-18092');
+    $dl[] = array(714680,406624,405773,913, $ua, '18176-15924-4702-18092');
   }
-  $ua = 'ZTEU795+_TD/1.0 Linux/3.0.13 Android/4.0 Release/7.10.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1192257,79982,576120,913, $ua, '20123-17979-18062-18092');
+    $dl[] = array(714680,406624,405773,913, $ua, '18176-15924-4702-18092');
   }
-  $ua = 'ZTE-E520/1.0 SMIT-Browser/2.0.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(165693,164731,164737,913, $ua, '13510-5282-3579-18092');
+    $dl[] = array(714680,406624,405773,913, $ua, '18176-15924-4702-18092');
   }
-  $ua = 'ZTE-G_R221/WAP2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(383405,101226,54471,913, $ua, '17692-22839-17470-18092');
+    $dl[] = array(714680,406624,405773,913, $ua, '18176-15924-4702-18092');
   }
-  $ua = 'ZTE-T116a NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T116a T04';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 900; None)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1084897,101226,10554,913, $ua, '20373-22839-4223-18092');
+    $dl[] = array(714680,406624,405773,913, $ua, '18176-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-Miami-Orange/ORANGE_ENG_EN_P107A3V1.0.7 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281/Obigo/Q03';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T9296)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-LeTactile-Orange/ORANGE_OFR_FR_P107A3V1.0.8 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7 T9292)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-Miami-Orange/ORANGE_OSP_SP_P107A3V1.0.3 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.2; Trident/5.0; IEMobile/9.0; HTC; HD7 T9292)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-Miami-Orange/ORANGE_OSP_SP_P107A3V1.0.7 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Gold)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-Miami-Orange/ORANGE_ENG_EN_P107A3V1.0.4 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Touch-IT HD7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N281-Miami-Orange/ORANGE_ENG_EN_P107A3V1.0.8 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mersad HD7 T9292)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,98811,913, $ua, '13319-22839-3807-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTE-Z221/1.3.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD7 Infinity)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(651474,101226,10554,913, $ua, '20372-22839-4223-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTEU880s_TD/1.0 Linux/2.6.35 Android/2.3 Release/2.10.2012 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; GOLD-7PRO)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1116640,90522,90528,913, $ua, '20383-5629-15760-18092');
+    $dl[] = array(378555,406624,405773,913, $ua, '13868-15924-4702-18092');
   }
-  $ua = 'ZTEU880s2_TD/1.0 Linux/2.6.35 Android/2.3.5 Release/03.29.2012 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1116640,90522,90528,913, $ua, '20383-5629-15760-18092');
+    $dl[] = array(400687,406624,405773,913, $ua, '14802-15924-4702-18092');
   }
-  $ua = 'ZTE-T54 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T54 T04';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917.)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(367975,150518,10554,913, $ua, '12660-6476-4223-18092');
+    $dl[] = array(400687,406624,405773,913, $ua, '14802-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X991-Rio-orange/X991_V1_Z2_FRES_D18F108 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; CETUS)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(270416,101226,98811,913, $ua, '14062-22839-3807-18092');
+    $dl[] = array(400687,406624,405773,913, $ua, '14802-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X991-Rio-orange/X991_V1_Z2_FRES_D18F109 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible: MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(270416,101226,98811,913, $ua, '14062-22839-3807-18092');
+    $dl[] = array(400687,406624,405773,913, $ua, '14802-15924-4702-18092');
   }
-  $ua = 'ZTE-F116-Moldova-Moldtelecom/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,10554,913, $ua, '15364-22839-4223-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-S50/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.01.161.04)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,10554,913, $ua, '15364-22839-4223-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-Beeline_C100/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.161.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,10554,913, $ua, '15364-22839-4223-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F116(ITA_H3G)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PI39100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,10554,913, $ua, '15364-22839-4223-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F100(Zimbabwe)/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.161.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214204,101226,15775,913, $ua, '12772-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F100/0.1 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.165.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214204,101226,15775,913, $ua, '12772-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F100(Jordan Orange)/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.165.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214204,101226,15775,913, $ua, '12772-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F100(DGT)/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; X310e)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214204,101226,15775,913, $ua, '12772-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F100/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 2.05.162.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214204,101226,15775,913, $ua, '12772-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-F107(3UK)/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 1.08.162.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(269912,101226,15775,913, $ua, '12306-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTEU880E_TD/1.0 Linux/2.6.35 Android/2.3 Release/12.15.2011 Browser/AppleWebKit533.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Titan)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1054987,90522,90528,913, $ua, '21166-5629-15760-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-T96 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T96 T02';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.162.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1332496,101226,10554,913, $ua, '23326-22839-4223-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-G S213/WAP2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.163.03)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(222655,101226,54471,913, $ua, '13855-22839-17470-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-G-S213/WAP2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.165.02)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(222655,101226,54471,913, $ua, '13855-22839-17470-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-T100/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; TITAN X310e; 4.06.161.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310859,101226,15775,913, $ua, '15599-22839-3976-18092');
+    $dl[] = array(636397,406624,405773,913, $ua, '15842-15924-4702-18092');
   }
-  $ua = 'ZTE-R101/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381461,101226,15775,913, $ua, '14581-22839-3976-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990/X990_V2_Z13_EN_D18F101 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart T8698)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990-VIVO/VIVO_X990_V1.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mozart)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990/X990_V2_Z14_PT_D18F100 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T8697)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990/X990_V2_Z21_ES_D18F103 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mozart)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990/X990_V2_Z15_PT_D18F108 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PD67100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990-VIVO/X990_V2_Z10_PT_D18F100 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mersad 7 Mozart T8698)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X990/X990_V2_Z18_EN_D18F100 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mozart T8698)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200098,101226,98811,913, $ua, '13929-22839-3807-18092');
+    $dl[] = array(378339,406624,405773,913, $ua, '14738-15924-4702-18092');
   }
-  $ua = 'ZTE-F930(Yoigo)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i677)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(193739,101226,10554,913, $ua, '15014-22839-4223-18092');
+    $dl[] = array(754548,406624,405773,913, $ua, '16246-15924-4702-18092');
   }
-  $ua = 'ZTE-F930(3UK)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(193739,101226,10554,913, $ua, '15014-22839-4223-18092');
+    $dl[] = array(377252,406624,405773,913, $ua, '14726-15924-4702-18092');
   }
-  $ua = 'ZTE-R1/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900k)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(989148,101226,10554,913, $ua, '20380-22839-4223-18092');
+    $dl[] = array(377252,406624,405773,913, $ua, '14726-15924-4702-18092');
   }
-  $ua = 'ZTE-R100/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-C900B)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(171417,101226,15775,913, $ua, '13518-22839-3976-18092');
+    $dl[] = array(377252,406624,405773,913, $ua, '14726-15924-4702-18092');
   }
-  $ua = 'ZTEU807_TD/1.0 Linux/3.0.13 Android/4.0 Release/10.15.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1381122,79982,576120,913, $ua, '23295-17979-18062-18092');
+    $dl[] = array(400687,367874,187799,913, $ua, '14802-6830-4643-18092');
   }
-  $ua = 'ZTE-G-X760/X760_Z10NL_GD_B07A202 Obigo/Q03C';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917.)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(400687,367874,187799,913, $ua, '14802-6830-4643-18092');
   }
-  $ua = 'ZTE-G-X760-vegas-orange/X760_Z15ES_FS_B07A104_ORANGE Obigo/Q03C';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i917';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(400687,367874,187799,913, $ua, '14802-6830-4643-18092');
   }
-  $ua = 'ZTE-G-X760/X760_Z10UK_GD_B07A201 Obigo/Q03C';
+  $ua = 'Mozilla/4.0 (compatible: MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(400687,367874,187799,913, $ua, '14802-6830-4643-18092');
   }
-  $ua = 'ZTE-G-X760-vegas-orange/X760_Z15UK_FS_B07A105_ORANGE Obigo/Q03C';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; CETUS)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(400687,367874,187799,913, $ua, '14802-6830-4643-18092');
   }
-  $ua = 'ZTE-G-X760-vegas-orange/X760_Z15UK_FS_B07A106_ORANGE Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X760/X760_Z10UK_GD_B07A202 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900h)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,98811,913, $ua, '12252-22839-3807-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-F101(RDS)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(207380,101226,10554,913, $ua, '16471-22839-4223-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-F101(Optus) NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG E-900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(207380,101226,10554,913, $ua, '16471-22839-4223-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-F101(Tigo)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; TESCO)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(207380,101226,10554,913, $ua, '16471-22839-4223-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-R54/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E900; O2UK)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366371,101226,10554,913, $ua, '12644-22839-4223-18092');
+    $dl[] = array(378483,406624,405773,913, $ua, '14637-15924-4702-18092');
   }
-  $ua = 'ZTE-R54(South_Africa_MTN)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; MWP6985)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(366371,101226,10554,913, $ua, '12644-22839-4223-18092');
+    $dl[] = array(402055,406624,405773,913, $ua, '14781-15924-4702-18092');
   }
-  $ua = 'ZTE-R109/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; OMNIA7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(312371,101226,15775,913, $ua, '13822-22839-3976-18092');
+    $dl[] = array(377612,406624,405773,913, $ua, '14640-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(Zambia)/1.0 NetFront/3.4 QTV5.2 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; OMNIA7; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,15775,913, $ua, '14768-22839-3976-18092');
+    $dl[] = array(377612,406624,405773,913, $ua, '14640-15924-4702-18092');
   }
-  $ua = 'ZTE-F160(MTN)/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8700)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287004,101226,15775,913, $ua, '14768-22839-3976-18092');
+    $dl[] = array(377612,406624,405773,913, $ua, '14640-15924-4702-18092');
   }
-  $ua = 'ZTE U950_TD/1.0 Linux/3.1.10 Android/4.0 Release/8.1.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; OMNIA7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1275567,79982,576120,913, $ua, '23566-17979-18062-18092');
+    $dl[] = array(377612,406624,405773,913, $ua, '14640-15924-4702-18092');
   }
-  $ua = 'ZTE-Z331/1.5.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 920)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(904456,101226,10554,913, $ua, '20391-22839-4223-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-T2/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Juggernaut; Alpha)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(232192,101226,15775,913, $ua, '15520-22839-3976-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-T3 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T3 T04';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 920; ANZ821)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(286500,101226,10554,913, $ua, '12784-22839-4223-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-T3 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 firmware/T3 M01';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 920; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(286500,101226,10554,913, $ua, '12784-22839-4223-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-R225/ES-ATT-USA-P103D13V1.1.5 OBIGO/Q03C WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 920; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(201133,101226,98811,913, $ua, '15099-22839-3807-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-R225/ES-ATT-USA-P103D13V1.1.7 OBIGO/Q03C WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Nokia 920)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(201133,101226,98811,913, $ua, '15099-22839-3807-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-C_S265/VE_S265_NBTL25FV1.0.0B17 SMIT-BROWSER/V2.0.0 CTC/1.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 920T)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(321600,101226,54471,913, $ua, '15974-22839-17470-18092');
+    $dl[] = array(845531,406624,405773,913, $ua, '18445-15924-4702-18092');
   }
-  $ua = 'ZTE-G-S215/WAP2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Trophy T8686)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(350509,101226,54471,913, $ua, '14170-22839-17470-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE-T930 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T930 T06';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Trophy)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(311219,150518,10554,913, $ua, '13774-6476-4223-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE-G N290/WAP2.0 Profile/MIDP-2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Spark)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(228925,101226,54471,913, $ua, '13949-22839-17470-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE-T90/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC40100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(441377,101226,15775,913, $ua, '12996-22839-3976-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE-T108/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Touch-IT Trophy)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(351445,101226,15775,913, $ua, '14212-22839-3976-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE-T870 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T870 T06';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Trophy)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(312227,150518,10554,913, $ua, '13818-6476-4223-18092');
+    $dl[] = array(379203,406624,405773,913, $ua, '14651-15924-4702-18092');
   }
-  $ua = 'ZTE U970_TD/1.0 Linux/2.6.39 Android/4.0 Release/2.21.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD7 T9292)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1018269,79982,576120,913, $ua, '20124-17979-18062-18092');
+    $dl[] = array(378555,367874,187799,913, $ua, '13868-6830-4643-18092');
   }
-  $ua = 'ZTE-R6/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(150158,101226,15775,913, $ua, '13481-22839-3976-18092');
+    $dl[] = array(378555,367874,187799,913, $ua, '13868-6830-4643-18092');
   }
-  $ua = 'ZTE U985_TD/1.0 Linux/3.1.10 Android/4.0 Release/8.1.2012 Browser/AppleWebKit534.30';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T9296)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1287752,79982,576120,913, $ua, '21433-17979-18062-18092');
+    $dl[] = array(378555,367874,187799,913, $ua, '13868-6830-4643-18092');
   }
-  $ua = 'ZTE R270/P107D11/OPERA MINI 4.3/OBIGO Q03C/MIDP-2.0 CONFIGURATION/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/ 7.0; HTC; HD7 T9292)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,98811,913, $ua, '15364-22839-3807-18092');
+    $dl[] = array(378555,367874,187799,913, $ua, '13868-6830-4643-18092');
   }
-  $ua = 'ZTE-G X993/X993_V1_Z1_BR_D1EF104 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Gold)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,98811,913, $ua, '15364-22839-3807-18092');
+    $dl[] = array(378555,367874,187799,913, $ua, '13868-6830-4643-18092');
   }
-  $ua = 'ZTE-G R255/Obigo Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i937)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,98811,913, $ua, '15364-22839-3807-18092');
+    $dl[] = array(618484,406624,405773,913, $ua, '16237-15924-4702-18092');
   }
-  $ua = 'ZTE-F912/1.0 ACS-NF/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Haden)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381605,101226,37321,913, $ua, '14585-22839-3601-18092');
+    $dl[] = array(618484,406624,405773,913, $ua, '16237-15924-4702-18092');
   }
-  $ua = 'ZTE-X990/X990_V2_Z12_ESFR_D18F100 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PI86100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(252102,101226,98811,913, $ua, '14465-22839-3807-18092');
+    $dl[] = array(748558,406624,405773,913, $ua, '18309-15924-4702-18092');
   }
-  $ua = 'ZTE-X990/X990_V2_Z5_FR_D13F104  Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Radiant)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(252102,101226,98811,913, $ua, '14465-22839-3807-18092');
+    $dl[] = array(748558,406624,405773,913, $ua, '18309-15924-4702-18092');
   }
-  $ua = 'ZTE-X990/X990_V1_Z2_ID_BFFC101  Profile/MIDP-1.0 Configuration/CLDC-1.0 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i667)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(252102,101226,98811,913, $ua, '14465-22839-3807-18092');
+    $dl[] = array(812163,406624,405773,913, $ua, '18076-15924-4702-18092');
   }
-  $ua = 'ZTE-ONIDA F970/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T7575)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(312443,101226,15775,913, $ua, '13824-22839-3976-18092');
+    $dl[] = array(597198,406624,405773,913, $ua, '17669-15924-4702-18092');
   }
-  $ua = 'ZTE-T6/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; T7575)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310211,101226,15775,913, $ua, '12545-22839-3976-18092');
+    $dl[] = array(597198,406624,405773,913, $ua, '17669-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X930-T-Mobile/X930_V1_Z1_EN_B18F103 Obigo/Q03C Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8350)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(382181,101226,98811,913, $ua, '14667-22839-3807-18092');
+    $dl[] = array(720254,406624,405773,913, $ua, '16463-15924-4702-18092');
   }
-  $ua = 'ZTE-R220/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Omnia W; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(221116,101226,54471,913, $ua, '15381-22839-17470-18092');
+    $dl[] = array(720254,406624,405773,913, $ua, '16463-15924-4702-18092');
   }
-  $ua = 'ZTE-T165+ NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 firmware/T165+ T05';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8350T)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(214636,101226,10554,913, $ua, '20393-22839-4223-18092');
+    $dl[] = array(720254,406624,405773,913, $ua, '16463-15924-4702-18092');
   }
-  $ua = 'ZTE-T55 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T8788)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(1490357,101226,10554,913, $ua, '23527-22839-4223-18092');
+    $dl[] = array(378195,406624,405773,913, $ua, '14632-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X670-Lisbon-orange/X670_V1_OG_Z2_FRES_DFFA107 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mondrian)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(141058,101226,98811,913, $ua, '13364-22839-3807-18092');
+    $dl[] = array(378195,406624,405773,913, $ua, '14632-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X670-Lisbon-orange/X670_V1_OG_Z2_FRES_DFFA110 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Surround)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(141058,101226,98811,913, $ua, '13364-22839-3807-18092');
+    $dl[] = array(378195,406624,405773,913, $ua, '14632-15924-4702-18092');
   }
-  $ua = 'ZTE-G-X670-Lisboa-orange/X670_V1_OG_Z3_ESFR_DFFA109 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Surround)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(141058,101226,98811,913, $ua, '13364-22839-3807-18092');
+    $dl[] = array(378195,406624,405773,913, $ua, '14632-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z4_IN_BFFC107 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Mondrian T8788)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(378195,406624,405773,913, $ua, '14632-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z0_ID_BFFC102 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; DELL; Venue Pro)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(578939,406624,405773,913, $ua, '16963-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z1_ID_BFFC102 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8X by HTC)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z11_SZ_BFFC100 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PM23300)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z10_NG_BFFC100 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8X by HTC; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE-CG990/CG990_Z4_IN_BFFC101 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8X by HTC; 2.00.161.04)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(307237,101226,98811,913, $ua, '13860-22839-3807-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE Bluebelt/v2/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8X by HTC; 2.00.161.01)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310427,6631,13791,913, $ua, '13742-5448-22270-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE Bluebelt/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8X by HTC; 2.01.161.00)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310427,6631,13791,913, $ua, '13742-5448-22270-18092');
+    $dl[] = array(905145,406624,405773,913, $ua, '18502-15924-4702-18092');
   }
-  $ua = 'ZTE-MDTOUCHMINI(3ITA)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900B)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(309923,101226,10554,913, $ua, '13728-22839-4223-18092');
+    $dl[] = array(377252,367874,187799,913, $ua, '14726-6830-4643-18092');
   }
-  $ua = 'ZTE-F900/1.0 ACS-NF/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(377573,101226,37321,913, $ua, '14487-22839-3601-18092');
+    $dl[] = array(377252,367874,187799,913, $ua, '14726-6830-4643-18092');
   }
-  $ua = 'ZTE-G N281/WAP2.0 Profile/MIDP-2.0';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-C900k)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(101154,101226,54471,913, $ua, '13319-22839-17470-18092');
+    $dl[] = array(377252,367874,187799,913, $ua, '14726-6830-4643-18092');
   }
-  $ua = 'ZTE-R230/2.0 Profile/MIDP-2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Pro T7576)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(322112,101226,54471,913, $ua, '13881-22839-17470-18092');
+    $dl[] = array(403999,406624,405773,913, $ua, '14886-15924-4702-18092');
   }
-  $ua = 'ZTE-C70/1.0 SMIT-Browser/2.0.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; USCCHTC-PC93100; USC-US)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(376349,101226,164737,913, $ua, '14458-22839-3579-18092');
+    $dl[] = array(403999,406624,405773,913, $ua, '14886-15924-4702-18092');
   }
-  $ua = 'ZTE-F952(METFONE)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC93100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(204120,101226,10554,913, $ua, '13610-22839-4223-18092');
+    $dl[] = array(403999,406624,405773,913, $ua, '14886-15924-4702-18092');
   }
-  $ua = 'ZTE-F952(VMS)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; T9295)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(204120,101226,10554,913, $ua, '13610-22839-4223-18092');
+    $dl[] = array(404215,406624,405773,913, $ua, '18073-15924-4702-18092');
   }
-  $ua = 'ZTE-E821S-Movistar/1.0 NetFront/4.2 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370584,101226,319042,913, $ua, '13014-22839-17394-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-F866/1.0 ACS-NF/3.2 Qtv/4.3';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T8697)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(113330,101226,36213,913, $ua, '17694-22839-4924-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-F106(Vinaphone)/1.0 NetFront/3.5 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart T8698)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310715,101226,10554,913, $ua, '13753-22839-4223-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-T106/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(381677,101226,15775,913, $ua, '14586-22839-3976-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-C77/1.0 SMIT-Browser/2.0.0';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Mozart)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362699,101226,164737,913, $ua, '12547-22839-3579-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-T7/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PD67100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(368047,101226,15775,913, $ua, '12662-22839-3976-18092');
+    $dl[] = array(378339,367874,187799,913, $ua, '14738-6830-4643-18092');
   }
-  $ua = 'ZTE-V8301/MB6801_V1_Z1_VN_F1BPa101 Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 822)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(275610,101226,98811,913, $ua, '12374-22839-3807-18092');
+    $dl[] = array(921612,406624,405773,913, $ua, '18634-15924-4702-18092');
   }
-  $ua = 'ZTE-F165/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 820)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313163,101226,36213,913, $ua, '13843-22839-4924-18092');
+    $dl[] = array(896990,406624,405773,913, $ua, '18444-15924-4702-18092');
   }
-  $ua = 'ZTE-R231/2.0 Profile/MIDP-2.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 820; ANZ825)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347190,101226,54471,913, $ua, '14023-22839-17470-18092');
+    $dl[] = array(896990,406624,405773,913, $ua, '18444-15924-4702-18092');
   }
-  $ua = 'ZTE-F252/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 820; Vodafone)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(347478,101226,36213,913, $ua, '14043-22839-4924-18092');
+    $dl[] = array(896990,406624,405773,913, $ua, '18444-15924-4702-18092');
   }
-  $ua = 'ZTE-T165i/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 820; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(351517,101226,15775,913, $ua, '14213-22839-3976-18092');
+    $dl[] = array(896990,406624,405773,913, $ua, '18444-15924-4702-18092');
   }
-  $ua = 'ZTE-C78/1.0 SMIT-Browser/2.0.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 510)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(430811,164731,164737,913, $ua, '13572-5282-3579-18092');
+    $dl[] = array(925941,406624,405773,913, $ua, '18623-15924-4702-18092');
   }
-  $ua = 'ZTE-R90/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia 510)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(345750,101226,15775,913, $ua, '13982-22839-3976-18092');
+    $dl[] = array(925941,406624,405773,913, $ua, '18623-15924-4702-18092');
   }
-  $ua = 'ZTE-R235/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 510; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(376997,101226,54471,913, $ua, '14477-22839-17470-18092');
+    $dl[] = array(925941,406624,405773,913, $ua, '18623-15924-4702-18092');
   }
-  $ua = 'ZTE-F101/1.0 NetFront/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(207380,101226,15775,913, $ua, '16471-22839-3976-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-G-N290-BASE-P107A2V1.0.0 Obigo/Q03';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(228925,101226,98811,913, $ua, '13949-22839-3807-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-G X760';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; Windows Phone - Internet 7; SFR)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(227773,101226,54471,913, $ua, '12252-22839-17470-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-F188/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; PC40200)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313595,101226,15775,913, $ua, '14138-22839-3976-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-F188-CSL/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Champagne)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313595,101226,15775,913, $ua, '14138-22839-3976-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-G i766';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; USCCN859; USC-US)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(281598,101226,54471,913, $ua, '12760-22839-17470-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-R7/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Radar C110e)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(336400,101226,15775,913, $ua, '13154-22839-3976-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE Bluebelt II/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ALCATEL; ONE TOUCH 5040X)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310427,6631,5675,913, $ua, '13742-5448-4808-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-E850(ChinaUnicom)/1.0 NetFront/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; samsung; i917)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(362771,101226,10554,913, $ua, '12549-22839-4223-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-F156/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; V965W)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370224,101226,36213,913, $ua, '12724-22839-4924-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-U E880/Obigo Q03c/MIDP-2.0 Configuration/CDLC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; 7 Trophy T8686)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(309851,101226,98811,913, $ua, '13727-22839-3807-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE silverbelt/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; Mimosa)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(310787,6631,5675,913, $ua, '13754-5448-4808-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-F951-Orange/1.0 ACS-NF/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; Cliff)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200026,101226,54471,913, $ua, '15085-22839-17470-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-C_S180/VE_S180_NBTL25FV1.0.0B15 SMIT-BROWSER/V2.0.0 CTC/1.0';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; mwp6985)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,54471,913, $ua, '15364-22839-17470-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-F852/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Huawei; H883G; HuaweiH883G)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(287508,101226,36213,913, $ua, '12804-22839-4924-18092');
+    $dl[] = array(53173,406624,405773,913, $ua, '15364-15924-4702-18092');
   }
-  $ua = 'ZTE-A261/P103B9V1.0.0/WAP2.0 Profile';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(199594,101226,54471,913, $ua, '15080-22839-17470-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-F152/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy T8686)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(200629,101226,36213,913, $ua, '15091-22839-4924-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-C79/1.0 SMIT-Browser/2.0.0';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) HTC;Spark';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(213556,164731,164737,913, $ua, '15292-5282-3579-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-F850/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible: MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(370728,101226,36213,913, $ua, '12737-22839-4924-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-F103/1.0 ACS-NF/3.4 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PC40100)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(274305,101226,15775,913, $ua, '16460-22839-3976-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-F158/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Spark)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(44218,101226,36213,913, $ua, '15364-22839-4924-18092');
+    $dl[] = array(379203,367874,187799,913, $ua, '14651-6830-4643-18092');
   }
-  $ua = 'ZTE-F260/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917R)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(369423,101226,36213,913, $ua, '12693-22839-4924-18092');
+    $dl[] = array(378123,406624,405773,913, $ua, '14630-15924-4702-18092');
   }
-  $ua = 'ZTE-F153/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Xbox)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(236646,101226,36213,913, $ua, '15548-22839-4924-18092');
+    $dl[] = array(842107,406624,405773,913, $ua, '22667-15924-4702-18092');
   }
-  $ua = 'ZTE-F188(Smart Sandbox)/1.0 ACS-NF/3.3 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T7575)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(313595,101226,37321,913, $ua, '14138-22839-3601-18092');
+    $dl[] = array(597198,367874,187799,913, $ua, '17669-6830-4643-18092');
   }
-  $ua = 'ZTE F860/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(265492,101226,54471,913, $ua, '12217-22839-17470-18092');
+    $dl[] = array(377612,367874,187799,913, $ua, '14640-6830-4643-18092');
   }
-  $ua = 'ZTE-W N61/1.0.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)';
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7; Orange)';
   $ns = E99($useragent, $ua, $ls);
   if ($ns <= $ls) {
     if ($ns < $ls) {
       unset($dl);
       $ls = $ns;
     }
-    $dl[] = array(335744,6631,13791,913, $ua, '13134-5448-22270-18092');
+    $dl[] = array(377612,367874,187799,913, $ua, '14640-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-i8700)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377612,367874,187799,913, $ua, '14640-6830-4643-18092');
+  }
+  $ua = 'ozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-i8700)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377612,367874,187799,913, $ua, '14640-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T8788)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378195,367874,187799,913, $ua, '14632-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Surround)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378195,367874,187799,913, $ua, '14632-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Mondrian)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378195,367874,187799,913, $ua, '14632-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; MWP6985)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(402055,367874,187799,913, $ua, '14781-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,367874,187799,913, $ua, '14637-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,367874,187799,913, $ua, '14637-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; LG-E900h)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,367874,187799,913, $ua, '14637-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) LG;LG-E900';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,367874,187799,913, $ua, '14637-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HTC6990LVW)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(928969,406624,405773,913, $ua, '20273-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; A620e)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; A620b)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; A620m)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC; 1.04.161.01)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC; 1.04.163.03)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC; 2.00.161.01)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Windows Phone 8S by HTC; 2.00.163.02)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,406624,405773,913, $ua, '18503-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 10.0; Windows Phone OS 8.0; Trident/6.0; IEMobile/10.0; Microsoft; Virtual)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(37484,704127,704134,913, $ua, '18088-18148-18263-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-S7530)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845307,406624,405773,913, $ua, '18560-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-S7530E)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845307,406624,405773,913, $ua, '18560-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-S7530L)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845307,406624,405773,913, $ua, '18560-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 810)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905218,406624,405773,913, $ua, '18591-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; XDeviceEmulator)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(498501,406624,405773,913, $ua, '18086-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; CEPC)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(498501,406624,405773,913, $ua, '18086-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 920)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Juggernaut; Alpha)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 920; ANZ821)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 920; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 920; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Nokia 920T)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845531,367874,187799,913, $ua, '18445-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; T9295)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(404215,367874,187799,913, $ua, '18073-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 620)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1000166,406624,405773,913, $ua, '18718-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 620; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1000166,406624,405773,913, $ua, '18718-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 620; ANZ846)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1000166,406624,405773,913, $ua, '18718-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; MWP6885)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(409511,406624,405773,913, $ua, '18036-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 505)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1009388,406624,405773,913, $ua, '19975-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; 7 Pro T7576)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(403999,367874,187799,913, $ua, '14886-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; USCCHTC-PC93100; USC-US)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(403999,367874,187799,913, $ua, '14886-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; Tania)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(732117,406624,405773,913, $ua, '18293-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Accord; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905145,367874,187799,913, $ua, '18502-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8X by HTC)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905145,367874,187799,913, $ua, '18502-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PM23300)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905145,367874,187799,913, $ua, '18502-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8X by HTC; 2.00.161.04)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905145,367874,187799,913, $ua, '18502-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8X by HTC; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905145,367874,187799,913, $ua, '18502-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917R)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378123,367874,187799,913, $ua, '14630-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro; bouygues)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,406624,405773,913, $ua, '18249-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,406624,405773,913, $ua, '18249-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; Allegro) [UsableNet Lift Mobile]';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,406624,405773,913, $ua, '18249-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-T899M)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(946743,406624,405773,913, $ua, '18463-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; GT-I8750)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(946743,406624,405773,913, $ua, '18463-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,406624,405773,913, $ua, '13999-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2 T8585)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,406624,405773,913, $ua, '13999-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.2; Trident/5.0; IEMobile/9.0;  ; LEO70)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,406624,405773,913, $ua, '13999-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; LEO)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,406624,405773,913, $ua, '13999-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; HD2 LEO)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,406624,405773,913, $ua, '13999-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; SFR)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; 800 BOUYGUES)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; T-Mobile)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800) Microsoft.Consulting.Phone.SkySportsNews.App';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,367874,187799,913, $ua, '15775-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; DELL; Venue Pro)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(578939,367874,187799,913, $ua, '16963-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 820)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(896990,367874,187799,913, $ua, '18444-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 820; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(896990,367874,187799,913, $ua, '18444-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 820; ANZ825)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(896990,367874,187799,913, $ua, '18444-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; T-Mobile)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,367874,187799,913, $ua, '15795-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,367874,187799,913, $ua, '15795-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,367874,187799,913, $ua, '15795-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,367874,187799,913, $ua, '15795-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E906)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(788036,406624,405773,913, $ua, '20203-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 900)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(714680,367874,187799,913, $ua, '18176-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) Asus;Galaxy6';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(173597,367874,187799,913, $ua, '12970-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/ 7.0; Asus;Galaxy6)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(173597,367874,187799,913, $ua, '12970-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Mazaa)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(406631,406624,405773,913, $ua, '14904-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(664657,406624,405773,913, $ua, '16968-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; FujitsuToshibaMobileCommun; IS12T)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(664657,406624,405773,913, $ua, '16968-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Nokia;N70)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(61213,367874,187799,913, $ua, '11689-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 822)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(921612,367874,187799,913, $ua, '18634-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Schubert)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379779,406624,405773,913, $ua, '14697-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; 7 Schubert T9292)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379779,406624,405773,913, $ua, '14697-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; SFR)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; T-Mobile)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; Meteor)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Nokia 800)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 800; 800 BOUYGUES)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504768,406624,187799,913, $ua, '15775-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8S by HTC)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,367874,187799,913, $ua, '18503-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; A620m)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,367874,187799,913, $ua, '18503-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8S by HTC; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,367874,187799,913, $ua, '18503-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; A620b)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,367874,187799,913, $ua, '18503-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Windows Phone 8S by HTC; 2.00.161.01)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(978252,367874,187799,913, $ua, '18503-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; HTC; Ultimate)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(787573,406624,405773,913, $ua, '20276-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; MWP6885)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(409511,367874,187799,913, $ua, '18036-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,367874,187799,913, $ua, '15851-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,367874,187799,913, $ua, '15851-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar C110e)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,367874,187799,913, $ua, '15851-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Radar 4G)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,367874,187799,913, $ua, '15851-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HTC6990LVW)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(928969,367874,187799,913, $ua, '20273-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 620)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1000166,367874,187799,913, $ua, '18718-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 620; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1000166,367874,187799,913, $ua, '18718-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 8.0; Trident/5.0; IEMobile/9.0; SAMSUNG; SGH-i917)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400687,704127,405773,913, $ua, '14802-18148-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Asus;Galaxy6)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(173597,406624,405773,913, $ua, '12970-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 8.0; Trident/5.0; IEMobile/9.0; HTC; HD7 T9292)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378555,704127,405773,913, $ua, '13868-18148-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,406624,187799,913, $ua, '15795-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,406624,187799,913, $ua, '15795-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,406624,187799,913, $ua, '15795-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; T-Mobile)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,406624,187799,913, $ua, '15795-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 710; Meteor)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(504696,406624,187799,913, $ua, '15795-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 8.0; Trident/5.0; IEMobile/9.0; Asus;Galaxy6)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(173597,704127,405773,913, $ua, '12970-18148-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i677)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(754548,367874,187799,913, $ua, '16246-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; SCH-I930)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(964772,406624,405773,913, $ua, '19765-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8750)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(946743,367874,187799,913, $ua, '18463-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-T899M)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(946743,367874,187799,913, $ua, '18463-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720470,367874,187799,913, $ua, '18218-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720470,367874,187799,913, $ua, '18218-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720470,406624,187799,913, $ua, '18218-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 610; Vodafone)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720470,406624,187799,913, $ua, '18218-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 810)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(905218,367874,187799,913, $ua, '18591-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PI39100)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(636397,367874,187799,913, $ua, '15842-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; TITAN X310e)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(636397,367874,187799,913, $ua, '15842-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar 4G)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 1.08.161.01)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 1.08.164.02)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar C110e; 2.01.164.03)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radar)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(629491,406624,187799,913, $ua, '15851-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 900)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(714680,406624,187799,913, $ua, '18176-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; HD2)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,367874,187799,913, $ua, '13999-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0;  ; LEO70)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(6571,367874,187799,913, $ua, '13999-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; XDeviceEmulator)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(498501,367874,187799,913, $ua, '18086-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft Corporation; XDeviceEmulator)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(498501,367874,187799,913, $ua, '18086-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; HD7 T9292)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378555,406624,187799,913, $ua, '13868-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; HD7)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378555,406624,187799,913, $ua, '13868-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T9296)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378555,406624,187799,913, $ua, '13868-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart T8698)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378339,406624,187799,913, $ua, '14738-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378339,406624,187799,913, $ua, '14738-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Mozart; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378339,406624,187799,913, $ua, '14738-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T8697)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378339,406624,187799,913, $ua, '14738-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; 0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,406624,405773,913, $ua, '18182-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; 0000)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,406624,405773,913, $ua, '18182-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Nokia; 0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,406624,405773,913, $ua, '18182-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; <manufacturer>; <model> [;<operator])';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,406624,405773,913, $ua, '18182-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Nokia)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,406624,405773,913, $ua, '18182-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i667)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(812163,367874,187799,913, $ua, '18076-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i937)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(618484,367874,187799,913, $ua, '16237-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Monument)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845379,406624,405773,913, $ua, '21640-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; 0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,367874,187799,913, $ua, '18182-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Nokia; 0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,367874,187799,913, $ua, '18182-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Juggernaut; 0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,367874,187799,913, $ua, '18182-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Nokia)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(126585,367874,187799,913, $ua, '18182-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; PI86100)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(748558,367874,187799,913, $ua, '18309-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; SCH-I930)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(964772,367874,187799,913, $ua, '19765-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400687,406624,187799,913, $ua, '14802-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917.)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(400687,406624,187799,913, $ua, '14802-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; TITAN X310e)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(636397,406624,187799,913, $ua, '15842-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; PI39100)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(636397,406624,187799,913, $ua, '15842-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720254,367874,187799,913, $ua, '16463-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350T)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720254,367874,187799,913, $ua, '16463-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,406624,187799,913, $ua, '14637-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900h)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,406624,187799,913, $ua, '14637-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-E900; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378483,406624,187799,913, $ua, '14637-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377612,406624,187799,913, $ua, '14640-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; OMNIA7; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377612,406624,187799,913, $ua, '14640-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379203,406624,187799,913, $ua, '14651-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Trophy T8686)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379203,406624,187799,913, $ua, '14651-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Microsoft; Virtual)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(37484,406624,405773,913, $ua, '18088-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,367874,187799,913, $ua, '15364-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) AdMob;Octagon';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,367874,187799,913, $ua, '15364-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720254,406624,187799,913, $ua, '16463-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; GT-I8350T)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720254,406624,187799,913, $ua, '16463-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; Omnia W; Orange)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(720254,406624,187799,913, $ua, '16463-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i677)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(754548,406624,187799,913, $ua, '16246-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; ZTE; MegaFon SP-W1)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(982531,406624,405773,913, $ua, '16305-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Radiant)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(748558,406624,187799,913, $ua, '18309-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; PI86100)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(748558,406624,187799,913, $ua, '18309-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Schubert)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379779,367874,187799,913, $ua, '14697-6830-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E740h)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845459,406624,405773,913, $ua, '18561-15924-4702-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; LG-E740)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845459,406624,405773,913, $ua, '18561-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377252,406624,187799,913, $ua, '14726-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900k)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377252,406624,187799,913, $ua, '14726-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; LG; LG-C900B)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(377252,406624,187799,913, $ua, '14726-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T8788)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378195,406624,187799,913, $ua, '14632-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Surround)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378195,406624,187799,913, $ua, '14632-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 505)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(1009388,406624,187799,913, $ua, '19975-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Microsoft; Virtual)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(37484,367874,187799,913, $ua, '18088-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 510)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(925941,406624,187799,913, $ua, '18623-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; DELL; Venue Pro)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(578939,406624,187799,913, $ua, '16963-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Xbox)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(842107,406624,187799,913, $ua, '22667-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; SAMSUNG; Taylor)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378267,367874,187799,913, $ua, '14634-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; Lumia 510)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(925941,367874,187799,913, $ua, '18623-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Acer; Allegro)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,406624,187799,913, $ua, '18249-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Acer; Allegro; bouygues)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,406624,187799,913, $ua, '18249-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i937)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(618484,406624,187799,913, $ua, '16237-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i667)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(812163,406624,187799,913, $ua, '18076-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; mwp6985)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(402055,406624,187799,913, $ua, '14781-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T9295)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(404215,406624,187799,913, $ua, '18073-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; Acer; M310)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(845604,406624,405773,913, $ua, '16567-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; USCCHTC-PC93100; USC-US)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(403999,406624,187799,913, $ua, '14886-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; 7 Pro T7576)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(403999,406624,187799,913, $ua, '14886-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; LG; GW910)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(71749,367874,187799,913, $ua, '19968-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; SAMSUNG; SGH-i917R)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378123,406624,187799,913, $ua, '14630-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; T7575)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(597198,406624,187799,913, $ua, '17669-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; P4301)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(775452,406624,405773,913, $ua, '18562-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(664657,406624,187799,913, $ua, '16968-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; FujitsuToshibaMobileCommun; IS12T; KDDI)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(664657,367874,187799,913, $ua, '16968-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; MWP6885)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(409511,406624,187799,913, $ua, '18036-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; ZTE; Tania)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(732117,406624,187799,913, $ua, '18293-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; ZTE; Windows Phone - Internet 7; SFR)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(53173,406624,187799,913, $ua, '15364-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Schubert)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(379779,406624,187799,913, $ua, '14697-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; LG; GW910)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(483370,406624,405773,913, $ua, '16084-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Ultimate)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(787573,406624,187799,913, $ua, '20276-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; NOKIA; P4301)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(775452,367874,187799,913, $ua, '18562-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; HTC; Ultimate)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(787573,367874,187799,913, $ua, '20276-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; Microsoft; XDeviceEmulator)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(498501,406624,187799,913, $ua, '18086-15924-4643-18092');
+  }
+  $ua = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; SAMSUNG; Taylor)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(378267,406624,405773,913, $ua, '14634-15924-4702-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.5; Trident/3.1; IEMobile/7.0; HTC; Mazaa)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(406631,406624,187799,913, $ua, '14904-15924-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Acer; Allegro; bouygues)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,367874,187799,913, $ua, '18249-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0; Acer; Allegro)';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(791121,367874,187799,913, $ua, '18249-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i707';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(483154,367874,187799,913, $ua, '17690-6830-4643-18092');
+  }
+  $ua = 'Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) LGE;GW910';
+  $ns = E99($useragent, $ua, $ls);
+  if ($ns <= $ls) {
+    if ($ns < $ls) {
+      unset($dl);
+      $ls = $ns;
+    }
+    $dl[] = array(483370,367874,187799,913, $ua, '16084-6830-4643-18092');
   }
   return $dl;
 }
