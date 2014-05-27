@@ -1,18 +1,18 @@
-=== Mobile Device Detection by 51Degrees.mobi ===
+=== Mobile Device Detection by 51Degrees ===
 Contributors: 51Degrees.mobi
-Donate link: http://51Degrees.mobi
+Donate link: http://51Degrees.com
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
-Tested up to: 3.5.1
-Stable tag: 2.1.15.3
+Tested up to: 3.9.1
+Stable tag: 3.1.2.1
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
-The 51Degrees.mobi mobile device detection plugin mobilizes your site. Easy setup including mobile switcher, themes and administration tool.
+The 51Degrees mobile device detection plugin mobilizes your site. Easy setup including mobile switcher, themes and administration tool.
 
 == Description ==
 
-The 51Degrees.mobi mobile device detection plugin is a complete pack to help mobilize your website and blog.
+The 51Degrees mobile device detection plugin is a complete pack to help mobilize your website and blog.
 
 It includes a mobile device detector and switcher to select themes based on the type of device visiting your website, a selection of mobile themes and an administration tool to allow easy, quick implementation.   
 
@@ -20,13 +20,13 @@ Features include:
 
 *  **Mobile detection and switcher** which automatically detects and switches between desktop / mobile theme, or the request can be redirected to another URL
 
-*  **Easy to use administration tool** to set-up and define redirection rules. The plugin can be downloaded and working within minutes. Rules can be defined to treat small [screen mobile devices](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsSmallScreen), [smartphones](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsSmartPhone) and [tablets](http://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx#IsTablet) differently.
+*  **Easy to use administration tool** to set-up and define redirection rules. The plugin can be downloaded and working within minutes. Rules can be defined to treat small [screen mobile devices](http://51degrees.com/Resources/Property-Dictionary#IsSmallScreen), [smartphones](http://51degrees.com/Resources/Property-Dictionary#IsSmartPhone) and [tablets](http://51degrees.com/Resources/Property-Dictionary#IsTablet) differently.
 
 *  **Selection of preinstalled mobile themes** designed by Wave Mobile  
 
-*  **Detects over 11000 mobile device** combinations and updated regularly.  No cloud services, PHP extensions or external components are required. Once installed the detected device properties are also available to theme developers.
+*  **Detects over 150,000 mobile device** combinations and updated regularly.  No cloud services, PHP extensions or external components are required. Once installed the detected device properties are also available to theme developers.
 
-*  **Developed and supported by 51Degrees.mobi** a leader in mobile device detection tools and used by over 220,000 servers and 500,000,000 devices per month. Additional detection capabilities including Tablet, Smartphone, Small Screen / Feature phones and additional themes are available from the 51Degrees.mobi website.
+*  **Developed and supported by 51Degrees** a leader in mobile device detection tools and used by 1.5 million websites. Additional detection capabilities including Tablet, Smartphone, Small Screen / Feature phones and additional themes are available from the 51Degrees website.
 
 The plugin is provided for free to all WordPress users under the Mozilla Public Licence 2.  
 For more information please visit our [website](http://51Degrees.mobi/purchase/wordpress.aspx).
@@ -51,27 +51,27 @@ After installation, the plugin has several options you may wish to change:
 
 *  Select Plugins > Installed Plugins
 
-*  Underneath 51Degrees.mobi Device Detection, select 'Activate'
+*  Underneath 51Degrees.com Device Detection, select 'Activate'
 
 *  Select Settings > 51Degrees.mobi
 
-*  Create rules to handle different types of mobile device. [See user guide for details](http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx "Wordpress User Guide").
+*  Create rules to handle different types of mobile device. [See user guide for details](http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx "Wordpress User Guide").
 
 
 **Theme Developers**
 
 1. After selecting settings:
 
-*  Go to your theme's folder (By default: 'twentyeleven')
+*  Go to your theme's folder ('twentyfourteen' by default)
 
 *  Open the index.php file and within a php tag add:
 
 ` global $_51d;
  echo $_51d['IsMobile'];`
 
-*  You should see the value as a string, "True" or "False".
+*  You should see the value as a string, 'True' or 'False'.
 
-*  You can use var_dump($_51d) to see all the properties available, or check our [property guide] (https://51degrees.mobi/Products/DeviceData/PropertyDictionary.aspx "Property dictionary").
+*  You can use var_dump($_51d) to see all the properties available, or check our [property guide] (http://51degrees.com/Resources/Property-Dictionary "Property dictionary").
 
 *  You can use the session variable to prevent theme switching, useful for providing a 'view desktop button'.
 
@@ -93,9 +93,12 @@ The FAQ section will be updated as relevant questions are asked of us.
 6. The included Smart Phone theme.
 7. The included Tablet theme.
 
-Screenshots comming soon
-
 == Changelog ==
+= 3.1.2.1 =
+* Updated the detection library to version 3.1 of the 51Degrees Detector. This
+drastically improves detection speed and ease of use, as there is now only one
+unified data file. See https://github.com/51Degreesmobi/51Degrees-PHP .
+
 = 2.1.15.3 =
 * Removed a dead link from the plugin and documentation.
 
