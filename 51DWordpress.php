@@ -1,163 +1,52 @@
 <?php
-/**
- * These Premium Data Licence Terms, together with our General Terms and
- * Conditions, apply to your (and your End Users?) use of Premium Data. In the
- * event of any inconsistency between these Premium Data Licence Terms and our
- * General Terms and Conditions, these Premium Data Licence Terms will prevail
- * as regards your use of Premium Data.
+
+/* *********************************************************************
+ * This Source Code Form is copyright of 51Degrees Mobile Experts Limited. 
+ * Copyright 2014 51Degrees Mobile Experts Limited, 5 Charlotte Close,
+ * Caversham, Reading, Berkshire, United Kingdom RG4 7BY
+ * 
+ * This Source Code Form is the subject of the following patent 
+ * applications, owned by 51Degrees Mobile Experts Limited of 5 Charlotte
+ * Close, Caversham, Reading, Berkshire, United Kingdom RG4 7BY: 
+ * European Patent Application No. 13192291.6; and 
+ * United States Patent Application Nos. 14/085,223 and 14/085,301.
  *
- * Please note that our General Terms and Conditions contain provisions which
- * limit our liability to you. Our General Terms and Conditions also set out
- * the definitions used in these Premium Data Licence Terms.
- *
- * 1	GRANT OF LICENCE
- *
- * In consideration of your agreeing to pay the Data Licence Fees, we grant you
- * a non-exclusive, non-transferable licence to use the Premium Data in
- * conjunction with Relevant Software on the terms of this licence.
- *
- * 2	SCOPE OF LICENCE
- *
- * This agreement is granted for the number of Instances set out in your Order
- * or as otherwise agreed by us from time to time.
- *
- * An Instance means a single installation of Relevant Software for a single
- * End User. So (by way of example):
- *
- * a.	if Relevant Software is installed in two or more virtual servers on the
- * same physical server, each installation of Relevant Software will be a
- * separate Instance;
- *
- * b.	if the same server (whether physical or virtual) has two different
- * installations of Relevant Software on it, each will be a separate Instance; and
- *
- * c.	if the same installation of Relevant Software is made available to two
- * different End Users, that will constitute two Instances.
- *
- * You (and any End Users) are also entitled to make a reasonable number of
- * back-up copies of any Relevant Software.
- *
- * 3	PERMITTED USE
- *
- * You are only permitted to use the Premium Data for purposes of real-time
- * device property detection using Relevant Software.
- *
- * All other use without our consent is prohibited, including without
- * limitation using the Premium Data for offline data analysis, for the purpose
- * of creating a database of device properties, or for providing any hosted or
- * cloud-based services to any person. If you require a licence for offline
- * data analysis or hosted or cloud-based services then we may (at our
- * discretion) allow this upon payment of further Data Licence Fees.
- *
- * 4	DURATION OF LICENCE
- *
- * This agreement will continue for the Initial Term as set out in your Order
- * or as otherwise agreed by us from time to time. It will then automatically
- * renew for Renewal Terms of the same length as the Initial Term (or as
- * otherwise set out in your Order or as otherwise agreed by us from time to
- * time) unless terminated by either you or us giving the other not less than
- * three months? notice of termination, such notice to expire on the last day
- * of the Initial Term or a Renewal Term.
- *
- * This is subject to the Termination provisions in condition 10 of the General
- * Terms and Conditions.
- *
- * 5	DATA LICENCE FEES
- *
- * You must pay the Data Licence Fees on or before the start of the Initial
- * Term or the applicable Renewal Term, using the renewal payment interface on
- * our website.
- *
- * We may revise the Data Licence Fees for the next Renewal Term by giving you
- * not less than four months? notice in writing prior to the start of that
- * Renewal Term.
- *
- * If you fail to pay the Data Licence Fees in full when due, your licence to
- * use the Premium Data and your access to our website (other than to pay the
- * outstanding Data Licence Fees) will automatically be suspended.
- *
- * 6	END USERS
- *
- * You may make the Premium Data available to an End User as part of any
- * Relevant Software that you supply to that End User.
- *
- * You are responsible for ensuring that the End User uses the Premium Data
- * strictly in accordance with the terms of this licence, and that the End User
- * only uses the number of Instances that you allocate to it (which must, in
- * any event, be within your permitted number of Instances under this licence).
- * If an End User exceeds that number of Instances then you will be deemed to
- * have purchased the excess number of instances (Excess Instances) at the time
- * of your most recent Order for Premium Data or (if later) the start of the
- * current Renewal Term (Deemed Order Date), and you will pay us on demand the
- * additional Licence Fees in respect of those Excess Instances from the Deemed
- * Order Date. You agree that this is a reasonable pre-estimate of our loss
- * arising from your breach and not a penalty.
- *
- * For other ways in which your customers can make use of Premium Data in any
- * Relevant Software, see our Licence Key page.
- *
- * 7	IDENTIFICATION OF THE PREMIUM DATA
- *
- * Please note that we apply unique identifying data to the Premium Data as
- * supplied to you, to identify you as the licensee for that Premium Data that
- * has been supplied to you. We reserve the right to charge additional Data
- * Licence Fees if we become aware that Premium Data bearing the identifying
- * data assigned to you has been made available other than in accordance with
- * the terms of this agreement.
- *
- * 8	UPDATES
- *
- * This licence entitles you to any updates to the Premium Data released by us
- * during the term of this licence. The 51D Software will check our servers at
- * regular intervals for updates. You may also download the latest version of
- * the Premium Data from our website.
- *
- * 9	YOUR ACCOUNT
- *
- * You will maintain an account on our website at all times during the term of
- * this licence. You must not share your login details for your account with
- * anyone else, and we reserve the right to suspend access to your account if
- * we suspect that it is being used by anyone other than you or is being
- * misused in any other way.
- *
- * Copyright 51Degrees Mobile Exports Limited 2012 - All Rights Reserved
- */
-/**
- * This Source Code Form is subject to the terms of the Mozilla Public License,
- * v. 2.0.
- *
- * If a copy of the MPL was not distributed with this file, You can obtain one
- * at http://mozilla.org/MPL/2.0/.
- *
- * This Source Code Form is "Incompatible With Secondary Licenses", as defined
- * by the Mozilla Public License, v. 2.0.
- */
-/*
-	Plugin Name: 51Degrees.mobi Mobile Device Detector
-	Plugin URI: http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx
-	Description: Uses the 51Degrees.mobi.php solution to find out what device the end user is viewing your site on. You can access the variable using $_51D. See the documentation for full information on how to use.
-	Version: 2.1.15.3
-	Author: 51Degrees.mobi
-	Author URI: http://51Degrees.mobi
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0.
+ * 
+ * If a copy of the MPL was not distributed with this file, You can obtain
+ * one at http://mozilla.org/MPL/2.0/.
+ * 
+ * This Source Code Form is "Incompatible With Secondary Licenses", as
+ * defined by the Mozilla Public License, v. 2.0.
+ * ********************************************************************* */
+ 
+ /*
+	Plugin Name: 51Degrees Mobile Device Detector
+	Plugin URI: http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx
+	Description: Uses the 51Degrees Device Detector to find out what device the end user is viewing your site on. You can access the variable using $_51d. See the documentation for full information on how to use.
+	Version: 3.1.2.1
+	Author: 51Degrees
+	Author URI: http://51Degrees.com
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
 */
 
-
 $dir = dirname(__FILE__);
-@include_once($dir.'/51Degrees/51Degrees.mobi.php');
+global $fiftyone_degrees_return_strings;
+$fiftyone_degrees_return_strings = TRUE;
+require_once $dir.'/51Degrees/51Degrees.php';
 
-@include_once($dir.'/51Degrees/51Degrees.mobi.metadata.php');
+require_once $dir.'/51Degrees/51Degrees_metadata.php';
 
 if (get_option('51d_enable_udp'))
-	@include_once($dir.'/51Degrees/51Degrees.mobi.usage.php');
-
+	@include_once $dir.'/51Degrees/51Degrees_usage.php';
 
 /**
-	Prints the javascript essential to get the 51Degrees.mobi admin menu to work.
+	Prints the javascript essential to get the 51Degrees admin menu to work.
 */
 function _51d_print_javascript() {
 	?>
-<script type="text/javascript" src="<?php echo plugins_url()."/51degreesmobi/51Degrees/51DUpdate.js"; ?>" ></script>
+<script type="text/javascript" src="<?php echo plugins_url()."/51degreesmobi/51Degrees/51Degrees_update.js"; ?>" ></script>
 <script type="text/javascript" >
 	// toggles if the advanced section is visible
 	function toggleAdvanced() {
@@ -199,7 +88,7 @@ function _51d_print_javascript() {
 				getDataUpdate();
 			}
 		}
-		keyPost.open('GET', url.replace("KEY_HERE", key, true));
+		keyPost.open('GET', url.replace("KEY_HERE", key));
 		keyPost.send();
 	}
 	
@@ -209,7 +98,7 @@ function _51d_print_javascript() {
 		
 		scrollTo(0, 0);
 		
-		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51degreesmobi/51Degrees/51DUpdate.php"; ?>";
+		fiftyone_degrees_update_location = "<?php echo plugins_url()."/51degreesmobi/51Degrees/51Degrees_update.php"; ?>";
 		fiftyone_degrees_start_updates();
 		_request.onload = updatePendingFinish;
 		
@@ -224,7 +113,7 @@ function _51d_print_javascript() {
 		if(_request.responseText === undefined || _request.responseText.length == 0) {
 				var message = "The update procedure could not be launched, probably because the server does not support flushing.\n";
 				message += "The update can be downloaded manually from ";
-				message += "<a href=\"https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys="+getUpdateKey()+"&Type=WordPress&Download=True\">51Degrees.mobi</a>.";
+				message += "<a href=\"https://51degrees.com/Products/Downloads/Premium.aspx?LicenseKeys="+getUpdateKey()+"&Type=WordPress&Download=True\">51Degrees</a>.";
 			}
 		else
 			var message = "Updating has finished. Press to go back to the admin page."
@@ -297,14 +186,14 @@ function _51d_submit_filter() {
 }
 
 function _51d_print_admin_panel() {
-	if(file_exists(dirname(__FILE__).'/51Degrees/51Degrees.mobi.php'))
+	if(file_exists(dirname(__FILE__).'/51Degrees/51Degrees.php'))
 	{
 		_51d_print_javascript();
 
 		?>
 		
 		<div id="51d_admin_panel" class="wrap">
-			<h2>51Degrees.mobi Device Detection</h2>
+			<h2>51Degrees Device Detection</h2>
       <form method="GET" >
         <input type="hidden" name="page" value="<?php echo $_GET['page']; ?>" />
         <input type="hidden" name="_51D_NewFilter" value="true" />
@@ -330,8 +219,8 @@ function _51d_print_admin_panel() {
 	{
 		?>
 		<div id="51d_admin_panel" class="wrap">
-			<h2>51Degrees.mobi Device Detection</h2>
-			<p>51Degrees.mobi Device Detection cannot run as the plugin is unable to write files. This is necessary to create the data files needed for
+			<h2>51Degrees Device Detection</h2>
+			<p>51Degrees Device Detection cannot run as the plugin is unable to write files. This is necessary to create the data files needed for
 				detection and to install mobile friendly themes. Please enable file writing, or unzip the 51Degrees data file at 
 				'<?php echo dirname(__FILE__).'/51Degrees.zip' ?>' to '<?php echo dirname(__FILE__); ?>' manually.
 			</p>
@@ -433,7 +322,7 @@ function _51d_print_basic_properties($filter) {
 		<br />
 		<div id="disabled_properties" style="background-color: #F3F781;border-color: #000000;border-width:0.1em;border-style:solid; padding: 1em;">
 			<p style="font-size:1.2em; font-weight:bold; color: red;">
-				<a href="http://51degrees.mobi/Purchase/Wordpress.aspx" title="Upgrade to enable additional features." target="_blank">Enable these Options</a>
+				<a href="http://51degrees.com/Purchase/Wordpress.aspx" title="Upgrade to enable additional features." target="_blank">Enable these Options</a>
 			</p>
 
 	<?php
@@ -449,8 +338,8 @@ function _51d_print_license_section() {
 global $_51d_meta_data;
 	?>
     <div id=u"licensing" style="margin-left: 12px">
-		<h3>Upgrade Device Data <span style="font-weight:normal;">(BETA)</span></h3>
-		<p>If you have <a href="http://51degrees.mobi/Purchase/Wordpress.aspx" target="_blank" >purchased</a> a licence key for device data paste it into the text box below and select Update. This process requires your PHP environment to support file updates and outbound web connectivity.
+		<h3>Upgrade Device Data</h3>
+		<p>If you have <a href="http://51degrees.com/Purchase/Wordpress.aspx" target="_blank" >purchased</a> a licence key for device data paste it into the text box below and select Update. This process requires your PHP environment to support file updates and outbound web connectivity.
 		</p>
 	<?php
 		$license = get_option('_51d_license_text');
@@ -461,15 +350,15 @@ global $_51d_meta_data;
         <br />
 		<button id="51d_update_button" name="_51d_get_update" type="button" class="button-primary" onclick="updateKey()">Automatically Update</button>
 		<?php if($license)
-			echo "<a href='https://51degrees.mobi/Products/Downloads/Premium.aspx?LicenseKeys=$license&Type=PHP&Download=True'>Download Upgraded Plugin</a>";
+			echo "<a href='https://51degrees.com/Products/Downloads/Premium.aspx?LicenseKeys=$license&Type=PHP&Download=True'>Download Upgraded Plugin</a>";
 		?>
 		<p>You can also copy the licence key into the 
-		<a href="https://51degrees.mobi/Products/Downloads/Premium.aspx" target="_blank">51Degrees.mobi Downloads page</a>
+		<a href="https://51degrees.com/Products/Downloads/Premium.aspx" target="_blank">51Degrees.com Downloads page</a>
 		and download an upgraded plugin preloaded with current device data. You must delete the currently installed version of this plugin before
-		uploading the upgraded one. <a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Learn More</a></p>
+		uploading the upgraded one. <a href="http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Learn More</a></p>
 		<p>
-        Data type: <i><?php echo $_51d_meta_data["DatasetName"]; ?></i> Published: <i><?php echo $_51d_meta_data["Date"]; ?></i>
-        </p>
+      <?php echo "Data type: <i>{$_51d_meta_data["DatasetName"]}</i> Published: <i>{$_51d_meta_data["Date"]}</i>"; ?>
+    </p>
     </div>
     <?php
 }
@@ -478,7 +367,7 @@ function _51d_print_update_messages() {
 	?>
 	<div id="51d_message_update" style="display:none;">
         <div style="height: 40px;"></div>
-		51Degrees.mobi Device Data now updating. This may take a few minutes. Please leave this page open.
+		51Degrees Device Data now updating. This may take a few minutes. Please leave this page open.
 		<p>
 			<div id="update_message"></div>
 		</p>
@@ -571,7 +460,7 @@ function _51d_print_filter_tab($index, $filters) {
 											}
 										}
 										else
-											echo '<td>No properties found. Your 51Degrees.mobi installation maybe missing some files.</td>';
+											echo '<td>No properties found. Your 51Degrees installation maybe missing some files.</td>';
 
 									?>
 								</table>
@@ -616,7 +505,7 @@ function _51d_print_filter_tab($index, $filters) {
 						<input id="redirect_text" type="text" name="_51D_RedirectionUrl" style="width:40%;display:none" <?php if(isset($filter['url'])) echo ' value="'.$filter['url'].'"'; ?> />
 						<script text="javascript">checkRedirectText();</script>
 						<p style="font-size:1.2em; font-weight:bold; color: red;">
-							<a href="http://51degrees.mobi/Purchase/Wordpress/Themes.aspx" target="_blank" title="Find more mobile aware themes">Get more Themes</a>
+							<a href="http://51degrees.com/Purchase/Wordpress/Themes.aspx" target="_blank" title="Find more mobile aware themes">Get more Themes</a>
 						</p>
 					</td>
 				</tr>
@@ -675,7 +564,7 @@ function _51d_print_filters() {
 				if($index != 0)
 					echo '<a title="Decrease Priority" style="text-decoration: none" href="'.add_query_arg('ShiftFilter', $keys[$index - 1]) .'"><strong>&lt;</strong></a>    ';
 
-				echo '<input style="height:18px; width:80px" type="text" name="_51D_FilterName" value="'.$key.'"/>';
+				echo '<input style="width:80px" type="text" name="_51D_FilterName" value="'.$key.'"/>';
 
 				if($index == count($keys) - 2)
 					echo '    <a title="Increase Priority" style="text-decoration: none" href="'.add_query_arg('ShiftFilter', '_LAST') .'"><strong>&gt;</strong></a>';
@@ -706,12 +595,12 @@ function _51d_print_settings() {
 
         <div id="_51DGlobalSettings" style="margin-left: 12px" >
 			<h3>Global Settings</h3>
-			<p>These settings control 51Degrees.mobi Device Detection on all pages in the site.</p>
+			<p>These settings control 51Degrees Device Detection on all pages in the site.</p>
 			<form id="_51DGlobalSettingsMenu" method="post">
 
 				<p>
 					<input type="checkbox" name="51d_enable_udp" <?php if(get_option('51d_enable_udp')) echo 'checked="checked"'; ?> />
-					Share usage data with 51Degrees.mobi. <a href="http://51degrees.mobi/Support/FAQs/UsageData.aspx">Learn More</a>
+					Share usage data with 51Degrees. <a href="http://51degrees.com/Support/FAQs/UsageData.aspx">Learn More</a>
 				</p>
 				<p>
 					<button name="_51D_SubmitGlobalSettings" class="button-primary" type="submit">Submit</button>
@@ -726,8 +615,8 @@ function _51d_print_documentation() {
     <div style="margin-left: 12px" >
     <h3>Documentation</h3>
     <p>For assistance, refer to help tab at the top of this page. You can also use the tooltips, or see
-    our <a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx">user guide</a> and 
-    <a href="http://51degrees.mobi/Support/Forum.aspx">support forum</a>.</p>
+    our <a href="http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx">user guide</a> and 
+    <a href="http://51degrees.com/Support/Forum.aspx">support forum</a>.</p>
     </div>
     <?php
 }
@@ -878,19 +767,24 @@ function _51d_admin_menu_preprocess() {
 		
 		$screen->set_help_sidebar(
 			__('<strong>For more information:</strong> 
-			<p><a href="http://51degrees.mobi/Products/DeviceData.aspx" target="_blank">Overview</a></p>
-			<p><a href="http://51degrees.mobi/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Documentation</a></p>
-			<p><a href="http://51degrees.mobi/Purchase/Wordpress.aspx" target="_blank">Upgrade Device Data</a></p>')
+			<p><a href="http://51degrees.com/Products/DeviceData.aspx" target="_blank">Overview</a></p>
+			<p><a href="http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx" target="_blank">Documentation</a></p>
+			<p><a href="http://51degrees.com/Purchase/Wordpress.aspx" target="_blank">Upgrade Device Data</a></p>')
 		);
 
 	}
 }
 
-function _51d_unzip_data() {
-    // set_time_limit(0);
-	// $dir = dirname(__FILE__);
-	// WP_Filesystem();
-	// unzip_file($dir.'/51Degrees.mobi.php.zip', $dir);
+function gzfile_get_contents($filename, $use_include_path = 0) { 
+    $file = @gzopen($filename, 'rb', $use_include_path); 
+    if ($file) { 
+        $data = ''; 
+        while (!gzeof($file)) { 
+            $data .= gzread($file, 1024); 
+        } 
+        gzclose($file); 
+    } 
+    return $data;
 }
 
 function _51d_set_options() {
@@ -900,7 +794,6 @@ function _51d_set_options() {
 	if(WP_Filesystem())
 	{
 		$themes = glob($theme_directory . "*.zip");
-		
 		foreach($themes as $theme) {
 			$targetdir = get_theme_root().'/';
 			unzip_file($theme, $targetdir);
@@ -915,15 +808,6 @@ function _51d_unset_options() {
 	delete_option('_51d_license_text');
 }
 
-function _51d_admin_init() {
-    // $dir = dirname(__FILE__);
-	// if(file_exists($dir.'/51Degrees/51Degrees.mobi.php') == false) {
-        // // check if a premium key is available
-		// _51d_unzip_data();
-        // $license = get_option("_51d_license_text");
-    // }
-}
-
 function _51d_loadTemplateFilters($current) {
 	return _51d_loadFilters($current, 'Template');
 }
@@ -935,8 +819,6 @@ function _51d_loadStylesheetFilters($current) {
 function _51d_loadFilters($currentTheme, $tag) {
 // only load themes on non admin pages
 	if(!is_admin()) {
-		//echo $currentTheme;
-		//echo "Checking $tag";
 		$theme = _51d_checkFilters();
 		if(empty($theme))
 			return $currentTheme;
@@ -1001,7 +883,6 @@ function _51d_checkFilters() {
 		return $GLOBALS['_51d_themeName'];
 }
 
-// add_action('admin_init', '_51d_admin_init');
 add_action('admin_menu', '_51d_add_admin_menu');
 add_filter('template', '_51d_loadTemplateFilters');
 add_filter('stylesheet', '_51d_loadStylesheetFilters');
