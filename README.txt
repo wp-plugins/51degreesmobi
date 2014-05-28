@@ -94,6 +94,10 @@ The FAQ section will be updated as relevant questions are asked of us.
 7. The included Tablet theme.
 
 == Changelog ==
+= 3.1.3.1 =
+* Removed usage of the method DirectoryIterator::getExtension() in
+51Degrees_metadata.php as it is not available in PHP 5.3.5 and earlier.
+
 = 3.1.2.1 =
 * Updated the detection library to version 3.1 of the 51Degrees Detector. This
 drastically improves detection speed and ease of use, as there is now only one
