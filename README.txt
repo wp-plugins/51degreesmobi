@@ -4,7 +4,7 @@ Donate link: http://51Degrees.com
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
 Tested up to: 3.9.1
-Stable tag: 3.1.4.2
+Stable tag: 3.1.4.3
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -94,10 +94,12 @@ The FAQ section will be updated as relevant questions are asked of us.
 7. The included Tablet theme.
 
 == Changelog ==
-= 3.1.4.2 =
+= 3.1.4.3 =
 * Fixed bug where metadata caches would not be removed.
 * Feature.js property names are now stripped of '/' characters so they
 don't cause parser errors.
+* Fixed bug where Feature Detection script would not be created in the core.js
+  script.
 
 = 3.1.3.1 =
 * Removed usage of the method DirectoryIterator::getExtension() in
