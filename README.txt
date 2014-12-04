@@ -94,6 +94,10 @@ The FAQ section will be updated as relevant questions are asked of us.
 7. The included Tablet theme.
 
 == Changelog ==
+= 3.1.5.2 =
+* Fixed error where advanced properties selections could not be saved.
+* Fixed error that didn't show all options for advanced properties.
+
 = 3.1.4.3 =
 * Fixed bug where metadata caches would not be removed.
 * Feature.js property names are now stripped of '/' characters so they

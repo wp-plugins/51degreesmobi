@@ -25,7 +25,7 @@
 	Plugin Name: 51Degrees Mobile Device Detector
 	Plugin URI: http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx
 	Description: Uses the 51Degrees Device Detector to find out what device the end user is viewing your site on. You can access the variable using $_51d. See the documentation for full information on how to use.
-	Version: 3.1.4.3
+	Version: 3.1.5.2
 	Author: 51Degrees
 	Author URI: http://51Degrees.com
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.
@@ -161,7 +161,7 @@ function _51d_submit_filter() {
 		if(substr($key, 0, 10) == "_51d_cond_")
 			$conditions[str_replace("_51d_cond_", "", $key)] = $value;
 	}
-
+			
 	$updatedFilter['conditions'] = $conditions;
 
 	$filters = get_option('51DFilterStore');
@@ -305,9 +305,9 @@ function _51d_print_basic_properties($filter) {
 
 		foreach($properties as $name => $property) {
 			if(isset($_51d_meta_data[$property])) {
-				echo '<input type="checkbox" value="True" name="_51d_cond_'.$property.'"';
+				echo '<input type="checkbox" value="True" name="_51d_cond_!'.$property.'"';
 
-				if(isset($conditions[$property]) && $conditions[$property] == true)
+				if(isset($conditions['!'.$property]) && $conditions['!'.$property] == true)
 					echo 'checked="checked"';
 
 				echo '/> '.$name.'<p class="description">'.$propertyDescriptions[$property].'</p>';
@@ -418,7 +418,6 @@ function _51d_print_filter_tab($index, $filters) {
 					<td>
 						<div>
               <h3 style="float: left" >Advanced Properties </h3>
-              <!-- hellooo -->
                <input id="adv_toggle" class="button-primary" type="button" onclick="toggleAdvanced()" value="Show" style="margin: 0.8em; margin-bottom: 1em;" />
             </div>
 						<div id="advanced_properties" style="display:none">
@@ -435,6 +434,10 @@ function _51d_print_filter_tab($index, $filters) {
 									<th style="width: 50%; background-color:#dddddd;">Property</th>
 									<th style="width: 50%; background-color:#dddddd;">Value</th>
 									<?php
+										if (isset($filter['conditions']))
+											$conditions = $filter['conditions'];
+										else
+											$conditions = array();
 										global $_51d_meta_data;
 										if(isset($_51d_meta_data)) {
 											$toggle = false;
@@ -446,13 +449,33 @@ function _51d_print_filter_tab($index, $filters) {
 												else
 													echo '<tr style="background-color:#ffffff;">';
 												$toggle = !$toggle;
+												
+												$current_value = false;
+												$has_value = false;
+												if (array_key_exists($dataKey, $conditions)) {
+													$current_value = $conditions[$dataKey];
+													$has_value = true;
+												}
 
-												echo '<td><input id="check_'.$dataKey.'" type="checkbox" onclick="toggleRow(event)"/></td>';
+												if ($has_value) {
+													$checked_attr = ' checked="checked"';
+													$disabled_attr = ' ';
+												}
+												else {
+													$checked_attr = ' ';
+													$disabled_attr = ' disabled="disabled"';
+												}
+												echo '<td><input id="check_'.$dataKey.'" type="checkbox"'.$checked_attr.' onclick="toggleRow(event)"/></td>';
 												echo '<td>'.$dataKey.' <img title="'.$data['Description'].'" src="'.plugin_dir_url( $file ).'51degreesmobi/help.png" /></td>';
 												echo '<td>';
-													echo '<select id="51d_cond_'.$dataKey.'" class="maxWidth" disabled="disabled">';
+													echo '<select id="51d_cond_'.$dataKey.'" name="_51d_cond_'.$dataKey.'" class="maxWidth"'.$disabled_attr.' >';
+													
 														foreach ($data['Values'] as $valueKey => $value) {
-															echo '<option value="'.$valueKey.'">'.$valueKey.'</option>';
+															if ($has_value && $current_value === $valueKey)
+																$select_attr = ' selected="selected"';
+															else
+																$select_attr = ' ';
+															echo '<option value="'.$valueKey.'"'.$select_attr.' >'.$valueKey.'</option>';
 														}
 													echo '</select>';
 												echo '</td>';
@@ -849,7 +872,21 @@ function _51d_checkFilters() {
 					$validConditions = true;
 					// check all conditions
 					foreach($filter['conditions'] as $key => $condition) {
-						if($condition == 'True' && $_51d[$key] != $condition) {
+						$name = $key;
+						$basic_property = false;
+						if($name[0] == '!') {
+							$name = ltrim($name, '!');
+							$basic_property = true;
+						}
+						$match = $_51d[$name] == $condition;
+						if ($basic_property && $match) {
+							$validConditions = true;
+							break;
+						}
+						if($basic_property && !$match) {
+							$validConditions = false;
+						}
+						if (!$basic_property && !$match) {
 							$validConditions = false;
 							break;
 						}
