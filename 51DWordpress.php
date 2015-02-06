@@ -25,7 +25,7 @@
 	Plugin Name: 51Degrees Mobile Device Detector
 	Plugin URI: http://51degrees.com/Support/Documentation/PHP/Distributions/Wordpress.aspx
 	Description: Uses the 51Degrees Device Detector to find out what device the end user is viewing your site on. You can access the variable using $_51d. See the documentation for full information on how to use.
-	Version: 3.1.5.2
+	Version: 3.1.6.1
 	Author: 51Degrees
 	Author URI: http://51Degrees.com
 	License: This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/. This Source Code Form is "Incompatible With Secondary Licenses", as defined by the Mozilla Public License, v. 2.0.

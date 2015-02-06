@@ -3,8 +3,8 @@ Contributors: 51Degrees.mobi
 Donate link: http://51Degrees.com
 Tags: mobile, device, detection, optimisation, handset, browser, android, blackberry, windows phone, symbian, cellular, iphone, ipad, apple, mobile internet, mobile web, nokia, palm, pda, switcher, theme, wap, webkit, wireless
 Requires at least: 2.7
-Tested up to: 3.9.1
-Stable tag: 3.1.4.3
+Tested up to: 4.0
+Stable tag: 3.1.5.2
 License: MPLv2 or later (MPL)
 License URI: http://www.mozilla.org/MPL/2.0/
 
@@ -94,6 +94,9 @@ The FAQ section will be updated as relevant questions are asked of us.
 7. The included Tablet theme.
 
 == Changelog ==
+= 3.1.6.1 =
+* Updated data file.
+
 = 3.1.5.2 =
 * Fixed error where advanced properties selections could not be saved.
 * Fixed error that didn't show all options for advanced properties.
